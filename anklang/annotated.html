@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8"/>
+  <title>Anklang Anklang - Programming Reference</title>
+  <link href="favicon.svg" rel="icon" type="image/svg+xml"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="#22272e" name="theme-color"/>
+  <link href="poxy/poxy.css" referrerpolicy="no-referrer" rel="stylesheet"/>
+  <script src="poxy/poxy.js"></script>
+  <script>initialize_theme("dark");</script>
+  <meta content="Anklang" name="twitter:title"/>
+  <meta content="Anklang" property="og:title"/>
+  <meta content="Anklang" itemprop="name"/>
+  <meta content="Tim Janik" name="author"/>
+  <meta content="Tim Janik" property="article:author"/>
+  <meta content="Anklang - Programming Reference" name="description"/>
+  <meta content="Anklang - Programming Reference" name="twitter:description"/>
+  <meta content="Anklang - Programming Reference" property="og:description"/>
+  <meta content="Anklang - Programming Reference" itemprop="description"/>
+  <meta content="telephone=no" name="format-detection"/>
+  <meta content="Poxy v0.12.3" name="generator"/>
+  <meta content="strict-origin-when-cross-origin" name="referrer"/>
+</head>
+<body>
+<header><nav id="navigation">
+  <div class="m-container">
+    <div class="m-row">
+      <a class="m-col-t-8 m-col-m-none m-left-m" href="index.html" id="m-navbar-brand"><svg class="poxy-injected-svg" height="32" id="poxy-injected-svg-0" version="1.1" viewBox="0 0 64 64" width="32" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg"><metadata><rdf:rdf><cc:work><cc:license rdf:resource="MPL-2.0"></cc:license></cc:work></rdf:rdf></metadata><g><rect height="60" rx="1" ry="1" style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:4;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" width="60" x="2" y="2"></rect><g><path d="M 19.078125,2 V 2.5 H 14 V 40.972656 C 13.97726,42.63277 15.372472,44 17,44 h 2.023438 L 19,61.994141 22.921875,62 22.945312,44 H 25 c 1.627528,0 3.02274,-1.36723 3,-3.027344 V 2.5 H 23 V 2.0058594 Z" style="fill:#000000;fill-opacity:1"></path><path d="m 41.078399,1.9999594 v 0.5 H 36.000274 V 40.972615 c -0.02274,1.660114 1.372472,3.027344 3,3.027344 h 2.023438 L 41.000272,61.9941 44.922147,62 44.945587,44 h 2.054688 c 1.627528,0 3.02274,-1.36723 3,-3.027344 V 2.4999594 h -5 V 2.0058188 Z" style="fill:#000000;fill-opacity:1"></path></g><rect height="21" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:4;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" width="60" x="2" y="2"></rect><g><circle cx="11.5" cy="11" r="5.5" style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:4.00000095;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"></circle><circle cx="32" cy="11" r="5.5" style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:4.00000095;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"></circle><circle cx="52.5" cy="11" r="5.5" style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:4.00000095;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"></circle></g></g></svg>Anklang <span class="m-thin">Anklang - Programming Reference</span></a>
+      <div class="m-col-t-4 m-hide-m m-text-right m-nopadr">
+        <a class="m-doc-search-icon" accesskey="f" href="#search" onclick="return showSearch()" title="Search"><svg style="height: 0.9rem;" viewBox="0 0 16 16">
+          <path d="m6 0c-3.31 0-6 2.69-6 6 0 3.31 2.69 6 6 6 1.49 0 2.85-0.541 3.89-1.44-0.0164 0.338 0.147 0.759 0.5 1.15l3.22 3.79c0.552 0.614 1.45 0.665 2 0.115 0.55-0.55 0.499-1.45-0.115-2l-3.79-3.22c-0.392-0.353-0.812-0.515-1.15-0.5 0.895-1.05 1.44-2.41 1.44-3.89 0-3.31-2.69-6-6-6zm0 1.56a4.44 4.44 0 0 1 4.44 4.44 4.44 4.44 0 0 1-4.44 4.44 4.44 4.44 0 0 1-4.44-4.44 4.44 4.44 0 0 1 4.44-4.44z" id="m-doc-search-icon-path"></path>
+        </svg></a>
+        <a href="#navigation" id="m-navbar-show" title="Show navigation"></a>
+        <a href="#" id="m-navbar-hide" title="Hide navigation"></a>
+      </div>
+      <div class="m-col-t-12 m-show-m m-col-m-none m-right-m" id="m-navbar-collapse">
+        <div class="m-row">
+          <ol class="m-col-t-6 m-col-m-none">
+            <li><a href="pages.html">Pages</a></li>
+            <li><a href="files.html">Files</a></li>
+            <li><a href="namespaces.html">Namespaces</a></li>
+          </ol>
+          <ol class="m-col-t-6 m-col-m-none" start="4">
+            <li><a href="annotated.html" id="m-navbar-current">Classes</a></li>
+            <li><a class="poxy-icon repo github poxy-external" href="https://github.com/tim-janik/anklang" target="_blank" title="View on GitHub"><svg id="poxy-repo-icon" version="1.1" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg"><path d="M25,1.23a24.37,24.37,0,0,0-7.7,47.5C18.51,49,19,48.2,19,47.56s0-2.12,0-4.15c-6.78,1.47-8.21-3.27-8.21-3.27C9.61,37.33,8,36.58,8,36.58c-2.21-1.51.17-1.48.17-1.48a5.12,5.12,0,0,1,3.73,2.51c2.17,3.72,5.7,2.65,7.09,2a5.25,5.25,0,0,1,1.55-3.26c-5.41-.61-11.1-2.7-11.1-12A9.41,9.41,0,0,1,12,17.79a8.75,8.75,0,0,1,.24-6.45s2-.66,6.7,2.49a23.1,23.1,0,0,1,12.2,0c4.66-3.15,6.7-2.49,6.7-2.49A8.75,8.75,0,0,1,38,17.79a9.41,9.41,0,0,1,2.51,6.54c0,9.36-5.7,11.42-11.13,12a5.83,5.83,0,0,1,1.65,4.51c0,3.26,0,5.89,0,6.69,0,.65.44,1.41,1.68,1.17A24.38,24.38,0,0,0,25,1.23Z" fill="currentColor"></path></svg></a></li>
+            <li><a class="poxy-icon theme" href="javascript:void(null);" id="poxy-theme-switch" onclick="toggle_theme(); return false;" role="button" title="Toggle dark and light themes"><svg id="poxy-theme-switch-img" version="1.1" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><circle cx="185.6708" cy="183.8122" fill="currentColor" r="65.625"></circle><path d="M185.6708,87.5622a13.1256,13.1256,0,0,0,13.125-13.125V52.5622a13.125,13.125,0,1,0-26.25,0v21.875A13.1257,13.1257,0,0,0,185.6708,87.5622Z" fill="currentColor"></path><path d="M99.051,115.7519a13.1236,13.1236,0,1,0,18.56-18.56L102.1442,81.726a13.1236,13.1236,0,0,0-18.5595,18.56Z" fill="currentColor"></path><path d="M89.4208,183.8122a13.1257,13.1257,0,0,0-13.125-13.125H54.4208a13.125,13.125,0,0,0,0,26.25h21.875A13.1256,13.1256,0,0,0,89.4208,183.8122Z" fill="currentColor"></path><path d="M99.051,251.8725,83.5847,267.3431a13.1236,13.1236,0,1,0,18.56,18.56l15.4663-15.4706a13.1236,13.1236,0,1,0-18.5595-18.56Z" fill="currentColor"></path><path d="M185.6708,280.0622a13.1258,13.1258,0,0,0-13.125,13.125v21.875a13.125,13.125,0,0,0,26.25,0v-21.875A13.1257,13.1257,0,0,0,185.6708,280.0622Z" fill="currentColor"></path><path d="M272.2907,251.8725a13.1236,13.1236,0,1,0-18.56,18.56l15.4663,15.4706a13.1236,13.1236,0,1,0,18.56-18.56Z" fill="currentColor"></path><path d="M330.0458,183.8122a13.1257,13.1257,0,0,0-13.125-13.125h-21.875a13.125,13.125,0,0,0,0,26.25h21.875A13.1256,13.1256,0,0,0,330.0458,183.8122Z" fill="currentColor"></path><path d="M263.0109,119.5971a13.0824,13.0824,0,0,0,9.28-3.8452l15.4663-15.4663a13.1236,13.1236,0,1,0-18.56-18.56L253.7312,97.1923a13.125,13.125,0,0,0,9.28,22.4048Z" fill="currentColor"></path><path d="M456.9379,401.6714a63.97,63.97,0,0,1-14.9963,7.2055c-19.6448,6.5283-41.8787,2.9566-58.1439-9.8523a68.9311,68.9311,0,0,1-10.835-10.8339c-12.8088-16.2663-16.3806-38.5-9.8523-58.1471a63.8444,63.8444,0,0,1,7.2077-14.9931,8.8036,8.8036,0,0,0-10.1172-13.3034,87.5188,87.5188,0,1,0,110.0372,110.04A8.8,8.8,0,0,0,456.9379,401.6714Z" fill="currentColor"></path></svg></a></li>
+            <li class="m-show-m"><a class="m-doc-search-icon" href="#search" onclick="return showSearch()" title="Search"><svg style="height: 0.9rem;" viewBox="0 0 16 16">
+              <use href="#m-doc-search-icon-path"></use>
+            </svg></a></li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav></header>
+<main><article>
+  <div class="m-container m-container-inflatable">
+    <div class="m-row">
+      <div class="m-col-l-10 m-push-l-1">
+        <h1>Classes</h1>
+        <ul class="m-doc">
+          <li class="m-doc-collapsible">
+            <a href="#" onclick="return toggle(this)">namespace</a> <a class="m-doc" href="namespace_ase.html">Ase</a> <span class="m-doc">The Anklang C++ API namespace.</span>
+            <ul class="m-doc">
+              <li class="m-doc-collapsible">
+                <a href="#" onclick="return toggle(this)">namespace</a> <a class="m-doc" href="namespace_ase_1_1_fast_memory.html">FastMemory</a> <span class="m-doc">Utilities for allocating cache line aligned memory from huge pages.</span>
+                <ul class="m-doc">
+                  <li>struct <a class="m-doc" href="struct_ase_1_1_fast_memory_1_1_arena.html">Arena</a> <span class="m-doc">Memory area (over-)aligned to cache size and utilizing huge pages.</span></li>
+                  <li>struct <a class="m-doc" href="struct_ase_1_1_fast_memory_1_1_block.html">Block</a> <span class="m-doc">Reference for an allocated memory block.</span></li>
+                  <li>struct <a class="m-doc" href="struct_ase_1_1_fast_memory_1_1_huge_page.html">HugePage</a> <span class="m-doc">Interface to the OS huge page allocator.</span></li>
+                </ul>
+              </li>
+              <li class="m-doc-collapsible">
+                <a href="#" onclick="return toggle(this)">namespace</a> <a class="m-doc" href="namespace_ase_1_1_lib.html">Lib</a> <span class="m-doc">Namespace for implementation internals.</span>
+                <ul class="m-doc">
+                  <li>class <a class="m-doc" href="class_ase_1_1_lib_1_1_keccak_f1600.html">KeccakF1600</a> <span class="m-doc">The Keccak-f[1600] Permutation, see the Keccak specification Keccak11 .</span></li>
+                  <li>class <a class="m-doc" href="class_ase_1_1_lib_1_1_scoped_locale.html">ScopedLocale</a> <span class="m-doc">Class to push a specific locale_t for the scope of its lifetime.</span></li>
+                  <li>class <a class="m-doc" href="class_ase_1_1_lib_1_1_scoped_posix_locale.html">ScopedPosixLocale</a> <span class="m-doc">Class to push the POSIX/C locale_t (UTF-8) for the scope of its lifetime.</span></li>
+                  <li>class <a class="m-doc" href="class_ase_1_1_lib_1_1_string_formatter.html">StringFormatter</a> </li>
+                </ul>
+              </li>
+              <li class="m-doc-collapsible">
+                <a href="#" onclick="return toggle(this)">namespace</a> <a class="m-doc" href="namespace_ase_1_1_loft.html">Loft</a> <span class="m-doc"><a class="m-doc" href="namespace_ase_1_1_loft.html">Loft</a> - A special purpose memory allocator for lock- and obstruction-free thread progress.</span>
+                <ul class="m-doc">
+                  <li>struct <a class="m-doc" href="struct_ase_1_1_loft_1_1_bump_allocator.html">BumpAllocator</a> </li>
+                  <li>struct <a class="m-doc" href="struct_ase_1_1_loft_1_1_loft_buckets.html">LoftBuckets</a> </li>
+                </ul>
+              </li>
+              <li class="m-doc-collapsible">
+                <a href="#" onclick="return toggle(this)">namespace</a> <a class="m-doc" href="namespace_ase_1_1_midi_lib.html">MidiLib</a> <span class="m-doc">Namespace used for Midi Processor implementations.</span>
+                <ul class="m-doc">
+                  <li>struct <a class="m-doc" href="struct_ase_1_1_midi_lib_1_1_midi_feed.html">MidiFeed</a> <span class="m-doc">Aggregation of MIDI events and sequencing information.</span></li>
+                </ul>
+              </li>
+              <li class="m-doc-collapsible">
+                <a href="#" onclick="return toggle(this)">namespace</a> <a class="m-doc" href="namespace_ase_1_1_properties.html">Properties</a> <span class="m-doc">Implementation namespace for <a class="m-doc" href="class_ase_1_1_property.html">Property</a> helpers.</span>
+                <ul class="m-doc">
+                  <li>class <a class="m-doc" href="class_ase_1_1_properties_1_1_bag.html">Bag</a> <span class="m-doc">Helper for construction of <a class="m-doc" href="class_ase_1_1_property.html">Property</a> lists.</span></li>
+                </ul>
+              </li>
+              <li class="m-doc-collapsible">
+                <a href="#" onclick="return toggle(this)">namespace</a> <a class="m-doc" href="namespace_ase_1_1_test.html">Test</a> <span class="m-doc">Helper namespace for unit testing.</span>
+                <ul class="m-doc">
+                  <li>class <a class="m-doc" href="class_ase_1_1_test_1_1_timer.html">Timer</a> </li>
+                </ul>
+              </li>
+              <li>struct <a class="m-doc" href="struct_ase_1_1_aligned_p_o_d.html">AlignedPOD</a> </li>
+              <li>class <a class="m-doc" href="class_ase_1_1_async_blocking_queue.html">AsyncBlockingQueue</a> <span class="m-doc">This is a thread-safe asyncronous queue which blocks in pop() until data is provided through push().</span></li>
+              <li>class <a class="m-doc" href="class_ase_1_1_atomic_bits.html">AtomicBits</a> <span class="m-doc">Vector of atomic bits, operates in blocks of 64 bits.</span></li>
+              <li>class <a class="m-doc" href="class_ase_1_1_atomic_intrusive_stack.html">AtomicIntrusiveStack</a> </li>
+              <li>class <a class="m-doc" href="class_ase_1_1_audio_engine.html">AudioEngine</a> <span class="m-doc">Main handle for <a class="m-doc" href="class_ase_1_1_audio_processor.html">AudioProcessor</a> administration and audio rendering.</span></li>
+              <li class="m-doc-collapsible">
+                <a href="#" onclick="return toggle(this)">class</a> <a class="m-doc" href="class_ase_1_1_audio_processor.html">AudioProcessor</a> <span class="m-doc">Audio signal <a class="m-doc" href="class_ase_1_1_audio_processor.html">AudioProcessor</a> base class, implemented by all effects and instruments.</span>
+                <ul class="m-doc">
+                  <li>class <a class="m-doc" href="class_ase_1_1_audio_processor_1_1_float_buffer.html">FloatBuffer</a> </li>
+                </ul>
+              </li>
+              <li>struct <a class="m-doc" href="struct_ase_1_1_audio_processor_info.html">AudioProcessorInfo</a> <span class="m-doc">Detailed information and common properties of <a class="m-doc" href="class_ase_1_1_audio_processor.html">AudioProcessor</a> subclasses.</span></li>
+              <li>struct <a class="m-doc" href="struct_ase_1_1_audio_transport.html">AudioTransport</a> <span class="m-doc">Transport information for AudioSignal processing.</span></li>
+              <li>class <a class="m-doc" href="class_ase_1_1_auto_seeder.html">AutoSeeder</a> <span class="m-doc"><a class="m-doc" href="class_ase_1_1_auto_seeder.html">AutoSeeder</a> provides non-deterministic seeding entropy.</span></li>
+              <li>struct <a class="m-doc" href="struct_ase_1_1_backtrace_command.html">BacktraceCommand</a> <span class="m-doc">Helper to generate backtraces externally via system(3).</span></li>
+              <li>class <a class="m-doc" href="class_ase_1_1_blob.html">Blob</a> <span class="m-doc">Binary large object storage container.</span></li>
+              <li>class <a class="m-doc" href="class_ase_1_1_borrowed_ptr.html">BorrowedPtr</a> <span class="m-doc">A <a class="m-doc" href="class_ase_1_1_borrowed_ptr.html">BorrowedPtr</a> wraps an object pointer until it is disposed, i.e. returned to the main-thread and deleted.</span></li>
+              <li>struct <a class="m-doc" href="struct_ase_1_1_bus_info.html">BusInfo</a> <span class="m-doc">Structure providing supplementary information about input/output buses.</span></li>
+              <li>struct <a class="m-doc" href="struct_ase_1_1_choice.html">Choice</a> <span class="m-doc">Representation of one possible choice for selection properties.</span></li>
+              <li>class <a class="m-doc" href="class_ase_1_1_clip.html">Clip</a> <span class="m-doc">Container for MIDI note and control events.</span></li>
+              <li>struct <a class="m-doc" href="struct_ase_1_1_clip_note.html">ClipNote</a> <span class="m-doc">Part specific note event representation.</span></li>
+              <li>struct <a class="m-doc" href="struct_ase_1_1_convert_js_trigger.html">ConvertJsTrigger</a> <span class="m-doc">Convert between Jsonipc::JsonValue to <a class="m-doc" href="class_ase_1_1_js_trigger.html">JsTrigger</a>.</span></li>
+              <li>struct <a class="m-doc" href="struct_ase_1_1_convert_value.html">ConvertValue</a> <span class="m-doc">Convert between <a class="m-doc" href="struct_ase_1_1_value.html">Value</a> and Jsonipc::JsonValue.</span></li>
+              <li>struct <a class="m-doc" href="struct_ase_1_1_convert_value_p.html">ConvertValueP</a> <span class="m-doc">Convert between ValueP and Jsonipc::JsonValue.</span></li>
+              <li>struct <a class="m-doc" href="struct_ase_1_1_convert_value_r.html">ConvertValueR</a> <span class="m-doc">Convert between ValueR and Jsonipc::JsonValue.</span></li>
+              <li>struct <a class="m-doc" href="struct_ase_1_1_convert_value_r_p.html">ConvertValueRP</a> <span class="m-doc">Convert between <a class="m-doc poxy-injected poxy-external" href="https://en.cppreference.com/w/cpp/memory/shared_ptr" target="_blank">std::shared_ptr</a>&lt;ValueR&gt; and Jsonipc::JsonValue.</span></li>
+              <li>struct <a class="m-doc" href="struct_ase_1_1_c_p_u_info.html">CPUInfo</a> <span class="m-doc">Acquire information about the runtime architecture and CPU type.</span></li>
+              <li>class <a class="m-doc" href="class_ase_1_1_c_string.html">CString</a> <span class="m-doc">Compact, deduplicating string variant for constant strings that never need to be freed.</span></li>
+              <li>class <a class="m-doc" href="class_ase_1_1_custom_data_container.html">CustomDataContainer</a> </li>
+              <li>class <a class="m-doc" href="class_ase_1_1_custom_data_key.html">CustomDataKey</a> <span class="m-doc"><a class="m-doc" href="class_ase_1_1_custom_data_key.html">CustomDataKey</a> objects are used to identify and manage custom data members of <a class="m-doc" href="class_ase_1_1_custom_data_container.html">CustomDataContainer</a> objects.</span></li>
+              <li>class <a class="m-doc" href="class_ase_1_1_device.html">Device</a> <span class="m-doc">Interface to access <a class="m-doc" href="class_ase_1_1_device.html">Device</a> instances.</span></li>
+              <li>struct <a class="m-doc" href="struct_ase_1_1_device_info.html">DeviceInfo</a> <span class="m-doc">Info for device types.</span></li>
+              <li>class <a class="m-doc" href="class_ase_1_1_dispatcher_source.html">DispatcherSource</a> <span class="m-doc"><a class="m-doc" href="class_ase_1_1_event_loop.html">EventLoop</a> source for handler execution.</span></li>
+              <li>struct <a class="m-doc" href="struct_ase_1_1_driver_entry.html">DriverEntry</a> <span class="m-doc">Driver information for PCM and MIDI handling.</span></li>
+              <li>class <a class="m-doc" href="class_ase_1_1_emittable.html">Emittable</a> <span class="m-doc">Base type for classes with <a class="m-doc" href="struct_ase_1_1_event.html">Event</a> subscription.</span></li>
+              <li>class <a class="m-doc" href="class_ase_1_1_emittable_impl.html">EmittableImpl</a> <span class="m-doc">Implementation type for classes with <a class="m-doc" href="struct_ase_1_1_event.html">Event</a> subscription.</span></li>
+              <li>struct <a class="m-doc" href="struct_ase_1_1_enum_info.html">EnumInfo</a> <span class="m-doc">Get auxiallary enum information.</span></li>
+              <li>struct <a class="m-doc" href="struct_ase_1_1_event.html">Event</a> <span class="m-doc">Structure for callback based notifications.</span></li>
+              <li>class <a class="m-doc" href="class_ase_1_1_event_fd.html">EventFd</a> <span class="m-doc">Wakeup facility for IPC.</span></li>
+              <li>class <a class="m-doc" href="class_ase_1_1_event_list.html">EventList</a> <span class="m-label m-flat m-warning">final</span> <span class="m-doc">Maintain an array of unique <code><a class="m-doc" href="struct_ase_1_1_event.html">Event</a></code> structures with change notification.</span></li>
+              <li>class <a class="m-doc" href="class_ase_1_1_event_loop.html">EventLoop</a> <span class="m-doc">Loop object, polling for events and executing callbacks in accordance.</span></li>
+              <li>class <a class="m-doc" href="class_ase_1_1_event_source.html">EventSource</a> <span class="m-doc"><a class="m-doc" href="class_ase_1_1_event_loop.html">EventLoop</a> source for callback execution.</span></li>
+              <li>class <a class="m-doc" href="class_ase_1_1_fast_mem_array.html">FastMemArray</a> <span class="m-doc">Array with cache-line-alignment containing a fixed numer of PODs.</span></li>
+              <li>union <a class="m-doc" href="union_ase_1_1_float_i_e_e_e754.html">FloatIEEE754</a> </li>
+              <li>class <a class="m-doc" href="class_ase_1_1_friend_allocator.html">FriendAllocator</a> </li>
+              <li>class <a class="m-doc" href="class_ase_1_1_gadget.html">Gadget</a> <span class="m-doc">Base type for classes that have a <a class="m-doc" href="class_ase_1_1_property.html">Property</a>.</span></li>
+              <li>class <a class="m-doc" href="class_ase_1_1_gadget_impl.html">GadgetImpl</a> <span class="m-doc">Base type for classes that have a <a class="m-doc" href="class_ase_1_1_property.html">Property</a>.</span></li>
+              <li>struct <a class="m-doc" href="struct_ase_1_1_group_id.html">GroupId</a> <span class="m-doc">A named ID used to group parameters.</span></li>
+              <li>struct <a class="m-doc" href="struct_ase_1_1_has__serialize__f.html">Has_serialize_f</a> <span class="m-doc">Has_serialize_f&lt;T&gt; - Check if <code>serialize(T&amp;,WritNode&amp;)</code> is provided for <code>T</code>.</span></li>
+              <li>struct <a class="m-doc" href="struct_ase_1_1_id32.html">Id32</a> <span class="m-doc">Helper class for integer IDs up to 32 Bit, possibly of enum type.</span></li>
+              <li>class <a class="m-doc" href="class_ase_1_1_ini_file.html">IniFile</a> <span class="m-doc">Class to parse INI configuration file sections and values.</span></li>
+              <li>class <a class="m-doc" href="class_ase_1_1_ini_writer.html">IniWriter</a> <span class="m-doc">Class to write INI configuration file sections and values.</span></li>
+              <li>class <a class="m-doc" href="class_ase_1_1_js_trigger.html">JsTrigger</a> <span class="m-doc">Callback mechanism for Jsonapi/Jsonipc.</span></li>
+              <li>class <a class="m-doc" href="class_ase_1_1_keccak_crypto_rng.html">KeccakCryptoRng</a> </li>
+              <li>class <a class="m-doc" href="class_ase_1_1_keccak_fast_rng.html">KeccakFastRng</a> </li>
+              <li>class <a class="m-doc" href="class_ase_1_1_keccak_good_rng.html">KeccakGoodRng</a> </li>
+              <li>class <a class="m-doc" href="class_ase_1_1_keccak_rng.html">KeccakRng</a> </li>
+              <li>struct <a class="m-doc" href="struct_ase_1_1_loft_config.html">LoftConfig</a> <span class="m-doc">Configuration for <a class="m-doc" href="namespace_ase_1_1_loft.html">Loft</a> allocations.</span></li>
+              <li>struct <a class="m-doc" href="struct_ase_1_1_loft_stats.html">LoftStats</a> <span class="m-doc">Statistics for <a class="m-doc" href="namespace_ase_1_1_loft.html">Loft</a> allocations.</span></li>
+              <li>struct <a class="m-doc" href="struct_ase_1_1_logscale.html">Logscale</a> <span class="m-doc">Logarithmically map (and invert) a range onto 0…+1.</span></li>
+              <li>class <a class="m-doc" href="class_ase_1_1_main_loop.html">MainLoop</a> <span class="m-doc">An <a class="m-doc" href="class_ase_1_1_event_loop.html">EventLoop</a> implementation that offers public API for running the loop.</span></li>
+              <li>struct <a class="m-doc" href="struct_ase_1_1_midi_event.html">MidiEvent</a> <span class="m-doc"><a class="m-doc" href="struct_ase_1_1_midi_event.html">MidiEvent</a> data structure.</span></li>
+              <li>class <a class="m-doc" href="class_ase_1_1_midi_event_range.html">MidiEventRange</a> <span class="m-doc">A readonly view and iterator into an <a class="m-doc" href="class_ase_1_1_midi_event_stream.html">MidiEventStream</a>.</span></li>
+              <li>class <a class="m-doc" href="class_ase_1_1_midi_event_stream.html">MidiEventStream</a> <span class="m-doc">A stream of writable <a class="m-doc" href="struct_ase_1_1_midi_event.html">MidiEvent</a> structures.</span></li>
+              <li>struct <a class="m-doc" href="struct_ase_1_1_midi_note.html">MidiNote</a> <span class="m-doc">Components of a MIDI note.</span></li>
+              <li>class <a class="m-doc" href="class_ase_1_1_monitor.html">Monitor</a> <span class="m-doc">Interface for monitoring output signals.</span></li>
+              <li>struct <a class="m-doc" href="struct_ase_1_1_mpmc_stack.html">MpmcStack</a> </li>
+              <li>class <a class="m-doc" href="class_ase_1_1_mwc256.html">Mwc256</a> <span class="m-doc">Marsaglia multiply-with-carry generator, period ca 2^255.</span></li>
+              <li>class <a class="m-doc" href="class_ase_1_1_native_device.html">NativeDevice</a> <span class="m-doc">Interface to access <a class="m-doc" href="class_ase_1_1_native_device.html">NativeDevice</a> instances.</span></li>
+              <li>class <a class="m-doc" href="class_ase_1_1_object.html">Object</a> <span class="m-doc">Base type for classes with <a class="m-doc" href="class_ase_1_1_property.html">Property</a> interfaces.</span></li>
+              <li>class <a class="m-doc" href="class_ase_1_1_object_impl.html">ObjectImpl</a> <span class="m-doc">Implementation type for classes with <a class="m-doc" href="class_ase_1_1_property.html">Property</a> interfaces.</span></li>
+              <li>struct <a class="m-doc" href="struct_ase_1_1_ordered_event_list.html">OrderedEventList</a> <span class="m-doc">Container for a sorted array of opaque <code><a class="m-doc" href="struct_ase_1_1_event.html">Event</a></code> structures with binary lookup.</span></li>
+              <li>struct <a class="m-doc" href="struct_ase_1_1_param_info.html">ParamInfo</a> <span class="m-doc">Detailed information and common properties of parameters.</span></li>
+              <li>class <a class="m-doc" href="class_ase_1_1_pcg32_rng.html">Pcg32Rng</a> </li>
+              <li>class <a class="m-doc" href="class_ase_1_1_persistent.html">Persistent</a> <span class="m-label m-flat m-warning">final</span> </li>
+              <li>struct <a class="m-doc" href="struct_ase_1_1_poll_f_d.html">PollFD</a> <span class="m-doc">Mirrors struct pollfd for poll(3posix)</span></li>
+              <li>class <a class="m-doc" href="class_ase_1_1_poll_f_d_source.html">PollFDSource</a> <span class="m-doc"><a class="m-doc" href="class_ase_1_1_event_loop.html">EventLoop</a> source for IO callbacks.</span></li>
+              <li>struct <a class="m-doc" href="struct_ase_1_1_probe_features.html">ProbeFeatures</a> <span class="m-doc">Bits representing a selection of probe sample data features.</span></li>
+              <li>class <a class="m-doc" href="class_ase_1_1_processor_manager.html">ProcessorManager</a> <span class="m-doc">Interface for management, connecting and processing of <a class="m-doc" href="class_ase_1_1_audio_processor.html">AudioProcessor</a> instances.</span></li>
+              <li>class <a class="m-doc" href="class_ase_1_1_project.html">Project</a> <span class="m-doc">Projects support loading, saving, playback and act as containers for all other sound objects.</span></li>
+              <li>class <a class="m-doc" href="class_ase_1_1_property.html">Property</a> <span class="m-doc">A <a class="m-doc" href="class_ase_1_1_property.html">Property</a> allows querying, setting and monitoring of an object property.</span></li>
+              <li>class <a class="m-doc" href="class_ase_1_1_re.html">Re</a> <span class="m-label m-flat m-warning">final</span> <span class="m-doc">Wrapper for <a class="m-doc-external poxy-external" href="http://en.cppreference.com/w/cpp/regex/basic_regex.html" target="_blank">std::<wbr/>regex</a> to simplify usage and reduce compilation time.</span></li>
+              <li>class <a class="m-doc" href="class_ase_1_1_resampler2.html">Resampler2</a> </li>
+              <li>struct <a class="m-doc" href="struct_ase_1_1_resource.html">Resource</a> <span class="m-doc">Description of a resource, possibly nested.</span></li>
+              <li>class <a class="m-doc" href="class_ase_1_1_resource_crawler.html">ResourceCrawler</a> <span class="m-doc">Helper to crawl hierarchical resources.</span></li>
+              <li>class <a class="m-doc" href="class_ase_1_1_serializable.html">Serializable</a> <span class="m-doc">Interface for serializable objects with Reflink support.</span></li>
+              <li>class <a class="m-doc" href="class_ase_1_1_server.html">Server</a> <span class="m-doc">Central singleton, serves as API entry point.</span></li>
+              <li>struct <a class="m-doc" href="struct_ase_1_1_s_h_a3__224.html">SHA3_224</a> </li>
+              <li>struct <a class="m-doc" href="struct_ase_1_1_s_h_a3__256.html">SHA3_256</a> </li>
+              <li>struct <a class="m-doc" href="struct_ase_1_1_s_h_a3__384.html">SHA3_384</a> </li>
+              <li>struct <a class="m-doc" href="struct_ase_1_1_s_h_a3__512.html">SHA3_512</a> </li>
+              <li>struct <a class="m-doc" href="struct_ase_1_1_s_h_a_k_e128.html">SHAKE128</a> </li>
+              <li>struct <a class="m-doc" href="struct_ase_1_1_s_h_a_k_e256.html">SHAKE256</a> </li>
+              <li>class <a class="m-doc" href="class_ase_1_1_shared_base.html">SharedBase</a> <span class="m-doc">Common base type for polymorphic classes managed by <code><a class="m-doc-external poxy-external" href="http://en.cppreference.com/w/cpp/memory/shared_ptr.html" target="_blank">std::<wbr/>shared_ptr</a>&lt;&gt;</code>.</span></li>
+              <li>class <a class="m-doc" href="class_ase_1_1_strings.html">Strings</a> <span class="m-doc">Convenience Constructor for StringSeq or <a class="m-doc poxy-injected poxy-external" href="https://en.cppreference.com/w/cpp/container/vector" target="_blank">std::vector</a>&lt;<a class="m-doc poxy-injected poxy-external" href="https://en.cppreference.com/w/cpp/string/basic_string" target="_blank">std::string</a>&gt;</span></li>
+              <li>class <a class="m-doc" href="class_ase_1_1_task_registry.html">TaskRegistry</a> <span class="m-doc">The task registry keeps track of runtime threads for profiling and statistical purposes.</span></li>
+              <li>struct <a class="m-doc" href="struct_ase_1_1_task_status.html">TaskStatus</a> <span class="m-doc">Acquire information about a task (process or thread) at runtime.</span></li>
+              <li>struct <a class="m-doc" href="struct_ase_1_1_telemetry_field.html">TelemetryField</a> <span class="m-doc">Telemetry segment location.</span></li>
+              <li>struct <a class="m-doc" href="struct_ase_1_1_telemetry_segment.html">TelemetrySegment</a> <span class="m-doc">Telemetry segment location.</span></li>
+              <li>struct <a class="m-doc" href="struct_ase_1_1_tick_signature.html">TickSignature</a> <span class="m-doc">Musical time signature and tick conversions.</span></li>
+              <li>class <a class="m-doc" href="class_ase_1_1_timed_source.html">TimedSource</a> <span class="m-doc"><a class="m-doc" href="class_ase_1_1_event_loop.html">EventLoop</a> source for timer execution.</span></li>
+              <li>class <a class="m-doc" href="class_ase_1_1_track.html">Track</a> <span class="m-doc">Container for <a class="m-doc" href="class_ase_1_1_clip.html">Clip</a> objects and sequencing information.</span></li>
+              <li class="m-doc-collapsible">
+                <a href="#" onclick="return toggle(this)">class</a> <a class="m-doc" href="class_ase_1_1_track_impl.html">TrackImpl</a> <span class="m-doc"><a class="m-doc" href="class_ase_1_1_track.html">Ase::<wbr/>Track</a> implementation.</span>
+                <ul class="m-doc">
+                  <li>class <a class="m-doc" href="class_ase_1_1_track_impl_1_1_clip_scout.html">ClipScout</a> <span class="m-doc">MIDI clip playback succession generator.</span></li>
+                </ul>
+              </li>
+              <li>struct <a class="m-doc" href="struct_ase_1_1_user_note.html">UserNote</a> <span class="m-doc">Contents of user interface notifications.</span></li>
+              <li>class <a class="m-doc" href="class_ase_1_1_u_signal_source.html">USignalSource</a> <span class="m-doc"><a class="m-doc" href="class_ase_1_1_event_loop.html">EventLoop</a> source for handler execution.</span></li>
+              <li>struct <a class="m-doc" href="struct_ase_1_1_value.html">Value</a> <span class="m-doc"><a class="m-doc" href="struct_ase_1_1_value.html">Value</a> type used to interface with various property types.</span></li>
+              <li>struct <a class="m-doc" href="struct_ase_1_1_virtual_base.html">VirtualBase</a> <span class="m-doc">Common base type to allow casting between polymorphic classes.</span></li>
+              <li>class <a class="m-doc" href="class_ase_1_1_writ.html">Writ</a> <span class="m-doc">Document containing all information needed to serialize and deserialize a <a class="m-doc" href="struct_ase_1_1_value.html">Value</a>.</span></li>
+              <li>struct <a class="m-doc" href="struct_ase_1_1_writ_converter.html">WritConverter</a> <span class="m-doc">Template to specialize string conversion for various data types.</span></li>
+              <li>class <a class="m-doc" href="class_ase_1_1_writ_node.html">WritNode</a> <span class="m-doc">One entry in a <a class="m-doc" href="class_ase_1_1_writ.html">Writ</a> serialization document.</span></li>
+            </ul>
+          </li>
+        </ul>
+        <script>
+        function toggle(e) {
+            e.parentElement.className = e.parentElement.className == 'm-doc-collapsible' ?
+                'm-doc-expansible' : 'm-doc-collapsible';
+            return false;
+        }
+        /* Collapse all nodes marked as such. Doing it via JS instead of
+           directly in markup so disabling it doesn't harm usability. The list
+           is somehow regenerated on every iteration and shrinks as I change
+           the classes. It's not documented anywhere and I'm not sure if this
+           is the same across browsers, so I am going backwards in that list to
+           be sure. */
+        var collapsed = document.getElementsByClassName("collapsed");
+        for(var i = collapsed.length - 1; i >= 0; --i)
+            collapsed[i].className = 'm-doc-expansible';
+        </script>
+      </div>
+    </div>
+  </div>
+</article></main>
+<div class="m-doc-search" id="search">
+  <a href="#!" onclick="return hideSearch()"></a>
+  <div class="m-container">
+    <div class="m-row">
+      <div class="m-col-m-8 m-push-m-2">
+        <div class="m-doc-search-header m-text m-small">
+          <div><span class="m-label m-default">Tab</span> / <span class="m-label m-default">T</span> to search, <span class="m-label m-default">Esc</span> to close</div>
+          <div id="search-symbolcount">…</div>
+        </div>
+        <div class="m-doc-search-content">
+          <form>
+            <input autocomplete="off" autofocus="autofocus" disabled="disabled" id="search-input" name="q" placeholder="Loading …" spellcheck="false" type="search"/>
+          </form>
+          <noscript class="m-text m-danger m-text-center">Unlike everything else in the docs, the search functionality <em>requires</em> JavaScript.</noscript>
+          <div class="m-text m-dim m-text-center" id="search-help">
+            <p class="m-noindent">Search for symbols, directories, files, pages or
+            modules. You can omit any prefix from the symbol or file path; adding a
+            <code>:</code> or <code>/</code> suffix lists all members of given symbol or
+            directory.</p>
+            <p class="m-noindent">Use <span class="m-label m-dim">↓</span>
+            / <span class="m-label m-dim">↑</span> to navigate through the list,
+            <span class="m-label m-dim">Enter</span> to go.
+            <span class="m-label m-dim">Tab</span> autocompletes common prefix, you can
+            copy a link to the result using <span class="m-label m-dim">⌘</span>
+            <span class="m-label m-dim">L</span> while <span class="m-label m-dim">⌘</span>
+            <span class="m-label m-dim">M</span> produces a Markdown link.</p>
+          </div>
+          <div class="m-text m-warning m-text-center" id="search-notfound">Sorry, nothing was found.</div>
+          <ul id="search-results"></ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="search-v2.js"></script>
+<script async="async" src="searchdata-v2.js"></script>
+<footer><nav>
+  <div class="m-container">
+    <div class="m-row">
+      <div class="m-col-l-10 m-push-l-1">
+        
+<a class="poxy-external" href="https://github.com/tim-janik/anklang" target="_blank">GitHub</a>
+• <a class="poxy-external" href="https://github.com/tim-janik/anklang/issues" target="_blank">Report an issue</a>
+• <a class="poxy-external" href="https://mozilla.org/MPL/2.0" target="_blank">License</a>
+• <a download="" href="Anklang.tagfile.xml" target="_blank" type="text/xml">Doxygen tagfile</a>
+<br/><br/>
+Site generated using <a class="poxy-external" href="https://github.com/marzer/poxy/" target="_blank">Poxy</a>
+
+      </div>
+    </div>
+  </div>
+</nav></footer>
+
+
+</body></html>

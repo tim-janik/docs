@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8"/>
+  <title>ase/strings.hh file | Anklang Anklang - Programming Reference</title>
+  <link href="favicon.svg" rel="icon" type="image/svg+xml"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="#22272e" name="theme-color"/>
+  <link href="poxy/poxy.css" referrerpolicy="no-referrer" rel="stylesheet"/>
+  <script src="poxy/poxy.js"></script>
+  <script>initialize_theme("dark");</script>
+  <meta content="Anklang" name="twitter:title"/>
+  <meta content="Anklang" property="og:title"/>
+  <meta content="Anklang" itemprop="name"/>
+  <meta content="Tim Janik" name="author"/>
+  <meta content="Tim Janik" property="article:author"/>
+  <meta content="Anklang - Programming Reference" name="description"/>
+  <meta content="Anklang - Programming Reference" name="twitter:description"/>
+  <meta content="Anklang - Programming Reference" property="og:description"/>
+  <meta content="Anklang - Programming Reference" itemprop="description"/>
+  <meta content="telephone=no" name="format-detection"/>
+  <meta content="Poxy v0.12.3" name="generator"/>
+  <meta content="strict-origin-when-cross-origin" name="referrer"/>
+</head>
+<body class="poxy-has-toc">
+<header><nav id="navigation">
+  <div class="m-container">
+    <div class="m-row">
+      <a class="m-col-t-8 m-col-m-none m-left-m" href="index.html" id="m-navbar-brand"><svg class="poxy-injected-svg" height="32" id="poxy-injected-svg-0" version="1.1" viewBox="0 0 64 64" width="32" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg"><metadata><rdf:rdf><cc:work><cc:license rdf:resource="MPL-2.0"></cc:license></cc:work></rdf:rdf></metadata><g><rect height="60" rx="1" ry="1" style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:4;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" width="60" x="2" y="2"></rect><g><path d="M 19.078125,2 V 2.5 H 14 V 40.972656 C 13.97726,42.63277 15.372472,44 17,44 h 2.023438 L 19,61.994141 22.921875,62 22.945312,44 H 25 c 1.627528,0 3.02274,-1.36723 3,-3.027344 V 2.5 H 23 V 2.0058594 Z" style="fill:#000000;fill-opacity:1"></path><path d="m 41.078399,1.9999594 v 0.5 H 36.000274 V 40.972615 c -0.02274,1.660114 1.372472,3.027344 3,3.027344 h 2.023438 L 41.000272,61.9941 44.922147,62 44.945587,44 h 2.054688 c 1.627528,0 3.02274,-1.36723 3,-3.027344 V 2.4999594 h -5 V 2.0058188 Z" style="fill:#000000;fill-opacity:1"></path></g><rect height="21" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:4;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" width="60" x="2" y="2"></rect><g><circle cx="11.5" cy="11" r="5.5" style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:4.00000095;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"></circle><circle cx="32" cy="11" r="5.5" style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:4.00000095;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"></circle><circle cx="52.5" cy="11" r="5.5" style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:4.00000095;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"></circle></g></g></svg>Anklang <span class="m-thin">Anklang - Programming Reference</span></a>
+      <div class="m-col-t-4 m-hide-m m-text-right m-nopadr">
+        <a class="m-doc-search-icon" accesskey="f" href="#search" onclick="return showSearch()" title="Search"><svg style="height: 0.9rem;" viewBox="0 0 16 16">
+          <path d="m6 0c-3.31 0-6 2.69-6 6 0 3.31 2.69 6 6 6 1.49 0 2.85-0.541 3.89-1.44-0.0164 0.338 0.147 0.759 0.5 1.15l3.22 3.79c0.552 0.614 1.45 0.665 2 0.115 0.55-0.55 0.499-1.45-0.115-2l-3.79-3.22c-0.392-0.353-0.812-0.515-1.15-0.5 0.895-1.05 1.44-2.41 1.44-3.89 0-3.31-2.69-6-6-6zm0 1.56a4.44 4.44 0 0 1 4.44 4.44 4.44 4.44 0 0 1-4.44 4.44 4.44 4.44 0 0 1-4.44-4.44 4.44 4.44 0 0 1 4.44-4.44z" id="m-doc-search-icon-path"></path>
+        </svg></a>
+        <a href="#navigation" id="m-navbar-show" title="Show navigation"></a>
+        <a href="#" id="m-navbar-hide" title="Hide navigation"></a>
+      </div>
+      <div class="m-col-t-12 m-show-m m-col-m-none m-right-m" id="m-navbar-collapse">
+        <div class="m-row">
+          <ol class="m-col-t-6 m-col-m-none">
+            <li><a href="pages.html">Pages</a></li>
+            <li><a href="files.html">Files</a></li>
+            <li><a href="namespaces.html">Namespaces</a></li>
+          </ol>
+          <ol class="m-col-t-6 m-col-m-none" start="4">
+            <li><a href="annotated.html">Classes</a></li>
+            <li><a class="poxy-icon repo github poxy-external" href="https://github.com/tim-janik/anklang" target="_blank" title="View on GitHub"><svg id="poxy-repo-icon" version="1.1" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg"><path d="M25,1.23a24.37,24.37,0,0,0-7.7,47.5C18.51,49,19,48.2,19,47.56s0-2.12,0-4.15c-6.78,1.47-8.21-3.27-8.21-3.27C9.61,37.33,8,36.58,8,36.58c-2.21-1.51.17-1.48.17-1.48a5.12,5.12,0,0,1,3.73,2.51c2.17,3.72,5.7,2.65,7.09,2a5.25,5.25,0,0,1,1.55-3.26c-5.41-.61-11.1-2.7-11.1-12A9.41,9.41,0,0,1,12,17.79a8.75,8.75,0,0,1,.24-6.45s2-.66,6.7,2.49a23.1,23.1,0,0,1,12.2,0c4.66-3.15,6.7-2.49,6.7-2.49A8.75,8.75,0,0,1,38,17.79a9.41,9.41,0,0,1,2.51,6.54c0,9.36-5.7,11.42-11.13,12a5.83,5.83,0,0,1,1.65,4.51c0,3.26,0,5.89,0,6.69,0,.65.44,1.41,1.68,1.17A24.38,24.38,0,0,0,25,1.23Z" fill="currentColor"></path></svg></a></li>
+            <li><a class="poxy-icon theme" href="javascript:void(null);" id="poxy-theme-switch" onclick="toggle_theme(); return false;" role="button" title="Toggle dark and light themes"><svg id="poxy-theme-switch-img" version="1.1" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><circle cx="185.6708" cy="183.8122" fill="currentColor" r="65.625"></circle><path d="M185.6708,87.5622a13.1256,13.1256,0,0,0,13.125-13.125V52.5622a13.125,13.125,0,1,0-26.25,0v21.875A13.1257,13.1257,0,0,0,185.6708,87.5622Z" fill="currentColor"></path><path d="M99.051,115.7519a13.1236,13.1236,0,1,0,18.56-18.56L102.1442,81.726a13.1236,13.1236,0,0,0-18.5595,18.56Z" fill="currentColor"></path><path d="M89.4208,183.8122a13.1257,13.1257,0,0,0-13.125-13.125H54.4208a13.125,13.125,0,0,0,0,26.25h21.875A13.1256,13.1256,0,0,0,89.4208,183.8122Z" fill="currentColor"></path><path d="M99.051,251.8725,83.5847,267.3431a13.1236,13.1236,0,1,0,18.56,18.56l15.4663-15.4706a13.1236,13.1236,0,1,0-18.5595-18.56Z" fill="currentColor"></path><path d="M185.6708,280.0622a13.1258,13.1258,0,0,0-13.125,13.125v21.875a13.125,13.125,0,0,0,26.25,0v-21.875A13.1257,13.1257,0,0,0,185.6708,280.0622Z" fill="currentColor"></path><path d="M272.2907,251.8725a13.1236,13.1236,0,1,0-18.56,18.56l15.4663,15.4706a13.1236,13.1236,0,1,0,18.56-18.56Z" fill="currentColor"></path><path d="M330.0458,183.8122a13.1257,13.1257,0,0,0-13.125-13.125h-21.875a13.125,13.125,0,0,0,0,26.25h21.875A13.1256,13.1256,0,0,0,330.0458,183.8122Z" fill="currentColor"></path><path d="M263.0109,119.5971a13.0824,13.0824,0,0,0,9.28-3.8452l15.4663-15.4663a13.1236,13.1236,0,1,0-18.56-18.56L253.7312,97.1923a13.125,13.125,0,0,0,9.28,22.4048Z" fill="currentColor"></path><path d="M456.9379,401.6714a63.97,63.97,0,0,1-14.9963,7.2055c-19.6448,6.5283-41.8787,2.9566-58.1439-9.8523a68.9311,68.9311,0,0,1-10.835-10.8339c-12.8088-16.2663-16.3806-38.5-9.8523-58.1471a63.8444,63.8444,0,0,1,7.2077-14.9931,8.8036,8.8036,0,0,0-10.1172-13.3034,87.5188,87.5188,0,1,0,110.0372,110.04A8.8,8.8,0,0,0,456.9379,401.6714Z" fill="currentColor"></path></svg></a></li>
+            <li class="m-show-m"><a class="m-doc-search-icon" href="#search" onclick="return showSearch()" title="Search"><svg style="height: 0.9rem;" viewBox="0 0 16 16">
+              <use href="#m-doc-search-icon-path"></use>
+            </svg></a></li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav></header>
+<main><article>
+  <div class="m-container m-container-inflatable">
+    <div class="m-row">
+      <div class="m-col-l-10 m-push-l-1">
+        <h1>
+          <span class="m-breadcrumb"><a href="dir_348db03b1ba8af29dd5c640acd69ada0.html">ase</a>/</span>strings.hh <span class="m-thin">file</span>
+        </h1>
+        <nav class="m-block m-default poxy-toc" id="poxy-toc">
+          <h3>Contents</h3>
+          <ul>
+            <li>
+              Reference
+              <ul>
+                <li><a href="#namespaces">Namespaces</a></li>
+                <li><a href="#nested-classes">Classes</a></li>
+                <li><a href="#func-members">Functions</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+<p><br/></p>
+        <section id="namespaces">
+          <h2><a href="#namespaces">Namespaces</a></h2>
+          <dl class="m-doc">
+            <dt>namespace <a class="m-doc" href="namespace_ase.html">Ase</a></dt>
+            <dd>The Anklang C++ API namespace.</dd>
+          </dl>
+        </section>
+        <section id="nested-classes">
+          <h2><a href="#nested-classes">Classes</a></h2>
+          <dl class="m-doc">
+            <dt>
+              class <a class="m-doc" href="class_ase_1_1_strings.html">Ase::Strings</a>
+            </dt>
+            <dd>Convenience Constructor for StringSeq or <a class="m-doc poxy-injected poxy-external" href="https://en.cppreference.com/w/cpp/container/vector" target="_blank">std::vector</a>&lt;<a class="m-doc poxy-injected poxy-external" href="https://en.cppreference.com/w/cpp/string/basic_string" target="_blank">std::string</a>&gt;</dd>
+          </dl>
+        </section>
+        <section id="func-members">
+          <h2><a href="#func-members">Functions</a></h2>
+          <dl class="m-doc">
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a class="m-doc" href="namespace_ase.html#a8889e1663833404fd023f9eac7808c53">cstrings_to_vector</a>(</span><span class="m-doc-wrap">const char* s,
+              ...) -&gt; <a class="m-doc" href="namespace_ase.html#a444d3b63203b49bc45b14c9d0761453b">StringS</a></span>
+            </dt>
+            <dd>Construct a StringS from a NULL terminated list of string arguments.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a class="m-doc" href="namespace_ase.html#ac82abaa4e5a5f6f48035c7c56f53c8a0">current_locale_strtold</a>(</span><span class="m-doc-wrap">const char* nptr,
+              char** endptr) -&gt; long double</span>
+            </dt>
+            <dd>Parse a double from a string ala strtod(), trying locale specific characters and POSIX/C formatting.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">void <a class="m-doc" href="namespace_ase.html#af3a2aa3c0485e597bd9c04fe44ef393b">memset4</a>(</span><span class="m-doc-wrap"><a class="m-doc" href="namespace_ase.html#ad2f22b1cad158ece02d3f37787ad39f9">uint32</a>* mem,
+              <a class="m-doc" href="namespace_ase.html#ad2f22b1cad158ece02d3f37787ad39f9">uint32</a> filler,
+              <a class="m-doc" href="namespace_ase.html#ad69887c4e893bf027b4aa6237d8c08d7">uint</a> length)</span>
+            </dt>
+            <dd>Fill a memory area with a 32-bit quantitiy.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a class="m-doc" href="namespace_ase.html#a80a78725e7e8df58429f1b8fca0acca7">posix_locale_strtold</a>(</span><span class="m-doc-wrap">const char* nptr,
+              char** endptr) -&gt; long double</span>
+            </dt>
+            <dd>Parse a double from a string ala strtod(), trying locale specific characters and POSIX/C formatting.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a class="m-doc" href="namespace_ase.html#ac879cb580c8208d885b7b627b524a162">string_canonify</a>(</span><span class="m-doc-wrap">const <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a>&amp; string,
+              const <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a>&amp; valid_chars,
+              const <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a>&amp; substitute) -&gt; <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a></span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a class="m-doc" href="namespace_ase.html#a48a9816eec56a6896cff689a480e0d04">string_capitalize</a>(</span><span class="m-doc-wrap">const <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a>&amp; str,
+              <a class="m-doc poxy-injected poxy-external" href="https://en.cppreference.com/w/cpp/types/size_t" target="_blank">size_t</a> maxn,
+              bool rest_tolower) -&gt; <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a></span>
+            </dt>
+            <dd>Capitalize words, so the first letter is upper case, the rest lower case.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a class="m-doc" href="namespace_ase.html#a5de0bdf98eb07faebd2b6fc706e4eec6">string_casecmp</a>(</span><span class="m-doc-wrap">const <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a>&amp; s1,
+              const <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a>&amp; s2) -&gt; int</span>
+            </dt>
+            <dd>Like strcasecmp(3) for UTF-8 strings.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a class="m-doc" href="namespace_ase.html#a14221d6445104558d382ca61347bfe35">string_casefold</a>(</span><span class="m-doc-wrap">const <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a>&amp; src) -&gt; <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a></span>
+            </dt>
+            <dd>Yield UTF-8 string useful for case insensitive comparisons.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a class="m-doc" href="namespace_ase.html#a0ad2ab23f2678d1c1fbe410d3122beae">string_cmp</a>(</span><span class="m-doc-wrap">const <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a>&amp; s1,
+              const <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a>&amp; s2) -&gt; int</span>
+            </dt>
+            <dd>Like strcmp(3) for UTF-8 strings.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a class="m-doc" href="namespace_ase.html#a56287c6209f7b222d31b0ea9009ccd5f">string_cmp_uuid</a>(</span><span class="m-doc-wrap">const <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a>&amp; uuid_string1,
+              const <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a>&amp; uuid_string2) -&gt; int</span>
+            </dt>
+            <dd>Returns whether <em>uuid_string1</em> compares smaller (-1), equal (0) or greater (+1) to <em>uuid_string2</em>.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a class="m-doc" href="namespace_ase.html#ada811b3e347a1b626feee18985792d8e">string_endswith</a>(</span><span class="m-doc-wrap">const <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a>&amp; string,
+              const <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a>&amp; fragment) -&gt; bool</span>
+            </dt>
+            <dd>Returns whether <em>string</em> ends with <em>fragment</em>.</dd>
+            <dt>
+              <div class="m-doc-template">template&lt;class... Args&gt;</div>
+              <span class="m-doc-wrap-bumper">auto <a class="m-doc" href="namespace_ase.html#a3ae809e6556ad2e960eba9abf672ef7f">string_format</a>(</span><span class="m-doc-wrap">const char* format,
+              const Args&amp;... args) -&gt; ASE_NOINLINE String</span>
+            </dt>
+            <dd>Formatted printing ala printf() into a String, using the POSIX/C locale.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a class="m-doc" href="namespace_ase.html#acc252ba770f7fdac5f4eef00e47bd02b">string_from_bool</a>(</span><span class="m-doc-wrap">bool value) -&gt; <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a></span>
+            </dt>
+            <dd>Convert a boolean value into a string.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a class="m-doc" href="namespace_ase.html#a0b172cbfb257f99ad9bdecf7afcd85a7">string_from_cquote</a>(</span><span class="m-doc-wrap">const <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a>&amp; input) -&gt; <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a></span>
+            </dt>
+            <dd>Parse a possibly quoted C string into regular string.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a class="m-doc" href="namespace_ase.html#a3226308fc4541ee90bf1ccfbd65903c3">string_from_double</a>(</span><span class="m-doc-wrap">double value) -&gt; <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a></span>
+            </dt>
+            <dd>Convert a double into a string, using the POSIX/C locale.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a class="m-doc" href="namespace_ase.html#a7abd22e8f861206c7d676c2f251c2cce">string_from_double_vector</a>(</span><span class="m-doc-wrap">const <a class="m-doc-external poxy-external" href="http://en.cppreference.com/w/cpp/container/vector.html" target="_blank">std::<wbr/>vector</a>&lt;double&gt;&amp; dvec,
+              const <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a>&amp; delim) -&gt; <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a></span>
+            </dt>
+            <dd>Construct a string out of all double values passed in <em>dvec</em>, separated by <em>delim</em>.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a class="m-doc" href="namespace_ase.html#a0d2edaba6b0ebebb517d0a82919866ce">string_from_errno</a>(</span><span class="m-doc-wrap">int errno_val) -&gt; <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a></span>
+            </dt>
+            <dd>Returns a String describing the passed in errno value, similar to strerror().</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a class="m-doc" href="namespace_ase.html#aeee40af2c2179d445a58dbd5ccf88566">string_from_float</a>(</span><span class="m-doc-wrap">float value) -&gt; <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a></span>
+            </dt>
+            <dd>Convert a float into a string, using the POSIX/C locale.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a class="m-doc" href="namespace_ase.html#a640ef72b4647ae0c21ef1ec921f581c7">string_from_int</a>(</span><span class="m-doc-wrap"><a class="m-doc" href="namespace_ase.html#a478a1328a0bd673e18c58943f4bc0655">int64</a> value) -&gt; <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a></span>
+            </dt>
+            <dd>Convert a 64bit signed integer into a string.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a class="m-doc" href="namespace_ase.html#a3086a9a5db9a2c53ed5ae39d14a9222a">string_from_long_double</a>(</span><span class="m-doc-wrap">long double value) -&gt; <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a></span>
+            </dt>
+            <dd>Convert a long double into a string, using the POSIX/C locale.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a class="m-doc" href="namespace_ase.html#a859cf0ee2e5294f424038c1b03d226bb">string_from_pretty_function_name</a>(</span><span class="m-doc-wrap">const char* cxx_pretty_function) -&gt; <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a></span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <div class="m-doc-template">template&lt;typename Type&gt;</div>
+              <span class="m-doc-wrap-bumper">auto <a class="m-doc" href="namespace_ase.html#af06e887cc61099edfa0d33f4fc385e6b">string_from_type</a>(</span><span class="m-doc-wrap">Type value) -&gt; String</span>
+            </dt>
+            <dd>Create a <em>string</em> from a templated argument value, such as bool, int, double.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a class="m-doc" href="namespace_ase.html#a6be918cec912ea33c5e9647856b18bba">string_from_uint</a>(</span><span class="m-doc-wrap"><a class="m-doc" href="namespace_ase.html#a13d169f5b0e9b257c6964c67ae75ec91">uint64</a> value) -&gt; <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a></span>
+            </dt>
+            <dd>Convert a 64bit unsigned integer into a string.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a class="m-doc" href="namespace_ase.html#ab953202162535d1d769f4b073e08db56">string_has_int</a>(</span><span class="m-doc-wrap">const <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a>&amp; string) -&gt; bool</span>
+            </dt>
+            <dd>Checks if a string contains a digit, optionally preceeded by whitespaces.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a class="m-doc" href="namespace_ase.html#a2c5a8c2c59882690d843c7f87c596769">string_hexdump</a>(</span><span class="m-doc-wrap">const void* addr,
+              <a class="m-doc poxy-injected poxy-external" href="https://en.cppreference.com/w/cpp/types/size_t" target="_blank">size_t</a> length,
+              <a class="m-doc poxy-injected poxy-external" href="https://en.cppreference.com/w/cpp/types/size_t" target="_blank">size_t</a> initial_offset) -&gt; <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a></span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a class="m-doc" href="namespace_ase.html#a2d8b9e1966f0e7ba7fd3d1a961c0df97">string_is_canonified</a>(</span><span class="m-doc-wrap">const <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a>&amp; string,
+              const <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a>&amp; valid_chars) -&gt; bool</span>
+            </dt>
+            <dd>Check if <a class="m-doc" href="namespace_ase.html#ac879cb580c8208d885b7b627b524a162">string_<wbr/>canonify()</a> would modify <em>string</em>.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a class="m-doc" href="namespace_ase.html#a2339b1f8764d04f9b50e7ccf7ea80641">string_is_uuid</a>(</span><span class="m-doc-wrap">const <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a>&amp; uuid_string) -&gt; bool</span>
+            </dt>
+            <dd>Returns whether <em>uuid_string</em> contains a properly formatted UUID string.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a class="m-doc" href="namespace_ase.html#a2308b9afb0ff1221603a500a52e708fe">string_join</a>(</span><span class="m-doc-wrap">const <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a>&amp; junctor,
+              const <a class="m-doc" href="namespace_ase.html#a444d3b63203b49bc45b14c9d0761453b">StringS</a>&amp; strvec) -&gt; <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a></span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <div class="m-doc-template">template&lt;class... Args&gt;</div>
+              <span class="m-doc-wrap-bumper">auto <a class="m-doc" href="namespace_ase.html#a0fa1d7121b1e6228a6697f5a2c023619">string_locale_format</a>(</span><span class="m-doc-wrap">const char* format,
+              const Args&amp;... args) -&gt; ASE_NOINLINE String</span>
+            </dt>
+            <dd>Formatted printing ala printf() into a String, using the current locale.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a class="m-doc" href="namespace_ase.html#afcea6886e39c04f29d2f2210bfe6095d">string_locale_vprintf</a>(</span><span class="m-doc-wrap">const char* format,
+              <a class="m-doc-external poxy-external" href="http://en.cppreference.com/w/cpp/utility/variadic/va_list.html" target="_blank">va_<wbr/>list</a> vargs) -&gt; <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a></span>
+            </dt>
+            <dd>Formatted printing like string_vprintf using the current locale.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a class="m-doc" href="namespace_ase.html#a3f15750c2657a21f750d01e449fadb06">string_lstrip</a>(</span><span class="m-doc-wrap">const <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a>&amp; input) -&gt; <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a></span>
+            </dt>
+            <dd>Strip whitespaces from the left of a string.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a class="m-doc" href="namespace_ase.html#ae0f73fbdfa3588f40364f1024954e62c">string_match_identifier</a>(</span><span class="m-doc-wrap">const <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a>&amp; ident1,
+              const <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a>&amp; ident2) -&gt; bool</span>
+            </dt>
+            <dd>Check equality of strings canonicalized to "[0-9a-z_]+".</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a class="m-doc" href="namespace_ase.html#a3ecb71eb25317b14c7ac82163268a109">string_match_identifier_tail</a>(</span><span class="m-doc-wrap">const <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a>&amp; ident,
+              const <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a>&amp; tail) -&gt; bool</span>
+            </dt>
+            <dd>Variant of <a class="m-doc" href="namespace_ase.html#ae0f73fbdfa3588f40364f1024954e62c">string_<wbr/>match_<wbr/>identifier()</a> that matches <em>tail</em> against <em>ident</em> at word boundary.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a class="m-doc" href="namespace_ase.html#ac6e0fe294134776cdf2b3bab565f704f">string_multiply</a>(</span><span class="m-doc-wrap">const <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a>&amp; s,
+              <a class="m-doc" href="namespace_ase.html#a13d169f5b0e9b257c6964c67ae75ec91">uint64</a> count) -&gt; <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a></span>
+            </dt>
+            <dd>Reproduce a string <em>s</em> for <em>count</em> times.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a class="m-doc" href="namespace_ase.html#ab97e2203756658ff9f944941fbc5e0dd">string_normalize_nfc</a>(</span><span class="m-doc-wrap">const <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a>&amp; src) -&gt; <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a></span>
+            </dt>
+            <dd>Yield normalized composed UTF-8 string.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a class="m-doc" href="namespace_ase.html#a55d3a75caca8101885f9778bb0fa6b76">string_normalize_nfd</a>(</span><span class="m-doc-wrap">const <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a>&amp; src) -&gt; <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a></span>
+            </dt>
+            <dd>Yield normalized decomposed UTF-8 string.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a class="m-doc" href="namespace_ase.html#a9fb06f38f35a111e93f51aae3f48b2c4">string_normalize_nfkc</a>(</span><span class="m-doc-wrap">const <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a>&amp; src) -&gt; <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a></span>
+            </dt>
+            <dd>Formatting stripped normalized composed UTF-8 string.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a class="m-doc" href="namespace_ase.html#ab9703c687fb347d3475108fd83ea966e">string_normalize_nfkd</a>(</span><span class="m-doc-wrap">const <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a>&amp; src) -&gt; <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a></span>
+            </dt>
+            <dd>Formatting stripped normalized decomposed UTF-8 string.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a class="m-doc" href="namespace_ase.html#aa9914cc83579ad0c0912c96190b6b939">string_option_check</a>(</span><span class="m-doc-wrap">const <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a>&amp; option_string,
+              const <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a>&amp; option) -&gt; bool</span>
+            </dt>
+            <dd>Check if an option is set/unset in an options list string.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a class="m-doc" href="namespace_ase.html#a6f970bb6447d1e33dedc171b82412e99">string_option_find</a>(</span><span class="m-doc-wrap">const <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a>&amp; config,
+              const <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a>&amp; feature,
+              const <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a>&amp; fallback) -&gt; <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a></span>
+            </dt>
+            <dd>Find <em>feature</em> in <em>config</em>, return its value or <em>fallback</em>.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a class="m-doc" href="namespace_ase.html#aba4acf4a89b9c88811339143268c4e78">string_option_get</a>(</span><span class="m-doc-wrap">const <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a>&amp; option_string,
+              const <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a>&amp; option) -&gt; <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a></span>
+            </dt>
+            <dd>Retrieve the option value from an options list separated by ':' or ';'.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">void <a class="m-doc" href="namespace_ase.html#a75e2d0a36fed8f364df722cabf416df7">string_options_split</a>(</span><span class="m-doc-wrap">const <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a>&amp; option_string,
+              <a class="m-doc-external poxy-external" href="http://en.cppreference.com/w/cpp/container/vector.html" target="_blank">std::<wbr/>vector</a>&lt;<a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a>&gt;&amp; option_names,
+              <a class="m-doc-external poxy-external" href="http://en.cppreference.com/w/cpp/container/vector.html" target="_blank">std::<wbr/>vector</a>&lt;<a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a>&gt;&amp; option_values,
+              const <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a>&amp; empty_default)</span>
+            </dt>
+            <dd>Split an option list string into name/value pairs.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a class="m-doc" href="namespace_ase.html#a9358758940a1dca8a2fdf24f1db66075">string_replace</a>(</span><span class="m-doc-wrap">const <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a>&amp; input,
+              const <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a>&amp; marker,
+              const <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a>&amp; replacement,
+              <a class="m-doc poxy-injected poxy-external" href="https://en.cppreference.com/w/cpp/types/size_t" target="_blank">size_t</a> maxn) -&gt; <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a></span>
+            </dt>
+            <dd>Replace substring <em>marker</em> in <em>input</em> with <em>replacement</em>, at most <em>maxn</em> times.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a class="m-doc" href="namespace_ase.html#a4a7abecf2cfce78fd2fccd5b5b788ae7">string_rstrip</a>(</span><span class="m-doc-wrap">const <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a>&amp; input) -&gt; <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a></span>
+            </dt>
+            <dd>Strip whitespaces from the right of a string.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a class="m-doc" href="namespace_ase.html#acaf3546176475ef1ebdbb2ccd0576f4f">string_set_A2Z</a>(</span><span class="m-doc-wrap">) -&gt; const <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a>&amp;</span>
+            </dt>
+            <dd>Returns a string containing all of A-Z.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a class="m-doc" href="namespace_ase.html#ab70579ab773773d91669b6d994cfe87b">string_set_a2z</a>(</span><span class="m-doc-wrap">) -&gt; const <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a>&amp;</span>
+            </dt>
+            <dd>Returns a string containing all of a-z.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a class="m-doc" href="namespace_ase.html#a8df97fbd9e33de169083049c100b98de">string_set_ascii_alnum</a>(</span><span class="m-doc-wrap">) -&gt; const <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a>&amp;</span>
+            </dt>
+            <dd>Returns a string containing all of 0-9, A-Z and a-z.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a class="m-doc" href="namespace_ase.html#a2ae18de3555c96ee06bbfae23e55ce2a">string_split</a>(</span><span class="m-doc-wrap">const <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a>&amp; string,
+              const <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a>&amp; splitter,
+              <a class="m-doc poxy-injected poxy-external" href="https://en.cppreference.com/w/cpp/types/size_t" target="_blank">size_t</a> maxn) -&gt; <a class="m-doc" href="namespace_ase.html#a444d3b63203b49bc45b14c9d0761453b">StringS</a></span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a class="m-doc" href="namespace_ase.html#a9489e8e8e39c245c9dcd2a2a9ec8e98e">string_split_any</a>(</span><span class="m-doc-wrap">const <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a>&amp; string,
+              const <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a>&amp; splitchars,
+              <a class="m-doc poxy-injected poxy-external" href="https://en.cppreference.com/w/cpp/types/size_t" target="_blank">size_t</a> maxn) -&gt; <a class="m-doc" href="namespace_ase.html#a444d3b63203b49bc45b14c9d0761453b">StringS</a></span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a class="m-doc" href="namespace_ase.html#afea299292f6fc8e3958dfbc1e07217bd">string_startswith</a>(</span><span class="m-doc-wrap">const <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a>&amp; string,
+              const <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a>&amp; fragment) -&gt; bool</span>
+            </dt>
+            <dd>Returns whether <em>string</em> starts with <em>fragment</em>.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a class="m-doc" href="namespace_ase.html#aca58814757564f0347e65873a7666396">string_strip</a>(</span><span class="m-doc-wrap">const <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a>&amp; input) -&gt; <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a></span>
+            </dt>
+            <dd>Strip whitespaces from the left and right of a string.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a class="m-doc" href="namespace_ase.html#adb0b3a4141998fc698827ddd45e90d4c">string_substitute_char</a>(</span><span class="m-doc-wrap">const <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a>&amp; input,
+              const char match,
+              const char subst) -&gt; <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a></span>
+            </dt>
+            <dd>Replace all occouranes of <em>match</em> in <em>input</em> with <em>subst</em>.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a class="m-doc" href="namespace_ase.html#ac2ea08493c818758f33792cb9c9b0c45">string_to_bool</a>(</span><span class="m-doc-wrap">const <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a>&amp; string,
+              bool fallback) -&gt; bool</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a class="m-doc" href="namespace_ase.html#af7f632e065dd2ed28d8d41f0ae8bf219">string_to_cescape</a>(</span><span class="m-doc-wrap">const <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a>&amp; str) -&gt; <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a></span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a class="m-doc" href="namespace_ase.html#ae27dccf50df9fd35f7c817bd61aee2eb">string_to_cquote</a>(</span><span class="m-doc-wrap">const <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a>&amp; str) -&gt; <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a></span>
+            </dt>
+            <dd>Returns a string as C string including double quotes.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a class="m-doc" href="namespace_ase.html#ab05d3cbb51f5fbea6eea29909919d7ef">string_to_double</a>(</span><span class="m-doc-wrap">const <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a>&amp; string) -&gt; double</span>
+            </dt>
+            <dd>Parse a double from a string, trying locale specific characters and POSIX/C formatting.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a class="m-doc" href="namespace_ase.html#a52b13fdc0ffe52dda2a593dd6a7cb307">string_to_double</a>(</span><span class="m-doc-wrap">const char* dblstring,
+              const char** endptr) -&gt; double</span>
+            </dt>
+            <dd>Similar to <a class="m-doc" href="namespace_ase.html#ab05d3cbb51f5fbea6eea29909919d7ef">string_<wbr/>to_<wbr/>double(const String&amp;)</a>, but returns the first failing character position in <em>endptr</em>.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a class="m-doc" href="namespace_ase.html#a06aa1dd852e27b2ba8c181b1d2bd799a">string_to_double_vector</a>(</span><span class="m-doc-wrap">const <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a>&amp; string) -&gt; <a class="m-doc-external poxy-external" href="http://en.cppreference.com/w/cpp/container/vector.html" target="_blank">std::<wbr/>vector</a>&lt;double&gt;</span>
+            </dt>
+            <dd>Parse a string into a list of doubles, expects ';' as delimiter.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a class="m-doc" href="namespace_ase.html#a30e73232aa4f8f8334196686be3263bb">string_to_hex</a>(</span><span class="m-doc-wrap">const <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a>&amp; input) -&gt; <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a></span>
+            </dt>
+            <dd>Convert bytes in string <code>input</code> to hexadecimal numbers.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a class="m-doc" href="namespace_ase.html#a059fc44a851265ab826404a5a085017f">string_to_identifier</a>(</span><span class="m-doc-wrap">const <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a>&amp; input) -&gt; <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a></span>
+            </dt>
+            <dd>Force lower case, alphanumerics + underscore and non-digit start.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a class="m-doc" href="namespace_ase.html#a929109484e359285ddc8a33e746486c4">string_to_int</a>(</span><span class="m-doc-wrap">const <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a>&amp; string,
+              <a class="m-doc poxy-injected poxy-external" href="https://en.cppreference.com/w/cpp/types/size_t" target="_blank">size_t</a>* consumed,
+              <a class="m-doc" href="namespace_ase.html#ad69887c4e893bf027b4aa6237d8c08d7">uint</a> base) -&gt; <a class="m-doc" href="namespace_ase.html#a478a1328a0bd673e18c58943f4bc0655">int64</a></span>
+            </dt>
+            <dd>Parse a string into a 64bit integer, optionally specifying the expected number base.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a class="m-doc" href="namespace_ase.html#a8e0f780a57ce2723173a4a035a6af940">string_to_long_double</a>(</span><span class="m-doc-wrap">const <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a>&amp; string) -&gt; long double</span>
+            </dt>
+            <dd>Parse a long double from a string, trying locale specific characters and POSIX/C formatting.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a class="m-doc" href="namespace_ase.html#a18a6b9d2b81eb8f464a0dd46414f5580">string_to_long_double</a>(</span><span class="m-doc-wrap">const char* dblstring,
+              const char** endptr) -&gt; long double</span>
+            </dt>
+            <dd>Similar to <a class="m-doc" href="namespace_ase.html#a8e0f780a57ce2723173a4a035a6af940">string_<wbr/>to_<wbr/>long_<wbr/>double(const String&amp;)</a>, but returns the first failing character position in <em>endptr</em>.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a class="m-doc" href="namespace_ase.html#a86fa39b3fcd73679051f40e1b644ff73">string_to_seconds</a>(</span><span class="m-doc-wrap">const <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a>&amp; string,
+              double fallback) -&gt; double</span>
+            </dt>
+            <dd>Parse string into seconds.</dd>
+            <dt>
+              <div class="m-doc-template">template&lt;typename Type&gt;</div>
+              <span class="m-doc-wrap-bumper">auto <a class="m-doc" href="namespace_ase.html#a28b012e3752bebd58b981c41d47c44fb">string_to_type</a>(</span><span class="m-doc-wrap">const String&amp; string) -&gt; Type</span>
+            </dt>
+            <dd>Convert a <em>string</em> to template argument type, such as bool, int, double.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a class="m-doc" href="namespace_ase.html#aafb19c411791b792cd94d8c4f80d86a5">string_to_uint</a>(</span><span class="m-doc-wrap">const <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a>&amp; string,
+              <a class="m-doc poxy-injected poxy-external" href="https://en.cppreference.com/w/cpp/types/size_t" target="_blank">size_t</a>* consumed,
+              <a class="m-doc" href="namespace_ase.html#ad69887c4e893bf027b4aa6237d8c08d7">uint</a> base) -&gt; <a class="m-doc" href="namespace_ase.html#a13d169f5b0e9b257c6964c67ae75ec91">uint64</a></span>
+            </dt>
+            <dd>Parse a string into a 64bit unsigned integer, optionally specifying the expected number base.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a class="m-doc" href="namespace_ase.html#a36221e5318ced5a44a256988951988b8">string_tolower</a>(</span><span class="m-doc-wrap">const <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a>&amp; str) -&gt; <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a></span>
+            </dt>
+            <dd>Convert all string characters into Unicode lower case characters.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a class="m-doc" href="namespace_ase.html#a279fc44a9dc6e42a62d7233616f9ea43">string_totitle</a>(</span><span class="m-doc-wrap">const <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a>&amp; str) -&gt; <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a></span>
+            </dt>
+            <dd>Convert all string characters into Unicode title characters.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a class="m-doc" href="namespace_ase.html#a51b498faaac090d4120734e232416a40">string_toupper</a>(</span><span class="m-doc-wrap">const <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a>&amp; str) -&gt; <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a></span>
+            </dt>
+            <dd>Convert all string characters into Unicode upper case characters.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a class="m-doc" href="namespace_ase.html#aacb16d3811ad8bbd41e2e995f0d4fafd">string_url_decode</a>(</span><span class="m-doc-wrap">const <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a>&amp; urlstr,
+              const bool form_url_encoded) -&gt; <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a></span>
+            </dt>
+            <dd>Decode URL %-sequences in a string, decode '+' if <code>form_url_encoded</code>.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a class="m-doc" href="namespace_ase.html#ad750f0b79d820c0e82a241365c9cbf1d">string_url_encode</a>(</span><span class="m-doc-wrap">const <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a>&amp; rawstr,
+              const bool form_url_encoded) -&gt; <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a></span>
+            </dt>
+            <dd>Encode special characters to URL %-sequences, encode space as '+' if <code>form_url_encoded</code>.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">void <a class="m-doc" href="namespace_ase.html#a7fd8ed2f331b81acd491013f6e7bcb9f">string_vector_erase_empty</a>(</span><span class="m-doc-wrap"><a class="m-doc" href="namespace_ase.html#a444d3b63203b49bc45b14c9d0761453b">StringS</a>&amp; svector)</span>
+            </dt>
+            <dd>Remove empty elements from a string vector.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a class="m-doc" href="namespace_ase.html#ac2144f2685390019388c15712928eb52">string_vector_find</a>(</span><span class="m-doc-wrap">const <a class="m-doc" href="namespace_ase.html#a444d3b63203b49bc45b14c9d0761453b">StringS</a>&amp; svector,
+              const <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a>&amp; prefix,
+              const <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a>&amp; fallback) -&gt; <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a></span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a class="m-doc" href="namespace_ase.html#a49d15a9a98680986124d73a97a49a4c4">string_vector_find_value</a>(</span><span class="m-doc-wrap">const <a class="m-doc" href="namespace_ase.html#a444d3b63203b49bc45b14c9d0761453b">StringS</a>&amp; svector,
+              const <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a>&amp; prefix,
+              const <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a>&amp; fallback) -&gt; <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a></span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">void <a class="m-doc" href="namespace_ase.html#af2167ef51caff75f7635195cef2bb6ad">string_vector_lstrip</a>(</span><span class="m-doc-wrap"><a class="m-doc" href="namespace_ase.html#a444d3b63203b49bc45b14c9d0761453b">StringS</a>&amp; svector)</span>
+            </dt>
+            <dd>Left-strip all elements of a string vector, see <a class="m-doc" href="namespace_ase.html#a3f15750c2657a21f750d01e449fadb06">string_<wbr/>lstrip()</a>.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">void <a class="m-doc" href="namespace_ase.html#ac3f18371b872dbde3bd9bc892be7928f">string_vector_rstrip</a>(</span><span class="m-doc-wrap"><a class="m-doc" href="namespace_ase.html#a444d3b63203b49bc45b14c9d0761453b">StringS</a>&amp; svector)</span>
+            </dt>
+            <dd>Right-strip all elements of a string vector, see <a class="m-doc" href="namespace_ase.html#a4a7abecf2cfce78fd2fccd5b5b788ae7">string_<wbr/>rstrip()</a>.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">void <a class="m-doc" href="namespace_ase.html#aab202bb063b32d439408d631a8d0047e">string_vector_strip</a>(</span><span class="m-doc-wrap"><a class="m-doc" href="namespace_ase.html#a444d3b63203b49bc45b14c9d0761453b">StringS</a>&amp; svector)</span>
+            </dt>
+            <dd>Strip all elements of a string vector, see <a class="m-doc" href="namespace_ase.html#aca58814757564f0347e65873a7666396">string_<wbr/>strip()</a>.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a class="m-doc" href="namespace_ase.html#a2b1ff7fb9f0a2cf85aae28ead9ccd673">string_vprintf</a>(</span><span class="m-doc-wrap">const char* format,
+              <a class="m-doc-external poxy-external" href="http://en.cppreference.com/w/cpp/utility/variadic/va_list.html" target="_blank">va_<wbr/>list</a> vargs) -&gt; <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a></span>
+            </dt>
+            <dd>Formatted printing ala vprintf() into a String, using the POSIX/C locale.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a class="m-doc" href="namespace_ase.html#ae180af13795b4e6a2b66f80422b717ca">text_convert</a>(</span><span class="m-doc-wrap">const <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a>&amp; to_charset,
+              <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a>&amp; output_string,
+              const <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a>&amp; from_charset,
+              const <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a>&amp; input_string,
+              const <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a>&amp; fallback_charset,
+              const <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a>&amp; output_mark) -&gt; bool</span>
+            </dt>
+            <dd></dd>
+          </dl>
+        </section>
+      </div>
+    </div>
+  </div>
+</article></main>
+<div class="m-doc-search" id="search">
+  <a href="#!" onclick="return hideSearch()"></a>
+  <div class="m-container">
+    <div class="m-row">
+      <div class="m-col-m-8 m-push-m-2">
+        <div class="m-doc-search-header m-text m-small">
+          <div><span class="m-label m-default">Tab</span> / <span class="m-label m-default">T</span> to search, <span class="m-label m-default">Esc</span> to close</div>
+          <div id="search-symbolcount">…</div>
+        </div>
+        <div class="m-doc-search-content">
+          <form>
+            <input autocomplete="off" autofocus="autofocus" disabled="disabled" id="search-input" name="q" placeholder="Loading …" spellcheck="false" type="search"/>
+          </form>
+          <noscript class="m-text m-danger m-text-center">Unlike everything else in the docs, the search functionality <em>requires</em> JavaScript.</noscript>
+          <div class="m-text m-dim m-text-center" id="search-help">
+            <p class="m-noindent">Search for symbols, directories, files, pages or
+            modules. You can omit any prefix from the symbol or file path; adding a
+            <code>:</code> or <code>/</code> suffix lists all members of given symbol or
+            directory.</p>
+            <p class="m-noindent">Use <span class="m-label m-dim">↓</span>
+            / <span class="m-label m-dim">↑</span> to navigate through the list,
+            <span class="m-label m-dim">Enter</span> to go.
+            <span class="m-label m-dim">Tab</span> autocompletes common prefix, you can
+            copy a link to the result using <span class="m-label m-dim">⌘</span>
+            <span class="m-label m-dim">L</span> while <span class="m-label m-dim">⌘</span>
+            <span class="m-label m-dim">M</span> produces a Markdown link.</p>
+          </div>
+          <div class="m-text m-warning m-text-center" id="search-notfound">Sorry, nothing was found.</div>
+          <ul id="search-results"></ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="search-v2.js"></script>
+<script async="async" src="searchdata-v2.js"></script>
+<footer><nav>
+  <div class="m-container">
+    <div class="m-row">
+      <div class="m-col-l-10 m-push-l-1">
+        
+<a class="poxy-external" href="https://github.com/tim-janik/anklang" target="_blank">GitHub</a>
+• <a class="poxy-external" href="https://github.com/tim-janik/anklang/issues" target="_blank">Report an issue</a>
+• <a class="poxy-external" href="https://mozilla.org/MPL/2.0" target="_blank">License</a>
+• <a download="" href="Anklang.tagfile.xml" target="_blank" type="text/xml">Doxygen tagfile</a>
+<br/><br/>
+Site generated using <a class="poxy-external" href="https://github.com/marzer/poxy/" target="_blank">Poxy</a>
+
+      </div>
+    </div>
+  </div>
+</nav></footer>
+
+
+</body></html>

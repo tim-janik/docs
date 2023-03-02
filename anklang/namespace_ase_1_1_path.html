@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8"/>
+  <title>Ase::Path namespace | Anklang Anklang - Programming Reference</title>
+  <link href="favicon.svg" rel="icon" type="image/svg+xml"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="#22272e" name="theme-color"/>
+  <link href="poxy/poxy.css" referrerpolicy="no-referrer" rel="stylesheet"/>
+  <script src="poxy/poxy.js"></script>
+  <script>initialize_theme("dark");</script>
+  <meta content="Anklang" name="twitter:title"/>
+  <meta content="Anklang" property="og:title"/>
+  <meta content="Anklang" itemprop="name"/>
+  <meta content="Tim Janik" name="author"/>
+  <meta content="Tim Janik" property="article:author"/>
+  <meta content="Anklang - Programming Reference" name="description"/>
+  <meta content="Anklang - Programming Reference" name="twitter:description"/>
+  <meta content="Anklang - Programming Reference" property="og:description"/>
+  <meta content="Anklang - Programming Reference" itemprop="description"/>
+  <meta content="telephone=no" name="format-detection"/>
+  <meta content="Poxy v0.12.3" name="generator"/>
+  <meta content="strict-origin-when-cross-origin" name="referrer"/>
+</head>
+<body class="poxy-has-toc">
+<header><nav id="navigation">
+  <div class="m-container">
+    <div class="m-row">
+      <a class="m-col-t-8 m-col-m-none m-left-m" href="index.html" id="m-navbar-brand"><svg class="poxy-injected-svg" height="32" id="poxy-injected-svg-0" version="1.1" viewBox="0 0 64 64" width="32" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg"><metadata><rdf:rdf><cc:work><cc:license rdf:resource="MPL-2.0"></cc:license></cc:work></rdf:rdf></metadata><g><rect height="60" rx="1" ry="1" style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:4;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" width="60" x="2" y="2"></rect><g><path d="M 19.078125,2 V 2.5 H 14 V 40.972656 C 13.97726,42.63277 15.372472,44 17,44 h 2.023438 L 19,61.994141 22.921875,62 22.945312,44 H 25 c 1.627528,0 3.02274,-1.36723 3,-3.027344 V 2.5 H 23 V 2.0058594 Z" style="fill:#000000;fill-opacity:1"></path><path d="m 41.078399,1.9999594 v 0.5 H 36.000274 V 40.972615 c -0.02274,1.660114 1.372472,3.027344 3,3.027344 h 2.023438 L 41.000272,61.9941 44.922147,62 44.945587,44 h 2.054688 c 1.627528,0 3.02274,-1.36723 3,-3.027344 V 2.4999594 h -5 V 2.0058188 Z" style="fill:#000000;fill-opacity:1"></path></g><rect height="21" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:4;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" width="60" x="2" y="2"></rect><g><circle cx="11.5" cy="11" r="5.5" style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:4.00000095;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"></circle><circle cx="32" cy="11" r="5.5" style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:4.00000095;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"></circle><circle cx="52.5" cy="11" r="5.5" style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:4.00000095;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"></circle></g></g></svg>Anklang <span class="m-thin">Anklang - Programming Reference</span></a>
+      <div class="m-col-t-4 m-hide-m m-text-right m-nopadr">
+        <a class="m-doc-search-icon" accesskey="f" href="#search" onclick="return showSearch()" title="Search"><svg style="height: 0.9rem;" viewBox="0 0 16 16">
+          <path d="m6 0c-3.31 0-6 2.69-6 6 0 3.31 2.69 6 6 6 1.49 0 2.85-0.541 3.89-1.44-0.0164 0.338 0.147 0.759 0.5 1.15l3.22 3.79c0.552 0.614 1.45 0.665 2 0.115 0.55-0.55 0.499-1.45-0.115-2l-3.79-3.22c-0.392-0.353-0.812-0.515-1.15-0.5 0.895-1.05 1.44-2.41 1.44-3.89 0-3.31-2.69-6-6-6zm0 1.56a4.44 4.44 0 0 1 4.44 4.44 4.44 4.44 0 0 1-4.44 4.44 4.44 4.44 0 0 1-4.44-4.44 4.44 4.44 0 0 1 4.44-4.44z" id="m-doc-search-icon-path"></path>
+        </svg></a>
+        <a href="#navigation" id="m-navbar-show" title="Show navigation"></a>
+        <a href="#" id="m-navbar-hide" title="Hide navigation"></a>
+      </div>
+      <div class="m-col-t-12 m-show-m m-col-m-none m-right-m" id="m-navbar-collapse">
+        <div class="m-row">
+          <ol class="m-col-t-6 m-col-m-none">
+            <li><a href="pages.html">Pages</a></li>
+            <li><a href="files.html">Files</a></li>
+            <li><a href="namespaces.html">Namespaces</a></li>
+          </ol>
+          <ol class="m-col-t-6 m-col-m-none" start="4">
+            <li><a href="annotated.html">Classes</a></li>
+            <li><a class="poxy-icon repo github poxy-external" href="https://github.com/tim-janik/anklang" target="_blank" title="View on GitHub"><svg id="poxy-repo-icon" version="1.1" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg"><path d="M25,1.23a24.37,24.37,0,0,0-7.7,47.5C18.51,49,19,48.2,19,47.56s0-2.12,0-4.15c-6.78,1.47-8.21-3.27-8.21-3.27C9.61,37.33,8,36.58,8,36.58c-2.21-1.51.17-1.48.17-1.48a5.12,5.12,0,0,1,3.73,2.51c2.17,3.72,5.7,2.65,7.09,2a5.25,5.25,0,0,1,1.55-3.26c-5.41-.61-11.1-2.7-11.1-12A9.41,9.41,0,0,1,12,17.79a8.75,8.75,0,0,1,.24-6.45s2-.66,6.7,2.49a23.1,23.1,0,0,1,12.2,0c4.66-3.15,6.7-2.49,6.7-2.49A8.75,8.75,0,0,1,38,17.79a9.41,9.41,0,0,1,2.51,6.54c0,9.36-5.7,11.42-11.13,12a5.83,5.83,0,0,1,1.65,4.51c0,3.26,0,5.89,0,6.69,0,.65.44,1.41,1.68,1.17A24.38,24.38,0,0,0,25,1.23Z" fill="currentColor"></path></svg></a></li>
+            <li><a class="poxy-icon theme" href="javascript:void(null);" id="poxy-theme-switch" onclick="toggle_theme(); return false;" role="button" title="Toggle dark and light themes"><svg id="poxy-theme-switch-img" version="1.1" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><circle cx="185.6708" cy="183.8122" fill="currentColor" r="65.625"></circle><path d="M185.6708,87.5622a13.1256,13.1256,0,0,0,13.125-13.125V52.5622a13.125,13.125,0,1,0-26.25,0v21.875A13.1257,13.1257,0,0,0,185.6708,87.5622Z" fill="currentColor"></path><path d="M99.051,115.7519a13.1236,13.1236,0,1,0,18.56-18.56L102.1442,81.726a13.1236,13.1236,0,0,0-18.5595,18.56Z" fill="currentColor"></path><path d="M89.4208,183.8122a13.1257,13.1257,0,0,0-13.125-13.125H54.4208a13.125,13.125,0,0,0,0,26.25h21.875A13.1256,13.1256,0,0,0,89.4208,183.8122Z" fill="currentColor"></path><path d="M99.051,251.8725,83.5847,267.3431a13.1236,13.1236,0,1,0,18.56,18.56l15.4663-15.4706a13.1236,13.1236,0,1,0-18.5595-18.56Z" fill="currentColor"></path><path d="M185.6708,280.0622a13.1258,13.1258,0,0,0-13.125,13.125v21.875a13.125,13.125,0,0,0,26.25,0v-21.875A13.1257,13.1257,0,0,0,185.6708,280.0622Z" fill="currentColor"></path><path d="M272.2907,251.8725a13.1236,13.1236,0,1,0-18.56,18.56l15.4663,15.4706a13.1236,13.1236,0,1,0,18.56-18.56Z" fill="currentColor"></path><path d="M330.0458,183.8122a13.1257,13.1257,0,0,0-13.125-13.125h-21.875a13.125,13.125,0,0,0,0,26.25h21.875A13.1256,13.1256,0,0,0,330.0458,183.8122Z" fill="currentColor"></path><path d="M263.0109,119.5971a13.0824,13.0824,0,0,0,9.28-3.8452l15.4663-15.4663a13.1236,13.1236,0,1,0-18.56-18.56L253.7312,97.1923a13.125,13.125,0,0,0,9.28,22.4048Z" fill="currentColor"></path><path d="M456.9379,401.6714a63.97,63.97,0,0,1-14.9963,7.2055c-19.6448,6.5283-41.8787,2.9566-58.1439-9.8523a68.9311,68.9311,0,0,1-10.835-10.8339c-12.8088-16.2663-16.3806-38.5-9.8523-58.1471a63.8444,63.8444,0,0,1,7.2077-14.9931,8.8036,8.8036,0,0,0-10.1172-13.3034,87.5188,87.5188,0,1,0,110.0372,110.04A8.8,8.8,0,0,0,456.9379,401.6714Z" fill="currentColor"></path></svg></a></li>
+            <li class="m-show-m"><a class="m-doc-search-icon" href="#search" onclick="return showSearch()" title="Search"><svg style="height: 0.9rem;" viewBox="0 0 16 16">
+              <use href="#m-doc-search-icon-path"></use>
+            </svg></a></li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav></header>
+<main><article>
+  <div class="m-container m-container-inflatable">
+    <div class="m-row">
+      <div class="m-col-l-10 m-push-l-1">
+        <h1>
+          <span class="m-breadcrumb"><a href="namespace_ase.html">Ase</a>::<wbr/></span>Path <span class="m-thin">namespace</span>
+        </h1>
+        <p>The <a class="m-doc" href="namespace_ase_1_1_path.html">Path</a> namespace provides functions for file path manipulation and testing.</p>
+        <nav class="m-block m-default poxy-toc" id="poxy-toc">
+          <h3>Contents</h3>
+          <ul>
+            <li>
+              Reference
+              <ul>
+                <li><a href="#func-members">Functions</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        <section id="func-members">
+          <h2><a href="#func-members">Functions</a></h2>
+          <dl class="m-doc">
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a class="m-doc" href="#ab2aeb6d74e9de675a6fc0fa72ea925cb">abspath</a>(</span><span class="m-doc-wrap">const <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a>&amp; path,
+              const <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a>&amp; incwd) -&gt; <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a></span>
+            </dt>
+            <dd></dd>
+            <dt id="a376e6f975c49cc2ca4dc912a34bde424">
+              <span class="m-doc-wrap-bumper">auto <a class="m-doc-self" href="#a376e6f975c49cc2ca4dc912a34bde424">basename</a>(</span><span class="m-doc-wrap">const <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a>&amp; path) -&gt; <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a></span>
+            </dt>
+            <dd>Strips all directory components from <em>path</em> and returns the resulting file name.</dd>
+            <dt id="aa5a944be73c4621beb917c1a2f288426">
+              <span class="m-doc-wrap-bumper">auto <a class="m-doc-self" href="#aa5a944be73c4621beb917c1a2f288426">cache_home</a>(</span><span class="m-doc-wrap">) -&gt; <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a></span>
+            </dt>
+            <dd>Get the $XDG_CACHE_HOME directory, see: <a class="poxy-external" href="https://specifications.freedesktop.org/basedir-spec/latest" target="_blank">https:/<wbr/>/<wbr/>specifications.freedesktop.org/<wbr/>basedir-spec/<wbr/>latest</a>.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a class="m-doc" href="#a846caddfde09e0e00e077b66cdce9d4e">check</a>(</span><span class="m-doc-wrap">const <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a>&amp; file,
+              const <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a>&amp; mode) -&gt; bool</span>
+            </dt>
+            <dd></dd>
+            <dt id="a13813b973670786f1d12ee36ab62145a">
+              <span class="m-doc-wrap-bumper">auto <a class="m-doc-self" href="#a13813b973670786f1d12ee36ab62145a">config_dirs</a>(</span><span class="m-doc-wrap">) -&gt; <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a></span>
+            </dt>
+            <dd>Get the $XDG_CONFIG_DIRS directory list, see: <a class="poxy-external" href="https://specifications.freedesktop.org/basedir-spec/latest" target="_blank">https:/<wbr/>/<wbr/>specifications.freedesktop.org/<wbr/>basedir-spec/<wbr/>latest</a>.</dd>
+            <dt id="a47051c07734c31523613276c6dbf2530">
+              <span class="m-doc-wrap-bumper">auto <a class="m-doc-self" href="#a47051c07734c31523613276c6dbf2530">config_home</a>(</span><span class="m-doc-wrap">) -&gt; <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a></span>
+            </dt>
+            <dd>Get the $XDG_CONFIG_HOME directory, see: <a class="poxy-external" href="https://specifications.freedesktop.org/basedir-spec/latest" target="_blank">https:/<wbr/>/<wbr/>specifications.freedesktop.org/<wbr/>basedir-spec/<wbr/>latest</a>.</dd>
+            <dt id="a263aa97c18fed3538904cd40ada4fd38">
+              <span class="m-doc-wrap-bumper">auto <a class="m-doc-self" href="#a263aa97c18fed3538904cd40ada4fd38">config_names</a>(</span><span class="m-doc-wrap">) -&gt; <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a></span>
+            </dt>
+            <dd>Get config names as set with <a class="m-doc" href="namespace_ase_1_1_path.html#a263aa97c18fed3538904cd40ada4fd38">config_<wbr/>names()</a>, if unset defaults to <a class="m-doc" href="namespace_ase.html#ab314b0c86f8779f11a2b5d7fbec96050">program_<wbr/>alias()</a>.</dd>
+            <dt id="a21f41bdab5c8b372ae47ed6717d3b5e1">
+              <span class="m-doc-wrap-bumper">void <a class="m-doc-self" href="#a21f41bdab5c8b372ae47ed6717d3b5e1">config_names</a>(</span><span class="m-doc-wrap">const <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a>&amp; names)</span>
+            </dt>
+            <dd>Set a colon separated list of names for this application to find configuration settings and files.</dd>
+            <dt id="ad2634e67be8dda43c0f38a7efb05f675">
+              <span class="m-doc-wrap-bumper">auto <a class="m-doc-self" href="#ad2634e67be8dda43c0f38a7efb05f675">copy_file</a>(</span><span class="m-doc-wrap">const <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a>&amp; src,
+              const <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a>&amp; dest) -&gt; bool</span>
+            </dt>
+            <dd>Copy a file to a new non-existing location, sets errno and returns false on error.</dd>
+            <dt id="a070d18887c8f71ab9f117f9311cae597">
+              <span class="m-doc-wrap-bumper">auto <a class="m-doc-self" href="#a070d18887c8f71ab9f117f9311cae597">cwd</a>(</span><span class="m-doc-wrap">) -&gt; <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a></span>
+            </dt>
+            <dd>Return the current working directoy, including symlinks used in $PWD if available.</dd>
+            <dt id="ae08f8e7312171fcc1482df6e3d546d89">
+              <span class="m-doc-wrap-bumper">auto <a class="m-doc-self" href="#ae08f8e7312171fcc1482df6e3d546d89">data_dirs</a>(</span><span class="m-doc-wrap">) -&gt; <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a></span>
+            </dt>
+            <dd>Get the $XDG_DATA_DIRS directory list, see: <a class="poxy-external" href="https://specifications.freedesktop.org/basedir-spec/latest" target="_blank">https:/<wbr/>/<wbr/>specifications.freedesktop.org/<wbr/>basedir-spec/<wbr/>latest</a>.</dd>
+            <dt id="aa049ab9eb407df0b18477cf18273445e">
+              <span class="m-doc-wrap-bumper">auto <a class="m-doc-self" href="#aa049ab9eb407df0b18477cf18273445e">data_home</a>(</span><span class="m-doc-wrap">) -&gt; <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a></span>
+            </dt>
+            <dd>Get the $XDG_DATA_HOME directory, see: <a class="poxy-external" href="https://specifications.freedesktop.org/basedir-spec/latest" target="_blank">https:/<wbr/>/<wbr/>specifications.freedesktop.org/<wbr/>basedir-spec/<wbr/>latest</a>.</dd>
+            <dt id="a8aab42d7c2c422981839db5cde9487c4">
+              <span class="m-doc-wrap-bumper">auto <a class="m-doc-self" href="#a8aab42d7c2c422981839db5cde9487c4">dir_terminate</a>(</span><span class="m-doc-wrap">const <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a>&amp; path) -&gt; <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a></span>
+            </dt>
+            <dd>Append trailing slash to <code>path</code>, unless it's present.</dd>
+            <dt id="ae0e627fc6b962984d87f25c6ff07f847">
+              <span class="m-doc-wrap-bumper">auto <a class="m-doc-self" href="#ae0e627fc6b962984d87f25c6ff07f847">dircontains</a>(</span><span class="m-doc-wrap">const <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a>&amp; dirpath,
+              const <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a>&amp; descendant,
+              <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a>* relpath) -&gt; bool</span>
+            </dt>
+            <dd>Check if <code>descendant</code> belongs to the directory hierarchy under <code>dirpath</code>.</dd>
+            <dt id="a62082b824724e9de16ab46e9e9537736">
+              <span class="m-doc-wrap-bumper">auto <a class="m-doc-self" href="#a62082b824724e9de16ab46e9e9537736">dirname</a>(</span><span class="m-doc-wrap">const <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a>&amp; path) -&gt; <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a></span>
+            </dt>
+            <dd>Retrieve the directory part of the filename <code>path</code>.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a class="m-doc" href="#a8a4942db8fd85e2424f87ef147593704">equals</a>(</span><span class="m-doc-wrap">const <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a>&amp; file1,
+              const <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a>&amp; file2) -&gt; bool</span>
+            </dt>
+            <dd></dd>
+            <dt id="a8a29d2ff12ad4b4bea1587386bf28274">
+              <span class="m-doc-wrap-bumper">auto <a class="m-doc-self" href="#a8a29d2ff12ad4b4bea1587386bf28274">expand_tilde</a>(</span><span class="m-doc-wrap">const <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a>&amp; path) -&gt; <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a></span>
+            </dt>
+            <dd>Expand a "~/" or "~user/" <em>path</em> which refers to user home directories.</dd>
+            <dt id="ad024d1fc4211baaea9bfee77c72e854e">
+              <span class="m-doc-wrap-bumper">auto <a class="m-doc-self" href="#ad024d1fc4211baaea9bfee77c72e854e">file_size</a>(</span><span class="m-doc-wrap">const <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a>&amp; path) -&gt; <a class="m-doc poxy-injected poxy-external" href="https://en.cppreference.com/w/cpp/types/size_t" target="_blank">size_t</a></span>
+            </dt>
+            <dd>Retrieve the on-disk size in bytes of <code>path</code>.</dd>
+            <dt id="ae69d5479618ca0550534f82afa4e324d">
+              <span class="m-doc-wrap-bumper">void <a class="m-doc-self" href="#ae69d5479618ca0550534f82afa4e324d">glob</a>(</span><span class="m-doc-wrap">const <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a>&amp; pathpattern,
+              <a class="m-doc" href="namespace_ase.html#a444d3b63203b49bc45b14c9d0761453b">StringS</a>&amp; matches)</span>
+            </dt>
+            <dd>Create list with filenames matching <code>pathpattern</code> with shell wildcards.</dd>
+            <dt id="ad2deaf982ff582c6582daf94708e16d6">
+              <span class="m-doc-wrap-bumper">auto <a class="m-doc-self" href="#ad2deaf982ff582c6582daf94708e16d6">isabs</a>(</span><span class="m-doc-wrap">const <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a>&amp; path) -&gt; bool</span>
+            </dt>
+            <dd>Return wether <em>path</em> is an absolute pathname.</dd>
+            <dt id="a8cc52333c0e00cc5c8719d8f33530989">
+              <span class="m-doc-wrap-bumper">auto <a class="m-doc-self" href="#a8cc52333c0e00cc5c8719d8f33530989">isdirname</a>(</span><span class="m-doc-wrap">const <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a>&amp; path) -&gt; bool</span>
+            </dt>
+            <dd>Return wether <em>path</em> is pointing to a directory component.</dd>
+            <dt id="aab4deb4ea93c29f2ca0e40972b0e167b">
+              <span class="m-doc-wrap-bumper">auto <a class="m-doc-self" href="#aab4deb4ea93c29f2ca0e40972b0e167b">join_with</a>(</span><span class="m-doc-wrap">const <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a>&amp; head,
+              char joiner,
+              const <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a>&amp; tail) -&gt; <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a></span>
+            </dt>
+            <dd>Construct <code>head + joiner + tail</code> avoiding duplicates of <code>joiner</code>.</dd>
+            <dt id="a7351e12e1598eacace8cdf40b2cd2d3b">
+              <span class="m-doc-wrap-bumper">auto <a class="m-doc-self" href="#a7351e12e1598eacace8cdf40b2cd2d3b">mkdirs</a>(</span><span class="m-doc-wrap">const <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a>&amp; dirpath,
+              <a class="m-doc" href="namespace_ase.html#ad69887c4e893bf027b4aa6237d8c08d7">uint</a> mode) -&gt; bool</span>
+            </dt>
+            <dd>Create the directories in <code>dirpath</code> with <code>mode</code>, check errno on false returns.</dd>
+            <dt id="af7ef507a5cf70f0e4e22a272adc330ca">
+              <span class="m-doc-wrap-bumper">auto <a class="m-doc-self" href="#af7ef507a5cf70f0e4e22a272adc330ca">normalize</a>(</span><span class="m-doc-wrap">const <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a>&amp; path) -&gt; <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a></span>
+            </dt>
+            <dd>Convert <code>path</code> to normal form.</dd>
+            <dt id="a31da5fadeffe6501535453fec6c8ffb7">
+              <span class="m-doc-wrap-bumper">auto <a class="m-doc-self" href="#a31da5fadeffe6501535453fec6c8ffb7">realpath</a>(</span><span class="m-doc-wrap">const <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a>&amp; path) -&gt; <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a></span>
+            </dt>
+            <dd>Resolve links and directory references in <em>path</em> and provide a canonicalized absolute pathname.</dd>
+            <dt id="ae5c3730ed4e6a4f5d6f6da17940cee68">
+              <span class="m-doc-wrap-bumper">void <a class="m-doc-self" href="#ae5c3730ed4e6a4f5d6f6da17940cee68">rglob</a>(</span><span class="m-doc-wrap">const <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a>&amp; basedir,
+              const <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a>&amp; pattern,
+              <a class="m-doc" href="namespace_ase.html#a444d3b63203b49bc45b14c9d0761453b">StringS</a>&amp; matches)</span>
+            </dt>
+            <dd>Recursively match files with glob <code>pattern</code> under <code>basedir</code>.</dd>
+            <dt id="ac8f33198f4cdc00d028587ea27325b8e">
+              <span class="m-doc-wrap-bumper">void <a class="m-doc-self" href="#ac8f33198f4cdc00d028587ea27325b8e">rmrf</a>(</span><span class="m-doc-wrap">const <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a>&amp; dir)</span>
+            </dt>
+            <dd>Recursively delete directory tree.</dd>
+            <dt id="ab03fb8a272e2f87c46fb962b9b76838a">
+              <span class="m-doc-wrap-bumper">auto <a class="m-doc-self" href="#ab03fb8a272e2f87c46fb962b9b76838a">runtime_dir</a>(</span><span class="m-doc-wrap">) -&gt; <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a></span>
+            </dt>
+            <dd>Get the $XDG_RUNTIME_DIR directory, see: <a class="poxy-external" href="https://specifications.freedesktop.org/basedir-spec/latest" target="_blank">https:/<wbr/>/<wbr/>specifications.freedesktop.org/<wbr/>basedir-spec/<wbr/>latest</a>.</dd>
+            <dt id="a0c71d533ac3b59091afa34e8774a0a28">
+              <span class="m-doc-wrap-bumper">auto <a class="m-doc-self" href="#a0c71d533ac3b59091afa34e8774a0a28">searchpath_contains</a>(</span><span class="m-doc-wrap">const <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a>&amp; searchpath,
+              const <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a>&amp; element) -&gt; bool</span>
+            </dt>
+            <dd>Check if <em>searchpath</em> contains <em>element</em>, a trailing slash searches for directories.</dd>
+            <dt id="ab04374f3984470edcc65ed2e28e4b39a">
+              <span class="m-doc-wrap-bumper">auto <a class="m-doc-self" href="#ab04374f3984470edcc65ed2e28e4b39a">searchpath_find</a>(</span><span class="m-doc-wrap">const <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a>&amp; searchpath,
+              const <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a>&amp; file,
+              const <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a>&amp; mode) -&gt; <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a></span>
+            </dt>
+            <dd>Find the first <em>file</em> in <em>searchpath</em> which matches <em>mode</em> (see <a class="m-doc" href="namespace_ase_1_1_path.html#a846caddfde09e0e00e077b66cdce9d4e">check()</a>).</dd>
+            <dt id="aeec9ff4aca4a4050707d89e608fdbe9e">
+              <span class="m-doc-wrap-bumper">auto <a class="m-doc-self" href="#aeec9ff4aca4a4050707d89e608fdbe9e">searchpath_list</a>(</span><span class="m-doc-wrap">const <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a>&amp; searchpath,
+              const <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a>&amp; mode) -&gt; <a class="m-doc" href="namespace_ase.html#a444d3b63203b49bc45b14c9d0761453b">StringS</a></span>
+            </dt>
+            <dd>Find all <em>searchpath</em> entries matching <em>mode</em> (see <a class="m-doc" href="namespace_ase_1_1_path.html#a846caddfde09e0e00e077b66cdce9d4e">check()</a>).</dd>
+            <dt id="a667dad32e6ea768c098c2d66d8ced881">
+              <span class="m-doc-wrap-bumper">auto <a class="m-doc-self" href="#a667dad32e6ea768c098c2d66d8ced881">searchpath_multiply</a>(</span><span class="m-doc-wrap">const <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a>&amp; searchpath,
+              const <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a>&amp; postfixes) -&gt; <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a></span>
+            </dt>
+            <dd>Yield a new searchpath by combining each element of <em>searchpath</em> with each element of <em>postfixes</em>.</dd>
+            <dt id="a8c8a21f5143a79dbf8931d46d82c3566">
+              <span class="m-doc-wrap-bumper">auto <a class="m-doc-self" href="#a8c8a21f5143a79dbf8931d46d82c3566">simplify_abspath</a>(</span><span class="m-doc-wrap">const <a class="m-doc-external poxy-external" href="http://en.cppreference.com/w/cpp/string/basic_string.html" target="_blank">std::<wbr/>string</a>&amp; abspath_expression) -&gt; <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a></span>
+            </dt>
+            <dd>Remove extra slashes, './' and '../' from <code>abspath_expression</code>.</dd>
+            <dt id="a9116dbc081986909f42e98f9b20feae8">
+              <span class="m-doc-wrap-bumper">auto <a class="m-doc-self" href="#a9116dbc081986909f42e98f9b20feae8">strip_slashes</a>(</span><span class="m-doc-wrap">const <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a>&amp; path) -&gt; <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a></span>
+            </dt>
+            <dd>Strip trailing directory terminators.</dd>
+            <dt id="a1d138d85fa47a659a9a6f44a26350c17">
+              <span class="m-doc-wrap-bumper">void <a class="m-doc-self" href="#a1d138d85fa47a659a9a6f44a26350c17">unique_realpaths</a>(</span><span class="m-doc-wrap"><a class="m-doc" href="namespace_ase.html#a444d3b63203b49bc45b14c9d0761453b">StringS</a>&amp; pathnames)</span>
+            </dt>
+            <dd>Convert all <code>pathnames</code> via <a class="m-doc" href="namespace_ase_1_1_path.html#a31da5fadeffe6501535453fec6c8ffb7">realpath()</a> and eliminate duplicates.</dd>
+            <dt id="a02f001c5b8177e75708a121d0811ce83">
+              <span class="m-doc-wrap-bumper">auto <a class="m-doc-self" href="#a02f001c5b8177e75708a121d0811ce83">user_home</a>(</span><span class="m-doc-wrap">const <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a>&amp; username) -&gt; <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a></span>
+            </dt>
+            <dd>Get a <em>user's</em> home directory, uses $HOME if no <em>username</em> is given.</dd>
+          </dl>
+        </section>
+        <section>
+          <h2>Function documentation</h2>
+          <section class="m-doc-details" id="ab2aeb6d74e9de675a6fc0fa72ea925cb"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"><a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a> Ase::<wbr/>Path::<wbr/></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a class="m-doc-self" href="#ab2aeb6d74e9de675a6fc0fa72ea925cb">abspath</a>(</span><span class="m-doc-wrap">const <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a>&amp; path,
+              const <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a>&amp; incwd)</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">path</td>
+                  <td>a filename path</td>
+                </tr>
+                <tr>
+                  <td>incwd</td>
+                  <td>optional current working directory</td>
+                </tr>
+              </tbody>
+            </table>
+<p>Complete <em>path</em> to become an absolute file path. If neccessary, <em>incwd</em> or the real current working directory is prepended.</p>
+          </div></section>
+          <section class="m-doc-details" id="a846caddfde09e0e00e077b66cdce9d4e"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">bool Ase::<wbr/>Path::<wbr/></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a class="m-doc-self" href="#a846caddfde09e0e00e077b66cdce9d4e">check</a>(</span><span class="m-doc-wrap">const <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a>&amp; file,
+              const <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a>&amp; mode)</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">file</td>
+                  <td>possibly relative filename</td>
+                </tr>
+                <tr>
+                  <td>mode</td>
+                  <td>feature string</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>true if <em>file</em> adhears to <em>mode</em></td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Perform various checks on <em>file</em> and return whether all checks passed. On failure, errno is set appropriately, and FALSE is returned. Available features to be checked for are:</p><ul><li><code>e</code> - <em>file</em> must exist</li><li><code>r</code> - <em>file</em> must be readable</li><li><code>w</code> - <em>file</em> must be writable</li><li><code>x</code> - <em>file</em> must be executable</li><li><code>f</code> - <em>file</em> must be a regular file</li><li><code>d</code> - <em>file</em> must be a directory</li><li><code>l</code> - <em>file</em> must be a symbolic link</li><li><code>c</code> - <em>file</em> must be a character device</li><li><code>b</code> - <em>file</em> must be a block device</li><li><code>p</code> - <em>file</em> must be a named pipe</li><li><code>s</code> - <em>file</em> must be a socket.</li></ul>
+          </div></section>
+          <section class="m-doc-details" id="a8a4942db8fd85e2424f87ef147593704"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">bool Ase::<wbr/>Path::<wbr/></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a class="m-doc-self" href="#a8a4942db8fd85e2424f87ef147593704">equals</a>(</span><span class="m-doc-wrap">const <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a>&amp; file1,
+              const <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a>&amp; file2)</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">file1</td>
+                  <td>possibly relative filename</td>
+                </tr>
+                <tr>
+                  <td>file2</td>
+                  <td>possibly relative filename</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>TRUE if <em>file1</em> and <em>file2</em> are equal</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Check whether <em>file1</em> and <em>file2</em> are pointing to the same inode in the same file system on the same device.</p>
+          </div></section>
+        </section>
+      </div>
+    </div>
+  </div>
+</article></main>
+<div class="m-doc-search" id="search">
+  <a href="#!" onclick="return hideSearch()"></a>
+  <div class="m-container">
+    <div class="m-row">
+      <div class="m-col-m-8 m-push-m-2">
+        <div class="m-doc-search-header m-text m-small">
+          <div><span class="m-label m-default">Tab</span> / <span class="m-label m-default">T</span> to search, <span class="m-label m-default">Esc</span> to close</div>
+          <div id="search-symbolcount">…</div>
+        </div>
+        <div class="m-doc-search-content">
+          <form>
+            <input autocomplete="off" autofocus="autofocus" disabled="disabled" id="search-input" name="q" placeholder="Loading …" spellcheck="false" type="search"/>
+          </form>
+          <noscript class="m-text m-danger m-text-center">Unlike everything else in the docs, the search functionality <em>requires</em> JavaScript.</noscript>
+          <div class="m-text m-dim m-text-center" id="search-help">
+            <p class="m-noindent">Search for symbols, directories, files, pages or
+            modules. You can omit any prefix from the symbol or file path; adding a
+            <code>:</code> or <code>/</code> suffix lists all members of given symbol or
+            directory.</p>
+            <p class="m-noindent">Use <span class="m-label m-dim">↓</span>
+            / <span class="m-label m-dim">↑</span> to navigate through the list,
+            <span class="m-label m-dim">Enter</span> to go.
+            <span class="m-label m-dim">Tab</span> autocompletes common prefix, you can
+            copy a link to the result using <span class="m-label m-dim">⌘</span>
+            <span class="m-label m-dim">L</span> while <span class="m-label m-dim">⌘</span>
+            <span class="m-label m-dim">M</span> produces a Markdown link.</p>
+          </div>
+          <div class="m-text m-warning m-text-center" id="search-notfound">Sorry, nothing was found.</div>
+          <ul id="search-results"></ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="search-v2.js"></script>
+<script async="async" src="searchdata-v2.js"></script>
+<footer><nav>
+  <div class="m-container">
+    <div class="m-row">
+      <div class="m-col-l-10 m-push-l-1">
+        
+<a class="poxy-external" href="https://github.com/tim-janik/anklang" target="_blank">GitHub</a>
+• <a class="poxy-external" href="https://github.com/tim-janik/anklang/issues" target="_blank">Report an issue</a>
+• <a class="poxy-external" href="https://mozilla.org/MPL/2.0" target="_blank">License</a>
+• <a download="" href="Anklang.tagfile.xml" target="_blank" type="text/xml">Doxygen tagfile</a>
+<br/><br/>
+Site generated using <a class="poxy-external" href="https://github.com/marzer/poxy/" target="_blank">Poxy</a>
+
+      </div>
+    </div>
+  </div>
+</nav></footer>
+
+
+</body></html>

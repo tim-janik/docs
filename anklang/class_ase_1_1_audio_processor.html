@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8"/>
+  <title>Ase::AudioProcessor class | Anklang Anklang - Programming Reference</title>
+  <link href="favicon.svg" rel="icon" type="image/svg+xml"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="#22272e" name="theme-color"/>
+  <link href="poxy/poxy.css" referrerpolicy="no-referrer" rel="stylesheet"/>
+  <script src="poxy/poxy.js"></script>
+  <script>initialize_theme("dark");</script>
+  <meta content="Anklang" name="twitter:title"/>
+  <meta content="Anklang" property="og:title"/>
+  <meta content="Anklang" itemprop="name"/>
+  <meta content="Tim Janik" name="author"/>
+  <meta content="Tim Janik" property="article:author"/>
+  <meta content="Anklang - Programming Reference" name="description"/>
+  <meta content="Anklang - Programming Reference" name="twitter:description"/>
+  <meta content="Anklang - Programming Reference" property="og:description"/>
+  <meta content="Anklang - Programming Reference" itemprop="description"/>
+  <meta content="telephone=no" name="format-detection"/>
+  <meta content="Poxy v0.12.3" name="generator"/>
+  <meta content="strict-origin-when-cross-origin" name="referrer"/>
+</head>
+<body class="poxy-has-toc">
+<header><nav id="navigation">
+  <div class="m-container">
+    <div class="m-row">
+      <a class="m-col-t-8 m-col-m-none m-left-m" href="index.html" id="m-navbar-brand"><svg class="poxy-injected-svg" height="32" id="poxy-injected-svg-0" version="1.1" viewBox="0 0 64 64" width="32" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg"><metadata><rdf:rdf><cc:work><cc:license rdf:resource="MPL-2.0"></cc:license></cc:work></rdf:rdf></metadata><g><rect height="60" rx="1" ry="1" style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:4;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" width="60" x="2" y="2"></rect><g><path d="M 19.078125,2 V 2.5 H 14 V 40.972656 C 13.97726,42.63277 15.372472,44 17,44 h 2.023438 L 19,61.994141 22.921875,62 22.945312,44 H 25 c 1.627528,0 3.02274,-1.36723 3,-3.027344 V 2.5 H 23 V 2.0058594 Z" style="fill:#000000;fill-opacity:1"></path><path d="m 41.078399,1.9999594 v 0.5 H 36.000274 V 40.972615 c -0.02274,1.660114 1.372472,3.027344 3,3.027344 h 2.023438 L 41.000272,61.9941 44.922147,62 44.945587,44 h 2.054688 c 1.627528,0 3.02274,-1.36723 3,-3.027344 V 2.4999594 h -5 V 2.0058188 Z" style="fill:#000000;fill-opacity:1"></path></g><rect height="21" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:4;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" width="60" x="2" y="2"></rect><g><circle cx="11.5" cy="11" r="5.5" style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:4.00000095;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"></circle><circle cx="32" cy="11" r="5.5" style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:4.00000095;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"></circle><circle cx="52.5" cy="11" r="5.5" style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:4.00000095;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"></circle></g></g></svg>Anklang <span class="m-thin">Anklang - Programming Reference</span></a>
+      <div class="m-col-t-4 m-hide-m m-text-right m-nopadr">
+        <a class="m-doc-search-icon" accesskey="f" href="#search" onclick="return showSearch()" title="Search"><svg style="height: 0.9rem;" viewBox="0 0 16 16">
+          <path d="m6 0c-3.31 0-6 2.69-6 6 0 3.31 2.69 6 6 6 1.49 0 2.85-0.541 3.89-1.44-0.0164 0.338 0.147 0.759 0.5 1.15l3.22 3.79c0.552 0.614 1.45 0.665 2 0.115 0.55-0.55 0.499-1.45-0.115-2l-3.79-3.22c-0.392-0.353-0.812-0.515-1.15-0.5 0.895-1.05 1.44-2.41 1.44-3.89 0-3.31-2.69-6-6-6zm0 1.56a4.44 4.44 0 0 1 4.44 4.44 4.44 4.44 0 0 1-4.44 4.44 4.44 4.44 0 0 1-4.44-4.44 4.44 4.44 0 0 1 4.44-4.44z" id="m-doc-search-icon-path"></path>
+        </svg></a>
+        <a href="#navigation" id="m-navbar-show" title="Show navigation"></a>
+        <a href="#" id="m-navbar-hide" title="Hide navigation"></a>
+      </div>
+      <div class="m-col-t-12 m-show-m m-col-m-none m-right-m" id="m-navbar-collapse">
+        <div class="m-row">
+          <ol class="m-col-t-6 m-col-m-none">
+            <li><a href="pages.html">Pages</a></li>
+            <li><a href="files.html">Files</a></li>
+            <li><a href="namespaces.html">Namespaces</a></li>
+          </ol>
+          <ol class="m-col-t-6 m-col-m-none" start="4">
+            <li><a href="annotated.html">Classes</a></li>
+            <li><a class="poxy-icon repo github poxy-external" href="https://github.com/tim-janik/anklang" target="_blank" title="View on GitHub"><svg id="poxy-repo-icon" version="1.1" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg"><path d="M25,1.23a24.37,24.37,0,0,0-7.7,47.5C18.51,49,19,48.2,19,47.56s0-2.12,0-4.15c-6.78,1.47-8.21-3.27-8.21-3.27C9.61,37.33,8,36.58,8,36.58c-2.21-1.51.17-1.48.17-1.48a5.12,5.12,0,0,1,3.73,2.51c2.17,3.72,5.7,2.65,7.09,2a5.25,5.25,0,0,1,1.55-3.26c-5.41-.61-11.1-2.7-11.1-12A9.41,9.41,0,0,1,12,17.79a8.75,8.75,0,0,1,.24-6.45s2-.66,6.7,2.49a23.1,23.1,0,0,1,12.2,0c4.66-3.15,6.7-2.49,6.7-2.49A8.75,8.75,0,0,1,38,17.79a9.41,9.41,0,0,1,2.51,6.54c0,9.36-5.7,11.42-11.13,12a5.83,5.83,0,0,1,1.65,4.51c0,3.26,0,5.89,0,6.69,0,.65.44,1.41,1.68,1.17A24.38,24.38,0,0,0,25,1.23Z" fill="currentColor"></path></svg></a></li>
+            <li><a class="poxy-icon theme" href="javascript:void(null);" id="poxy-theme-switch" onclick="toggle_theme(); return false;" role="button" title="Toggle dark and light themes"><svg id="poxy-theme-switch-img" version="1.1" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><circle cx="185.6708" cy="183.8122" fill="currentColor" r="65.625"></circle><path d="M185.6708,87.5622a13.1256,13.1256,0,0,0,13.125-13.125V52.5622a13.125,13.125,0,1,0-26.25,0v21.875A13.1257,13.1257,0,0,0,185.6708,87.5622Z" fill="currentColor"></path><path d="M99.051,115.7519a13.1236,13.1236,0,1,0,18.56-18.56L102.1442,81.726a13.1236,13.1236,0,0,0-18.5595,18.56Z" fill="currentColor"></path><path d="M89.4208,183.8122a13.1257,13.1257,0,0,0-13.125-13.125H54.4208a13.125,13.125,0,0,0,0,26.25h21.875A13.1256,13.1256,0,0,0,89.4208,183.8122Z" fill="currentColor"></path><path d="M99.051,251.8725,83.5847,267.3431a13.1236,13.1236,0,1,0,18.56,18.56l15.4663-15.4706a13.1236,13.1236,0,1,0-18.5595-18.56Z" fill="currentColor"></path><path d="M185.6708,280.0622a13.1258,13.1258,0,0,0-13.125,13.125v21.875a13.125,13.125,0,0,0,26.25,0v-21.875A13.1257,13.1257,0,0,0,185.6708,280.0622Z" fill="currentColor"></path><path d="M272.2907,251.8725a13.1236,13.1236,0,1,0-18.56,18.56l15.4663,15.4706a13.1236,13.1236,0,1,0,18.56-18.56Z" fill="currentColor"></path><path d="M330.0458,183.8122a13.1257,13.1257,0,0,0-13.125-13.125h-21.875a13.125,13.125,0,0,0,0,26.25h21.875A13.1256,13.1256,0,0,0,330.0458,183.8122Z" fill="currentColor"></path><path d="M263.0109,119.5971a13.0824,13.0824,0,0,0,9.28-3.8452l15.4663-15.4663a13.1236,13.1236,0,1,0-18.56-18.56L253.7312,97.1923a13.125,13.125,0,0,0,9.28,22.4048Z" fill="currentColor"></path><path d="M456.9379,401.6714a63.97,63.97,0,0,1-14.9963,7.2055c-19.6448,6.5283-41.8787,2.9566-58.1439-9.8523a68.9311,68.9311,0,0,1-10.835-10.8339c-12.8088-16.2663-16.3806-38.5-9.8523-58.1471a63.8444,63.8444,0,0,1,7.2077-14.9931,8.8036,8.8036,0,0,0-10.1172-13.3034,87.5188,87.5188,0,1,0,110.0372,110.04A8.8,8.8,0,0,0,456.9379,401.6714Z" fill="currentColor"></path></svg></a></li>
+            <li class="m-show-m"><a class="m-doc-search-icon" href="#search" onclick="return showSearch()" title="Search"><svg style="height: 0.9rem;" viewBox="0 0 16 16">
+              <use href="#m-doc-search-icon-path"></use>
+            </svg></a></li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav></header>
+<main><article>
+  <div class="m-container m-container-inflatable">
+    <div class="m-row">
+      <div class="m-col-l-10 m-push-l-1">
+        <h1>
+          <span class="m-breadcrumb"><a href="namespace_ase.html">Ase</a>::<wbr/></span>AudioProcessor <span class="m-thin">class</span>
+        </h1>
+        <p>Audio signal <a class="m-doc" href="class_ase_1_1_audio_processor.html">AudioProcessor</a> base class, implemented by all effects and instruments.</p>
+        <nav class="m-block m-default poxy-toc" id="poxy-toc">
+          <h3>Contents</h3>
+          <ul>
+            <li>
+              Reference
+              <ul>
+                <li><a href="#pub-types">Public types</a></li>
+                <li><a href="#pub-static-attribs">Public static variables</a></li>
+                <li><a href="#pub-static-methods">Public static functions</a></li>
+                <li><a href="#typeless-methods">Constructors, destructors, conversion operators</a></li>
+                <li><a href="#pub-methods">Public functions</a></li>
+                <li><a href="#pro-methods">Protected functions</a></li>
+                <li><a href="#pri-methods">Private functions</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        <section id="pub-types">
+          <h2><a href="#pub-types">Public types</a></h2>
+          <dl class="m-doc">
+            <dt>
+              class <a class="m-doc" href="class_ase_1_1_audio_processor_1_1_float_buffer.html">FloatBuffer</a>
+            </dt>
+            <dd></dd>
+          </dl>
+        </section>
+        <section id="pub-static-attribs">
+          <h2><a href="#pub-static-attribs">Public static variables</a></h2>
+          <dl class="m-doc">
+            <dt>
+              static const <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a> <a class="m-doc" href="#a11c730d8944c21c694a588f598c71c94">GUIONLY</a>
+            </dt>
+            <dd>":G:r:w:" - GUI READABLE WRITABLE</dd>
+            <dt>
+              static const <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a> <a class="m-doc" href="#af1f7f009d9fd143be873fb7b0645bb36">STANDARD</a>
+            </dt>
+            <dd>":G:S:r:w:" - GUI STORAGE READABLE WRITABLE</dd>
+            <dt>
+              static const <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a> <a class="m-doc" href="#afc6dcb01be5faab9bb5447adb0768e9a">STORAGEONLY</a>
+            </dt>
+            <dd>":S:r:w:" - STORAGE READABLE WRITABLE</dd>
+          </dl>
+        </section>
+        <section id="pub-static-methods">
+          <h2><a href="#pub-static-methods">Public static functions</a></h2>
+          <dl class="m-doc">
+            <dt>
+              <span class="m-doc-wrap-bumper">static auto <a class="m-doc" href="#ad328c409f1c00c27118e06cda066e32a">param_peek_mt</a>(</span><span class="m-doc-wrap">const AudioProcessorP proc,
+              <a class="m-doc" href="struct_ase_1_1_id32.html">Id32</a> paramid) -&gt; double</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">static void <a class="m-doc" href="#adcd259c1115a7514efa3e6e195d059da">registry_add</a>(</span><span class="m-doc-wrap"><a class="m-doc" href="class_ase_1_1_c_string.html">CString</a> aseid,
+              StaticInfo,
+              MakeProcessorP)</span>
+            </dt>
+            <dd></dd>
+            <dt id="a9ea624a9f124e4194d7690c0830db973">
+              <span class="m-doc-wrap-bumper">static void <a class="m-doc-self" href="#a9ea624a9f124e4194d7690c0830db973">registry_foreach</a>(</span><span class="m-doc-wrap">const <a class="m-doc-external poxy-external" href="http://en.cppreference.com/w/cpp/utility/functional/function.html" target="_blank">std::<wbr/>function</a>&lt;void(const <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a>&amp;aseid, StaticInfo)&gt;&amp; fun)</span>
+            </dt>
+            <dd>Iterate over the known <a class="m-doc" href="class_ase_1_1_audio_processor.html">AudioProcessor</a> types.</dd>
+            <dt id="a1668408d9b3d608d207f97bf61715055">
+              <span class="m-doc-wrap-bumper">static auto <a class="m-doc-self" href="#a1668408d9b3d608d207f97bf61715055">timestamp</a>(</span><span class="m-doc-wrap">) -&gt; <a class="m-doc" href="namespace_ase.html#a13d169f5b0e9b257c6964c67ae75ec91">uint64</a></span>
+            </dt>
+            <dd>The current timestamp in sample frames.</dd>
+          </dl>
+        </section>
+        <section id="typeless-methods">
+          <h2><a href="#typeless-methods">Constructors, destructors, conversion operators</a></h2>
+          <dl class="m-doc">
+            <dt id="a3fae1c7ec9408e106ad36488de05c19f">
+              <span class="m-doc-wrap-bumper"><a class="m-doc-self" href="#a3fae1c7ec9408e106ad36488de05c19f">AudioProcessor</a>(</span><span class="m-doc-wrap"><a class="m-doc" href="class_ase_1_1_audio_engine.html">AudioEngine</a>&amp; engine) <span class="m-label m-flat m-warning">protected</span> <span class="m-label m-flat m-info">explicit</span> </span>
+            </dt>
+            <dd>Constructor for <a class="m-doc" href="class_ase_1_1_audio_processor.html">AudioProcessor</a>.</dd>
+            <dt id="ac3052fda43253f5c00be380a3253278d">
+              <span class="m-doc-wrap-bumper"><a class="m-doc-self" href="#ac3052fda43253f5c00be380a3253278d">~AudioProcessor</a>(</span><span class="m-doc-wrap">) <span class="m-label m-flat m-warning">protected</span> <span class="m-label m-flat m-warning">virtual</span></span>
+            </dt>
+            <dd>The destructor is called when the last <a class="m-doc poxy-injected poxy-external" href="https://en.cppreference.com/w/cpp/memory/shared_ptr" target="_blank">std::shared_ptr</a>&lt;&gt; reference drops.</dd>
+          </dl>
+        </section>
+        <section id="pub-methods">
+          <h2><a href="#pub-methods">Public functions</a></h2>
+          <dl class="m-doc">
+            <dt id="a8d83786fc05022f6c615378381406380">
+              <span class="m-doc-wrap-bumper">auto <a class="m-doc-self" href="#a8d83786fc05022f6c615378381406380">atomic_bits_iter</a>(</span><span class="m-doc-wrap"><a class="m-doc poxy-injected poxy-external" href="https://en.cppreference.com/w/cpp/types/size_t" target="_blank">size_t</a> pos = 0) const -&gt; AtomicBits::Iter</span>
+            </dt>
+            <dd>Allow iterations over the atomic bits.</dd>
+            <dt id="a327f77ef78167c5d4957f851e7f03ede">
+              <span class="m-doc-wrap-bumper">auto <a class="m-doc-self" href="#a327f77ef78167c5d4957f851e7f03ede">bus_info</a>(</span><span class="m-doc-wrap"><a class="m-doc" href="namespace_ase.html#a1b2b04028bdeac661ac8a6ddccb1dad3">IBusId</a> busid) const -&gt; <a class="m-doc" href="struct_ase_1_1_bus_info.html">BusInfo</a></span>
+            </dt>
+            <dd>Retrieve <a class="m-doc" href="struct_ase_1_1_bus_info.html">BusInfo</a> for an input bus.</dd>
+            <dt id="af64c183d7397a9bae474d40ebd413af3">
+              <span class="m-doc-wrap-bumper">auto <a class="m-doc-self" href="#af64c183d7397a9bae474d40ebd413af3">bus_info</a>(</span><span class="m-doc-wrap"><a class="m-doc" href="namespace_ase.html#a2b1c0faab7eb92829c386b4e0278b5f6">OBusId</a> busid) const -&gt; <a class="m-doc" href="struct_ase_1_1_bus_info.html">BusInfo</a></span>
+            </dt>
+            <dd>Retrieve <a class="m-doc" href="struct_ase_1_1_bus_info.html">BusInfo</a> for an output bus.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a class="m-doc" href="#abd1468b454bebb576493d6c3ef6dbbe3">check_dirty</a>(</span><span class="m-doc-wrap"><a class="m-doc" href="struct_ase_1_1_id32.html">Id32</a> paramid) const -&gt; bool</span>
+            </dt>
+            <dd></dd>
+            <dt id="a94b5aec37b7f577f1fc837401602f415">
+              <span class="m-doc-wrap-bumper">void <a class="m-doc-self" href="#a94b5aec37b7f577f1fc837401602f415">connect_event_input</a>(</span><span class="m-doc-wrap"><a class="m-doc" href="class_ase_1_1_audio_processor.html">AudioProcessor</a>&amp; oproc)</span>
+            </dt>
+            <dd>Connect event input to event output of <a class="m-doc" href="class_ase_1_1_audio_processor.html">AudioProcessor</a>
+					<code>oproc</code>.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a class="m-doc" href="#ab355aa4aebb27794fda7eb022e2da060">connected</a>(</span><span class="m-doc-wrap"><a class="m-doc" href="namespace_ase.html#a2b1c0faab7eb92829c386b4e0278b5f6">OBusId</a> obusid) const -&gt; bool</span>
+            </dt>
+            <dd></dd>
+            <dt id="ae9f02848ec219795409a371d81e71a19">
+              <span class="m-doc-wrap-bumper">void <a class="m-doc-self" href="#ae9f02848ec219795409a371d81e71a19">disconnect_event_input</a>(</span><span class="m-doc-wrap">)</span>
+            </dt>
+            <dd>Disconnect event input if a connection is present.</dd>
+            <dt id="ab6b5a594318056c76e44dfb62ef83af0">
+              <span class="m-doc-wrap-bumper">void <a class="m-doc-self" href="#ab6b5a594318056c76e44dfb62ef83af0">enable_engine_output</a>(</span><span class="m-doc-wrap">bool onoff)</span>
+            </dt>
+            <dd>Configure if the main output of this module is mixed into the engine output.</dd>
+            <dt id="a77ea45ed83883ed9467c9e5697598b6b">
+              <span class="m-doc-wrap-bumper">auto <a class="m-doc-self" href="#a77ea45ed83883ed9467c9e5697598b6b">engine</a>(</span><span class="m-doc-wrap">) const ASE_CONST -&gt; <a class="m-doc" href="class_ase_1_1_audio_engine.html">AudioEngine</a>&amp;</span>
+            </dt>
+            <dd>Retrieve <a class="m-doc" href="class_ase_1_1_audio_engine.html">AudioEngine</a> handle for this <a class="m-doc" href="class_ase_1_1_audio_processor.html">AudioProcessor</a>.</dd>
+            <dt id="a3acf7a1861cad5c1a0fad387dc4e8681">
+              <span class="m-doc-wrap-bumper">auto <a class="m-doc-self" href="#a3acf7a1861cad5c1a0fad387dc4e8681">find_ibus</a>(</span><span class="m-doc-wrap">const <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a>&amp; name) const -&gt; <a class="m-doc" href="namespace_ase.html#a1b2b04028bdeac661ac8a6ddccb1dad3">IBusId</a></span>
+            </dt>
+            <dd>Return the IBusId for input bus <code>uilabel</code> or else 0.</dd>
+            <dt id="af47788ebaa44a566d49f3c43b65cdfb4">
+              <span class="m-doc-wrap-bumper">auto <a class="m-doc-self" href="#af47788ebaa44a566d49f3c43b65cdfb4">find_obus</a>(</span><span class="m-doc-wrap">const <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a>&amp; name) const -&gt; <a class="m-doc" href="namespace_ase.html#a2b1c0faab7eb92829c386b4e0278b5f6">OBusId</a></span>
+            </dt>
+            <dd>Return the OBusId for output bus <code>uilabel</code> or else 0.</dd>
+            <dt id="a8f2ae13b1f2db1eeae7620333f549b04">
+              <span class="m-doc-wrap-bumper">auto <a class="m-doc-self" href="#a8f2ae13b1f2db1eeae7620333f549b04">find_param</a>(</span><span class="m-doc-wrap">const <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a>&amp; identifier) const -&gt; <a class="m-doc-external poxy-external" href="http://en.cppreference.com/w/cpp/utility/pair.html" target="_blank">MaybeParamId</a></span>
+            </dt>
+            <dd>Return the ParamId for parameter <code>identifier</code> or else 0.</dd>
+            <dt id="afd879275ff794553cad7c0ac8351a809">
+              <span class="m-doc-wrap-bumper">auto <a class="m-doc-self" href="#afd879275ff794553cad7c0ac8351a809">get_device</a>(</span><span class="m-doc-wrap">) const -&gt; DeviceP</span>
+            </dt>
+            <dd>Gain access to the <a class="m-doc" href="class_ase_1_1_device.html">Device</a> handle of <code>this</code> <a class="m-doc" href="class_ase_1_1_audio_processor.html">AudioProcessor</a>.</dd>
+            <dt id="a9c506ba06a2aca0620f033a095cf1c47">
+              <span class="m-doc-wrap-bumper">auto <a class="m-doc-self" href="#a9c506ba06a2aca0620f033a095cf1c47">get_normalized</a>(</span><span class="m-doc-wrap"><a class="m-doc" href="struct_ase_1_1_id32.html">Id32</a> paramid) -&gt; double</span>
+            </dt>
+            <dd>Get param value normalized into 0…1.</dd>
+            <dt id="a3bce6722b2bccc01f84e0292528755a1">
+              <span class="m-doc-wrap-bumper">auto <a class="m-doc-self" href="#a3bce6722b2bccc01f84e0292528755a1">get_param</a>(</span><span class="m-doc-wrap"><a class="m-doc" href="struct_ase_1_1_id32.html">Id32</a> paramid) -&gt; double</span>
+            </dt>
+            <dd>Fetch <code>value</code> of parameter <code>id</code> and clear its <code>dirty</code> flag.</dd>
+            <dt id="a7ac9b0ba6fdbbca816eb66768e2a1e76">
+              <span class="m-doc-wrap-bumper">auto <a class="m-doc-self" href="#a7ac9b0ba6fdbbca816eb66768e2a1e76">has_event_input</a>(</span><span class="m-doc-wrap">) const -&gt; bool</span>
+            </dt>
+            <dd>Returns <code>true</code> if this <a class="m-doc" href="class_ase_1_1_audio_processor.html">AudioProcessor</a> has an event input stream.</dd>
+            <dt id="ad87944ed79f9cfbe93abac4f66a5ef5c">
+              <span class="m-doc-wrap-bumper">auto <a class="m-doc-self" href="#ad87944ed79f9cfbe93abac4f66a5ef5c">has_event_output</a>(</span><span class="m-doc-wrap">) const -&gt; bool</span>
+            </dt>
+            <dd>Returns <code>true</code> if this <a class="m-doc" href="class_ase_1_1_audio_processor.html">AudioProcessor</a> has an event output stream.</dd>
+            <dt id="a35449d51833e9b2163a671ac12c182b3">
+              <span class="m-doc-wrap-bumper">auto <a class="m-doc-self" href="#a35449d51833e9b2163a671ac12c182b3">ifloats</a>(</span><span class="m-doc-wrap"><a class="m-doc" href="namespace_ase.html#a1b2b04028bdeac661ac8a6ddccb1dad3">IBusId</a> b,
+              <a class="m-doc" href="namespace_ase.html#ad69887c4e893bf027b4aa6237d8c08d7">uint</a> c) const -&gt; const float*</span>
+            </dt>
+            <dd>Access readonly float buffer of input bus <code>b</code>, channel <code>c</code>, see also <a class="m-doc" href="class_ase_1_1_audio_processor.html#a73605664d1f4f393a2329e6755045f7f">ofloats()</a>.</dd>
+            <dt id="ac98ee3acef21f99a407d909b708a1d4f">
+              <span class="m-doc-wrap-bumper">auto <a class="m-doc-self" href="#ac98ee3acef21f99a407d909b708a1d4f">inyquist</a>(</span><span class="m-doc-wrap">) const ASE_CONST -&gt; double</span>
+            </dt>
+            <dd>Inverse Nyquist frequency, i.e. 1.0 / <a class="m-doc" href="class_ase_1_1_audio_processor.html#aa247118e55958ee4b8837584aec91c7e">nyquist()</a>.</dd>
+            <dt id="a7cceb42848a4a2d844849eddec1caa57">
+              <span class="m-doc-wrap-bumper">auto <a class="m-doc-self" href="#a7cceb42848a4a2d844849eddec1caa57">is_initialized</a>(</span><span class="m-doc-wrap">) const -&gt; bool</span>
+            </dt>
+            <dd>Check if <a class="m-doc" href="class_ase_1_1_audio_processor.html">AudioProcessor</a> has been properly intiialized (so the parameter set is fixed).</dd>
+            <dt id="a5d1835ae090e6f1dc2d9ed3ca83facf1">
+              <span class="m-doc-wrap-bumper">auto <a class="m-doc-self" href="#a5d1835ae090e6f1dc2d9ed3ca83facf1">n_ibuses</a>(</span><span class="m-doc-wrap">) const -&gt; <a class="m-doc" href="namespace_ase.html#ad69887c4e893bf027b4aa6237d8c08d7">uint</a></span>
+            </dt>
+            <dd>Number of input buses configured for this <a class="m-doc" href="class_ase_1_1_audio_processor.html">AudioProcessor</a>.</dd>
+            <dt id="ae05d79df63e44c9395c28370631bc38a">
+              <span class="m-doc-wrap-bumper">auto <a class="m-doc-self" href="#ae05d79df63e44c9395c28370631bc38a">n_ichannels</a>(</span><span class="m-doc-wrap"><a class="m-doc" href="namespace_ase.html#a1b2b04028bdeac661ac8a6ddccb1dad3">IBusId</a> busid) const -&gt; <a class="m-doc" href="namespace_ase.html#ad69887c4e893bf027b4aa6237d8c08d7">uint</a></span>
+            </dt>
+            <dd>Number of channels of input bus <code>busid</code> configured for this <a class="m-doc" href="class_ase_1_1_audio_processor.html">AudioProcessor</a>.</dd>
+            <dt id="ac966cf9012f9564889595efed8a6750f">
+              <span class="m-doc-wrap-bumper">auto <a class="m-doc-self" href="#ac966cf9012f9564889595efed8a6750f">n_obuses</a>(</span><span class="m-doc-wrap">) const -&gt; <a class="m-doc" href="namespace_ase.html#ad69887c4e893bf027b4aa6237d8c08d7">uint</a></span>
+            </dt>
+            <dd>Number of output buses configured for this <a class="m-doc" href="class_ase_1_1_audio_processor.html">AudioProcessor</a>.</dd>
+            <dt id="a5d8470205091cd657c878b4b1db91e4e">
+              <span class="m-doc-wrap-bumper">auto <a class="m-doc-self" href="#a5d8470205091cd657c878b4b1db91e4e">n_ochannels</a>(</span><span class="m-doc-wrap"><a class="m-doc" href="namespace_ase.html#a2b1c0faab7eb92829c386b4e0278b5f6">OBusId</a> busid) const -&gt; <a class="m-doc" href="namespace_ase.html#ad69887c4e893bf027b4aa6237d8c08d7">uint</a></span>
+            </dt>
+            <dd>Number of channels of output bus <code>busid</code> configured for this <a class="m-doc" href="class_ase_1_1_audio_processor.html">AudioProcessor</a>.</dd>
+            <dt id="a335a35417ea1cb19df8943fe8a43c56c">
+              <span class="m-doc-wrap-bumper">auto <a class="m-doc-self" href="#a335a35417ea1cb19df8943fe8a43c56c">note_to_freq</a>(</span><span class="m-doc-wrap">int note) const -&gt; float</span>
+            </dt>
+            <dd>Convert MIDI note to Hertz according to the current MusicalTuning.</dd>
+            <dt id="aa247118e55958ee4b8837584aec91c7e">
+              <span class="m-doc-wrap-bumper">auto <a class="m-doc-self" href="#aa247118e55958ee4b8837584aec91c7e">nyquist</a>(</span><span class="m-doc-wrap">) const ASE_CONST -&gt; double</span>
+            </dt>
+            <dd>Half the sample rate in Hz as double, used for <a class="m-doc" href="class_ase_1_1_audio_processor.html#a25f75ad556ae6b5659a81bef7a8e6e59">render()</a>.</dd>
+            <dt id="a73605664d1f4f393a2329e6755045f7f">
+              <span class="m-doc-wrap-bumper">auto <a class="m-doc-self" href="#a73605664d1f4f393a2329e6755045f7f">ofloats</a>(</span><span class="m-doc-wrap"><a class="m-doc" href="namespace_ase.html#a2b1c0faab7eb92829c386b4e0278b5f6">OBusId</a> b,
+              <a class="m-doc" href="namespace_ase.html#ad69887c4e893bf027b4aa6237d8c08d7">uint</a> c) const -&gt; const float*</span>
+            </dt>
+            <dd>Access readonly float buffer of output bus <code>b</code>, channel <code>c</code>, see also <a class="m-doc" href="class_ase_1_1_audio_processor.html#aee38ce7740c39ea167e06c0a756eba8a">oblock()</a>.</dd>
+            <dt id="a6f3ab3386b8586a014a0a60e61607fe8">
+              <span class="m-doc-wrap-bumper">auto <a class="m-doc-self" href="#a6f3ab3386b8586a014a0a60e61607fe8">param_info</a>(</span><span class="m-doc-wrap"><a class="m-doc" href="struct_ase_1_1_id32.html">Id32</a> paramid) const -&gt; ParamInfoP</span>
+            </dt>
+            <dd>Retrieve supplemental information for parameters, usually to enhance the user interface.</dd>
+            <dt id="ab48b9f04f2193c06b2334c37b1e08950">
+              <span class="m-doc-wrap-bumper">auto <a class="m-doc-self" href="#ab48b9f04f2193c06b2334c37b1e08950">param_range</a>(</span><span class="m-doc-wrap"><a class="m-doc" href="struct_ase_1_1_id32.html">Id32</a> paramid) const -&gt; MinMax</span>
+            </dt>
+            <dd>Retrieve the minimum / maximum values for a parameter.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a class="m-doc" href="#a751982e0512de6abae694d4e7280adaf">param_value_from_text</a>(</span><span class="m-doc-wrap"><a class="m-doc" href="struct_ase_1_1_id32.html">Id32</a> paramid,
+              const <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a>&amp; text) const -&gt; double <span class="m-label m-flat m-warning">virtual</span></span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a class="m-doc" href="#a19f8ebf1cf3ff2cf277f34e961eab840">param_value_to_text</a>(</span><span class="m-doc-wrap"><a class="m-doc" href="struct_ase_1_1_id32.html">Id32</a> paramid,
+              double value) const -&gt; <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a> <span class="m-label m-flat m-warning">virtual</span></span>
+            </dt>
+            <dd></dd>
+            <dt id="ab0824ae209695af4e2171d40aa1dbca9">
+              <span class="m-doc-wrap-bumper">auto <a class="m-doc-self" href="#ab0824ae209695af4e2171d40aa1dbca9">set_normalized</a>(</span><span class="m-doc-wrap"><a class="m-doc" href="struct_ase_1_1_id32.html">Id32</a> paramid,
+              double normalized,
+              bool sendnotify = true) -&gt; bool</span>
+            </dt>
+            <dd>Set param value normalized into 0…1.</dd>
+            <dt id="a9c9b6223aa0aadc58877d050aebc9d2d">
+              <span class="m-doc-wrap-bumper">auto <a class="m-doc-self" href="#a9c9b6223aa0aadc58877d050aebc9d2d">set_param</a>(</span><span class="m-doc-wrap"><a class="m-doc" href="struct_ase_1_1_id32.html">Id32</a> paramid,
+              double value,
+              bool sendnotify = true) -&gt; bool</span>
+            </dt>
+            <dd>Set parameter <code>id</code> to <code>value</code> within <code><a class="m-doc" href="struct_ase_1_1_param_info.html#a78905d4172c170ff3a303000cdc9b452">ParamInfo.get_<wbr/>minmax()</a></code>.</dd>
+            <dt id="a49dbc69f870239711d7d506190c38512">
+              <span class="m-doc-wrap-bumper">auto <a class="m-doc-self" href="#a49dbc69f870239711d7d506190c38512">transport</a>(</span><span class="m-doc-wrap">) const ASE_CONST -&gt; const <a class="m-doc" href="struct_ase_1_1_audio_transport.html">AudioTransport</a>&amp;</span>
+            </dt>
+            <dd>Sample rate mixing frequency in Hz as unsigned, used for <a class="m-doc" href="class_ase_1_1_audio_processor.html#a25f75ad556ae6b5659a81bef7a8e6e59">render()</a>.</dd>
+          </dl>
+        </section>
+        <section id="pro-methods">
+          <h2><a href="#pro-methods">Protected functions</a></h2>
+          <dl class="m-doc">
+            <dt id="abff24938665883b6c1fa9b1c136c5238">
+              <span class="m-doc-wrap-bumper">auto <a class="m-doc-self" href="#abff24938665883b6c1fa9b1c136c5238">add_input_bus</a>(</span><span class="m-doc-wrap"><a class="m-doc" href="class_ase_1_1_c_string.html">CString</a> uilabel,
+              <a class="m-doc" href="namespace_ase.html#a23ea47c81a3443fd070bc766566acbda">SpeakerArrangement</a> speakerarrangement,
+              const <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a>&amp; hints = "",
+              const <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a>&amp; blurb = "") -&gt; <a class="m-doc" href="namespace_ase.html#a1b2b04028bdeac661ac8a6ddccb1dad3">IBusId</a></span>
+            </dt>
+            <dd>Add an input bus with <code>uilabel</code> and channels configured via <code>speakerarrangement</code>.</dd>
+            <dt id="a69b2201236f4f57f9953d2023cec8e91">
+              <span class="m-doc-wrap-bumper">auto <a class="m-doc-self" href="#a69b2201236f4f57f9953d2023cec8e91">add_output_bus</a>(</span><span class="m-doc-wrap"><a class="m-doc" href="class_ase_1_1_c_string.html">CString</a> uilabel,
+              <a class="m-doc" href="namespace_ase.html#a23ea47c81a3443fd070bc766566acbda">SpeakerArrangement</a> speakerarrangement,
+              const <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a>&amp; hints = "",
+              const <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a>&amp; blurb = "") -&gt; <a class="m-doc" href="namespace_ase.html#a2b1c0faab7eb92829c386b4e0278b5f6">OBusId</a></span>
+            </dt>
+            <dd>Add an output bus with <code>uilabel</code> and channels configured via <code>speakerarrangement</code>.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a class="m-doc" href="#a075b9566df18b83426010791f301c5e3">add_param</a>(</span><span class="m-doc-wrap"><a class="m-doc" href="struct_ase_1_1_id32.html">Id32</a> id,
+              const <a class="m-doc" href="struct_ase_1_1_param_info.html">ParamInfo</a>&amp; infotmpl,
+              double value) -&gt; <a class="m-doc" href="namespace_ase.html#a4b0e60fbea9c250f7d933b0f60ddf67d">ParamId</a></span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a class="m-doc" href="#a2e820dcc0dfb1dd2b40f43c6958c3248">add_param</a>(</span><span class="m-doc-wrap"><a class="m-doc" href="struct_ase_1_1_id32.html">Id32</a> id,
+              const <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a>&amp; clabel,
+              const <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a>&amp; nickname,
+              double pmin,
+              double pmax,
+              double value,
+              const <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a>&amp; unit = "",
+              <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a> hints = "",
+              const <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a>&amp; blurb = "",
+              const <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a>&amp; description = "") -&gt; <a class="m-doc" href="namespace_ase.html#a4b0e60fbea9c250f7d933b0f60ddf67d">ParamId</a></span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a class="m-doc" href="#ab70b8198bea3bb27591d2e142e7955f7">add_param</a>(</span><span class="m-doc-wrap"><a class="m-doc" href="struct_ase_1_1_id32.html">Id32</a> id,
+              const <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a>&amp; clabel,
+              const <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a>&amp; nickname,
+              ChoiceS&amp;&amp; centries,
+              double value,
+              <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a> hints = "",
+              const <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a>&amp; blurb = "",
+              const <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a>&amp; description = "") -&gt; <a class="m-doc" href="namespace_ase.html#a4b0e60fbea9c250f7d933b0f60ddf67d">ParamId</a></span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a class="m-doc" href="#aa78325b9b563d872169c1ea272b9d5d0">add_param</a>(</span><span class="m-doc-wrap"><a class="m-doc" href="struct_ase_1_1_id32.html">Id32</a> id,
+              const <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a>&amp; clabel,
+              const <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a>&amp; nickname,
+              bool boolvalue,
+              <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a> hints = "",
+              const <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a>&amp; blurb = "",
+              const <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a>&amp; description = "") -&gt; <a class="m-doc" href="namespace_ase.html#a4b0e60fbea9c250f7d933b0f60ddf67d">ParamId</a></span>
+            </dt>
+            <dd></dd>
+            <dt id="aedd0441643b2e0fb9dfd3d05415c3ea9">
+              <span class="m-doc-wrap-bumper">auto <a class="m-doc-self" href="#aedd0441643b2e0fb9dfd3d05415c3ea9">add_param</a>(</span><span class="m-doc-wrap">const <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a>&amp; clabel,
+              const <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a>&amp; nickname,
+              double pmin,
+              double pmax,
+              double value,
+              const <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a>&amp; unit = "",
+              <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a> hints = "",
+              const <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a>&amp; blurb = "",
+              const <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a>&amp; description = "") -&gt; <a class="m-doc" href="namespace_ase.html#a4b0e60fbea9c250f7d933b0f60ddf67d">ParamId</a></span>
+            </dt>
+            <dd>Variant of <a class="m-doc" href="class_ase_1_1_audio_processor.html#a075b9566df18b83426010791f301c5e3">AudioProcessor::<wbr/>add_param()</a> with sequential <code>id</code> generation.</dd>
+            <dt id="a35c75d37491889126b1b5aa5cb4b523e">
+              <span class="m-doc-wrap-bumper">auto <a class="m-doc-self" href="#a35c75d37491889126b1b5aa5cb4b523e">add_param</a>(</span><span class="m-doc-wrap">const <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a>&amp; clabel,
+              const <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a>&amp; nickname,
+              ChoiceS&amp;&amp; centries,
+              double value,
+              <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a> hints = "",
+              const <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a>&amp; blurb = "",
+              const <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a>&amp; description = "") -&gt; <a class="m-doc" href="namespace_ase.html#a4b0e60fbea9c250f7d933b0f60ddf67d">ParamId</a></span>
+            </dt>
+            <dd>Variant of <a class="m-doc" href="class_ase_1_1_audio_processor.html#a075b9566df18b83426010791f301c5e3">AudioProcessor::<wbr/>add_param()</a> with sequential <code>id</code> generation.</dd>
+            <dt id="a2c6248afbe57e8ad0bf6e7e59b371814">
+              <span class="m-doc-wrap-bumper">auto <a class="m-doc-self" href="#a2c6248afbe57e8ad0bf6e7e59b371814">add_param</a>(</span><span class="m-doc-wrap">const <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a>&amp; clabel,
+              const <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a>&amp; nickname,
+              bool boolvalue,
+              <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a> hints = "",
+              const <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a>&amp; blurb = "",
+              const <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a>&amp; description = "") -&gt; <a class="m-doc" href="namespace_ase.html#a4b0e60fbea9c250f7d933b0f60ddf67d">ParamId</a></span>
+            </dt>
+            <dd>Variant of <a class="m-doc" href="class_ase_1_1_audio_processor.html#a075b9566df18b83426010791f301c5e3">AudioProcessor::<wbr/>add_param()</a> with sequential <code>id</code> generation.</dd>
+            <dt id="af90879c55af4e12a737ab74781a6676c">
+              <span class="m-doc-wrap-bumper">void <a class="m-doc-self" href="#af90879c55af4e12a737ab74781a6676c">assign_oblock</a>(</span><span class="m-doc-wrap"><a class="m-doc" href="namespace_ase.html#a2b1c0faab7eb92829c386b4e0278b5f6">OBusId</a> b,
+              <a class="m-doc" href="namespace_ase.html#ad69887c4e893bf027b4aa6237d8c08d7">uint</a> c,
+              float val)</span>
+            </dt>
+            <dd>Fill the output buffer of bus <code>b</code>, channel <code>c</code> with <code>v</code>.</dd>
+            <dt id="aa1d282b9dd8055c221136bb7f2cb94a5">
+              <span class="m-doc-wrap-bumper">auto <a class="m-doc-self" href="#aa1d282b9dd8055c221136bb7f2cb94a5">atomic_bit_notify</a>(</span><span class="m-doc-wrap"><a class="m-doc poxy-injected poxy-external" href="https://en.cppreference.com/w/cpp/types/size_t" target="_blank">size_t</a> nth) -&gt; bool</span>
+            </dt>
+            <dd>Set the nth atomic notification bit, return if <a class="m-doc" href="class_ase_1_1_audio_processor.html#a2ee3d0bbed0e07e59c99ebc082f17756">enotify_<wbr/>enqueue_<wbr/>mt()</a> is needed.</dd>
+            <dt id="a7ce6e8f1ebb9d755194ac28348b90453">
+              <span class="m-doc-wrap-bumper">void <a class="m-doc-self" href="#a7ce6e8f1ebb9d755194ac28348b90453">atomic_bits_resize</a>(</span><span class="m-doc-wrap"><a class="m-doc poxy-injected poxy-external" href="https://en.cppreference.com/w/cpp/types/size_t" target="_blank">size_t</a> count)</span>
+            </dt>
+            <dd>Prepare <code>count</code> bits for atomic notifications.</dd>
+            <dt id="af9645660bb1ce204d208e5ddcf14402b">
+              <span class="m-doc-wrap-bumper">void <a class="m-doc-self" href="#af9645660bb1ce204d208e5ddcf14402b">connect</a>(</span><span class="m-doc-wrap"><a class="m-doc" href="namespace_ase.html#a1b2b04028bdeac661ac8a6ddccb1dad3">IBusId</a> ibus,
+              <a class="m-doc" href="class_ase_1_1_audio_processor.html">AudioProcessor</a>&amp; oproc,
+              <a class="m-doc" href="namespace_ase.html#a2b1c0faab7eb92829c386b4e0278b5f6">OBusId</a> obus)</span>
+            </dt>
+            <dd>Connect input <code>ibusid</code> to output <code>obusid</code> of <a class="m-doc" href="class_ase_1_1_audio_processor.html">AudioProcessor</a>
+					<code>prev</code>.</dd>
+            <dt id="ab0aa1a6c8b0da02855975378884bf2f7">
+              <span class="m-doc-wrap-bumper">void <a class="m-doc-self" href="#ab0aa1a6c8b0da02855975378884bf2f7">disconnect</a>(</span><span class="m-doc-wrap"><a class="m-doc" href="namespace_ase.html#a1b2b04028bdeac661ac8a6ddccb1dad3">IBusId</a> ibus)</span>
+            </dt>
+            <dd>Disconnect input <code>ibusid</code>.</dd>
+            <dt id="adc939418e008990ac1b49307cf874ab2">
+              <span class="m-doc-wrap-bumper">void <a class="m-doc-self" href="#adc939418e008990ac1b49307cf874ab2">disconnect_ibuses</a>(</span><span class="m-doc-wrap">)</span>
+            </dt>
+            <dd>Reset input bus buffer data.</dd>
+            <dt id="aa18307dfe336489244f7cb86d21d5446">
+              <span class="m-doc-wrap-bumper">void <a class="m-doc-self" href="#aa18307dfe336489244f7cb86d21d5446">disconnect_obuses</a>(</span><span class="m-doc-wrap">)</span>
+            </dt>
+            <dd>Disconnect inputs of all Processors that are connected to outputs of <code>this</code>.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">void <a class="m-doc" href="#a2ee3d0bbed0e07e59c99ebc082f17756">enotify_enqueue_mt</a>(</span><span class="m-doc-wrap"><a class="m-doc" href="namespace_ase.html#ad2f22b1cad158ece02d3f37787ad39f9">uint32</a> pushmask)</span>
+            </dt>
+            <dd></dd>
+            <dt id="a9db19994b78b6fb39285452b5c7d3d0e">
+              <span class="m-doc-wrap-bumper">auto <a class="m-doc-self" href="#a9db19994b78b6fb39285452b5c7d3d0e">get_event_input</a>(</span><span class="m-doc-wrap">) -&gt; <a class="m-doc" href="class_ase_1_1_midi_event_range.html">MidiEventRange</a></span>
+            </dt>
+            <dd>Access the current input EventRange during <a class="m-doc" href="class_ase_1_1_audio_processor.html#a25f75ad556ae6b5659a81bef7a8e6e59">render()</a>, needs <a class="m-doc" href="class_ase_1_1_audio_processor.html#a3e46d24cd58036a48916e8e967bf5725">prepare_<wbr/>event_<wbr/>input()</a>.</dd>
+            <dt id="a31dcd653f3b439e03c4c95d44ef86125">
+              <span class="m-doc-wrap-bumper">auto <a class="m-doc-self" href="#a31dcd653f3b439e03c4c95d44ef86125">get_event_output</a>(</span><span class="m-doc-wrap">) -&gt; <a class="m-doc" href="class_ase_1_1_midi_event_stream.html">MidiEventStream</a>&amp;</span>
+            </dt>
+            <dd>Access the current output EventStream during <a class="m-doc" href="class_ase_1_1_audio_processor.html#a25f75ad556ae6b5659a81bef7a8e6e59">render()</a>, needs <a class="m-doc" href="class_ase_1_1_audio_processor.html#a3e46d24cd58036a48916e8e967bf5725">prepare_<wbr/>event_<wbr/>input()</a>.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">void <a class="m-doc" href="#ab25b100b38c8faf3cfd42adc02aedcd1">initialize</a>(</span><span class="m-doc-wrap"><a class="m-doc" href="namespace_ase.html#a23ea47c81a3443fd070bc766566acbda">SpeakerArrangement</a> busses) <span class="m-label m-flat m-warning">pure virtual</span></span>
+            </dt>
+            <dd></dd>
+            <dt id="a0f8466c28f11914dc60ba3e4fe321824">
+              <span class="m-doc-wrap-bumper">auto <a class="m-doc-self" href="#a0f8466c28f11914dc60ba3e4fe321824">iobus</a>(</span><span class="m-doc-wrap"><a class="m-doc" href="namespace_ase.html#a2b1c0faab7eb92829c386b4e0278b5f6">OBusId</a> busid) -&gt; OBus&amp;</span>
+            </dt>
+            <dd>Get internal output bus handle.</dd>
+            <dt id="a217cccfd2f9c936f2e509cc52432b6c2">
+              <span class="m-doc-wrap-bumper">auto <a class="m-doc-self" href="#a217cccfd2f9c936f2e509cc52432b6c2">iobus</a>(</span><span class="m-doc-wrap"><a class="m-doc" href="namespace_ase.html#a1b2b04028bdeac661ac8a6ddccb1dad3">IBusId</a> busid) -&gt; IBus&amp;</span>
+            </dt>
+            <dd>Get internal input bus handle.</dd>
+            <dt id="a2194f44762e0877b342eea77b5bcdd00">
+              <span class="m-doc-wrap-bumper">auto <a class="m-doc-self" href="#a2194f44762e0877b342eea77b5bcdd00">nextid</a>(</span><span class="m-doc-wrap">) const -&gt; <a class="m-doc" href="namespace_ase.html#a4b0e60fbea9c250f7d933b0f60ddf67d">ParamId</a></span>
+            </dt>
+            <dd>Helper for <a class="m-doc" href="class_ase_1_1_audio_processor.html#a075b9566df18b83426010791f301c5e3">add_<wbr/>param()</a> to generate the sequentially next ParamId.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a class="m-doc" href="#aee38ce7740c39ea167e06c0a756eba8a">oblock</a>(</span><span class="m-doc-wrap"><a class="m-doc" href="namespace_ase.html#a2b1c0faab7eb92829c386b4e0278b5f6">OBusId</a> b,
+              <a class="m-doc" href="namespace_ase.html#ad69887c4e893bf027b4aa6237d8c08d7">uint</a> c) -&gt; float*</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a class="m-doc" href="#aa76e7bab794e3db7b3d3c05bd38099ca">peek_param_mt</a>(</span><span class="m-doc-wrap"><a class="m-doc" href="struct_ase_1_1_id32.html">Id32</a> paramid) const -&gt; double</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">void <a class="m-doc" href="#a3e46d24cd58036a48916e8e967bf5725">prepare_event_input</a>(</span><span class="m-doc-wrap">)</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">void <a class="m-doc" href="#a82e54d7d4dfac6f432ec75d17f992e73">prepare_event_output</a>(</span><span class="m-doc-wrap">)</span>
+            </dt>
+            <dd></dd>
+            <dt id="a2db20534e453cda1f9bde2737bd456b0">
+              <span class="m-doc-wrap-bumper">void <a class="m-doc-self" href="#a2db20534e453cda1f9bde2737bd456b0">redirect_oblock</a>(</span><span class="m-doc-wrap"><a class="m-doc" href="namespace_ase.html#a2b1c0faab7eb92829c386b4e0278b5f6">OBusId</a> b,
+              <a class="m-doc" href="namespace_ase.html#ad69887c4e893bf027b4aa6237d8c08d7">uint</a> c,
+              const float* block)</span>
+            </dt>
+            <dd>Redirect output buffer of bus <code>b</code>, channel <code>c</code> to point to <code>block</code>, or zeros if <code>block==nullptr</code>.</dd>
+            <dt id="a32b2d957aac44a5f0431d758a98a28c5">
+              <span class="m-doc-wrap-bumper">void <a class="m-doc-self" href="#a32b2d957aac44a5f0431d758a98a28c5">remove_all_buses</a>(</span><span class="m-doc-wrap">)</span>
+            </dt>
+            <dd>Remove existing bus configurations, useful at the start of configure().</dd>
+            <dt id="a82c9b42b5a2ca52b85bba1f2ac5706a6">
+              <span class="m-doc-wrap-bumper">void <a class="m-doc-self" href="#a82c9b42b5a2ca52b85bba1f2ac5706a6">reschedule</a>(</span><span class="m-doc-wrap">)</span>
+            </dt>
+            <dd>Request recreation of the audio engine rendering schedule.</dd>
+            <dt id="aca720cb60bbcce1afd00b5ab40ea5c02">
+              <span class="m-doc-wrap-bumper">auto <a class="m-doc-self" href="#aca720cb60bbcce1afd00b5ab40ea5c02">schedule_processor</a>(</span><span class="m-doc-wrap">) -&gt; <a class="m-doc" href="namespace_ase.html#ad69887c4e893bf027b4aa6237d8c08d7">uint</a></span>
+            </dt>
+            <dd>Schedule this node and its dependencies for engine rendering.</dd>
+            <dt id="a138549f6c91f5cadefcc456bbf7b085e">
+              <span class="m-doc-wrap-bumper">void <a class="m-doc-self" href="#a138549f6c91f5cadefcc456bbf7b085e">start_group</a>(</span><span class="m-doc-wrap">const <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a>&amp; groupname) const</span>
+            </dt>
+            <dd>Introduce a <code><a class="m-doc" href="struct_ase_1_1_param_info.html#ae7bc6838e5a25bfa96fe25cec1759f1e">ParamInfo.group</a></code> to be used for the following <a class="m-doc" href="class_ase_1_1_audio_processor.html#a075b9566df18b83426010791f301c5e3">add_<wbr/>param()</a> calls.</dd>
+          </dl>
+        </section>
+        <section id="pri-methods">
+          <h2><a href="#pri-methods">Private functions</a></h2>
+          <dl class="m-doc">
+            <dt>
+              <span class="m-doc-wrap-bumper">void <a class="m-doc" href="#a25f75ad556ae6b5659a81bef7a8e6e59">render</a>(</span><span class="m-doc-wrap"><a class="m-doc" href="namespace_ase.html#ad69887c4e893bf027b4aa6237d8c08d7">uint</a> n_frames) <span class="m-label m-flat m-warning">pure virtual</span></span>
+            </dt>
+            <dd></dd>
+            <dt id="af8df19bdb11d20b775058062ee15c75b">
+              <span class="m-doc-wrap-bumper">void <a class="m-doc-self" href="#af8df19bdb11d20b775058062ee15c75b">reset</a>(</span><span class="m-doc-wrap"><a class="m-doc" href="namespace_ase.html#a13d169f5b0e9b257c6964c67ae75ec91">uint64</a> target_stamp) <span class="m-label m-flat m-warning">pure virtual</span></span>
+            </dt>
+            <dd>Reset all state variables.</dd>
+          </dl>
+        </section>
+        <section>
+          <h2>Function documentation</h2>
+          <section class="m-doc-details" id="ad328c409f1c00c27118e06cda066e32a"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">static double Ase::<wbr/>AudioProcessor::<wbr/></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a class="m-doc-self" href="#ad328c409f1c00c27118e06cda066e32a">param_peek_mt</a>(</span><span class="m-doc-wrap">const AudioProcessorP proc,
+              <a class="m-doc" href="struct_ase_1_1_id32.html">Id32</a> paramid)</span></span>
+            </h3>
+<p>Fetch the current parameter value of a <a class="m-doc" href="class_ase_1_1_audio_processor.html">AudioProcessor</a> from any thread. This function is MT-Safe after proper <a class="m-doc" href="class_ase_1_1_audio_processor.html">AudioProcessor</a> initialization.</p>
+          </div></section>
+          <section class="m-doc-details" id="adcd259c1115a7514efa3e6e195d059da"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">static void Ase::<wbr/>AudioProcessor::<wbr/></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a class="m-doc-self" href="#adcd259c1115a7514efa3e6e195d059da">registry_add</a>(</span><span class="m-doc-wrap"><a class="m-doc" href="class_ase_1_1_c_string.html">CString</a> aseid,
+              StaticInfo,
+              MakeProcessorP)</span></span>
+            </h3>
+<p>Add a new type to the <a class="m-doc" href="class_ase_1_1_audio_processor.html">AudioProcessor</a> type registry. New <a class="m-doc" href="class_ase_1_1_audio_processor.html">AudioProcessor</a> types must have a unique URI (see <code>query_info()</code>) and will be created with the factory function <code>create()</code>.</p>
+          </div></section>
+          <section class="m-doc-details" id="abd1468b454bebb576493d6c3ef6dbbe3"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">bool Ase::<wbr/>AudioProcessor::<wbr/></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a class="m-doc-self" href="#abd1468b454bebb576493d6c3ef6dbbe3">check_dirty</a>(</span><span class="m-doc-wrap"><a class="m-doc" href="struct_ase_1_1_id32.html">Id32</a> paramid) const</span></span>
+            </h3>
+<p>Check if the parameter <code>dirty</code> flag is set. Return <code>true</code> if <a class="m-doc" href="class_ase_1_1_audio_processor.html#a9c9b6223aa0aadc58877d050aebc9d2d">set_<wbr/>param()</a> changed the parameter value since the last <a class="m-doc" href="class_ase_1_1_audio_processor.html#a3bce6722b2bccc01f84e0292528755a1">get_<wbr/>param()</a> call.</p>
+          </div></section>
+          <section class="m-doc-details" id="ab355aa4aebb27794fda7eb022e2da060"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">bool Ase::<wbr/>AudioProcessor::<wbr/></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a class="m-doc-self" href="#ab355aa4aebb27794fda7eb022e2da060">connected</a>(</span><span class="m-doc-wrap"><a class="m-doc" href="namespace_ase.html#a2b1c0faab7eb92829c386b4e0278b5f6">OBusId</a> obusid) const</span></span>
+            </h3>
+<p>Indicator for connected output buses. Not connected output bus buffers do not need to be filled.</p>
+          </div></section>
+          <section class="m-doc-details" id="a751982e0512de6abae694d4e7280adaf"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">double Ase::<wbr/>AudioProcessor::<wbr/></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a class="m-doc-self" href="#a751982e0512de6abae694d4e7280adaf">param_value_from_text</a>(</span><span class="m-doc-wrap"><a class="m-doc" href="struct_ase_1_1_id32.html">Id32</a> paramid,
+              const <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a>&amp; text) const <span class="m-label m-warning">virtual</span></span></span>
+            </h3>
+<p>Extract a parameter <code>paramid</code> value from a text string. The string might contain unit information or consist only of number characters. Non-recognized characters should be ignored, so a best effort conversion is always undertaken. Currently, this function may be called from any thread, so <code>this</code> must be treated as <code>const</code> (it might be used concurrently by a different thread).</p>
+          </div></section>
+          <section class="m-doc-details" id="a19f8ebf1cf3ff2cf277f34e961eab840"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"><a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a> Ase::<wbr/>AudioProcessor::<wbr/></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a class="m-doc-self" href="#a19f8ebf1cf3ff2cf277f34e961eab840">param_value_to_text</a>(</span><span class="m-doc-wrap"><a class="m-doc" href="struct_ase_1_1_id32.html">Id32</a> paramid,
+              double value) const <span class="m-label m-warning">virtual</span></span></span>
+            </h3>
+<p>Format a parameter <code>paramid</code> value as text string. Currently, this function may be called from any thread, so <code>this</code> must be treated as <code>const</code> (it might be used concurrently by a different thread).</p>
+          </div></section>
+          <section class="m-doc-details" id="a075b9566df18b83426010791f301c5e3"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"><a class="m-doc" href="namespace_ase.html#a4b0e60fbea9c250f7d933b0f60ddf67d">ParamId</a> Ase::<wbr/>AudioProcessor::<wbr/></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a class="m-doc-self" href="#a075b9566df18b83426010791f301c5e3">add_param</a>(</span><span class="m-doc-wrap"><a class="m-doc" href="struct_ase_1_1_id32.html">Id32</a> id,
+              const <a class="m-doc" href="struct_ase_1_1_param_info.html">ParamInfo</a>&amp; infotmpl,
+              double value) <span class="m-label m-warning">protected</span></span></span>
+            </h3>
+<p>Add a new parameter with unique <code>ParamInfo.identifier</code>. The returned <code>ParamId</code> is forced to match <code>id</code> (and must be unique).</p>
+          </div></section>
+          <section class="m-doc-details" id="a2e820dcc0dfb1dd2b40f43c6958c3248"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"><a class="m-doc" href="namespace_ase.html#a4b0e60fbea9c250f7d933b0f60ddf67d">ParamId</a> Ase::<wbr/>AudioProcessor::<wbr/></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a class="m-doc-self" href="#a2e820dcc0dfb1dd2b40f43c6958c3248">add_param</a>(</span><span class="m-doc-wrap"><a class="m-doc" href="struct_ase_1_1_id32.html">Id32</a> id,
+              const <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a>&amp; clabel,
+              const <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a>&amp; nickname,
+              double pmin,
+              double pmax,
+              double value,
+              const <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a>&amp; unit = "",
+              <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a> hints = "",
+              const <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a>&amp; blurb = "",
+              const <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a>&amp; description = "") <span class="m-label m-warning">protected</span></span></span>
+            </h3>
+<p>Add new range parameter with most <code><a class="m-doc" href="struct_ase_1_1_param_info.html">ParamInfo</a></code> fields as inlined arguments. The returned <code>ParamId</code> is newly assigned and increases with the number of parameters added. The <code>clabel</code> is the canonical, non-translated name for this parameter, its hyphenated lower case version is used for serialization.</p>
+          </div></section>
+          <section class="m-doc-details" id="ab70b8198bea3bb27591d2e142e7955f7"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"><a class="m-doc" href="namespace_ase.html#a4b0e60fbea9c250f7d933b0f60ddf67d">ParamId</a> Ase::<wbr/>AudioProcessor::<wbr/></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a class="m-doc-self" href="#ab70b8198bea3bb27591d2e142e7955f7">add_param</a>(</span><span class="m-doc-wrap"><a class="m-doc" href="struct_ase_1_1_id32.html">Id32</a> id,
+              const <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a>&amp; clabel,
+              const <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a>&amp; nickname,
+              ChoiceS&amp;&amp; centries,
+              double value,
+              <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a> hints = "",
+              const <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a>&amp; blurb = "",
+              const <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a>&amp; description = "") <span class="m-label m-warning">protected</span></span></span>
+            </h3>
+<p>Add new choice parameter with most <code><a class="m-doc" href="struct_ase_1_1_param_info.html">ParamInfo</a></code> fields as inlined arguments. The returned <code>ParamId</code> is newly assigned and increases with the number of parameters added. The <code>clabel</code> is the canonical, non-translated name for this parameter, its hyphenated lower case version is used for serialization.</p>
+          </div></section>
+          <section class="m-doc-details" id="aa78325b9b563d872169c1ea272b9d5d0"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"><a class="m-doc" href="namespace_ase.html#a4b0e60fbea9c250f7d933b0f60ddf67d">ParamId</a> Ase::<wbr/>AudioProcessor::<wbr/></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a class="m-doc-self" href="#aa78325b9b563d872169c1ea272b9d5d0">add_param</a>(</span><span class="m-doc-wrap"><a class="m-doc" href="struct_ase_1_1_id32.html">Id32</a> id,
+              const <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a>&amp; clabel,
+              const <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a>&amp; nickname,
+              bool boolvalue,
+              <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a> hints = "",
+              const <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a>&amp; blurb = "",
+              const <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a>&amp; description = "") <span class="m-label m-warning">protected</span></span></span>
+            </h3>
+<p>Add new toggle parameter with most <code><a class="m-doc" href="struct_ase_1_1_param_info.html">ParamInfo</a></code> fields as inlined arguments. The returned <code>ParamId</code> is newly assigned and increases with the number of parameters added. The <code>clabel</code> is the canonical, non-translated name for this parameter, its hyphenated lower case version is used for serialization.</p>
+          </div></section>
+          <section class="m-doc-details" id="a2ee3d0bbed0e07e59c99ebc082f17756"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">void Ase::<wbr/>AudioProcessor::<wbr/></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a class="m-doc-self" href="#a2ee3d0bbed0e07e59c99ebc082f17756">enotify_enqueue_mt</a>(</span><span class="m-doc-wrap"><a class="m-doc" href="namespace_ase.html#ad2f22b1cad158ece02d3f37787ad39f9">uint32</a> pushmask) <span class="m-label m-warning">protected</span></span></span>
+            </h3>
+<p>Queue an <a class="m-doc" href="class_ase_1_1_audio_processor.html">AudioProcessor</a> notification This function is MT-Safe after proper <a class="m-doc" href="class_ase_1_1_audio_processor.html">AudioProcessor</a> initialization.</p>
+          </div></section>
+          <section class="m-doc-details" id="ab25b100b38c8faf3cfd42adc02aedcd1"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">void Ase::<wbr/>AudioProcessor::<wbr/></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a class="m-doc-self" href="#ab25b100b38c8faf3cfd42adc02aedcd1">initialize</a>(</span><span class="m-doc-wrap"><a class="m-doc" href="namespace_ase.html#a23ea47c81a3443fd070bc766566acbda">SpeakerArrangement</a> busses) <span class="m-label m-warning">pure virtual</span> <span class="m-label m-warning">protected</span></span></span>
+            </h3>
+<p>Mandatory method to setup parameters and I/O busses. See <a class="m-doc" href="class_ase_1_1_audio_processor.html#a075b9566df18b83426010791f301c5e3">add_<wbr/>param()</a>, <a class="m-doc" href="class_ase_1_1_audio_processor.html#abff24938665883b6c1fa9b1c136c5238">add_<wbr/>input_<wbr/>bus()</a> / <a class="m-doc" href="class_ase_1_1_audio_processor.html#a69b2201236f4f57f9953d2023cec8e91">add_<wbr/>output_<wbr/>bus()</a>. This method will be called once per instance after construction.</p>
+          </div></section>
+          <section class="m-doc-details" id="aee38ce7740c39ea167e06c0a756eba8a"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">float* Ase::<wbr/>AudioProcessor::<wbr/></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a class="m-doc-self" href="#aee38ce7740c39ea167e06c0a756eba8a">oblock</a>(</span><span class="m-doc-wrap"><a class="m-doc" href="namespace_ase.html#a2b1c0faab7eb92829c386b4e0278b5f6">OBusId</a> b,
+              <a class="m-doc" href="namespace_ase.html#ad69887c4e893bf027b4aa6237d8c08d7">uint</a> c) <span class="m-label m-warning">protected</span></span></span>
+            </h3>
+<p>Reset buffer redirections and access float buffer of output bus <code>b</code>, channel <code>c</code>. See also <a class="m-doc" href="class_ase_1_1_audio_processor.html#a73605664d1f4f393a2329e6755045f7f">ofloats()</a> for readonly access and <a class="m-doc" href="class_ase_1_1_audio_processor.html#a2db20534e453cda1f9bde2737bd456b0">redirect_<wbr/>oblock()</a> for redirections.</p>
+          </div></section>
+          <section class="m-doc-details" id="aa76e7bab794e3db7b3d3c05bd38099ca"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">double Ase::<wbr/>AudioProcessor::<wbr/></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a class="m-doc-self" href="#aa76e7bab794e3db7b3d3c05bd38099ca">peek_param_mt</a>(</span><span class="m-doc-wrap"><a class="m-doc" href="struct_ase_1_1_id32.html">Id32</a> paramid) const <span class="m-label m-warning">protected</span></span></span>
+            </h3>
+<p>Fetch the current parameter value of a <a class="m-doc" href="class_ase_1_1_audio_processor.html">AudioProcessor</a>. This function does not modify the parameter <code>dirty</code> flag. This function is MT-Safe after proper <a class="m-doc" href="class_ase_1_1_audio_processor.html">AudioProcessor</a> initialization.</p>
+          </div></section>
+          <section class="m-doc-details" id="a3e46d24cd58036a48916e8e967bf5725"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">void Ase::<wbr/>AudioProcessor::<wbr/></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a class="m-doc-self" href="#a3e46d24cd58036a48916e8e967bf5725">prepare_event_input</a>(</span><span class="m-doc-wrap">) <span class="m-label m-warning">protected</span></span></span>
+            </h3>
+<p>Prepare the <a class="m-doc" href="class_ase_1_1_audio_processor.html">AudioProcessor</a> to receive <a class="m-doc" href="struct_ase_1_1_event.html">Event</a> objects during <a class="m-doc" href="class_ase_1_1_audio_processor.html#a25f75ad556ae6b5659a81bef7a8e6e59">render()</a> via <a class="m-doc" href="class_ase_1_1_audio_processor.html#a9db19994b78b6fb39285452b5c7d3d0e">get_<wbr/>event_<wbr/>input()</a>. Note, <a class="m-doc" href="class_ase_1_1_audio_processor.html#a32b2d957aac44a5f0431d758a98a28c5">remove_<wbr/>all_<wbr/>buses()</a> will remove the <a class="m-doc" href="struct_ase_1_1_event.html">Event</a> input created by this function.</p>
+          </div></section>
+          <section class="m-doc-details" id="a82e54d7d4dfac6f432ec75d17f992e73"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">void Ase::<wbr/>AudioProcessor::<wbr/></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a class="m-doc-self" href="#a82e54d7d4dfac6f432ec75d17f992e73">prepare_event_output</a>(</span><span class="m-doc-wrap">) <span class="m-label m-warning">protected</span></span></span>
+            </h3>
+<p>Prepare the <a class="m-doc" href="class_ase_1_1_audio_processor.html">AudioProcessor</a> to produce <a class="m-doc" href="struct_ase_1_1_event.html">Event</a> objects during <a class="m-doc" href="class_ase_1_1_audio_processor.html#a25f75ad556ae6b5659a81bef7a8e6e59">render()</a> via <a class="m-doc" href="class_ase_1_1_audio_processor.html#a31dcd653f3b439e03c4c95d44ef86125">get_<wbr/>event_<wbr/>output()</a>. Note, <a class="m-doc" href="class_ase_1_1_audio_processor.html#a32b2d957aac44a5f0431d758a98a28c5">remove_<wbr/>all_<wbr/>buses()</a> will remove the <a class="m-doc" href="struct_ase_1_1_event.html">Event</a> output created by this function.</p>
+          </div></section>
+          <section class="m-doc-details" id="a25f75ad556ae6b5659a81bef7a8e6e59"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">void Ase::<wbr/>AudioProcessor::<wbr/></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a class="m-doc-self" href="#a25f75ad556ae6b5659a81bef7a8e6e59">render</a>(</span><span class="m-doc-wrap"><a class="m-doc" href="namespace_ase.html#ad69887c4e893bf027b4aa6237d8c08d7">uint</a> n_frames) <span class="m-label m-warning">pure virtual</span> <span class="m-label m-danger">private</span></span></span>
+            </h3>
+<p>Method called for every audio buffer to be processed. Each connected output bus needs to be filled with <code>n_frames</code>, i.e. <code>n_frames</code> many floating point samples per channel. Using the AudioSignal::OBusId (see <a class="m-doc" href="class_ase_1_1_audio_processor.html#a69b2201236f4f57f9953d2023cec8e91">add_<wbr/>output_<wbr/>bus()</a>), the floating point sample buffers can be addressed via the BusConfig structure as: <code>bus[obusid].channel[nth].buffer</code>, see <a class="m-doc" href="class_ase_1_1_audio_processor_1_1_float_buffer.html">FloatBuffer</a> for further details. The AudioSignal::IBusId (see <a class="m-doc" href="class_ase_1_1_audio_processor.html#abff24938665883b6c1fa9b1c136c5238">add_<wbr/>input_<wbr/>bus()</a>) can be used correspondingly to retrieve input channel values.</p>
+          </div></section>
+        </section>
+        <section>
+          <h2>Variable documentation</h2>
+          <section class="m-doc-details" id="a11c730d8944c21c694a588f598c71c94"><div>
+            <h3>
+              static const <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a> Ase::<wbr/>AudioProcessor::<wbr/><a class="m-doc-self" href="#a11c730d8944c21c694a588f598c71c94">GUIONLY</a>
+            </h3>
+            <p>":G:r:w:" - GUI READABLE WRITABLE</p>
+<p>GUI READABLE WRITABLE.</p>
+          </div></section>
+          <section class="m-doc-details" id="af1f7f009d9fd143be873fb7b0645bb36"><div>
+            <h3>
+              static const <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a> Ase::<wbr/>AudioProcessor::<wbr/><a class="m-doc-self" href="#af1f7f009d9fd143be873fb7b0645bb36">STANDARD</a>
+            </h3>
+            <p>":G:S:r:w:" - GUI STORAGE READABLE WRITABLE</p>
+<p>GUI STORAGE READABLE WRITABLE.</p>
+          </div></section>
+          <section class="m-doc-details" id="afc6dcb01be5faab9bb5447adb0768e9a"><div>
+            <h3>
+              static const <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a> Ase::<wbr/>AudioProcessor::<wbr/><a class="m-doc-self" href="#afc6dcb01be5faab9bb5447adb0768e9a">STORAGEONLY</a>
+            </h3>
+            <p>":S:r:w:" - STORAGE READABLE WRITABLE</p>
+<p>STORAGE READABLE WRITABLE.</p>
+          </div></section>
+        </section>
+      </div>
+    </div>
+  </div>
+</article></main>
+<div class="m-doc-search" id="search">
+  <a href="#!" onclick="return hideSearch()"></a>
+  <div class="m-container">
+    <div class="m-row">
+      <div class="m-col-m-8 m-push-m-2">
+        <div class="m-doc-search-header m-text m-small">
+          <div><span class="m-label m-default">Tab</span> / <span class="m-label m-default">T</span> to search, <span class="m-label m-default">Esc</span> to close</div>
+          <div id="search-symbolcount">…</div>
+        </div>
+        <div class="m-doc-search-content">
+          <form>
+            <input autocomplete="off" autofocus="autofocus" disabled="disabled" id="search-input" name="q" placeholder="Loading …" spellcheck="false" type="search"/>
+          </form>
+          <noscript class="m-text m-danger m-text-center">Unlike everything else in the docs, the search functionality <em>requires</em> JavaScript.</noscript>
+          <div class="m-text m-dim m-text-center" id="search-help">
+            <p class="m-noindent">Search for symbols, directories, files, pages or
+            modules. You can omit any prefix from the symbol or file path; adding a
+            <code>:</code> or <code>/</code> suffix lists all members of given symbol or
+            directory.</p>
+            <p class="m-noindent">Use <span class="m-label m-dim">↓</span>
+            / <span class="m-label m-dim">↑</span> to navigate through the list,
+            <span class="m-label m-dim">Enter</span> to go.
+            <span class="m-label m-dim">Tab</span> autocompletes common prefix, you can
+            copy a link to the result using <span class="m-label m-dim">⌘</span>
+            <span class="m-label m-dim">L</span> while <span class="m-label m-dim">⌘</span>
+            <span class="m-label m-dim">M</span> produces a Markdown link.</p>
+          </div>
+          <div class="m-text m-warning m-text-center" id="search-notfound">Sorry, nothing was found.</div>
+          <ul id="search-results"></ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="search-v2.js"></script>
+<script async="async" src="searchdata-v2.js"></script>
+<footer><nav>
+  <div class="m-container">
+    <div class="m-row">
+      <div class="m-col-l-10 m-push-l-1">
+        
+<a class="poxy-external" href="https://github.com/tim-janik/anklang" target="_blank">GitHub</a>
+• <a class="poxy-external" href="https://github.com/tim-janik/anklang/issues" target="_blank">Report an issue</a>
+• <a class="poxy-external" href="https://mozilla.org/MPL/2.0" target="_blank">License</a>
+• <a download="" href="Anklang.tagfile.xml" target="_blank" type="text/xml">Doxygen tagfile</a>
+<br/><br/>
+Site generated using <a class="poxy-external" href="https://github.com/marzer/poxy/" target="_blank">Poxy</a>
+
+      </div>
+    </div>
+  </div>
+</nav></footer>
+
+
+</body></html>
