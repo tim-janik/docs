@@ -1,0 +1,387 @@
+@charset "UTF-8";
+/* CSS theme to produce a TeX look alike layout */
+@import url(charis-sil.css);
+@import url(inconsolata.css);
+html {
+  font-size: 17px;
+  --bg: #fff;
+  --fg: #000;
+  --linkfg: #008;
+}
+@media only screen and (max-width: 1024px) {
+  html {
+    font-size: 16px;
+  }
+}
+@media only screen and (max-width: 900px) {
+  html {
+    font-size: 15px;
+  }
+}
+@media only screen {
+  html {
+    --bg: #272727;
+    --fg: #f8e2dd;
+    --linkfg: #99f;
+  }
+}
+
+body {
+  font-family: "Charis SIL", "Bitstream Charter", "Calisto MT", Georgia, Times, "Times New Roman", serif;
+  font-feature-settings: "ss01" 0, "litr" 0;
+  line-height: 1.35;
+  font-size: 1rem;
+  width: 47.5em;
+  margin: 1em auto;
+  padding: 0 0.5em;
+  height: unset;
+  color: var(--fg);
+  background-color: var(--bg);
+  text-align: justify;
+  -ms-word-break: break-all;
+  word-break: break-all;
+  word-break: break-word;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -o-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+  overflow-wrap: break-word;
+}
+@media only screen and (max-width: 812px) {
+  body {
+    width: 46.7647058824em;
+  }
+}
+@media only screen and (max-width: 800px) {
+  body {
+    width: 46.0588235294em;
+  }
+}
+@media only screen and (max-width: 768px) {
+  body {
+    width: 44.1764705882em;
+  }
+}
+@media only screen and (max-width: 736px) {
+  body {
+    width: 42.2941176471em;
+  }
+}
+@media only screen and (max-width: 667px) {
+  body {
+    width: 38.2352941176em;
+  }
+}
+@media only screen and (max-width: 640px) {
+  body {
+    width: 36.6470588235em;
+  }
+}
+@media only screen and (max-width: 601px) {
+  body {
+    width: 34.3529411765em;
+  }
+}
+@media only screen and (max-width: 592px) {
+  body {
+    width: 33.8235294118em;
+  }
+}
+@media only screen and (max-width: 568px) {
+  body {
+    width: 32.4117647059em;
+  }
+}
+@media only screen and (max-width: 480px) {
+  body {
+    width: 27.2352941176em;
+  }
+}
+@media only screen and (max-width: 414px) {
+  body {
+    width: 23.3529411765em;
+  }
+}
+@media only screen and (max-width: 384px) {
+  body {
+    width: 21.5882352941em;
+  }
+}
+@media only screen and (max-width: 375px) {
+  body {
+    width: 21.0588235294em;
+  }
+}
+@media only screen and (max-width: 360px) {
+  body {
+    width: 20.1764705882em;
+  }
+}
+@media only screen and (max-width: 320px) {
+  body {
+    width: 17.8235294118em;
+  }
+}
+@media only screen and (max-width: 281px) {
+  body {
+    width: 15.5294117647em;
+  }
+}
+@media only screen and (max-width: 218px) {
+  body {
+    width: 11.8235294118em;
+  }
+}
+@media (min--moz-device-pixel-ratio: 0) {
+  body {
+    word-break: normal;
+  }
+}
+
+pre, listing, xmp, plaintext, tt, code, kbd, samp {
+  font-family: "Inconsolata", SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+  line-height: 1.35;
+  font-size: 0.914rem;
+  text-align: unset;
+}
+
+pre code {
+  white-space: inherit;
+}
+
+.smallcaps {
+  font-variant: small-caps;
+}
+
+/* Table style to prevent overflow
+ * This needs <td/> contents wrapped into a div, so 'inline-block' can be applied to
+ * constrain overflows.
+ */
+.shrinkable-table {
+  width: 100%;
+}
+.shrinkable-table > thead > tr > th, .shrinkable-table > thead > tr > td, .shrinkable-table > tbody > tr > th, .shrinkable-table > tbody > tr > td {
+  overflow: hidden;
+  -ms-word-break: break-all;
+  word-break: break-all;
+  word-break: break-word;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -o-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+  overflow-wrap: break-word;
+}
+@media (min--moz-device-pixel-ratio: 0) {
+  .shrinkable-table > thead > tr > th, .shrinkable-table > thead > tr > td, .shrinkable-table > tbody > tr > th, .shrinkable-table > tbody > tr > td {
+    word-break: normal;
+  }
+}
+.shrinkable-table > thead > tr > th > *, .shrinkable-table > thead > tr > td > *, .shrinkable-table > tbody > tr > th > *, .shrinkable-table > tbody > tr > td > * {
+  display: inline-block;
+  overflow: hidden;
+  width: 100%;
+}
+
+a {
+  color: var(--linkfg);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+ul {
+  list-style-type: disc;
+  list-style-type: none;
+}
+
+ul li {
+  padding: 0;
+}
+
+ul li:before {
+  position: absolute;
+  margin-left: -0.7692307692em;
+  font-size: 130%;
+  content: "•";
+  vertical-align: middle;
+  line-height: 1;
+}
+
+table {
+  border-collapse: collapse;
+  border-top: 2px solid var(--fg);
+  border-bottom: 2px solid var(--fg);
+  margin: 2em auto;
+}
+table caption:before {
+  content: "Table: ";
+  font-weight: bold;
+}
+table tr.header th {
+  border-bottom: 1px solid var(--fg);
+  padding-top: 0.3em;
+  padding-bottom: 0.3em;
+  font-weight: inherit;
+}
+table th ~ th,
+table td ~ td {
+  padding-left: 1em;
+}
+
+h1 .header-section-number, h2 .header-section-number, h3 .header-section-number, h4 .header-section-number, h5 .header-section-number, h6 .header-section-number {
+  padding-right: 0.8em;
+}
+
+h1 {
+  margin: 5em 0 1.2em;
+  padding-top: 1.5em;
+  border-top: 1px solid var(--fg);
+  font-size: 146.5%;
+}
+@media print {
+  h1 {
+    margin-top: 0;
+    page-break-before: always;
+  }
+}
+
+h2 {
+  margin: 1.9em 0 1.1em;
+  font-size: 121%;
+}
+
+h3 {
+  margin: 2.1em 0 1.2em;
+  font-size: 1.025em;
+}
+
+h4, h5, h6 {
+  margin: 1.4em 0 0;
+}
+h4 ~ p, h4 ~ dl, h4 ~ pre, h5 ~ p, h5 ~ dl, h5 ~ pre, h6 ~ p, h6 ~ dl, h6 ~ pre {
+  margin-top: 0;
+}
+
+p, dl, pre, ul, ol {
+  margin: 1.3ex 0;
+}
+
+ol > li {
+  padding-left: 0.3em;
+}
+
+dt {
+  font-weight: bold;
+}
+
+dd {
+  margin-inline-start: 3em;
+}
+
+dl[data-has-nestedlayout="1"] dd ~ dt {
+  margin-top: 1em;
+}
+
+header, div#header {
+  text-align: center;
+}
+header h1, div#header h1 {
+  font-weight: bold;
+  font-size: 2.2em;
+  letter-spacing: 2px;
+}
+header .author,
+header .date, div#header .author,
+div#header .date {
+  font-weight: bold;
+  font-size: 1.2em;
+  letter-spacing: 1px;
+}
+header .abstracttitle, div#header .abstracttitle {
+  font-weight: bold;
+  margin-top: 5em;
+}
+header .abstract, div#header .abstract {
+  width: 30em;
+  margin: 1em auto 7em auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  -o-hyphens: auto;
+  -webkit-hyphenate-limit-after: 1;
+  -webkit-hyphenate-limit-before: 3;
+  -webkit-hyphens: auto;
+  -webkit-hyphenate-character: "‐";
+  hyphens: auto;
+  text-align: justify;
+}
+
+nav#TOC, div#TOC {
+  margin: 3em 0;
+  border-top: 1px solid var(--fg);
+}
+@media print {
+  nav#TOC, div#TOC {
+    margin-top: 0;
+    page-break-before: always;
+  }
+}
+nav#TOC .contentstitle, div#TOC .contentstitle {
+  -x-margin-top: 5em;
+  font-weight: bold;
+  font-size: 1.4em;
+  margin-bottom: 1.4em;
+  padding-top: 1.3em;
+}
+nav#TOC .toc-section-number, div#TOC .toc-section-number {
+  padding-right: 1em;
+}
+nav#TOC > ul > li > a .toc-section-number, div#TOC > ul > li > a .toc-section-number {
+  display: inline-flex;
+  min-width: 1em;
+  padding-right: 0.5em;
+}
+nav#TOC > ul > li > ul > li > a .toc-section-number, div#TOC > ul > li > ul > li > a .toc-section-number {
+  display: inline-flex;
+  min-width: 2em;
+  padding-right: 0.5em;
+}
+nav#TOC > ul > li > ul > li > ul > li > a .toc-section-number, div#TOC > ul > li > ul > li > ul > li > a .toc-section-number {
+  display: inline-flex;
+  min-width: 3em;
+  padding-right: 0.5em;
+}
+nav#TOC > ul > li > ul > li > ul > li > ul > li > a .toc-section-number, div#TOC > ul > li > ul > li > ul > li > ul > li > a .toc-section-number {
+  display: inline-flex;
+  min-width: 4em;
+  padding-right: 0.5em;
+}
+nav#TOC ul, div#TOC ul {
+  padding-left: 0;
+  list-style-type: none;
+  font-weight: bold;
+}
+nav#TOC ul li:before, div#TOC ul li:before {
+  display: none;
+}
+nav#TOC ul li ~ li, div#TOC ul li ~ li {
+  margin-top: 1em;
+}
+nav#TOC ul ul, div#TOC ul ul {
+  font-weight: normal;
+}
+nav#TOC ul ul li ~ li, div#TOC ul ul li ~ li {
+  margin-top: unset;
+}
+nav#TOC ul ul, div#TOC ul ul {
+  padding-left: 2em;
+  margin-top: 0;
+}
+nav#TOC ul ul ul, div#TOC ul ul ul {
+  padding-left: 3em;
+}
+
+/*# sourceMappingURL=data:application/json;charset=utf-8,%7B%22version%22:3,%22sourceRoot%22:%22%22,%22sources%22:%5B%22../../../doc/style/faketex.scss%22,%22../../../doc/style/features.scss%22%5D,%22names%22:%5B%5D,%22mappings%22:%22;AACA;AAgBQ;AASA;AAUR;EAEE,WANe;EAWf;EAAY;EAAY;;AAJxB;EAHF;IAG+C;;;AAC7C;EAJF;IAI+C;;;AAI7C;EARF;IASI;IAAe;IAAe;;;;AAGlC;EAxCE;EAKA,uBAHM;EAIN;EACA;ECuDA;EDlBA;EAAkB;EAAkB;EACpC;EAAkB;ECnClB;EAbA;EAA2B;EAI3B;EACA;EAAuB;EACvB;EAAkB;EAClB;EACA;;AA6DI;ED1BN;IC0BoD,OAFpC;;;AAEV;ED1BN;IC0BoD,OAFpC;;;AAEV;ED1BN;IC0BoD,OAFpC;;;AAEV;ED1BN;IC0BoD,OAFpC;;;AAEV;ED1BN;IC0BoD,OAFpC;;;AAEV;ED1BN;IC0BoD,OAFpC;;;AAEV;ED1BN;IC0BoD,OAFpC;;;AAEV;ED1BN;IC0BoD,OAFpC;;;AAEV;ED1BN;IC0BoD,OAFpC;;;AAEV;ED1BN;IC0BoD,OAFpC;;;AAEV;ED1BN;IC0BoD,OAFpC;;;AAEV;ED1BN;IC0BoD,OAFpC;;;AAEV;ED1BN;IC0BoD,OAFpC;;;AAEV;ED1BN;IC0BoD,OAFpC;;;AAEV;ED1BN;IC0BoD,OAFpC;;;AAEV;ED1BN;IC0BoD,OAFpC;;;AAEV;ED1BN;IC0BoD,OAFpC;;;AAlEd;ED0CF;ICzCI;;;;ADiDJ;EAnCE;EACA;EACA;EAmCA;;;AAEI;EAAO;;;AACb;EAAa;;;AAEb;AAAA;AAAA;AAAA;AAIA;EACE;;AAEE;EACE;EClEJ;EAA2B;EAI3B;EACA;EAAuB;EACvB;EAAkB;EAClB;EACA;;AAPA;EDgEE;IC/DA;;;ADkEE;EAAM;EAAuB;EAAkB;;;AASrD;EAAI;EAAsB;;;AAC1B;EAAU;;;AAGV;EAAK;EACF;;;AACH;EAAQ;;;AACR;EACE;EACA;EACA;EACA;EACA;EACA;;;AAIF;EACE;EAEA;EACA;EAEA;;AAJA;EAAiB;EAAoB;;AAGrC;EAAe;EAAoC;EAAoB;EAAuB;;AAE9F;AAAA;EACU;;;AAMV;EAAyB;;;AAE3B;EAAM;EACF;EAAoB;EAAiC;;AC5FvD;ED2FF;IC3FiB;IAAe;;;;AD8FhC;EAAM;EAAuB;;;AAC7B;EAAM;EAAuB;;;AAC7B;EAAa;;AACT;EAAyB;;;AAE7B;EAAqB;;;AACrB;EAAU;;;AAGV;EAAK;;;AACL;EAAK;;;AAEH;EAAU;;;AAIZ;EACE;;AACA;EAAO;EAAmB;EAAkB;;AAC5C;AAAA;AAAA;EACU;EAAmB;EAAkB;;AAC/C;EAAiB;EAAmB;;AACpC;EAAiB;EAAa;EAC3B;EAAoB;EAAmB;EACvC;EAAkC;EAClC;EAAuB;EACvB;EAAe;;;AAIpB;EACE;EACA;;AC9HA;ED4HF;IC5HiB;IAAe;;;ADgI9B;EAAiB;EACd;EAAmB;EAAkB;EACrC;;AAEH;EAAsB;;AACtB;EAAuD;EAAsB;EAAgB;;AAC7F;EAAuD;EAAsB;EAAgB;;AAC7F;EAAuD;EAAsB;EAAgB;;AAC7F;EAAuD;EAAsB;EAAgB;;AAE7F;EAAK;EAAiB;EACrB;;AACA;EAAY;;AACZ;EAAU;;AACV;EAAK;;AACA;EAAU;;AAEf;EAAK;EAAmB;;AACnB;EAAK%22,%22file%22:%22faketex.css.tmp%22%7D */

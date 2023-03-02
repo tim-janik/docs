@@ -3434,11 +3434,6 @@
     <filename>sfc-compile_8js.html</filename>
   </compound>
   <compound kind="file">
-    <name>slashcomment.js</name>
-    <path>/var/tmp/anklang/poxy/ui/</path>
-    <filename>slashcomment_8js.html</filename>
-  </compound>
-  <compound kind="file">
     <name>startup.js</name>
     <path>/var/tmp/anklang/poxy/ui/</path>
     <filename>startup_8js.html</filename>
@@ -12815,7 +12810,7 @@
   </compound>
   <compound kind="page">
     <name>index</name>
-    <title></title>
+    <title>Anklang v0.1.0-devel0-602-g145ef2f</title>
     <filename>index.html</filename>
     <docanchor file="index.html">md_home</docanchor>
   </compound>

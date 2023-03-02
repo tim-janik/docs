@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>NEWS.html</title>
+  <style>
+    html {
+      line-height: 1.5;
+      font-family: Georgia, serif;
+      font-size: 20px;
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 1em;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace;
+      font-size: 85%;
+      margin: 0;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+body { max-width: 52em; margin: auto; }
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<section id="anklang-0.1.0" class="level2">
+<h2>Anklang 0.1.0</h2>
+<section id="system-requirements" class="level4">
+<h4>System Requirements</h4>
+<ul>
+<li>Linux - Ubuntu 20.04 is needed to run the Anklang AppImage</li>
+</ul>
+</section>
+<section id="hardware-support" class="level4">
+<h4>Hardware Support</h4>
+<ul>
+<li>Build and package a second sound engine binary with AVX &amp; FMA
+optimizations.</li>
+</ul>
+</section>
+<section id="documentation" class="level4">
+<h4>Documentation</h4>
+<ul>
+<li>Extended documentation in many places.</li>
+<li>Improved copyright listing of all source files involved.</li>
+<li>Provide user documentation as anklang-manual.pdf.</li>
+<li>Provide developer documentation as anklang-internals.pdf.</li>
+</ul>
+</section>
+<section id="user-interface" class="level4">
+<h4>User Interface</h4>
+<ul>
+<li>Improve UI responsiveness when handling async API calls.</li>
+<li>Support proper note selection sets in the piano roll.</li>
+<li>Introduced Undo/Redo stack for piano roll changes.</li>
+<li>Use batch processing to responsively handle thousands of notes.</li>
+<li>Support shortcut editing for piano roll functions.</li>
+<li>Added Cut/Copy/Paste to piano roll.</li>
+<li>Added play position indicator to piano roll.</li>
+<li>Tool selection in piano roils now works on hover.</li>
+<li>Notes moved in the piano roll now properly bounce against
+edges.</li>
+<li>Selection in the piano roll now supports SHIFT and CONTROL.</li>
+<li>Clips can now store notes with velocity=0.</li>
+<li>Migrated CSS processing to postcss.</li>
+<li>Fix file path handling for project load and save.</li>
+<li>Shortend nicknames are now auto-derived for external plugins.</li>
+<li>Support loading of command line files in Anklang.</li>
+<li>Add MIME support for starting Anklang for *.anklang files.</li>
+</ul>
+</section>
+<section id="synthesis" class="level4">
+<h4>Synthesis</h4>
+<ul>
+<li>Support single clip looping (very rudimentary), to be extended
+later.</li>
+<li>Add Gtk+-2 dynlib to provide a wrapper window for plugin UIs.</li>
+<li>Add support for CLAP-1.0.2 plugin loading and processing, the
+following CLAP extensions are currently implemented: LOG, GUI,
+TIMER_SUPPORT, THREAD_CHECK, AUDIO_PORTS, PARAMS, STATE,
+POSIX_FD_SUPPORT, AUDIO_PORTS_CONFIG, AUDIO_PORTS, NOTE_PORTS.</li>
+</ul>
+</section>
+<section id="internals" class="level4">
+<h4>Internals</h4>
+<ul>
+<li>Provide infrastructure for future piano roll scripting.</li>
+<li>Support lean UI component implementations with lit.js.</li>
+<li>Use ZCAM color model to design/saturate/etc colors of the UI.</li>
+<li>Updated various third party components.</li>
+<li>Use Electron-18.3.5 as basis for the UI.</li>
+<li>Use adaptive ZSTD compression for project storage.</li>
+<li>Use fast ZSTD compression for binary snapshots in Undo/Redo
+steps.</li>
+<li>Support sound engine blocks up to 2k.</li>
+<li>Adjust block sizes to reduce PulseAudio overhead.</li>
+<li>Keys matching in ASE_DEBUG is now case insensitive.</li>
+<li>Anklang can now be started with '--dev' to force open DevTools.</li>
+</ul>
+</section>
+<section id="other" class="level4">
+<h4>Other</h4>
+<ul>
+<li>License clarification, the project uses MPL-2.0.</li>
+<li>Improved reproducible dockerized builds.</li>
+<li>Fixed dependencies of the Debian packages. #3</li>
+</ul>
+</section>
+</section>
+<section id="anklang-0.0.1-alpha1" class="level2">
+<h2>Anklang 0.0.1-alpha1</h2>
+<section id="system-requirements-1" class="level4">
+<h4>System Requirements</h4>
+<ul>
+<li>Linux - Ubuntu 20.04 is needed to run the Anklang AppImage</li>
+</ul>
+</section>
+<section id="packaging" class="level4">
+<h4>Packaging</h4>
+<ul>
+<li>Build AppImage binaries with linuxdeploy, appimage-runtime-zstd</li>
+<li>Add build script for Debian package creation</li>
+</ul>
+</section>
+<section id="hardware-support-1" class="level4">
+<h4>Hardware Support</h4>
+<ul>
+<li>Add ALSA MIDI and ALSA PCM drivers</li>
+<li>Support playback of MIDI input events</li>
+<li>Support ALSA device selection via UI preferences</li>
+<li>Prioritize drivers based on headset/USB/HDMI/Duplex properties</li>
+</ul>
+</section>
+<section id="documentation-1" class="level4">
+<h4>Documentation</h4>
+<ul>
+<li>Add manpage (markdown), build documentation with pandoc2</li>
+<li>Add Anklang manual (markdown), support Latex based PDF builds</li>
+<li>Extract Javascript documentation with jsdoc</li>
+<li>Allow MathJax in the Anklang manual</li>
+<li>Add comprehensive 'copyright' file generation</li>
+</ul>
+</section>
+<section id="user-interface-1" class="level4">
+<h4>User Interface</h4>
+<ul>
+<li>Support Web browser based UI (Firefox, Chrome)</li>
+<li>Suppport Electron based UI, test via 'make run'</li>
+<li>Add Json, ZIP and zstd based storage of Anklang projects</li>
+<li>Add UI support for modal dialogs with focus capturing</li>
+<li>Add UI for file load and save dialogs in the browser</li>
+<li>Support the XDG directory specification</li>
+<li>Add an Anklang logo favicon</li>
+<li>Add support for fly-over popups to alert users</li>
+<li>Support UI tooltips and hints in the status bar</li>
+<li>Add Vue3 and Electron based UI, use scss for styles</li>
+<li>Work around Chrome's movementX/Y devicePixelRatio bug
+Chrome#1092358</li>
+</ul>
+</section>
+<section id="synthesis-1" class="level4">
+<h4>Synthesis</h4>
+<ul>
+<li>Use seperate thread for digital synthesis</li>
+<li>Integrate resampler2 code from Stefan Westerfeld</li>
+<li>Integrate blepsynth module from Stefan Westerfeld</li>
+<li>Add support for synchronized multi-track playback</li>
+</ul>
+</section>
+<section id="interprocess-communication" class="level4">
+<h4>Interprocess Communication</h4>
+<ul>
+<li>Provide updated JsonIpc layer for remote calls and event
+delivery</li>
+<li>Send realtime status updates as int/float blobs via IPC (termed
+'telemtry')</li>
+<li>Support realtime UI updates via IPC by receiving telemetry at up to
+60Hz</li>
+</ul>
+</section>
+<section id="build-system" class="level4">
+<h4>Build System</h4>
+<ul>
+<li>Support automated Github CI via docker based builds</li>
+<li>Support Javascript and C++ linting</li>
+<li>Notify #Anklang on libera.chat about CI build results</li>
+<li>Integrate Inter font, ForkAwesome, material-icons and
+anklangicons-201123</li>
+<li>Integrate external sources from websocketpp, rapidjson,
+minizip-ng</li>
+<li>Add robust support for multiple targets for one Make rule</li>
+<li>Support live editing and reload via 'make serve'</li>
+<li>Employ fast build GNU Make based build setup</li>
+</ul>
+</section>
+</section>
+<section id="anklang-0.0.0" class="level2">
+<h2>Anklang 0.0.0:</h2>
+<p>Initial code import from Tim and Stefan</p>
+</section>
+</body>
+</html>

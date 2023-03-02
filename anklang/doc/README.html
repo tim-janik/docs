@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>README.html</title>
+  <style>
+    html {
+      line-height: 1.5;
+      font-family: Georgia, serif;
+      font-size: 20px;
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 1em;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace;
+      font-size: 85%;
+      margin: 0;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+body { max-width: 52em; margin: auto; }
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<!-- BADGES -->
+<p><a
+href="https://github.com/tim-janik/anklang/blob/trunk/LICENSE"><img
+src="https://img.shields.io/static/v1?label=License&amp;message=MPL-2&amp;color=9c0&amp;style=for-the-badge"
+alt="License" /></a> <a
+href="https://github.com/tim-janik/anklang/commits"><img
+src="https://img.shields.io/github/commit-activity/w/tim-janik/anklang?label=Commits&amp;style=for-the-badge&amp;color=green"
+alt="Commits" /></a> <a
+href="https://github.com/tim-janik/anklang/graphs/contributors"><img
+src="https://img.shields.io/github/contributors/tim-janik/anklang.svg?style=for-the-badge&amp;color=green"
+alt="Contributors" /></a> <a
+href="https://github.com/tim-janik/anklang/issues"><img
+src="https://img.shields.io/github/issues-raw/tim-janik/anklang.svg?style=for-the-badge"
+alt="Issues" /></a> <a
+href="https://github.com/tim-janik/anklang/actions"><img
+src="https://img.shields.io/github/actions/workflow/status/tim-janik/anklang/testing.yml?style=for-the-badge"
+alt="Test Build" /></a> <a
+href="https://github.com/tim-janik/anklang/tags"><img
+src="https://img.shields.io/github/v/release/tim-janik/anklang?label=version&amp;style=for-the-badge"
+alt="Version" /></a> <a
+href="https://github.com/tim-janik/anklang/releases"><img
+src="https://img.shields.io/github/downloads/tim-janik/anklang/total?style=for-the-badge&amp;color=blue"
+alt="Downloads" /></a> <a
+href="https://github.com/tim-janik/anklang/graphs/traffic"><img
+src="https://img.shields.io/github/watchers/tim-janik/anklang?style=for-the-badge"
+alt="Watchers" /></a> <a href="https://web.libera.chat/#Anklang"><img
+src="https://img.shields.io/badge/Live%20Chat-Libera%20IRC-blueviolet?style=for-the-badge"
+alt="Live Chat" /></a>
+<!-- [![Stargazers][stars-badge]][stars-url] [![Forks][forks-badge]][forks-url] --></p>
+<!-- HEADING -->
+<section id="anklang" class="level1">
+<h1>ANKLANG</h1>
+<p>→ Audio Synthesizer and MIDI Composer ←</p>
+<p><a href="https://anklang.testbit.eu/doc/anklang-manual.html">Explore
+the manual</a> · <a href="https://web.libera.chat/#Anklang">Join
+Chat</a> · <a href="https://github.com/tim-janik/anklang/issues">Bugs
+&amp; Features</a></p>
+<!-- ABOUT -->
+<section id="about-the-anklang-project" class="level2">
+<h2>About the Anklang project</h2>
+<p>Anklang is a digital audio synthesis application for live creation
+and composition of music and other audio material.</p>
+<p>The project is a revamp of several former audio projects by its two
+main authors and aims to realize a coherent, solid amalgamation for
+composition and interactive creation of synthesis music.</p>
+<!-- USAGE -->
+</section>
+<section id="usage" class="level2">
+<h2>Usage</h2>
+<p>The project can be built on Linux by cloning the repository and
+running <code>make</code>. However it is easier to download one of the
+self-contained AppImage release builds, <a
+href="https://discourse.appimage.org/t/how-to-run-an-appimage/80">mark
+it executable</a> and run it.</p>
+<!-- ROADMAP -->
+</section>
+<section id="roadmap" class="level2">
+<h2>Roadmap</h2>
+<p>☑ Implement the application core in C++17 and the GUI as a web
+front-end, utilizing web browsers or Electron.</p>
+<p>☑ Implement separate audio synthesis threads with MIDI device
+support.</p>
+<p>☑ Add devices for synthesis and effects.</p>
+<p>☑ Support third-party plugins via <a
+href="https://github.com/free-audio/clap">CLAP</a> <a
+href="https://www.kvraudio.com/forum/viewtopic.php?t=574861">🗩</a>.</p>
+<p>☐ Support third-party plugins via <a
+href="https://en.wikipedia.org/wiki/LV2">LV2</a>.</p>
+<p>☐ Add standard audio library for various instrument types.</p>
+<p>☐ Implement a quality MIDI file importer with mappings into the audio
+library.</p>
+<!-- LICENSE.txt -->
+</section>
+<section id="license" class="level2">
+<h2>License</h2>
+<p>This application including the audio engine are licensed under <a
+href="https://github.com/tim-janik/anklang/blob/trunk/LICENSE">MPL-2.0</a>.</p>
+<p>However, plugins that can be used with this application or may be
+downloaded via extension packs, may fall under different licensing
+terms, such as GPLv3 or proprietary licenses.</p>
+<!-- MARKDOWN LINKS & IMAGES -->
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+<!-- https://github.com/othneildrew/Best-README-Template -->
+</section>
+</section>
+</body>
+</html>
