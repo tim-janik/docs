@@ -60,6 +60,54 @@
         <h1>
           <span class="m-breadcrumb"><a href="dir_1788f8309b1a812dcb800a185471cf6c.html">ui</a>/</span><span class="m-breadcrumb"><a href="dir_8cd1e0dc53330a899bb8b54b9ae21f1b.html">b</a>/</span>databubble.vue.js <span class="m-thin">file</span>
         </h1>
+<section class="level3" id="databubbleimpl-class">
+<h3>DataBubbleImpl class</h3>
+<dl>
+<dt><em>class</em> <strong>DataBubbleImpl</strong></dt>
+<dd>
+A mechanism to display data-bubble="" tooltip popups
+</dd>
+</dl>
+</section>
+<section class="level3" id="databubbleiface-class">
+<h3>DataBubbleIface class</h3>
+<dl>
+<dt><em>class</em> <strong>DataBubbleIface</strong></dt>
+<dd>
+<p>…</p>
+<dl>
+<dt> <strong><code>update</code></strong>
+<code>(</code><em>element, text</em><code>)</code></dt>
+<dd>
+Set the <code>data-bubble</code> attribute of <code>element</code> to
+<code>text</code> or force its callback
+</dd>
+<dt> <strong><code>callback</code></strong>
+<code>(</code><em>element, callback</em><code>)</code></dt>
+<dd>
+Assign a callback function to fetch the <code>data-bubble</code>
+attribute of <code>element</code>
+</dd>
+<dt> <strong><code>force</code></strong>
+<code>(</code><em>element</em><code>)</code></dt>
+<dd>
+Force <code>data-bubble</code> to be shown for <code>element</code>
+</dd>
+<dt> <strong><code>unforce</code></strong>
+<code>(</code><em>element</em><code>)</code></dt>
+<dd>
+Cancel forced <code>data-bubble</code> for <code>element</code>
+</dd>
+<dt> <strong><code>clear</code></strong>
+<code>(</code><em>element</em><code>)</code></dt>
+<dd>
+Reset the <code>data-bubble</code> attribute, its callback and cancel a
+forced bubble
+</dd>
+</dl>
+</dd>
+</dl>
+</section>
       </div>
     </div>
   </div>

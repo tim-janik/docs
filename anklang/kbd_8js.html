@@ -60,6 +60,170 @@
         <h1>
           <span class="m-breadcrumb"><a href="dir_1788f8309b1a812dcb800a185471cf6c.html">ui</a>/</span>kbd.js <span class="m-thin">file</span>
         </h1>
+<section class="level3" id="focusguard-class">
+<h3>FocusGuard class</h3>
+<dl>
+<dt><em>class</em> <strong>FocusGuard</strong></dt>
+<dd>
+Install a FocusGuard to allow only a restricted set of elements to get
+focus.
+</dd>
+</dl>
+</section>
+<section class="level3" id="export-constants">
+<h3>Export Constants</h3>
+<dl>
+<dt><strong><code>kbd_modifiers</code></strong></dt>
+<dd>
+Keyboard modifiers used for hotkeys.
+</dd>
+<dt><small><code>Export.</code></small><strong><code>KeyCode</code></strong></dt>
+<dd>
+Symbolic names for key codes
+</dd>
+</dl>
+</section>
+<section class="level3" id="export-functions">
+<h3>Export Functions</h3>
+<dl>
+<dt>
+<small><code>Export</code></small>.<strong><code>display_keyname</code></strong>
+<code>(</code><em>keyname</em><code>)</code></dt>
+<dd>
+Create display name from KeyEvent.code names.
+</dd>
+<dt>
+<small><code>Export</code></small>.<strong><code>hotkey_name_from_event</code></strong>
+<code>(</code><em>event</em><code>)</code></dt>
+<dd>
+Create hotkey name from KeyboardEvent.
+</dd>
+<dt>
+<small><code>Export</code></small>.<strong><code>match_key_event</code></strong>
+<code>(</code><em>event, keyname</em><code>)</code></dt>
+<dd>
+Match an event's key code, considering modifiers.
+</dd>
+<dt>
+<small><code>Export</code></small>.<strong><code>is_navigation_key_code</code></strong>
+<code>(</code><em>keycode</em><code>)</code></dt>
+<dd>
+Check if a key code is used of rnavigaiton (and non alphanumeric).
+</dd>
+<dt>
+<small><code>Export</code></small>.<strong><code>activeElement</code></strong><code>()</code></dt>
+<dd>
+Get the currently focussed Element, also inspecting open shadowRoot
+hierarchies.
+</dd>
+<dt>
+<small><code>Export</code></small>.<strong><code>list_focusables</code></strong>
+<code>(</code><em>element</em><code>)</code></dt>
+<dd>
+List elements that can take focus including shadow DOMs and are
+descendants of <code>element</code> or the document
+</dd>
+<dt>
+<small><code>Export</code></small>.<strong><code>push_focus_root</code></strong>
+<code>(</code><em>element, escapecb</em><code>)</code></dt>
+<dd>
+Constrain focus to <code>element</code> and its descendants
+</dd>
+<dt>
+<small><code>Export</code></small>.<strong><code>remove_focus_root</code></strong>
+<code>(</code><em>element</em><code>)</code></dt>
+<dd>
+Remove an <code>element</code> previously installed via
+push_focus_root()
+</dd>
+<dt>
+<strong><code>element_midpoint</code></strong>
+<code>(</code><em>element</em><code>)</code></dt>
+<dd>
+Compute global midpoint position of element, e.g. for focus movement
+</dd>
+<dt>
+<small><code>Export</code></small>.<strong><code>keydown_move_focus</code></strong>
+<code>(</code><em>event</em><code>)</code></dt>
+<dd>
+Move focus on UP/DOWN/HOME/END <code>keydown</code> events
+</dd>
+<dt>
+<small><code>Export</code></small>.<strong><code>move_focus</code></strong>
+<code>(</code><em>dir, subfocus</em><code>)</code></dt>
+<dd>
+Move focus to prev or next focus widget
+</dd>
+<dt>
+<small><code>Export</code></small>.<strong><code>forget_focus</code></strong>
+<code>(</code><em>element</em><code>)</code></dt>
+<dd>
+Forget the last focus element inside <code>element</code>
+</dd>
+<dt>
+<small><code>Export</code></small>.<strong><code>add_hotkey</code></strong>
+<code>(</code><em>hotkey, callback,
+subtree_element</em><code>)</code></dt>
+<dd>
+Add a global hotkey handler.
+</dd>
+<dt>
+<small><code>Export</code></small>.<strong><code>remove_hotkey</code></strong>
+<code>(</code><em>hotkey, callback</em><code>)</code></dt>
+<dd>
+Remove a global hotkey handler.
+</dd>
+<dt>
+<small><code>Export</code></small>.<strong><code>add_key_filter</code></strong>
+<code>(</code><em>keycode, callback</em><code>)</code></dt>
+<dd>
+Add a global keymap.
+</dd>
+<dt>
+<small><code>Export</code></small>.<strong><code>remove_key_filter</code></strong>
+<code>(</code><em>keycode</em><code>)</code></dt>
+<dd>
+Remove a global keymap.
+</dd>
+<dt>
+<small><code>Export</code></small>.<strong><code>add_keymap</code></strong>
+<code>(</code><em>keymap</em><code>)</code></dt>
+<dd>
+Add a global keymap.
+</dd>
+<dt>
+<small><code>Export</code></small>.<strong><code>remove_keymap</code></strong>
+<code>(</code><em>keymap</em><code>)</code></dt>
+<dd>
+Remove a global keymap.
+</dd>
+<dt>
+<small><code>Export</code></small>.<strong><code>is_button_input</code></strong>
+<code>(</code><em>element</em><code>)</code></dt>
+<dd>
+Check if <code>element</code> is button-like input
+</dd>
+<dt>
+<small><code>Export</code></small>.<strong><code>is_nav_input</code></strong>
+<code>(</code><em>element</em><code>)</code></dt>
+<dd>
+Check if <code>element</code> has inner input navigation
+</dd>
+<dt>
+<small><code>Export</code></small>.<strong><code>shortcut_lookup</code></strong>
+<code>(</code><em>mapname, label, shortcut</em><code>)</code></dt>
+<dd>
+Lookup shortcut for <code>label</code> in <code>mapname</code>, default
+to <code>shortcut</code>
+</dd>
+<dt>
+<small><code>Export</code></small>.<strong><code>shortcut_dialog</code></strong>
+<code>(</code><em>mapname, label, shortcut</em><code>)</code></dt>
+<dd>
+Display shortcut editing dialog
+</dd>
+</dl>
+</section>
       </div>
     </div>
   </div>

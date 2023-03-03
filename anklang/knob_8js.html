@@ -60,6 +60,41 @@
         <h1>
           <span class="m-breadcrumb"><a href="dir_1788f8309b1a812dcb800a185471cf6c.html">ui</a>/</span><span class="m-breadcrumb"><a href="dir_8cd1e0dc53330a899bb8b54b9ae21f1b.html">b</a>/</span>knob.js <span class="m-thin">file</span>
         </h1>
+<section class="level3" id="export-functions">
+<h3>Export Functions</h3>
+<dl>
+<dt>
+<small><code>Export</code></small>.<strong><code>spin_drag_start</code></strong>
+<code>(</code><em>element, event, value_callback</em><code>)</code></dt>
+<dd>
+Setup drag handlers for numeric spin button behavior.
+</dd>
+<dt>
+<strong><code>spin_drag_stop</code></strong>
+<code>(</code><em>event_or_element</em><code>)</code></dt>
+<dd>
+Stop sping drag event handlers and pointer grab.
+</dd>
+<dt>
+<strong><code>spin_drag_pointermove</code></strong>
+<code>(</code><em>event</em><code>)</code></dt>
+<dd>
+Handle sping drag pointer motion.
+</dd>
+<dt>
+<strong><code>spin_drag_change</code></strong><code>()</code></dt>
+<dd>
+Turn accumulated spin drag motions into actual value changes.
+</dd>
+<dt>
+<strong><code>spin_drag_granularity</code></strong>
+<code>(</code><em>event</em><code>)</code></dt>
+<dd>
+Calculate spin drag acceleration (slowdown) from event type and
+modifiers.
+</dd>
+</dl>
+</section>
       </div>
     </div>
   </div>

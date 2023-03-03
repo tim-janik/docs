@@ -60,6 +60,23 @@
         <h1>
           <span class="m-breadcrumb"><a href="dir_1788f8309b1a812dcb800a185471cf6c.html">ui</a>/</span>script.js <span class="m-thin">file</span>
         </h1>
+<section class="level3" id="scripthost-class">
+<h3>ScriptHost class</h3>
+<dl>
+<dt><em>class</em> <strong>ScriptHost</strong></dt>
+<dd>
+<p>A ScriptHost object represents a Worker script in the Main
+thread.</p>
+<p>A ScriptHost object (defined in <code>script.js</code>) runs in the
+Main Javascript thread. It starts a Worker via <code>host.js</code>
+which creates a WorkerHost object in the Worker thread. The
+ScriptHost&lt;-&gt;WorkerHost objects bridge needed API from the Main
+thread to the Worker thread. The WorkerHost then loads and calls into a
+user provided ES Module, the actual user script which communicates via
+the WorkerHost global variable <code>host</code>. See also <a href="#WorkerHost">WorkerHost</a>.</p>
+</dd>
+</dl>
+</section>
       </div>
     </div>
   </div>

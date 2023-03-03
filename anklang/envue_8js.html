@@ -60,6 +60,68 @@
         <h1>
           <span class="m-breadcrumb"><a href="dir_1788f8309b1a812dcb800a185471cf6c.html">ui</a>/</span><span class="m-breadcrumb"><a href="dir_8cd1e0dc53330a899bb8b54b9ae21f1b.html">b</a>/</span>envue.js <span class="m-thin">file</span>
         </h1>
+<section class="level3" id="component-class">
+<h3>Component class</h3>
+<dl>
+<dt><em>class</em>
+<small><code>Export</code></small>.<strong>Component</strong></dt>
+<dd>
+<p>Component base class for wrapping Vue components.</p>
+<dl>
+<dt> <em>new</em>
+<strong><code>Component</code></strong>
+<code>(</code><em>vm</em><code>)</code></dt>
+<dd>
+Let <code>this.$vm</code> point to the Vue component, and
+<code>$vm.$object</code> point to <code>this</code>.
+</dd>
+<dt>
+<strong><code>update</code></strong><code>()</code></dt>
+<dd>
+Force a Vue component update.
+</dd>
+<dt>
+<strong><code>observable_from_getters</code></strong>
+<code>(</code><em>tmpl</em><code>)</code></dt>
+<dd>
+Wrapper for <a href="#Util.observable_from_getters">Util.observable_from_getters()</a>.
+</dd>
+<dt> <strong><code>$watch</code></strong>
+<code>(</code><em>args</em><code>)</code></dt>
+<dd>
+Wrapper for <a class="poxy-external" href="https://v3.vuejs.org/api/instance-methods.html#watch" target="_blank">Vue.$watch</a>
+</dd>
+<dt>
+<strong><code>vue_export</code></strong>
+<code>(</code><em>vue_object</em><code>)</code>  
+<code>[static]</code></dt>
+<dd>
+Create a Vue options API object from <em>vue_object</em> for SFC
+exports.
+</dd>
+</dl>
+</dd>
+</dl>
+</section>
+<section class="level3" id="export-functions">
+<h3>Export Functions</h3>
+<dl>
+<dt>
+<small><code>Export</code></small>.<strong><code>forward_access</code></strong>
+<code>(</code><em>vm, classinstance, ignores</em><code>)</code></dt>
+<dd>
+Forward all accesses to fields on <code>vm</code> to access fields on
+<code>classinstance</code>.
+</dd>
+<dt>
+<small><code>Export</code></small>.<strong><code>vue_export_from_class</code></strong>
+<code>(</code><em>Class, vue_object</em><code>)</code></dt>
+<dd>
+Create a Vue options API object that proxies access to a newly created
+<code>Class</code> instance.
+</dd>
+</dl>
+</section>
       </div>
     </div>
   </div>

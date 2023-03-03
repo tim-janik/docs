@@ -60,6 +60,36 @@
         <h1>
           <span class="m-breadcrumb"><a href="dir_1788f8309b1a812dcb800a185471cf6c.html">ui</a>/</span>postcss.js <span class="m-thin">file</span>
         </h1>
+<section class="level3" id="export-functions">
+<h3>Export Functions</h3>
+<dl>
+<dt> <strong><code>tofloat</code></strong>
+<code>(</code><em>value, fallback, min, max</em><code>)</code></dt>
+<dd>
+Yield <code>value</code> as number in <code>[min..max]</code>, converts
+percentages.
+</dd>
+<dt>
+<strong><code>load_import</code></strong> <code>(</code><em>id, cwd,
+opts</em><code>)</code></dt>
+<dd>
+Load import files in nodejs to implement <code>@import</code>.
+</dd>
+<dt>
+<strong><code>find_import</code></strong> <code>(</code><em>id, cwd,
+opts</em><code>)</code></dt>
+<dd>
+Provide canned CSS files to use with <code>@import</code>.
+</dd>
+<dt>
+<strong><code>add_import</code></strong> <code>(</code><em>filename,
+csstext</em><code>)</code></dt>
+<dd>
+Provide <code>filename</code> as <code>@import "filename";</code> source
+with contents <code>csstext</code>.
+</dd>
+</dl>
+</section>
       </div>
     </div>
   </div>

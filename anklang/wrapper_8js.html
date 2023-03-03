@@ -60,6 +60,44 @@
         <h1>
           <span class="m-breadcrumb"><a href="dir_1788f8309b1a812dcb800a185471cf6c.html">ui</a>/</span>wrapper.js <span class="m-thin">file</span>
         </h1>
+<section class="level3" id="asecachingwrapper-class">
+<h3>AseCachingWrapper class</h3>
+<dl>
+<dt><em>class</em> <strong>AseCachingWrapper</strong></dt>
+<dd>
+<p>Caching wrapper for ASE classes</p>
+<dl>
+<dt> <strong><code>__add__</code></strong>
+<code>(</code><em>prop, defaultvalue, callback</em><code>)</code></dt>
+<dd>
+Add property to cache
+</dd>
+<dt> <strong><code>__del__</code></strong>
+<code>(</code><em>prop, callback</em><code>)</code></dt>
+<dd>
+Remove property caching request
+</dd>
+<dt>
+<strong><code>__cleanup__</code></strong><code>()</code></dt>
+<dd>
+Remove all references
+</dd>
+</dl>
+</dd>
+</dl>
+</section>
+<section class="level3" id="export-functions">
+<h3>Export Functions</h3>
+<dl>
+<dt>
+<small><code>Export</code></small>.<strong><code>wrap_ase_object</code></strong>
+<code>(</code><em>aseobj, fields, callback</em><code>)</code></dt>
+<dd>
+Wrap AseObject to cache properties and support <strong>add</strong>,
+<strong>cleanup</strong> and auto cleanup.
+</dd>
+</dl>
+</section>
       </div>
     </div>
   </div>
