@@ -7708,121 +7708,121 @@
     <member kind="enumvalue">
       <name>IN</name>
       <anchorfile>struct_ase_1_1_poll_f_d.html</anchorfile>
-      <anchor>a3e4416cc7439f7b1e66b4aa9e001df3aa39415fe2628f2dfddf652052102cdbd3</anchor>
+      <anchor>a77d295c90a466e3d6c193de8bd1b8821a39415fe2628f2dfddf652052102cdbd3</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>PRI</name>
       <anchorfile>struct_ase_1_1_poll_f_d.html</anchorfile>
-      <anchor>a3e4416cc7439f7b1e66b4aa9e001df3aa615fd972944cc854ab57c05ca9d08e3f</anchor>
+      <anchor>a77d295c90a466e3d6c193de8bd1b8821a615fd972944cc854ab57c05ca9d08e3f</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>OUT</name>
       <anchorfile>struct_ase_1_1_poll_f_d.html</anchorfile>
-      <anchor>a3e4416cc7439f7b1e66b4aa9e001df3aad2314f9351cd996183c8e08748c88f02</anchor>
+      <anchor>a77d295c90a466e3d6c193de8bd1b8821ad2314f9351cd996183c8e08748c88f02</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>RDNORM</name>
       <anchorfile>struct_ase_1_1_poll_f_d.html</anchorfile>
-      <anchor>a3e4416cc7439f7b1e66b4aa9e001df3aa187e16856bc278e0ea40f64627952c9a</anchor>
+      <anchor>a77d295c90a466e3d6c193de8bd1b8821a187e16856bc278e0ea40f64627952c9a</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>RDBAND</name>
       <anchorfile>struct_ase_1_1_poll_f_d.html</anchorfile>
-      <anchor>a3e4416cc7439f7b1e66b4aa9e001df3aac1df57831b8cbefa6e0fa39812527554</anchor>
+      <anchor>a77d295c90a466e3d6c193de8bd1b8821ac1df57831b8cbefa6e0fa39812527554</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>WRNORM</name>
       <anchorfile>struct_ase_1_1_poll_f_d.html</anchorfile>
-      <anchor>a3e4416cc7439f7b1e66b4aa9e001df3aa4450013079dd32485f66b20a9500feed</anchor>
+      <anchor>a77d295c90a466e3d6c193de8bd1b8821a4450013079dd32485f66b20a9500feed</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>WRBAND</name>
       <anchorfile>struct_ase_1_1_poll_f_d.html</anchorfile>
-      <anchor>a3e4416cc7439f7b1e66b4aa9e001df3aafa6c232ba5b7e13d26ecad122b8e0684</anchor>
+      <anchor>a77d295c90a466e3d6c193de8bd1b8821afa6c232ba5b7e13d26ecad122b8e0684</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>ERR</name>
       <anchorfile>struct_ase_1_1_poll_f_d.html</anchorfile>
-      <anchor>a3e4416cc7439f7b1e66b4aa9e001df3aafa68304b2d4858c02525532e6ce46937</anchor>
+      <anchor>a77d295c90a466e3d6c193de8bd1b8821afa68304b2d4858c02525532e6ce46937</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>HUP</name>
       <anchorfile>struct_ase_1_1_poll_f_d.html</anchorfile>
-      <anchor>a3e4416cc7439f7b1e66b4aa9e001df3aa2270d0413d65f7bb4b2c42d7bc286219</anchor>
+      <anchor>a77d295c90a466e3d6c193de8bd1b8821a2270d0413d65f7bb4b2c42d7bc286219</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>NVAL</name>
       <anchorfile>struct_ase_1_1_poll_f_d.html</anchorfile>
-      <anchor>a3e4416cc7439f7b1e66b4aa9e001df3aab855b051b9cc0116ab91d2d231c5759f</anchor>
+      <anchor>a77d295c90a466e3d6c193de8bd1b8821ab855b051b9cc0116ab91d2d231c5759f</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>IN</name>
       <anchorfile>struct_ase_1_1_poll_f_d.html</anchorfile>
-      <anchor>a3e4416cc7439f7b1e66b4aa9e001df3aa39415fe2628f2dfddf652052102cdbd3</anchor>
+      <anchor>a77d295c90a466e3d6c193de8bd1b8821a39415fe2628f2dfddf652052102cdbd3</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>PRI</name>
       <anchorfile>struct_ase_1_1_poll_f_d.html</anchorfile>
-      <anchor>a3e4416cc7439f7b1e66b4aa9e001df3aa615fd972944cc854ab57c05ca9d08e3f</anchor>
+      <anchor>a77d295c90a466e3d6c193de8bd1b8821a615fd972944cc854ab57c05ca9d08e3f</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>OUT</name>
       <anchorfile>struct_ase_1_1_poll_f_d.html</anchorfile>
-      <anchor>a3e4416cc7439f7b1e66b4aa9e001df3aad2314f9351cd996183c8e08748c88f02</anchor>
+      <anchor>a77d295c90a466e3d6c193de8bd1b8821ad2314f9351cd996183c8e08748c88f02</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>RDNORM</name>
       <anchorfile>struct_ase_1_1_poll_f_d.html</anchorfile>
-      <anchor>a3e4416cc7439f7b1e66b4aa9e001df3aa187e16856bc278e0ea40f64627952c9a</anchor>
+      <anchor>a77d295c90a466e3d6c193de8bd1b8821a187e16856bc278e0ea40f64627952c9a</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>RDBAND</name>
       <anchorfile>struct_ase_1_1_poll_f_d.html</anchorfile>
-      <anchor>a3e4416cc7439f7b1e66b4aa9e001df3aac1df57831b8cbefa6e0fa39812527554</anchor>
+      <anchor>a77d295c90a466e3d6c193de8bd1b8821ac1df57831b8cbefa6e0fa39812527554</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>WRNORM</name>
       <anchorfile>struct_ase_1_1_poll_f_d.html</anchorfile>
-      <anchor>a3e4416cc7439f7b1e66b4aa9e001df3aa4450013079dd32485f66b20a9500feed</anchor>
+      <anchor>a77d295c90a466e3d6c193de8bd1b8821a4450013079dd32485f66b20a9500feed</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>WRBAND</name>
       <anchorfile>struct_ase_1_1_poll_f_d.html</anchorfile>
-      <anchor>a3e4416cc7439f7b1e66b4aa9e001df3aafa6c232ba5b7e13d26ecad122b8e0684</anchor>
+      <anchor>a77d295c90a466e3d6c193de8bd1b8821afa6c232ba5b7e13d26ecad122b8e0684</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>ERR</name>
       <anchorfile>struct_ase_1_1_poll_f_d.html</anchorfile>
-      <anchor>a3e4416cc7439f7b1e66b4aa9e001df3aafa68304b2d4858c02525532e6ce46937</anchor>
+      <anchor>a77d295c90a466e3d6c193de8bd1b8821afa68304b2d4858c02525532e6ce46937</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>HUP</name>
       <anchorfile>struct_ase_1_1_poll_f_d.html</anchorfile>
-      <anchor>a3e4416cc7439f7b1e66b4aa9e001df3aa2270d0413d65f7bb4b2c42d7bc286219</anchor>
+      <anchor>a77d295c90a466e3d6c193de8bd1b8821a2270d0413d65f7bb4b2c42d7bc286219</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>NVAL</name>
       <anchorfile>struct_ase_1_1_poll_f_d.html</anchorfile>
-      <anchor>a3e4416cc7439f7b1e66b4aa9e001df3aab855b051b9cc0116ab91d2d231c5759f</anchor>
+      <anchor>a77d295c90a466e3d6c193de8bd1b8821ab855b051b9cc0116ab91d2d231c5759f</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -12636,7 +12636,7 @@
   </compound>
   <compound kind="page">
     <name>index</name>
-    <title>Anklang v0.1.0-devel0-605-ga0690a5</title>
+    <title>Anklang v0.1.0-devel0-609-ge8f83cf</title>
     <filename>index.html</filename>
     <docanchor file="index.html">md_home</docanchor>
   </compound>

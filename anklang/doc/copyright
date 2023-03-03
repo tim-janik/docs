@@ -13,7 +13,7 @@ Copyright: Copyright (C) 2021-2022 Tim Janik
 License: MPL-2.0
 
 Files: .github/workflows/testing.yml
-Copyright: Copyright (C) 2021-2022 Tim Janik
+Copyright: Copyright (C) 2021-2023 Tim Janik
 License: MPL-2.0
 
 Files: .gitignore
@@ -740,7 +740,7 @@ License: MPL-2.0
 
 Files: doc/jsdocrc.json
 Copyright: Copyright (C) 2023 Tim Janik
-License: ?
+License: MPL-2.0
 
 Files: doc/pandoc-pdf.tex
 Copyright: Copyright (C) 2021 Tim Janik
@@ -853,11 +853,11 @@ Copyright: Copyright (C) 2021 Tim Janik
 License: MPL-2.0
 
 Files: misc/Dockerfile.arch
-Copyright: Copyright (C) 2022 Tim Janik
+Copyright: Copyright (C) 2022-2023 Tim Janik
 License: MPL-2.0
 
 Files: misc/Dockerfile.focal
-Copyright: Copyright (C) 2021-2023 Tim Janik
+Copyright: Copyright (C) 2021-2022 Tim Janik
 License: MPL-2.0
 
 Files: misc/Makefile.mk
