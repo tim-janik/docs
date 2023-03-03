@@ -111,12 +111,12 @@
           <dl class="m-doc">
             <dt>
               <div class="m-doc-template">template&lt;bool value&gt;</div>
-              using <a class="m-doc" href="namespace_ase.html#a4e2ef1acd7d1f0a3ad4dff73ff1af815">REQUIRES</a> = typename ::<a class="m-doc-external poxy-external" href="http://en.cppreference.com/w/cpp/types/enable_if.html" target="_blank">std::<wbr/>enable_if</a>&lt;value, bool&gt;::type
+              using <a class="m-doc" href="namespace_ase.html#a4e2ef1acd7d1f0a3ad4dff73ff1af815">REQUIRES</a> = typename <a class="m-doc-external poxy-external" href="http://en.cppreference.com/w/cpp/types/enable_if.html" target="_blank">::<wbr/>std::<wbr/>enable_if</a>&lt;value, bool&gt;::type
             </dt>
             <dd>REQUIRES&lt;value&gt; - Simplified version of <a class="m-doc poxy-injected poxy-external" href="https://en.cppreference.com/w/cpp/types/enable_if" target="_blank">std::enable_if</a>&lt;cond,bool&gt;::type to use SFINAE in function templates.</dd>
             <dt>
               <div class="m-doc-template">template&lt;bool value&gt;</div>
-              using <a class="m-doc" href="namespace_ase.html#a5bd6d9c354c4d20df6b323404b41abdb">REQUIRESv</a> = typename ::<a class="m-doc-external poxy-external" href="http://en.cppreference.com/w/cpp/types/enable_if.html" target="_blank">std::<wbr/>enable_if</a>&lt;value, void&gt;::type
+              using <a class="m-doc" href="namespace_ase.html#a5bd6d9c354c4d20df6b323404b41abdb">REQUIRESv</a> = typename <a class="m-doc-external poxy-external" href="http://en.cppreference.com/w/cpp/types/enable_if.html" target="_blank">::<wbr/>std::<wbr/>enable_if</a>&lt;value, void&gt;::type
             </dt>
             <dd>REQUIRESv&lt;value&gt; - Simplified version of <a class="m-doc poxy-injected poxy-external" href="https://en.cppreference.com/w/cpp/types/enable_if" target="_blank">std::enable_if</a>&lt;cond,void&gt;::type to use SFINAE in struct templates.</dd>
             <dt>
@@ -226,27 +226,27 @@
             <dd><a class="m-doc" href="namespace_ase_1_1_test.html">Test</a> string equality at compile time.</dd>
             <dt>
               <div class="m-doc-template">template&lt;class Target, class Source&gt;</div>
-              <span class="m-doc-wrap-bumper">auto <a class="m-doc" href="namespace_ase.html#a83de211b1db87bfee2050d90bbda5cd2">shared_ptr_cast</a>(</span><span class="m-doc-wrap">Source* object) -&gt; <a class="m-doc-external poxy-external" href="http://en.cppreference.com/w/cpp/memory/shared_ptr.html" target="_blank">std::<wbr/>shared_ptr</a>&lt;typename <a class="m-doc-external poxy-external" href="http://en.cppreference.com/w/cpp/types/remove_pointer.html" target="_blank">std::<wbr/>remove_pointer</a>&lt;Target&gt;::type&gt;</span>
+              <span class="m-doc-wrap-bumper">auto <a class="m-doc" href="namespace_ase.html#ad5ffcbcfd927e291d5ef549a58ac8223">shared_ptr_cast</a>(</span><span class="m-doc-wrap">Source* object) -&gt; <a class="m-doc-external poxy-external" href="http://en.cppreference.com/w/cpp/memory/shared_ptr.html" target="_blank">std::<wbr/>shared_ptr</a>&lt;typename <a class="m-doc-external poxy-external" href="http://en.cppreference.com/w/cpp/types/remove_pointer.html" target="_blank">std::<wbr/>remove_pointer</a>&lt;Target&gt;::type&gt;</span>
             </dt>
             <dd></dd>
             <dt>
               <div class="m-doc-template">template&lt;class Target, class Source&gt;</div>
-              <span class="m-doc-wrap-bumper">auto <a class="m-doc" href="namespace_ase.html#af71487f09c8406e4674a7050ef76fde2">shared_ptr_cast</a>(</span><span class="m-doc-wrap">const Source* object) -&gt; const <a class="m-doc-external poxy-external" href="http://en.cppreference.com/w/cpp/memory/shared_ptr.html" target="_blank">std::<wbr/>shared_ptr</a>&lt;typename <a class="m-doc-external poxy-external" href="http://en.cppreference.com/w/cpp/types/remove_pointer.html" target="_blank">std::<wbr/>remove_pointer</a>&lt;Target&gt;::type&gt;</span>
+              <span class="m-doc-wrap-bumper">auto <a class="m-doc" href="namespace_ase.html#a23a0a1476a86e15dfe9bae89489fdb81">shared_ptr_cast</a>(</span><span class="m-doc-wrap">const Source* object) -&gt; const <a class="m-doc-external poxy-external" href="http://en.cppreference.com/w/cpp/memory/shared_ptr.html" target="_blank">std::<wbr/>shared_ptr</a>&lt;typename <a class="m-doc-external poxy-external" href="http://en.cppreference.com/w/cpp/types/remove_pointer.html" target="_blank">std::<wbr/>remove_pointer</a>&lt;Target&gt;::type&gt;</span>
             </dt>
-            <dd>See <a class="m-doc" href="namespace_ase.html#a83de211b1db87bfee2050d90bbda5cd2">shared_<wbr/>ptr_<wbr/>cast(Source*)</a>.</dd>
+            <dd>See <a class="m-doc" href="namespace_ase.html#ad5ffcbcfd927e291d5ef549a58ac8223">shared_<wbr/>ptr_<wbr/>cast(Source*)</a>.</dd>
             <dt>
               <div class="m-doc-template">template&lt;class Target, class Source&gt;</div>
-              <span class="m-doc-wrap-bumper">auto <a class="m-doc" href="namespace_ase.html#a7d90415f51a4cb6df959cd332fb7d8a1">shared_ptr_cast</a>(</span><span class="m-doc-wrap"><a class="m-doc-external poxy-external" href="http://en.cppreference.com/w/cpp/memory/shared_ptr.html" target="_blank">std::<wbr/>shared_ptr</a>&lt;Source&gt;&amp; sptr) -&gt; <a class="m-doc-external poxy-external" href="http://en.cppreference.com/w/cpp/memory/shared_ptr.html" target="_blank">std::<wbr/>shared_ptr</a>&lt;typename <a class="m-doc-external poxy-external" href="http://en.cppreference.com/w/cpp/types/remove_pointer.html" target="_blank">std::<wbr/>remove_pointer</a>&lt;Target&gt;::type&gt;</span>
+              <span class="m-doc-wrap-bumper">auto <a class="m-doc" href="namespace_ase.html#a3a10fba89f7d2eaec3091a1b317b41c7">shared_ptr_cast</a>(</span><span class="m-doc-wrap"><a class="m-doc-external poxy-external" href="http://en.cppreference.com/w/cpp/memory/shared_ptr.html" target="_blank">std::<wbr/>shared_ptr</a>&lt;Source&gt;&amp; sptr) -&gt; <a class="m-doc-external poxy-external" href="http://en.cppreference.com/w/cpp/memory/shared_ptr.html" target="_blank">std::<wbr/>shared_ptr</a>&lt;typename <a class="m-doc-external poxy-external" href="http://en.cppreference.com/w/cpp/types/remove_pointer.html" target="_blank">std::<wbr/>remove_pointer</a>&lt;Target&gt;::type&gt;</span>
             </dt>
-            <dd>See <a class="m-doc" href="namespace_ase.html#a83de211b1db87bfee2050d90bbda5cd2">shared_<wbr/>ptr_<wbr/>cast(Source*)</a>.</dd>
+            <dd>See <a class="m-doc" href="namespace_ase.html#ad5ffcbcfd927e291d5ef549a58ac8223">shared_<wbr/>ptr_<wbr/>cast(Source*)</a>.</dd>
             <dt>
               <div class="m-doc-template">template&lt;class Target, class Source&gt;</div>
-              <span class="m-doc-wrap-bumper">auto <a class="m-doc" href="namespace_ase.html#abf3c62b8462b73efa84ea104257a616b">shared_ptr_cast</a>(</span><span class="m-doc-wrap">const <a class="m-doc-external poxy-external" href="http://en.cppreference.com/w/cpp/memory/shared_ptr.html" target="_blank">std::<wbr/>shared_ptr</a>&lt;Source&gt;&amp; sptr) -&gt; const <a class="m-doc-external poxy-external" href="http://en.cppreference.com/w/cpp/memory/shared_ptr.html" target="_blank">std::<wbr/>shared_ptr</a>&lt;typename <a class="m-doc-external poxy-external" href="http://en.cppreference.com/w/cpp/types/remove_pointer.html" target="_blank">std::<wbr/>remove_pointer</a>&lt;Target&gt;::type&gt;</span>
+              <span class="m-doc-wrap-bumper">auto <a class="m-doc" href="namespace_ase.html#a9fba79b76569212ec8af28d952b21ee5">shared_ptr_cast</a>(</span><span class="m-doc-wrap">const <a class="m-doc-external poxy-external" href="http://en.cppreference.com/w/cpp/memory/shared_ptr.html" target="_blank">std::<wbr/>shared_ptr</a>&lt;Source&gt;&amp; sptr) -&gt; const <a class="m-doc-external poxy-external" href="http://en.cppreference.com/w/cpp/memory/shared_ptr.html" target="_blank">std::<wbr/>shared_ptr</a>&lt;typename <a class="m-doc-external poxy-external" href="http://en.cppreference.com/w/cpp/types/remove_pointer.html" target="_blank">std::<wbr/>remove_pointer</a>&lt;Target&gt;::type&gt;</span>
             </dt>
-            <dd>See <a class="m-doc" href="namespace_ase.html#a83de211b1db87bfee2050d90bbda5cd2">shared_<wbr/>ptr_<wbr/>cast(Source*)</a>.</dd>
+            <dd>See <a class="m-doc" href="namespace_ase.html#ad5ffcbcfd927e291d5ef549a58ac8223">shared_<wbr/>ptr_<wbr/>cast(Source*)</a>.</dd>
             <dt>
               <div class="m-doc-template">template&lt;class Source&gt;</div>
-              <span class="m-doc-wrap-bumper">auto <a class="m-doc" href="namespace_ase.html#ac246d67444dfcc229076b60afc274fbb">shared_ptr_from</a>(</span><span class="m-doc-wrap">Source* object) -&gt; <a class="m-doc-external poxy-external" href="http://en.cppreference.com/w/cpp/memory/shared_ptr.html" target="_blank">std::<wbr/>shared_ptr</a>&lt;typename <a class="m-doc-external poxy-external" href="http://en.cppreference.com/w/cpp/types/remove_pointer.html" target="_blank">std::<wbr/>remove_pointer</a>&lt;Source&gt;::type&gt;</span>
+              <span class="m-doc-wrap-bumper">auto <a class="m-doc" href="namespace_ase.html#a5fa0b0155f01f85957dfc4095c6ffef3">shared_ptr_from</a>(</span><span class="m-doc-wrap">Source* object) -&gt; <a class="m-doc-external poxy-external" href="http://en.cppreference.com/w/cpp/memory/shared_ptr.html" target="_blank">std::<wbr/>shared_ptr</a>&lt;typename <a class="m-doc-external poxy-external" href="http://en.cppreference.com/w/cpp/types/remove_pointer.html" target="_blank">std::<wbr/>remove_pointer</a>&lt;Source&gt;::type&gt;</span>
             </dt>
             <dd>Use <code>shared_ptr_cast&lt;&gt;()</code> to convert an object pointer into a <code>shared_ptr&lt;&gt;</code>.</dd>
             <dt>
@@ -255,7 +255,7 @@
             <dd>Demangle identifier via libcc.</dd>
             <dt>
               <div class="m-doc-template">template&lt;class C&gt;</div>
-              <span class="m-doc-wrap-bumper">auto <a class="m-doc" href="namespace_ase.html#aa26d054cebc8f02f849dba30bae58073">weak_ptr_fetch_or_create</a>(</span><span class="m-doc-wrap"><a class="m-doc-external poxy-external" href="http://en.cppreference.com/w/cpp/memory/weak_ptr.html" target="_blank">std::<wbr/>weak_ptr</a>&lt;C&gt;&amp; wptr,
+              <span class="m-doc-wrap-bumper">auto <a class="m-doc" href="namespace_ase.html#a4d3a22404f88f332ed125121c2b12b36">weak_ptr_fetch_or_create</a>(</span><span class="m-doc-wrap"><a class="m-doc-external poxy-external" href="http://en.cppreference.com/w/cpp/memory/weak_ptr.html" target="_blank">std::<wbr/>weak_ptr</a>&lt;C&gt;&amp; wptr,
               const <a class="m-doc-external poxy-external" href="http://en.cppreference.com/w/cpp/utility/functional/function.html" target="_blank">std::<wbr/>function</a>&lt;<a class="m-doc-external poxy-external" href="http://en.cppreference.com/w/cpp/memory/shared_ptr.html" target="_blank">std::<wbr/>shared_ptr</a>&lt;C&gt;()&gt;&amp; ctor) -&gt; <a class="m-doc-external poxy-external" href="http://en.cppreference.com/w/cpp/memory/shared_ptr.html" target="_blank">std::<wbr/>shared_ptr</a>&lt;C&gt;</span>
             </dt>
             <dd>Fetch <code>shared_ptr</code> from <code>wptr</code> and create <code>C</code> with <code>ctor</code> if needed.</dd>

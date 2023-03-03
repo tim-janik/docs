@@ -141,7 +141,7 @@
             <dd>Create an IconString consisting of a single/double unicode character.</dd>
             <dt>
               <div class="m-doc-template">template&lt;class... Args&gt;</div>
-              <span class="m-doc-wrap-bumper">auto <a class="m-doc" href="namespace_ase.html#a6103a1db4fd9aa6a7f2e08f418e4af62">ase_gettext</a>(</span><span class="m-doc-wrap">const char* format,
+              <span class="m-doc-wrap-bumper">auto <a class="m-doc" href="namespace_ase.html#ae3dff757c1da35c05447a368e23d4105">ase_gettext</a>(</span><span class="m-doc-wrap">const char* format,
               const Args&amp;... args) -&gt; const char*</span>
             </dt>
             <dd>Translate a string, using the ASE locale.</dd>
@@ -155,7 +155,7 @@
             <dd></dd>
             <dt>
               <div class="m-doc-template">template&lt;typename RandIter, class Cmp, typename Arg&gt;</div>
-              <span class="m-doc-wrap-bumper">auto <a class="m-doc" href="namespace_ase_1_1_aux.html#a5aa64620c096d5d03cef476c88bcc04c">binary_lookup_insertion_pos</a>(</span><span class="m-doc-wrap">RandIter begin,
+              <span class="m-doc-wrap-bumper">auto <a class="m-doc" href="namespace_ase_1_1_aux.html#aaabfe1401ee3cf7819e951165fd9c48b">binary_lookup_insertion_pos</a>(</span><span class="m-doc-wrap">RandIter begin,
               RandIter end,
               Cmp cmp_elements,
               const Arg&amp; arg) -&gt; <a class="m-doc-external poxy-external" href="http://en.cppreference.com/w/cpp/utility/pair.html" target="_blank">std::<wbr/>pair</a>&lt;RandIter, bool&gt;</span>
@@ -196,14 +196,14 @@
             </dt>
             <dd>Check if <code>conditional</code> is enabled by $ASE_DEBUG.</dd>
             <dt>
-              <span class="m-doc-wrap-bumper">auto <a class="m-doc" href="namespace_ase.html#ac7324249103005ab4d9f44044ba82fe5">debug_key_value</a>(</span><span class="m-doc-wrap">const char* conditional) -&gt; ::<a class="m-doc-external poxy-external" href="http://en.cppreference.com/w/cpp/string/basic_string.html" target="_blank">std::<wbr/>string</a></span>
+              <span class="m-doc-wrap-bumper">auto <a class="m-doc" href="namespace_ase.html#ac7324249103005ab4d9f44044ba82fe5">debug_key_value</a>(</span><span class="m-doc-wrap">const char* conditional) -&gt; <a class="m-doc-external poxy-external" href="http://en.cppreference.com/w/cpp/string/basic_string.html" target="_blank">::<wbr/>std::<wbr/>string</a></span>
             </dt>
             <dd>Retrieve the value assigned to debug key <code>conditional</code> in $ASE_DEBUG.</dd>
             <dt>
               <span class="m-doc-wrap-bumper">void <a class="m-doc" href="namespace_ase.html#ab2c9ed044d5fc53a5bf9ce76ef7a32f7">debug_message</a>(</span><span class="m-doc-wrap">const char* cond,
               const <a class="m-doc-external poxy-external" href="http://en.cppreference.com/w/cpp/string/basic_string.html" target="_blank">std::<wbr/>string</a>&amp; message)</span>
             </dt>
-            <dd>Print a debug message, called from ::Ase::debug().</dd>
+            <dd>Print a debug message, called from Ase::debug().</dd>
             <dt>
               <span class="m-doc-wrap-bumper">void <a class="m-doc" href="namespace_ase.html#a9153a47e8bd43bd6f0ff86b09087101c">diag_message</a>(</span><span class="m-doc-wrap">uint8 code,
               const <a class="m-doc-external poxy-external" href="http://en.cppreference.com/w/cpp/string/basic_string.html" target="_blank">std::<wbr/>string</a>&amp; message)</span>
@@ -229,11 +229,11 @@
             <dd></dd>
             <dt>
               <div class="m-doc-template">template&lt;class T, class Compare&gt;</div>
-              <span class="m-doc-wrap-bumper">auto <a class="m-doc" href="namespace_ase_1_1_aux.html#adbef8da954eb6761b5ce8c97b329011c">insert_sorted</a>(</span><span class="m-doc-wrap"><a class="m-doc-external poxy-external" href="http://en.cppreference.com/w/cpp/container/vector.html" target="_blank">std::<wbr/>vector</a>&lt;T&gt;&amp; vec,
+              <span class="m-doc-wrap-bumper">auto <a class="m-doc" href="namespace_ase_1_1_aux.html#a2de3c2490a16c9223b7b0577eb84e8e4">insert_sorted</a>(</span><span class="m-doc-wrap"><a class="m-doc-external poxy-external" href="http://en.cppreference.com/w/cpp/container/vector.html" target="_blank">std::<wbr/>vector</a>&lt;T&gt;&amp; vec,
               const T&amp; value,
               Compare compare) -&gt; <a class="m-doc-external poxy-external" href="http://en.cppreference.com/w/cpp/container/vector.html" target="_blank">std::<wbr/>vector</a>&lt;T&gt;::iterator</span>
             </dt>
-            <dd>Insert <code>value</code> into sorted <code>vec</code> using <a class="m-doc" href="namespace_ase_1_1_aux.html#a5aa64620c096d5d03cef476c88bcc04c">binary_<wbr/>lookup_<wbr/>insertion_<wbr/>pos()</a> with <code>compare</code>.</dd>
+            <dd>Insert <code>value</code> into sorted <code>vec</code> using <a class="m-doc" href="namespace_ase_1_1_aux.html#aaabfe1401ee3cf7819e951165fd9c48b">binary_<wbr/>lookup_<wbr/>insertion_<wbr/>pos()</a> with <code>compare</code>.</dd>
             <dt id="f3fb3cf9b144b2aa255fd4067c04781fdbda8b78ec589849d9257b887cd1ddca">
               <span class="m-doc-wrap-bumper">auto <a class="m-doc-self" href="#f3fb3cf9b144b2aa255fd4067c04781fdbda8b78ec589849d9257b887cd1ddca">operator""_icon</a>(</span><span class="m-doc-wrap">const char* key,
               <a class="m-doc poxy-injected poxy-external" href="https://en.cppreference.com/w/cpp/types/size_t" target="_blank">size_t</a>) -&gt; IconString</span>

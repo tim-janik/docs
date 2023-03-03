@@ -287,7 +287,7 @@
               <div class="m-doc-template">template&lt;class, class = void&gt;</div>
               struct <a class="m-doc" href="struct_ase_1_1_has__serialize__f.html">Has_serialize_f</a>
             </dt>
-            <dd>Has_serialize_f&lt;T&gt; - Check if <code>serialize(T&amp;,WritNode&amp;)</code> is provided for <code>T</code>.</dd>
+            <dd>Has_serialize_f&lt;T&gt; - Check if <code>serialize(T&amp;,<a class="m-doc" href="class_ase_1_1_writ_node.html">WritNode</a>&amp;)</code> is provided for <code>T</code>.</dd>
             <dt>
               struct <a class="m-doc" href="struct_ase_1_1_id32.html">Id32</a>
             </dt>
@@ -681,12 +681,12 @@
             <dd>A <a class="m-doc poxy-injected poxy-external" href="https://en.cppreference.com/w/cpp/memory/unique_ptr" target="_blank">std::unique_ptr</a>&lt;&gt; for <a class="m-doc" href="namespace_ase_1_1_loft.html">Loft</a> allocations.</dd>
             <dt id="a4e2ef1acd7d1f0a3ad4dff73ff1af815">
               <div class="m-doc-template">template&lt;bool value&gt;</div>
-              using <a class="m-doc-self" href="#a4e2ef1acd7d1f0a3ad4dff73ff1af815">REQUIRES</a> = typename ::<a class="m-doc-external poxy-external" href="http://en.cppreference.com/w/cpp/types/enable_if.html" target="_blank">std::<wbr/>enable_if</a>&lt;value, bool&gt;::type
+              using <a class="m-doc-self" href="#a4e2ef1acd7d1f0a3ad4dff73ff1af815">REQUIRES</a> = typename <a class="m-doc-external poxy-external" href="http://en.cppreference.com/w/cpp/types/enable_if.html" target="_blank">::<wbr/>std::<wbr/>enable_if</a>&lt;value, bool&gt;::type
             </dt>
             <dd>REQUIRES&lt;value&gt; - Simplified version of <a class="m-doc poxy-injected poxy-external" href="https://en.cppreference.com/w/cpp/types/enable_if" target="_blank">std::enable_if</a>&lt;cond,bool&gt;::type to use SFINAE in function templates.</dd>
             <dt id="a5bd6d9c354c4d20df6b323404b41abdb">
               <div class="m-doc-template">template&lt;bool value&gt;</div>
-              using <a class="m-doc-self" href="#a5bd6d9c354c4d20df6b323404b41abdb">REQUIRESv</a> = typename ::<a class="m-doc-external poxy-external" href="http://en.cppreference.com/w/cpp/types/enable_if.html" target="_blank">std::<wbr/>enable_if</a>&lt;value, void&gt;::type
+              using <a class="m-doc-self" href="#a5bd6d9c354c4d20df6b323404b41abdb">REQUIRESv</a> = typename <a class="m-doc-external poxy-external" href="http://en.cppreference.com/w/cpp/types/enable_if.html" target="_blank">::<wbr/>std::<wbr/>enable_if</a>&lt;value, void&gt;::type
             </dt>
             <dd>REQUIRESv&lt;value&gt; - Simplified version of <a class="m-doc poxy-injected poxy-external" href="https://en.cppreference.com/w/cpp/types/enable_if" target="_blank">std::enable_if</a>&lt;cond,void&gt;::type to use SFINAE in struct templates.</dd>
             <dt id="abcfad6508b790c2bc6361655cf199a9a">
@@ -799,8 +799,8 @@
               <span class="m-doc-wrap-bumper">static auto <a class="m-doc-self" href="#a10537ae02021379586ec0f7baa703825">hash_secret</a>(</span><span class="m-doc-wrap">) -&gt; ASE_PURE <a class="m-doc poxy-injected poxy-external" href="https://en.cppreference.com/w/cpp/types/integer" target="_blank">uint64_t</a></span>
             </dt>
             <dd>Provide hashing nonce for reseeding hashes at program start to avoid collision attacks.</dd>
-            <dt id="a622e66389b00446caab3425b84b7f1f9">
-              <span class="m-doc-wrap-bumper">static auto <a class="m-doc-self" href="#a622e66389b00446caab3425b84b7f1f9">initialized_ase_gettext_domain</a>(</span><span class="m-doc-wrap">) -&gt; const char*</span>
+            <dt id="a6dafad10b9e3333b7cef0a4060f1ea8c">
+              <span class="m-doc-wrap-bumper">static auto <a class="m-doc-self" href="#a6dafad10b9e3333b7cef0a4060f1ea8c">initialized_ase_gettext_domain</a>(</span><span class="m-doc-wrap">) -&gt; const char*</span>
             </dt>
             <dd>Initialize gettext domain for ASE.</dd>
             <dt>
@@ -876,16 +876,16 @@
               <span class="m-doc-wrap-bumper">static auto <a class="m-doc-self" href="#aae065769e932bc2bbb4be204212542f5">utf8skip</a>(</span><span class="m-doc-wrap">const char* str) -&gt; <a class="m-doc poxy-injected poxy-external" href="https://en.cppreference.com/w/cpp/types/size_t" target="_blank">size_t</a></span>
             </dt>
             <dd>Returns length of unicode character in bytes.</dd>
-            <dt id="a48b4cd56653613b9adf326b96045e1fd">
-              <span class="m-doc-wrap-bumper">auto <a class="m-doc-self" href="#a48b4cd56653613b9adf326b96045e1fd">_</a>(</span><span class="m-doc-wrap">const char* string) -&gt; const char*()</span>
+            <dt id="af43824d663045e1b37c5fc713adc782e">
+              <span class="m-doc-wrap-bumper">auto <a class="m-doc-self" href="#af43824d663045e1b37c5fc713adc782e">_</a>(</span><span class="m-doc-wrap">const char* string) -&gt; const char*()</span>
             </dt>
             <dd>Translate message strings in the Anklang/ASE text domain.</dd>
             <dt id="af98ea2f6e812db590fadf19f1f2f3e12">
               <span class="m-doc-wrap-bumper">auto <a class="m-doc-self" href="#af98ea2f6e812db590fadf19f1f2f3e12">_</a>(</span><span class="m-doc-wrap">const <a class="m-doc-external poxy-external" href="http://en.cppreference.com/w/cpp/string/basic_string.html" target="_blank">std::<wbr/>string</a>&amp; string) -&gt; <a class="m-doc-external poxy-external" href="http://en.cppreference.com/w/cpp/string/basic_string.html" target="_blank">std::<wbr/>string</a>()</span>
             </dt>
             <dd>Translate message strings in the Anklang/ASE text domain.</dd>
-            <dt id="a903f806f01c9a68eec9f065c5719567c">
-              <span class="m-doc-wrap-bumper">auto <a class="m-doc-self" href="#a903f806f01c9a68eec9f065c5719567c">_</a>(</span><span class="m-doc-wrap">const char* string,
+            <dt id="a30bc0283a50c3bbf41f1761ee09dacfe">
+              <span class="m-doc-wrap-bumper">auto <a class="m-doc-self" href="#a30bc0283a50c3bbf41f1761ee09dacfe">_</a>(</span><span class="m-doc-wrap">const char* string,
               const char* plural,
               <a class="m-doc poxy-injected poxy-external" href="https://en.cppreference.com/w/cpp/types/integer" target="_blank">int64_t</a> n) -&gt; const char*()</span>
             </dt>
@@ -953,9 +953,9 @@
               <span class="m-doc-wrap-bumper">auto <a class="m-doc-self" href="#a71404f31e4992a365d47a9966be9adaf">ase_error_blurb</a>(</span><span class="m-doc-wrap"><a class="m-doc" href="namespace_ase.html#a4fb5e7f1b391bd36a33d0c0c7c6d15f1">Error</a> error) -&gt; const char*</span>
             </dt>
             <dd>Describe Error condition.</dd>
-            <dt id="a6103a1db4fd9aa6a7f2e08f418e4af62">
+            <dt id="ae3dff757c1da35c05447a368e23d4105">
               <div class="m-doc-template">template&lt;class... Args&gt;</div>
-              <span class="m-doc-wrap-bumper">auto <a class="m-doc-self" href="#a6103a1db4fd9aa6a7f2e08f418e4af62">ase_gettext</a>(</span><span class="m-doc-wrap">const char* format,
+              <span class="m-doc-wrap-bumper">auto <a class="m-doc-self" href="#ae3dff757c1da35c05447a368e23d4105">ase_gettext</a>(</span><span class="m-doc-wrap">const char* format,
               const Args&amp;... args) -&gt; const char*</span>
             </dt>
             <dd>Translate a string, using the ASE locale.</dd>
@@ -1046,18 +1046,18 @@
             </dt>
             <dd>Check if <code>conditional</code> is enabled by $ASE_DEBUG.</dd>
             <dt id="a74089829ea1c73bab9a636bd6663f3a4">
-              <span class="m-doc-wrap-bumper">auto <a class="m-doc-self" href="#a74089829ea1c73bab9a636bd6663f3a4">debug_key_enabled</a>(</span><span class="m-doc-wrap">const ::<a class="m-doc-external poxy-external" href="http://en.cppreference.com/w/cpp/string/basic_string.html" target="_blank">std::<wbr/>string</a>&amp; conditional) -&gt; bool</span>
+              <span class="m-doc-wrap-bumper">auto <a class="m-doc-self" href="#a74089829ea1c73bab9a636bd6663f3a4">debug_key_enabled</a>(</span><span class="m-doc-wrap">const <a class="m-doc-external poxy-external" href="http://en.cppreference.com/w/cpp/string/basic_string.html" target="_blank">::<wbr/>std::<wbr/>string</a>&amp; conditional) -&gt; bool</span>
             </dt>
             <dd>Check if <code>conditional</code> is enabled by $ASE_DEBUG.</dd>
             <dt id="ac7324249103005ab4d9f44044ba82fe5">
-              <span class="m-doc-wrap-bumper">auto <a class="m-doc-self" href="#ac7324249103005ab4d9f44044ba82fe5">debug_key_value</a>(</span><span class="m-doc-wrap">const char* conditional) -&gt; ::<a class="m-doc-external poxy-external" href="http://en.cppreference.com/w/cpp/string/basic_string.html" target="_blank">std::<wbr/>string</a></span>
+              <span class="m-doc-wrap-bumper">auto <a class="m-doc-self" href="#ac7324249103005ab4d9f44044ba82fe5">debug_key_value</a>(</span><span class="m-doc-wrap">const char* conditional) -&gt; <a class="m-doc-external poxy-external" href="http://en.cppreference.com/w/cpp/string/basic_string.html" target="_blank">::<wbr/>std::<wbr/>string</a></span>
             </dt>
             <dd>Retrieve the value assigned to debug key <code>conditional</code> in $ASE_DEBUG.</dd>
             <dt id="ab2c9ed044d5fc53a5bf9ce76ef7a32f7">
               <span class="m-doc-wrap-bumper">void <a class="m-doc-self" href="#ab2c9ed044d5fc53a5bf9ce76ef7a32f7">debug_message</a>(</span><span class="m-doc-wrap">const char* cond,
               const <a class="m-doc-external poxy-external" href="http://en.cppreference.com/w/cpp/string/basic_string.html" target="_blank">std::<wbr/>string</a>&amp; message)</span>
             </dt>
-            <dd>Print a debug message, called from ::Ase::debug().</dd>
+            <dd>Print a debug message, called from Ase::debug().</dd>
             <dt id="a9153a47e8bd43bd6f0ff86b09087101c">
               <span class="m-doc-wrap-bumper">void <a class="m-doc-self" href="#a9153a47e8bd43bd6f0ff86b09087101c">diag_message</a>(</span><span class="m-doc-wrap"><a class="m-doc" href="namespace_ase.html#a37adf90a66bbf9858a98d9f71c561ff5">uint8</a> code,
               const <a class="m-doc-external poxy-external" href="http://en.cppreference.com/w/cpp/string/basic_string.html" target="_blank">std::<wbr/>string</a>&amp; message)</span>
@@ -1372,27 +1372,27 @@
             <dd>Calculate SHA3 extendable output digest for 256 bit security strength, see also class <a class="m-doc" href="struct_ase_1_1_s_h_a_k_e256.html">SHAKE256</a>.</dd>
             <dt>
               <div class="m-doc-template">template&lt;class Target, class Source&gt;</div>
-              <span class="m-doc-wrap-bumper">auto <a class="m-doc" href="#a83de211b1db87bfee2050d90bbda5cd2">shared_ptr_cast</a>(</span><span class="m-doc-wrap">Source* object) -&gt; <a class="m-doc-external poxy-external" href="http://en.cppreference.com/w/cpp/memory/shared_ptr.html" target="_blank">std::<wbr/>shared_ptr</a>&lt;typename <a class="m-doc-external poxy-external" href="http://en.cppreference.com/w/cpp/types/remove_pointer.html" target="_blank">std::<wbr/>remove_pointer</a>&lt;Target&gt;::type&gt;</span>
+              <span class="m-doc-wrap-bumper">auto <a class="m-doc" href="#ad5ffcbcfd927e291d5ef549a58ac8223">shared_ptr_cast</a>(</span><span class="m-doc-wrap">Source* object) -&gt; <a class="m-doc-external poxy-external" href="http://en.cppreference.com/w/cpp/memory/shared_ptr.html" target="_blank">std::<wbr/>shared_ptr</a>&lt;typename <a class="m-doc-external poxy-external" href="http://en.cppreference.com/w/cpp/types/remove_pointer.html" target="_blank">std::<wbr/>remove_pointer</a>&lt;Target&gt;::type&gt;</span>
             </dt>
             <dd></dd>
-            <dt id="af71487f09c8406e4674a7050ef76fde2">
+            <dt id="a23a0a1476a86e15dfe9bae89489fdb81">
               <div class="m-doc-template">template&lt;class Target, class Source&gt;</div>
-              <span class="m-doc-wrap-bumper">auto <a class="m-doc-self" href="#af71487f09c8406e4674a7050ef76fde2">shared_ptr_cast</a>(</span><span class="m-doc-wrap">const Source* object) -&gt; const <a class="m-doc-external poxy-external" href="http://en.cppreference.com/w/cpp/memory/shared_ptr.html" target="_blank">std::<wbr/>shared_ptr</a>&lt;typename <a class="m-doc-external poxy-external" href="http://en.cppreference.com/w/cpp/types/remove_pointer.html" target="_blank">std::<wbr/>remove_pointer</a>&lt;Target&gt;::type&gt;</span>
+              <span class="m-doc-wrap-bumper">auto <a class="m-doc-self" href="#a23a0a1476a86e15dfe9bae89489fdb81">shared_ptr_cast</a>(</span><span class="m-doc-wrap">const Source* object) -&gt; const <a class="m-doc-external poxy-external" href="http://en.cppreference.com/w/cpp/memory/shared_ptr.html" target="_blank">std::<wbr/>shared_ptr</a>&lt;typename <a class="m-doc-external poxy-external" href="http://en.cppreference.com/w/cpp/types/remove_pointer.html" target="_blank">std::<wbr/>remove_pointer</a>&lt;Target&gt;::type&gt;</span>
             </dt>
-            <dd>See <a class="m-doc" href="namespace_ase.html#a83de211b1db87bfee2050d90bbda5cd2">shared_<wbr/>ptr_<wbr/>cast(Source*)</a>.</dd>
-            <dt id="a7d90415f51a4cb6df959cd332fb7d8a1">
+            <dd>See <a class="m-doc" href="namespace_ase.html#ad5ffcbcfd927e291d5ef549a58ac8223">shared_<wbr/>ptr_<wbr/>cast(Source*)</a>.</dd>
+            <dt id="a3a10fba89f7d2eaec3091a1b317b41c7">
               <div class="m-doc-template">template&lt;class Target, class Source&gt;</div>
-              <span class="m-doc-wrap-bumper">auto <a class="m-doc-self" href="#a7d90415f51a4cb6df959cd332fb7d8a1">shared_ptr_cast</a>(</span><span class="m-doc-wrap"><a class="m-doc-external poxy-external" href="http://en.cppreference.com/w/cpp/memory/shared_ptr.html" target="_blank">std::<wbr/>shared_ptr</a>&lt;Source&gt;&amp; sptr) -&gt; <a class="m-doc-external poxy-external" href="http://en.cppreference.com/w/cpp/memory/shared_ptr.html" target="_blank">std::<wbr/>shared_ptr</a>&lt;typename <a class="m-doc-external poxy-external" href="http://en.cppreference.com/w/cpp/types/remove_pointer.html" target="_blank">std::<wbr/>remove_pointer</a>&lt;Target&gt;::type&gt;</span>
+              <span class="m-doc-wrap-bumper">auto <a class="m-doc-self" href="#a3a10fba89f7d2eaec3091a1b317b41c7">shared_ptr_cast</a>(</span><span class="m-doc-wrap"><a class="m-doc-external poxy-external" href="http://en.cppreference.com/w/cpp/memory/shared_ptr.html" target="_blank">std::<wbr/>shared_ptr</a>&lt;Source&gt;&amp; sptr) -&gt; <a class="m-doc-external poxy-external" href="http://en.cppreference.com/w/cpp/memory/shared_ptr.html" target="_blank">std::<wbr/>shared_ptr</a>&lt;typename <a class="m-doc-external poxy-external" href="http://en.cppreference.com/w/cpp/types/remove_pointer.html" target="_blank">std::<wbr/>remove_pointer</a>&lt;Target&gt;::type&gt;</span>
             </dt>
-            <dd>See <a class="m-doc" href="namespace_ase.html#a83de211b1db87bfee2050d90bbda5cd2">shared_<wbr/>ptr_<wbr/>cast(Source*)</a>.</dd>
-            <dt id="abf3c62b8462b73efa84ea104257a616b">
+            <dd>See <a class="m-doc" href="namespace_ase.html#ad5ffcbcfd927e291d5ef549a58ac8223">shared_<wbr/>ptr_<wbr/>cast(Source*)</a>.</dd>
+            <dt id="a9fba79b76569212ec8af28d952b21ee5">
               <div class="m-doc-template">template&lt;class Target, class Source&gt;</div>
-              <span class="m-doc-wrap-bumper">auto <a class="m-doc-self" href="#abf3c62b8462b73efa84ea104257a616b">shared_ptr_cast</a>(</span><span class="m-doc-wrap">const <a class="m-doc-external poxy-external" href="http://en.cppreference.com/w/cpp/memory/shared_ptr.html" target="_blank">std::<wbr/>shared_ptr</a>&lt;Source&gt;&amp; sptr) -&gt; const <a class="m-doc-external poxy-external" href="http://en.cppreference.com/w/cpp/memory/shared_ptr.html" target="_blank">std::<wbr/>shared_ptr</a>&lt;typename <a class="m-doc-external poxy-external" href="http://en.cppreference.com/w/cpp/types/remove_pointer.html" target="_blank">std::<wbr/>remove_pointer</a>&lt;Target&gt;::type&gt;</span>
+              <span class="m-doc-wrap-bumper">auto <a class="m-doc-self" href="#a9fba79b76569212ec8af28d952b21ee5">shared_ptr_cast</a>(</span><span class="m-doc-wrap">const <a class="m-doc-external poxy-external" href="http://en.cppreference.com/w/cpp/memory/shared_ptr.html" target="_blank">std::<wbr/>shared_ptr</a>&lt;Source&gt;&amp; sptr) -&gt; const <a class="m-doc-external poxy-external" href="http://en.cppreference.com/w/cpp/memory/shared_ptr.html" target="_blank">std::<wbr/>shared_ptr</a>&lt;typename <a class="m-doc-external poxy-external" href="http://en.cppreference.com/w/cpp/types/remove_pointer.html" target="_blank">std::<wbr/>remove_pointer</a>&lt;Target&gt;::type&gt;</span>
             </dt>
-            <dd>See <a class="m-doc" href="namespace_ase.html#a83de211b1db87bfee2050d90bbda5cd2">shared_<wbr/>ptr_<wbr/>cast(Source*)</a>.</dd>
-            <dt id="ac246d67444dfcc229076b60afc274fbb">
+            <dd>See <a class="m-doc" href="namespace_ase.html#ad5ffcbcfd927e291d5ef549a58ac8223">shared_<wbr/>ptr_<wbr/>cast(Source*)</a>.</dd>
+            <dt id="a5fa0b0155f01f85957dfc4095c6ffef3">
               <div class="m-doc-template">template&lt;class Source&gt;</div>
-              <span class="m-doc-wrap-bumper">auto <a class="m-doc-self" href="#ac246d67444dfcc229076b60afc274fbb">shared_ptr_from</a>(</span><span class="m-doc-wrap">Source* object) -&gt; <a class="m-doc-external poxy-external" href="http://en.cppreference.com/w/cpp/memory/shared_ptr.html" target="_blank">std::<wbr/>shared_ptr</a>&lt;typename <a class="m-doc-external poxy-external" href="http://en.cppreference.com/w/cpp/types/remove_pointer.html" target="_blank">std::<wbr/>remove_pointer</a>&lt;Source&gt;::type&gt;</span>
+              <span class="m-doc-wrap-bumper">auto <a class="m-doc-self" href="#a5fa0b0155f01f85957dfc4095c6ffef3">shared_ptr_from</a>(</span><span class="m-doc-wrap">Source* object) -&gt; <a class="m-doc-external poxy-external" href="http://en.cppreference.com/w/cpp/memory/shared_ptr.html" target="_blank">std::<wbr/>shared_ptr</a>&lt;typename <a class="m-doc-external poxy-external" href="http://en.cppreference.com/w/cpp/types/remove_pointer.html" target="_blank">std::<wbr/>remove_pointer</a>&lt;Source&gt;::type&gt;</span>
             </dt>
             <dd>Use <code>shared_ptr_cast&lt;&gt;()</code> to convert an object pointer into a <code>shared_ptr&lt;&gt;</code>.</dd>
             <dt id="a9041e0025b73f9ad84b70ef59ba8f57d">
@@ -1895,9 +1895,9 @@
               const Args&amp;... args)</span>
             </dt>
             <dd>Issue a printf-like warning message.</dd>
-            <dt id="aa26d054cebc8f02f849dba30bae58073">
+            <dt id="a4d3a22404f88f332ed125121c2b12b36">
               <div class="m-doc-template">template&lt;class C&gt;</div>
-              <span class="m-doc-wrap-bumper">auto <a class="m-doc-self" href="#aa26d054cebc8f02f849dba30bae58073">weak_ptr_fetch_or_create</a>(</span><span class="m-doc-wrap"><a class="m-doc-external poxy-external" href="http://en.cppreference.com/w/cpp/memory/weak_ptr.html" target="_blank">std::<wbr/>weak_ptr</a>&lt;C&gt;&amp; wptr,
+              <span class="m-doc-wrap-bumper">auto <a class="m-doc-self" href="#a4d3a22404f88f332ed125121c2b12b36">weak_ptr_fetch_or_create</a>(</span><span class="m-doc-wrap"><a class="m-doc-external poxy-external" href="http://en.cppreference.com/w/cpp/memory/weak_ptr.html" target="_blank">std::<wbr/>weak_ptr</a>&lt;C&gt;&amp; wptr,
               const <a class="m-doc-external poxy-external" href="http://en.cppreference.com/w/cpp/utility/functional/function.html" target="_blank">std::<wbr/>function</a>&lt;<a class="m-doc-external poxy-external" href="http://en.cppreference.com/w/cpp/memory/shared_ptr.html" target="_blank">std::<wbr/>shared_ptr</a>&lt;C&gt;()&gt;&amp; ctor) -&gt; <a class="m-doc-external poxy-external" href="http://en.cppreference.com/w/cpp/memory/shared_ptr.html" target="_blank">std::<wbr/>shared_ptr</a>&lt;C&gt;</span>
             </dt>
             <dd>Fetch <code>shared_ptr</code> from <code>wptr</code> and create <code>C</code> with <code>ctor</code> if needed.</dd>
@@ -2189,12 +2189,12 @@
             </h3>
 <p>Generate uniformly distributed pseudo-random integer within range. This function generates a pseudo-random number like <a class="m-doc" href="namespace_ase.html#af2fa8ecc60f95c51343e451107eb79cc">random_<wbr/>int64()</a>, constrained to the range: <em>begin</em> &lt;= number &lt; <em>end</em>.</p>
           </div></section>
-          <section class="m-doc-details" id="a83de211b1db87bfee2050d90bbda5cd2"><div>
+          <section class="m-doc-details" id="ad5ffcbcfd927e291d5ef549a58ac8223"><div>
             <h3>
               <div class="m-doc-template">
                 template&lt;class Target, class Source&gt;
               </div>
-              <span class="m-doc-wrap-bumper"><a class="m-doc-external poxy-external" href="http://en.cppreference.com/w/cpp/memory/shared_ptr.html" target="_blank">std::<wbr/>shared_ptr</a>&lt;typename <a class="m-doc-external poxy-external" href="http://en.cppreference.com/w/cpp/types/remove_pointer.html" target="_blank">std::<wbr/>remove_pointer</a>&lt;Target&gt;::type&gt; Ase::<wbr/></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a class="m-doc-self" href="#a83de211b1db87bfee2050d90bbda5cd2">shared_ptr_cast</a>(</span><span class="m-doc-wrap">Source* object)</span></span>
+              <span class="m-doc-wrap-bumper"><a class="m-doc-external poxy-external" href="http://en.cppreference.com/w/cpp/memory/shared_ptr.html" target="_blank">std::<wbr/>shared_ptr</a>&lt;typename <a class="m-doc-external poxy-external" href="http://en.cppreference.com/w/cpp/types/remove_pointer.html" target="_blank">std::<wbr/>remove_pointer</a>&lt;Target&gt;::type&gt; Ase::<wbr/></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a class="m-doc-self" href="#ad5ffcbcfd927e291d5ef549a58ac8223">shared_ptr_cast</a>(</span><span class="m-doc-wrap">Source* object)</span></span>
             </h3>
             <table class="m-table m-fullwidth m-flat">
               <thead>
@@ -2213,7 +2213,7 @@
                 </tr>
               </tbody>
             </table>
-<p>Shorthand for std::dynamic_pointer_cast&lt;&gt;(shared_from_this()). A <a class="m-doc" href="namespace_ase.html#a83de211b1db87bfee2050d90bbda5cd2">shared_<wbr/>ptr_<wbr/>cast()</a> takes a <a class="m-doc-external poxy-external" href="http://en.cppreference.com/w/cpp/memory/shared_ptr.html" target="_blank">std::<wbr/>shared_ptr</a> or a pointer to an <em>object</em> that supports <a class="m-doc-external poxy-external" href="http://en.cppreference.com/w/cpp/memory/enable_shared_from_this/shared_from_this.html" target="_blank">std::<wbr/>enable_shared_from_this::<wbr/>shared_from_this()</a>. Using std::dynamic_pointer_cast(), the shared_ptr passed in (or retrieved via calling shared_from_this()) is cast into a <a class="m-doc-external poxy-external" href="http://en.cppreference.com/w/cpp/memory/shared_ptr.html" target="_blank">std::<wbr/>shared_ptr</a>&lt;<em>Target&gt;</em>, possibly resulting in an empty (NULL) <a class="m-doc-external poxy-external" href="http://en.cppreference.com/w/cpp/memory/shared_ptr.html" target="_blank">std::<wbr/>shared_ptr</a> if the underlying <a class="m-doc poxy-injected poxy-external" href="https://en.cppreference.com/w/cpp/language/dynamic_cast" target="_blank">dynamic_cast</a>() was not successful or if a NULL <em>object</em> was passed in. Note that shared_from_this() can throw a <a class="m-doc-external poxy-external" href="http://en.cppreference.com/w/cpp/memory/bad_weak_ptr.html" target="_blank">std::<wbr/>bad_weak_ptr</a> exception if the object has no associated <a class="m-doc-external poxy-external" href="http://en.cppreference.com/w/cpp/memory/shared_ptr.html" target="_blank">std::<wbr/>shared_ptr</a> (usually during ctor and dtor), in which case the exception will also be thrown from <a class="m-doc" href="namespace_ase.html#a83de211b1db87bfee2050d90bbda5cd2">shared_<wbr/>ptr_<wbr/>cast&lt;Target&gt;()</a>. However a <a class="m-doc" href="namespace_ase.html#a83de211b1db87bfee2050d90bbda5cd2">shared_<wbr/>ptr_<wbr/>cast&lt;Target*&gt;()</a> call will not throw and yield an empty (NULL) <a class="m-doc-external poxy-external" href="http://en.cppreference.com/w/cpp/memory/shared_ptr.html" target="_blank">std::<wbr/>shared_ptr</a>&lt;<em>Target&gt;</em>. This is analogous to <a class="m-doc poxy-injected poxy-external" href="https://en.cppreference.com/w/cpp/language/dynamic_cast" target="_blank">dynamic_cast</a>&lt;T@amp&gt; which throws, versus <a class="m-doc poxy-injected poxy-external" href="https://en.cppreference.com/w/cpp/language/dynamic_cast" target="_blank">dynamic_cast</a>&lt;T*&gt; which yields NULL.</p>
+<p>Shorthand for std::dynamic_pointer_cast&lt;&gt;(shared_from_this()). A <a class="m-doc" href="namespace_ase.html#ad5ffcbcfd927e291d5ef549a58ac8223">shared_<wbr/>ptr_<wbr/>cast()</a> takes a <a class="m-doc-external poxy-external" href="http://en.cppreference.com/w/cpp/memory/shared_ptr.html" target="_blank">std::<wbr/>shared_ptr</a> or a pointer to an <em>object</em> that supports <a class="m-doc-external poxy-external" href="http://en.cppreference.com/w/cpp/memory/enable_shared_from_this/shared_from_this.html" target="_blank">std::<wbr/>enable_shared_from_this::<wbr/>shared_from_this()</a>. Using <a class="m-doc-external poxy-external" href="http://en.cppreference.com/w/cpp/memory/shared_ptr/pointer_cast.html" target="_blank">std::<wbr/>dynamic_pointer_cast()</a>, the shared_ptr passed in (or retrieved via calling shared_from_this()) is cast into a <a class="m-doc-external poxy-external" href="http://en.cppreference.com/w/cpp/memory/shared_ptr.html" target="_blank">std::<wbr/>shared_ptr</a>&lt;<em>Target&gt;</em>, possibly resulting in an empty (NULL) <a class="m-doc-external poxy-external" href="http://en.cppreference.com/w/cpp/memory/shared_ptr.html" target="_blank">std::<wbr/>shared_ptr</a> if the underlying <a class="m-doc poxy-injected poxy-external" href="https://en.cppreference.com/w/cpp/language/dynamic_cast" target="_blank">dynamic_cast</a>() was not successful or if a NULL <em>object</em> was passed in. Note that shared_from_this() can throw a <a class="m-doc-external poxy-external" href="http://en.cppreference.com/w/cpp/memory/bad_weak_ptr.html" target="_blank">std::<wbr/>bad_weak_ptr</a> exception if the object has no associated <a class="m-doc-external poxy-external" href="http://en.cppreference.com/w/cpp/memory/shared_ptr.html" target="_blank">std::<wbr/>shared_ptr</a> (usually during ctor and dtor), in which case the exception will also be thrown from <a class="m-doc" href="namespace_ase.html#ad5ffcbcfd927e291d5ef549a58ac8223">shared_<wbr/>ptr_<wbr/>cast&lt;Target&gt;()</a>. However a <a class="m-doc" href="namespace_ase.html#ad5ffcbcfd927e291d5ef549a58ac8223">shared_<wbr/>ptr_<wbr/>cast&lt;Target*&gt;()</a> call will not throw and yield an empty (NULL) <a class="m-doc-external poxy-external" href="http://en.cppreference.com/w/cpp/memory/shared_ptr.html" target="_blank">std::<wbr/>shared_ptr</a>&lt;<em>Target&gt;</em>. This is analogous to <a class="m-doc poxy-injected poxy-external" href="https://en.cppreference.com/w/cpp/language/dynamic_cast" target="_blank">dynamic_cast</a>&lt;T@amp&gt; which throws, versus <a class="m-doc poxy-injected poxy-external" href="https://en.cppreference.com/w/cpp/language/dynamic_cast" target="_blank">dynamic_cast</a>&lt;T*&gt; which yields NULL.</p>
           </div></section>
           <section class="m-doc-details" id="ac879cb580c8208d885b7b627b524a162"><div>
             <h3>
