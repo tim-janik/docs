@@ -64,90 +64,88 @@
 <h3>HueSaturation class</h3>
 <dl>
 <dt><em>class</em>
-<small><code>Export</code></small>.<strong>HueSaturation</strong></dt>
+<strong>HueSaturation</strong><a data-4search="ui/colors.js:HueSaturation;class" id="HueSaturation"></a></dt>
 <dd>
 Class with logic and spline approximations to calculate ZHSV.
 </dd>
 </dl>
 </section>
-<section class="level3" id="export-functions">
-<h3>Export Functions</h3>
+<section class="level3" id="functions">
+<h3>Functions</h3>
 <dl>
-<dt>
-<small><code>Export</code></small>.<strong><code>srgb_from_hsv</code></strong>
-<code>(</code><em>hue, saturation, value</em><code>)</code></dt>
+<dt><a data-4search="ui/colors.js:srgb_from_hsv;func" id="srgb_from_hsv"></a>
+<strong><code>srgb_from_hsv</code></strong> <code>(</code><em>hue,
+saturation, value</em><code>)</code></dt>
 <dd>
 Calculate sRGB from <code>hue, saturation, value</code>.
 </dd>
-<dt>
-<small><code>Export</code></small>.<strong><code>hsv_from_srgb</code></strong>
+<dt><a data-4search="ui/colors.js:hsv_from_srgb;func" id="hsv_from_srgb"></a>
+<strong><code>hsv_from_srgb</code></strong>
 <code>(</code><em>srgb</em><code>)</code></dt>
 <dd>
 Calculate <code>{ hue, saturation, value }</code> from
 <code>srgb</code>.
 </dd>
-<dt>
-<small><code>Export</code></small>.<strong><code>zhsl_from</code></strong>
-<code>(</code><em>srgb, gamut</em><code>)</code></dt>
+<dt><a data-4search="ui/colors.js:zhsl_from;func" id="zhsl_from"></a>
+<strong><code>zhsl_from</code></strong> <code>(</code><em>srgb,
+gamut</em><code>)</code></dt>
 <dd>
 Calculate <code>{ hue, saturation, lightness }</code> from
 <code>srgb</code>.
 </dd>
-<dt>
-<small><code>Export</code></small>.<strong><code>srgb_from_zhsv</code></strong>
-<code>(</code><em>hue, saturation, value, gamut</em><code>)</code></dt>
+<dt><a data-4search="ui/colors.js:srgb_from_zhsv;func" id="srgb_from_zhsv"></a>
+<strong><code>srgb_from_zhsv</code></strong> <code>(</code><em>hue,
+saturation, value, gamut</em><code>)</code></dt>
 <dd>
 Calculate sRGB from <code>{ hue, saturation, value }</code>.
 </dd>
-<dt>
-<small><code>Export</code></small>.<strong><code>hex_from_zhsv</code></strong>
-<code>(</code><em>hue, saturation, value, gamut</em><code>)</code></dt>
+<dt><a data-4search="ui/colors.js:hex_from_zhsv;func" id="hex_from_zhsv"></a>
+<strong><code>hex_from_zhsv</code></strong> <code>(</code><em>hue,
+saturation, value, gamut</em><code>)</code></dt>
 <dd>
 Calculate hexadecimal color from
 <code>{ hue, saturation, value }</code>.
 </dd>
-<dt>
-<small><code>Export</code></small>.<strong><code>zhsv_from</code></strong>
-<code>(</code><em>srgb, gamut</em><code>)</code></dt>
+<dt><a data-4search="ui/colors.js:zhsv_from;func" id="zhsv_from"></a>
+<strong><code>zhsv_from</code></strong> <code>(</code><em>srgb,
+gamut</em><code>)</code></dt>
 <dd>
 Calculate <code>{ hue, saturation, value }</code> from
 <code>srgb</code>.
 </dd>
-<dt>
-<small><code>Export</code></small>.<strong><code>srgb_from_zhsl</code></strong>
-<code>(</code><em>hue, saturation, lightness,
-gamut</em><code>)</code></dt>
+<dt><a data-4search="ui/colors.js:srgb_from_zhsl;func" id="srgb_from_zhsl"></a>
+<strong><code>srgb_from_zhsl</code></strong> <code>(</code><em>hue,
+saturation, lightness, gamut</em><code>)</code></dt>
 <dd>
 Calculate sRGB from <code>{ hue, saturation, value }</code>.
 </dd>
-<dt>
-<small><code>Export</code></small>.<strong><code>hex_from_zhsl</code></strong>
-<code>(</code><em>hue, saturation, lightness,
-gamut</em><code>)</code></dt>
+<dt><a data-4search="ui/colors.js:hex_from_zhsl;func" id="hex_from_zhsl"></a>
+<strong><code>hex_from_zhsl</code></strong> <code>(</code><em>hue,
+saturation, lightness, gamut</em><code>)</code></dt>
 <dd>
 Calculate hexadecimal color from
 <code>{ hue, saturation, value }</code>.
 </dd>
-<dt>
+<dt><a data-4search="ui/colors.js:color2rgba;func" id="color2rgba"></a>
 <strong><code>color2rgba</code></strong>
 <code>(</code><em>color</em><code>)</code></dt>
 <dd>
 Yield [ R, G, B, A ] from <code>color</code>.
 </dd>
-<dt>
+<dt><a data-4search="ui/colors.js:zmod_assignop;func" id="zmod_assignop"></a>
 <strong><code>zmod_assignop</code></strong> <code>(</code><em>col, prop,
 op, num, perc</em><code>)</code></dt>
 <dd>
 Re-assign a specific color property.
 </dd>
-<dt>
-<small><code>Export</code></small>.<strong><code>zmod</code></strong>
-<code>(</code><em>colorlike, mods</em><code>)</code></dt>
+<dt><a data-4search="ui/colors.js:zmod;func" id="zmod"></a>
+<strong><code>zmod</code></strong> <code>(</code><em>colorlike,
+mods</em><code>)</code></dt>
 <dd>
 Apply a variety of modifications to an input color.
 </dd>
-<dt>
-<small><code>Export</code></small>.<strong><code>lgrey</code></strong>
+<dt><a data-4search="ui/colors.js:lgrey;func" id="lgrey"></a>
+<strong><code>lgrey</code></strong>
 <code>(</code><em>lightness</em><code>)</code></dt>
 <dd>
 Yield a grey tone with CIELAB lightness.

@@ -64,34 +64,35 @@
 <h3>Component class</h3>
 <dl>
 <dt><em>class</em>
-<small><code>Export</code></small>.<strong>Component</strong></dt>
+<strong>Component</strong><a data-4search="ui/b/envue.js:Component;class" id="Component"></a></dt>
 <dd>
 <p>Component base class for wrapping Vue components.</p>
 <dl>
-<dt> <em>new</em>
-<strong><code>Component</code></strong>
+<dt><a data-4search="ui/b/envue.js:Component;func" id="Component"></a>
+<em>new</em> <strong><code>Component</code></strong>
 <code>(</code><em>vm</em><code>)</code></dt>
 <dd>
 Let <code>this.$vm</code> point to the Vue component, and
 <code>$vm.$object</code> point to <code>this</code>.
 </dd>
-<dt>
+<dt><a data-4search="ui/b/envue.js:update;func" id="update"></a>
 <strong><code>update</code></strong><code>()</code></dt>
 <dd>
 Force a Vue component update.
 </dd>
-<dt>
+<dt><a data-4search="ui/b/envue.js:observable_from_getters;func" id="observable_from_getters"></a>
 <strong><code>observable_from_getters</code></strong>
 <code>(</code><em>tmpl</em><code>)</code></dt>
 <dd>
 Wrapper for <a href="#Util.observable_from_getters">Util.observable_from_getters()</a>.
 </dd>
-<dt> <strong><code>$watch</code></strong>
+<dt><a data-4search="ui/b/envue.js:$watch;func" id="_watch"></a>
+<strong><code>$watch</code></strong>
 <code>(</code><em>args</em><code>)</code></dt>
 <dd>
 Wrapper for <a class="poxy-external" href="https://v3.vuejs.org/api/instance-methods.html#watch" target="_blank">Vue.$watch</a>
 </dd>
-<dt>
+<dt><a data-4search="ui/b/envue.js:vue_export;func" id="vue_export"></a>
 <strong><code>vue_export</code></strong>
 <code>(</code><em>vue_object</em><code>)</code>  
 <code>[static]</code></dt>
@@ -103,18 +104,18 @@ exports.
 </dd>
 </dl>
 </section>
-<section class="level3" id="export-functions">
-<h3>Export Functions</h3>
+<section class="level3" id="functions">
+<h3>Functions</h3>
 <dl>
-<dt>
-<small><code>Export</code></small>.<strong><code>forward_access</code></strong>
-<code>(</code><em>vm, classinstance, ignores</em><code>)</code></dt>
+<dt><a data-4search="ui/b/envue.js:forward_access;func" id="forward_access"></a>
+<strong><code>forward_access</code></strong> <code>(</code><em>vm,
+classinstance, ignores</em><code>)</code></dt>
 <dd>
 Forward all accesses to fields on <code>vm</code> to access fields on
 <code>classinstance</code>.
 </dd>
-<dt>
-<small><code>Export</code></small>.<strong><code>vue_export_from_class</code></strong>
+<dt><a data-4search="ui/b/envue.js:vue_export_from_class;func" id="vue_export_from_class"></a>
+<strong><code>vue_export_from_class</code></strong>
 <code>(</code><em>Class, vue_object</em><code>)</code></dt>
 <dd>
 Create a Vue options API object that proxies access to a newly created

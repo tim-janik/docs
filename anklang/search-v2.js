@@ -618,6 +618,22 @@ var Search = {
     searchAndRender: /* istanbul ignore next */ function(value) {
         let prev = performance.now();
         let results = this.search(value);
+if (results?.length > 0 && Array.isArray (results[0])) {
+  const key = value.toLowerCase().replace (/^\s+/gm, '');
+  for (let xt of Search.__extra_tokens) {
+    let name = xt.name.toLowerCase();
+    if (!name.startsWith (key)) {
+      name = name.replace (/^.*[. :]/gm, '');
+      if (!name.startsWith (key))
+        continue;
+    }
+    results[0].push (Object.assign ({
+      flags: 0,
+      cssClass: "m-default",
+      suffixLength: name.length - key.length,
+    }, xt));
+  }
+}
         let after = performance.now();
         this.renderResults(results);
         if(this.searchString.length) {

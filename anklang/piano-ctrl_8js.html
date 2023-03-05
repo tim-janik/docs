@@ -60,25 +60,25 @@
         <h1>
           <span class="m-breadcrumb"><a href="dir_1788f8309b1a812dcb800a185471cf6c.html">ui</a>/</span><span class="m-breadcrumb"><a href="dir_8cd1e0dc53330a899bb8b54b9ae21f1b.html">b</a>/</span>piano-ctrl.js <span class="m-thin">file</span>
         </h1>
-<section class="level3" id="export-constants">
-<h3>Export Constants</h3>
+<section class="level3" id="constants">
+<h3>Constants</h3>
 <dl>
-<dt><small><code>Export.</code></small><strong><code>list_actions</code></strong></dt>
+<dt><strong><code>list_actions</code></strong></dt>
 <dd>
 List menu actions for PianoRoll.
 </dd>
 </dl>
 </section>
-<section class="level3" id="export-functions">
-<h3>Export Functions</h3>
+<section class="level3" id="functions">
+<h3>Functions</h3>
 <dl>
-<dt> <strong><code>ntool</code></strong>
-<code>(</code><em>toolmode, drag_event, cursor,
-predicate</em><code>)</code></dt>
+<dt><a data-4search="ui/b/piano-ctrl.js:ntool;func" id="ntool"></a>
+<strong><code>ntool</code></strong> <code>(</code><em>toolmode,
+drag_event, cursor, predicate</em><code>)</code></dt>
 <dd>
 Add/register piano-roll canvas tool
 </dd>
-<dt>
+<dt><a data-4search="ui/b/piano-ctrl.js:notes_canvas_drag_select;func" id="notes_canvas_drag_select"></a>
 <strong><code>notes_canvas_drag_select</code></strong>
 <code>(</code><em>event, MODE</em><code>)</code></dt>
 <dd>
@@ -88,7 +88,7 @@ allows selection of single notes or groups of notes. Modifier keys can
 be used to modify the selection behavior.</p>
 <h3 id="horizontal-select">Horizontal Select</h3>
 </dd>
-<dt>
+<dt><a data-4search="ui/b/piano-ctrl.js:notes_canvas_drag_paint;func" id="notes_canvas_drag_paint"></a>
 <strong><code>notes_canvas_drag_paint</code></strong>
 <code>(</code><em>event, MODE</em><code>)</code></dt>
 <dd>
@@ -97,7 +97,7 @@ be used to modify the selection behavior.</p>
 can be placed everywhere in the grid by clicking mouse button 1 and
 possibly keeping it held during drags.
 </dd>
-<dt>
+<dt><a data-4search="ui/b/piano-ctrl.js:notes_canvas_drag_resize;func" id="notes_canvas_drag_resize"></a>
 <strong><code>notes_canvas_drag_resize</code></strong>
 <code>(</code><em>event, MODE</em><code>)</code></dt>
 <dd>
@@ -106,7 +106,7 @@ possibly keeping it held during drags.
 selected, the right edge of note can be draged to make notes shorter or
 longer in duration.
 </dd>
-<dt>
+<dt><a data-4search="ui/b/piano-ctrl.js:notes_canvas_drag_erase;func" id="notes_canvas_drag_erase"></a>
 <strong><code>notes_canvas_drag_erase</code></strong>
 <code>(</code><em>event, MODE</em><code>)</code></dt>
 <dd>
@@ -115,19 +115,19 @@ longer in duration.
 deletion of all notes selected during a mouse button 1 drag. The
 deletion can be aborted by the Escape key.
 </dd>
-<dt>
+<dt><a data-4search="ui/b/piano-ctrl.js:note_hover_tail;func" id="note_hover_tail"></a>
 <strong><code>note_hover_tail</code></strong> <code>(</code><em>coords,
 tick, key, notes</em><code>)</code></dt>
 <dd>
 Detect note if hovering over its tail
 </dd>
-<dt>
-<small><code>Export</code></small>.<strong><code>notes_canvas_tool_from_hover</code></strong>
+<dt><a data-4search="ui/b/piano-ctrl.js:notes_canvas_tool_from_hover;func" id="notes_canvas_tool_from_hover"></a>
+<strong><code>notes_canvas_tool_from_hover</code></strong>
 <code>(</code><em>piano_roll, pointerevent</em><code>)</code></dt>
 <dd>
 Get drag tool and cursor from hover position
 </dd>
-<dt>
+<dt><a data-4search="ui/b/piano-ctrl.js:target_coords;func" id="target_coords"></a>
 <strong><code>target_coords</code></strong> <code>(</code><em>event,
 target</em><code>)</code></dt>
 <dd>
