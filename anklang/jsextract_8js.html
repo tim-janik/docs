@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en"><head>
   <meta charset="utf-8"/>
-  <title>ui/b/menuseparator.js file | Anklang 0.1.0-devel0 Anklang Programming Reference</title>
+  <title>ui/jsextract.js file | Anklang 0.1.0-devel0 Anklang Programming Reference</title>
   <link href="favicon.svg" rel="icon" type="image/svg+xml"/>
   <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
   <meta content="#22272e" name="theme-color"/>
@@ -58,16 +58,33 @@
     <div class="m-row">
       <div class="m-col-l-10 m-push-l-1">
         <h1>
-          <span class="m-breadcrumb"><a href="dir_1788f8309b1a812dcb800a185471cf6c.html">ui</a>/</span><span class="m-breadcrumb"><a href="dir_8cd1e0dc53330a899bb8b54b9ae21f1b.html">b</a>/</span>menuseparator.js <span class="m-thin">file</span>
+          <span class="m-breadcrumb"><a href="dir_1788f8309b1a812dcb800a185471cf6c.html">ui</a>/</span>jsextract.js <span class="m-thin">file</span>
         </h1>
-<section class="level3" id="constants">
-<h3>Constants</h3>
+<section class="level1" id="name">
+<h1>NAME</h1>
+<p><code>jsextract.js</code> - Script to extract snippets marked with
+JsExtract</p>
+</section>
+<section class="level1" id="synopsis">
+<h1>SYNOPSIS</h1>
+<p>node <strong>jsextract.js</strong> [<em>OPTIONS</em>]
+[<em>file.js</em>...]</p>
+</section>
+<section class="level1" id="description">
+<h1>DESCRIPTION</h1>
+<p>The <strong>jsextract.js</strong> processes its input files by
+looking for markers such as <code>JsExtract.css`...`</code> and
+extracting the template string contents into a corresponding
+<code>*.jscss</code> file. This can be preprocessed or copied into a
+corresponding <code>*.css</code> file, to be loaded via
+<code>JsExtract.fetch_css()</code>.</p>
+</section>
+<section class="level1" id="options">
+<h1>OPTIONS</h1>
 <dl>
-<dt><a data-4search="ui/b/menuseparator.js:STYLE;var" id="STYLE"></a>
-<strong><code>STYLE</code></strong></dt>
+<dt><strong>-O</strong> &lt;<em>dir</em>&gt;</dt>
 <dd>
-<h1 id="b-menuseparator">B-MENUSEPARATOR</h1>
-A menu element that serves as a visual separator between other elements.
+Specify the directory for output files.
 </dd>
 </dl>
 </section>

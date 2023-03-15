@@ -3409,6 +3409,11 @@
     <filename>host_8js.html</filename>
   </compound>
   <compound kind="file">
+    <name>jsextract.js</name>
+    <path>ui/</path>
+    <filename>jsextract_8js.html</filename>
+  </compound>
+  <compound kind="file">
     <name>kbd.js</name>
     <path>ui/</path>
     <filename>kbd_8js.html</filename>
@@ -12636,7 +12641,7 @@
   </compound>
   <compound kind="page">
     <name>index</name>
-    <title>Anklang v0.1.0-devel0-shallow-g6f6d3be</title>
+    <title>Anklang v0.1.0-devel0-shallow-g54353a7</title>
     <filename>index.html</filename>
     <docanchor file="index.html">md_home</docanchor>
   </compound>

@@ -1124,7 +1124,23 @@ Files: ui/cursors/pen.svg
 Copyright: Copyright (C) 2023 Tim Janik
 License: MPL-2.0
 
+Files: ui/dark.scss
+Copyright: Copyright (C) 2023 Tim Janik
+License: MPL-2.0
+
+Files: ui/domstyles.scss
+Copyright: Copyright (C) 2023 Tim Janik
+License: MPL-2.0
+
 Files: ui/eslintrc.js
+Copyright: Copyright (C) 2023 Tim Janik
+License: MPL-2.0
+
+Files: ui/globals.scss
+Copyright: Copyright (C) 2023 Tim Janik
+License: MPL-2.0
+
+Files: ui/grid.scss
 Copyright: Copyright (C) 2023 Tim Janik
 License: MPL-2.0
 
@@ -1133,6 +1149,10 @@ Copyright: Copyright (C) 2023 Tim Janik
 License: MPL-2.0
 
 Files: ui/index.html
+Copyright: Copyright (C) 2023 Tim Janik
+License: MPL-2.0
+
+Files: ui/jsextract.js
 Copyright: Copyright (C) 2023 Tim Janik
 License: MPL-2.0
 
@@ -1168,7 +1188,7 @@ Files: ui/startup.js
 Copyright: Copyright (C) 2023 Tim Janik
 License: MPL-2.0
 
-Files: ui/styles.scss
+Files: ui/stylelintrc.cjs
 Copyright: Copyright (C) 2023 Tim Janik
 License: MPL-2.0
 

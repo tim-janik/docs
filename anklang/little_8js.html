@@ -70,6 +70,30 @@ A LitElement with reactive render() and updated() methods.
 </dd>
 </dl>
 </section>
+<section class="level3" id="constants">
+<h3>Constants</h3>
+<dl>
+<dt><a data-4search="ui/little.js:JsExtract;export" id="JsExtract"></a>
+<strong><code>JsExtract</code></strong></dt>
+<dd>
+<p>API to mark template strings for extraction and fetch extracted
+assets.</p>
+<ul>
+<li><code>JsExtract.css`body { font-weight:bold; }`</code><br/>
+Mark CSS text inside a Javascript file for extration by
+jsextract.js.</li>
+<li><code>node jsextract.js inputfile.js</code><br/>
+Extract <code>JsExtract.css``</code> strings into
+<code>inputfile.jscss</code>.</li>
+<li><code>await JsExtract.fetch_css ('/path/to/inputfile.js');</code><br/>
+Use the browser <code>fetch()</code> API to retrieve the extracted
+string as <code>text/css</code> from '/path/to/inputfile.css'.</li>
+<li><code>JsExtract.fetch_css (import.meta);</code><br/>
+Variant of the above that utilizes <code>import.meta.url</code>.</li>
+</ul>
+</dd>
+</dl>
+</section>
 <section class="level3" id="functions">
 <h3>Functions</h3>
 <dl>
@@ -79,11 +103,12 @@ A LitElement with reactive render() and updated() methods.
 <dd>
 Call requestUpdate() on all <code>LitElement</code>s
 </dd>
-<dt><a data-4search="ui/little.js:postcss_process;func" id="postcss_process"></a>
-<strong><code>postcss_process</code></strong>
-<code>(</code><em>css_string, fromname, validate</em><code>)</code></dt>
+<dt><a data-4search="ui/little.js:fetch_css;func" id="fetch_css"></a>
+<strong><code>fetch_css</code></strong>
+<code>(</code><em>base_url</em><code>)</code></dt>
 <dd>
-Process CSS via PostCSS, uses async plugins.
+Fetch (extracted) asset from a base URL (enforcing <code>.css</code>
+extension) as "text/css"
 </dd>
 </dl>
 </section>
