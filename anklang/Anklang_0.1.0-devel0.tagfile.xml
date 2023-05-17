@@ -226,7 +226,6 @@
     <name>cxxaux.hh</name>
     <filename>cxxaux_8hh.html</filename>
     <class kind="struct">Ase::VirtualBase</class>
-    <class kind="class">Ase::FriendAllocator</class>
     <class kind="class">Ase::Persistent</class>
     <class kind="struct">Ase::Id32</class>
     <namespace>Ase</namespace>
@@ -5611,33 +5610,6 @@
     </member>
   </compound>
   <compound kind="class">
-    <name>Ase::FriendAllocator</name>
-    <filename>class_ase_1_1_friend_allocator.html</filename>
-    <templarg>class T</templarg>
-    <base>allocator&lt; T &gt;</base>
-    <member kind="function" static="yes">
-      <type>static void</type>
-      <name>construct</name>
-      <anchorfile>class_ase_1_1_friend_allocator.html</anchorfile>
-      <anchor>ab5cb189f61d78a80a8392a6f6e379304</anchor>
-      <arglist>(C *p, Args &amp;&amp;... args)</arglist>
-    </member>
-    <member kind="function" static="yes">
-      <type>static void</type>
-      <name>destroy</name>
-      <anchorfile>class_ase_1_1_friend_allocator.html</anchorfile>
-      <anchor>ab697f1539d2f5f9d5ba59eddb5324fef</anchor>
-      <arglist>(C *p)</arglist>
-    </member>
-    <member kind="function" static="yes">
-      <type>static std::shared_ptr&lt; T &gt;</type>
-      <name>make_shared</name>
-      <anchorfile>class_ase_1_1_friend_allocator.html</anchorfile>
-      <anchor>aabd98e1e129f500e98893913c68a2959</anchor>
-      <arglist>(Args &amp;&amp;... args)</arglist>
-    </member>
-  </compound>
-  <compound kind="class">
     <name>Ase::Gadget</name>
     <filename>class_ase_1_1_gadget.html</filename>
     <base virtualness="virtual">Ase::Object</base>
@@ -10144,7 +10116,6 @@
     <class kind="class">Ase::EventSource</class>
     <class kind="class">Ase::FastMemArray</class>
     <class kind="union">Ase::FloatIEEE754</class>
-    <class kind="class">Ase::FriendAllocator</class>
     <class kind="class">Ase::Gadget</class>
     <class kind="class">Ase::GadgetImpl</class>
     <class kind="struct">Ase::GroupId</class>
@@ -12641,7 +12612,7 @@
   </compound>
   <compound kind="page">
     <name>index</name>
-    <title>Anklang v0.1.0-devel0-shallow-g54353a7</title>
+    <title>Anklang v0.1.0-devel0-shallow-g8404380</title>
     <filename>index.html</filename>
     <docanchor file="index.html">md_home</docanchor>
   </compound>
