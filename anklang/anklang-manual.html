@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="The Anklang Project &lt;anklang.testbit.eu&gt;" />
+  <meta name="keywords" content="Anklang, DAW, DSP, Audio Synthesis, Linux, ALSA, JavaScript, Scripting" />
+  <title>The ANKLANG Manual</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <style type="text/css">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(title);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #a73613; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #4c77cc; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #a73613; font-style: italic; } /* Comment */
+code span.cv { color: #a73613; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #60a0b0; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #a73613; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #4c77cc; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #a73613; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
+  <link rel="stylesheet" href="style/faketex.css" />
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">The ANKLANG Manual</h1>
+<p class="author">The Anklang Project &lt;<a href="https://anklang.testbit.eu/">anklang.testbit.eu</a>&gt;</p>
+<p class="date">May 2023</p>
+<p class="abstract"><b style="margin: 5em 0 1em; text-align: center; display: block;">Abstract<br /></b>
+Manual about usage, installation, and scripting of the Anklang digital synthesizer and music creation software.</p>
+</header>
+<nav id="TOC">
+<ul>
+<li><a href="#the-anklang-manual"><span class="toc-section-number">1</span> The ANKLANG Manual</a></li>
+<li><a href="#program-installation"><span class="toc-section-number">2</span> Program Installation</a><ul>
+<li><a href="#download-and-startup"><span class="toc-section-number">2.1</span> Download and Startup</a></li>
+<li><a href="#driver-setup"><span class="toc-section-number">2.2</span> Driver Setup</a></li>
+</ul></li>
+<li><a href="#using-anklang"><span class="toc-section-number">3</span> Using Anklang</a><ul>
+<li><a href="#clip-list"><span class="toc-section-number">3.1</span> Clip-List</a></li>
+<li><a href="#piano-roll"><span class="toc-section-number">3.2</span> Piano-Roll</a><ul>
+<li><a href="#select-tool"><span class="toc-section-number">3.2.1</span> Select Tool</a></li>
+<li><a href="#horizontal-select"><span class="toc-section-number">3.2.2</span> Horizontal Select</a></li>
+<li><a href="#paint-tool"><span class="toc-section-number">3.2.3</span> Paint Tool</a></li>
+<li><a href="#erase-tool"><span class="toc-section-number">3.2.4</span> Erase Tool</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#manual-pages"><span class="toc-section-number">4</span> Manual Pages</a><ul>
+<li><a href="#anklang1"><span class="toc-section-number">4.1</span> ANKLANG(1)</a></li>
+</ul></li>
+<li><a href="#anklang-scripting"><span class="toc-section-number">5</span> Anklang Scripting</a><ul>
+<li><a href="#reference-for-uihost.js"><span class="toc-section-number">5.1</span> Reference for ui/host.js</a><ul>
+<li><a href="#workerclip-class"><span class="toc-section-number">5.1.1</span> WorkerClip class</a></li>
+<li><a href="#workerhost-class"><span class="toc-section-number">5.1.2</span> WorkerHost class</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+<section id="the-anklang-manual" class="level1">
+<h1><span class="header-section-number">1</span> The ANKLANG Manual</h1>
+<p>This is the Anklang manual, Anklang is a music synthesis and composition program, released as Free Software under the <a href="https://tldrlegal.com/license/mozilla-public-license-2.0-(mpl-2)">MPL-2.0</a>.</p>
+<p>The manual is structured into sections covering tutorial material, Howto descriptions, Man pages, file formats and conventions, development details with related considerations and an API reference.</p>
+<p>It is written in Markdown and contributions are welcome, e.g. as pull requests or via the <a href="https://github.com/tim-janik/anklang/issues/">Anklang issue tracker</a>.</p>
+</section>
+<section id="program-installation" class="level1">
+<h1><span class="header-section-number">2</span> Program Installation</h1>
+<section id="download-and-startup" class="level2">
+<h2><span class="header-section-number">2.1</span> Download and Startup</h2>
+<p>Ankang can be downloaded as binary package for GNU/Linux from its Github release page:</p>
+<p><a href="https://github.com/tim-janik/anklang/releases/" class="uri">https://github.com/tim-janik/anklang/releases/</a></p>
+<p>To test bleeding edge versions, "Nightly" builds are also available, but mileage may very with these. In particular stability or file format compatibility can be affected in the nightly versions.</p>
+<p>The Debian package (<code>.deb</code>) can be installed with tools like <code>gnome-software</code> or via the command line:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode sh"><code class="sourceCode bash"><a class="sourceLine" id="cb1-1" title="1"><span class="co"># Install Anklang system wide</span></a>
+<a class="sourceLine" id="cb1-2" title="2"><span class="fu">sudo</span> apt install Downloads/anklang_[VERSION]_amd64.deb</a>
+<a class="sourceLine" id="cb1-3" title="3"><span class="co"># Start via system PATH</span></a>
+<a class="sourceLine" id="cb1-4" title="4"><span class="ex">anklang</span></a></code></pre></div>
+<p>The AppImage package can be executed without an installation step. Once downloaded, it needs permissions for execution and can be run right away. This is done for instance as follow:</p>
+<ul>
+<li>Once downloaded, open ~/Downloads/ for instance via web browser → 'Show in Folder'</li>
+<li>Right click on the AppImage to open the file manager context menu</li>
+<li>Select 'Permission' → 'Execute' → [x] Allow executing file as program</li>
+<li>After that, the AppImage can be started directly from the file manager</li>
+</ul>
+<p>Of course, the same can also be done via the command line:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode sh"><code class="sourceCode bash"><a class="sourceLine" id="cb2-1" title="1"><span class="co"># Enable execution of the AppImage</span></a>
+<a class="sourceLine" id="cb2-2" title="2"><span class="fu">chmod</span> +x ~/Downloads/anklang-[VERSION]-x64.AppImage</a>
+<a class="sourceLine" id="cb2-3" title="3"><span class="co"># Run Anklang via self contained AppImage</span></a>
+<a class="sourceLine" id="cb2-4" title="4"><span class="ex">~/Downloads</span>/<span class="ex">anklang-</span>[VERSION]-x64.AppImage</a></code></pre></div>
+</section>
+<section id="driver-setup" class="level2">
+<h2><span class="header-section-number">2.2</span> Driver Setup</h2>
+<p>Once Anklang is started, drivers and other settings can be adjusted in the Preferences. The 'File Menu' in the upper left includes an item to open the 'Preferences' dialog.</p>
+<p>Depending on the system, a number of PCM and MIDI devices can be selected here. The "PulseAudio Sound Server" or "Automatic driver selection" should work on most systems out of the box. On systems with Jackd installed, the Jackd sound server needs to be running first:</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode sh"><code class="sourceCode bash"><a class="sourceLine" id="cb3-1" title="1"><span class="co"># Suspend PulseAudio and run Jackd instead</span></a>
+<a class="sourceLine" id="cb3-2" title="2"><span class="co"># -r avoids realtime mode which requires special rights</span></a>
+<a class="sourceLine" id="cb3-3" title="3"><span class="co"># -d alsa uses the Jackd ALSA backend</span></a>
+<a class="sourceLine" id="cb3-4" title="4"><span class="ex">pasuspender</span> -- jackd -r -d alsa</a></code></pre></div>
+<p>The Jackd server should be running now, so in Anklang the "JACK Audio Device" can be selected. To verify Anklang does indeed use Jackd, the setup can be inspected as follows:</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode sh"><code class="sourceCode bash"><a class="sourceLine" id="cb4-1" title="1"><span class="co"># List active Jack ports</span></a>
+<a class="sourceLine" id="cb4-2" title="2"><span class="ex">jack_lsp</span></a>
+<a class="sourceLine" id="cb4-3" title="3"><span class="co"># The list should include &#39;AnklangSynthEngine&#39;</span></a>
+<a class="sourceLine" id="cb4-4" title="4"></a>
+<a class="sourceLine" id="cb4-5" title="5"><span class="co"># Start GUI to control Jackd</span></a>
+<a class="sourceLine" id="cb4-6" title="6"><span class="ex">qjackctl</span></a>
+<a class="sourceLine" id="cb4-7" title="7"><span class="co"># Click on the &quot;Graph&quot; button to show connections</span></a>
+<a class="sourceLine" id="cb4-8" title="8"><span class="co"># The graph should include &#39;AnklangSynthEngine&#39;</span></a></code></pre></div>
+</section>
+</section>
+<section id="using-anklang" class="level1">
+<h1><span class="header-section-number">3</span> Using Anklang</h1>
+<p>Anklang can display and allows editing of MIDI notes, events and tracks.</p>
+<section id="clip-list" class="level2">
+<h2><span class="header-section-number">3.1</span> Clip-List</h2>
+<p>The Clip-List allows to start playback of individual clips.</p>
+</section>
+<section id="piano-roll" class="level2">
+<h2><span class="header-section-number">3.2</span> Piano-Roll</h2>
+<p>The piano-roll editor displays notes in a grid where the vertical axis denotes the pitch and the horizontal axis the time line. It is modeled after a <a href="https://en.wikipedia.org/wiki/Piano_roll#In_digital_audio_workstations">classic piano-roll</a>. Several tools can be selected via a drop down menu or hotkeys which aid with creation, selection and modification of musical events. The cursor keys can be used to move selected notes, in combination with modifier keys the keys can also change note duration or note focus. A context menu is available with mouse button 3, which provides extended functionality.</p>
+<section id="select-tool" class="level3">
+<h3><span class="header-section-number">3.2.1</span> Select Tool</h3>
+<p><img src="cursors/cross.svg" alt="Crosshair" /> The Select Tool allows selection of single notes or groups of notes. Modifier keys can be used to modify the selection behavior.</p>
+</section>
+<section id="horizontal-select" class="level3">
+<h3><span class="header-section-number">3.2.2</span> Horizontal Select</h3>
+</section>
+<section id="paint-tool" class="level3">
+<h3><span class="header-section-number">3.2.3</span> Paint Tool</h3>
+<p><img src="cursors/pen.svg" alt="Pen" /> With the note Paint Tool, notes can be placed everywhere in the grid by clicking mouse button 1 and possibly keeping it held during drags.</p>
+<section id="resizing-notes" class="level4">
+<h4><span class="header-section-number">3.2.3.1</span> Resizing Notes</h4>
+<p><img src="cursors/hresize.svg" alt="H-Resize" /> When the Paint Tool is selected, the right edge of note can be draged to make notes shorter or longer in duration.</p>
+</section>
+</section>
+<section id="erase-tool" class="level3">
+<h3><span class="header-section-number">3.2.4</span> Erase Tool</h3>
+<p><img src="cursors/eraser.svg" alt="Eraser" /> The Erase Tool allows deletion of all notes selected during a mouse button 1 drag. The deletion can be aborted by the Escape key.</p>
+</section>
+</section>
+</section>
+<section id="manual-pages" class="level1">
+<h1><span class="header-section-number">4</span> Manual Pages</h1>
+<section id="anklang1" class="level2">
+<h2><span class="header-section-number">4.1</span> ANKLANG(1)</h2>
+<p><strong>NAME</strong></p>
+<p>anklang - Music composition and modular synthesis application</p>
+<p><strong>SYNOPSIS</strong></p>
+<p><strong>anklang</strong> [<em>OPTIONS</em>] [<em>FILES</em>...]</p>
+<p><strong>DESCRIPTION</strong></p>
+<p><strong>Anklang</strong> is a digital audio synthesis application for live creation and composition of music and other audio material. It is released as free software under the MPL-2.0.</p>
+<p>Anklang comes with synthesis devices which can be arranged in tracks and controlled via MIDI input devices or pre-programmed clips which contain MIDI notes.</p>
+<p>The Anklang sound engine is a dedicated process which is controlled by a user interface based on web technologies that can be run in a special process (like electron) or modern browsers like <strong>firefox</strong>(1) or <strong>google-chrome</strong>(1).</p>
+<p><strong>OPTIONS</strong></p>
+<p>Anklang supports short and long options which start with two dashes ('-').</p>
+<dl>
+<dt><strong>--</strong></dt>
+<dd>Stop argument processing, treat remaining arguments as files.
+</dd>
+<dt><strong>-h</strong>, <strong>--help</strong></dt>
+<dd>Show a help message about command line usage.
+</dd>
+<dt><strong>--fatal-warnings</strong></dt>
+<dd>Abort on warnings and failing assertions, useful for test modes.
+</dd>
+<dt><strong>--check</strong></dt>
+<dd>Execute internal tests and benchmarks.
+</dd>
+<dt><strong>--disable-randomization</strong></dt>
+<dd>Enable deterministic random numbers for test modes.
+</dd>
+<dt><strong>-v</strong>, <strong>--version</strong></dt>
+<dd>Print information about the program version.
+</dd>
+</dl>
+<p><strong>SEE ALSO</strong></p>
+<p><a href="http://anklang.testbit.eu" class="external"><strong>Anklang Website</strong></a></p>
+</section>
+</section>
+<section id="anklang-scripting" class="level1">
+<h1><span class="header-section-number">5</span> Anklang Scripting</h1>
+<p>The functionality of Anklang can be extended by user provided scripts. The scripts are written in Javascript and run as part of the User Interface threads.</p>
+<p>Scripts can extend editing functionality or implement new controllers. The exact functions provided by a script are registered at script startup time.</p>
+<section id="reference-for-uihost.js" class="level2">
+<h2><span class="header-section-number">5.1</span> Reference for ui/host.js</h2>
+<section id="workerclip-class" class="level3">
+<h3><span class="header-section-number">5.1.1</span> WorkerClip class</h3>
+<dl>
+<dt><em>class</em> <strong>WorkerClip</strong><a id="WorkerClip" data-4search="ui/host.js:WorkerClip;class"></a></dt>
+<dd>Ase::Clip proxy
+</dd>
+</dl>
+</section>
+<section id="workerhost-class" class="level3">
+<h3><span class="header-section-number">5.1.2</span> WorkerHost class</h3>
+<dl>
+<dt><em>class</em> <strong>WorkerHost</strong><a id="WorkerHost" data-4search="ui/host.js:WorkerHost;class"></a></dt>
+<dd><p>Global <code>host</code> instance for scripts.</p>
+<dl>
+<dt><a id="piano_roll_clip" data-4search="ui/host.js:piano_roll_clip;func"></a> <strong><code>piano_roll_clip</code></strong><code>()</code></dt>
+<dd>Create handle for the currently selected clip.
+</dd>
+<dt><a id="script_name" data-4search="ui/host.js:script_name;func"></a> <strong><code>script_name</code></strong><code>()</code></dt>
+<dd>Retrieve the file name of the current user script.
+</dd>
+<dt><a id="script_uuid" data-4search="ui/host.js:script_uuid;func"></a> <strong><code>script_uuid</code></strong><code>()</code></dt>
+<dd>Retrieve the UUID set via <a href="#use_api">use_api</a>().
+</dd>
+<dt><a id="api_level" data-4search="ui/host.js:api_level;func"></a> <strong><code>api_level</code></strong><code>()</code></dt>
+<dd>Retrieve numeric API level supported by this runtime.
+</dd>
+<dt><a id="use_api" data-4search="ui/host.js:use_api;func"></a> <strong><code>use_api</code></strong> <code>(</code><em>api_level, script_uuid</em><code>)</code></dt>
+<dd>Request use of API level <code>api_level</code> and provide UUID for controllers.
+</dd>
+<dt><a id="register" data-4search="ui/host.js:register;func"></a> <strong><code>register</code></strong> <code>(</code><em>category, label, fun, blurb, params</em><code>)</code></dt>
+<dd>Register a script function.
+</dd>
+</dl>
+</dd>
+</dl>
+</section>
+</section>
+</section>
+
+<script type="text/javascript">
+// This Source Code Form is licensed MPL-2.0: http://mozilla.org/MPL/2.0
+window.addEventListener ("load", function() {
+  // substitute dl:has(dl, ol, ul) selector
+  for (const dl of document.body.querySelectorAll ('dl'))
+    if (dl.querySelector ('dl, ol, ul') !== null)
+      dl.setAttribute ('data-has-nestedlayout', 1);
+});
+</script>
+</body>
+</html>

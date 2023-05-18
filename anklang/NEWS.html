@@ -5,165 +5,13 @@
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
   <title>NEWS.html</title>
-  <style>
-    html {
-      color: #1a1a1a;
-      background-color: #fdfdfd;
-    }
-    body {
-      margin: 0 auto;
-      max-width: 36em;
-      padding-left: 50px;
-      padding-right: 50px;
-      padding-top: 50px;
-      padding-bottom: 50px;
-      hyphens: auto;
-      overflow-wrap: break-word;
-      text-rendering: optimizeLegibility;
-      font-kerning: normal;
-    }
-    @media (max-width: 600px) {
-      body {
-        font-size: 0.9em;
-        padding: 12px;
-      }
-      h1 {
-        font-size: 1.8em;
-      }
-    }
-    @media print {
-      html {
-        background-color: white;
-      }
-      body {
-        background-color: transparent;
-        color: black;
-        font-size: 12pt;
-      }
-      p, h2, h3 {
-        orphans: 3;
-        widows: 3;
-      }
-      h2, h3, h4 {
-        page-break-after: avoid;
-      }
-    }
-    p {
-      margin: 1em 0;
-    }
-    a {
-      color: #1a1a1a;
-    }
-    a:visited {
-      color: #1a1a1a;
-    }
-    img {
-      max-width: 100%;
-    }
-    h1, h2, h3, h4, h5, h6 {
-      margin-top: 1.4em;
-    }
-    h5, h6 {
-      font-size: 1em;
-      font-style: italic;
-    }
-    h6 {
-      font-weight: normal;
-    }
-    ol, ul {
-      padding-left: 1.7em;
-      margin-top: 1em;
-    }
-    li > ol, li > ul {
-      margin-top: 0;
-    }
-    blockquote {
-      margin: 1em 0 1em 1.7em;
-      padding-left: 1em;
-      border-left: 2px solid #e6e6e6;
-      color: #606060;
-    }
-    code {
-      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
-      font-size: 85%;
-      margin: 0;
-      hyphens: manual;
-    }
-    pre {
-      margin: 1em 0;
-      overflow: auto;
-    }
-    pre code {
-      padding: 0;
-      overflow: visible;
-      overflow-wrap: normal;
-    }
-    .sourceCode {
-     background-color: transparent;
-     overflow: visible;
-    }
-    hr {
-      background-color: #1a1a1a;
-      border: none;
-      height: 1px;
-      margin: 1em 0;
-    }
-    table {
-      margin: 1em 0;
-      border-collapse: collapse;
-      width: 100%;
-      overflow-x: auto;
-      display: block;
-      font-variant-numeric: lining-nums tabular-nums;
-    }
-    table caption {
-      margin-bottom: 0.75em;
-    }
-    tbody {
-      margin-top: 0.5em;
-      border-top: 1px solid #1a1a1a;
-      border-bottom: 1px solid #1a1a1a;
-    }
-    th {
-      border-top: 1px solid #1a1a1a;
-      padding: 0.25em 0.5em 0.25em 0.5em;
-    }
-    td {
-      padding: 0.125em 0.5em 0.25em 0.5em;
-    }
-    header {
-      margin-bottom: 4em;
-      text-align: center;
-    }
-    #TOC li {
-      list-style: none;
-    }
-    #TOC ul {
-      padding-left: 1.3em;
-    }
-    #TOC > ul {
-      padding-left: 0;
-    }
-    #TOC a:not(:hover) {
-      text-decoration: none;
-    }
-    code{white-space: pre-wrap;}
-    span.smallcaps{font-variant: small-caps;}
-    div.columns{display: flex; gap: min(4vw, 1.5em);}
-    div.column{flex: auto; overflow-x: auto;}
-    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
-    ul.task-list{list-style: none;}
-    ul.task-list li input[type="checkbox"] {
-      width: 0.8em;
-      margin: 0 0.8em 0.2em -1.6em;
-      vertical-align: middle;
-    }
-    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
 body { max-width: 52em; margin: auto; }
   </style>
-  <!--[if lt IE 9]>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
-  <![endif]-->
 </head>
 <body>
 <section id="anklang-0.1.0" class="level2">
@@ -177,8 +25,7 @@ body { max-width: 52em; margin: auto; }
 <section id="hardware-support" class="level4">
 <h4>Hardware Support</h4>
 <ul>
-<li>Build and package a second sound engine binary with AVX &amp; FMA
-optimizations.</li>
+<li>Build and package a second sound engine binary with AVX &amp; FMA optimizations.</li>
 </ul>
 </section>
 <section id="documentation" class="level4">
@@ -201,8 +48,7 @@ optimizations.</li>
 <li>Added Cut/Copy/Paste to piano roll.</li>
 <li>Added play position indicator to piano roll.</li>
 <li>Tool selection in piano roils now works on hover.</li>
-<li>Notes moved in the piano roll now properly bounce against
-edges.</li>
+<li>Notes moved in the piano roll now properly bounce against edges.</li>
 <li>Selection in the piano roll now supports SHIFT and CONTROL.</li>
 <li>Clips can now store notes with velocity=0.</li>
 <li>Migrated CSS processing to postcss.</li>
@@ -215,13 +61,9 @@ edges.</li>
 <section id="synthesis" class="level4">
 <h4>Synthesis</h4>
 <ul>
-<li>Support single clip looping (very rudimentary), to be extended
-later.</li>
+<li>Support single clip looping (very rudimentary), to be extended later.</li>
 <li>Add Gtk+-2 dynlib to provide a wrapper window for plugin UIs.</li>
-<li>Add support for CLAP-1.0.2 plugin loading and processing, the
-following CLAP extensions are currently implemented: LOG, GUI,
-TIMER_SUPPORT, THREAD_CHECK, AUDIO_PORTS, PARAMS, STATE,
-POSIX_FD_SUPPORT, AUDIO_PORTS_CONFIG, AUDIO_PORTS, NOTE_PORTS.</li>
+<li>Add support for CLAP-1.0.2 plugin loading and processing, the following CLAP extensions are currently implemented: LOG, GUI, TIMER_SUPPORT, THREAD_CHECK, AUDIO_PORTS, PARAMS, STATE, POSIX_FD_SUPPORT, AUDIO_PORTS_CONFIG, AUDIO_PORTS, NOTE_PORTS.</li>
 </ul>
 </section>
 <section id="internals" class="level4">
@@ -233,8 +75,7 @@ POSIX_FD_SUPPORT, AUDIO_PORTS_CONFIG, AUDIO_PORTS, NOTE_PORTS.</li>
 <li>Updated various third party components.</li>
 <li>Use Electron-18.3.5 as basis for the UI.</li>
 <li>Use adaptive ZSTD compression for project storage.</li>
-<li>Use fast ZSTD compression for binary snapshots in Undo/Redo
-steps.</li>
+<li>Use fast ZSTD compression for binary snapshots in Undo/Redo steps.</li>
 <li>Support sound engine blocks up to 2k.</li>
 <li>Adjust block sizes to reduce PulseAudio overhead.</li>
 <li>Keys matching in ASE_DEBUG is now case insensitive.</li>
@@ -297,8 +138,7 @@ steps.</li>
 <li>Add support for fly-over popups to alert users</li>
 <li>Support UI tooltips and hints in the status bar</li>
 <li>Add Vue3 and Electron based UI, use scss for styles</li>
-<li>Work around Chrome's movementX/Y devicePixelRatio bug
-Chrome#1092358</li>
+<li>Work around Chrome's movementX/Y devicePixelRatio bug Chrome#1092358</li>
 </ul>
 </section>
 <section id="synthesis-1" class="level4">
@@ -313,12 +153,9 @@ Chrome#1092358</li>
 <section id="interprocess-communication" class="level4">
 <h4>Interprocess Communication</h4>
 <ul>
-<li>Provide updated JsonIpc layer for remote calls and event
-delivery</li>
-<li>Send realtime status updates as int/float blobs via IPC (termed
-'telemtry')</li>
-<li>Support realtime UI updates via IPC by receiving telemetry at up to
-60Hz</li>
+<li>Provide updated JsonIpc layer for remote calls and event delivery</li>
+<li>Send realtime status updates as int/float blobs via IPC (termed 'telemtry')</li>
+<li>Support realtime UI updates via IPC by receiving telemetry at up to 60Hz</li>
 </ul>
 </section>
 <section id="build-system" class="level4">
@@ -327,10 +164,8 @@ delivery</li>
 <li>Support automated Github CI via docker based builds</li>
 <li>Support Javascript and C++ linting</li>
 <li>Notify #Anklang on libera.chat about CI build results</li>
-<li>Integrate Inter font, ForkAwesome, material-icons and
-anklangicons-201123</li>
-<li>Integrate external sources from websocketpp, rapidjson,
-minizip-ng</li>
+<li>Integrate Inter font, ForkAwesome, material-icons and anklangicons-201123</li>
+<li>Integrate external sources from websocketpp, rapidjson, minizip-ng</li>
 <li>Add robust support for multiple targets for one Make rule</li>
 <li>Support live editing and reload via 'make serve'</li>
 <li>Employ fast build GNU Make based build setup</li>

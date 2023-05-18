@@ -63,166 +63,90 @@
 <section class="level3" id="focusguard-class">
 <h3>FocusGuard class</h3>
 <dl>
-<dt><em>class</em>
-<strong>FocusGuard</strong><a data-4search="ui/kbd.js:FocusGuard;class" id="FocusGuard"></a></dt>
-<dd>
-Install a FocusGuard to allow only a restricted set of elements to get
-focus.
+<dt><em>class</em> <strong>FocusGuard</strong><a data-4search="ui/kbd.js:FocusGuard;class" id="FocusGuard"></a></dt>
+<dd>Install a FocusGuard to allow only a restricted set of elements to get focus.
 </dd>
 </dl>
 </section>
 <section class="level3" id="constants">
 <h3>Constants</h3>
 <dl>
-<dt><a data-4search="ui/kbd.js:kbd_modifiers;var" id="kbd_modifiers"></a>
-<strong><code>kbd_modifiers</code></strong></dt>
-<dd>
-Keyboard modifiers used for hotkeys.
+<dt><a data-4search="ui/kbd.js:kbd_modifiers;var" id="kbd_modifiers"></a> <strong><code>kbd_modifiers</code></strong></dt>
+<dd>Keyboard modifiers used for hotkeys.
 </dd>
-<dt><a data-4search="ui/kbd.js:KeyCode;export" id="KeyCode"></a>
-<strong><code>KeyCode</code></strong></dt>
-<dd>
-Symbolic names for key codes
+<dt><a data-4search="ui/kbd.js:KeyCode;export" id="KeyCode"></a> <strong><code>KeyCode</code></strong></dt>
+<dd>Symbolic names for key codes
 </dd>
 </dl>
 </section>
 <section class="level3" id="functions">
 <h3>Functions</h3>
 <dl>
-<dt><a data-4search="ui/kbd.js:display_keyname;func" id="display_keyname"></a>
-<strong><code>display_keyname</code></strong>
-<code>(</code><em>keyname</em><code>)</code></dt>
-<dd>
-Create display name from KeyEvent.code names.
+<dt><a data-4search="ui/kbd.js:display_keyname;func" id="display_keyname"></a> <strong><code>display_keyname</code></strong> <code>(</code><em>keyname</em><code>)</code></dt>
+<dd>Create display name from KeyEvent.code names.
 </dd>
-<dt><a data-4search="ui/kbd.js:hotkey_name_from_event;func" id="hotkey_name_from_event"></a>
-<strong><code>hotkey_name_from_event</code></strong>
-<code>(</code><em>event</em><code>)</code></dt>
-<dd>
-Create hotkey name from KeyboardEvent.
+<dt><a data-4search="ui/kbd.js:hotkey_name_from_event;func" id="hotkey_name_from_event"></a> <strong><code>hotkey_name_from_event</code></strong> <code>(</code><em>event</em><code>)</code></dt>
+<dd>Create hotkey name from KeyboardEvent.
 </dd>
-<dt><a data-4search="ui/kbd.js:match_key_event;func" id="match_key_event"></a>
-<strong><code>match_key_event</code></strong> <code>(</code><em>event,
-keyname</em><code>)</code></dt>
-<dd>
-Match an event's key code, considering modifiers.
+<dt><a data-4search="ui/kbd.js:match_key_event;func" id="match_key_event"></a> <strong><code>match_key_event</code></strong> <code>(</code><em>event, keyname</em><code>)</code></dt>
+<dd>Match an event's key code, considering modifiers.
 </dd>
-<dt><a data-4search="ui/kbd.js:is_navigation_key_code;func" id="is_navigation_key_code"></a>
-<strong><code>is_navigation_key_code</code></strong>
-<code>(</code><em>keycode</em><code>)</code></dt>
-<dd>
-Check if a key code is used of rnavigaiton (and non alphanumeric).
+<dt><a data-4search="ui/kbd.js:is_navigation_key_code;func" id="is_navigation_key_code"></a> <strong><code>is_navigation_key_code</code></strong> <code>(</code><em>keycode</em><code>)</code></dt>
+<dd>Check if a key code is used of rnavigaiton (and non alphanumeric).
 </dd>
-<dt><a data-4search="ui/kbd.js:activeElement;func" id="activeElement"></a>
-<strong><code>activeElement</code></strong><code>()</code></dt>
-<dd>
-Get the currently focussed Element, also inspecting open shadowRoot
-hierarchies.
+<dt><a data-4search="ui/kbd.js:activeElement;func" id="activeElement"></a> <strong><code>activeElement</code></strong><code>()</code></dt>
+<dd>Get the currently focussed Element, also inspecting open shadowRoot hierarchies.
 </dd>
-<dt><a data-4search="ui/kbd.js:list_focusables;func" id="list_focusables"></a>
-<strong><code>list_focusables</code></strong>
-<code>(</code><em>element</em><code>)</code></dt>
-<dd>
-List elements that can take focus including shadow DOMs and are
-descendants of <code>element</code> or the document
+<dt><a data-4search="ui/kbd.js:list_focusables;func" id="list_focusables"></a> <strong><code>list_focusables</code></strong> <code>(</code><em>element</em><code>)</code></dt>
+<dd>List elements that can take focus including shadow DOMs and are descendants of <code>element</code> or the document
 </dd>
-<dt><a data-4search="ui/kbd.js:push_focus_root;func" id="push_focus_root"></a>
-<strong><code>push_focus_root</code></strong> <code>(</code><em>element,
-escapecb</em><code>)</code></dt>
-<dd>
-Constrain focus to <code>element</code> and its descendants
+<dt><a data-4search="ui/kbd.js:push_focus_root;func" id="push_focus_root"></a> <strong><code>push_focus_root</code></strong> <code>(</code><em>element, escapecb</em><code>)</code></dt>
+<dd>Constrain focus to <code>element</code> and its descendants
 </dd>
-<dt><a data-4search="ui/kbd.js:remove_focus_root;func" id="remove_focus_root"></a>
-<strong><code>remove_focus_root</code></strong>
-<code>(</code><em>element</em><code>)</code></dt>
-<dd>
-Remove an <code>element</code> previously installed via
-push_focus_root()
+<dt><a data-4search="ui/kbd.js:remove_focus_root;func" id="remove_focus_root"></a> <strong><code>remove_focus_root</code></strong> <code>(</code><em>element</em><code>)</code></dt>
+<dd>Remove an <code>element</code> previously installed via push_focus_root()
 </dd>
-<dt><a data-4search="ui/kbd.js:element_midpoint;func" id="element_midpoint"></a>
-<strong><code>element_midpoint</code></strong>
-<code>(</code><em>element</em><code>)</code></dt>
-<dd>
-Compute global midpoint position of element, e.g. for focus movement
+<dt><a data-4search="ui/kbd.js:element_midpoint;func" id="element_midpoint"></a> <strong><code>element_midpoint</code></strong> <code>(</code><em>element</em><code>)</code></dt>
+<dd>Compute global midpoint position of element, e.g. for focus movement
 </dd>
-<dt><a data-4search="ui/kbd.js:keydown_move_focus;func" id="keydown_move_focus"></a>
-<strong><code>keydown_move_focus</code></strong>
-<code>(</code><em>event</em><code>)</code></dt>
-<dd>
-Move focus on UP/DOWN/HOME/END <code>keydown</code> events
+<dt><a data-4search="ui/kbd.js:keydown_move_focus;func" id="keydown_move_focus"></a> <strong><code>keydown_move_focus</code></strong> <code>(</code><em>event</em><code>)</code></dt>
+<dd>Move focus on UP/DOWN/HOME/END <code>keydown</code> events
 </dd>
-<dt><a data-4search="ui/kbd.js:move_focus;func" id="move_focus"></a>
-<strong><code>move_focus</code></strong> <code>(</code><em>dir,
-subfocus</em><code>)</code></dt>
-<dd>
-Move focus to prev or next focus widget
+<dt><a data-4search="ui/kbd.js:move_focus;func" id="move_focus"></a> <strong><code>move_focus</code></strong> <code>(</code><em>dir, subfocus</em><code>)</code></dt>
+<dd>Move focus to prev or next focus widget
 </dd>
-<dt><a data-4search="ui/kbd.js:forget_focus;func" id="forget_focus"></a>
-<strong><code>forget_focus</code></strong>
-<code>(</code><em>element</em><code>)</code></dt>
-<dd>
-Forget the last focus element inside <code>element</code>
+<dt><a data-4search="ui/kbd.js:forget_focus;func" id="forget_focus"></a> <strong><code>forget_focus</code></strong> <code>(</code><em>element</em><code>)</code></dt>
+<dd>Forget the last focus element inside <code>element</code>
 </dd>
-<dt><a data-4search="ui/kbd.js:add_hotkey;func" id="add_hotkey"></a>
-<strong><code>add_hotkey</code></strong> <code>(</code><em>hotkey,
-callback, subtree_element</em><code>)</code></dt>
-<dd>
-Add a global hotkey handler.
+<dt><a data-4search="ui/kbd.js:add_hotkey;func" id="add_hotkey"></a> <strong><code>add_hotkey</code></strong> <code>(</code><em>hotkey, callback, subtree_element</em><code>)</code></dt>
+<dd>Add a global hotkey handler.
 </dd>
-<dt><a data-4search="ui/kbd.js:remove_hotkey;func" id="remove_hotkey"></a>
-<strong><code>remove_hotkey</code></strong> <code>(</code><em>hotkey,
-callback</em><code>)</code></dt>
-<dd>
-Remove a global hotkey handler.
+<dt><a data-4search="ui/kbd.js:remove_hotkey;func" id="remove_hotkey"></a> <strong><code>remove_hotkey</code></strong> <code>(</code><em>hotkey, callback</em><code>)</code></dt>
+<dd>Remove a global hotkey handler.
 </dd>
-<dt><a data-4search="ui/kbd.js:add_key_filter;func" id="add_key_filter"></a>
-<strong><code>add_key_filter</code></strong> <code>(</code><em>keycode,
-callback</em><code>)</code></dt>
-<dd>
-Add a global keymap.
+<dt><a data-4search="ui/kbd.js:add_key_filter;func" id="add_key_filter"></a> <strong><code>add_key_filter</code></strong> <code>(</code><em>keycode, callback</em><code>)</code></dt>
+<dd>Add a global keymap.
 </dd>
-<dt><a data-4search="ui/kbd.js:remove_key_filter;func" id="remove_key_filter"></a>
-<strong><code>remove_key_filter</code></strong>
-<code>(</code><em>keycode</em><code>)</code></dt>
-<dd>
-Remove a global keymap.
+<dt><a data-4search="ui/kbd.js:remove_key_filter;func" id="remove_key_filter"></a> <strong><code>remove_key_filter</code></strong> <code>(</code><em>keycode</em><code>)</code></dt>
+<dd>Remove a global keymap.
 </dd>
-<dt><a data-4search="ui/kbd.js:add_keymap;func" id="add_keymap"></a>
-<strong><code>add_keymap</code></strong>
-<code>(</code><em>keymap</em><code>)</code></dt>
-<dd>
-Add a global keymap.
+<dt><a data-4search="ui/kbd.js:add_keymap;func" id="add_keymap"></a> <strong><code>add_keymap</code></strong> <code>(</code><em>keymap</em><code>)</code></dt>
+<dd>Add a global keymap.
 </dd>
-<dt><a data-4search="ui/kbd.js:remove_keymap;func" id="remove_keymap"></a>
-<strong><code>remove_keymap</code></strong>
-<code>(</code><em>keymap</em><code>)</code></dt>
-<dd>
-Remove a global keymap.
+<dt><a data-4search="ui/kbd.js:remove_keymap;func" id="remove_keymap"></a> <strong><code>remove_keymap</code></strong> <code>(</code><em>keymap</em><code>)</code></dt>
+<dd>Remove a global keymap.
 </dd>
-<dt><a data-4search="ui/kbd.js:is_button_input;func" id="is_button_input"></a>
-<strong><code>is_button_input</code></strong>
-<code>(</code><em>element</em><code>)</code></dt>
-<dd>
-Check if <code>element</code> is button-like input
+<dt><a data-4search="ui/kbd.js:is_button_input;func" id="is_button_input"></a> <strong><code>is_button_input</code></strong> <code>(</code><em>element</em><code>)</code></dt>
+<dd>Check if <code>element</code> is button-like input
 </dd>
-<dt><a data-4search="ui/kbd.js:is_nav_input;func" id="is_nav_input"></a>
-<strong><code>is_nav_input</code></strong>
-<code>(</code><em>element</em><code>)</code></dt>
-<dd>
-Check if <code>element</code> has inner input navigation
+<dt><a data-4search="ui/kbd.js:is_nav_input;func" id="is_nav_input"></a> <strong><code>is_nav_input</code></strong> <code>(</code><em>element</em><code>)</code></dt>
+<dd>Check if <code>element</code> has inner input navigation
 </dd>
-<dt><a data-4search="ui/kbd.js:shortcut_lookup;func" id="shortcut_lookup"></a>
-<strong><code>shortcut_lookup</code></strong> <code>(</code><em>mapname,
-label, shortcut</em><code>)</code></dt>
-<dd>
-Lookup shortcut for <code>label</code> in <code>mapname</code>, default
-to <code>shortcut</code>
+<dt><a data-4search="ui/kbd.js:shortcut_lookup;func" id="shortcut_lookup"></a> <strong><code>shortcut_lookup</code></strong> <code>(</code><em>mapname, label, shortcut</em><code>)</code></dt>
+<dd>Lookup shortcut for <code>label</code> in <code>mapname</code>, default to <code>shortcut</code>
 </dd>
-<dt><a data-4search="ui/kbd.js:shortcut_dialog;func" id="shortcut_dialog"></a>
-<strong><code>shortcut_dialog</code></strong> <code>(</code><em>mapname,
-label, shortcut</em><code>)</code></dt>
-<dd>
-Display shortcut editing dialog
+<dt><a data-4search="ui/kbd.js:shortcut_dialog;func" id="shortcut_dialog"></a> <strong><code>shortcut_dialog</code></strong> <code>(</code><em>mapname, label, shortcut</em><code>)</code></dt>
+<dd>Display shortcut editing dialog
 </dd>
 </dl>
 </section>
