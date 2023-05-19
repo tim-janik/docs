@@ -831,7 +831,7 @@ Copyright: Copyright (C) 2022-2023 Tim Janik
 License: MPL-2.0
 
 Files: misc/Makefile.mk
-Copyright: Copyright (C) 2022 Tim Janik
+Copyright: Copyright (C) 2022-2023 Tim Janik
 License: MPL-2.0
 
 Files: misc/anklang-mime.xml
@@ -899,7 +899,7 @@ Copyright: Copyright (C) 2022 Tim Janik
 License: MPL-2.0
 
 Files: misc/version.sh
-Copyright: Copyright (C) 2022 Tim Janik
+Copyright: Copyright (C) 2022-2023 Tim Janik
 License: MPL-2.0
 
 Files: rand/hotspots.sh
