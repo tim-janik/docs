@@ -3323,6 +3323,11 @@
     <namespace>Ase</namespace>
   </compound>
   <compound kind="file">
+    <name>app.js</name>
+    <path>/anklang/poxy/ui/b/</path>
+    <filename>app_8js.html</filename>
+  </compound>
+  <compound kind="file">
     <name>cliplist.js</name>
     <path>/anklang/poxy/ui/b/</path>
     <filename>cliplist_8js.html</filename>
@@ -12688,7 +12693,7 @@
   </compound>
   <compound kind="page">
     <name>index</name>
-    <title>Anklang v0.1.0.dev739+geb345f8</title>
+    <title>Anklang v0.1.0.dev760+gc184b5e</title>
     <filename>index</filename>
   </compound>
 </tagfile>

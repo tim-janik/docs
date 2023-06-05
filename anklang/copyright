@@ -1272,6 +1272,14 @@ Files: ui/theme.scss
 Copyright: Copyright (C) 2020-2023 Tim Janik
 License: MPL-2.0
 
+Files: ui/tsconfig.json
+Copyright: Copyright (C) 2023 Tim Janik
+License: MPL-2.0
+
+Files: ui/types.d.ts
+Copyright: Copyright (C) 2023 Tim Janik
+License: MPL-2.0
+
 Files: ui/util.js
 Copyright: Copyright (C) 2020-2023 Tim Janik
 License: MPL-2.0
