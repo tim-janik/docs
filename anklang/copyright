@@ -1027,12 +1027,14 @@ Copyright: Copyright (C) 2023 Tim Janik
 License: MPL-2.0
 
 Files: ui/b/envue.js
-Copyright: Copyright (C) 2020-2021 Tim Janik
+Copyright:
+  Copyright (C) 2023 Tim Janik
+  Copyright (C) 2020-2021 Tim Janik
 License: MPL-2.0
 
 Files: ui/b/fed-number.vue
 Copyright:
-  Copyright (C) 2022 Tim Janik
+  Copyright (C) 2022-2023 Tim Janik
   Copyright (C) 2020 Tim Janik
 License: MPL-2.0
 
@@ -1057,7 +1059,9 @@ Copyright:
 License: MPL-2.0
 
 Files: ui/b/hscrollbar.vue
-Copyright: Copyright (C) 2020 Tim Janik
+Copyright:
+  Copyright (C) 2023 Tim Janik
+  Copyright (C) 2020 Tim Janik
 License: MPL-2.0
 
 Files: ui/b/icon.js
@@ -1093,7 +1097,7 @@ Copyright: Copyright (C) 2022-2023 Tim Janik
 License: MPL-2.0
 
 Files: ui/b/noteboard.vue
-Copyright: Copyright (C) 2021-2022 Tim Janik
+Copyright: Copyright (C) 2021-2023 Tim Janik
 License: MPL-2.0
 
 Files: ui/b/partlist.vue
@@ -1123,7 +1127,7 @@ Copyright: Copyright (C) 2020-2023 Tim Janik
 License: MPL-2.0
 
 Files: ui/b/preferencesdialog.vue
-Copyright: Copyright (C) 2020-2022 Tim Janik
+Copyright: Copyright (C) 2020-2023 Tim Janik
 License: MPL-2.0
 
 Files: ui/b/pro-group.vue
@@ -1159,7 +1163,7 @@ Copyright: Copyright (C) 2023 Tim Janik
 License: MPL-2.0
 
 Files: ui/b/treeselector-item.vue
-Copyright: Copyright (C) 2020-2022 Tim Janik
+Copyright: Copyright (C) 2020-2023 Tim Janik
 License: MPL-2.0
 
 Files: ui/b/treeselector.vue
@@ -1207,7 +1211,7 @@ Copyright: Copyright (C) 2023 Tim Janik
 License: MPL-2.0
 
 Files: ui/eslintrc.js
-Copyright: Copyright (C) 2020-2022 Tim Janik
+Copyright: Copyright (C) 2020-2023 Tim Janik
 License: MPL-2.0
 
 Files: ui/globals.scss
