@@ -439,11 +439,11 @@ Copyright: Copyright (C) 2021 Tim Janik
 License: MPL-2.0
 
 Files: ase/sortnet.cc
-Copyright: Copyright (C) 2021-2022 Tim Janik
+Copyright: Copyright (C) 2021-2023 Tim Janik
 License: MPL-2.0
 
 Files: ase/sortnet.hh
-Copyright: Copyright (C) 2021-2022 Tim Janik
+Copyright: Copyright (C) 2021-2023 Tim Janik
 License: MPL-2.0
 
 Files: ase/storage.cc

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en"><head>
   <meta charset="utf-8"/>
-  <title>Ase::ClipImpl::Generator class | Anklang 0.1.0.dev777 Anklang Programming Reference</title>
+  <title>Ase::SortedVector class | Anklang 0.1.0.dev777 Anklang Programming Reference</title>
   <link href="favicon.svg" rel="icon" type="image/svg+xml"/>
   <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
   <meta content="#22272e" name="theme-color"/>
@@ -21,7 +21,7 @@
   <meta content="Poxy v0.12.4" name="generator"/>
   <meta content="strict-origin-when-cross-origin" name="referrer"/>
 </head>
-<body class="poxy-has-toc">
+<body>
 <header><nav id="navigation">
   <div class="m-container">
     <div class="m-row">
@@ -58,84 +58,10 @@
     <div class="m-row">
       <div class="m-col-l-10 m-push-l-1">
         <h1>
-          <span class="m-breadcrumb"><a href="namespace_ase.html">Ase</a>::<wbr/></span><span class="m-breadcrumb"><span class="poxy-dead-link">ClipImpl</span>::<wbr/></span>Generator <span class="m-thin">class</span>
+          <div class="m-doc-template">template&lt;class T, class Less = <a class="m-doc-external poxy-external" href="http://en.cppreference.com/w/cpp/utility/functional/less.html" target="_blank">std::<wbr/>less</a>&lt;T&gt;&gt;</div>
+          <span class="m-breadcrumb"><a href="namespace_ase.html">Ase</a>::<wbr/></span>SortedVector <span class="m-thin">class</span>
         </h1>
-        <p><a class="m-doc" href="class_ase_1_1_clip_impl_1_1_generator.html">Generator</a> for MIDI events.</p>
-        <nav class="m-block m-default poxy-toc" id="poxy-toc">
-          <h3>Contents</h3>
-          <ul>
-            <li>
-              Reference
-              <ul>
-                <li><a href="#pub-types">Public types</a></li>
-                <li><a href="#pub-methods">Public functions</a></li>
-              </ul>
-            </li>
-          </ul>
-        </nav>
-        <section id="pub-types">
-          <h2><a href="#pub-types">Public types</a></h2>
-          <dl class="m-doc">
-            <dt id="a8218c5f760bf51bf953406fa781780e5">
-              using <a class="m-doc-self" href="#a8218c5f760bf51bf953406fa781780e5">Receiver</a> = <a class="m-doc-external poxy-external" href="http://en.cppreference.com/w/cpp/utility/functional/function.html" target="_blank">std::<wbr/>function</a>&lt;void(<a class="m-doc" href="namespace_ase.html#a478a1328a0bd673e18c58943f4bc0655">int64</a> tick, <a class="m-doc" href="struct_ase_1_1_midi_event.html">MidiEvent</a>&amp;event)&gt;
-            </dt>
-            <dd>Handler for generated MIDI events.</dd>
-          </dl>
-        </section>
-        <section id="pub-methods">
-          <h2><a href="#pub-methods">Public functions</a></h2>
-          <dl class="m-doc">
-            <dt id="a41e6e65d5cb6e277e5b05d80e6885bb4">
-              <span class="m-doc-wrap-bumper">auto <a class="m-doc-self" href="#a41e6e65d5cb6e277e5b05d80e6885bb4">clip_position</a>(</span><span class="m-doc-wrap">) const -&gt; <a class="m-doc" href="namespace_ase.html#a478a1328a0bd673e18c58943f4bc0655">int64</a></span>
-            </dt>
-            <dd>Position within clip as tick.</dd>
-            <dt id="a2d0b96b37c89c0ee22d3f806bb399cf5">
-              <span class="m-doc-wrap-bumper">auto <a class="m-doc-self" href="#a2d0b96b37c89c0ee22d3f806bb399cf5">done</a>(</span><span class="m-doc-wrap">) const -&gt; bool</span>
-            </dt>
-            <dd>Check if playback is done.</dd>
-            <dt id="a782427e6d672184c140c88311198a874">
-              <span class="m-doc-wrap-bumper">auto <a class="m-doc-self" href="#a782427e6d672184c140c88311198a874">generate</a>(</span><span class="m-doc-wrap"><a class="m-doc" href="namespace_ase.html#a478a1328a0bd673e18c58943f4bc0655">int64</a> target_tick,
-              const <a class="m-doc" href="class_ase_1_1_clip_impl_1_1_generator.html#a8218c5f760bf51bf953406fa781780e5">Receiver</a>&amp; receiver) -&gt; <a class="m-doc" href="namespace_ase.html#a478a1328a0bd673e18c58943f4bc0655">int64</a></span>
-            </dt>
-            <dd>Advance tick and call <code>receiver</code> for generated events.</dd>
-            <dt id="a7c12265ecaf801d4b2b76b37c0a63a8b">
-              <span class="m-doc-wrap-bumper">void <a class="m-doc-self" href="#a7c12265ecaf801d4b2b76b37c0a63a8b">jumpto</a>(</span><span class="m-doc-wrap"><a class="m-doc" href="namespace_ase.html#a478a1328a0bd673e18c58943f4bc0655">int64</a> target_tick)</span>
-            </dt>
-            <dd>Assign new <a class="m-doc" href="class_ase_1_1_clip_impl_1_1_generator.html#aa253cd751489dfc60e9d46b8bd5c4c69">play_<wbr/>position()</a> (and <a class="m-doc" href="class_ase_1_1_clip_impl_1_1_generator.html#a41e6e65d5cb6e277e5b05d80e6885bb4">clip_<wbr/>position()</a>), preserves all other state.</dd>
-            <dt id="afa64c18b5e42e8edbad8544b66b1aad3">
-              <span class="m-doc-wrap-bumper">auto <a class="m-doc-self" href="#afa64c18b5e42e8edbad8544b66b1aad3">loop_end</a>(</span><span class="m-doc-wrap">) const -&gt; <a class="m-doc" href="namespace_ase.html#a478a1328a0bd673e18c58943f4bc0655">int64</a></span>
-            </dt>
-            <dd>Loop end in ticks.</dd>
-            <dt id="a75ebb7a61b0e4c81009208673ebc41af">
-              <span class="m-doc-wrap-bumper">auto <a class="m-doc-self" href="#a75ebb7a61b0e4c81009208673ebc41af">loop_start</a>(</span><span class="m-doc-wrap">) const -&gt; <a class="m-doc" href="namespace_ase.html#a478a1328a0bd673e18c58943f4bc0655">int64</a></span>
-            </dt>
-            <dd>Loop start in ticks.</dd>
-            <dt id="a25a8248c1ae1a46a09975d3ea308c8e4">
-              <span class="m-doc-wrap-bumper">auto <a class="m-doc-self" href="#a25a8248c1ae1a46a09975d3ea308c8e4">muted</a>(</span><span class="m-doc-wrap">) const -&gt; bool</span>
-            </dt>
-            <dd>Mute MIDI note generation.</dd>
-            <dt id="ae2f371e415554a19b17d60614b4b8188">
-              <span class="m-doc-wrap-bumper">void <a class="m-doc-self" href="#ae2f371e415554a19b17d60614b4b8188">muted</a>(</span><span class="m-doc-wrap">bool b)</span>
-            </dt>
-            <dd>Assign muted state.</dd>
-            <dt id="aed6775247d3a6e9c5c24a1f282237687">
-              <span class="m-doc-wrap-bumper">auto <a class="m-doc-self" href="#aed6775247d3a6e9c5c24a1f282237687">play_length</a>(</span><span class="m-doc-wrap">) const -&gt; <a class="m-doc" href="namespace_ase.html#a478a1328a0bd673e18c58943f4bc0655">int64</a></span>
-            </dt>
-            <dd>Maximum amount of ticks during playback.</dd>
-            <dt id="aa253cd751489dfc60e9d46b8bd5c4c69">
-              <span class="m-doc-wrap-bumper">auto <a class="m-doc-self" href="#aa253cd751489dfc60e9d46b8bd5c4c69">play_position</a>(</span><span class="m-doc-wrap">) const -&gt; <a class="m-doc" href="namespace_ase.html#a478a1328a0bd673e18c58943f4bc0655">int64</a></span>
-            </dt>
-            <dd>Current playback position in ticks.</dd>
-            <dt id="a0e5f2789293cda547d0f9772c769dbe2">
-              <span class="m-doc-wrap-bumper">void <a class="m-doc-self" href="#a0e5f2789293cda547d0f9772c769dbe2">setup</a>(</span><span class="m-doc-wrap">const ClipImpl&amp; clip)</span>
-            </dt>
-            <dd>Create generator from clip.</dd>
-            <dt id="a7bfedd01cb91d35cabb25207ca844690">
-              <span class="m-doc-wrap-bumper">auto <a class="m-doc-self" href="#a7bfedd01cb91d35cabb25207ca844690">start_offset</a>(</span><span class="m-doc-wrap">) const -&gt; <a class="m-doc" href="namespace_ase.html#a478a1328a0bd673e18c58943f4bc0655">int64</a></span>
-            </dt>
-            <dd>Initial offset in ticks.</dd>
-          </dl>
-        </section>
+        <p>Vector that keeps its elements sorted.</p>
       </div>
     </div>
   </div>

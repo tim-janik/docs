@@ -2231,6 +2231,7 @@
     <name>sortnet.hh</name>
     <path>/anklang/poxy/ase/</path>
     <filename>sortnet_8hh.html</filename>
+    <class kind="class">Ase::SortedVector</class>
     <namespace>Ase</namespace>
     <member kind="function">
       <type>void</type>
@@ -2914,6 +2915,13 @@
       <anchorfile>testing_8hh.html</anchorfile>
       <anchor>ac315a99971739ef05b2c65cd36ef35ec</anchor>
       <arglist>()</arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>TFLOATS</name>
+      <anchorfile>testing_8hh.html</anchorfile>
+      <anchor>a2426f280fa60d2ccb323bbea48781c1a</anchor>
+      <arglist>(a, b, eps)</arglist>
     </member>
     <member kind="define">
       <type>#define</type>
@@ -9052,6 +9060,13 @@
     <base virtualness="virtual">enable_shared_from_this&lt; SharedBase &gt;</base>
   </compound>
   <compound kind="class">
+    <name>Ase::SortedVector</name>
+    <filename>class_ase_1_1_sorted_vector.html</filename>
+    <templarg></templarg>
+    <templarg></templarg>
+    <base protection="private">less&lt; T &gt;</base>
+  </compound>
+  <compound kind="class">
     <name>Ase::Lib::StringFormatter</name>
     <filename>class_ase_1_1_lib_1_1_string_formatter.html</filename>
     <member kind="function" static="yes">
@@ -10246,6 +10261,7 @@
     <class kind="struct">Ase::SHAKE128</class>
     <class kind="struct">Ase::SHAKE256</class>
     <class kind="class">Ase::SharedBase</class>
+    <class kind="class">Ase::SortedVector</class>
     <class kind="class">Ase::Strings</class>
     <class kind="class">Ase::TaskRegistry</class>
     <class kind="struct">Ase::TaskStatus</class>
@@ -12693,7 +12709,7 @@
   </compound>
   <compound kind="page">
     <name>index</name>
-    <title>Anklang v0.1.0.dev773+g1d49d48</title>
+    <title>Anklang v0.1.0.dev777+g7b3b380</title>
     <filename>index</filename>
   </compound>
 </tagfile>
