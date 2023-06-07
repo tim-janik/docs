@@ -389,7 +389,9 @@ Copyright: Copyright (C) 2021-2022 Tim Janik
 License: MPL-2.0
 
 Files: ase/randomhash.hh
-Copyright: Copyright (C) 2021-2022 Tim Janik
+Copyright:
+  Copyright (C) 2023 Stefan Westerfeld
+  Copyright (C) 2021-2022 Tim Janik
 License: MPL-2.0
 
 Files: ase/regex.cc
