@@ -864,6 +864,10 @@ Files: misc/Dockerfile.focal
 Copyright: Copyright (C) 2021-2023 Tim Janik
 License: MPL-2.0
 
+Files: misc/Dockerfile.lunar
+Copyright: Copyright (C) 2023 Tim Janik
+License: MPL-2.0
+
 Files: misc/Makefile.mk
 Copyright: Copyright (C) 2021-2023 Tim Janik
 License: MPL-2.0
@@ -885,7 +889,9 @@ Copyright: Copyright (C) 2021 Tim Janik
 License: MPL-2.0
 
 Files: misc/colorize.sh
-Copyright: Copyright (C) 2021 Tim Janik
+Copyright:
+  Copyright (C) 2023 Tim Janik
+  Copyright (C) 2021 Tim Janik
 License: MPL-2.0
 
 Files: misc/config-checks.mk
