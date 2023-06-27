@@ -377,7 +377,7 @@ Copyright: Copyright (C) 2021-2023 Tim Janik
 License: MPL-2.0
 
 Files: ase/properties.cc
-Copyright: Copyright (C) 2021-2022 Tim Janik
+Copyright: Copyright (C) 2021-2023 Tim Janik
 License: MPL-2.0
 
 Files: ase/properties.hh
@@ -423,7 +423,7 @@ Copyright: Copyright (C) 2021-2022 Tim Janik
 License: MPL-2.0
 
 Files: ase/server.cc
-Copyright: Copyright (C) 2021-2022 Tim Janik
+Copyright: Copyright (C) 2021-2023 Tim Janik
 License: MPL-2.0
 
 Files: ase/server.hh
@@ -984,6 +984,10 @@ Files: ui/b/app.js
 Copyright: Copyright (C) 2020-2023 Tim Janik
 License: MPL-2.0
 
+Files: ui/b/basics.js
+Copyright: Copyright (C) 2023 Tim Janik
+License: MPL-2.0
+
 Files: ui/b/buttonbar.js
 Copyright: Copyright (C) 2023 Tim Janik
 License: MPL-2.0
@@ -992,8 +996,8 @@ Files: ui/b/ch-vue.md
 Copyright: Copyright (C) 2020-2021 Tim Janik
 License: MPL-2.0
 
-Files: ui/b/choice.vue
-Copyright: Copyright (C) 2020-2023 Tim Janik
+Files: ui/b/choiceinput.js
+Copyright: Copyright (C) 2023 Tim Janik
 License: MPL-2.0
 
 Files: ui/b/cliplist.js
@@ -1036,20 +1040,6 @@ Files: ui/b/envue.js
 Copyright:
   Copyright (C) 2023 Tim Janik
   Copyright (C) 2020-2021 Tim Janik
-License: MPL-2.0
-
-Files: ui/b/fed-number.vue
-Copyright:
-  Copyright (C) 2022-2023 Tim Janik
-  Copyright (C) 2020 Tim Janik
-License: MPL-2.0
-
-Files: ui/b/fed-object.vue
-Copyright: Copyright (C) 2020-2023 Tim Janik
-License: MPL-2.0
-
-Files: ui/b/fed-switch.vue
-Copyright: Copyright (C) 2020-2023 Tim Janik
 License: MPL-2.0
 
 Files: ui/b/filedialog.vue
@@ -1106,6 +1096,14 @@ Files: ui/b/noteboard.vue
 Copyright: Copyright (C) 2021-2023 Tim Janik
 License: MPL-2.0
 
+Files: ui/b/numberinput.js
+Copyright: Copyright (C) 2023 Tim Janik
+License: MPL-2.0
+
+Files: ui/b/objecteditor.js
+Copyright: Copyright (C) 2023 Tim Janik
+License: MPL-2.0
+
 Files: ui/b/partlist.js
 Copyright: Copyright (C) 2023 Tim Janik
 License: MPL-2.0
@@ -1148,6 +1146,10 @@ License: MPL-2.0
 
 Files: ui/b/statusbar.vue
 Copyright: Copyright (C) 2020-2023 Tim Janik
+License: MPL-2.0
+
+Files: ui/b/switchinput.js
+Copyright: Copyright (C) 2023 Tim Janik
 License: MPL-2.0
 
 Files: ui/b/textinput.js
@@ -1307,7 +1309,7 @@ Copyright: Copyright (C) 2022 Tim Janik
 License: MPL-2.0
 
 Files: x11test/play-notes.json
-Copyright: Copyright (C) 2022 Tim Janik
+Copyright: Copyright (C) 2022-2023 Tim Janik
 License: MPL-2.0
 
 Files: x11test/replay.sh

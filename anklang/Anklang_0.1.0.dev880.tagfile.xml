@@ -3336,9 +3336,19 @@
     <filename>app_8js.html</filename>
   </compound>
   <compound kind="file">
+    <name>basics.js</name>
+    <path>/anklang/poxy/ui/b/</path>
+    <filename>basics_8js.html</filename>
+  </compound>
+  <compound kind="file">
     <name>buttonbar.js</name>
     <path>/anklang/poxy/ui/b/</path>
     <filename>buttonbar_8js.html</filename>
+  </compound>
+  <compound kind="file">
+    <name>choiceinput.js</name>
+    <path>/anklang/poxy/ui/b/</path>
+    <filename>choiceinput_8js.html</filename>
   </compound>
   <compound kind="file">
     <name>cliplist.js</name>
@@ -3401,6 +3411,16 @@
     <filename>more_8js.html</filename>
   </compound>
   <compound kind="file">
+    <name>numberinput.js</name>
+    <path>/anklang/poxy/ui/b/</path>
+    <filename>numberinput_8js.html</filename>
+  </compound>
+  <compound kind="file">
+    <name>objecteditor.js</name>
+    <path>/anklang/poxy/ui/b/</path>
+    <filename>objecteditor_8js.html</filename>
+  </compound>
+  <compound kind="file">
     <name>partlist.js</name>
     <path>/anklang/poxy/ui/b/</path>
     <filename>partlist_8js.html</filename>
@@ -3424,6 +3444,11 @@
     <name>shell.vue.js</name>
     <path>/anklang/poxy/ui/b/</path>
     <filename>shell_8vue_8js.html</filename>
+  </compound>
+  <compound kind="file">
+    <name>switchinput.js</name>
+    <path>/anklang/poxy/ui/b/</path>
+    <filename>switchinput_8js.html</filename>
   </compound>
   <compound kind="file">
     <name>textinput.js</name>
@@ -12729,7 +12754,7 @@
   </compound>
   <compound kind="page">
     <name>index</name>
-    <title>Anklang v0.1.0.dev848+g89c9d01</title>
+    <title>Anklang v0.1.0.dev880+g2ddfe22</title>
     <filename>index</filename>
   </compound>
 </tagfile>
