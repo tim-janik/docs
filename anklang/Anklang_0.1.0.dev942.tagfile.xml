@@ -3386,6 +3386,11 @@
     <filename>knob_8js.html</filename>
   </compound>
   <compound kind="file">
+    <name>menubar.js</name>
+    <path>/anklang/poxy/ui/b/</path>
+    <filename>menubar_8js.html</filename>
+  </compound>
+  <compound kind="file">
     <name>menuitem.js</name>
     <path>/anklang/poxy/ui/b/</path>
     <filename>menuitem_8js.html</filename>
@@ -3439,6 +3444,11 @@
     <name>playcontrols.js</name>
     <path>/anklang/poxy/ui/b/</path>
     <filename>playcontrols_8js.html</filename>
+  </compound>
+  <compound kind="file">
+    <name>positionview.js</name>
+    <path>/anklang/poxy/ui/b/</path>
+    <filename>positionview_8js.html</filename>
   </compound>
   <compound kind="file">
     <name>shell.vue.js</name>
@@ -12754,7 +12764,7 @@
   </compound>
   <compound kind="page">
     <name>index</name>
-    <title>Anklang v0.1.0.dev881+g8883884</title>
+    <title>Anklang v0.1.0.dev942+ga7ea5f4</title>
     <filename>index</filename>
   </compound>
 </tagfile>

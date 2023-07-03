@@ -41,7 +41,7 @@ Copyright: Copyright (C) 2020 Tim Janik
 License: CC0-1.0
 
 Files: ase/Makefile.mk
-Copyright: Copyright (C) 2020-2022 Tim Janik
+Copyright: Copyright (C) 2020-2023 Tim Janik
 License: MPL-2.0
 
 Files: ase/api.hh
@@ -539,7 +539,7 @@ Copyright: Copyright (C) 2020-2021 Tim Janik
 License: CC0-1.0
 
 Files: devices/Makefile.mk
-Copyright: Copyright (C) 2021-2022 Tim Janik
+Copyright: Copyright (C) 2021-2023 Tim Janik
 License: MPL-2.0
 
 Files: devices/blepsynth/GNUmakefile
@@ -1068,8 +1068,8 @@ Files: ui/b/knob.js
 Copyright: Copyright (C) 2022-2023 Tim Janik
 License: MPL-2.0
 
-Files: ui/b/menubar.vue
-Copyright: Copyright (C) 2020-2023 Tim Janik
+Files: ui/b/menubar.js
+Copyright: Copyright (C) 2023 Tim Janik
 License: MPL-2.0
 
 Files: ui/b/menuitem.js
@@ -1113,7 +1113,7 @@ Copyright: Copyright (C) 2020-2023 Tim Janik
 License: MPL-2.0
 
 Files: ui/b/piano-ctrl.js
-Copyright: Copyright (C) 2020-2022 Tim Janik
+Copyright: Copyright (C) 2020-2023 Tim Janik
 License: MPL-2.0
 
 Files: ui/b/pianoroll.js
@@ -1124,8 +1124,8 @@ Files: ui/b/playcontrols.js
 Copyright: Copyright (C) 2023 Tim Janik
 License: MPL-2.0
 
-Files: ui/b/positionview.vue
-Copyright: Copyright (C) 2020-2023 Tim Janik
+Files: ui/b/positionview.js
+Copyright: Copyright (C) 2023 Tim Janik
 License: MPL-2.0
 
 Files: ui/b/preferencesdialog.vue
@@ -1245,7 +1245,7 @@ Copyright: Copyright (C) 2023 Tim Janik
 License: MPL-2.0
 
 Files: ui/kbd.js
-Copyright: Copyright (C) 2022 Tim Janik
+Copyright: Copyright (C) 2022-2023 Tim Janik
 License: MPL-2.0
 
 Files: ui/little.js
