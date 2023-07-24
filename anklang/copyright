@@ -754,6 +754,10 @@ Files: doc/poxy.sh
 Copyright: Copyright (C) 2023 Tim Janik
 License: MPL-2.0
 
+Files: doc/poxystyle.css
+Copyright: Copyright (C) 2023 Tim Janik
+License: MPL-2.0
+
 Files: doc/style/Makefile.mk
 Copyright: Copyright (C) 2021-2022 Tim Janik
 License: MPL-2.0
@@ -927,7 +931,9 @@ Copyright: Copyright (C) 2022-2023 Tim Janik
 License: MPL-2.0
 
 Files: misc/mkcopyright.py
-Copyright: Copyright (C) 2021 Tim Janik
+Copyright:
+  Copyright (C) 2023 Tim Janik
+  Copyright (C) 2021 Tim Janik
 License: MPL-2.0
 
 Files: misc/mkdeb.sh
@@ -1214,10 +1220,6 @@ Files: ui/dark.scss
 Copyright: Copyright (C) 2023 Tim Janik
 License: MPL-2.0
 
-Files: ui/elements.scss
-Copyright: Copyright (C) 2023 Tim Janik
-License: MPL-2.0
-
 Files: ui/eslintrc.js
 Copyright: Copyright (C) 2020-2023 Tim Janik
 License: MPL-2.0
@@ -1256,6 +1258,14 @@ Files: ui/mixins.scss
 Copyright: Copyright (C) 2020-2023 Tim Janik
 License: MPL-2.0
 
+Files: ui/normalize.css
+Copyright: Copyright (C) 2023 Tim Janik
+License: MIT
+
+Files: ui/palette.scss
+Copyright: Copyright (C) 2023 Tim Janik
+License: MPL-2.0
+
 Files: ui/postcss.js
 Copyright: Copyright (C) 2022-2023 Tim Janik
 License: MPL-2.0
@@ -1266,10 +1276,6 @@ License: MPL-2.0
 
 Files: ui/sfc-compile.js
 Copyright: Copyright (C) 2020-2023 Tim Janik
-License: MPL-2.0
-
-Files: ui/shadow.scss
-Copyright: Copyright (C) 2022-2023 Tim Janik
 License: MPL-2.0
 
 Files: ui/startup.js
@@ -1329,6 +1335,11 @@ License: CC0-1.0
  Creative Commons Zero v1.0 Universal
  https://spdx.org/licenses/CC0-1.0.html
  https://creativecommons.org/publicdomain/zero/1.0/legalcode
+
+License: MIT
+ MIT License
+ https://spdx.org/licenses/MIT.html
+ https://opensource.org/licenses/MIT
 
 License: MPL-2.0
  Mozilla Public License 2.0
