@@ -982,8 +982,8 @@ Files: ui/b/GNUmakefile
 Copyright: Copyright (C) 2020 Tim Janik
 License: CC0-1.0
 
-Files: ui/b/aboutdialog.vue
-Copyright: Copyright (C) 2020-2023 Tim Janik
+Files: ui/b/aboutdialog.js
+Copyright: Copyright (C) 2023 Tim Janik
 License: MPL-2.0
 
 Files: ui/b/app.js

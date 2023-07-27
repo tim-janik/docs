@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en"><head>
   <meta charset="utf-8"/>
-  <title>Ase::AtomicIntrusiveStack class | Anklang 0.1.0.dev983 Anklang Programming Reference</title>
+  <title>ui/b/aboutdialog.js file | Anklang 0.1.0.dev983 Anklang Programming Reference</title>
   <link href="favicon.svg" rel="icon" type="image/svg+xml"/>
   <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
   <meta content="#cb4b16" name="theme-color"/>
@@ -22,7 +22,7 @@
   <meta content="Poxy v0.12.5" name="generator"/>
   <meta content="strict-origin-when-cross-origin" name="referrer"/>
 </head>
-<body class="poxy-has-toc">
+<body>
 <header><nav id="navigation">
   <div class="m-container">
     <div class="m-row">
@@ -59,68 +59,17 @@
     <div class="m-row">
       <div class="m-col-l-10 m-push-l-1">
         <h1>
-          <div class="m-doc-template">template&lt;<span class="m-doc-template-params"><span class="m-doc-template-param">class T</span></span>&gt;</div>
-          <span class="m-breadcrumb"><a href="namespace_ase.html">Ase</a>::<wbr/></span>AtomicIntrusiveStack <span class="m-thin">class</span>
+          <span class="m-breadcrumb"><a href="dir_1788f8309b1a812dcb800a185471cf6c.html">ui</a>/</span><span class="m-breadcrumb"><a href="dir_8cd1e0dc53330a899bb8b54b9ae21f1b.html">b</a>/</span>aboutdialog.js <span class="m-thin">file</span>
         </h1>
-        <nav class="m-block m-default poxy-toc" id="poxy-toc">
-          <h3>Contents</h3>
-          <ul>
-            <li>
-              Reference
-              <ul>
-                <li><a href="#pub-methods">Public functions</a></li>
-              </ul>
-            </li>
-          </ul>
-        </nav>
-<p>Lock-free stack with atomic <code><a class="m-doc" href="class_ase_1_1_atomic_intrusive_stack.html#a61cc2b1aa7f702c7746a4ffc9ac184a9">push()</a></code> and <code>pop_all</code> operations. Relies on unqualified calls to <code>atomic&lt;T*&gt;&amp; atomic_next_ptrref(T*)</code>.</p>
-        <section id="pub-methods">
-          <h2><a href="#pub-methods">Public functions</a></h2>
-          <dl class="m-doc">
-            <dt id="a683748025ca20a5c5d32ad4f686a6a90">
-              <span class="m-doc-wrap-bumper">auto <a class="m-doc-self" href="#a683748025ca20a5c5d32ad4f686a6a90">empty</a>(</span><span class="m-doc-wrap">) const -&gt; bool</span>
-            </dt>
-            <dd>Check if poppingreturns null.</dd>
-            <dt>
-              <span class="m-doc-wrap-bumper">auto <a class="m-doc" href="#a52562f1097e4fc5248ba62552f337af2">pop_all</a>(</span><span class="m-doc-wrap">) -&gt; T*</span>
-            </dt>
-            <dd></dd>
-            <dt>
-              <span class="m-doc-wrap-bumper">auto <a class="m-doc" href="#a487a23b74d8aa009381f70a99d705478">pop_reversed</a>(</span><span class="m-doc-wrap">) -&gt; T*</span>
-            </dt>
-            <dd></dd>
-            <dt id="a61cc2b1aa7f702c7746a4ffc9ac184a9">
-              <span class="m-doc-wrap-bumper">auto <a class="m-doc-self" href="#a61cc2b1aa7f702c7746a4ffc9ac184a9">push</a>(</span><span class="m-doc-wrap">T* el) -&gt; bool</span>
-            </dt>
-            <dd>Atomically push <code>el</code> onto the stack, returns <code>was_empty</code>.</dd>
-            <dt id="a4ef7757e893ed558892af8ad7e87d0c1">
-              <span class="m-doc-wrap-bumper">auto <a class="m-doc-self" href="#a4ef7757e893ed558892af8ad7e87d0c1">push_chain</a>(</span><span class="m-doc-wrap">T* first,
-              T* last) -&gt; bool</span>
-            </dt>
-            <dd>Atomically push linked nodes <code>first-&gt;…-&gt;last</code> onto the stack, returns <code>was_empty</code>.</dd>
-          </dl>
-        </section>
-        <section>
-          <h2>Function documentation</h2>
-          <section class="m-doc-details" id="a52562f1097e4fc5248ba62552f337af2"><div>
-            <h3>
-              <div class="m-doc-template">
-                template&lt;<span class="m-doc-template-params"><span class="m-doc-template-param">class T</span></span>&gt;
-              </div>
-              <span class="m-doc-wrap-bumper">T* Ase::<wbr/>AtomicIntrusiveStack&lt;T&gt;::<wbr/></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a class="m-doc-self" href="#a52562f1097e4fc5248ba62552f337af2">pop_all</a>(</span><span class="m-doc-wrap">)</span></span>
-            </h3>
-<p>Atomically pop all elements from the stack in LIFO order. Use <code>atomic_next_ptrref()</code> for iteration.</p>
-          </div></section>
-          <section class="m-doc-details" id="a487a23b74d8aa009381f70a99d705478"><div>
-            <h3>
-              <div class="m-doc-template">
-                template&lt;<span class="m-doc-template-params"><span class="m-doc-template-param">class T</span></span>&gt;
-              </div>
-              <span class="m-doc-wrap-bumper">T* Ase::<wbr/>AtomicIntrusiveStack&lt;T&gt;::<wbr/></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a class="m-doc-self" href="#a487a23b74d8aa009381f70a99d705478">pop_reversed</a>(</span><span class="m-doc-wrap">)</span></span>
-            </h3>
-<p>Atomically pop all elements from the stack in FIFO order. Use <code>atomic_next_ptrref()</code> for iteration.</p>
-          </div></section>
-        </section>
+<section class="level3" id="constants">
+<h3>Constants</h3>
+<dl>
+<dt><a data-4search="ui/b/aboutdialog.js:STYLE_URL;var" id="STYLE_URL"></a> <strong><code>STYLE_URL</code></strong></dt>
+<dd><h1 id="b-aboutdialog">B-ABOUTDIALOG</h1>
+A modal [b-dialog] that displays version information about Anklang. ## Events: <em>close</em> : A <em>close</em> event is emitted once the "Close" button activated.
+</dd>
+</dl>
+</section>
       </div>
     </div>
   </div>

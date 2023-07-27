@@ -3331,6 +3331,11 @@
     <namespace>Ase</namespace>
   </compound>
   <compound kind="file">
+    <name>aboutdialog.js</name>
+    <path>/anklang/poxy/ui/b/</path>
+    <filename>aboutdialog_8js.html</filename>
+  </compound>
+  <compound kind="file">
     <name>app.js</name>
     <path>/anklang/poxy/ui/b/</path>
     <filename>app_8js.html</filename>
@@ -12764,7 +12769,7 @@
   </compound>
   <compound kind="page">
     <name>index</name>
-    <title>Anklang v0.1.0.dev964+g61e1ecd</title>
+    <title>Anklang v0.1.0.dev983+g746575f</title>
     <filename>index</filename>
   </compound>
 </tagfile>
