@@ -3371,9 +3371,9 @@
     <filename>contextmenu_8js.html</filename>
   </compound>
   <compound kind="file">
-    <name>databubble.vue.js</name>
+    <name>databubble.js</name>
     <path>/anklang/poxy/ui/b/</path>
-    <filename>databubble_8vue_8js.html</filename>
+    <filename>databubble_8js.html</filename>
   </compound>
   <compound kind="file">
     <name>envue.js</name>
@@ -3459,6 +3459,11 @@
     <name>shell.vue.js</name>
     <path>/anklang/poxy/ui/b/</path>
     <filename>shell_8vue_8js.html</filename>
+  </compound>
+  <compound kind="file">
+    <name>statusbar.js</name>
+    <path>/anklang/poxy/ui/b/</path>
+    <filename>statusbar_8js.html</filename>
   </compound>
   <compound kind="file">
     <name>switchinput.js</name>
@@ -12769,7 +12774,7 @@
   </compound>
   <compound kind="page">
     <name>index</name>
-    <title>Anklang v0.1.0.dev979+g874535f</title>
+    <title>Anklang v0.1.0.dev1052+g1c13e75</title>
     <filename>index</filename>
   </compound>
 </tagfile>

@@ -1014,15 +1014,11 @@ Files: ui/b/clipview.js
 Copyright: Copyright (C) 2021-2023 Tim Janik
 License: MPL-2.0
 
-Files: ui/b/color-picker.vue
-Copyright: Copyright (C) 2020-2023 Tim Janik
-License: MPL-2.0
-
 Files: ui/b/contextmenu.js
 Copyright: Copyright (C) 2022-2023 Tim Janik
 License: MPL-2.0
 
-Files: ui/b/databubble.vue
+Files: ui/b/databubble.js
 Copyright: Copyright (C) 2020-2023 Tim Janik
 License: MPL-2.0
 
@@ -1058,12 +1054,6 @@ Files: ui/b/folderview.vue
 Copyright:
   Copyright (C) 2023 Tim Janik
   Copyright (C) 2021 Tim Janik
-License: MPL-2.0
-
-Files: ui/b/hscrollbar.vue
-Copyright:
-  Copyright (C) 2023 Tim Janik
-  Copyright (C) 2020 Tim Janik
 License: MPL-2.0
 
 Files: ui/b/icon.js
@@ -1114,10 +1104,6 @@ Files: ui/b/partlist.js
 Copyright: Copyright (C) 2023 Tim Janik
 License: MPL-2.0
 
-Files: ui/b/partthumb.vue
-Copyright: Copyright (C) 2020-2023 Tim Janik
-License: MPL-2.0
-
 Files: ui/b/piano-ctrl.js
 Copyright: Copyright (C) 2020-2023 Tim Janik
 License: MPL-2.0
@@ -1150,8 +1136,8 @@ Files: ui/b/shell.vue
 Copyright: Copyright (C) 2020-2023 Tim Janik
 License: MPL-2.0
 
-Files: ui/b/statusbar.vue
-Copyright: Copyright (C) 2020-2023 Tim Janik
+Files: ui/b/statusbar.js
+Copyright: Copyright (C) 2023 Tim Janik
 License: MPL-2.0
 
 Files: ui/b/switchinput.js
@@ -1220,15 +1206,15 @@ Files: ui/dark.scss
 Copyright: Copyright (C) 2023 Tim Janik
 License: MPL-2.0
 
+Files: ui/dom.js
+Copyright: Copyright (C) 2023 Tim Janik
+License: MPL-2.0
+
 Files: ui/eslintrc.js
 Copyright: Copyright (C) 2020-2023 Tim Janik
 License: MPL-2.0
 
-Files: ui/globals.scss
-Copyright: Copyright (C) 2023 Tim Janik
-License: MPL-2.0
-
-Files: ui/grid.scss
+Files: ui/global.scss
 Copyright: Copyright (C) 2023 Tim Janik
 License: MPL-2.0
 
@@ -1258,7 +1244,7 @@ Files: ui/mixins.scss
 Copyright: Copyright (C) 2020-2023 Tim Janik
 License: MPL-2.0
 
-Files: ui/normalize.css
+Files: ui/normalize.scss
 Copyright: Copyright (C) 2023 Tim Janik
 License: MIT
 
