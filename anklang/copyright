@@ -12,6 +12,10 @@ Files: .github/workflows/ircbot.py
 Copyright: Copyright (C) 2021-2022 Tim Janik
 License: MPL-2.0
 
+Files: .github/workflows/release.yml
+Copyright: Copyright (C) 2023 Tim Janik
+License: MPL-2.0
+
 Files: .github/workflows/testing.yml
 Copyright: Copyright (C) 2021-2023 Tim Janik
 License: MPL-2.0
@@ -264,7 +268,7 @@ License: MPL-2.0
 
 Files: ase/main.cc
 Copyright:
-  Copyright (C) 2021-2022 Tim Janik
+  Copyright (C) 2021-2023 Tim Janik
   Copyright (C) 2019 Stefan Westerfeld
 License: MPL-2.0
 
@@ -712,6 +716,10 @@ Files: doc/ch-intro.md
 Copyright: Copyright (C) 2021-2022 Tim Janik
 License: MPL-2.0
 
+Files: doc/ch-releasing.md
+Copyright: Copyright (C) 2023 Tim Janik
+License: MPL-2.0
+
 Files: doc/ch-scripting.md
 Copyright: Copyright (C) 2022-2023 Tim Janik
 License: MPL-2.0
@@ -783,7 +791,7 @@ Copyright: Copyright (C) 2021 Tim Janik
 License: MPL-2.0
 
 Files: electron/Makefile.mk
-Copyright: Copyright (C) 2021-2022 Tim Janik
+Copyright: Copyright (C) 2021-2023 Tim Janik
 License: MPL-2.0
 
 Files: electron/main.js
@@ -868,6 +876,10 @@ Files: misc/Dockerfile.focal
 Copyright: Copyright (C) 2021-2023 Tim Janik
 License: MPL-2.0
 
+Files: misc/Dockerfile.jammy
+Copyright: Copyright (C) 2023 Tim Janik
+License: MPL-2.0
+
 Files: misc/Dockerfile.lunar
 Copyright: Copyright (C) 2023 Tim Janik
 License: MPL-2.0
@@ -899,7 +911,7 @@ Copyright:
 License: MPL-2.0
 
 Files: misc/config-checks.mk
-Copyright: Copyright (C) 2020-2022 Tim Janik
+Copyright: Copyright (C) 2020-2023 Tim Janik
 License: MPL-2.0
 
 Files: misc/config-external.mk
@@ -911,11 +923,23 @@ Copyright: Copyright (C) 2020-2023 Tim Janik
 License: MPL-2.0
 
 Files: misc/config-utils.mk
-Copyright: Copyright (C) 2020-2022 Tim Janik
+Copyright: Copyright (C) 2020-2023 Tim Janik
 License: MPL-2.0
 
 Files: misc/dbuild.sh
 Copyright: Copyright (C) 2021-2023 Tim Janik
+License: MPL-2.0
+
+Files: misc/docker_build
+Copyright: Copyright (C) 2023 Tim Janik
+License: MPL-2.0
+
+Files: misc/docker_clean
+Copyright: Copyright (C) 2023 Tim Janik
+License: MPL-2.0
+
+Files: misc/docker_run
+Copyright: Copyright (C) 2023 Tim Janik
 License: MPL-2.0
 
 Files: misc/gh_delete_assets.sh
@@ -937,7 +961,11 @@ Copyright:
 License: MPL-2.0
 
 Files: misc/mkdeb.sh
-Copyright: Copyright (C) 2021-2022 Tim Janik
+Copyright: Copyright (C) 2021-2023 Tim Janik
+License: MPL-2.0
+
+Files: misc/mknews.sh
+Copyright: Copyright (C) 2023 Tim Janik
 License: MPL-2.0
 
 Files: misc/package.json.in

@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='yes' ?>
-<tagfile>
+<tagfile doxygen_version="1.9.1">
   <compound kind="file">
     <name>api.hh</name>
     <filename>api_8hh.html</filename>
@@ -4497,7 +4497,7 @@
       <type>const char *</type>
       <name>message</name>
       <anchorfile>struct_ase_1_1_backtrace_command.html</anchorfile>
-      <anchor>a46cc8933bda671e8d30981c7f4371404</anchor>
+      <anchor>aa71c5d800ec1d9468e42cea0c72e224a</anchor>
       <arglist>()</arglist>
     </member>
   </compound>
@@ -4978,6 +4978,20 @@
     <filename>class_ase_1_1_custom_data_key.html</filename>
     <templarg></templarg>
     <base>Ase::VirtualBase</base>
+    <member kind="function" virtualness="virtual">
+      <type>virtual T</type>
+      <name>fallback</name>
+      <anchorfile>class_ase_1_1_custom_data_key.html</anchorfile>
+      <anchor>a853484ee773012f30fa0a5de7e444bed</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>const std::type_info &amp;</type>
+      <name>type</name>
+      <anchorfile>class_ase_1_1_custom_data_key.html</anchorfile>
+      <anchor>a7300cb11734fbaa8bca101a273130066</anchor>
+      <arglist>() const noexcept</arglist>
+    </member>
   </compound>
   <compound kind="class">
     <name>Ase::Device</name>
@@ -5243,6 +5257,13 @@
       <anchorfile>class_ase_1_1_event_source.html</anchorfile>
       <anchor>a2cbc7b23b33183403946eeaecb74b148</anchor>
       <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>MainLoop *</type>
+      <name>main_loop</name>
+      <anchorfile>class_ase_1_1_event_source.html</anchorfile>
+      <anchor>a425568ed44fa5f78b3b29bd0d21e721c</anchor>
+      <arglist>() const</arglist>
     </member>
     <member kind="function" protection="protected" virtualness="virtual">
       <type>virtual bool</type>
@@ -5772,6 +5793,13 @@
       <anchor>a2cbc7b23b33183403946eeaecb74b148</anchor>
       <arglist>()</arglist>
     </member>
+    <member kind="function">
+      <type>MainLoop *</type>
+      <name>main_loop</name>
+      <anchorfile>class_ase_1_1_event_source.html</anchorfile>
+      <anchor>a425568ed44fa5f78b3b29bd0d21e721c</anchor>
+      <arglist>() const</arglist>
+    </member>
   </compound>
   <compound kind="class">
     <name>Ase::FastMemArray</name>
@@ -6164,6 +6192,20 @@
       <name>alignment</name>
       <anchorfile>struct_ase_1_1_fast_memory_1_1_huge_page.html</anchorfile>
       <anchor>a775d4ded0b1176644809973d21a8e2cc</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>size_t</type>
+      <name>size</name>
+      <anchorfile>struct_ase_1_1_fast_memory_1_1_huge_page.html</anchorfile>
+      <anchor>af9fb2cae41d28a35f803829e76b484be</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>char *</type>
+      <name>mem</name>
+      <anchorfile>struct_ase_1_1_fast_memory_1_1_huge_page.html</anchorfile>
+      <anchor>af0cf040328d5a17264e2881d00bf3616</anchor>
       <arglist>() const</arglist>
     </member>
     <member kind="function" static="yes">
@@ -6990,6 +7032,13 @@
       <name>create_sub_loop</name>
       <anchorfile>class_ase_1_1_main_loop.html</anchorfile>
       <anchor>a251bdb570752ce2ba142d93ef0e829e8</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>std::mutex &amp;</type>
+      <name>mutex</name>
+      <anchorfile>class_ase_1_1_main_loop.html</anchorfile>
+      <anchor>a931c8e32b8003b14180d58036fd67d09</anchor>
       <arglist>()</arglist>
     </member>
     <member kind="function">
@@ -8065,6 +8114,13 @@
       <anchorfile>class_ase_1_1_event_source.html</anchorfile>
       <anchor>a2cbc7b23b33183403946eeaecb74b148</anchor>
       <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>MainLoop *</type>
+      <name>main_loop</name>
+      <anchorfile>class_ase_1_1_event_source.html</anchorfile>
+      <anchor>a425568ed44fa5f78b3b29bd0d21e721c</anchor>
+      <arglist>() const</arglist>
     </member>
     <member kind="function" protection="protected" virtualness="virtual">
       <type>virtual bool</type>
@@ -9493,6 +9549,13 @@
       <anchor>a2cbc7b23b33183403946eeaecb74b148</anchor>
       <arglist>()</arglist>
     </member>
+    <member kind="function">
+      <type>MainLoop *</type>
+      <name>main_loop</name>
+      <anchorfile>class_ase_1_1_event_source.html</anchorfile>
+      <anchor>a425568ed44fa5f78b3b29bd0d21e721c</anchor>
+      <arglist>() const</arglist>
+    </member>
     <member kind="function" protection="protected" virtualness="virtual">
       <type>virtual bool</type>
       <name>prepare</name>
@@ -9524,6 +9587,20 @@
       <anchorfile>class_ase_1_1_test_1_1_timer.html</anchorfile>
       <anchor>a9e7392342a3da92a51429eb3776f03c6</anchor>
       <arglist>(double deadline_in_secs=0)</arglist>
+    </member>
+    <member kind="function">
+      <type>int64</type>
+      <name>n_reps</name>
+      <anchorfile>class_ase_1_1_test_1_1_timer.html</anchorfile>
+      <anchor>adbbb516df3906cb02954538f62a3d414</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>test_elapsed</name>
+      <anchorfile>class_ase_1_1_test_1_1_timer.html</anchorfile>
+      <anchor>aff105352c72f4ae05b08b7140e837b83</anchor>
+      <arglist>() const</arglist>
     </member>
     <member kind="function">
       <type>double</type>
@@ -9993,6 +10070,13 @@
       <anchor>a2cbc7b23b33183403946eeaecb74b148</anchor>
       <arglist>()</arglist>
     </member>
+    <member kind="function">
+      <type>MainLoop *</type>
+      <name>main_loop</name>
+      <anchorfile>class_ase_1_1_event_source.html</anchorfile>
+      <anchor>a425568ed44fa5f78b3b29bd0d21e721c</anchor>
+      <arglist>() const</arglist>
+    </member>
     <member kind="function" static="yes">
       <type>static void</type>
       <name>raise</name>
@@ -10104,6 +10188,20 @@
   <compound kind="class">
     <name>Ase::Writ</name>
     <filename>class_ase_1_1_writ.html</filename>
+    <member kind="function">
+      <type>bool</type>
+      <name>in_load</name>
+      <anchorfile>class_ase_1_1_writ.html</anchorfile>
+      <anchor>adacf7d12aa7d7e6133b160d3f3812c7d</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>in_save</name>
+      <anchorfile>class_ase_1_1_writ.html</anchorfile>
+      <anchor>a14d33e5c7d9239f8aa3aa847bc2cca6d</anchor>
+      <arglist>() const</arglist>
+    </member>
     <member kind="function" static="yes">
       <type>static bool</type>
       <name>typedata_is_loadable</name>
@@ -10239,110 +10337,110 @@
     <namespace>Ase::Path</namespace>
     <namespace>Ase::Properties</namespace>
     <namespace>Ase::Test</namespace>
-    <class kind="struct">Ase::AlignedPOD</class>
-    <class kind="class">Ase::AsyncBlockingQueue</class>
-    <class kind="class">Ase::AtomicBits</class>
+    <class kind="class">Ase::SharedBase</class>
+    <class kind="struct">Ase::Choice</class>
+    <class kind="struct">Ase::TelemetryField</class>
+    <class kind="class">Ase::Emittable</class>
+    <class kind="class">Ase::Property</class>
+    <class kind="class">Ase::Object</class>
+    <class kind="class">Ase::Gadget</class>
+    <class kind="struct">Ase::DeviceInfo</class>
+    <class kind="class">Ase::Device</class>
+    <class kind="class">Ase::NativeDevice</class>
+    <class kind="struct">Ase::ClipNote</class>
+    <class kind="class">Ase::Clip</class>
+    <class kind="class">Ase::Track</class>
+    <class kind="struct">Ase::ProbeFeatures</class>
+    <class kind="class">Ase::Monitor</class>
+    <class kind="class">Ase::Project</class>
+    <class kind="struct">Ase::Resource</class>
+    <class kind="class">Ase::ResourceCrawler</class>
+    <class kind="struct">Ase::UserNote</class>
+    <class kind="struct">Ase::TelemetrySegment</class>
+    <class kind="class">Ase::Server</class>
     <class kind="class">Ase::AtomicIntrusiveStack</class>
-    <class kind="class">Ase::AudioEngine</class>
-    <class kind="class">Ase::AudioProcessor</class>
-    <class kind="struct">Ase::AudioProcessorInfo</class>
-    <class kind="struct">Ase::AudioTransport</class>
-    <class kind="class">Ase::AutoSeeder</class>
+    <class kind="struct">Ase::MpmcStack</class>
+    <class kind="class">Ase::AtomicBits</class>
     <class kind="struct">Ase::BacktraceCommand</class>
     <class kind="class">Ase::Blob</class>
+    <class kind="struct">Ase::VirtualBase</class>
+    <class kind="class">Ase::Persistent</class>
+    <class kind="struct">Ase::Id32</class>
+    <class kind="class">Ase::Serializable</class>
+    <class kind="struct">Ase::DriverEntry</class>
+    <class kind="class">Ase::AudioEngine</class>
     <class kind="class">Ase::BorrowedPtr</class>
-    <class kind="struct">Ase::BusInfo</class>
-    <class kind="struct">Ase::Choice</class>
-    <class kind="class">Ase::Clip</class>
-    <class kind="struct">Ase::ClipNote</class>
-    <class kind="struct">Ase::ConvertJsTrigger</class>
+    <class kind="struct">Ase::OrderedEventList</class>
+    <class kind="class">Ase::EventList</class>
+    <class kind="class">Ase::GadgetImpl</class>
+    <class kind="class">Ase::IniFile</class>
+    <class kind="class">Ase::IniWriter</class>
     <class kind="struct">Ase::ConvertValue</class>
     <class kind="struct">Ase::ConvertValueP</class>
     <class kind="struct">Ase::ConvertValueR</class>
     <class kind="struct">Ase::ConvertValueRP</class>
-    <class kind="class">Ase::CString</class>
-    <class kind="class">Ase::CustomDataContainer</class>
-    <class kind="class">Ase::CustomDataKey</class>
-    <class kind="class">Ase::Device</class>
-    <class kind="struct">Ase::DeviceInfo</class>
-    <class kind="class">Ase::DispatcherSource</class>
-    <class kind="struct">Ase::DriverEntry</class>
-    <class kind="class">Ase::Emittable</class>
-    <class kind="class">Ase::EmittableImpl</class>
-    <class kind="struct">Ase::EnumInfo</class>
-    <class kind="struct">Ase::Event</class>
-    <class kind="class">Ase::EventFd</class>
-    <class kind="class">Ase::EventList</class>
-    <class kind="class">Ase::EventLoop</class>
-    <class kind="class">Ase::EventSource</class>
-    <class kind="class">Ase::FastMemArray</class>
-    <class kind="union">Ase::FloatIEEE754</class>
-    <class kind="class">Ase::Gadget</class>
-    <class kind="class">Ase::GadgetImpl</class>
-    <class kind="struct">Ase::GroupId</class>
-    <class kind="struct">Ase::Has_serialize_f</class>
-    <class kind="struct">Ase::Id32</class>
-    <class kind="class">Ase::IniFile</class>
-    <class kind="class">Ase::IniWriter</class>
-    <class kind="class">Ase::JsTrigger</class>
-    <class kind="class">Ase::KeccakCryptoRng</class>
-    <class kind="class">Ase::KeccakFastRng</class>
-    <class kind="class">Ase::KeccakGoodRng</class>
-    <class kind="class">Ase::KeccakRng</class>
+    <class kind="struct">Ase::ConvertJsTrigger</class>
     <class kind="struct">Ase::LoftConfig</class>
     <class kind="struct">Ase::LoftStats</class>
-    <class kind="struct">Ase::Logscale</class>
-    <class kind="class">Ase::MainLoop</class>
-    <class kind="struct">Ase::MidiEvent</class>
-    <class kind="class">Ase::MidiEventRange</class>
-    <class kind="class">Ase::MidiEventStream</class>
-    <class kind="struct">Ase::MidiNote</class>
-    <class kind="class">Ase::Monitor</class>
-    <class kind="struct">Ase::MpmcStack</class>
-    <class kind="class">Ase::Mwc256</class>
-    <class kind="class">Ase::NativeDevice</class>
-    <class kind="class">Ase::Object</class>
-    <class kind="class">Ase::ObjectImpl</class>
-    <class kind="struct">Ase::OrderedEventList</class>
-    <class kind="struct">Ase::ParamInfo</class>
-    <class kind="class">Ase::Pcg32Rng</class>
-    <class kind="class">Ase::Persistent</class>
     <class kind="struct">Ase::PollFD</class>
+    <class kind="class">Ase::EventLoop</class>
+    <class kind="class">Ase::MainLoop</class>
+    <class kind="class">Ase::EventSource</class>
+    <class kind="class">Ase::DispatcherSource</class>
+    <class kind="class">Ase::USignalSource</class>
+    <class kind="class">Ase::TimedSource</class>
     <class kind="class">Ase::PollFDSource</class>
-    <class kind="struct">Ase::ProbeFeatures</class>
+    <class kind="union">Ase::FloatIEEE754</class>
+    <class kind="class">Ase::FastMemArray</class>
+    <class kind="class">Ase::CString</class>
+    <class kind="struct">Ase::MidiEvent</class>
+    <class kind="class">Ase::MidiEventStream</class>
+    <class kind="class">Ase::MidiEventRange</class>
+    <class kind="struct">Ase::MidiNote</class>
+    <class kind="class">Ase::EmittableImpl</class>
+    <class kind="class">Ase::ObjectImpl</class>
+    <class kind="class">Ase::AsyncBlockingQueue</class>
+    <class kind="struct">Ase::TaskStatus</class>
+    <class kind="class">Ase::TaskRegistry</class>
+    <class kind="struct">Ase::AudioProcessorInfo</class>
+    <class kind="struct">Ase::ParamInfo</class>
+    <class kind="struct">Ase::BusInfo</class>
+    <class kind="class">Ase::AudioProcessor</class>
     <class kind="class">Ase::ProcessorManager</class>
-    <class kind="class">Ase::Project</class>
-    <class kind="class">Ase::Property</class>
-    <class kind="class">Ase::Re</class>
-    <class kind="class">Ase::Resampler2</class>
-    <class kind="struct">Ase::Resource</class>
-    <class kind="class">Ase::ResourceCrawler</class>
-    <class kind="class">Ase::Serializable</class>
-    <class kind="class">Ase::Server</class>
+    <class kind="struct">Ase::GroupId</class>
+    <class kind="struct">Ase::AlignedPOD</class>
+    <class kind="class">Ase::Mwc256</class>
     <class kind="struct">Ase::SHA3_224</class>
     <class kind="struct">Ase::SHA3_256</class>
     <class kind="struct">Ase::SHA3_384</class>
     <class kind="struct">Ase::SHA3_512</class>
     <class kind="struct">Ase::SHAKE128</class>
     <class kind="struct">Ase::SHAKE256</class>
-    <class kind="class">Ase::SharedBase</class>
-    <class kind="class">Ase::SortedVector</class>
-    <class kind="class">Ase::Strings</class>
-    <class kind="class">Ase::TaskRegistry</class>
-    <class kind="struct">Ase::TaskStatus</class>
-    <class kind="struct">Ase::TelemetryField</class>
-    <class kind="struct">Ase::TelemetrySegment</class>
-    <class kind="struct">Ase::TickSignature</class>
-    <class kind="class">Ase::TimedSource</class>
-    <class kind="class">Ase::Track</class>
-    <class kind="class">Ase::TrackImpl</class>
-    <class kind="struct">Ase::UserNote</class>
-    <class kind="class">Ase::USignalSource</class>
-    <class kind="struct">Ase::Value</class>
-    <class kind="struct">Ase::VirtualBase</class>
+    <class kind="class">Ase::AutoSeeder</class>
+    <class kind="class">Ase::KeccakRng</class>
+    <class kind="class">Ase::KeccakCryptoRng</class>
+    <class kind="class">Ase::KeccakGoodRng</class>
+    <class kind="class">Ase::KeccakFastRng</class>
+    <class kind="class">Ase::Pcg32Rng</class>
+    <class kind="class">Ase::Re</class>
+    <class kind="class">Ase::Resampler2</class>
+    <class kind="class">Ase::WritNode</class>
     <class kind="class">Ase::Writ</class>
     <class kind="struct">Ase::WritConverter</class>
-    <class kind="class">Ase::WritNode</class>
+    <class kind="struct">Ase::Has_serialize_f</class>
+    <class kind="struct">Ase::Logscale</class>
+    <class kind="class">Ase::SortedVector</class>
+    <class kind="class">Ase::Strings</class>
+    <class kind="class">Ase::TrackImpl</class>
+    <class kind="struct">Ase::TickSignature</class>
+    <class kind="struct">Ase::AudioTransport</class>
+    <class kind="class">Ase::EventFd</class>
+    <class kind="class">Ase::CustomDataKey</class>
+    <class kind="class">Ase::CustomDataContainer</class>
+    <class kind="struct">Ase::Value</class>
+    <class kind="struct">Ase::EnumInfo</class>
+    <class kind="struct">Ase::Event</class>
+    <class kind="class">Ase::JsTrigger</class>
     <member kind="typedef">
       <type>boost::atomic&lt; T &gt;</type>
       <name>Atomic</name>
@@ -12311,8 +12409,8 @@
   <compound kind="namespace">
     <name>Ase::FastMemory</name>
     <filename>namespace_ase_1_1_fast_memory.html</filename>
-    <class kind="struct">Ase::FastMemory::Arena</class>
     <class kind="struct">Ase::FastMemory::Block</class>
+    <class kind="struct">Ase::FastMemory::Arena</class>
     <class kind="struct">Ase::FastMemory::HugePage</class>
     <member kind="variable">
       <type>constexpr size_t</type>
@@ -12325,10 +12423,10 @@
   <compound kind="namespace">
     <name>Ase::Lib</name>
     <filename>namespace_ase_1_1_lib.html</filename>
-    <class kind="class">Ase::Lib::KeccakF1600</class>
     <class kind="class">Ase::Lib::ScopedLocale</class>
     <class kind="class">Ase::Lib::ScopedPosixLocale</class>
     <class kind="class">Ase::Lib::StringFormatter</class>
+    <class kind="class">Ase::Lib::KeccakF1600</class>
   </compound>
   <compound kind="namespace">
     <name>Ase::Loft</name>
@@ -12755,26 +12853,27 @@
   <compound kind="page">
     <name>md_NEWS</name>
     <title>Anklang Release NEWS</title>
-    <filename>md__n_e_w_s</filename>
+    <filename>md__n_e_w_s.html</filename>
   </compound>
   <compound kind="page">
     <name>eventloops</name>
     <title>Event Loops and Event Sources</title>
-    <filename>eventloops</filename>
+    <filename>eventloops.html</filename>
   </compound>
   <compound kind="page">
-    <name>md_ui_ch-scripting</name>
+    <name>md_ui_ch_scripting</name>
     <title>Anklang Scripting</title>
-    <filename>md_ui_ch-scripting</filename>
+    <filename>md_ui_ch_scripting.html</filename>
   </compound>
   <compound kind="page">
-    <name>md_ui_b_ch-vue</name>
+    <name>md_ui_b_ch_vue</name>
     <title>Vue Component Reference</title>
-    <filename>md_ui_b_ch-vue</filename>
+    <filename>md_ui_b_ch_vue.html</filename>
   </compound>
   <compound kind="page">
     <name>index</name>
-    <title>Anklang v0.1.0.dev1056+gae874be</title>
-    <filename>index</filename>
+    <title>Anklang a7b0307dc4f94065e1a892038bd6b68c64f27110</title>
+    <filename>index.html</filename>
+    <docanchor file="index.html">md_home</docanchor>
   </compound>
 </tagfile>
