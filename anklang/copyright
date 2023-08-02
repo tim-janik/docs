@@ -1327,7 +1327,7 @@ Copyright: Copyright (C) 2022 Tim Janik
 License: MPL-2.0
 
 Files: x11test/ereplay.cjs
-Copyright: Copyright (C) 2022 Tim Janik
+Copyright: Copyright (C) 2022-2023 Tim Janik
 License: MPL-2.0
 
 Files: x11test/play-notes.json
@@ -1335,7 +1335,7 @@ Copyright: Copyright (C) 2022-2023 Tim Janik
 License: MPL-2.0
 
 Files: x11test/replay.sh
-Copyright: Copyright (C) 2022 Tim Janik
+Copyright: Copyright (C) 2022-2023 Tim Janik
 License: MPL-2.0
 
 Files: x11test/x11rec.sh
