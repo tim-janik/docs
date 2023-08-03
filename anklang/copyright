@@ -1178,10 +1178,8 @@ Files: ui/b/textinput.js
 Copyright: Copyright (C) 2022-2023 Tim Janik
 License: MPL-2.0
 
-Files: ui/b/toggle.vue
-Copyright:
-  Copyright (C) 2023 Tim Janik
-  Copyright (C) 2020-2021 Tim Janik
+Files: ui/b/toggle.js
+Copyright: Copyright (C) 2023 Tim Janik
 License: MPL-2.0
 
 Files: ui/b/tracklist.js

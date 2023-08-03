@@ -3476,6 +3476,11 @@
     <filename>textinput_8js.html</filename>
   </compound>
   <compound kind="file">
+    <name>toggle.js</name>
+    <path>/anklang/poxy/ui/b/</path>
+    <filename>toggle_8js.html</filename>
+  </compound>
+  <compound kind="file">
     <name>colors.js</name>
     <path>/anklang/poxy/ui/</path>
     <filename>colors_8js.html</filename>
@@ -12872,7 +12877,7 @@
   </compound>
   <compound kind="page">
     <name>index</name>
-    <title>Anklang 8712b436827eb16110d46f4a5bf491417e7bc914</title>
+    <title>Anklang 0eba7decc8822e25144ce250a77bd81ba461bdde</title>
     <filename>index.html</filename>
     <docanchor file="index.html">md_home</docanchor>
   </compound>
