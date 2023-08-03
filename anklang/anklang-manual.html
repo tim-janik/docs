@@ -110,10 +110,11 @@
 </ul></li>
 <li><a href="#anklang-scripting"><span class="toc-section-number">5</span> Anklang Scripting</a>
 <ul>
-<li><a href="#reference-for-uihost.js"><span class="toc-section-number">5.1</span> Reference for ui/host.js</a>
+<li><a href="#reference-for-uihost.js"><span class="toc-section-number">5.1</span> Reference for ui/host.js</a></li>
+<li><a href="#workerclip"><span class="toc-section-number">5.2</span> <span id="WorkerClip" data-4search="ui/host.js:WorkerClip;section">WorkerClip</span></a></li>
+<li><a href="#workerhost"><span class="toc-section-number">5.3</span> <span id="WorkerHost" data-4search="ui/host.js:WorkerHost;section">WorkerHost</span></a>
 <ul>
-<li><a href="#workerclip-class"><span class="toc-section-number">5.1.1</span> WorkerClip class</a></li>
-<li><a href="#workerhost-class"><span class="toc-section-number">5.1.2</span> WorkerHost class</a></li>
+<li><a href="#workerhost-class"><span class="toc-section-number">5.3.1</span> WorkerHost class</a></li>
 </ul></li>
 </ul></li>
 </ul>
@@ -245,36 +246,36 @@ Manual about usage, installation, and scripting of the Anklang digital synthesiz
 <p>Scripts can extend editing functionality or implement new controllers. The exact functions provided by a script are registered at script startup time.</p>
 <section id="reference-for-uihost.js" class="level2" data-number="5.1">
 <h2 data-number="5.1"><span class="header-section-number">5.1</span> Reference for ui/host.js</h2>
-<section id="workerclip-class" class="level3" data-number="5.1.1">
-<h3 data-number="5.1.1"><span class="header-section-number">5.1.1</span> WorkerClip class</h3>
-<dl>
-<dt><em>class</em> <strong>WorkerClip</strong><a id="WorkerClip" data-4search="ui/host.js:WorkerClip;class"></a></dt>
-<dd>Ase::Clip proxy
-</dd>
-</dl>
 </section>
-<section id="workerhost-class" class="level3" data-number="5.1.2">
-<h3 data-number="5.1.2"><span class="header-section-number">5.1.2</span> WorkerHost class</h3>
+<section id="workerclip" class="level2" data-number="5.2">
+<h2 data-number="5.2"><span class="header-section-number">5.2</span> <span id="WorkerClip" data-4search="ui/host.js:WorkerClip;section">WorkerClip</span></h2>
+<p>Ase::Clip proxy</p>
+</section>
+<section id="workerhost" class="level2" data-number="5.3">
+<h2 data-number="5.3"><span class="header-section-number">5.3</span> <span id="WorkerHost" data-4search="ui/host.js:WorkerHost;section">WorkerHost</span></h2>
+<p>Global <code>host</code> instance for scripts.</p>
+<section id="workerhost-class" class="level3" data-number="5.3.1">
+<h3 data-number="5.3.1"><span class="header-section-number">5.3.1</span> WorkerHost class</h3>
 <dl>
-<dt><em>class</em> <strong>WorkerHost</strong><a id="WorkerHost" data-4search="ui/host.js:WorkerHost;class"></a></dt>
-<dd><p>Global <code>host</code> instance for scripts.</p>
+<dt><em>class</em> <span id="WorkerHost" data-4search="ui/host.js:WorkerHost;class"><strong>WorkerHost</strong></span></dt>
+<dd><p>…</p>
 <dl>
-<dt><a id="piano_roll_clip" data-4search="ui/host.js:piano_roll_clip;func"></a> <strong><code>piano_roll_clip</code></strong><code>()</code></dt>
+<dt><span id="piano_roll_clip" data-4search="ui/host.js:piano_roll_clip;func"><strong><code>piano_roll_clip</code></strong></span> <code>()</code></dt>
 <dd>Create handle for the currently selected clip.
 </dd>
-<dt><a id="script_name" data-4search="ui/host.js:script_name;func"></a> <strong><code>script_name</code></strong><code>()</code></dt>
+<dt><span id="script_name" data-4search="ui/host.js:script_name;func"><strong><code>script_name</code></strong></span> <code>()</code></dt>
 <dd>Retrieve the file name of the current user script.
 </dd>
-<dt><a id="script_uuid" data-4search="ui/host.js:script_uuid;func"></a> <strong><code>script_uuid</code></strong><code>()</code></dt>
+<dt><span id="script_uuid" data-4search="ui/host.js:script_uuid;func"><strong><code>script_uuid</code></strong></span> <code>()</code></dt>
 <dd>Retrieve the UUID set via <a href="#use_api">use_api</a>().
 </dd>
-<dt><a id="api_level" data-4search="ui/host.js:api_level;func"></a> <strong><code>api_level</code></strong><code>()</code></dt>
+<dt><span id="api_level" data-4search="ui/host.js:api_level;func"><strong><code>api_level</code></strong></span> <code>()</code></dt>
 <dd>Retrieve numeric API level supported by this runtime.
 </dd>
-<dt><a id="use_api" data-4search="ui/host.js:use_api;func"></a> <strong><code>use_api</code></strong> <code>(</code><em>api_level, script_uuid</em><code>)</code></dt>
+<dt><span id="use_api" data-4search="ui/host.js:use_api;func"><strong><code>use_api</code></strong></span> <code>(</code><em>api_level, script_uuid</em><code>)</code></dt>
 <dd>Request use of API level <code>api_level</code> and provide UUID for controllers.
 </dd>
-<dt><a id="register" data-4search="ui/host.js:register;func"></a> <strong><code>register</code></strong> <code>(</code><em>category, label, fun, blurb, params</em><code>)</code></dt>
+<dt><span id="register" data-4search="ui/host.js:register;func"><strong><code>register</code></strong></span> <code>(</code><em>category, label, fun, blurb, params</em><code>)</code></dt>
 <dd>Register a script function.
 </dd>
 </dl>

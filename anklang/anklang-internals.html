@@ -90,22 +90,29 @@
 <ul>
 <li><a href="#anklang-development-details"><span class="toc-section-number">1</span> ANKLANG Development Details</a>
 <ul>
-<li><a href="#jsonipc"><span class="toc-section-number">1.1</span> Jsonipc</a>
+<li><a href="#ase---anklang-synthesis-engine"><span class="toc-section-number">1.1</span> ASE - Anklang synthesis engine</a>
 <ul>
-<li><a href="#callback-handling"><span class="toc-section-number">1.1.1</span> Callback Handling</a></li>
+<li><a href="#serialization"><span class="toc-section-number">1.1.1</span> Serialization</a></li>
 </ul></li>
-<li><a href="#serialization"><span class="toc-section-number">1.2</span> Serialization</a></li>
+<li><a href="#jsonipc"><span class="toc-section-number">1.2</span> Jsonipc</a>
+<ul>
+<li><a href="#callback-handling"><span class="toc-section-number">1.2.1</span> Callback Handling</a></li>
+</ul></li>
 <li><a href="#ase-class-inheritance-tree"><span class="toc-section-number">1.3</span> Ase Class Inheritance Tree</a></li>
 </ul></li>
-<li><a href="#releasing"><span class="toc-section-number">2</span> Releasing</a>
+<li><a href="#web-component-implementations"><span class="toc-section-number">2</span> Web Component Implementations</a>
 <ul>
-<li><a href="#versioning"><span class="toc-section-number">2.1</span> Versioning</a></li>
-<li><a href="#release-assets"><span class="toc-section-number">2.2</span> Release Assets</a></li>
+<li><a href="#legacy-vue-components"><span class="toc-section-number">2.1</span> Legacy Vue Components</a></li>
 </ul></li>
-<li><a href="#appendix"><span class="toc-section-number">3</span> Appendix</a>
+<li><a href="#releasing"><span class="toc-section-number">3</span> Releasing</a>
 <ul>
-<li><a href="#one-dimensional-cubic-interpolation"><span class="toc-section-number">3.1</span> One-dimensional Cubic Interpolation</a></li>
-<li><a href="#modifier-keys"><span class="toc-section-number">3.2</span> Modifier Keys</a></li>
+<li><a href="#versioning"><span class="toc-section-number">3.1</span> Versioning</a></li>
+<li><a href="#release-assets"><span class="toc-section-number">3.2</span> Release Assets</a></li>
+</ul></li>
+<li><a href="#appendix"><span class="toc-section-number">4</span> Appendix</a>
+<ul>
+<li><a href="#one-dimensional-cubic-interpolation"><span class="toc-section-number">4.1</span> One-dimensional Cubic Interpolation</a></li>
+<li><a href="#modifier-keys"><span class="toc-section-number">4.2</span> Modifier Keys</a></li>
 </ul></li>
 </ul>
 </nav>
@@ -113,9 +120,31 @@
 API documentation and development internals of the Anklang project.</p>
 <section id="anklang-development-details" class="level1" data-number="1">
 <h1 data-number="1"><span class="header-section-number">1</span> ANKLANG Development Details</h1>
-<p>Technically, Anklang consists of a user interface front-end based on web technologies (HTML, SCSS, JS, Vue) and a synthesis engine backend written in C++. The synthesis engine can load various audio rendering plugins which are executed in audio rendering worker threads. The main synthesis engine thread coordinates synchronization and interafces between the engine and the UI via an IPC interface over a web-socket that uses remote method calls and event delivery marshalled as JSON messages.</p>
-<section id="jsonipc" class="level2" data-number="1.1">
-<h2 data-number="1.1"><span class="header-section-number">1.1</span> Jsonipc</h2>
+<p>Technically, Anklang consists of a user interface front-end based on web technologies (HTML, DOM, CSS, JavaScript, Lit) and a synthesis engine backend written in C++.</p>
+<section id="ase---anklang-synthesis-engine" class="level2" data-number="1.1">
+<h2 data-number="1.1"><span class="header-section-number">1.1</span> ASE - Anklang synthesis engine</h2>
+<p>The <code>ase/</code> subdirectory contains the C++ implementation of the <code>AnklangSynthEngine</code> executable which contains the core component for audio data processing and audio plugin handling. It interfaces with the HTML DOM based user interface via an IPC layer with JSON messages that reflect the C++ API.</p>
+<p>The synthesis engine can load various audio rendering plugins which are executed in audio rendering worker threads. The main synthesis engine thread coordinates synchronization and interafces between the engine and the UI via an IPC interface over a web-socket that uses remote method calls and event delivery marshalled as JSON messages.</p>
+<section id="serialization" class="level3" data-number="1.1.1">
+<h3 data-number="1.1.1"><span class="header-section-number">1.1.1</span> Serialization</h3>
+<p>Building on <a href="#jsonipc">Jsonipc</a>, a small serializaiton framework provided by <a href="https://github.com/tim-janik/anklang/blob/master/ase/serialize.hh">ase/serialize.hh</a> is used to marshal values, structs, enums and classes to/from JSON. This is used to store preferences and project data. The intended usage is as follows:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode cxx"><code class="sourceCode cpp"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true"></a>  <span class="bu">std::</span>string jsontext = Ase::json_stringify (somevalue);</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true"></a>  <span class="dt">bool</span> success = Ase::json_parse (jsontext, somevalue);</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true"></a>  <span class="co">// The JSON root will be of type &#39;object&#39; if somevalue is a class instance</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true"></a>  <span class="bu">std::</span>string s;                                          <span class="co">// s contains:</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true"></a>  s = json_stringify (<span class="kw">true</span>);                              <span class="co">// true</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true"></a>  s = json_stringify (-<span class="fl">0.17</span>);                             <span class="co">// -0.17</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true"></a>  s = json_stringify (<span class="dv">32768</span>);                             <span class="co">// 32768</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true"></a>  s = json_stringify (Ase::Error::IO);                    <span class="co">// &quot;Ase.Error.IO&quot;</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true"></a>  s = json_stringify (String (<span class="st">&quot;STRing&quot;</span>));                 <span class="co">// &quot;STRing&quot;</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true"></a>  s = json_stringify (ValueS ({ <span class="kw">true</span>, <span class="dv">5</span>, <span class="st">&quot;HI&quot;</span> }));        <span class="co">// [true,5,&quot;HI&quot;]</span></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true"></a>  s = json_stringify (ValueR ({ {<span class="st">&quot;a&quot;</span>, <span class="dv">1</span>}, {<span class="st">&quot;b&quot;</span>, <span class="st">&quot;B&quot;</span>} })); <span class="co">// {&quot;a&quot;:1,&quot;b&quot;:&quot;B&quot;}</span></span></code></pre></div>
+<p>In the above examples, <code>Ase::Error::IO</code> can be serialized because it is registered as <code>Jsonipc::Enum&lt;Ase::Error&gt;</code> with its enum values. The same works for serializable classes registered through <code>Jsonipc::Serializable&lt;SomeClass&gt;</code>.</p>
+<p>[_] Serialization of class instances will have to depend on the Scope/InstanceMap, so instance pointers in copyable classes registered as <code>Jsonipc::Serializable&lt;&gt;</code> can be marshalled into a JsonValue (as <code>{$id,$class}</code> pair), then be resolved into an InstanceP stored in an Ase::Value and from there be marshalled into a persistent relative object link for project data storage.</p>
+</section>
+</section>
+<section id="jsonipc" class="level2" data-number="1.2">
+<h2 data-number="1.2"><span class="header-section-number">1.2</span> Jsonipc</h2>
 <p>Jsonipc is a header-only IPC layer that marshals C++ calls to JSON messages defined in <a href="https://github.com/tim-janik/anklang/blob/master/jsonipc/jsonipc.hh">jsonipc/jsonipc.hh</a>. The needed registration code is very straight forward to write manually, but can also be auto-genrated by using <a href="https://github.com/tim-janik/anklang/blob/master/jsonipc/cxxjip.py">jsonipc/cxxjip.py</a> which parses the exported API using <a href="https://github.com/CastXML/CastXML">CastXML</a>.</p>
 <p>The Anklang API for remote method calls is defined in <a href="https://github.com/tim-janik/anklang/blob/master/ase/api.hh">api.hh</a>. Each class with its methods, struct with its fields and enum with its values is registered as a Jsonipc interface using conscise C++ code that utilizes templates to derive the needed type information.</p>
 <p>The corresponding Javascript code to use <code>api.hh</code> via <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/async_function">async</a> remote method calls is generated via <code>Jsonipc::ClassPrinter::to_string()</code> by <code>AnklangSynthEngine --js-api</code>.</p>
@@ -130,31 +159,14 @@ API documentation and development internals of the Anklang project.</p>
 <li>[√] Need virtual ID serialization API on InstanceMap.</li>
 <li>[√] Add <code>jsonvalue_as_string()</code> for debugging purposes.</li>
 </ul>
-<section id="callback-handling" class="level3" data-number="1.1.1">
-<h3 data-number="1.1.1"><span class="header-section-number">1.1.1</span> Callback Handling</h3>
+<section id="callback-handling" class="level3" data-number="1.2.1">
+<h3 data-number="1.2.1"><span class="header-section-number">1.2.1</span> Callback Handling</h3>
 <p>Javascript can register/unregister remote Callbacks with <em>create</em> and <em>remove</em>. C++ sends events to inform about a remote Callback being <em>called</em> or unregistered <em>killed</em>.</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode cxx"><code class="sourceCode cpp"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true"></a><span class="dt">void</span>    Jsonapi/Trigger/create (id);     <span class="co">// JS-&gt;C++</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true"></a><span class="dt">void</span>    Jsonapi/Trigger/remove (id);     <span class="co">// JS-&gt;C++</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true"></a><span class="dt">void</span>    Jsonapi/Trigger/_&lt;id&gt;  ([...]);  <span class="co">// C++-&gt;JS</span></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true"></a><span class="dt">void</span>    Jsonapi/Trigger/killed (id);     <span class="co">// C++-&gt;JS</span></span></code></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode cxx"><code class="sourceCode cpp"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true"></a><span class="dt">void</span>    Jsonapi/Trigger/create (id);     <span class="co">// JS-&gt;C++</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true"></a><span class="dt">void</span>    Jsonapi/Trigger/remove (id);     <span class="co">// JS-&gt;C++</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true"></a><span class="dt">void</span>    Jsonapi/Trigger/_&lt;id&gt;  ([...]);  <span class="co">// C++-&gt;JS</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true"></a><span class="dt">void</span>    Jsonapi/Trigger/killed (id);     <span class="co">// C++-&gt;JS</span></span></code></pre></div>
 </section>
-</section>
-<section id="serialization" class="level2" data-number="1.2">
-<h2 data-number="1.2"><span class="header-section-number">1.2</span> Serialization</h2>
-<p>Building on <a href="#jsonipc">Jsonipc</a>, a small serializaiton framework provided by <a href="https://github.com/tim-janik/anklang/blob/master/ase/serialize.hh">ase/serialize.hh</a> is used to marshal values, structs, enums and classes to/from JSON. This is used to store preferences and project data. The intended usage is as follows:</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode cxx"><code class="sourceCode cpp"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true"></a>  <span class="bu">std::</span>string jsontext = Ase::json_stringify (somevalue);</span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true"></a>  <span class="dt">bool</span> success = Ase::json_parse (jsontext, somevalue);</span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true"></a>  <span class="co">// The JSON root will be of type &#39;object&#39; if somevalue is a class instance</span></span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true"></a>  <span class="bu">std::</span>string s;                                          <span class="co">// s contains:</span></span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true"></a>  s = json_stringify (<span class="kw">true</span>);                              <span class="co">// true</span></span>
-<span id="cb2-6"><a href="#cb2-6" aria-hidden="true"></a>  s = json_stringify (-<span class="fl">0.17</span>);                             <span class="co">// -0.17</span></span>
-<span id="cb2-7"><a href="#cb2-7" aria-hidden="true"></a>  s = json_stringify (<span class="dv">32768</span>);                             <span class="co">// 32768</span></span>
-<span id="cb2-8"><a href="#cb2-8" aria-hidden="true"></a>  s = json_stringify (Ase::Error::IO);                    <span class="co">// &quot;Ase.Error.IO&quot;</span></span>
-<span id="cb2-9"><a href="#cb2-9" aria-hidden="true"></a>  s = json_stringify (String (<span class="st">&quot;STRing&quot;</span>));                 <span class="co">// &quot;STRing&quot;</span></span>
-<span id="cb2-10"><a href="#cb2-10" aria-hidden="true"></a>  s = json_stringify (ValueS ({ <span class="kw">true</span>, <span class="dv">5</span>, <span class="st">&quot;HI&quot;</span> }));        <span class="co">// [true,5,&quot;HI&quot;]</span></span>
-<span id="cb2-11"><a href="#cb2-11" aria-hidden="true"></a>  s = json_stringify (ValueR ({ {<span class="st">&quot;a&quot;</span>, <span class="dv">1</span>}, {<span class="st">&quot;b&quot;</span>, <span class="st">&quot;B&quot;</span>} })); <span class="co">// {&quot;a&quot;:1,&quot;b&quot;:&quot;B&quot;}</span></span></code></pre></div>
-<p>In the above examples, <code>Ase::Error::IO</code> can be serialized because it is registered as <code>Jsonipc::Enum&lt;Ase::Error&gt;</code> with its enum values. The same works for serializable classes registered through <code>Jsonipc::Serializable&lt;SomeClass&gt;</code>.</p>
-<p>[_] Serialization of class instances will have to depend on the Scope/InstanceMap, so instance pointers in copyable classes registered as <code>Jsonipc::Serializable&lt;&gt;</code> can be marshalled into a JsonValue (as <code>{$id,$class}</code> pair), then be resolved into an InstanceP stored in an Ase::Value and from there be marshalled into an persistent relative object link for project data storage.</p>
 </section>
 <section id="ase-class-inheritance-tree" class="level2" data-number="1.3">
 <h2 data-number="1.3"><span class="header-section-number">1.3</span> Ase Class Inheritance Tree</h2>
@@ -205,11 +217,43 @@ API documentation and development internals of the Anklang project.</p>
             +Ase::FileCrawler</code></pre>
 </section>
 </section>
-<section id="releasing" class="level1" data-number="2">
-<h1 data-number="2"><span class="header-section-number">2</span> Releasing</h1>
+<section id="web-component-implementations" class="level1" data-number="2">
+<h1 data-number="2"><span class="header-section-number">2</span> Web Component Implementations</h1>
+<p>The user interface components used in Anklang are implemented as <a href="https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_custom_elements">custom HTML elements</a> and are generally composed of a single file that provides:</p>
+<ol type="a">
+<li>A brief documentation block;</li>
+<li>CSS style information, that is extracted at build time via <a href="https://tim-janik.github.io/docs/anklang/jsextract_8js.html">JsExtract</a>;</li>
+<li>An HTML layout specified with <a href="https://lit.dev/docs/templates/expressions/">lit-html expressions</a>;</li>
+<li>An assorted JavaScript class that defines a new custom HTML element, possibly via <a href="https://lit.dev/docs/">Lit</a>.</li>
+</ol>
+<p>Simple components that have no or at most one child element and do not require complex HTML layouts with lit-html can be implemented directly via <a href="https://developer.mozilla.org/en-US/docs/Web/API/CustomElementRegistry/define">customElements.define()</a>.</p>
+<p>Components with complex layouts that need lit-html or that act as containers with several <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/slot">HTMLSlotElement</a>s (for multiple types of children) which require a <a href="https://developer.mozilla.org/en-US/docs/Web/API/ShadowRoot">ShadowRoot</a>, should be implemented as LitElements by extending <a href="https://tim-janik.github.io/docs/anklang/little_8js.html#LitComponent">LitComponent</a> (our convenience wrapper around <a href="https://lit.dev/docs/api/LitElement/">LitElement</a>.</p>
+<p>Note that <a href="https://lit.dev/docs/components/defining/#a-lit-component-is-an-html-element">a Lit component is an HTML element</a>, it extends <a href="https://lit.dev/docs/api/ReactiveElement/">ReactiveElement</a> which always extends <a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement">HTMLElement</a> and none of the other <a href="https://developer.mozilla.org/en-US/docs/Web/API/HTML_DOM_API#html_element_interfaces_2">HTML element interfaces</a>.</p>
+<section id="legacy-vue-components" class="level2" data-number="2.1">
+<h2 data-number="2.1"><span class="header-section-number">2.1</span> Legacy Vue Components</h2>
+<p>Some components are still implemented via Vue and are slowly phased out. We often use <code>&lt;canvas&gt;</code> elements for Anklang specific displays, and Vue canvas handling comes with certain caveats:</p>
+<ol type="1">
+<li>Use of the <code>Util.vue_mixins.dom_updates</code> mixin (now default) allows to trigger the <code>dom_update()</code> component method for <code>$forceUpdate()</code> invocations and related events.</li>
+<li>A <code>methods: { dom_update() {}, }</code> component entry should be provided that triggers the actual canvas rendering logic.</li>
+<li>Using a <code>document.fonts.ready</code> promise, Anklang re-renders all Vue components via <code>$forceUpdate()</code> once all webfonts have been loaded, <code>&lt;canvas&gt;</code> elements containing text usually need to re-render themselves in this case.</li>
+</ol>
+<p><strong>Envue components:</strong></p>
+<p>Envue components are created to simplify some of the oddities of dealing with Vue-3 components. The function <code>Envue.Component.vue_export</code> creates a Vue component definition, so that the Vue component instance (<code>$vm</code>) is tied to an <code>Envue.Component</code> instance (<code>$object</code>). Notes:</p>
+<ul>
+<li>The Vue lifetime component can be accessed as <code>$object.$vm</code>.</li>
+<li>The Envue component can be accessed as <code>$vm.$object</code>.</li>
+<li>Accesses to <code>$vm.*</code> fields e.g. from within a <code>&lt;template/&gt;</code> definition are forwarded to access <code>$object.*</code> fields.</li>
+<li>Vue3 components are Proxy objects, <em>but</em> assignments to these Proxy objects is <em>not</em> reactive.</li>
+<li>To construct reactive instance data with async functions, use <code>observable_from_getters()</code>.</li>
+</ul>
+<p>Vue uses a template compiler to construct a <a href="https://v3.vuejs.org/guide/render-function.html#complete-example">render()</a> function from <a href="https://v3.vuejs.org/guide/template-syntax.html#raw-html">HTML</a> <code>&lt;template/&gt;</code> strings. The <a href="https://v3.vuejs.org/guide/template-syntax.html#javascript-expressions">Javascript expressions</a> in templates are sandboxed and limited in scope, but may refer to Vue component properties that are exposed through <code>hasOwnProperty()</code>. In order to support Envue instance methods and fields in template expressions, all members present after Envue construction are forwarded into the Vue component.</p>
+</section>
+</section>
+<section id="releasing" class="level1" data-number="3">
+<h1 data-number="3"><span class="header-section-number">3</span> Releasing</h1>
 <p>Releases of the Anklang project are hosted on GitHub under <a href="https://github.com/tim-janik/anklang/releases/">Anklang Releases</a>. A release encompasses a distribution tarball that has the release version number baked into the misc/version.sh script.</p>
-<section id="versioning" class="level2" data-number="2.1">
-<h2 data-number="2.1"><span class="header-section-number">2.1</span> Versioning</h2>
+<section id="versioning" class="level2" data-number="3.1">
+<h2 data-number="3.1"><span class="header-section-number">3.1</span> Versioning</h2>
 <p>The Anklang project uses <strong><code>MAJOR.MINOR.MICRO[.DEVEL][-SUFFIX]</code></strong> version numbers with the folloing uses:</p>
 <ul>
 <li><strong><code>MAJOR</code></strong> - The major number is currently 0, so all bets are off. It is planned to signify major changes to users.</li>
@@ -220,16 +264,16 @@ API documentation and development internals of the Anklang project.</p>
 </ul>
 <p>Git tags are used to store release versions, development versions are derived from those tags similar to how <code>git describe</code> works. The current version can always be obtained by invoking <code>misc/version.sh</code>.</p>
 </section>
-<section id="release-assets" class="level2" data-number="2.2">
-<h2 data-number="2.2"><span class="header-section-number">2.2</span> Release Assets</h2>
+<section id="release-assets" class="level2" data-number="3.2">
+<h2 data-number="3.2"><span class="header-section-number">3.2</span> Release Assets</h2>
 <p>The script <code>misc/mkassets.sh</code> can be used to create and clean up a release build directory and it triggers the necessary rules to create a distribution tarball and to build the release assets. All assets are built from the distribution tarball without any Git dependency. Producing a distribution tarball depends on Git however.</p>
 </section>
 </section>
-<section id="appendix" class="level1" data-number="3">
-<h1 data-number="3"><span class="header-section-number">3</span> Appendix</h1>
+<section id="appendix" class="level1" data-number="4">
+<h1 data-number="4"><span class="header-section-number">4</span> Appendix</h1>
 <p> </p>
-<section id="one-dimensional-cubic-interpolation" class="level2" data-number="3.1">
-<h2 data-number="3.1"><span class="header-section-number">3.1</span> One-dimensional Cubic Interpolation</h2>
+<section id="one-dimensional-cubic-interpolation" class="level2" data-number="4.1">
+<h2 data-number="4.1"><span class="header-section-number">4.1</span> One-dimensional Cubic Interpolation</h2>
 <p>With four sample values <span class="math inline">\(V_{0}\)</span>, <span class="math inline">\(V_{1}\)</span>, <span class="math inline">\(V_{2}\)</span> and <span class="math inline">\(V_{3}\)</span>, cubic interpolation approximates the curve segment connecting <span class="math inline">\(V_{1}\)</span> and <span class="math inline">\(V_{2}\)</span>, by using the beginning and ending slope, the curvature and the rate of curvature change to construct a cubic polynomial.</p>
 <p>The cubic polynomial starts out as:</p>
 <ol class="example" type="1">
@@ -310,8 +354,8 @@ API documentation and development internals of the Anklang project.</p>
 \]</span></p>
 <p>We now need to setup <span class="math inline">\(W_{0,…,3}[0,…,n]\)</span> only once, and are then able to obtain up to <span class="math inline">\(n\)</span> approximation values of the curve segment between <span class="math inline">\(V_{1}\)</span> and <span class="math inline">\(V_{2}\)</span> with four multiplications and three additions using (15), given <span class="math inline">\(V_{0},…,V_{3}\)</span>.</p>
 </section>
-<section id="modifier-keys" class="level2" data-number="3.2">
-<h2 data-number="3.2"><span class="header-section-number">3.2</span> Modifier Keys</h2>
+<section id="modifier-keys" class="level2" data-number="4.2">
+<h2 data-number="4.2"><span class="header-section-number">4.2</span> Modifier Keys</h2>
 <p>There seems to be a lot of inconsistency in the behaviour of modifiers (shift and/or control) with regards to GUI operations like selections and drag and drop behaviour.</p>
 <p>According to the Gtk+ implementation, modifiers relate to DND operations according to the following list:</p>
 <table>

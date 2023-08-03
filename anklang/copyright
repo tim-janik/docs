@@ -701,7 +701,7 @@ Copyright: Copyright (C) 2021 Tim Janik
 License: MPL-2.0
 
 Files: doc/ch-development.md
-Copyright: Copyright (C) 2021-2022 Tim Janik
+Copyright: Copyright (C) 2021-2023 Tim Janik
 License: MPL-2.0
 
 Files: doc/ch-editing.md
@@ -1026,10 +1026,6 @@ Files: ui/b/buttonbar.js
 Copyright: Copyright (C) 2023 Tim Janik
 License: MPL-2.0
 
-Files: ui/b/ch-vue.md
-Copyright: Copyright (C) 2020-2021 Tim Janik
-License: MPL-2.0
-
 Files: ui/b/choiceinput.js
 Copyright: Copyright (C) 2023 Tim Janik
 License: MPL-2.0
@@ -1196,6 +1192,12 @@ License: MPL-2.0
 
 Files: ui/b/treeselector.vue
 Copyright: Copyright (C) 2020-2023 Tim Janik
+License: MPL-2.0
+
+Files: ui/ch-component.md
+Copyright:
+  Copyright (C) 2023 Tim Janik
+  Copyright (C) 2020-2021 Tim Janik
 License: MPL-2.0
 
 Files: ui/colors.js
