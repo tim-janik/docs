@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en"><head>
   <meta charset="utf-8"/>
-  <title>ase/cxxaux.hh file | Anklang 0.1.0.dev1129 Anklang Programming Reference</title>
+  <title>ase/cxxaux.hh file | Anklang 0.1.0.dev1137 Anklang Programming Reference</title>
   <link href="favicon.svg" rel="icon" type="image/svg+xml"/>
   <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
   <meta content="#cb4b16" name="theme-color"/>
@@ -9,9 +9,9 @@
   <link href="poxystyle.css" referrerpolicy="no-referrer" rel="stylesheet"/>
   <script src="poxy/poxy.js"></script>
   <script>initialize_theme("light");</script>
-  <meta content="Anklang 0.1.0.dev1129" name="twitter:title"/>
-  <meta content="Anklang 0.1.0.dev1129" property="og:title"/>
-  <meta content="Anklang 0.1.0.dev1129" itemprop="name"/>
+  <meta content="Anklang 0.1.0.dev1137" name="twitter:title"/>
+  <meta content="Anklang 0.1.0.dev1137" property="og:title"/>
+  <meta content="Anklang 0.1.0.dev1137" itemprop="name"/>
   <meta content="Tim Janik" name="author"/>
   <meta content="Tim Janik" property="article:author"/>
   <meta content="Anklang Programming Reference" name="description"/>
@@ -19,14 +19,14 @@
   <meta content="Anklang Programming Reference" property="og:description"/>
   <meta content="Anklang Programming Reference" itemprop="description"/>
   <meta content="telephone=no" name="format-detection"/>
-  <meta content="Poxy v0.13.3" name="generator"/>
+  <meta content="Poxy v0.13.7" name="generator"/>
   <meta content="strict-origin-when-cross-origin" name="referrer"/>
 </head>
 <body class="poxy-has-toc">
 <header><nav id="navigation">
   <div class="m-container">
     <div class="m-row">
-      <a class="m-col-t-8 m-col-m-none m-left-m" href="index.html" id="m-navbar-brand"><svg class="poxy-injected-svg" height="32" id="poxy-injected-svg-0" version="1.1" viewBox="0 0 64 64" width="32" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg"><metadata><rdf:rdf><cc:work><cc:license rdf:resource="MPL-2.0"></cc:license></cc:work></rdf:rdf></metadata><g><rect height="60" rx="1" ry="1" style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:4;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" width="60" x="2" y="2"></rect><g><path d="M 19.078125,2 V 2.5 H 14 V 40.972656 C 13.97726,42.63277 15.372472,44 17,44 h 2.023438 L 19,61.994141 22.921875,62 22.945312,44 H 25 c 1.627528,0 3.02274,-1.36723 3,-3.027344 V 2.5 H 23 V 2.0058594 Z" style="fill:#000000;fill-opacity:1"></path><path d="m 41.078399,1.9999594 v 0.5 H 36.000274 V 40.972615 c -0.02274,1.660114 1.372472,3.027344 3,3.027344 h 2.023438 L 41.000272,61.9941 44.922147,62 44.945587,44 h 2.054688 c 1.627528,0 3.02274,-1.36723 3,-3.027344 V 2.4999594 h -5 V 2.0058188 Z" style="fill:#000000;fill-opacity:1"></path></g><rect height="21" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:4;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" width="60" x="2" y="2"></rect><g><circle cx="11.5" cy="11" r="5.5" style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:4.00000095;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"></circle><circle cx="32" cy="11" r="5.5" style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:4.00000095;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"></circle><circle cx="52.5" cy="11" r="5.5" style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:4.00000095;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"></circle></g></g></svg>Anklang 0.1.0.dev1129 <span class="m-thin">Anklang Programming Reference</span></a>
+      <a class="m-col-t-8 m-col-m-none m-left-m" href="index.html" id="m-navbar-brand"><svg class="poxy-injected-svg" height="32" id="poxy-injected-svg-0" version="1.1" viewBox="0 0 64 64" width="32" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg"><metadata><rdf:rdf><cc:work><cc:license rdf:resource="MPL-2.0"></cc:license></cc:work></rdf:rdf></metadata><g><rect height="60" rx="1" ry="1" style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:4;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" width="60" x="2" y="2"></rect><g><path d="M 19.078125,2 V 2.5 H 14 V 40.972656 C 13.97726,42.63277 15.372472,44 17,44 h 2.023438 L 19,61.994141 22.921875,62 22.945312,44 H 25 c 1.627528,0 3.02274,-1.36723 3,-3.027344 V 2.5 H 23 V 2.0058594 Z" style="fill:#000000;fill-opacity:1"></path><path d="m 41.078399,1.9999594 v 0.5 H 36.000274 V 40.972615 c -0.02274,1.660114 1.372472,3.027344 3,3.027344 h 2.023438 L 41.000272,61.9941 44.922147,62 44.945587,44 h 2.054688 c 1.627528,0 3.02274,-1.36723 3,-3.027344 V 2.4999594 h -5 V 2.0058188 Z" style="fill:#000000;fill-opacity:1"></path></g><rect height="21" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:4;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" width="60" x="2" y="2"></rect><g><circle cx="11.5" cy="11" r="5.5" style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:4.00000095;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"></circle><circle cx="32" cy="11" r="5.5" style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:4.00000095;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"></circle><circle cx="52.5" cy="11" r="5.5" style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:4.00000095;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"></circle></g></g></svg>Anklang 0.1.0.dev1137 <span class="m-thin">Anklang Programming Reference</span></a>
       <div class="m-col-t-4 m-hide-m m-text-right m-nopadr">
         <a class="m-doc-search-icon" accesskey="f" href="#search" onclick="return showSearch()" title="Search"><svg style="height: 0.9rem;" viewBox="0 0 16 16">
           <path d="m6 0c-3.31 0-6 2.69-6 6 0 3.31 2.69 6 6 6 1.49 0 2.85-0.541 3.89-1.44-0.0164 0.338 0.147 0.759 0.5 1.15l3.22 3.79c0.552 0.614 1.45 0.665 2 0.115 0.55-0.55 0.499-1.45-0.115-2l-3.79-3.22c-0.392-0.353-0.812-0.515-1.15-0.5 0.895-1.05 1.44-2.41 1.44-3.89 0-3.31-2.69-6-6-6zm0 1.56a4.44 4.44 0 0 1 4.44 4.44 4.44 4.44 0 0 1-4.44 4.44 4.44 4.44 0 0 1-4.44-4.44 4.44 4.44 0 0 1 4.44-4.44z" id="m-doc-search-icon-path"></path>
@@ -92,7 +92,7 @@
             </dt>
             <dd>Common base type to allow casting between polymorphic classes.</dd>
             <dt>
-              <div class="m-doc-template">template&lt;<span class="m-doc-template-params"><span class="m-doc-template-param">class Class</span></span>&gt;</div>
+              <div class="m-doc-template">template &lt;<span class="m-doc-template-params"><span class="m-doc-template-param">class Class</span></span>&gt;</div>
               class <a class="m-doc" href="class_ase_1_1_persistent.html">Ase::Persistent</a>
             </dt>
             <dd></dd>
@@ -106,12 +106,12 @@
           <h2><a href="#typedef-members">Typedefs</a></h2>
           <dl class="m-doc">
             <dt>
-              <div class="m-doc-template">template&lt;<span class="m-doc-template-params"><span class="m-doc-template-param">bool value</span></span>&gt;</div>
+              <div class="m-doc-template">template &lt;<span class="m-doc-template-params"><span class="m-doc-template-param">bool value</span></span>&gt;</div>
               using <a class="m-doc" href="namespace_ase.html#a4e2ef1acd7d1f0a3ad4dff73ff1af815">REQUIRES</a> = typename ::<a class="m-doc-external poxy-cppreference poxy-external" href="http://en.cppreference.com/w/cpp/types/enable_if.html" target="_blank">std::<wbr/>enable_if</a>&lt;value, bool&gt;::type
             </dt>
             <dd>REQUIRES&lt;value&gt; - Simplified version of <a class="m-doc poxy-injected poxy-external poxy-cppreference" href="https://en.cppreference.com/w/cpp/types/enable_if" target="_blank">std::enable_if</a>&lt;cond,bool&gt;::type to use SFINAE in function templates.</dd>
             <dt>
-              <div class="m-doc-template">template&lt;<span class="m-doc-template-params"><span class="m-doc-template-param">bool value</span></span>&gt;</div>
+              <div class="m-doc-template">template &lt;<span class="m-doc-template-params"><span class="m-doc-template-param">bool value</span></span>&gt;</div>
               using <a class="m-doc" href="namespace_ase.html#a5bd6d9c354c4d20df6b323404b41abdb">REQUIRESv</a> = typename ::<a class="m-doc-external poxy-cppreference poxy-external" href="http://en.cppreference.com/w/cpp/types/enable_if.html" target="_blank">std::<wbr/>enable_if</a>&lt;value, void&gt;::type
             </dt>
             <dd>REQUIRESv&lt;value&gt; - Simplified version of <a class="m-doc poxy-injected poxy-external poxy-cppreference" href="https://en.cppreference.com/w/cpp/types/enable_if" target="_blank">std::enable_if</a>&lt;cond,void&gt;::type to use SFINAE in struct templates.</dd>
@@ -169,41 +169,41 @@
           <h2><a href="#func-members">Functions</a></h2>
           <dl class="m-doc">
             <dt>
-              <div class="m-doc-template">template&lt;<span class="m-doc-template-params"><span class="m-doc-template-param">typename T</span></span>&gt;</div>
+              <div class="m-doc-template">template &lt;<span class="m-doc-template-params"><span class="m-doc-template-param">typename T</span></span>&gt;</div>
               <span class="m-doc-wrap-bumper">static auto <a class="m-doc" href="namespace_ase.html#a003201f699774866c411d85bbe0c9863">divmod</a>(</span><span class="m-doc-wrap">T dividend,
               T divisor,
               T* reminderp) -&gt; T <span class="m-label m-flat m-primary">constexpr</span></span>
             </dt>
             <dd>Compute integers division and modulo with one X86 asm instruction.</dd>
             <dt>
-              <div class="m-doc-template">template&lt;<span class="m-doc-template-params"><span class="m-doc-template-param">typename UInt</span></span>&gt;</div>
+              <div class="m-doc-template">template &lt;<span class="m-doc-template-params"><span class="m-doc-template-param">typename UInt</span></span>&gt;</div>
               <span class="m-doc-wrap-bumper">static auto <a class="m-doc" href="namespace_ase.html#a033ace79413e9181f34a54ddf88c3e9f">rotl</a>(</span><span class="m-doc-wrap">UInt bits,
               <a class="m-doc poxy-injected poxy-external poxy-cppreference" href="https://en.cppreference.com/w/cpp/types/integer" target="_blank">uint32_t</a> offset) -&gt; UInt <span class="m-label m-flat m-primary">constexpr</span></span>
             </dt>
             <dd>Bitwise rotate-left pattern recognized by gcc &amp; clang at -O1 iff sizeof (bits) == {8,16,32,64}.</dd>
             <dt>
-              <div class="m-doc-template">template&lt;<span class="m-doc-template-params"><span class="m-doc-template-param">typename UInt</span></span>&gt;</div>
+              <div class="m-doc-template">template &lt;<span class="m-doc-template-params"><span class="m-doc-template-param">typename UInt</span></span>&gt;</div>
               <span class="m-doc-wrap-bumper">static auto <a class="m-doc" href="namespace_ase.html#af989e51b50555d768fad27b29f8d3362">rotr</a>(</span><span class="m-doc-wrap">UInt bits,
               <a class="m-doc poxy-injected poxy-external poxy-cppreference" href="https://en.cppreference.com/w/cpp/types/integer" target="_blank">uint32_t</a> offset) -&gt; UInt <span class="m-label m-flat m-primary">constexpr</span></span>
             </dt>
             <dd>Bitwise rotate-right pattern recognized by gcc &amp; clang at -O1 iff sizeof (bits) == {8,16,32,64}.</dd>
             <dt>
-              <div class="m-doc-template">template&lt;<span class="m-doc-template-params"><span class="m-doc-template-param">class T</span></span>&gt;</div>
+              <div class="m-doc-template">template &lt;<span class="m-doc-template-params"><span class="m-doc-template-param">class T</span></span>&gt;</div>
               <span class="m-doc-wrap-bumper"><a class="m-doc" href="namespace_ase.html#a9e287795697d626b0570ba27d540cd5b">__attribute__</a>(</span><span class="m-doc-wrap">(__pure__))</span>
             </dt>
             <dd>Provide demangled stringified name for type <code>T</code>.</dd>
             <dt>
-              <div class="m-doc-template">template&lt;<span class="m-doc-template-params"><span class="m-doc-template-param">class T</span></span>&gt;</div>
+              <div class="m-doc-template">template &lt;<span class="m-doc-template-params"><span class="m-doc-template-param">class T</span></span>&gt;</div>
               <span class="m-doc-wrap-bumper"><a class="m-doc" href="namespace_ase.html#adc10ef3ffd73bfec6be7629171a77945">__attribute__</a>(</span><span class="m-doc-wrap">(__pure__))</span>
             </dt>
             <dd>Provide demangled stringified name for object <code>obj</code>.</dd>
             <dt>
-              <div class="m-doc-template">template&lt;<span class="m-doc-template-params"><span class="m-doc-template-param">class Type</span>, <span class="m-doc-template-param">class ... Ts</span></span>&gt;</div>
+              <div class="m-doc-template">template &lt;<span class="m-doc-template-params"><span class="m-doc-template-param">class Type</span>, <span class="m-doc-template-param">class ... Ts</span></span>&gt;</div>
               <span class="m-doc-wrap-bumper"><a class="m-doc" href="namespace_ase.html#ae414438be0c38da8b2d84f76554fc69a">__attribute__</a>(</span><span class="m-doc-wrap">(always_inline)) inline void new _inplace(Type &amp;typemem</span>
             </dt>
             <dd>Call inplace new operator by automatically inferring the Type.</dd>
             <dt>
-              <div class="m-doc-template">template&lt;<span class="m-doc-template-params"><span class="m-doc-template-param">class Type</span></span>&gt;</div>
+              <div class="m-doc-template">template &lt;<span class="m-doc-template-params"><span class="m-doc-template-param">class Type</span></span>&gt;</div>
               <span class="m-doc-wrap-bumper"><a class="m-doc" href="namespace_ase.html#a2c4aad366b114ede3c423b9ad1c79637">__attribute__</a>(</span><span class="m-doc-wrap">(always_inline))</span>
             </dt>
             <dd>Call inplace delete operator by automatically inferring the Type.</dd>
@@ -221,27 +221,27 @@
             </dt>
             <dd><a class="m-doc" href="namespace_ase_1_1_test.html">Test</a> string equality at compile time.</dd>
             <dt>
-              <div class="m-doc-template">template&lt;<span class="m-doc-template-params"><span class="m-doc-template-param">class Target</span>, <span class="m-doc-template-param">class Source</span></span>&gt;</div>
+              <div class="m-doc-template">template &lt;<span class="m-doc-template-params"><span class="m-doc-template-param">class Target</span>, <span class="m-doc-template-param">class Source</span></span>&gt;</div>
               <span class="m-doc-wrap-bumper">auto <a class="m-doc" href="namespace_ase.html#a83de211b1db87bfee2050d90bbda5cd2">shared_ptr_cast</a>(</span><span class="m-doc-wrap">Source* object) -&gt; <a class="m-doc-external poxy-cppreference poxy-external" href="http://en.cppreference.com/w/cpp/memory/shared_ptr.html" target="_blank">std::<wbr/>shared_ptr</a>&lt;typename <a class="m-doc-external poxy-cppreference poxy-external" href="http://en.cppreference.com/w/cpp/types/remove_pointer.html" target="_blank">std::<wbr/>remove_pointer</a>&lt;Target&gt;::type&gt;</span>
             </dt>
             <dd></dd>
             <dt>
-              <div class="m-doc-template">template&lt;<span class="m-doc-template-params"><span class="m-doc-template-param">class Target</span>, <span class="m-doc-template-param">class Source</span></span>&gt;</div>
+              <div class="m-doc-template">template &lt;<span class="m-doc-template-params"><span class="m-doc-template-param">class Target</span>, <span class="m-doc-template-param">class Source</span></span>&gt;</div>
               <span class="m-doc-wrap-bumper">auto <a class="m-doc" href="namespace_ase.html#af71487f09c8406e4674a7050ef76fde2">shared_ptr_cast</a>(</span><span class="m-doc-wrap">const Source* object) -&gt; const <a class="m-doc-external poxy-cppreference poxy-external" href="http://en.cppreference.com/w/cpp/memory/shared_ptr.html" target="_blank">std::<wbr/>shared_ptr</a>&lt;typename <a class="m-doc-external poxy-cppreference poxy-external" href="http://en.cppreference.com/w/cpp/types/remove_pointer.html" target="_blank">std::<wbr/>remove_pointer</a>&lt;Target&gt;::type&gt;</span>
             </dt>
             <dd>See <a class="m-doc" href="namespace_ase.html#a83de211b1db87bfee2050d90bbda5cd2">shared_<wbr/>ptr_<wbr/>cast(Source*)</a>.</dd>
             <dt>
-              <div class="m-doc-template">template&lt;<span class="m-doc-template-params"><span class="m-doc-template-param">class Target</span>, <span class="m-doc-template-param">class Source</span></span>&gt;</div>
+              <div class="m-doc-template">template &lt;<span class="m-doc-template-params"><span class="m-doc-template-param">class Target</span>, <span class="m-doc-template-param">class Source</span></span>&gt;</div>
               <span class="m-doc-wrap-bumper">auto <a class="m-doc" href="namespace_ase.html#a7d90415f51a4cb6df959cd332fb7d8a1">shared_ptr_cast</a>(</span><span class="m-doc-wrap"><a class="m-doc-external poxy-cppreference poxy-external" href="http://en.cppreference.com/w/cpp/memory/shared_ptr.html" target="_blank">std::<wbr/>shared_ptr</a>&lt;Source&gt;&amp; sptr) -&gt; <a class="m-doc-external poxy-cppreference poxy-external" href="http://en.cppreference.com/w/cpp/memory/shared_ptr.html" target="_blank">std::<wbr/>shared_ptr</a>&lt;typename <a class="m-doc-external poxy-cppreference poxy-external" href="http://en.cppreference.com/w/cpp/types/remove_pointer.html" target="_blank">std::<wbr/>remove_pointer</a>&lt;Target&gt;::type&gt;</span>
             </dt>
             <dd>See <a class="m-doc" href="namespace_ase.html#a83de211b1db87bfee2050d90bbda5cd2">shared_<wbr/>ptr_<wbr/>cast(Source*)</a>.</dd>
             <dt>
-              <div class="m-doc-template">template&lt;<span class="m-doc-template-params"><span class="m-doc-template-param">class Target</span>, <span class="m-doc-template-param">class Source</span></span>&gt;</div>
+              <div class="m-doc-template">template &lt;<span class="m-doc-template-params"><span class="m-doc-template-param">class Target</span>, <span class="m-doc-template-param">class Source</span></span>&gt;</div>
               <span class="m-doc-wrap-bumper">auto <a class="m-doc" href="namespace_ase.html#abf3c62b8462b73efa84ea104257a616b">shared_ptr_cast</a>(</span><span class="m-doc-wrap">const <a class="m-doc-external poxy-cppreference poxy-external" href="http://en.cppreference.com/w/cpp/memory/shared_ptr.html" target="_blank">std::<wbr/>shared_ptr</a>&lt;Source&gt;&amp; sptr) -&gt; const <a class="m-doc-external poxy-cppreference poxy-external" href="http://en.cppreference.com/w/cpp/memory/shared_ptr.html" target="_blank">std::<wbr/>shared_ptr</a>&lt;typename <a class="m-doc-external poxy-cppreference poxy-external" href="http://en.cppreference.com/w/cpp/types/remove_pointer.html" target="_blank">std::<wbr/>remove_pointer</a>&lt;Target&gt;::type&gt;</span>
             </dt>
             <dd>See <a class="m-doc" href="namespace_ase.html#a83de211b1db87bfee2050d90bbda5cd2">shared_<wbr/>ptr_<wbr/>cast(Source*)</a>.</dd>
             <dt>
-              <div class="m-doc-template">template&lt;<span class="m-doc-template-params"><span class="m-doc-template-param">class Source</span></span>&gt;</div>
+              <div class="m-doc-template">template &lt;<span class="m-doc-template-params"><span class="m-doc-template-param">class Source</span></span>&gt;</div>
               <span class="m-doc-wrap-bumper">auto <a class="m-doc" href="namespace_ase.html#ac246d67444dfcc229076b60afc274fbb">shared_ptr_from</a>(</span><span class="m-doc-wrap">Source* object) -&gt; <a class="m-doc-external poxy-cppreference poxy-external" href="http://en.cppreference.com/w/cpp/memory/shared_ptr.html" target="_blank">std::<wbr/>shared_ptr</a>&lt;typename <a class="m-doc-external poxy-cppreference poxy-external" href="http://en.cppreference.com/w/cpp/types/remove_pointer.html" target="_blank">std::<wbr/>remove_pointer</a>&lt;Source&gt;::type&gt;</span>
             </dt>
             <dd>Use <code>shared_ptr_cast&lt;&gt;()</code> to convert an object pointer into a <code>shared_ptr&lt;&gt;</code>.</dd>
@@ -250,7 +250,7 @@
             </dt>
             <dd>Demangle identifier via libcc.</dd>
             <dt>
-              <div class="m-doc-template">template&lt;<span class="m-doc-template-params"><span class="m-doc-template-param">class C</span></span>&gt;</div>
+              <div class="m-doc-template">template &lt;<span class="m-doc-template-params"><span class="m-doc-template-param">class C</span></span>&gt;</div>
               <span class="m-doc-wrap-bumper">auto <a class="m-doc" href="namespace_ase.html#aa26d054cebc8f02f849dba30bae58073">weak_ptr_fetch_or_create</a>(</span><span class="m-doc-wrap"><a class="m-doc-external poxy-cppreference poxy-external" href="http://en.cppreference.com/w/cpp/memory/weak_ptr.html" target="_blank">std::<wbr/>weak_ptr</a>&lt;C&gt;&amp; wptr,
               const <a class="m-doc-external poxy-cppreference poxy-external" href="http://en.cppreference.com/w/cpp/utility/functional/function.html" target="_blank">std::<wbr/>function</a>&lt;<a class="m-doc-external poxy-cppreference poxy-external" href="http://en.cppreference.com/w/cpp/memory/shared_ptr.html" target="_blank">std::<wbr/>shared_ptr</a>&lt;C&gt;()&gt;&amp; ctor) -&gt; <a class="m-doc-external poxy-cppreference poxy-external" href="http://en.cppreference.com/w/cpp/memory/shared_ptr.html" target="_blank">std::<wbr/>shared_ptr</a>&lt;C&gt;</span>
             </dt>
@@ -403,7 +403,7 @@
 <a class="poxy-external" href="https://github.com/tim-janik/anklang" target="_blank">GitHub</a>
 • <a class="poxy-external" href="https://github.com/tim-janik/anklang/issues" target="_blank">Report an issue</a>
 • <a class="poxy-external" href="https://mozilla.org/MPL/2.0" target="_blank">License</a>
-• <a download="" href="Anklang_0.1.0.dev1129.tagfile.xml" target="_blank" type="text/xml">Doxygen tagfile</a>
+• <a download="" href="Anklang_0.1.0.dev1137.tagfile.xml" target="_blank" type="text/xml">Doxygen tagfile</a>
 <br/><br/>
 Site generated using <a class="poxy-external" href="https://github.com/marzer/poxy/" target="_blank">Poxy</a>
 

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en"><head>
   <meta charset="utf-8"/>
-  <title>Ase::KeccakRng class | Anklang 0.1.0.dev1129 Anklang Programming Reference</title>
+  <title>Ase::KeccakRng class | Anklang 0.1.0.dev1137 Anklang Programming Reference</title>
   <link href="favicon.svg" rel="icon" type="image/svg+xml"/>
   <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
   <meta content="#cb4b16" name="theme-color"/>
@@ -9,9 +9,9 @@
   <link href="poxystyle.css" referrerpolicy="no-referrer" rel="stylesheet"/>
   <script src="poxy/poxy.js"></script>
   <script>initialize_theme("light");</script>
-  <meta content="Anklang 0.1.0.dev1129" name="twitter:title"/>
-  <meta content="Anklang 0.1.0.dev1129" property="og:title"/>
-  <meta content="Anklang 0.1.0.dev1129" itemprop="name"/>
+  <meta content="Anklang 0.1.0.dev1137" name="twitter:title"/>
+  <meta content="Anklang 0.1.0.dev1137" property="og:title"/>
+  <meta content="Anklang 0.1.0.dev1137" itemprop="name"/>
   <meta content="Tim Janik" name="author"/>
   <meta content="Tim Janik" property="article:author"/>
   <meta content="Anklang Programming Reference" name="description"/>
@@ -19,14 +19,14 @@
   <meta content="Anklang Programming Reference" property="og:description"/>
   <meta content="Anklang Programming Reference" itemprop="description"/>
   <meta content="telephone=no" name="format-detection"/>
-  <meta content="Poxy v0.13.3" name="generator"/>
+  <meta content="Poxy v0.13.7" name="generator"/>
   <meta content="strict-origin-when-cross-origin" name="referrer"/>
 </head>
 <body class="poxy-has-toc">
 <header><nav id="navigation">
   <div class="m-container">
     <div class="m-row">
-      <a class="m-col-t-8 m-col-m-none m-left-m" href="index.html" id="m-navbar-brand"><svg class="poxy-injected-svg" height="32" id="poxy-injected-svg-0" version="1.1" viewBox="0 0 64 64" width="32" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg"><metadata><rdf:rdf><cc:work><cc:license rdf:resource="MPL-2.0"></cc:license></cc:work></rdf:rdf></metadata><g><rect height="60" rx="1" ry="1" style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:4;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" width="60" x="2" y="2"></rect><g><path d="M 19.078125,2 V 2.5 H 14 V 40.972656 C 13.97726,42.63277 15.372472,44 17,44 h 2.023438 L 19,61.994141 22.921875,62 22.945312,44 H 25 c 1.627528,0 3.02274,-1.36723 3,-3.027344 V 2.5 H 23 V 2.0058594 Z" style="fill:#000000;fill-opacity:1"></path><path d="m 41.078399,1.9999594 v 0.5 H 36.000274 V 40.972615 c -0.02274,1.660114 1.372472,3.027344 3,3.027344 h 2.023438 L 41.000272,61.9941 44.922147,62 44.945587,44 h 2.054688 c 1.627528,0 3.02274,-1.36723 3,-3.027344 V 2.4999594 h -5 V 2.0058188 Z" style="fill:#000000;fill-opacity:1"></path></g><rect height="21" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:4;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" width="60" x="2" y="2"></rect><g><circle cx="11.5" cy="11" r="5.5" style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:4.00000095;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"></circle><circle cx="32" cy="11" r="5.5" style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:4.00000095;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"></circle><circle cx="52.5" cy="11" r="5.5" style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:4.00000095;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"></circle></g></g></svg>Anklang 0.1.0.dev1129 <span class="m-thin">Anklang Programming Reference</span></a>
+      <a class="m-col-t-8 m-col-m-none m-left-m" href="index.html" id="m-navbar-brand"><svg class="poxy-injected-svg" height="32" id="poxy-injected-svg-0" version="1.1" viewBox="0 0 64 64" width="32" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg"><metadata><rdf:rdf><cc:work><cc:license rdf:resource="MPL-2.0"></cc:license></cc:work></rdf:rdf></metadata><g><rect height="60" rx="1" ry="1" style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:4;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" width="60" x="2" y="2"></rect><g><path d="M 19.078125,2 V 2.5 H 14 V 40.972656 C 13.97726,42.63277 15.372472,44 17,44 h 2.023438 L 19,61.994141 22.921875,62 22.945312,44 H 25 c 1.627528,0 3.02274,-1.36723 3,-3.027344 V 2.5 H 23 V 2.0058594 Z" style="fill:#000000;fill-opacity:1"></path><path d="m 41.078399,1.9999594 v 0.5 H 36.000274 V 40.972615 c -0.02274,1.660114 1.372472,3.027344 3,3.027344 h 2.023438 L 41.000272,61.9941 44.922147,62 44.945587,44 h 2.054688 c 1.627528,0 3.02274,-1.36723 3,-3.027344 V 2.4999594 h -5 V 2.0058188 Z" style="fill:#000000;fill-opacity:1"></path></g><rect height="21" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:4;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" width="60" x="2" y="2"></rect><g><circle cx="11.5" cy="11" r="5.5" style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:4.00000095;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"></circle><circle cx="32" cy="11" r="5.5" style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:4.00000095;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"></circle><circle cx="52.5" cy="11" r="5.5" style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:4.00000095;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"></circle></g></g></svg>Anklang 0.1.0.dev1137 <span class="m-thin">Anklang Programming Reference</span></a>
       <div class="m-col-t-4 m-hide-m m-text-right m-nopadr">
         <a class="m-doc-search-icon" accesskey="f" href="#search" onclick="return showSearch()" title="Search"><svg style="height: 0.9rem;" viewBox="0 0 16 16">
           <path d="m6 0c-3.31 0-6 2.69-6 6 0 3.31 2.69 6 6 6 1.49 0 2.85-0.541 3.89-1.44-0.0164 0.338 0.147 0.759 0.5 1.15l3.22 3.79c0.552 0.614 1.45 0.665 2 0.115 0.55-0.55 0.499-1.45-0.115-2l-3.79-3.22c-0.392-0.353-0.812-0.515-1.15-0.5 0.895-1.05 1.44-2.41 1.44-3.89 0-3.31-2.69-6-6-6zm0 1.56a4.44 4.44 0 0 1 4.44 4.44 4.44 4.44 0 0 1-4.44 4.44 4.44 4.44 0 0 1-4.44-4.44 4.44 4.44 0 0 1 4.44-4.44z" id="m-doc-search-icon-path"></path>
@@ -137,7 +137,7 @@
             </dt>
             <dd></dd>
             <dt id="a2cb23eff1d0f432862466b3b2b260f25">
-              <div class="m-doc-template">template&lt;<span class="m-doc-template-params"><span class="m-doc-template-param">typename <a class="m-doc poxy-injected poxy-external poxy-cppreference poxy-named-requirement" href="https://en.cppreference.com/w/cpp/named_req/RandomAccessIterator" target="_blank">RandomAccessIterator</a></span></span>&gt;</div>
+              <div class="m-doc-template">template &lt;<span class="m-doc-template-params"><span class="m-doc-template-param">typename <a class="m-doc poxy-injected poxy-external poxy-cppreference poxy-named-requirement" href="https://en.cppreference.com/w/cpp/named_req/RandomAccessIterator" target="_blank">RandomAccessIterator</a></span></span>&gt;</div>
               <span class="m-doc-wrap-bumper">void <a class="m-doc-self" href="#a2cb23eff1d0f432862466b3b2b260f25">generate</a>(</span><span class="m-doc-wrap"><a class="m-doc poxy-injected poxy-external poxy-cppreference poxy-named-requirement" href="https://en.cppreference.com/w/cpp/named_req/RandomAccessIterator" target="_blank">RandomAccessIterator</a> begin,
               <a class="m-doc poxy-injected poxy-external poxy-cppreference poxy-named-requirement" href="https://en.cppreference.com/w/cpp/named_req/RandomAccessIterator" target="_blank">RandomAccessIterator</a> end)</span>
             </dt>
@@ -172,7 +172,7 @@
             </dt>
             <dd>Reinitialize the generator state using a nuber of 64 bit <em>seeds</em>.</dd>
             <dt id="ad5e0918cb63dbafde2ea911e75b7f635">
-              <div class="m-doc-template">template&lt;<span class="m-doc-template-params"><span class="m-doc-template-param">class SeedSeq</span></span>&gt;</div>
+              <div class="m-doc-template">template &lt;<span class="m-doc-template-params"><span class="m-doc-template-param">class SeedSeq</span></span>&gt;</div>
               <span class="m-doc-wrap-bumper">void <a class="m-doc-self" href="#ad5e0918cb63dbafde2ea911e75b7f635">seed</a>(</span><span class="m-doc-wrap">SeedSeq&amp; seed_sequence)</span>
             </dt>
             <dd>Seed the generator state from a <em>seed_sequence</em>.</dd>
@@ -192,7 +192,7 @@
             </dt>
             <dd><a class="m-doc poxy-injected poxy-external poxy-cppreference poxy-named-requirement" href="https://en.cppreference.com/w/cpp/named_req/Compare" target="_blank">Compare</a> two generators for state inequality.</dd>
             <dt id="af93803019c2bf708da3312aeae72ab96">
-              <div class="m-doc-template">template&lt;<span class="m-doc-template-params"><span class="m-doc-template-param">typename CharT</span>, <span class="m-doc-template-param">typename Traits</span></span>&gt;</div>
+              <div class="m-doc-template">template &lt;<span class="m-doc-template-params"><span class="m-doc-template-param">typename CharT</span>, <span class="m-doc-template-param">typename Traits</span></span>&gt;</div>
               <span class="m-doc-wrap-bumper">auto <a class="m-doc-self" href="#af93803019c2bf708da3312aeae72ab96">operator&lt;&lt;</a>(</span><span class="m-doc-wrap"><a class="m-doc-external poxy-cppreference poxy-external" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html" target="_blank">std::<wbr/>basic_ostream</a>&lt;CharT, Traits&gt;&amp; os,
               const <a class="m-doc" href="class_ase_1_1_keccak_rng.html">KeccakRng</a>&amp; self) -&gt; <a class="m-doc-external poxy-cppreference poxy-external" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html" target="_blank">std::<wbr/>basic_ostream</a>&lt;CharT, Traits&gt;&amp;</span>
             </dt>
@@ -203,7 +203,7 @@
             </dt>
             <dd><a class="m-doc poxy-injected poxy-external poxy-cppreference poxy-named-requirement" href="https://en.cppreference.com/w/cpp/named_req/Compare" target="_blank">Compare</a> two generators for state equality.</dd>
             <dt id="a3b31514f70c91f87c867c3f093c8ddac">
-              <div class="m-doc-template">template&lt;<span class="m-doc-template-params"><span class="m-doc-template-param">typename CharT</span>, <span class="m-doc-template-param">typename Traits</span></span>&gt;</div>
+              <div class="m-doc-template">template &lt;<span class="m-doc-template-params"><span class="m-doc-template-param">typename CharT</span>, <span class="m-doc-template-param">typename Traits</span></span>&gt;</div>
               <span class="m-doc-wrap-bumper">auto <a class="m-doc-self" href="#a3b31514f70c91f87c867c3f093c8ddac">operator&gt;&gt;</a>(</span><span class="m-doc-wrap"><a class="m-doc-external poxy-cppreference poxy-external" href="http://en.cppreference.com/w/cpp/io/basic_istream.html" target="_blank">std::<wbr/>basic_istream</a>&lt;CharT, Traits&gt;&amp; is,
               <a class="m-doc" href="class_ase_1_1_keccak_rng.html">KeccakRng</a>&amp; self) -&gt; <a class="m-doc-external poxy-cppreference poxy-external" href="http://en.cppreference.com/w/cpp/io/basic_istream.html" target="_blank">std::<wbr/>basic_istream</a>&lt;CharT, Traits&gt;&amp;</span>
             </dt>
@@ -214,25 +214,25 @@
           <h2>Function documentation</h2>
           <section class="m-doc-details" id="aa7803c87b2ce71b1094277f84e5152ae"><div>
             <h3>
-              <span class="m-doc-wrap-bumper">void Ase::<wbr/>KeccakRng::<wbr/></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a class="m-doc-self" href="#aa7803c87b2ce71b1094277f84e5152ae">discard</a>(</span><span class="m-doc-wrap">unsigned long long count)</span></span>
+              <span class="m-doc-wrap-bumper">void <span class="m-doc-details-prefix">Ase::<wbr/>KeccakRng::<wbr/></span></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a class="m-doc-self" href="#aa7803c87b2ce71b1094277f84e5152ae">discard</a>(</span><span class="m-doc-wrap">unsigned long long count)</span></span>
             </h3>
 <p>Discard <em>count</em> consecutive random values. This function is slightly faster than calling <a class="m-doc" href="#a776c2b376078b4c869faa46d395b41a9">operator()()</a> exactly <em>count</em> times.</p>
           </div></section>
           <section class="m-doc-details" id="a874c6ba2c6260bb487b6df6a9e773070"><div>
             <h3>
-              <span class="m-doc-wrap-bumper">void Ase::<wbr/>KeccakRng::<wbr/></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a class="m-doc-self" href="#a874c6ba2c6260bb487b6df6a9e773070">forget</a>(</span><span class="m-doc-wrap">)</span></span>
+              <span class="m-doc-wrap-bumper">void <span class="m-doc-details-prefix">Ase::<wbr/>KeccakRng::<wbr/></span></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a class="m-doc-self" href="#a874c6ba2c6260bb487b6df6a9e773070">forget</a>(</span><span class="m-doc-wrap">)</span></span>
             </h3>
 <p>Discard 2^256 bits of the current generator state. This makes it practically infeasible to guess previous generator states or deduce generated values from the past. Use this for forward security Security03 of generated security tokens like session keys.</p>
           </div></section>
           <section class="m-doc-details" id="a7f3745c0bbb5ac03af959a37a79bfe90"><div>
             <h3>
-              <span class="m-doc-wrap-bumper"><a class="m-doc poxy-injected poxy-external poxy-cppreference" href="https://en.cppreference.com/w/cpp/types/integer" target="_blank">uint64_t</a> Ase::<wbr/>KeccakRng::<wbr/></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a class="m-doc-self" href="#a7f3745c0bbb5ac03af959a37a79bfe90">random</a>(</span><span class="m-doc-wrap">)</span></span>
+              <span class="m-doc-wrap-bumper"><a class="m-doc poxy-injected poxy-external poxy-cppreference" href="https://en.cppreference.com/w/cpp/types/integer" target="_blank">uint64_t</a> <span class="m-doc-details-prefix">Ase::<wbr/>KeccakRng::<wbr/></span></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a class="m-doc-self" href="#a7f3745c0bbb5ac03af959a37a79bfe90">random</a>(</span><span class="m-doc-wrap">)</span></span>
             </h3>
 <p>Generate uniformly distributed 64 bit pseudo random number. A new block permutation is carried out every <a class="m-doc" href="#ab976783247b33b48830e6d47352d1cc3">n_<wbr/>nums()</a> calls, see also <a class="m-doc" href="#ad852194083782f8c56fc4c74ccb31e3a">xor_<wbr/>seed()</a>.</p>
           </div></section>
           <section class="m-doc-details" id="ad852194083782f8c56fc4c74ccb31e3a"><div>
             <h3>
-              <span class="m-doc-wrap-bumper">void Ase::<wbr/>KeccakRng::<wbr/></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a class="m-doc-self" href="#ad852194083782f8c56fc4c74ccb31e3a">xor_seed</a>(</span><span class="m-doc-wrap">const <a class="m-doc poxy-injected poxy-external poxy-cppreference" href="https://en.cppreference.com/w/cpp/types/integer" target="_blank">uint64_t</a>* seeds,
+              <span class="m-doc-wrap-bumper">void <span class="m-doc-details-prefix">Ase::<wbr/>KeccakRng::<wbr/></span></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a class="m-doc-self" href="#ad852194083782f8c56fc4c74ccb31e3a">xor_seed</a>(</span><span class="m-doc-wrap">const <a class="m-doc poxy-injected poxy-external poxy-cppreference" href="https://en.cppreference.com/w/cpp/types/integer" target="_blank">uint64_t</a>* seeds,
               <a class="m-doc poxy-injected poxy-external poxy-cppreference" href="https://en.cppreference.com/w/cpp/types/size_t" target="_blank">size_t</a> n_seeds)</span></span>
             </h3>
 <p>Incorporate <em>seed_values</em> into the current generator state. A block permutation to advance the generator state is carried out per <a class="m-doc" href="#ab976783247b33b48830e6d47352d1cc3">n_<wbr/>nums()</a> seed values. After calling this function, generating the next <a class="m-doc" href="#ab976783247b33b48830e6d47352d1cc3">n_<wbr/>nums()</a> random values will not need to block for a new permutation.</p>
@@ -286,7 +286,7 @@
 <a class="poxy-external" href="https://github.com/tim-janik/anklang" target="_blank">GitHub</a>
 • <a class="poxy-external" href="https://github.com/tim-janik/anklang/issues" target="_blank">Report an issue</a>
 • <a class="poxy-external" href="https://mozilla.org/MPL/2.0" target="_blank">License</a>
-• <a download="" href="Anklang_0.1.0.dev1129.tagfile.xml" target="_blank" type="text/xml">Doxygen tagfile</a>
+• <a download="" href="Anklang_0.1.0.dev1137.tagfile.xml" target="_blank" type="text/xml">Doxygen tagfile</a>
 <br/><br/>
 Site generated using <a class="poxy-external" href="https://github.com/marzer/poxy/" target="_blank">Poxy</a>
 
