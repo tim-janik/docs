@@ -1154,8 +1154,8 @@ Files: ui/b/pro-group.vue
 Copyright: Copyright (C) 2020-2023 Tim Janik
 License: MPL-2.0
 
-Files: ui/b/pro-input.vue
-Copyright: Copyright (C) 2020-2023 Tim Janik
+Files: ui/b/propinput.js
+Copyright: Copyright (C) 2023 Tim Janik
 License: MPL-2.0
 
 Files: ui/b/shell.vue

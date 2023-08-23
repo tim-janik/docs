@@ -3456,6 +3456,11 @@
     <filename>positionview_8js.html</filename>
   </compound>
   <compound kind="file">
+    <name>propinput.js</name>
+    <path>/anklang/poxy/ui/b/</path>
+    <filename>propinput_8js.html</filename>
+  </compound>
+  <compound kind="file">
     <name>shell.vue.js</name>
     <path>/anklang/poxy/ui/b/</path>
     <filename>shell_8vue_8js.html</filename>
@@ -12877,7 +12882,7 @@
   </compound>
   <compound kind="page">
     <name>index</name>
-    <title>Anklang 64882dcc3cc57945adef090b60424a330f9c2167</title>
+    <title>Anklang a7ab3487142704e3e28084b07de1fcee469c2bb6</title>
     <filename>index.html</filename>
     <docanchor file="index.html">md_home</docanchor>
   </compound>
