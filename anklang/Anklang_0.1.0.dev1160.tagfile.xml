@@ -3456,6 +3456,11 @@
     <filename>positionview_8js.html</filename>
   </compound>
   <compound kind="file">
+    <name>propgroup.js</name>
+    <path>/anklang/poxy/ui/b/</path>
+    <filename>propgroup_8js.html</filename>
+  </compound>
+  <compound kind="file">
     <name>propinput.js</name>
     <path>/anklang/poxy/ui/b/</path>
     <filename>propinput_8js.html</filename>
@@ -12882,7 +12887,7 @@
   </compound>
   <compound kind="page">
     <name>index</name>
-    <title>Anklang a7ab3487142704e3e28084b07de1fcee469c2bb6</title>
+    <title>Anklang 395757948cd5446517705d8be6c8820070c59828</title>
     <filename>index.html</filename>
     <docanchor file="index.html">md_home</docanchor>
   </compound>
