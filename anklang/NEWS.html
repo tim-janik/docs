@@ -16,22 +16,134 @@ body { max-width: 52em; margin: auto; }
   </style>
 </head>
 <body>
+<section id="anklang-0.2.0" class="level2">
+<h2>Anklang 0.2.0</h2>
+<section id="hardware-and-system-requirements" class="level3">
+<h3>Hardware and System Requirements</h3>
+<ul>
+<li>Linux - the Anklang deb and AppImage are based on Ubuntu 20.04.</li>
+<li>Packaged sound engine binaries support SSE-only or AVX+FMA optimizations.</li>
+</ul>
+</section>
+<section id="documentation" class="level3">
+<h3>Documentation</h3>
+<ul>
+<li>Integrated documentation from JS components into the user manual and API reference.</li>
+<li>Various improvements to the documentation and architecture descriptions, as well as manual refinements were made.</li>
+<li>Added continuous API reference documentation generation to the CI: <a href="https://tim-janik.github.io/docs/anklang/index.html" class="uri">https://tim-janik.github.io/docs/anklang/index.html</a></li>
+<li>Integrated JavaScript docs into Poxy docs and search (API reference).</li>
+<li>Added dedicated documentation sections for the ClipList, PartList and PianoRoll.</li>
+<li>Integrate PDF manual builds using TeX, automated via CI.</li>
+<li>Added integration for JsDoc and TypeScript annotations.</li>
+</ul>
+</section>
+<section id="audio-synthesis" class="level3">
+<h3>Audio Synthesis</h3>
+<ul>
+<li>Added support for clap_event_transport_t, fixes #5. [stw]</li>
+<li>Implemented non-linear mapping for the BlepSynth ADSR times. [stw]</li>
+<li>Fix BlepSynth cutoff frequency modulation for its filter, pass frequencies in Hz. [stw]</li>
+<li>Implemented the CLAP draft extension for file references.</li>
+<li>Incorporated Freeverb by Jezar at Dreampoint with damping mode fixes.</li>
+<li>Added a Jack PCM driver based on Stefan Westerfelds code and howto.</li>
+</ul>
+</section>
+<section id="ase" class="level3">
+<h3>ASE</h3>
+<ul>
+<li>Automatically stop audio playback with the new <code>-t time</code> command line argument.</li>
+<li>Added <code>--class-tree</code> to print out the class inheritance tree.</li>
+<li>Added <code>-o audiofile</code> support for capturing output into WAV, OPUS and FLAC files.</li>
+<li>Added <code>--blake3 FILE</code> to test Blake3 hashing.</li>
+<li>Added SortedVector to unify several vector sorting code paths.</li>
+<li>Fix potential undefined behavior in the Pcg32Rng code, when left shifting a 32bit value by 32 bits. [stw]</li>
+<li>Added various code cleanups and fixed imports.</li>
+<li>Adjusted main loop PollFD handling to avoid engine hangs after UI exit.</li>
+<li>Added Loft, a lock- and obstruction-free concurrent memory allocator.</li>
+<li>Added a very fast multiply-with-carry PRNG, with a period of 2^255.</li>
+<li>Fixed atexit memory leaks, proper handling of nullptrs and compiler sanitizers.</li>
+<li>Implemented single Project/Engine relation and new API for activating and deactivating projects.</li>
+<li>Properly implemented garbage collection of remote JSONIPC handles.</li>
+<li>Improved performance by prefaulting heap and stack pages and malloc tuning.</li>
+<li>Enabled link time optimization for production builds.</li>
+<li>Implemented low-latency scheduling for the synthesis engine via sched_* or RtKit.</li>
+<li>Implemented remote reference counting for the JSONIPC API.</li>
+<li>Introduced automatic backup creation when saving project files.</li>
+<li>Improved serialization for projects, allowing dedicated resource file inclusion.</li>
+<li>Integrated building of releases with SSE + FMA support into ASE.</li>
+<li>Updated the code to compile cleanly with g++-12, libstdc++-13 and clang++-15.</li>
+</ul>
+</section>
+<section id="user-interface" class="level3">
+<h3>User Interface</h3>
+<ul>
+<li>Added support for context help via F1 key in Lit components (handling shadowRoots)</li>
+<li>Fix flashing of unstyled content in Chrome and layout artefacts during context menu popups.</li>
+<li>Adapted mouse wheel normalization and sensitivity to modern browsers.</li>
+<li>Improved tooltips and change notification handling on properties.</li>
+<li>Added support for moving and copying (with CTRL key) piano roll notes using the mouse. #16 [stw]</li>
+<li>Support resizing multiple selected notes at once by dragging with the mouse in piano roll view. #15 [stw]</li>
+<li>Unified all (non-Vue) CSS styles into a single build and simplified its structure.</li>
+<li>Updated all icon sets and UI fonts.</li>
+<li>Implemented caching for static assets like stylesheets and invalidation handling via content hashes.</li>
+<li>Added a new warm grey palette based on ZCAM Jz (lightness) steps, which allows subtler color gradients to enhance overall appearance.</li>
+<li>Added the latest modern-normalize.css style resets to improve consistency across browsers.</li>
+<li>Added TypeScript annotations and type checking to improve UI JavaScript code quality.</li>
+<li>Added support for state toggling using LEFT/RIGHT/UP/DOWN keys to Switch inputs.</li>
+<li>Switched the main font to the variable font variant of InterDisplay.</li>
+<li>Implemented simple and fast SCSS extraction of JavaScript css`` literals.</li>
+<li>Moves SCSS snippet processing to postcss at build time.</li>
+<li>Implemented a reliable reactive wrapper that keeps Lit components and C++ components in sync.</li>
+<li>Added tracklist scrolling and improved tracklist styling.</li>
+<li>Added sound level meter rendering from telemetry data in the Track View component.</li>
+<li>Introduced caching of (remote) properties across several different web components.</li>
+<li>Improved piano roll layout by moving to HTML grid.</li>
+<li>Rewrote and extended all piano roll note editing tools.</li>
+<li>Reimplemented the Knob component to use PNG sprites instead of SVG layers.</li>
+<li>Added support for Zoom In/Out/Reset functionality in the menubar.</li>
+<li>Improved support for click-drag menu item selection in various menus, including track view, piano roll and device panel.</li>
+<li>Fixed Vue 3.2.28 breaking $forceUpdate() calls before mounting.</li>
+<li>Several web components were ported from Vue to Lit to simplify code and better efficiency.</li>
+<li>Eliminated shadowRoot uses for most components, saving resources.</li>
+</ul>
+</section>
+<section id="packaging" class="level3">
+<h3>Packaging</h3>
+<ul>
+<li>Added fix so all AppImage executable properly operate $ORIGIN relative.</li>
+<li>Fixed missing dependencies in AppImage builds so all needed libraries are included.</li>
+<li>Improved version handling and added missing Git info to distribution tarballs.</li>
+<li>Streamlined asset builds and other technical aspects of the release process.</li>
+<li>Ensure release assets are always built in the same reproducible environment.</li>
+<li>Started regular Nightly releases via the CI toolchain on every significant trunk merge commit.</li>
+</ul>
+</section>
+<section id="testing" class="level3">
+<h3>Testing</h3>
+<ul>
+<li>Introduced end-to-end testing using X11 with headless runs.</li>
+<li>Added replay functionality via Puppeteer of DevTools event recordings.</li>
+<li>Added clang-tidy to the CI rules to improve code quality</li>
+<li>Added regular Arch Linux test builds.</li>
+</ul>
+</section>
+</section>
 <section id="anklang-0.1.0" class="level2">
 <h2>Anklang 0.1.0</h2>
-<section id="system-requirements" class="level4">
-<h4>System Requirements</h4>
+<section id="system-requirements" class="level3">
+<h3>System Requirements</h3>
 <ul>
 <li>Linux - Ubuntu 20.04 is needed to run the Anklang AppImage</li>
 </ul>
 </section>
-<section id="hardware-support" class="level4">
-<h4>Hardware Support</h4>
+<section id="hardware-support" class="level3">
+<h3>Hardware Support</h3>
 <ul>
 <li>Build and package a second sound engine binary with AVX &amp; FMA optimizations.</li>
 </ul>
 </section>
-<section id="documentation" class="level4">
-<h4>Documentation</h4>
+<section id="documentation-1" class="level3">
+<h3>Documentation</h3>
 <ul>
 <li>Extended documentation in many places.</li>
 <li>Improved copyright listing of all source files involved.</li>
@@ -39,8 +151,8 @@ body { max-width: 52em; margin: auto; }
 <li>Provide developer documentation as anklang-internals.pdf.</li>
 </ul>
 </section>
-<section id="user-interface" class="level4">
-<h4>User Interface</h4>
+<section id="user-interface-1" class="level3">
+<h3>User Interface</h3>
 <ul>
 <li>Improve UI responsiveness when handling async API calls.</li>
 <li>Support proper note selection sets in the piano roll.</li>
@@ -60,16 +172,16 @@ body { max-width: 52em; margin: auto; }
 <li>Add MIME support for starting Anklang for *.anklang files.</li>
 </ul>
 </section>
-<section id="synthesis" class="level4">
-<h4>Synthesis</h4>
+<section id="synthesis" class="level3">
+<h3>Synthesis</h3>
 <ul>
 <li>Support single clip looping (very rudimentary), to be extended later.</li>
 <li>Add Gtk+-2 dynlib to provide a wrapper window for plugin UIs.</li>
 <li>Add support for CLAP-1.0.2 plugin loading and processing, the following CLAP extensions are currently implemented: LOG, GUI, TIMER_SUPPORT, THREAD_CHECK, AUDIO_PORTS, PARAMS, STATE, POSIX_FD_SUPPORT, AUDIO_PORTS_CONFIG, AUDIO_PORTS, NOTE_PORTS.</li>
 </ul>
 </section>
-<section id="internals" class="level4">
-<h4>Internals</h4>
+<section id="internals" class="level3">
+<h3>Internals</h3>
 <ul>
 <li>Provide infrastructure for future piano roll scripting.</li>
 <li>Support lean UI component implementations with lit.js.</li>
@@ -84,8 +196,8 @@ body { max-width: 52em; margin: auto; }
 <li>Anklang can now be started with '--dev' to force open DevTools.</li>
 </ul>
 </section>
-<section id="other" class="level4">
-<h4>Other</h4>
+<section id="other" class="level3">
+<h3>Other</h3>
 <ul>
 <li>License clarification, the project uses MPL-2.0.</li>
 <li>Improved reproducible dockerized builds.</li>
@@ -95,21 +207,21 @@ body { max-width: 52em; margin: auto; }
 </section>
 <section id="anklang-0.0.1-alpha1" class="level2">
 <h2>Anklang 0.0.1-alpha1</h2>
-<section id="system-requirements-1" class="level4">
-<h4>System Requirements</h4>
+<section id="system-requirements-1" class="level3">
+<h3>System Requirements</h3>
 <ul>
 <li>Linux - Ubuntu 20.04 is needed to run the Anklang AppImage</li>
 </ul>
 </section>
-<section id="packaging" class="level4">
-<h4>Packaging</h4>
+<section id="packaging-1" class="level3">
+<h3>Packaging</h3>
 <ul>
 <li>Build AppImage binaries with linuxdeploy, appimage-runtime-zstd</li>
 <li>Add build script for Debian package creation</li>
 </ul>
 </section>
-<section id="hardware-support-1" class="level4">
-<h4>Hardware Support</h4>
+<section id="hardware-support-1" class="level3">
+<h3>Hardware Support</h3>
 <ul>
 <li>Add ALSA MIDI and ALSA PCM drivers</li>
 <li>Support playback of MIDI input events</li>
@@ -117,8 +229,8 @@ body { max-width: 52em; margin: auto; }
 <li>Prioritize drivers based on headset/USB/HDMI/Duplex properties</li>
 </ul>
 </section>
-<section id="documentation-1" class="level4">
-<h4>Documentation</h4>
+<section id="documentation-2" class="level3">
+<h3>Documentation</h3>
 <ul>
 <li>Add manpage (markdown), build documentation with pandoc2</li>
 <li>Add Anklang manual (markdown), support Latex based PDF builds</li>
@@ -127,8 +239,8 @@ body { max-width: 52em; margin: auto; }
 <li>Add comprehensive 'copyright' file generation</li>
 </ul>
 </section>
-<section id="user-interface-1" class="level4">
-<h4>User Interface</h4>
+<section id="user-interface-2" class="level3">
+<h3>User Interface</h3>
 <ul>
 <li>Support Web browser based UI (Firefox, Chrome)</li>
 <li>Suppport Electron based UI, test via 'make run'</li>
@@ -143,8 +255,8 @@ body { max-width: 52em; margin: auto; }
 <li>Work around Chrome's movementX/Y devicePixelRatio bug Chrome#1092358</li>
 </ul>
 </section>
-<section id="synthesis-1" class="level4">
-<h4>Synthesis</h4>
+<section id="synthesis-1" class="level3">
+<h3>Synthesis</h3>
 <ul>
 <li>Use seperate thread for digital synthesis</li>
 <li>Integrate resampler2 code from Stefan Westerfeld</li>
@@ -152,16 +264,16 @@ body { max-width: 52em; margin: auto; }
 <li>Add support for synchronized multi-track playback</li>
 </ul>
 </section>
-<section id="interprocess-communication" class="level4">
-<h4>Interprocess Communication</h4>
+<section id="interprocess-communication" class="level3">
+<h3>Interprocess Communication</h3>
 <ul>
 <li>Provide updated JsonIpc layer for remote calls and event delivery</li>
 <li>Send realtime status updates as int/float blobs via IPC (termed 'telemtry')</li>
 <li>Support realtime UI updates via IPC by receiving telemetry at up to 60Hz</li>
 </ul>
 </section>
-<section id="build-system" class="level4">
-<h4>Build System</h4>
+<section id="build-system" class="level3">
+<h3>Build System</h3>
 <ul>
 <li>Support automated Github CI via docker based builds</li>
 <li>Support Javascript and C++ linting</li>
