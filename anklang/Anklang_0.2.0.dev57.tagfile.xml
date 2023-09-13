@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='yes' ?>
-<tagfile doxygen_version="1.9.1">
+<tagfile>
   <compound kind="file">
     <name>api.hh</name>
     <filename>api_8hh.html</filename>
@@ -630,7 +630,7 @@
   </compound>
   <compound kind="file">
     <name>engine.hh</name>
-    <path>/anklang/poxy/ase/</path>
+    <path>/cirun/poxy/ase/</path>
     <filename>engine_8hh.html</filename>
     <includes id="transport_8hh" name="transport.hh" local="no" imported="no">ase/transport.hh</includes>
     <includes id="platform_8hh" name="platform.hh" local="no" imported="no">ase/platform.hh</includes>
@@ -640,7 +640,7 @@
   </compound>
   <compound kind="file">
     <name>entropy.hh</name>
-    <path>/anklang/poxy/ase/</path>
+    <path>/cirun/poxy/ase/</path>
     <filename>entropy_8hh.html</filename>
     <includes id="cxxaux_8hh" name="cxxaux.hh" local="no" imported="no">ase/cxxaux.hh</includes>
     <namespace>Ase</namespace>
@@ -661,7 +661,7 @@
   </compound>
   <compound kind="file">
     <name>eventlist.hh</name>
-    <path>/anklang/poxy/ase/</path>
+    <path>/cirun/poxy/ase/</path>
     <filename>eventlist_8hh.html</filename>
     <includes id="utils_8hh" name="utils.hh" local="no" imported="no">ase/utils.hh</includes>
     <class kind="struct">Ase::OrderedEventList</class>
@@ -670,7 +670,7 @@
   </compound>
   <compound kind="file">
     <name>formatter.hh</name>
-    <path>/anklang/poxy/ase/</path>
+    <path>/cirun/poxy/ase/</path>
     <filename>formatter_8hh.html</filename>
     <class kind="class">Ase::Lib::ScopedLocale</class>
     <class kind="class">Ase::Lib::ScopedPosixLocale</class>
@@ -680,7 +680,7 @@
   </compound>
   <compound kind="file">
     <name>gadget.hh</name>
-    <path>/anklang/poxy/ase/</path>
+    <path>/cirun/poxy/ase/</path>
     <filename>gadget_8hh.html</filename>
     <includes id="object_8hh" name="object.hh" local="no" imported="no">ase/object.hh</includes>
     <includes id="utils_8hh" name="utils.hh" local="no" imported="no">ase/utils.hh</includes>
@@ -689,13 +689,13 @@
   </compound>
   <compound kind="file">
     <name>gtk2wrap.hh</name>
-    <path>/anklang/poxy/ase/</path>
+    <path>/cirun/poxy/ase/</path>
     <filename>gtk2wrap_8hh.html</filename>
     <namespace>Ase</namespace>
   </compound>
   <compound kind="file">
     <name>inifile.hh</name>
-    <path>/anklang/poxy/ase/</path>
+    <path>/cirun/poxy/ase/</path>
     <filename>inifile_8hh.html</filename>
     <includes id="blob_8hh" name="blob.hh" local="no" imported="no">ase/blob.hh</includes>
     <class kind="class">Ase::IniFile</class>
@@ -704,7 +704,7 @@
   </compound>
   <compound kind="file">
     <name>internal.hh</name>
-    <path>/anklang/poxy/ase/</path>
+    <path>/cirun/poxy/ase/</path>
     <filename>internal_8hh.html</filename>
     <namespace>Ase</namespace>
     <namespace>Ase::Test</namespace>
@@ -872,7 +872,7 @@
   </compound>
   <compound kind="file">
     <name>jsonapi.hh</name>
-    <path>/anklang/poxy/ase/</path>
+    <path>/cirun/poxy/ase/</path>
     <filename>jsonapi_8hh.html</filename>
     <includes id="websocket_8hh" name="websocket.hh" local="no" imported="no">ase/websocket.hh</includes>
     <includes id="value_8hh" name="value.hh" local="no" imported="no">ase/value.hh</includes>
@@ -885,7 +885,7 @@
   </compound>
   <compound kind="file">
     <name>loft.hh</name>
-    <path>/anklang/poxy/ase/</path>
+    <path>/cirun/poxy/ase/</path>
     <filename>loft_8hh.html</filename>
     <includes id="defs_8hh" name="defs.hh" local="no" imported="no">ase/defs.hh</includes>
     <class kind="struct">Ase::LoftConfig</class>
@@ -979,7 +979,7 @@
   </compound>
   <compound kind="file">
     <name>loop.hh</name>
-    <path>/anklang/poxy/ase/</path>
+    <path>/cirun/poxy/ase/</path>
     <filename>loop_8hh.html</filename>
     <includes id="utils_8hh" name="utils.hh" local="no" imported="no">ase/utils.hh</includes>
     <class kind="struct">Ase::PollFD</class>
@@ -994,7 +994,7 @@
   </compound>
   <compound kind="file">
     <name>main.hh</name>
-    <path>/anklang/poxy/ase/</path>
+    <path>/cirun/poxy/ase/</path>
     <filename>main_8hh.html</filename>
     <includes id="platform_8hh" name="platform.hh" local="no" imported="no">ase/platform.hh</includes>
     <includes id="randomhash_8hh" name="randomhash.hh" local="no" imported="no">ase/randomhash.hh</includes>
@@ -1034,7 +1034,7 @@
   </compound>
   <compound kind="file">
     <name>mathutils.hh</name>
-    <path>/anklang/poxy/ase/</path>
+    <path>/cirun/poxy/ase/</path>
     <filename>mathutils_8hh.html</filename>
     <includes id="cxxaux_8hh" name="cxxaux.hh" local="no" imported="no">ase/cxxaux.hh</includes>
     <class kind="union">Ase::FloatIEEE754</class>
@@ -1098,7 +1098,7 @@
   </compound>
   <compound kind="file">
     <name>memory.hh</name>
-    <path>/anklang/poxy/ase/</path>
+    <path>/cirun/poxy/ase/</path>
     <filename>memory_8hh.html</filename>
     <includes id="utils_8hh" name="utils.hh" local="no" imported="no">ase/utils.hh</includes>
     <class kind="class">Ase::FastMemArray</class>
@@ -1118,7 +1118,7 @@
   </compound>
   <compound kind="file">
     <name>midievent.hh</name>
-    <path>/anklang/poxy/ase/</path>
+    <path>/cirun/poxy/ase/</path>
     <filename>midievent_8hh.html</filename>
     <includes id="memory_8hh" name="memory.hh" local="no" imported="no">ase/memory.hh</includes>
     <includes id="mathutils_8hh" name="mathutils.hh" local="no" imported="no">ase/mathutils.hh</includes>
@@ -1161,7 +1161,7 @@
   </compound>
   <compound kind="file">
     <name>midilib.hh</name>
-    <path>/anklang/poxy/ase/</path>
+    <path>/cirun/poxy/ase/</path>
     <filename>midilib_8hh.html</filename>
     <includes id="processor_8hh" name="processor.hh" local="no" imported="no">ase/processor.hh</includes>
     <includes id="track_8hh" name="track.hh" local="no" imported="no">ase/track.hh</includes>
@@ -1172,19 +1172,19 @@
   </compound>
   <compound kind="file">
     <name>mime-types.hh</name>
-    <path>/anklang/poxy/ase/</path>
+    <path>/cirun/poxy/ase/</path>
     <filename>mime-types_8hh.html</filename>
   </compound>
   <compound kind="file">
     <name>monitor.hh</name>
-    <path>/anklang/poxy/ase/</path>
+    <path>/cirun/poxy/ase/</path>
     <filename>monitor_8hh.html</filename>
     <includes id="gadget_8hh" name="gadget.hh" local="no" imported="no">ase/gadget.hh</includes>
     <namespace>Ase</namespace>
   </compound>
   <compound kind="file">
     <name>nativedevice.hh</name>
-    <path>/anklang/poxy/ase/</path>
+    <path>/cirun/poxy/ase/</path>
     <filename>nativedevice_8hh.html</filename>
     <includes id="device_8hh" name="device.hh" local="no" imported="no">ase/device.hh</includes>
     <includes id="processor_8hh" name="processor.hh" local="no" imported="no">ase/processor.hh</includes>
@@ -1192,7 +1192,7 @@
   </compound>
   <compound kind="file">
     <name>object.hh</name>
-    <path>/anklang/poxy/ase/</path>
+    <path>/cirun/poxy/ase/</path>
     <filename>object_8hh.html</filename>
     <includes id="api_8hh" name="api.hh" local="no" imported="no">ase/api.hh</includes>
     <class kind="class">Ase::EmittableImpl</class>
@@ -1201,7 +1201,7 @@
   </compound>
   <compound kind="file">
     <name>path.hh</name>
-    <path>/anklang/poxy/ase/</path>
+    <path>/cirun/poxy/ase/</path>
     <filename>path_8hh.html</filename>
     <includes id="cxxaux_8hh" name="cxxaux.hh" local="no" imported="no">ase/cxxaux.hh</includes>
     <namespace>Ase</namespace>
@@ -1510,7 +1510,7 @@
   </compound>
   <compound kind="file">
     <name>platform.hh</name>
-    <path>/anklang/poxy/ase/</path>
+    <path>/cirun/poxy/ase/</path>
     <filename>platform_8hh.html</filename>
     <includes id="defs_8hh" name="defs.hh" local="no" imported="no">ase/defs.hh</includes>
     <class kind="class">Ase::AsyncBlockingQueue</class>
@@ -1779,7 +1779,7 @@
   </compound>
   <compound kind="file">
     <name>processor.hh</name>
-    <path>/anklang/poxy/ase/</path>
+    <path>/cirun/poxy/ase/</path>
     <filename>processor_8hh.html</filename>
     <includes id="gadget_8hh" name="gadget.hh" local="no" imported="no">ase/gadget.hh</includes>
     <includes id="midievent_8hh" name="midievent.hh" local="no" imported="no">ase/midievent.hh</includes>
@@ -1825,7 +1825,7 @@
   </compound>
   <compound kind="file">
     <name>project.hh</name>
-    <path>/anklang/poxy/ase/</path>
+    <path>/cirun/poxy/ase/</path>
     <filename>project_8hh.html</filename>
     <includes id="device_8hh" name="device.hh" local="no" imported="no">ase/device.hh</includes>
     <includes id="track_8hh" name="track.hh" local="no" imported="no">ase/track.hh</includes>
@@ -1834,7 +1834,7 @@
   </compound>
   <compound kind="file">
     <name>properties.hh</name>
-    <path>/anklang/poxy/ase/</path>
+    <path>/cirun/poxy/ase/</path>
     <filename>properties_8hh.html</filename>
     <includes id="object_8hh" name="object.hh" local="no" imported="no">ase/object.hh</includes>
     <includes id="memory_8hh" name="memory.hh" local="no" imported="no">ase/memory.hh</includes>
@@ -1930,7 +1930,7 @@
   </compound>
   <compound kind="file">
     <name>randomhash.hh</name>
-    <path>/anklang/poxy/ase/</path>
+    <path>/cirun/poxy/ase/</path>
     <filename>randomhash_8hh.html</filename>
     <includes id="cxxaux_8hh" name="cxxaux.hh" local="no" imported="no">ase/cxxaux.hh</includes>
     <class kind="struct">Ase::AlignedPOD</class>
@@ -2037,7 +2037,7 @@
   </compound>
   <compound kind="file">
     <name>regex.hh</name>
-    <path>/anklang/poxy/ase/</path>
+    <path>/cirun/poxy/ase/</path>
     <filename>regex_8hh.html</filename>
     <includes id="cxxaux_8hh" name="cxxaux.hh" local="no" imported="no">ase/cxxaux.hh</includes>
     <class kind="class">Ase::Re</class>
@@ -2045,7 +2045,7 @@
   </compound>
   <compound kind="file">
     <name>resampler2.hh</name>
-    <path>/anklang/poxy/ase/</path>
+    <path>/cirun/poxy/ase/</path>
     <filename>resampler2_8hh.html</filename>
     <includes id="cxxaux_8hh" name="cxxaux.hh" local="no" imported="no">ase/cxxaux.hh</includes>
     <class kind="class">Ase::Resampler2</class>
@@ -2053,7 +2053,7 @@
   </compound>
   <compound kind="file">
     <name>serialize.hh</name>
-    <path>/anklang/poxy/ase/</path>
+    <path>/cirun/poxy/ase/</path>
     <filename>serialize_8hh.html</filename>
     <includes id="value_8hh" name="value.hh" local="no" imported="no">ase/value.hh</includes>
     <includes id="strings_8hh" name="strings.hh" local="no" imported="no">ase/strings.hh</includes>
@@ -2087,7 +2087,7 @@
   </compound>
   <compound kind="file">
     <name>server.hh</name>
-    <path>/anklang/poxy/ase/</path>
+    <path>/cirun/poxy/ase/</path>
     <filename>server_8hh.html</filename>
     <includes id="gadget_8hh" name="gadget.hh" local="no" imported="no">ase/gadget.hh</includes>
     <includes id="memory_8hh" name="memory.hh" local="no" imported="no">ase/memory.hh</includes>
@@ -2095,7 +2095,7 @@
   </compound>
   <compound kind="file">
     <name>signalmath.hh</name>
-    <path>/anklang/poxy/ase/</path>
+    <path>/cirun/poxy/ase/</path>
     <filename>signalmath_8hh.html</filename>
     <includes id="mathutils_8hh" name="mathutils.hh" local="no" imported="no">ase/mathutils.hh</includes>
     <class kind="struct">Ase::Logscale</class>
@@ -2229,7 +2229,7 @@
   </compound>
   <compound kind="file">
     <name>sortnet.hh</name>
-    <path>/anklang/poxy/ase/</path>
+    <path>/cirun/poxy/ase/</path>
     <filename>sortnet_8hh.html</filename>
     <class kind="class">Ase::SortedVector</class>
     <namespace>Ase</namespace>
@@ -2243,7 +2243,7 @@
   </compound>
   <compound kind="file">
     <name>storage.hh</name>
-    <path>/anklang/poxy/ase/</path>
+    <path>/cirun/poxy/ase/</path>
     <filename>storage_8hh.html</filename>
     <includes id="defs_8hh" name="defs.hh" local="no" imported="no">ase/defs.hh</includes>
     <namespace>Ase</namespace>
@@ -2271,7 +2271,7 @@
   </compound>
   <compound kind="file">
     <name>strings.hh</name>
-    <path>/anklang/poxy/ase/</path>
+    <path>/cirun/poxy/ase/</path>
     <filename>strings_8hh.html</filename>
     <includes id="cxxaux_8hh" name="cxxaux.hh" local="no" imported="no">ase/cxxaux.hh</includes>
     <includes id="formatter_8hh" name="formatter.hh" local="no" imported="no">ase/formatter.hh</includes>
@@ -2833,7 +2833,7 @@
   </compound>
   <compound kind="file">
     <name>testing.hh</name>
-    <path>/anklang/poxy/ase/</path>
+    <path>/cirun/poxy/ase/</path>
     <filename>testing_8hh.html</filename>
     <includes id="utils_8hh" name="utils.hh" local="no" imported="no">ase/utils.hh</includes>
     <class kind="class">Ase::Test::Timer</class>
@@ -2996,7 +2996,7 @@
   </compound>
   <compound kind="file">
     <name>track.hh</name>
-    <path>/anklang/poxy/ase/</path>
+    <path>/cirun/poxy/ase/</path>
     <filename>track_8hh.html</filename>
     <includes id="device_8hh" name="device.hh" local="no" imported="no">ase/device.hh</includes>
     <class kind="class">Ase::TrackImpl</class>
@@ -3005,7 +3005,7 @@
   </compound>
   <compound kind="file">
     <name>transport.hh</name>
-    <path>/anklang/poxy/ase/</path>
+    <path>/cirun/poxy/ase/</path>
     <filename>transport_8hh.html</filename>
     <includes id="defs_8hh" name="defs.hh" local="no" imported="no">ase/defs.hh</includes>
     <class kind="struct">Ase::TickSignature</class>
@@ -3043,7 +3043,7 @@
   </compound>
   <compound kind="file">
     <name>unicode.hh</name>
-    <path>/anklang/poxy/ase/</path>
+    <path>/cirun/poxy/ase/</path>
     <filename>unicode_8hh.html</filename>
     <includes id="cxxaux_8hh" name="cxxaux.hh" local="no" imported="no">ase/cxxaux.hh</includes>
     <namespace>Ase</namespace>
@@ -3134,7 +3134,7 @@
   </compound>
   <compound kind="file">
     <name>utils.hh</name>
-    <path>/anklang/poxy/ase/</path>
+    <path>/cirun/poxy/ase/</path>
     <filename>utils_8hh.html</filename>
     <includes id="defs_8hh" name="defs.hh" local="no" imported="no">ase/defs.hh</includes>
     <includes id="strings_8hh" name="strings.hh" local="no" imported="no">ase/strings.hh</includes>
@@ -3300,7 +3300,7 @@
   </compound>
   <compound kind="file">
     <name>value.hh</name>
-    <path>/anklang/poxy/ase/</path>
+    <path>/cirun/poxy/ase/</path>
     <filename>value_8hh.html</filename>
     <includes id="defs_8hh" name="defs.hh" local="no" imported="no">ase/defs.hh</includes>
     <class kind="struct">Ase::Value</class>
@@ -3318,236 +3318,236 @@
   </compound>
   <compound kind="file">
     <name>wave.hh</name>
-    <path>/anklang/poxy/ase/</path>
+    <path>/cirun/poxy/ase/</path>
     <filename>wave_8hh.html</filename>
     <includes id="defs_8hh" name="defs.hh" local="no" imported="no">ase/defs.hh</includes>
     <namespace>Ase</namespace>
   </compound>
   <compound kind="file">
     <name>websocket.hh</name>
-    <path>/anklang/poxy/ase/</path>
+    <path>/cirun/poxy/ase/</path>
     <filename>websocket_8hh.html</filename>
     <includes id="cxxaux_8hh" name="cxxaux.hh" local="no" imported="no">ase/cxxaux.hh</includes>
     <namespace>Ase</namespace>
   </compound>
   <compound kind="file">
     <name>aboutdialog.js</name>
-    <path>/anklang/poxy/ui/b/</path>
+    <path>/cirun/poxy/ui/b/</path>
     <filename>aboutdialog_8js.html</filename>
   </compound>
   <compound kind="file">
     <name>app.js</name>
-    <path>/anklang/poxy/ui/b/</path>
+    <path>/cirun/poxy/ui/b/</path>
     <filename>app_8js.html</filename>
   </compound>
   <compound kind="file">
     <name>basics.js</name>
-    <path>/anklang/poxy/ui/b/</path>
+    <path>/cirun/poxy/ui/b/</path>
     <filename>basics_8js.html</filename>
   </compound>
   <compound kind="file">
     <name>buttonbar.js</name>
-    <path>/anklang/poxy/ui/b/</path>
+    <path>/cirun/poxy/ui/b/</path>
     <filename>buttonbar_8js.html</filename>
   </compound>
   <compound kind="file">
     <name>choiceinput.js</name>
-    <path>/anklang/poxy/ui/b/</path>
+    <path>/cirun/poxy/ui/b/</path>
     <filename>choiceinput_8js.html</filename>
   </compound>
   <compound kind="file">
     <name>cliplist.js</name>
-    <path>/anklang/poxy/ui/b/</path>
+    <path>/cirun/poxy/ui/b/</path>
     <filename>cliplist_8js.html</filename>
   </compound>
   <compound kind="file">
     <name>clipview.js</name>
-    <path>/anklang/poxy/ui/b/</path>
+    <path>/cirun/poxy/ui/b/</path>
     <filename>clipview_8js.html</filename>
   </compound>
   <compound kind="file">
     <name>contextmenu.js</name>
-    <path>/anklang/poxy/ui/b/</path>
+    <path>/cirun/poxy/ui/b/</path>
     <filename>contextmenu_8js.html</filename>
   </compound>
   <compound kind="file">
     <name>databubble.js</name>
-    <path>/anklang/poxy/ui/b/</path>
+    <path>/cirun/poxy/ui/b/</path>
     <filename>databubble_8js.html</filename>
   </compound>
   <compound kind="file">
     <name>envue.js</name>
-    <path>/anklang/poxy/ui/b/</path>
+    <path>/cirun/poxy/ui/b/</path>
     <filename>envue_8js.html</filename>
   </compound>
   <compound kind="file">
     <name>icon.js</name>
-    <path>/anklang/poxy/ui/b/</path>
+    <path>/cirun/poxy/ui/b/</path>
     <filename>icon_8js.html</filename>
   </compound>
   <compound kind="file">
     <name>knob.js</name>
-    <path>/anklang/poxy/ui/b/</path>
+    <path>/cirun/poxy/ui/b/</path>
     <filename>knob_8js.html</filename>
   </compound>
   <compound kind="file">
     <name>menubar.js</name>
-    <path>/anklang/poxy/ui/b/</path>
+    <path>/cirun/poxy/ui/b/</path>
     <filename>menubar_8js.html</filename>
   </compound>
   <compound kind="file">
     <name>menuitem.js</name>
-    <path>/anklang/poxy/ui/b/</path>
+    <path>/cirun/poxy/ui/b/</path>
     <filename>menuitem_8js.html</filename>
   </compound>
   <compound kind="file">
     <name>menurow.js</name>
-    <path>/anklang/poxy/ui/b/</path>
+    <path>/cirun/poxy/ui/b/</path>
     <filename>menurow_8js.html</filename>
   </compound>
   <compound kind="file">
     <name>menuseparator.js</name>
-    <path>/anklang/poxy/ui/b/</path>
+    <path>/cirun/poxy/ui/b/</path>
     <filename>menuseparator_8js.html</filename>
   </compound>
   <compound kind="file">
     <name>menutitle.js</name>
-    <path>/anklang/poxy/ui/b/</path>
+    <path>/cirun/poxy/ui/b/</path>
     <filename>menutitle_8js.html</filename>
   </compound>
   <compound kind="file">
     <name>more.js</name>
-    <path>/anklang/poxy/ui/b/</path>
+    <path>/cirun/poxy/ui/b/</path>
     <filename>more_8js.html</filename>
   </compound>
   <compound kind="file">
     <name>numberinput.js</name>
-    <path>/anklang/poxy/ui/b/</path>
+    <path>/cirun/poxy/ui/b/</path>
     <filename>numberinput_8js.html</filename>
   </compound>
   <compound kind="file">
     <name>objecteditor.js</name>
-    <path>/anklang/poxy/ui/b/</path>
+    <path>/cirun/poxy/ui/b/</path>
     <filename>objecteditor_8js.html</filename>
   </compound>
   <compound kind="file">
     <name>partlist.js</name>
-    <path>/anklang/poxy/ui/b/</path>
+    <path>/cirun/poxy/ui/b/</path>
     <filename>partlist_8js.html</filename>
   </compound>
   <compound kind="file">
     <name>piano-ctrl.js</name>
-    <path>/anklang/poxy/ui/b/</path>
+    <path>/cirun/poxy/ui/b/</path>
     <filename>piano-ctrl_8js.html</filename>
   </compound>
   <compound kind="file">
     <name>pianoroll.js</name>
-    <path>/anklang/poxy/ui/b/</path>
+    <path>/cirun/poxy/ui/b/</path>
     <filename>pianoroll_8js.html</filename>
   </compound>
   <compound kind="file">
     <name>playcontrols.js</name>
-    <path>/anklang/poxy/ui/b/</path>
+    <path>/cirun/poxy/ui/b/</path>
     <filename>playcontrols_8js.html</filename>
   </compound>
   <compound kind="file">
     <name>positionview.js</name>
-    <path>/anklang/poxy/ui/b/</path>
+    <path>/cirun/poxy/ui/b/</path>
     <filename>positionview_8js.html</filename>
   </compound>
   <compound kind="file">
     <name>propgroup.js</name>
-    <path>/anklang/poxy/ui/b/</path>
+    <path>/cirun/poxy/ui/b/</path>
     <filename>propgroup_8js.html</filename>
   </compound>
   <compound kind="file">
     <name>propinput.js</name>
-    <path>/anklang/poxy/ui/b/</path>
+    <path>/cirun/poxy/ui/b/</path>
     <filename>propinput_8js.html</filename>
   </compound>
   <compound kind="file">
     <name>shell.vue.js</name>
-    <path>/anklang/poxy/ui/b/</path>
+    <path>/cirun/poxy/ui/b/</path>
     <filename>shell_8vue_8js.html</filename>
   </compound>
   <compound kind="file">
     <name>statusbar.js</name>
-    <path>/anklang/poxy/ui/b/</path>
+    <path>/cirun/poxy/ui/b/</path>
     <filename>statusbar_8js.html</filename>
   </compound>
   <compound kind="file">
     <name>switchinput.js</name>
-    <path>/anklang/poxy/ui/b/</path>
+    <path>/cirun/poxy/ui/b/</path>
     <filename>switchinput_8js.html</filename>
   </compound>
   <compound kind="file">
     <name>textinput.js</name>
-    <path>/anklang/poxy/ui/b/</path>
+    <path>/cirun/poxy/ui/b/</path>
     <filename>textinput_8js.html</filename>
   </compound>
   <compound kind="file">
     <name>toggle.js</name>
-    <path>/anklang/poxy/ui/b/</path>
+    <path>/cirun/poxy/ui/b/</path>
     <filename>toggle_8js.html</filename>
   </compound>
   <compound kind="file">
     <name>colors.js</name>
-    <path>/anklang/poxy/ui/</path>
+    <path>/cirun/poxy/ui/</path>
     <filename>colors_8js.html</filename>
   </compound>
   <compound kind="file">
     <name>host.js</name>
-    <path>/anklang/poxy/ui/</path>
+    <path>/cirun/poxy/ui/</path>
     <filename>host_8js.html</filename>
   </compound>
   <compound kind="file">
     <name>jsextract.js</name>
-    <path>/anklang/poxy/ui/</path>
+    <path>/cirun/poxy/ui/</path>
     <filename>jsextract_8js.html</filename>
   </compound>
   <compound kind="file">
     <name>kbd.js</name>
-    <path>/anklang/poxy/ui/</path>
+    <path>/cirun/poxy/ui/</path>
     <filename>kbd_8js.html</filename>
   </compound>
   <compound kind="file">
     <name>little.js</name>
-    <path>/anklang/poxy/ui/</path>
+    <path>/cirun/poxy/ui/</path>
     <filename>little_8js.html</filename>
   </compound>
   <compound kind="file">
     <name>postcss.js</name>
-    <path>/anklang/poxy/ui/</path>
+    <path>/cirun/poxy/ui/</path>
     <filename>postcss_8js.html</filename>
   </compound>
   <compound kind="file">
     <name>script.js</name>
-    <path>/anklang/poxy/ui/</path>
+    <path>/cirun/poxy/ui/</path>
     <filename>script_8js.html</filename>
   </compound>
   <compound kind="file">
     <name>sfc-compile.js</name>
-    <path>/anklang/poxy/ui/</path>
+    <path>/cirun/poxy/ui/</path>
     <filename>sfc-compile_8js.html</filename>
   </compound>
   <compound kind="file">
     <name>startup.js</name>
-    <path>/anklang/poxy/ui/</path>
+    <path>/cirun/poxy/ui/</path>
     <filename>startup_8js.html</filename>
   </compound>
   <compound kind="file">
     <name>util.js</name>
-    <path>/anklang/poxy/ui/</path>
+    <path>/cirun/poxy/ui/</path>
     <filename>util_8js.html</filename>
   </compound>
   <compound kind="file">
     <name>wrapper.js</name>
-    <path>/anklang/poxy/ui/</path>
+    <path>/cirun/poxy/ui/</path>
     <filename>wrapper_8js.html</filename>
   </compound>
   <compound kind="file">
     <name>xbcomments.js</name>
-    <path>/anklang/poxy/ui/</path>
+    <path>/cirun/poxy/ui/</path>
     <filename>xbcomments_8js.html</filename>
   </compound>
   <compound kind="struct">
@@ -4512,7 +4512,7 @@
       <type>const char *</type>
       <name>message</name>
       <anchorfile>struct_ase_1_1_backtrace_command.html</anchorfile>
-      <anchor>aa71c5d800ec1d9468e42cea0c72e224a</anchor>
+      <anchor>a46cc8933bda671e8d30981c7f4371404</anchor>
       <arglist>()</arglist>
     </member>
   </compound>
@@ -4993,20 +4993,6 @@
     <filename>class_ase_1_1_custom_data_key.html</filename>
     <templarg></templarg>
     <base>Ase::VirtualBase</base>
-    <member kind="function" virtualness="virtual">
-      <type>virtual T</type>
-      <name>fallback</name>
-      <anchorfile>class_ase_1_1_custom_data_key.html</anchorfile>
-      <anchor>a853484ee773012f30fa0a5de7e444bed</anchor>
-      <arglist>()</arglist>
-    </member>
-    <member kind="function">
-      <type>const std::type_info &amp;</type>
-      <name>type</name>
-      <anchorfile>class_ase_1_1_custom_data_key.html</anchorfile>
-      <anchor>a7300cb11734fbaa8bca101a273130066</anchor>
-      <arglist>() const noexcept</arglist>
-    </member>
   </compound>
   <compound kind="class">
     <name>Ase::Device</name>
@@ -5272,13 +5258,6 @@
       <anchorfile>class_ase_1_1_event_source.html</anchorfile>
       <anchor>a2cbc7b23b33183403946eeaecb74b148</anchor>
       <arglist>()</arglist>
-    </member>
-    <member kind="function">
-      <type>MainLoop *</type>
-      <name>main_loop</name>
-      <anchorfile>class_ase_1_1_event_source.html</anchorfile>
-      <anchor>a425568ed44fa5f78b3b29bd0d21e721c</anchor>
-      <arglist>() const</arglist>
     </member>
     <member kind="function" protection="protected" virtualness="virtual">
       <type>virtual bool</type>
@@ -5808,13 +5787,6 @@
       <anchor>a2cbc7b23b33183403946eeaecb74b148</anchor>
       <arglist>()</arglist>
     </member>
-    <member kind="function">
-      <type>MainLoop *</type>
-      <name>main_loop</name>
-      <anchorfile>class_ase_1_1_event_source.html</anchorfile>
-      <anchor>a425568ed44fa5f78b3b29bd0d21e721c</anchor>
-      <arglist>() const</arglist>
-    </member>
   </compound>
   <compound kind="class">
     <name>Ase::FastMemArray</name>
@@ -6207,20 +6179,6 @@
       <name>alignment</name>
       <anchorfile>struct_ase_1_1_fast_memory_1_1_huge_page.html</anchorfile>
       <anchor>a775d4ded0b1176644809973d21a8e2cc</anchor>
-      <arglist>() const</arglist>
-    </member>
-    <member kind="function">
-      <type>size_t</type>
-      <name>size</name>
-      <anchorfile>struct_ase_1_1_fast_memory_1_1_huge_page.html</anchorfile>
-      <anchor>af9fb2cae41d28a35f803829e76b484be</anchor>
-      <arglist>() const</arglist>
-    </member>
-    <member kind="function">
-      <type>char *</type>
-      <name>mem</name>
-      <anchorfile>struct_ase_1_1_fast_memory_1_1_huge_page.html</anchorfile>
-      <anchor>af0cf040328d5a17264e2881d00bf3616</anchor>
       <arglist>() const</arglist>
     </member>
     <member kind="function" static="yes">
@@ -7047,13 +7005,6 @@
       <name>create_sub_loop</name>
       <anchorfile>class_ase_1_1_main_loop.html</anchorfile>
       <anchor>a251bdb570752ce2ba142d93ef0e829e8</anchor>
-      <arglist>()</arglist>
-    </member>
-    <member kind="function">
-      <type>std::mutex &amp;</type>
-      <name>mutex</name>
-      <anchorfile>class_ase_1_1_main_loop.html</anchorfile>
-      <anchor>a931c8e32b8003b14180d58036fd67d09</anchor>
       <arglist>()</arglist>
     </member>
     <member kind="function">
@@ -7952,121 +7903,121 @@
     <member kind="enumvalue">
       <name>IN</name>
       <anchorfile>struct_ase_1_1_poll_f_d.html</anchorfile>
-      <anchor>a3e4416cc7439f7b1e66b4aa9e001df3aa39415fe2628f2dfddf652052102cdbd3</anchor>
+      <anchor>aec559f94cc8a1665094734f0594442fda39415fe2628f2dfddf652052102cdbd3</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>PRI</name>
       <anchorfile>struct_ase_1_1_poll_f_d.html</anchorfile>
-      <anchor>a3e4416cc7439f7b1e66b4aa9e001df3aa615fd972944cc854ab57c05ca9d08e3f</anchor>
+      <anchor>aec559f94cc8a1665094734f0594442fda615fd972944cc854ab57c05ca9d08e3f</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>OUT</name>
       <anchorfile>struct_ase_1_1_poll_f_d.html</anchorfile>
-      <anchor>a3e4416cc7439f7b1e66b4aa9e001df3aad2314f9351cd996183c8e08748c88f02</anchor>
+      <anchor>aec559f94cc8a1665094734f0594442fdad2314f9351cd996183c8e08748c88f02</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>RDNORM</name>
       <anchorfile>struct_ase_1_1_poll_f_d.html</anchorfile>
-      <anchor>a3e4416cc7439f7b1e66b4aa9e001df3aa187e16856bc278e0ea40f64627952c9a</anchor>
+      <anchor>aec559f94cc8a1665094734f0594442fda187e16856bc278e0ea40f64627952c9a</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>RDBAND</name>
       <anchorfile>struct_ase_1_1_poll_f_d.html</anchorfile>
-      <anchor>a3e4416cc7439f7b1e66b4aa9e001df3aac1df57831b8cbefa6e0fa39812527554</anchor>
+      <anchor>aec559f94cc8a1665094734f0594442fdac1df57831b8cbefa6e0fa39812527554</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>WRNORM</name>
       <anchorfile>struct_ase_1_1_poll_f_d.html</anchorfile>
-      <anchor>a3e4416cc7439f7b1e66b4aa9e001df3aa4450013079dd32485f66b20a9500feed</anchor>
+      <anchor>aec559f94cc8a1665094734f0594442fda4450013079dd32485f66b20a9500feed</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>WRBAND</name>
       <anchorfile>struct_ase_1_1_poll_f_d.html</anchorfile>
-      <anchor>a3e4416cc7439f7b1e66b4aa9e001df3aafa6c232ba5b7e13d26ecad122b8e0684</anchor>
+      <anchor>aec559f94cc8a1665094734f0594442fdafa6c232ba5b7e13d26ecad122b8e0684</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>ERR</name>
       <anchorfile>struct_ase_1_1_poll_f_d.html</anchorfile>
-      <anchor>a3e4416cc7439f7b1e66b4aa9e001df3aafa68304b2d4858c02525532e6ce46937</anchor>
+      <anchor>aec559f94cc8a1665094734f0594442fdafa68304b2d4858c02525532e6ce46937</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>HUP</name>
       <anchorfile>struct_ase_1_1_poll_f_d.html</anchorfile>
-      <anchor>a3e4416cc7439f7b1e66b4aa9e001df3aa2270d0413d65f7bb4b2c42d7bc286219</anchor>
+      <anchor>aec559f94cc8a1665094734f0594442fda2270d0413d65f7bb4b2c42d7bc286219</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>NVAL</name>
       <anchorfile>struct_ase_1_1_poll_f_d.html</anchorfile>
-      <anchor>a3e4416cc7439f7b1e66b4aa9e001df3aab855b051b9cc0116ab91d2d231c5759f</anchor>
+      <anchor>aec559f94cc8a1665094734f0594442fdab855b051b9cc0116ab91d2d231c5759f</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>IN</name>
       <anchorfile>struct_ase_1_1_poll_f_d.html</anchorfile>
-      <anchor>a3e4416cc7439f7b1e66b4aa9e001df3aa39415fe2628f2dfddf652052102cdbd3</anchor>
+      <anchor>aec559f94cc8a1665094734f0594442fda39415fe2628f2dfddf652052102cdbd3</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>PRI</name>
       <anchorfile>struct_ase_1_1_poll_f_d.html</anchorfile>
-      <anchor>a3e4416cc7439f7b1e66b4aa9e001df3aa615fd972944cc854ab57c05ca9d08e3f</anchor>
+      <anchor>aec559f94cc8a1665094734f0594442fda615fd972944cc854ab57c05ca9d08e3f</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>OUT</name>
       <anchorfile>struct_ase_1_1_poll_f_d.html</anchorfile>
-      <anchor>a3e4416cc7439f7b1e66b4aa9e001df3aad2314f9351cd996183c8e08748c88f02</anchor>
+      <anchor>aec559f94cc8a1665094734f0594442fdad2314f9351cd996183c8e08748c88f02</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>RDNORM</name>
       <anchorfile>struct_ase_1_1_poll_f_d.html</anchorfile>
-      <anchor>a3e4416cc7439f7b1e66b4aa9e001df3aa187e16856bc278e0ea40f64627952c9a</anchor>
+      <anchor>aec559f94cc8a1665094734f0594442fda187e16856bc278e0ea40f64627952c9a</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>RDBAND</name>
       <anchorfile>struct_ase_1_1_poll_f_d.html</anchorfile>
-      <anchor>a3e4416cc7439f7b1e66b4aa9e001df3aac1df57831b8cbefa6e0fa39812527554</anchor>
+      <anchor>aec559f94cc8a1665094734f0594442fdac1df57831b8cbefa6e0fa39812527554</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>WRNORM</name>
       <anchorfile>struct_ase_1_1_poll_f_d.html</anchorfile>
-      <anchor>a3e4416cc7439f7b1e66b4aa9e001df3aa4450013079dd32485f66b20a9500feed</anchor>
+      <anchor>aec559f94cc8a1665094734f0594442fda4450013079dd32485f66b20a9500feed</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>WRBAND</name>
       <anchorfile>struct_ase_1_1_poll_f_d.html</anchorfile>
-      <anchor>a3e4416cc7439f7b1e66b4aa9e001df3aafa6c232ba5b7e13d26ecad122b8e0684</anchor>
+      <anchor>aec559f94cc8a1665094734f0594442fdafa6c232ba5b7e13d26ecad122b8e0684</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>ERR</name>
       <anchorfile>struct_ase_1_1_poll_f_d.html</anchorfile>
-      <anchor>a3e4416cc7439f7b1e66b4aa9e001df3aafa68304b2d4858c02525532e6ce46937</anchor>
+      <anchor>aec559f94cc8a1665094734f0594442fdafa68304b2d4858c02525532e6ce46937</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>HUP</name>
       <anchorfile>struct_ase_1_1_poll_f_d.html</anchorfile>
-      <anchor>a3e4416cc7439f7b1e66b4aa9e001df3aa2270d0413d65f7bb4b2c42d7bc286219</anchor>
+      <anchor>aec559f94cc8a1665094734f0594442fda2270d0413d65f7bb4b2c42d7bc286219</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>NVAL</name>
       <anchorfile>struct_ase_1_1_poll_f_d.html</anchorfile>
-      <anchor>a3e4416cc7439f7b1e66b4aa9e001df3aab855b051b9cc0116ab91d2d231c5759f</anchor>
+      <anchor>aec559f94cc8a1665094734f0594442fdab855b051b9cc0116ab91d2d231c5759f</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -8129,13 +8080,6 @@
       <anchorfile>class_ase_1_1_event_source.html</anchorfile>
       <anchor>a2cbc7b23b33183403946eeaecb74b148</anchor>
       <arglist>()</arglist>
-    </member>
-    <member kind="function">
-      <type>MainLoop *</type>
-      <name>main_loop</name>
-      <anchorfile>class_ase_1_1_event_source.html</anchorfile>
-      <anchor>a425568ed44fa5f78b3b29bd0d21e721c</anchor>
-      <arglist>() const</arglist>
     </member>
     <member kind="function" protection="protected" virtualness="virtual">
       <type>virtual bool</type>
@@ -9564,13 +9508,6 @@
       <anchor>a2cbc7b23b33183403946eeaecb74b148</anchor>
       <arglist>()</arglist>
     </member>
-    <member kind="function">
-      <type>MainLoop *</type>
-      <name>main_loop</name>
-      <anchorfile>class_ase_1_1_event_source.html</anchorfile>
-      <anchor>a425568ed44fa5f78b3b29bd0d21e721c</anchor>
-      <arglist>() const</arglist>
-    </member>
     <member kind="function" protection="protected" virtualness="virtual">
       <type>virtual bool</type>
       <name>prepare</name>
@@ -9602,20 +9539,6 @@
       <anchorfile>class_ase_1_1_test_1_1_timer.html</anchorfile>
       <anchor>a9e7392342a3da92a51429eb3776f03c6</anchor>
       <arglist>(double deadline_in_secs=0)</arglist>
-    </member>
-    <member kind="function">
-      <type>int64</type>
-      <name>n_reps</name>
-      <anchorfile>class_ase_1_1_test_1_1_timer.html</anchorfile>
-      <anchor>adbbb516df3906cb02954538f62a3d414</anchor>
-      <arglist>() const</arglist>
-    </member>
-    <member kind="function">
-      <type>double</type>
-      <name>test_elapsed</name>
-      <anchorfile>class_ase_1_1_test_1_1_timer.html</anchorfile>
-      <anchor>aff105352c72f4ae05b08b7140e837b83</anchor>
-      <arglist>() const</arglist>
     </member>
     <member kind="function">
       <type>double</type>
@@ -10085,13 +10008,6 @@
       <anchor>a2cbc7b23b33183403946eeaecb74b148</anchor>
       <arglist>()</arglist>
     </member>
-    <member kind="function">
-      <type>MainLoop *</type>
-      <name>main_loop</name>
-      <anchorfile>class_ase_1_1_event_source.html</anchorfile>
-      <anchor>a425568ed44fa5f78b3b29bd0d21e721c</anchor>
-      <arglist>() const</arglist>
-    </member>
     <member kind="function" static="yes">
       <type>static void</type>
       <name>raise</name>
@@ -10203,20 +10119,6 @@
   <compound kind="class">
     <name>Ase::Writ</name>
     <filename>class_ase_1_1_writ.html</filename>
-    <member kind="function">
-      <type>bool</type>
-      <name>in_load</name>
-      <anchorfile>class_ase_1_1_writ.html</anchorfile>
-      <anchor>adacf7d12aa7d7e6133b160d3f3812c7d</anchor>
-      <arglist>() const</arglist>
-    </member>
-    <member kind="function">
-      <type>bool</type>
-      <name>in_save</name>
-      <anchorfile>class_ase_1_1_writ.html</anchorfile>
-      <anchor>a14d33e5c7d9239f8aa3aa847bc2cca6d</anchor>
-      <arglist>() const</arglist>
-    </member>
     <member kind="function" static="yes">
       <type>static bool</type>
       <name>typedata_is_loadable</name>
@@ -10352,110 +10254,110 @@
     <namespace>Ase::Path</namespace>
     <namespace>Ase::Properties</namespace>
     <namespace>Ase::Test</namespace>
-    <class kind="class">Ase::SharedBase</class>
-    <class kind="struct">Ase::Choice</class>
-    <class kind="struct">Ase::TelemetryField</class>
-    <class kind="class">Ase::Emittable</class>
-    <class kind="class">Ase::Property</class>
-    <class kind="class">Ase::Object</class>
-    <class kind="class">Ase::Gadget</class>
-    <class kind="struct">Ase::DeviceInfo</class>
-    <class kind="class">Ase::Device</class>
-    <class kind="class">Ase::NativeDevice</class>
-    <class kind="struct">Ase::ClipNote</class>
-    <class kind="class">Ase::Clip</class>
-    <class kind="class">Ase::Track</class>
-    <class kind="struct">Ase::ProbeFeatures</class>
-    <class kind="class">Ase::Monitor</class>
-    <class kind="class">Ase::Project</class>
-    <class kind="struct">Ase::Resource</class>
-    <class kind="class">Ase::ResourceCrawler</class>
-    <class kind="struct">Ase::UserNote</class>
-    <class kind="struct">Ase::TelemetrySegment</class>
-    <class kind="class">Ase::Server</class>
-    <class kind="class">Ase::AtomicIntrusiveStack</class>
-    <class kind="struct">Ase::MpmcStack</class>
+    <class kind="struct">Ase::AlignedPOD</class>
+    <class kind="class">Ase::AsyncBlockingQueue</class>
     <class kind="class">Ase::AtomicBits</class>
+    <class kind="class">Ase::AtomicIntrusiveStack</class>
+    <class kind="class">Ase::AudioEngine</class>
+    <class kind="class">Ase::AudioProcessor</class>
+    <class kind="struct">Ase::AudioProcessorInfo</class>
+    <class kind="struct">Ase::AudioTransport</class>
+    <class kind="class">Ase::AutoSeeder</class>
     <class kind="struct">Ase::BacktraceCommand</class>
     <class kind="class">Ase::Blob</class>
-    <class kind="struct">Ase::VirtualBase</class>
-    <class kind="class">Ase::Persistent</class>
-    <class kind="struct">Ase::Id32</class>
-    <class kind="class">Ase::Serializable</class>
-    <class kind="struct">Ase::DriverEntry</class>
-    <class kind="class">Ase::AudioEngine</class>
     <class kind="class">Ase::BorrowedPtr</class>
-    <class kind="struct">Ase::OrderedEventList</class>
-    <class kind="class">Ase::EventList</class>
-    <class kind="class">Ase::GadgetImpl</class>
-    <class kind="class">Ase::IniFile</class>
-    <class kind="class">Ase::IniWriter</class>
+    <class kind="struct">Ase::BusInfo</class>
+    <class kind="struct">Ase::Choice</class>
+    <class kind="class">Ase::Clip</class>
+    <class kind="struct">Ase::ClipNote</class>
+    <class kind="struct">Ase::ConvertJsTrigger</class>
     <class kind="struct">Ase::ConvertValue</class>
     <class kind="struct">Ase::ConvertValueP</class>
     <class kind="struct">Ase::ConvertValueR</class>
     <class kind="struct">Ase::ConvertValueRP</class>
-    <class kind="struct">Ase::ConvertJsTrigger</class>
+    <class kind="class">Ase::CString</class>
+    <class kind="class">Ase::CustomDataContainer</class>
+    <class kind="class">Ase::CustomDataKey</class>
+    <class kind="class">Ase::Device</class>
+    <class kind="struct">Ase::DeviceInfo</class>
+    <class kind="class">Ase::DispatcherSource</class>
+    <class kind="struct">Ase::DriverEntry</class>
+    <class kind="class">Ase::Emittable</class>
+    <class kind="class">Ase::EmittableImpl</class>
+    <class kind="struct">Ase::EnumInfo</class>
+    <class kind="struct">Ase::Event</class>
+    <class kind="class">Ase::EventFd</class>
+    <class kind="class">Ase::EventList</class>
+    <class kind="class">Ase::EventLoop</class>
+    <class kind="class">Ase::EventSource</class>
+    <class kind="class">Ase::FastMemArray</class>
+    <class kind="union">Ase::FloatIEEE754</class>
+    <class kind="class">Ase::Gadget</class>
+    <class kind="class">Ase::GadgetImpl</class>
+    <class kind="struct">Ase::GroupId</class>
+    <class kind="struct">Ase::Has_serialize_f</class>
+    <class kind="struct">Ase::Id32</class>
+    <class kind="class">Ase::IniFile</class>
+    <class kind="class">Ase::IniWriter</class>
+    <class kind="class">Ase::JsTrigger</class>
+    <class kind="class">Ase::KeccakCryptoRng</class>
+    <class kind="class">Ase::KeccakFastRng</class>
+    <class kind="class">Ase::KeccakGoodRng</class>
+    <class kind="class">Ase::KeccakRng</class>
     <class kind="struct">Ase::LoftConfig</class>
     <class kind="struct">Ase::LoftStats</class>
-    <class kind="struct">Ase::PollFD</class>
-    <class kind="class">Ase::EventLoop</class>
+    <class kind="struct">Ase::Logscale</class>
     <class kind="class">Ase::MainLoop</class>
-    <class kind="class">Ase::EventSource</class>
-    <class kind="class">Ase::DispatcherSource</class>
-    <class kind="class">Ase::USignalSource</class>
-    <class kind="class">Ase::TimedSource</class>
-    <class kind="class">Ase::PollFDSource</class>
-    <class kind="union">Ase::FloatIEEE754</class>
-    <class kind="class">Ase::FastMemArray</class>
-    <class kind="class">Ase::CString</class>
     <class kind="struct">Ase::MidiEvent</class>
-    <class kind="class">Ase::MidiEventStream</class>
     <class kind="class">Ase::MidiEventRange</class>
+    <class kind="class">Ase::MidiEventStream</class>
     <class kind="struct">Ase::MidiNote</class>
-    <class kind="class">Ase::EmittableImpl</class>
-    <class kind="class">Ase::ObjectImpl</class>
-    <class kind="class">Ase::AsyncBlockingQueue</class>
-    <class kind="struct">Ase::TaskStatus</class>
-    <class kind="class">Ase::TaskRegistry</class>
-    <class kind="struct">Ase::AudioProcessorInfo</class>
-    <class kind="struct">Ase::ParamInfo</class>
-    <class kind="struct">Ase::BusInfo</class>
-    <class kind="class">Ase::AudioProcessor</class>
-    <class kind="class">Ase::ProcessorManager</class>
-    <class kind="struct">Ase::GroupId</class>
-    <class kind="struct">Ase::AlignedPOD</class>
+    <class kind="class">Ase::Monitor</class>
+    <class kind="struct">Ase::MpmcStack</class>
     <class kind="class">Ase::Mwc256</class>
+    <class kind="class">Ase::NativeDevice</class>
+    <class kind="class">Ase::Object</class>
+    <class kind="class">Ase::ObjectImpl</class>
+    <class kind="struct">Ase::OrderedEventList</class>
+    <class kind="struct">Ase::ParamInfo</class>
+    <class kind="class">Ase::Pcg32Rng</class>
+    <class kind="class">Ase::Persistent</class>
+    <class kind="struct">Ase::PollFD</class>
+    <class kind="class">Ase::PollFDSource</class>
+    <class kind="struct">Ase::ProbeFeatures</class>
+    <class kind="class">Ase::ProcessorManager</class>
+    <class kind="class">Ase::Project</class>
+    <class kind="class">Ase::Property</class>
+    <class kind="class">Ase::Re</class>
+    <class kind="class">Ase::Resampler2</class>
+    <class kind="struct">Ase::Resource</class>
+    <class kind="class">Ase::ResourceCrawler</class>
+    <class kind="class">Ase::Serializable</class>
+    <class kind="class">Ase::Server</class>
     <class kind="struct">Ase::SHA3_224</class>
     <class kind="struct">Ase::SHA3_256</class>
     <class kind="struct">Ase::SHA3_384</class>
     <class kind="struct">Ase::SHA3_512</class>
     <class kind="struct">Ase::SHAKE128</class>
     <class kind="struct">Ase::SHAKE256</class>
-    <class kind="class">Ase::AutoSeeder</class>
-    <class kind="class">Ase::KeccakRng</class>
-    <class kind="class">Ase::KeccakCryptoRng</class>
-    <class kind="class">Ase::KeccakGoodRng</class>
-    <class kind="class">Ase::KeccakFastRng</class>
-    <class kind="class">Ase::Pcg32Rng</class>
-    <class kind="class">Ase::Re</class>
-    <class kind="class">Ase::Resampler2</class>
-    <class kind="class">Ase::WritNode</class>
-    <class kind="class">Ase::Writ</class>
-    <class kind="struct">Ase::WritConverter</class>
-    <class kind="struct">Ase::Has_serialize_f</class>
-    <class kind="struct">Ase::Logscale</class>
+    <class kind="class">Ase::SharedBase</class>
     <class kind="class">Ase::SortedVector</class>
     <class kind="class">Ase::Strings</class>
-    <class kind="class">Ase::TrackImpl</class>
+    <class kind="class">Ase::TaskRegistry</class>
+    <class kind="struct">Ase::TaskStatus</class>
+    <class kind="struct">Ase::TelemetryField</class>
+    <class kind="struct">Ase::TelemetrySegment</class>
     <class kind="struct">Ase::TickSignature</class>
-    <class kind="struct">Ase::AudioTransport</class>
-    <class kind="class">Ase::EventFd</class>
-    <class kind="class">Ase::CustomDataKey</class>
-    <class kind="class">Ase::CustomDataContainer</class>
+    <class kind="class">Ase::TimedSource</class>
+    <class kind="class">Ase::Track</class>
+    <class kind="class">Ase::TrackImpl</class>
+    <class kind="struct">Ase::UserNote</class>
+    <class kind="class">Ase::USignalSource</class>
     <class kind="struct">Ase::Value</class>
-    <class kind="struct">Ase::EnumInfo</class>
-    <class kind="struct">Ase::Event</class>
-    <class kind="class">Ase::JsTrigger</class>
+    <class kind="struct">Ase::VirtualBase</class>
+    <class kind="class">Ase::Writ</class>
+    <class kind="struct">Ase::WritConverter</class>
+    <class kind="class">Ase::WritNode</class>
     <member kind="typedef">
       <type>boost::atomic&lt; T &gt;</type>
       <name>Atomic</name>
@@ -12424,8 +12326,8 @@
   <compound kind="namespace">
     <name>Ase::FastMemory</name>
     <filename>namespace_ase_1_1_fast_memory.html</filename>
-    <class kind="struct">Ase::FastMemory::Block</class>
     <class kind="struct">Ase::FastMemory::Arena</class>
+    <class kind="struct">Ase::FastMemory::Block</class>
     <class kind="struct">Ase::FastMemory::HugePage</class>
     <member kind="variable">
       <type>constexpr size_t</type>
@@ -12438,10 +12340,10 @@
   <compound kind="namespace">
     <name>Ase::Lib</name>
     <filename>namespace_ase_1_1_lib.html</filename>
+    <class kind="class">Ase::Lib::KeccakF1600</class>
     <class kind="class">Ase::Lib::ScopedLocale</class>
     <class kind="class">Ase::Lib::ScopedPosixLocale</class>
     <class kind="class">Ase::Lib::StringFormatter</class>
-    <class kind="class">Ase::Lib::KeccakF1600</class>
   </compound>
   <compound kind="namespace">
     <name>Ase::Loft</name>
@@ -12868,27 +12770,26 @@
   <compound kind="page">
     <name>md_NEWS</name>
     <title>Anklang Release NEWS</title>
-    <filename>md__n_e_w_s.html</filename>
+    <filename>md__n_e_w_s</filename>
   </compound>
   <compound kind="page">
     <name>eventloops</name>
     <title>Event Loops and Event Sources</title>
-    <filename>eventloops.html</filename>
+    <filename>eventloops</filename>
   </compound>
   <compound kind="page">
-    <name>md_ui_ch_component</name>
+    <name>md_ui_ch-component</name>
     <title>Web Component Implementations</title>
-    <filename>md_ui_ch_component.html</filename>
+    <filename>md_ui_ch-component</filename>
   </compound>
   <compound kind="page">
-    <name>md_ui_ch_scripting</name>
+    <name>md_ui_ch-scripting</name>
     <title>Anklang Scripting</title>
-    <filename>md_ui_ch_scripting.html</filename>
+    <filename>md_ui_ch-scripting</filename>
   </compound>
   <compound kind="page">
     <name>index</name>
-    <title>Anklang 1199d799005646b5c04d85732a405da8ae9ea1aa</title>
-    <filename>index.html</filename>
-    <docanchor file="index.html">md_home</docanchor>
+    <title>Anklang cbe82e3bb61f181d3bfa1be25e107fcc6ad18300</title>
+    <filename>index</filename>
   </compound>
 </tagfile>
