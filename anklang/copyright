@@ -20,6 +20,10 @@ Files: .gitignore
 Copyright: Copyright (C) 2020-2023 Tim Janik
 License: MPL-2.0
 
+Files: .gitmodules
+Copyright: Copyright (C) 2023 Tim Janik
+License: MPL-2.0
+
 Files: GNUmakefile
 Copyright: Copyright (C) 2020 Tim Janik
 License: CC0-1.0
@@ -107,7 +111,7 @@ Copyright: Copyright (C) 2021-2023 Tim Janik
 License: MPL-2.0
 
 Files: ase/compress.cc
-Copyright: Copyright (C) 2021-2022 Tim Janik
+Copyright: Copyright (C) 2021-2023 Tim Janik
 License: MPL-2.0
 
 Files: ase/compress.hh
@@ -313,11 +317,15 @@ Copyright: Copyright (C) 2021-2022 Tim Janik
 License: CC0-1.0
 
 Files: ase/minizip.c
-Copyright: Copyright (C) 2021 Tim Janik
+Copyright:
+  Copyright (C) 2023 Tim Janik
+  Copyright (C) 2021 Tim Janik
 License: MPL-2.0
 
 Files: ase/minizip.h
-Copyright: Copyright (C) 2021 Tim Janik
+Copyright:
+  Copyright (C) 2023 Tim Janik
+  Copyright (C) 2021 Tim Janik
 License: MPL-2.0
 
 Files: ase/monitor.cc
@@ -447,7 +455,7 @@ Copyright: Copyright (C) 2021-2023 Tim Janik
 License: MPL-2.0
 
 Files: ase/storage.cc
-Copyright: Copyright (C) 2021-2022 Tim Janik
+Copyright: Copyright (C) 2021-2023 Tim Janik
 License: MPL-2.0
 
 Files: ase/storage.hh
