@@ -812,7 +812,7 @@ License: MPL-2.0
 
 Files: images/anklangicons.sh
 Copyright:
-  Copyright (C) 2022 Tim Janik
+  Copyright (C) 2022-2023 Tim Janik
   Copyright (C) 2020 Tim Janik
 License: MPL-2.0
 
@@ -901,7 +901,9 @@ Copyright: Copyright (C) 2021 Tim Janik
 License: MPL-2.0
 
 Files: misc/checkinsertions.sh
-Copyright: Copyright (C) 2021 Tim Janik
+Copyright:
+  Copyright (C) 2023 Tim Janik
+  Copyright (C) 2021 Tim Janik
 License: MPL-2.0
 
 Files: misc/cirun
@@ -969,7 +971,7 @@ Copyright: Copyright (C) 2020-2023 Tim Janik
 License: MPL-2.0
 
 Files: rand/hotspots.sh
-Copyright: Copyright (C) 2022 Tim Janik
+Copyright: Copyright (C) 2022-2023 Tim Janik
 License: MPL-2.0
 
 Files: ui/GNUmakefile
