@@ -101,7 +101,7 @@ Copyright:
 License: MPL-2.0
 
 Files: ase/clapplugin.hh
-Copyright: Copyright (C) 2022 Tim Janik
+Copyright: Copyright (C) 2022-2023 Tim Janik
 License: MPL-2.0
 
 Files: ase/clip.cc
@@ -163,7 +163,7 @@ Copyright: Copyright (C) 2022 Tim Janik
 License: MPL-2.0
 
 Files: ase/defs.hh
-Copyright: Copyright (C) 2021-2022 Tim Janik
+Copyright: Copyright (C) 2021-2023 Tim Janik
 License: MPL-2.0
 
 Files: ase/device.cc
@@ -385,7 +385,7 @@ Copyright: Copyright (C) 2021-2022 Tim Janik
 License: MPL-2.0
 
 Files: ase/processor.hh
-Copyright: Copyright (C) 2021-2022 Tim Janik
+Copyright: Copyright (C) 2021-2023 Tim Janik
 License: MPL-2.0
 
 Files: ase/project.cc

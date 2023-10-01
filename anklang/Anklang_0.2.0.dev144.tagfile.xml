@@ -644,7 +644,6 @@
     <includes id="transport_8hh" name="transport.hh" local="no" imported="no">ase/transport.hh</includes>
     <includes id="platform_8hh" name="platform.hh" local="no" imported="no">ase/platform.hh</includes>
     <class kind="class">Ase::AudioEngine</class>
-    <class kind="class">Ase::BorrowedPtr</class>
     <namespace>Ase</namespace>
   </compound>
   <compound kind="file">
@@ -3755,18 +3754,18 @@
     <name>Ase::AudioEngine</name>
     <filename>class_ase_1_1_audio_engine.html</filename>
     <base protection="private">Ase::VirtualBase</base>
-    <member kind="variable" static="yes">
-      <type>static JobQueue</type>
+    <member kind="variable">
+      <type>JobQueue</type>
       <name>async_jobs</name>
       <anchorfile>class_ase_1_1_audio_engine.html</anchorfile>
-      <anchor>ace14f925c19c309845398d43b6951c55</anchor>
+      <anchor>a4e9d829eb7dbde445fff8f4ed0627c03</anchor>
       <arglist></arglist>
     </member>
-    <member kind="variable" static="yes">
-      <type>static JobQueue</type>
+    <member kind="variable">
+      <type>JobQueue</type>
       <name>const_jobs</name>
       <anchorfile>class_ase_1_1_audio_engine.html</anchorfile>
-      <anchor>a4854de4039fdec25f3a2fa1f1c12ef04</anchor>
+      <anchor>add1b9076e643ffa40750f279f14b9406</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -4608,11 +4607,6 @@
   <compound kind="struct">
     <name>Ase::FastMemory::Block</name>
     <filename>struct_ase_1_1_fast_memory_1_1_block.html</filename>
-  </compound>
-  <compound kind="class">
-    <name>Ase::BorrowedPtr</name>
-    <filename>class_ase_1_1_borrowed_ptr.html</filename>
-    <templarg></templarg>
   </compound>
   <compound kind="struct">
     <name>Ase::BusInfo</name>
@@ -10378,7 +10372,6 @@
     <class kind="class">Ase::AutoSeeder</class>
     <class kind="struct">Ase::BacktraceCommand</class>
     <class kind="class">Ase::Blob</class>
-    <class kind="class">Ase::BorrowedPtr</class>
     <class kind="struct">Ase::BusInfo</class>
     <class kind="class">Ase::CallbackList</class>
     <class kind="struct">Ase::Choice</class>
@@ -12913,7 +12906,7 @@
   </compound>
   <compound kind="page">
     <name>index</name>
-    <title>Anklang a5f9ca97b57e83a29cf04d448baba973caf7bbd0</title>
+    <title>Anklang 8067acc18e7e22a6b1c444f1e409f582f69175ce</title>
     <filename>index</filename>
   </compound>
 </tagfile>
