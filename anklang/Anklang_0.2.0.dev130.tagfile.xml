@@ -170,6 +170,14 @@
     </member>
   </compound>
   <compound kind="file">
+    <name>callback.hh</name>
+    <filename>callback_8hh.html</filename>
+    <includes id="defs_8hh" name="defs.hh" local="no" imported="no">ase/defs.hh</includes>
+    <class kind="class">Ase::CallbackList</class>
+    <class kind="struct">Ase::RtCall</class>
+    <namespace>Ase</namespace>
+  </compound>
+  <compound kind="file">
     <name>clapdevice.hh</name>
     <filename>clapdevice_8hh.html</filename>
     <includes id="device_8hh" name="device.hh" local="no" imported="no">ase/device.hh</includes>
@@ -622,6 +630,7 @@
   </compound>
   <compound kind="file">
     <name>driver.hh</name>
+    <path>/cirun/poxy/ase/</path>
     <filename>driver_8hh.html</filename>
     <includes id="api_8hh" name="api.hh" local="no" imported="no">ase/api.hh</includes>
     <includes id="midievent_8hh" name="midievent.hh" local="no" imported="no">ase/midievent.hh</includes>
@@ -888,6 +897,7 @@
     <path>/cirun/poxy/ase/</path>
     <filename>loft_8hh.html</filename>
     <includes id="defs_8hh" name="defs.hh" local="no" imported="no">ase/defs.hh</includes>
+    <class kind="struct">Ase::LoftFree</class>
     <class kind="struct">Ase::LoftConfig</class>
     <class kind="struct">Ase::LoftStats</class>
     <namespace>Ase</namespace>
@@ -1001,7 +1011,8 @@
     <includes id="regex_8hh" name="regex.hh" local="no" imported="no">ase/regex.hh</includes>
     <includes id="websocket_8hh" name="websocket.hh" local="no" imported="no">ase/websocket.hh</includes>
     <includes id="loop_8hh" name="loop.hh" local="no" imported="no">ase/loop.hh</includes>
-    <includes id="utils_8hh" name="utils.hh" local="no" imported="no">ase/utils.hh</includes>
+    <includes id="callback_8hh" name="callback.hh" local="no" imported="no">ase/callback.hh</includes>
+    <class kind="struct">Ase::RtJobQueue</class>
     <namespace>Ase</namespace>
     <member kind="function">
       <type>String</type>
@@ -4649,6 +4660,54 @@
       <arglist></arglist>
     </member>
   </compound>
+  <compound kind="class">
+    <name>Ase::CallbackList</name>
+    <filename>class_ase_1_1_callback_list.html</filename>
+    <templarg>A</templarg>
+    <base>enable_shared_from_this&lt; CallbackList&lt; A... &gt; &gt;</base>
+    <member kind="function">
+      <type>bool</type>
+      <name>empty</name>
+      <anchorfile>class_ase_1_1_callback_list.html</anchorfile>
+      <anchor>add7e902143e465f90d26cdd5905d2fa9</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>del</name>
+      <anchorfile>class_ase_1_1_callback_list.html</anchorfile>
+      <anchor>a8387b4b193129802eb9887af16a8f4d7</anchor>
+      <arglist>(size_t id)</arglist>
+    </member>
+    <member kind="function">
+      <type>size_t</type>
+      <name>add</name>
+      <anchorfile>class_ase_1_1_callback_list.html</anchorfile>
+      <anchor>a66219d5476e8ee9c4d28c174098634d4</anchor>
+      <arglist>(const Callback &amp;f)</arglist>
+    </member>
+    <member kind="function">
+      <type>std::function&lt; void()&gt;</type>
+      <name>add_delcb</name>
+      <anchorfile>class_ase_1_1_callback_list.html</anchorfile>
+      <anchor>a1a590d65cdfa51745d5cb474cb5b85c1</anchor>
+      <arglist>(const Callback &amp;f)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>call</name>
+      <anchorfile>class_ase_1_1_callback_list.html</anchorfile>
+      <anchor>a38ff7082a752dd1bd1b753fc50e95258</anchor>
+      <arglist>(const std::function&lt; void(const Callback &amp;, const A &amp;...)&gt; &amp;wrapper, const A &amp;...args)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>operator()</name>
+      <anchorfile>class_ase_1_1_callback_list.html</anchorfile>
+      <anchor>a448ec9be2150eb69c3a2a9ef5127fbb5</anchor>
+      <arglist>(const A &amp;...args)</arglist>
+    </member>
+  </compound>
   <compound kind="struct">
     <name>Ase::Choice</name>
     <filename>struct_ase_1_1_choice.html</filename>
@@ -6898,6 +6957,10 @@
     </member>
   </compound>
   <compound kind="struct">
+    <name>Ase::LoftFree</name>
+    <filename>struct_ase_1_1_loft_free.html</filename>
+  </compound>
+  <compound kind="struct">
     <name>Ase::LoftStats</name>
     <filename>struct_ase_1_1_loft_stats.html</filename>
     <member kind="variable">
@@ -8740,6 +8803,56 @@
       <arglist>(const String &amp;cwd, const String &amp;fragment, bool constraindir, bool constrainfile)=0</arglist>
     </member>
   </compound>
+  <compound kind="struct">
+    <name>Ase::RtCall</name>
+    <filename>struct_ase_1_1_rt_call.html</filename>
+    <member kind="function">
+      <type></type>
+      <name>RtCall</name>
+      <anchorfile>struct_ase_1_1_rt_call.html</anchorfile>
+      <anchor>af11668cd3a57a7552f67048bb0f380b8</anchor>
+      <arglist>(T &amp;o, void(T::*f)())</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>RtCall</name>
+      <anchorfile>struct_ase_1_1_rt_call.html</anchorfile>
+      <anchor>aba200dbeb9b7d2c1c917b772b573dee7</anchor>
+      <arglist>(void(*f)(T *), T *d)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>RtCall</name>
+      <anchorfile>struct_ase_1_1_rt_call.html</anchorfile>
+      <anchor>a224f12b3ae8bf61317ad1f74354af750</anchor>
+      <arglist>(void(*f)())</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>RtCall</name>
+      <anchorfile>struct_ase_1_1_rt_call.html</anchorfile>
+      <anchor>a72187e6ace85764e1d516b133966fb8a</anchor>
+      <arglist>(const RtCall &amp;call)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>invoke</name>
+      <anchorfile>struct_ase_1_1_rt_call.html</anchorfile>
+      <anchor>a024bb07ba0932d485969cb0a4b769a97</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>~RtCall</name>
+      <anchorfile>struct_ase_1_1_rt_call.html</anchorfile>
+      <anchor>ab5b482dc42d118b474171c38fc72a16d</anchor>
+      <arglist>()</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>Ase::RtJobQueue</name>
+    <filename>struct_ase_1_1_rt_job_queue.html</filename>
+  </compound>
   <compound kind="class">
     <name>Ase::Lib::ScopedLocale</name>
     <filename>class_ase_1_1_lib_1_1_scoped_locale.html</filename>
@@ -10267,6 +10380,7 @@
     <class kind="class">Ase::Blob</class>
     <class kind="class">Ase::BorrowedPtr</class>
     <class kind="struct">Ase::BusInfo</class>
+    <class kind="class">Ase::CallbackList</class>
     <class kind="struct">Ase::Choice</class>
     <class kind="class">Ase::Clip</class>
     <class kind="struct">Ase::ClipNote</class>
@@ -10305,6 +10419,7 @@
     <class kind="class">Ase::KeccakGoodRng</class>
     <class kind="class">Ase::KeccakRng</class>
     <class kind="struct">Ase::LoftConfig</class>
+    <class kind="struct">Ase::LoftFree</class>
     <class kind="struct">Ase::LoftStats</class>
     <class kind="struct">Ase::Logscale</class>
     <class kind="class">Ase::MainLoop</class>
@@ -10332,6 +10447,8 @@
     <class kind="class">Ase::Resampler2</class>
     <class kind="struct">Ase::Resource</class>
     <class kind="class">Ase::ResourceCrawler</class>
+    <class kind="struct">Ase::RtCall</class>
+    <class kind="struct">Ase::RtJobQueue</class>
     <class kind="class">Ase::Serializable</class>
     <class kind="class">Ase::Server</class>
     <class kind="struct">Ase::SHA3_224</class>
@@ -12169,6 +12286,13 @@
       <arglist></arglist>
     </member>
     <member kind="variable">
+      <type>RtJobQueue</type>
+      <name>main_rt_jobs</name>
+      <anchorfile>namespace_ase.html</anchorfile>
+      <anchor>ae03514120bc94d50ad0522fee5a50290</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
       <type>JobQueue</type>
       <name>main_jobs</name>
       <anchorfile>namespace_ase.html</anchorfile>
@@ -12789,7 +12913,7 @@
   </compound>
   <compound kind="page">
     <name>index</name>
-    <title>Anklang 9c1a06244cdce0fada5a1219c195fde132987285</title>
+    <title>Anklang a3f8f2904a9b13fd437ef7176c03993ce00c9988</title>
     <filename>index</filename>
   </compound>
 </tagfile>

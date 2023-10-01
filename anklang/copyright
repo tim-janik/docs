@@ -78,6 +78,14 @@ Files: ase/blob.hh
 Copyright: Copyright (C) 2021 Tim Janik
 License: MPL-2.0
 
+Files: ase/callback.cc
+Copyright: Copyright (C) 2023 Tim Janik
+License: MPL-2.0
+
+Files: ase/callback.hh
+Copyright: Copyright (C) 2023 Tim Janik
+License: MPL-2.0
+
 Files: ase/clapdevice.cc
 Copyright: Copyright (C) 2022 Tim Janik
 License: MPL-2.0
@@ -189,7 +197,7 @@ Copyright: Copyright (C) 2021-2023 Tim Janik
 License: MPL-2.0
 
 Files: ase/engine.hh
-Copyright: Copyright (C) 2021-2022 Tim Janik
+Copyright: Copyright (C) 2021-2023 Tim Janik
 License: MPL-2.0
 
 Files: ase/entropy.cc
@@ -255,11 +263,11 @@ Copyright: Copyright (C) 2021 Tim Janik
 License: MPL-2.0
 
 Files: ase/loft.cc
-Copyright: Copyright (C) 2022 Tim Janik
+Copyright: Copyright (C) 2022-2023 Tim Janik
 License: MPL-2.0
 
 Files: ase/loft.hh
-Copyright: Copyright (C) 2022 Tim Janik
+Copyright: Copyright (C) 2022-2023 Tim Janik
 License: MPL-2.0
 
 Files: ase/loop.cc
@@ -277,7 +285,7 @@ Copyright:
 License: MPL-2.0
 
 Files: ase/main.hh
-Copyright: Copyright (C) 2021-2022 Tim Janik
+Copyright: Copyright (C) 2021-2023 Tim Janik
 License: MPL-2.0
 
 Files: ase/mathtables.cc
@@ -519,7 +527,7 @@ Copyright: Copyright (C) 2021-2023 Tim Janik
 License: MPL-2.0
 
 Files: ase/utils.hh
-Copyright: Copyright (C) 2021-2022 Tim Janik
+Copyright: Copyright (C) 2021-2023 Tim Janik
 License: MPL-2.0
 
 Files: ase/value.cc
