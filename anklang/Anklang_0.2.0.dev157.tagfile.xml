@@ -1849,7 +1849,6 @@
     <includes id="object_8hh" name="object.hh" local="no" imported="no">ase/object.hh</includes>
     <includes id="memory_8hh" name="memory.hh" local="no" imported="no">ase/memory.hh</includes>
     <includes id="jsonapi_8hh" name="jsonapi.hh" local="no" imported="no">ase/jsonapi.hh</includes>
-    <class kind="struct">Ase::GroupId</class>
     <class kind="class">Ase::Properties::Bag</class>
     <namespace>Ase</namespace>
     <namespace>Ase::Properties</namespace>
@@ -6192,32 +6191,6 @@
     </member>
   </compound>
   <compound kind="struct">
-    <name>Ase::GroupId</name>
-    <filename>struct_ase_1_1_group_id.html</filename>
-    <base>Ase::CString</base>
-    <member kind="function">
-      <type>CString &amp;</type>
-      <name>assign</name>
-      <anchorfile>class_ase_1_1_c_string.html</anchorfile>
-      <anchor>a190cfc2963ed45366b8394cdcd42a735</anchor>
-      <arglist>(const std::string &amp;s)</arglist>
-    </member>
-    <member kind="function">
-      <type>const std::string &amp;</type>
-      <name>string</name>
-      <anchorfile>class_ase_1_1_c_string.html</anchorfile>
-      <anchor>accdefed6df5c185790f37b02f132eb46</anchor>
-      <arglist>() const</arglist>
-    </member>
-    <member kind="function" static="yes">
-      <type>static CString</type>
-      <name>lookup</name>
-      <anchorfile>class_ase_1_1_c_string.html</anchorfile>
-      <anchor>a19acb2cec73f004316c037b343d6c3b0</anchor>
-      <arglist>(const std::string &amp;s)</arglist>
-    </member>
-  </compound>
-  <compound kind="struct">
     <name>Ase::Has_serialize_f</name>
     <filename>struct_ase_1_1_has__serialize__f.html</filename>
     <templarg></templarg>
@@ -7847,10 +7820,10 @@
       <arglist></arglist>
     </member>
     <member kind="variable">
-      <type>GroupId</type>
+      <type>CString</type>
       <name>group</name>
       <anchorfile>struct_ase_1_1_param_info.html</anchorfile>
-      <anchor>ae7bc6838e5a25bfa96fe25cec1759f1e</anchor>
+      <anchor>aafa78b1ada4abb4a2f6287aa9f47387b</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
@@ -10401,7 +10374,6 @@
     <class kind="union">Ase::FloatIEEE754</class>
     <class kind="class">Ase::Gadget</class>
     <class kind="class">Ase::GadgetImpl</class>
-    <class kind="struct">Ase::GroupId</class>
     <class kind="struct">Ase::Has_serialize_f</class>
     <class kind="struct">Ase::Id32</class>
     <class kind="class">Ase::IniFile</class>
@@ -12906,7 +12878,7 @@
   </compound>
   <compound kind="page">
     <name>index</name>
-    <title>Anklang 8067acc18e7e22a6b1c444f1e409f582f69175ce</title>
+    <title>Anklang 3a7c2d398dacf07a8b4bcc2a996f0c410a708db0</title>
     <filename>index</filename>
   </compound>
 </tagfile>
