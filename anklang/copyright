@@ -87,7 +87,7 @@ Copyright: Copyright (C) 2023 Tim Janik
 License: MPL-2.0
 
 Files: ase/clapdevice.cc
-Copyright: Copyright (C) 2022 Tim Janik
+Copyright: Copyright (C) 2022-2023 Tim Janik
 License: MPL-2.0
 
 Files: ase/clapdevice.hh
@@ -137,7 +137,9 @@ Copyright: Copyright (C) 2021-2022 Tim Janik
 License: MPL-2.0
 
 Files: ase/cxxaux.cc
-Copyright: Copyright (C) 2021 Tim Janik
+Copyright:
+  Copyright (C) 2023 Tim Janik
+  Copyright (C) 2021 Tim Janik
 License: MPL-2.0
 
 Files: ase/cxxaux.hh
@@ -175,21 +177,23 @@ Copyright: Copyright (C) 2021-2022 Tim Janik
 License: MPL-2.0
 
 Files: ase/driver-alsa.cc
-Copyright: Copyright (C) 2021-2022 Tim Janik
+Copyright: Copyright (C) 2021-2023 Tim Janik
 License: MPL-2.0
 
 Files: ase/driver-jack.cc
 Copyright:
-  Copyright (C) 2021-2022 Tim Janik
+  Copyright (C) 2021-2023 Tim Janik
   Copyright (C) 2019 Stefan Westerfeld
 License: MPL-2.0
 
 Files: ase/driver.cc
-Copyright: Copyright (C) 2021-2022 Tim Janik
+Copyright: Copyright (C) 2021-2023 Tim Janik
 License: MPL-2.0
 
 Files: ase/driver.hh
-Copyright: Copyright (C) 2021 Tim Janik
+Copyright:
+  Copyright (C) 2023 Tim Janik
+  Copyright (C) 2021 Tim Janik
 License: MPL-2.0
 
 Files: ase/engine.cc
@@ -225,11 +229,11 @@ Copyright: Copyright (C) 2021-2023 Tim Janik
 License: MPL-2.0
 
 Files: ase/gadget.cc
-Copyright: Copyright (C) 2021-2022 Tim Janik
+Copyright: Copyright (C) 2021-2023 Tim Janik
 License: MPL-2.0
 
 Files: ase/gadget.hh
-Copyright: Copyright (C) 2021-2022 Tim Janik
+Copyright: Copyright (C) 2021-2023 Tim Janik
 License: MPL-2.0
 
 Files: ase/gtk2wrap.cc
@@ -260,6 +264,14 @@ License: MPL-2.0
 
 Files: ase/jsonapi.hh
 Copyright: Copyright (C) 2021 Tim Janik
+License: MPL-2.0
+
+Files: ase/levenshtein.cc
+Copyright: Copyright (C) 2023 Tim Janik
+License: MPL-2.0
+
+Files: ase/levenshtein.hh
+Copyright: Copyright (C) 2023 Tim Janik
 License: MPL-2.0
 
 Files: ase/loft.cc
@@ -368,6 +380,14 @@ Files: ase/object.hh
 Copyright: Copyright (C) 2021-2022 Tim Janik
 License: MPL-2.0
 
+Files: ase/parameter.cc
+Copyright: Copyright (C) 2023 Tim Janik
+License: MPL-2.0
+
+Files: ase/parameter.hh
+Copyright: Copyright (C) 2023 Tim Janik
+License: MPL-2.0
+
 Files: ase/path.cc
 Copyright: Copyright (C) 2021-2022 Tim Janik
 License: MPL-2.0
@@ -385,7 +405,7 @@ Copyright: Copyright (C) 2021-2022 Tim Janik
 License: MPL-2.0
 
 Files: ase/processor.cc
-Copyright: Copyright (C) 2021-2022 Tim Janik
+Copyright: Copyright (C) 2021-2023 Tim Janik
 License: MPL-2.0
 
 Files: ase/processor.hh
@@ -451,7 +471,7 @@ Copyright: Copyright (C) 2021-2023 Tim Janik
 License: MPL-2.0
 
 Files: ase/server.hh
-Copyright: Copyright (C) 2021-2022 Tim Janik
+Copyright: Copyright (C) 2021-2023 Tim Janik
 License: MPL-2.0
 
 Files: ase/signalmath.cc
@@ -479,15 +499,17 @@ Copyright: Copyright (C) 2021-2022 Tim Janik
 License: MPL-2.0
 
 Files: ase/strings.cc
-Copyright: Copyright (C) 2021-2022 Tim Janik
+Copyright: Copyright (C) 2021-2023 Tim Janik
 License: MPL-2.0
 
 Files: ase/strings.hh
-Copyright: Copyright (C) 2021-2022 Tim Janik
+Copyright: Copyright (C) 2021-2023 Tim Janik
 License: MPL-2.0
 
 Files: ase/testing.cc
-Copyright: Copyright (C) 2021 Tim Janik
+Copyright:
+  Copyright (C) 2023 Tim Janik
+  Copyright (C) 2021 Tim Janik
 License: MPL-2.0
 
 Files: ase/testing.hh
@@ -519,11 +541,15 @@ Copyright: Copyright (C) 2021-2022 Tim Janik
 License: MPL-2.0
 
 Files: ase/unicode.cc
-Copyright: Copyright (C) 2021 Tim Janik
+Copyright:
+  Copyright (C) 2023 Tim Janik
+  Copyright (C) 2021 Tim Janik
 License: MPL-2.0
 
 Files: ase/unicode.hh
-Copyright: Copyright (C) 2021 Tim Janik
+Copyright:
+  Copyright (C) 2023 Tim Janik
+  Copyright (C) 2021 Tim Janik
 License: MPL-2.0
 
 Files: ase/utils.cc
@@ -539,7 +565,7 @@ Copyright: Copyright (C) 2021-2022 Tim Janik
 License: MPL-2.0
 
 Files: ase/value.hh
-Copyright: Copyright (C) 2021-2022 Tim Janik
+Copyright: Copyright (C) 2021-2023 Tim Janik
 License: MPL-2.0
 
 Files: ase/wave.cc

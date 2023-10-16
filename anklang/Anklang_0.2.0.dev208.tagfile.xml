@@ -117,6 +117,27 @@
       <anchor>a9397694124879a4ed23ef9f6304e4b46</anchor>
       <arglist>(ChoiceS &amp;choices, Choice &amp;&amp;newchoice)</arglist>
     </member>
+    <member kind="variable">
+      <type>constexpr const char</type>
+      <name>GUIONLY</name>
+      <anchorfile>namespace_ase.html</anchorfile>
+      <anchor>a645e93945a73abacf3fe1680f01f4c0d</anchor>
+      <arglist>[]</arglist>
+    </member>
+    <member kind="variable">
+      <type>constexpr const char</type>
+      <name>STORAGE</name>
+      <anchorfile>namespace_ase.html</anchorfile>
+      <anchor>a7ef7f0bf8ce3bc2e2f88091faa533572</anchor>
+      <arglist>[]</arglist>
+    </member>
+    <member kind="variable">
+      <type>constexpr const char</type>
+      <name>STANDARD</name>
+      <anchorfile>namespace_ase.html</anchorfile>
+      <anchor>ac8942b0d8f3a6d1f1892bf090eae7f64</anchor>
+      <arglist>[]</arglist>
+    </member>
   </compound>
   <compound kind="file">
     <name>atomics.hh</name>
@@ -341,6 +362,13 @@
       <anchorfile>cxxaux_8hh.html</anchorfile>
       <anchor>a3b5a7382d91c1fadf08ae67804c33cdc</anchor>
       <arglist>(expr)</arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>ASE_ASSERT_ALWAYS</name>
+      <anchorfile>cxxaux_8hh.html</anchorfile>
+      <anchor>a31f2a244bc69e8f3a588d3de88aa75f1</anchor>
+      <arglist>(expr,...)</arglist>
     </member>
     <member kind="define">
       <type>#define</type>
@@ -644,6 +672,7 @@
     <includes id="transport_8hh" name="transport.hh" local="no" imported="no">ase/transport.hh</includes>
     <includes id="platform_8hh" name="platform.hh" local="no" imported="no">ase/platform.hh</includes>
     <class kind="class">Ase::AudioEngine</class>
+    <class kind="struct">Ase::Mutable</class>
     <namespace>Ase</namespace>
   </compound>
   <compound kind="file">
@@ -692,6 +721,7 @@
     <filename>gadget_8hh.html</filename>
     <includes id="object_8hh" name="object.hh" local="no" imported="no">ase/object.hh</includes>
     <includes id="utils_8hh" name="utils.hh" local="no" imported="no">ase/utils.hh</includes>
+    <includes id="properties_8hh" name="properties.hh" local="no" imported="no">ase/properties.hh</includes>
     <class kind="class">Ase::GadgetImpl</class>
     <namespace>Ase</namespace>
   </compound>
@@ -892,6 +922,27 @@
     <namespace>Ase</namespace>
   </compound>
   <compound kind="file">
+    <name>levenshtein.hh</name>
+    <path>/cirun/poxy/ase/</path>
+    <filename>levenshtein_8hh.html</filename>
+    <includes id="cxxaux_8hh" name="cxxaux.hh" local="yes" imported="no">cxxaux.hh</includes>
+    <namespace>Ase</namespace>
+    <member kind="function">
+      <type>float</type>
+      <name>damerau_levenshtein_restricted</name>
+      <anchorfile>namespace_ase.html</anchorfile>
+      <anchor>ae0247f088ea59dc7461ea3bad79e76d5</anchor>
+      <arglist>(const std::string &amp;source, const std::string &amp;target, const float ci, const float cd, const float cs, const float ct)</arglist>
+    </member>
+    <member kind="function">
+      <type>float</type>
+      <name>damerau_levenshtein_distance</name>
+      <anchorfile>namespace_ase.html</anchorfile>
+      <anchor>a0558dada66cb71baf0af9b2a94b23d86</anchor>
+      <arglist>(const std::string &amp;source, const std::string &amp;target, const float ci, const float cd, const float cs, const float ct)</arglist>
+    </member>
+  </compound>
+  <compound kind="file">
     <name>loft.hh</name>
     <path>/cirun/poxy/ase/</path>
     <filename>loft_8hh.html</filename>
@@ -1013,27 +1064,6 @@
     <includes id="callback_8hh" name="callback.hh" local="no" imported="no">ase/callback.hh</includes>
     <class kind="struct">Ase::RtJobQueue</class>
     <namespace>Ase</namespace>
-    <member kind="function">
-      <type>String</type>
-      <name>feature_toggle_find</name>
-      <anchorfile>namespace_ase.html</anchorfile>
-      <anchor>a2b3cdbbe472774a18b41981597e64a74</anchor>
-      <arglist>(const String &amp;config, const String &amp;feature, const String &amp;fallback)</arglist>
-    </member>
-    <member kind="function">
-      <type>bool</type>
-      <name>feature_toggle_bool</name>
-      <anchorfile>namespace_ase.html</anchorfile>
-      <anchor>ac1073e4b34ce83d4b426d54e84a1a189</anchor>
-      <arglist>(const char *config, const char *feature)</arglist>
-    </member>
-    <member kind="function">
-      <type>bool</type>
-      <name>feature_check</name>
-      <anchorfile>namespace_ase.html</anchorfile>
-      <anchor>a952143fcb038e72ef5f492b0deb4af31</anchor>
-      <arglist>(const char *feature)</arglist>
-    </member>
     <member kind="variable">
       <type>JobQueue</type>
       <name>main_jobs</name>
@@ -1208,6 +1238,32 @@
     <class kind="class">Ase::EmittableImpl</class>
     <class kind="class">Ase::ObjectImpl</class>
     <namespace>Ase</namespace>
+  </compound>
+  <compound kind="file">
+    <name>parameter.hh</name>
+    <path>/cirun/poxy/ase/</path>
+    <filename>parameter_8hh.html</filename>
+    <includes id="api_8hh" name="api.hh" local="no" imported="no">ase/api.hh</includes>
+    <includes id="object_8hh" name="object.hh" local="no" imported="no">ase/object.hh</includes>
+    <includes id="memory_8hh" name="memory.hh" local="no" imported="no">ase/memory.hh</includes>
+    <class kind="struct">Ase::Param</class>
+    <class kind="struct">Ase::Parameter</class>
+    <class kind="class">Ase::ParameterProperty</class>
+    <namespace>Ase</namespace>
+    <member kind="typedef">
+      <type>std::tuple&lt; double, double, double &gt;</type>
+      <name>MinMaxStep</name>
+      <anchorfile>namespace_ase.html</anchorfile>
+      <anchor>a3e2d3fec13fb0fe4110686f13492e26d</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="function">
+      <type>String</type>
+      <name>parameter_guess_nick</name>
+      <anchorfile>namespace_ase.html</anchorfile>
+      <anchor>a3423a959cf58504f12d700f529281dc6</anchor>
+      <arglist>(const String &amp;parameter_label)</arglist>
+    </member>
   </compound>
   <compound kind="file">
     <name>path.hh</name>
@@ -1792,13 +1848,13 @@
     <path>/cirun/poxy/ase/</path>
     <filename>processor_8hh.html</filename>
     <includes id="gadget_8hh" name="gadget.hh" local="no" imported="no">ase/gadget.hh</includes>
+    <includes id="parameter_8hh" name="parameter.hh" local="no" imported="no">ase/parameter.hh</includes>
     <includes id="midievent_8hh" name="midievent.hh" local="no" imported="no">ase/midievent.hh</includes>
     <includes id="datautils_8hh" name="datautils.hh" local="no" imported="no">ase/datautils.hh</includes>
     <includes id="properties_8hh" name="properties.hh" local="no" imported="no">ase/properties.hh</includes>
     <includes id="engine_8hh" name="engine.hh" local="no" imported="no">ase/engine.hh</includes>
     <includes id="atomics_8hh" name="atomics.hh" local="no" imported="no">ase/atomics.hh</includes>
     <class kind="struct">Ase::AudioProcessorInfo</class>
-    <class kind="struct">Ase::ParamInfo</class>
     <class kind="struct">Ase::BusInfo</class>
     <class kind="class">Ase::AudioProcessor</class>
     <class kind="class">Ase::AudioProcessor::FloatBuffer</class>
@@ -1846,95 +1902,55 @@
     <name>properties.hh</name>
     <path>/cirun/poxy/ase/</path>
     <filename>properties_8hh.html</filename>
-    <includes id="object_8hh" name="object.hh" local="no" imported="no">ase/object.hh</includes>
+    <includes id="parameter_8hh" name="parameter.hh" local="no" imported="no">ase/parameter.hh</includes>
     <includes id="memory_8hh" name="memory.hh" local="no" imported="no">ase/memory.hh</includes>
     <includes id="jsonapi_8hh" name="jsonapi.hh" local="no" imported="no">ase/jsonapi.hh</includes>
-    <class kind="class">Ase::Properties::Bag</class>
+    <class kind="class">Ase::Preference</class>
+    <class kind="struct">Ase::Prop</class>
+    <class kind="class">Ase::PropertyImpl</class>
+    <class kind="struct">Ase::PropertyBag</class>
     <namespace>Ase</namespace>
-    <namespace>Ase::Properties</namespace>
-    <member kind="function">
-      <type>String</type>
-      <name>property_guess_nick</name>
+    <member kind="typedef">
+      <type>std::function&lt; void(Value &amp;)&gt;</type>
+      <name>PropertyGetter</name>
       <anchorfile>namespace_ase.html</anchorfile>
-      <anchor>af9277c9733499fd0e111414ed92d42e1</anchor>
-      <arglist>(const String &amp;property_label)</arglist>
+      <anchor>ad85f207a13bf66ed7d8d9c52883fd2b0</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>std::function&lt; bool(const Value &amp;)&gt;</type>
+      <name>PropertySetter</name>
+      <anchorfile>namespace_ase.html</anchorfile>
+      <anchor>adbc4d287d13af0c2f307fe1d39be9b00</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>std::function&lt; ChoiceS(ParameterProperty &amp;)&gt;</type>
+      <name>PropertyLister</name>
+      <anchorfile>namespace_ase.html</anchorfile>
+      <anchor>a2439eba256e7d0acf103c0e1845f58ed</anchor>
+      <arglist></arglist>
     </member>
     <member kind="function">
-      <type>String</type>
-      <name>construct_hints</name>
-      <anchorfile>namespace_ase_1_1_properties.html</anchorfile>
-      <anchor>a3c429cb505d3fd8c889a246c942b1a97</anchor>
-      <arglist>(const String &amp;hints, const String &amp;more, double pmin=0, double pmax=0)</arglist>
+      <type>std::function&lt; void(Value &amp;)&gt;</type>
+      <name>make_enum_getter</name>
+      <anchorfile>namespace_ase.html</anchorfile>
+      <anchor>a348e9a4fbea20e038d0d035b9c145b5e</anchor>
+      <arglist>(Enum *v)</arglist>
     </member>
     <member kind="function">
-      <type>PropertyP</type>
-      <name>Bool</name>
-      <anchorfile>namespace_ase_1_1_properties.html</anchorfile>
-      <anchor>a50db48e817778744387e0e20986fe3f0</anchor>
-      <arglist>(const String &amp;ident, bool *v, const String &amp;label, const String &amp;nickname, bool dflt, const String &amp;hints=&quot;&quot;, const String &amp;blurb=&quot;&quot;, const String &amp;description=&quot;&quot;)</arglist>
+      <type>std::function&lt; bool(const Value &amp;)&gt;</type>
+      <name>make_enum_setter</name>
+      <anchorfile>namespace_ase.html</anchorfile>
+      <anchor>a4e57e618d72dca5094f1ec93f85f8a13</anchor>
+      <arglist>(Enum *v)</arglist>
     </member>
     <member kind="function">
-      <type>PropertyP</type>
-      <name>Range</name>
-      <anchorfile>namespace_ase_1_1_properties.html</anchorfile>
-      <anchor>a19e2195538234a1099ab5ef37253e888</anchor>
-      <arglist>(const String &amp;ident, const ValueGetter &amp;getter, const ValueSetter &amp;setter, const String &amp;label, const String &amp;nickname, double pmin, double pmax, double dflt, const String &amp;unit=&quot;&quot;, const String &amp;hints=&quot;&quot;, const String &amp;blurb=&quot;&quot;, const String &amp;description=&quot;&quot;)</arglist>
-    </member>
-    <member kind="function">
-      <type>PropertyP</type>
-      <name>Range</name>
-      <anchorfile>namespace_ase_1_1_properties.html</anchorfile>
-      <anchor>a4182a9b9840416bf15bdfc1cd87de39d</anchor>
-      <arglist>(const String &amp;ident, int32 *v, const String &amp;label, const String &amp;nickname, int32 pmin, int32 pmax, int32 dflt, const String &amp;unit=&quot;&quot;, const String &amp;hints=&quot;&quot;, const String &amp;blurb=&quot;&quot;, const String &amp;description=&quot;&quot;)</arglist>
-    </member>
-    <member kind="function">
-      <type>PropertyP</type>
-      <name>Range</name>
-      <anchorfile>namespace_ase_1_1_properties.html</anchorfile>
-      <anchor>ac06ab0d35e1682aa49606a52edb1b8f8</anchor>
-      <arglist>(const String &amp;ident, float *v, const String &amp;label, const String &amp;nickname, double pmin, double pmax, double dflt, const String &amp;unit=&quot;&quot;, const String &amp;hints=&quot;&quot;, const String &amp;blurb=&quot;&quot;, const String &amp;description=&quot;&quot;)</arglist>
-    </member>
-    <member kind="function">
-      <type>PropertyP</type>
-      <name>Range</name>
-      <anchorfile>namespace_ase_1_1_properties.html</anchorfile>
-      <anchor>a6dd0cad54a93cfa29314a9b4c1ce8c06</anchor>
-      <arglist>(const String &amp;ident, double *v, const String &amp;label, const String &amp;nickname, double pmin, double pmax, double dflt, const String &amp;unit=&quot;&quot;, const String &amp;hints=&quot;&quot;, const String &amp;blurb=&quot;&quot;, const String &amp;description=&quot;&quot;)</arglist>
-    </member>
-    <member kind="function">
-      <type>PropertyP</type>
-      <name>Text</name>
-      <anchorfile>namespace_ase_1_1_properties.html</anchorfile>
-      <anchor>a7cbd144d927316c29bdf4a1e5bab4a8c</anchor>
-      <arglist>(const String &amp;ident, String *v, const String &amp;label, const String &amp;nickname, const String &amp;hints=&quot;&quot;, const String &amp;blurb=&quot;&quot;, const String &amp;description=&quot;&quot;)</arglist>
-    </member>
-    <member kind="function">
-      <type>PropertyP</type>
-      <name>Text</name>
-      <anchorfile>namespace_ase_1_1_properties.html</anchorfile>
-      <anchor>a23180193581eaf2875e2281c9ea6c67b</anchor>
-      <arglist>(const String &amp;ident, String *v, const String &amp;label, const String &amp;nickname, const ValueLister &amp;vl, const String &amp;hints=&quot;&quot;, const String &amp;blurb=&quot;&quot;, const String &amp;description=&quot;&quot;)</arglist>
-    </member>
-    <member kind="function">
-      <type>PropertyP</type>
-      <name>Enum</name>
-      <anchorfile>namespace_ase_1_1_properties.html</anchorfile>
-      <anchor>a8907ce27b1f0ab29d962b09c3a9fa07c</anchor>
-      <arglist>(const String &amp;ident, E *v, const String &amp;label, const String &amp;nickname, const String &amp;hints=&quot;&quot;, const String &amp;blurb=&quot;&quot;, const String &amp;description=&quot;&quot;)</arglist>
-    </member>
-    <member kind="function">
-      <type>PropertyImplP</type>
-      <name>mkprop</name>
-      <anchorfile>namespace_ase_1_1_properties.html</anchorfile>
-      <anchor>a1649118f6abbe14804d562aca317aa1b</anchor>
-      <arglist>(const Initializer &amp;initializer, const ValueGetter &amp;, const ValueSetter &amp;, const ValueLister &amp;)</arglist>
-    </member>
-    <member kind="function">
-      <type>ValueGetter</type>
-      <name>Getter</name>
-      <anchorfile>namespace_ase_1_1_properties.html</anchorfile>
-      <anchor>aa96b7f7c7b4b3da2e4f5c9ea76a77659</anchor>
-      <arglist>(const V *p)</arglist>
+      <type>requires IsEnum&lt; Enum &gt; ChoiceS</type>
+      <name>enum_lister</name>
+      <anchorfile>namespace_ase.html</anchorfile>
+      <anchor>ac3dc42389e3bfb8ee3fb757da44e0cb1</anchor>
+      <arglist>(ParameterProperty &amp;)</arglist>
     </member>
   </compound>
   <compound kind="file">
@@ -2794,29 +2810,22 @@
       <type>bool</type>
       <name>string_option_check</name>
       <anchorfile>namespace_ase.html</anchorfile>
-      <anchor>aa9914cc83579ad0c0912c96190b6b939</anchor>
-      <arglist>(const String &amp;option_string, const String &amp;option)</arglist>
-    </member>
-    <member kind="function">
-      <type>String</type>
-      <name>string_option_get</name>
-      <anchorfile>namespace_ase.html</anchorfile>
-      <anchor>aba4acf4a89b9c88811339143268c4e78</anchor>
-      <arglist>(const String &amp;option_string, const String &amp;option)</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>string_options_split</name>
-      <anchorfile>namespace_ase.html</anchorfile>
-      <anchor>a75e2d0a36fed8f364df722cabf416df7</anchor>
-      <arglist>(const String &amp;option_string, std::vector&lt; String &gt; &amp;option_names, std::vector&lt; String &gt; &amp;option_values, const String &amp;empty_default)</arglist>
+      <anchor>a407d5ed60a0ccc9cec2c96548de6c448</anchor>
+      <arglist>(const String &amp;optionlist, const String &amp;feature)</arglist>
     </member>
     <member kind="function">
       <type>String</type>
       <name>string_option_find</name>
       <anchorfile>namespace_ase.html</anchorfile>
-      <anchor>a6f970bb6447d1e33dedc171b82412e99</anchor>
-      <arglist>(const String &amp;config, const String &amp;feature, const String &amp;fallback)</arglist>
+      <anchor>aad4c4efa81dbd98d47f47a615a1f8a75</anchor>
+      <arglist>(const String &amp;optionlist, const String &amp;feature, const String &amp;fallback)</arglist>
+    </member>
+    <member kind="function">
+      <type>std::string_view</type>
+      <name>string_option_find_value</name>
+      <anchorfile>namespace_ase.html</anchorfile>
+      <anchor>a9bb96baaf59112c1f6425b087ce5f455</anchor>
+      <arglist>(const char *string, const char *feature, const String &amp;fallback, const String &amp;denied, bool matchallnone)</arglist>
     </member>
     <member kind="function">
       <type>bool</type>
@@ -3069,6 +3078,20 @@
       <anchorfile>namespace_ase.html</anchorfile>
       <anchor>a8056a2fbbef76c711165491bdd11e16b</anchor>
       <arglist>(const uint32_t *codepoints, size_t n_codepoints)</arglist>
+    </member>
+    <member kind="function">
+      <type>String</type>
+      <name>string_to_ncname</name>
+      <anchorfile>namespace_ase.html</anchorfile>
+      <anchor>ae8e6b4a63e4442dd7d76745b4c4f45f8</anchor>
+      <arglist>(const String &amp;input, uint32_t substitute)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>string_is_ncname</name>
+      <anchorfile>namespace_ase.html</anchorfile>
+      <anchor>a08f0f9d5469f185ffa317778d0094e66</anchor>
+      <arglist>(const String &amp;input)</arglist>
     </member>
     <member kind="function">
       <type>size_t</type>
@@ -3830,10 +3853,10 @@
       <arglist>(Id32 paramid, double value, bool sendnotify=true)</arglist>
     </member>
     <member kind="function">
-      <type>ParamInfoP</type>
-      <name>param_info</name>
+      <type>ParameterC</type>
+      <name>parameter</name>
       <anchorfile>class_ase_1_1_audio_processor.html</anchorfile>
-      <anchor>a6f3ab3386b8586a014a0a60e61607fe8</anchor>
+      <anchor>aa2ae19aefb89910473d875f5215fee24</anchor>
       <arglist>(Id32 paramid) const</arglist>
     </member>
     <member kind="function">
@@ -4113,8 +4136,8 @@
       <type>ParamId</type>
       <name>add_param</name>
       <anchorfile>class_ase_1_1_audio_processor.html</anchorfile>
-      <anchor>a075b9566df18b83426010791f301c5e3</anchor>
-      <arglist>(Id32 id, const ParamInfo &amp;infotmpl, double value)</arglist>
+      <anchor>affbadf5db671cf68c6ab3144e3969b5d</anchor>
+      <arglist>(Id32 id, const Param &amp;initparam, double value)</arglist>
     </member>
     <member kind="function" protection="protected">
       <type>ParamId</type>
@@ -4524,10 +4547,6 @@
       <anchor>a46cc8933bda671e8d30981c7f4371404</anchor>
       <arglist>()</arglist>
     </member>
-  </compound>
-  <compound kind="class">
-    <name>Ase::Properties::Bag</name>
-    <filename>class_ase_1_1_properties_1_1_bag.html</filename>
   </compound>
   <compound kind="class">
     <name>Ase::Blob</name>
@@ -5680,6 +5699,13 @@
       <anchorfile>class_ase_1_1_event_loop.html</anchorfile>
       <anchor>a2fe725ef35bdb23620e651d7302ce605</anchor>
       <arglist>(int8 signum, const USignalSlot &amp;sl, int priority=PRIORITY_NOW -1)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>exec_once</name>
+      <anchorfile>class_ase_1_1_event_loop.html</anchorfile>
+      <anchor>a4a2f32790f09e68b8fbd05649cc4ffaf</anchor>
+      <arglist>(uint delay_ms, uint *once_id, const VoidSlot &amp;vfunc, int priority=PRIORITY_NORMAL)</arglist>
     </member>
     <member kind="function">
       <type>uint</type>
@@ -7129,6 +7155,13 @@
       <arglist>(int8 signum, const USignalSlot &amp;sl, int priority=PRIORITY_NOW -1)</arglist>
     </member>
     <member kind="function">
+      <type>bool</type>
+      <name>exec_once</name>
+      <anchorfile>class_ase_1_1_event_loop.html</anchorfile>
+      <anchor>a4a2f32790f09e68b8fbd05649cc4ffaf</anchor>
+      <arglist>(uint delay_ms, uint *once_id, const VoidSlot &amp;vfunc, int priority=PRIORITY_NORMAL)</arglist>
+    </member>
+    <member kind="function">
       <type>uint</type>
       <name>exec_timer</name>
       <anchorfile>class_ase_1_1_event_loop.html</anchorfile>
@@ -7495,6 +7528,11 @@
     <filename>struct_ase_1_1_mpmc_stack.html</filename>
     <templarg></templarg>
   </compound>
+  <compound kind="struct">
+    <name>Ase::Mutable</name>
+    <filename>struct_ase_1_1_mutable.html</filename>
+    <templarg></templarg>
+  </compound>
   <compound kind="class">
     <name>Ase::Mwc256</name>
     <filename>class_ase_1_1_mwc256.html</filename>
@@ -7719,126 +7757,248 @@
     <base>vector&lt; Event &gt;</base>
   </compound>
   <compound kind="struct">
-    <name>Ase::ParamInfo</name>
-    <filename>struct_ase_1_1_param_info.html</filename>
-    <member kind="function">
-      <type>void</type>
-      <name>clear</name>
-      <anchorfile>struct_ase_1_1_param_info.html</anchorfile>
-      <anchor>a43af22a183c223d89c22359edaa7dc23</anchor>
-      <arglist>()</arglist>
-    </member>
-    <member kind="function">
-      <type>MinMax</type>
-      <name>get_minmax</name>
-      <anchorfile>struct_ase_1_1_param_info.html</anchorfile>
-      <anchor>a78905d4172c170ff3a303000cdc9b452</anchor>
-      <arglist>() const</arglist>
-    </member>
-    <member kind="function">
-      <type>double</type>
-      <name>get_stepping</name>
-      <anchorfile>struct_ase_1_1_param_info.html</anchorfile>
-      <anchor>a03c6eb1546f1389c07b651762e9cfdaa</anchor>
-      <arglist>() const</arglist>
-    </member>
-    <member kind="function">
-      <type>double</type>
-      <name>get_initial</name>
-      <anchorfile>struct_ase_1_1_param_info.html</anchorfile>
-      <anchor>a343c46dcf59ce6cbb4c97b63d132b20e</anchor>
-      <arglist>() const</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>get_range</name>
-      <anchorfile>struct_ase_1_1_param_info.html</anchorfile>
-      <anchor>a8e4479e0e9e4199df5dc04586c8bd52e</anchor>
-      <arglist>(double &amp;fmin, double &amp;fmax, double &amp;fstep) const</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>set_range</name>
-      <anchorfile>struct_ase_1_1_param_info.html</anchorfile>
-      <anchor>ac2b918958ffd307283a9791f251893b6</anchor>
-      <arglist>(double fmin, double fmax, double fstep=0)</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>set_choices</name>
-      <anchorfile>struct_ase_1_1_param_info.html</anchorfile>
-      <anchor>a735ac27603e62117475090fc3c8410e4</anchor>
-      <arglist>(const ChoiceS &amp;centries)</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>set_choices</name>
-      <anchorfile>struct_ase_1_1_param_info.html</anchorfile>
-      <anchor>a3ba54e0993540dca1095def2984cb34c</anchor>
-      <arglist>(ChoiceS &amp;&amp;centries)</arglist>
-    </member>
-    <member kind="function">
-      <type>const ChoiceS &amp;</type>
-      <name>get_choices</name>
-      <anchorfile>struct_ase_1_1_param_info.html</anchorfile>
-      <anchor>a6bfd21649e96d2a12be1a0d24661744d</anchor>
-      <arglist>() const</arglist>
-    </member>
+    <name>Ase::Param</name>
+    <filename>struct_ase_1_1_param.html</filename>
     <member kind="variable">
-      <type>CString</type>
-      <name>ident</name>
-      <anchorfile>struct_ase_1_1_param_info.html</anchorfile>
-      <anchor>af8676da7586ff99b712390092b15811a</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>CString</type>
+      <type>String</type>
       <name>label</name>
-      <anchorfile>struct_ase_1_1_param_info.html</anchorfile>
-      <anchor>a15c645504ace7c20fac797fc71c8466c</anchor>
+      <anchorfile>struct_ase_1_1_param.html</anchorfile>
+      <anchor>a2d512c82fe8cf7ae6199e40adbc87597</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
-      <type>CString</type>
+      <type>String</type>
       <name>nick</name>
-      <anchorfile>struct_ase_1_1_param_info.html</anchorfile>
-      <anchor>a9326e0466abef9f1ea34c239c3b7c830</anchor>
+      <anchorfile>struct_ase_1_1_param.html</anchorfile>
+      <anchor>ac7d44b315dc72d5e8ddd7b0ec2980b41</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
-      <type>CString</type>
+      <type>InitialVal</type>
+      <name>initial</name>
+      <anchorfile>struct_ase_1_1_param.html</anchorfile>
+      <anchor>a22141620c2667178ff2b467b3d2ae8c7</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>String</type>
       <name>unit</name>
-      <anchorfile>struct_ase_1_1_param_info.html</anchorfile>
-      <anchor>a89125adfee0a61452248c583100613d1</anchor>
+      <anchorfile>struct_ase_1_1_param.html</anchorfile>
+      <anchor>aaab78af227c0a246a9006f1c0d205a6b</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
-      <type>CString</type>
+      <type>ExtraVals</type>
+      <name>extras</name>
+      <anchorfile>struct_ase_1_1_param.html</anchorfile>
+      <anchor>ac831bafa0ec08ac4fd16f867703198da</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>String</type>
       <name>hints</name>
-      <anchorfile>struct_ase_1_1_param_info.html</anchorfile>
-      <anchor>abe3022a91b4a9b59f545e5c7066d9e36</anchor>
+      <anchorfile>struct_ase_1_1_param.html</anchorfile>
+      <anchor>a8501318b9d9ee0e4641f2b256a7b34d4</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
-      <type>CString</type>
-      <name>group</name>
-      <anchorfile>struct_ase_1_1_param_info.html</anchorfile>
-      <anchor>aafa78b1ada4abb4a2f6287aa9f47387b</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>CString</type>
+      <type>String</type>
       <name>blurb</name>
-      <anchorfile>struct_ase_1_1_param_info.html</anchorfile>
-      <anchor>abe7a05da5ba355f14ead30469fa47fb4</anchor>
+      <anchorfile>struct_ase_1_1_param.html</anchorfile>
+      <anchor>a65fda74e58f7b1d12a3a6407cab3fb9e</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
-      <type>CString</type>
-      <name>description</name>
-      <anchorfile>struct_ase_1_1_param_info.html</anchorfile>
-      <anchor>af6d6e56603ff93874ca70bc2f9d9cb2a</anchor>
+      <type>String</type>
+      <name>descr</name>
+      <anchorfile>struct_ase_1_1_param.html</anchorfile>
+      <anchor>ae5be721c69904636c325241a6421171f</anchor>
       <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>String</type>
+      <name>group</name>
+      <anchorfile>struct_ase_1_1_param.html</anchorfile>
+      <anchor>af640a7d35749e38d8cd0173fdc6513b7</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>String</type>
+      <name>ident</name>
+      <anchorfile>struct_ase_1_1_param.html</anchorfile>
+      <anchor>ad3865cdce7c1928caba00023d2814705</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>StringS</type>
+      <name>details</name>
+      <anchorfile>struct_ase_1_1_param.html</anchorfile>
+      <anchor>a02733efea80f317a6884d66de8ca37e7</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>Ase::Parameter</name>
+    <filename>struct_ase_1_1_parameter.html</filename>
+    <member kind="function">
+      <type>MinMaxStep</type>
+      <name>range</name>
+      <anchorfile>struct_ase_1_1_parameter.html</anchorfile>
+      <anchor>aa93a9c0f5eea508c54a2836a7aade38e</anchor>
+      <arglist>() const</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>Ase::ParameterProperty</name>
+    <filename>class_ase_1_1_parameter_property.html</filename>
+    <base>Ase::EmittableImpl</base>
+    <base virtualness="virtual">Ase::Property</base>
+    <member kind="function">
+      <type>String</type>
+      <name>ident</name>
+      <anchorfile>class_ase_1_1_parameter_property.html</anchorfile>
+      <anchor>af085e2be1f72b3735932d398f5188434</anchor>
+      <arglist>() override</arglist>
+    </member>
+    <member kind="function">
+      <type>String</type>
+      <name>label</name>
+      <anchorfile>class_ase_1_1_parameter_property.html</anchorfile>
+      <anchor>a97980feccf6ef2ab768204771a228345</anchor>
+      <arglist>() override</arglist>
+    </member>
+    <member kind="function">
+      <type>String</type>
+      <name>nick</name>
+      <anchorfile>class_ase_1_1_parameter_property.html</anchorfile>
+      <anchor>a88c71b25e423299585a63441dfa51e33</anchor>
+      <arglist>() override</arglist>
+    </member>
+    <member kind="function">
+      <type>String</type>
+      <name>unit</name>
+      <anchorfile>class_ase_1_1_parameter_property.html</anchorfile>
+      <anchor>a919ece5220401ec0d89b7fa221238682</anchor>
+      <arglist>() override</arglist>
+    </member>
+    <member kind="function">
+      <type>String</type>
+      <name>hints</name>
+      <anchorfile>class_ase_1_1_parameter_property.html</anchorfile>
+      <anchor>a99ff244de08cc6f2458c6c35562cb957</anchor>
+      <arglist>() override</arglist>
+    </member>
+    <member kind="function">
+      <type>String</type>
+      <name>blurb</name>
+      <anchorfile>class_ase_1_1_parameter_property.html</anchorfile>
+      <anchor>a4727eed016c9f708a7ab5e006f27139e</anchor>
+      <arglist>() override</arglist>
+    </member>
+    <member kind="function">
+      <type>String</type>
+      <name>descr</name>
+      <anchorfile>class_ase_1_1_parameter_property.html</anchorfile>
+      <anchor>aebbe6016b9f1d72361439ace3dcb9ded</anchor>
+      <arglist>() override</arglist>
+    </member>
+    <member kind="function">
+      <type>String</type>
+      <name>group</name>
+      <anchorfile>class_ase_1_1_parameter_property.html</anchorfile>
+      <anchor>a048e80ae38f15b4f2712a50467f96e66</anchor>
+      <arglist>() override</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>get_min</name>
+      <anchorfile>class_ase_1_1_parameter_property.html</anchorfile>
+      <anchor>ae7f7607db020fdd0d86aaa622d00a8d4</anchor>
+      <arglist>() override</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>get_max</name>
+      <anchorfile>class_ase_1_1_parameter_property.html</anchorfile>
+      <anchor>a6c973427f31d7fb64aa563929ac9ca17</anchor>
+      <arglist>() override</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>get_step</name>
+      <anchorfile>class_ase_1_1_parameter_property.html</anchorfile>
+      <anchor>afc302f661c0f8403a9e70fb23a059711</anchor>
+      <arglist>() override</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>is_numeric</name>
+      <anchorfile>class_ase_1_1_parameter_property.html</anchorfile>
+      <anchor>ab9c066d6bb085c9130223d48a7785c5a</anchor>
+      <arglist>() override</arglist>
+    </member>
+    <member kind="function">
+      <type>ChoiceS</type>
+      <name>choices</name>
+      <anchorfile>class_ase_1_1_parameter_property.html</anchorfile>
+      <anchor>a6ec0355386c777f208a022ba5bc92137</anchor>
+      <arglist>() override</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>reset</name>
+      <anchorfile>class_ase_1_1_parameter_property.html</anchorfile>
+      <anchor>af9262e641b4eef1c2de7bfe4f5f2e4c1</anchor>
+      <arglist>() override</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>get_normalized</name>
+      <anchorfile>class_ase_1_1_parameter_property.html</anchorfile>
+      <anchor>a58ba7ca080bdac16855098461735b75e</anchor>
+      <arglist>() override</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>set_normalized</name>
+      <anchorfile>class_ase_1_1_parameter_property.html</anchorfile>
+      <anchor>a8df6c398a42eafced0167994d3330b63</anchor>
+      <arglist>(double v) override</arglist>
+    </member>
+    <member kind="function">
+      <type>String</type>
+      <name>get_text</name>
+      <anchorfile>class_ase_1_1_parameter_property.html</anchorfile>
+      <anchor>a617e139bd1d745eeacb5087e38872fd3</anchor>
+      <arglist>() override</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>set_text</name>
+      <anchorfile>class_ase_1_1_parameter_property.html</anchorfile>
+      <anchor>aa3169598b9dfead415dea12865042ef0</anchor>
+      <arglist>(String txt) override</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>Value</type>
+      <name>get_value</name>
+      <anchorfile>class_ase_1_1_parameter_property.html</anchorfile>
+      <anchor>ae55b4e2b12d678f8bace94c6659cfb03</anchor>
+      <arglist>() override=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>bool</type>
+      <name>set_value</name>
+      <anchorfile>class_ase_1_1_parameter_property.html</anchorfile>
+      <anchor>a6ab5101a76ebf4221d408196a8f87dc7</anchor>
+      <arglist>(const Value &amp;v) override=0</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>emit_notify</name>
+      <anchorfile>class_ase_1_1_emittable_impl.html</anchorfile>
+      <anchor>af5fad81722713d48cacff12477d1b877</anchor>
+      <arglist>(const String &amp;detail)</arglist>
     </member>
   </compound>
   <compound kind="class">
@@ -8131,6 +8291,158 @@
       <anchorfile>class_ase_1_1_poll_f_d_source.html</anchorfile>
       <anchor>a1877b04fc98aac07c42e86f0bfcd3470</anchor>
       <arglist>(const LoopState &amp;state)</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>Ase::Preference</name>
+    <filename>class_ase_1_1_preference.html</filename>
+    <base>Ase::ParameterProperty</base>
+    <member kind="function">
+      <type>Value</type>
+      <name>get_value</name>
+      <anchorfile>class_ase_1_1_preference.html</anchorfile>
+      <anchor>a0ed2ca84fca083e6fcb5c2abec0f0322</anchor>
+      <arglist>() override</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>set_value</name>
+      <anchorfile>class_ase_1_1_preference.html</anchorfile>
+      <anchor>ab71cb26fa5708501f2f06c6abb774f02</anchor>
+      <arglist>(const Value &amp;v) override</arglist>
+    </member>
+    <member kind="function">
+      <type>String</type>
+      <name>ident</name>
+      <anchorfile>class_ase_1_1_parameter_property.html</anchorfile>
+      <anchor>af085e2be1f72b3735932d398f5188434</anchor>
+      <arglist>() override</arglist>
+    </member>
+    <member kind="function">
+      <type>String</type>
+      <name>label</name>
+      <anchorfile>class_ase_1_1_parameter_property.html</anchorfile>
+      <anchor>a97980feccf6ef2ab768204771a228345</anchor>
+      <arglist>() override</arglist>
+    </member>
+    <member kind="function">
+      <type>String</type>
+      <name>nick</name>
+      <anchorfile>class_ase_1_1_parameter_property.html</anchorfile>
+      <anchor>a88c71b25e423299585a63441dfa51e33</anchor>
+      <arglist>() override</arglist>
+    </member>
+    <member kind="function">
+      <type>String</type>
+      <name>unit</name>
+      <anchorfile>class_ase_1_1_parameter_property.html</anchorfile>
+      <anchor>a919ece5220401ec0d89b7fa221238682</anchor>
+      <arglist>() override</arglist>
+    </member>
+    <member kind="function">
+      <type>String</type>
+      <name>hints</name>
+      <anchorfile>class_ase_1_1_parameter_property.html</anchorfile>
+      <anchor>a99ff244de08cc6f2458c6c35562cb957</anchor>
+      <arglist>() override</arglist>
+    </member>
+    <member kind="function">
+      <type>String</type>
+      <name>blurb</name>
+      <anchorfile>class_ase_1_1_parameter_property.html</anchorfile>
+      <anchor>a4727eed016c9f708a7ab5e006f27139e</anchor>
+      <arglist>() override</arglist>
+    </member>
+    <member kind="function">
+      <type>String</type>
+      <name>descr</name>
+      <anchorfile>class_ase_1_1_parameter_property.html</anchorfile>
+      <anchor>aebbe6016b9f1d72361439ace3dcb9ded</anchor>
+      <arglist>() override</arglist>
+    </member>
+    <member kind="function">
+      <type>String</type>
+      <name>group</name>
+      <anchorfile>class_ase_1_1_parameter_property.html</anchorfile>
+      <anchor>a048e80ae38f15b4f2712a50467f96e66</anchor>
+      <arglist>() override</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>get_min</name>
+      <anchorfile>class_ase_1_1_parameter_property.html</anchorfile>
+      <anchor>ae7f7607db020fdd0d86aaa622d00a8d4</anchor>
+      <arglist>() override</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>get_max</name>
+      <anchorfile>class_ase_1_1_parameter_property.html</anchorfile>
+      <anchor>a6c973427f31d7fb64aa563929ac9ca17</anchor>
+      <arglist>() override</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>get_step</name>
+      <anchorfile>class_ase_1_1_parameter_property.html</anchorfile>
+      <anchor>afc302f661c0f8403a9e70fb23a059711</anchor>
+      <arglist>() override</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>is_numeric</name>
+      <anchorfile>class_ase_1_1_parameter_property.html</anchorfile>
+      <anchor>ab9c066d6bb085c9130223d48a7785c5a</anchor>
+      <arglist>() override</arglist>
+    </member>
+    <member kind="function">
+      <type>ChoiceS</type>
+      <name>choices</name>
+      <anchorfile>class_ase_1_1_parameter_property.html</anchorfile>
+      <anchor>a6ec0355386c777f208a022ba5bc92137</anchor>
+      <arglist>() override</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>reset</name>
+      <anchorfile>class_ase_1_1_parameter_property.html</anchorfile>
+      <anchor>af9262e641b4eef1c2de7bfe4f5f2e4c1</anchor>
+      <arglist>() override</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>get_normalized</name>
+      <anchorfile>class_ase_1_1_parameter_property.html</anchorfile>
+      <anchor>a58ba7ca080bdac16855098461735b75e</anchor>
+      <arglist>() override</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>set_normalized</name>
+      <anchorfile>class_ase_1_1_parameter_property.html</anchorfile>
+      <anchor>a8df6c398a42eafced0167994d3330b63</anchor>
+      <arglist>(double v) override</arglist>
+    </member>
+    <member kind="function">
+      <type>String</type>
+      <name>get_text</name>
+      <anchorfile>class_ase_1_1_parameter_property.html</anchorfile>
+      <anchor>a617e139bd1d745eeacb5087e38872fd3</anchor>
+      <arglist>() override</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>set_text</name>
+      <anchorfile>class_ase_1_1_parameter_property.html</anchorfile>
+      <anchor>aa3169598b9dfead415dea12865042ef0</anchor>
+      <arglist>(String txt) override</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>emit_notify</name>
+      <anchorfile>class_ase_1_1_emittable_impl.html</anchorfile>
+      <anchor>af5fad81722713d48cacff12477d1b877</anchor>
+      <arglist>(const String &amp;detail)</arglist>
     </member>
   </compound>
   <compound kind="struct">
@@ -8447,15 +8759,54 @@
       <arglist>(const String &amp;key) const =0</arglist>
     </member>
   </compound>
+  <compound kind="struct">
+    <name>Ase::Prop</name>
+    <filename>struct_ase_1_1_prop.html</filename>
+    <member kind="variable">
+      <type>CString</type>
+      <name>ident</name>
+      <anchorfile>struct_ase_1_1_prop.html</anchorfile>
+      <anchor>a91b4c93bf3558caa152682040103a095</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>PropertyGetter</type>
+      <name>getter</name>
+      <anchorfile>struct_ase_1_1_prop.html</anchorfile>
+      <anchor>aeb7a601077e20ba6f4ea2fd81e08f94e</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>PropertySetter</type>
+      <name>setter</name>
+      <anchorfile>struct_ase_1_1_prop.html</anchorfile>
+      <anchor>aef2d8ae7fd83d5c2502b57ba4664552d</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>Param</type>
+      <name>param</name>
+      <anchorfile>struct_ase_1_1_prop.html</anchorfile>
+      <anchor>a5e196abe23a21f9eeb861c9b96851a33</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>PropertyLister</type>
+      <name>lister</name>
+      <anchorfile>struct_ase_1_1_prop.html</anchorfile>
+      <anchor>a1a9cf06531a9af1efb6ada12863dda67</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
   <compound kind="class">
     <name>Ase::Property</name>
     <filename>class_ase_1_1_property.html</filename>
     <base virtualness="virtual">Ase::Emittable</base>
     <member kind="function" virtualness="pure">
       <type>virtual String</type>
-      <name>identifier</name>
+      <name>ident</name>
       <anchorfile>class_ase_1_1_property.html</anchorfile>
-      <anchor>a14ceec0c6c519a0f057ec2e6f1002880</anchor>
+      <anchor>a0670f5a64083eaec57ee2e57b92fe013</anchor>
       <arglist>()=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
@@ -8502,9 +8853,9 @@
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual String</type>
-      <name>description</name>
+      <name>descr</name>
       <anchorfile>class_ase_1_1_property.html</anchorfile>
-      <anchor>a1e05711d70ee4d3b3cdb9eb02af171a8</anchor>
+      <anchor>a7223a635e58260926ec55ee83da3fc26</anchor>
       <arglist>()=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
@@ -8590,6 +8941,162 @@
       <anchorfile>class_ase_1_1_property.html</anchorfile>
       <anchor>a8a2da03b31101939643846ee3932a11e</anchor>
       <arglist>()=0</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>Ase::PropertyBag</name>
+    <filename>struct_ase_1_1_property_bag.html</filename>
+  </compound>
+  <compound kind="class">
+    <name>Ase::PropertyImpl</name>
+    <filename>class_ase_1_1_property_impl.html</filename>
+    <base>Ase::ParameterProperty</base>
+    <member kind="function">
+      <type>Value</type>
+      <name>get_value</name>
+      <anchorfile>class_ase_1_1_property_impl.html</anchorfile>
+      <anchor>ab605fd5c1014a0cf8e168c30435a3aa4</anchor>
+      <arglist>() override</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>set_value</name>
+      <anchorfile>class_ase_1_1_property_impl.html</anchorfile>
+      <anchor>a5b1a9218c39406e840d4ca71e8084761</anchor>
+      <arglist>(const Value &amp;v) override</arglist>
+    </member>
+    <member kind="function">
+      <type>ChoiceS</type>
+      <name>choices</name>
+      <anchorfile>class_ase_1_1_property_impl.html</anchorfile>
+      <anchor>a05ab111821559a910a6606b8f2c71c39</anchor>
+      <arglist>() override</arglist>
+    </member>
+    <member kind="function">
+      <type>String</type>
+      <name>ident</name>
+      <anchorfile>class_ase_1_1_parameter_property.html</anchorfile>
+      <anchor>af085e2be1f72b3735932d398f5188434</anchor>
+      <arglist>() override</arglist>
+    </member>
+    <member kind="function">
+      <type>String</type>
+      <name>label</name>
+      <anchorfile>class_ase_1_1_parameter_property.html</anchorfile>
+      <anchor>a97980feccf6ef2ab768204771a228345</anchor>
+      <arglist>() override</arglist>
+    </member>
+    <member kind="function">
+      <type>String</type>
+      <name>nick</name>
+      <anchorfile>class_ase_1_1_parameter_property.html</anchorfile>
+      <anchor>a88c71b25e423299585a63441dfa51e33</anchor>
+      <arglist>() override</arglist>
+    </member>
+    <member kind="function">
+      <type>String</type>
+      <name>unit</name>
+      <anchorfile>class_ase_1_1_parameter_property.html</anchorfile>
+      <anchor>a919ece5220401ec0d89b7fa221238682</anchor>
+      <arglist>() override</arglist>
+    </member>
+    <member kind="function">
+      <type>String</type>
+      <name>hints</name>
+      <anchorfile>class_ase_1_1_parameter_property.html</anchorfile>
+      <anchor>a99ff244de08cc6f2458c6c35562cb957</anchor>
+      <arglist>() override</arglist>
+    </member>
+    <member kind="function">
+      <type>String</type>
+      <name>blurb</name>
+      <anchorfile>class_ase_1_1_parameter_property.html</anchorfile>
+      <anchor>a4727eed016c9f708a7ab5e006f27139e</anchor>
+      <arglist>() override</arglist>
+    </member>
+    <member kind="function">
+      <type>String</type>
+      <name>descr</name>
+      <anchorfile>class_ase_1_1_parameter_property.html</anchorfile>
+      <anchor>aebbe6016b9f1d72361439ace3dcb9ded</anchor>
+      <arglist>() override</arglist>
+    </member>
+    <member kind="function">
+      <type>String</type>
+      <name>group</name>
+      <anchorfile>class_ase_1_1_parameter_property.html</anchorfile>
+      <anchor>a048e80ae38f15b4f2712a50467f96e66</anchor>
+      <arglist>() override</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>get_min</name>
+      <anchorfile>class_ase_1_1_parameter_property.html</anchorfile>
+      <anchor>ae7f7607db020fdd0d86aaa622d00a8d4</anchor>
+      <arglist>() override</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>get_max</name>
+      <anchorfile>class_ase_1_1_parameter_property.html</anchorfile>
+      <anchor>a6c973427f31d7fb64aa563929ac9ca17</anchor>
+      <arglist>() override</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>get_step</name>
+      <anchorfile>class_ase_1_1_parameter_property.html</anchorfile>
+      <anchor>afc302f661c0f8403a9e70fb23a059711</anchor>
+      <arglist>() override</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>is_numeric</name>
+      <anchorfile>class_ase_1_1_parameter_property.html</anchorfile>
+      <anchor>ab9c066d6bb085c9130223d48a7785c5a</anchor>
+      <arglist>() override</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>reset</name>
+      <anchorfile>class_ase_1_1_parameter_property.html</anchorfile>
+      <anchor>af9262e641b4eef1c2de7bfe4f5f2e4c1</anchor>
+      <arglist>() override</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>get_normalized</name>
+      <anchorfile>class_ase_1_1_parameter_property.html</anchorfile>
+      <anchor>a58ba7ca080bdac16855098461735b75e</anchor>
+      <arglist>() override</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>set_normalized</name>
+      <anchorfile>class_ase_1_1_parameter_property.html</anchorfile>
+      <anchor>a8df6c398a42eafced0167994d3330b63</anchor>
+      <arglist>(double v) override</arglist>
+    </member>
+    <member kind="function">
+      <type>String</type>
+      <name>get_text</name>
+      <anchorfile>class_ase_1_1_parameter_property.html</anchorfile>
+      <anchor>a617e139bd1d745eeacb5087e38872fd3</anchor>
+      <arglist>() override</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>set_text</name>
+      <anchorfile>class_ase_1_1_parameter_property.html</anchorfile>
+      <anchor>aa3169598b9dfead415dea12865042ef0</anchor>
+      <arglist>(String txt) override</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>emit_notify</name>
+      <anchorfile>class_ase_1_1_emittable_impl.html</anchorfile>
+      <anchor>af5fad81722713d48cacff12477d1b877</anchor>
+      <arglist>(const String &amp;detail)</arglist>
     </member>
   </compound>
   <compound kind="class">
@@ -8902,11 +9409,18 @@
       <arglist>(const TelemetrySegmentS &amp;segments, int32 interval_ms)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
-      <type>virtual PropertyS</type>
-      <name>access_prefs</name>
+      <type>virtual StringS</type>
+      <name>list_preferences</name>
       <anchorfile>class_ase_1_1_server.html</anchorfile>
-      <anchor>a5944fea923abf9b555675dfe9281b38c</anchor>
+      <anchor>abac26a9f19d52ae007fbceacb803a7af</anchor>
       <arglist>()=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual PropertyP</type>
+      <name>access_preference</name>
+      <anchorfile>class_ase_1_1_server.html</anchorfile>
+      <anchor>a40617daa6ccfce19ebe17554c641b4df</anchor>
+      <arglist>(const String &amp;ident)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual ProjectP</type>
@@ -10332,7 +10846,6 @@
     <namespace>Ase::Loft</namespace>
     <namespace>Ase::MidiLib</namespace>
     <namespace>Ase::Path</namespace>
-    <namespace>Ase::Properties</namespace>
     <namespace>Ase::Test</namespace>
     <class kind="struct">Ase::AlignedPOD</class>
     <class kind="class">Ase::AsyncBlockingQueue</class>
@@ -10394,20 +10907,27 @@
     <class kind="struct">Ase::MidiNote</class>
     <class kind="class">Ase::Monitor</class>
     <class kind="struct">Ase::MpmcStack</class>
+    <class kind="struct">Ase::Mutable</class>
     <class kind="class">Ase::Mwc256</class>
     <class kind="class">Ase::NativeDevice</class>
     <class kind="class">Ase::Object</class>
     <class kind="class">Ase::ObjectImpl</class>
     <class kind="struct">Ase::OrderedEventList</class>
-    <class kind="struct">Ase::ParamInfo</class>
+    <class kind="struct">Ase::Param</class>
+    <class kind="struct">Ase::Parameter</class>
+    <class kind="class">Ase::ParameterProperty</class>
     <class kind="class">Ase::Pcg32Rng</class>
     <class kind="class">Ase::Persistent</class>
     <class kind="struct">Ase::PollFD</class>
     <class kind="class">Ase::PollFDSource</class>
+    <class kind="class">Ase::Preference</class>
     <class kind="struct">Ase::ProbeFeatures</class>
     <class kind="class">Ase::ProcessorManager</class>
     <class kind="class">Ase::Project</class>
+    <class kind="struct">Ase::Prop</class>
     <class kind="class">Ase::Property</class>
+    <class kind="struct">Ase::PropertyBag</class>
+    <class kind="class">Ase::PropertyImpl</class>
     <class kind="class">Ase::Re</class>
     <class kind="class">Ase::Resampler2</class>
     <class kind="struct">Ase::Resource</class>
@@ -10550,6 +11070,34 @@
       <name>LoftPtr</name>
       <anchorfile>namespace_ase.html</anchorfile>
       <anchor>a17a04f4ddbc57560c487d54d1451c85e</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>std::tuple&lt; double, double, double &gt;</type>
+      <name>MinMaxStep</name>
+      <anchorfile>namespace_ase.html</anchorfile>
+      <anchor>a3e2d3fec13fb0fe4110686f13492e26d</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>std::function&lt; void(Value &amp;)&gt;</type>
+      <name>PropertyGetter</name>
+      <anchorfile>namespace_ase.html</anchorfile>
+      <anchor>ad85f207a13bf66ed7d8d9c52883fd2b0</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>std::function&lt; bool(const Value &amp;)&gt;</type>
+      <name>PropertySetter</name>
+      <anchorfile>namespace_ase.html</anchorfile>
+      <anchor>adbc4d287d13af0c2f307fe1d39be9b00</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>std::function&lt; ChoiceS(ParameterProperty &amp;)&gt;</type>
+      <name>PropertyLister</name>
+      <anchorfile>namespace_ase.html</anchorfile>
+      <anchor>a2439eba256e7d0acf103c0e1845f58ed</anchor>
       <arglist></arglist>
     </member>
     <member kind="typedef">
@@ -10879,6 +11427,20 @@
       <arglist>(uint64 *data, size_t n)</arglist>
     </member>
     <member kind="function">
+      <type>float</type>
+      <name>damerau_levenshtein_restricted</name>
+      <anchorfile>namespace_ase.html</anchorfile>
+      <anchor>ae0247f088ea59dc7461ea3bad79e76d5</anchor>
+      <arglist>(const std::string &amp;source, const std::string &amp;target, const float ci, const float cd, const float cs, const float ct)</arglist>
+    </member>
+    <member kind="function">
+      <type>float</type>
+      <name>damerau_levenshtein_distance</name>
+      <anchorfile>namespace_ase.html</anchorfile>
+      <anchor>a0558dada66cb71baf0af9b2a94b23d86</anchor>
+      <arglist>(const std::string &amp;source, const std::string &amp;target, const float ci, const float cd, const float cs, const float ct)</arglist>
+    </member>
+    <member kind="function">
       <type>LoftPtr&lt; void &gt;</type>
       <name>loft_alloc</name>
       <anchorfile>namespace_ase.html</anchorfile>
@@ -10949,27 +11511,6 @@
       <arglist>(Args &amp;&amp;...args)</arglist>
     </member>
     <member kind="function">
-      <type>String</type>
-      <name>feature_toggle_find</name>
-      <anchorfile>namespace_ase.html</anchorfile>
-      <anchor>a2b3cdbbe472774a18b41981597e64a74</anchor>
-      <arglist>(const String &amp;config, const String &amp;feature, const String &amp;fallback)</arglist>
-    </member>
-    <member kind="function">
-      <type>bool</type>
-      <name>feature_toggle_bool</name>
-      <anchorfile>namespace_ase.html</anchorfile>
-      <anchor>ac1073e4b34ce83d4b426d54e84a1a189</anchor>
-      <arglist>(const char *config, const char *feature)</arglist>
-    </member>
-    <member kind="function">
-      <type>bool</type>
-      <name>feature_check</name>
-      <anchorfile>namespace_ase.html</anchorfile>
-      <anchor>a952143fcb038e72ef5f492b0deb4af31</anchor>
-      <arglist>(const char *feature)</arglist>
-    </member>
-    <member kind="function">
       <type>ASE_CONST int</type>
       <name>irintf</name>
       <anchorfile>namespace_ase.html</anchorfile>
@@ -11017,6 +11558,13 @@
       <anchorfile>namespace_ase.html</anchorfile>
       <anchor>a7d2f47db78ba34272d2c6f33948b9ddd</anchor>
       <arglist>(float x) ASE_CONST</arglist>
+    </member>
+    <member kind="function">
+      <type>String</type>
+      <name>parameter_guess_nick</name>
+      <anchorfile>namespace_ase.html</anchorfile>
+      <anchor>a3423a959cf58504f12d700f529281dc6</anchor>
+      <arglist>(const String &amp;parameter_label)</arglist>
     </member>
     <member kind="function">
       <type>String</type>
@@ -11215,11 +11763,25 @@
       <arglist>(const char *aseid=nullptr)</arglist>
     </member>
     <member kind="function">
-      <type>String</type>
-      <name>property_guess_nick</name>
+      <type>std::function&lt; void(Value &amp;)&gt;</type>
+      <name>make_enum_getter</name>
       <anchorfile>namespace_ase.html</anchorfile>
-      <anchor>af9277c9733499fd0e111414ed92d42e1</anchor>
-      <arglist>(const String &amp;property_label)</arglist>
+      <anchor>a348e9a4fbea20e038d0d035b9c145b5e</anchor>
+      <arglist>(Enum *v)</arglist>
+    </member>
+    <member kind="function">
+      <type>std::function&lt; bool(const Value &amp;)&gt;</type>
+      <name>make_enum_setter</name>
+      <anchorfile>namespace_ase.html</anchorfile>
+      <anchor>a4e57e618d72dca5094f1ec93f85f8a13</anchor>
+      <arglist>(Enum *v)</arglist>
+    </member>
+    <member kind="function">
+      <type>requires IsEnum&lt; Enum &gt; ChoiceS</type>
+      <name>enum_lister</name>
+      <anchorfile>namespace_ase.html</anchorfile>
+      <anchor>ac3dc42389e3bfb8ee3fb757da44e0cb1</anchor>
+      <arglist>(ParameterProperty &amp;)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
@@ -11971,32 +12533,25 @@
       <arglist>(const char *s,...)</arglist>
     </member>
     <member kind="function">
-      <type>void</type>
-      <name>string_options_split</name>
+      <type>std::string_view</type>
+      <name>string_option_find_value</name>
       <anchorfile>namespace_ase.html</anchorfile>
-      <anchor>a75e2d0a36fed8f364df722cabf416df7</anchor>
-      <arglist>(const String &amp;option_string, std::vector&lt; String &gt; &amp;option_names, std::vector&lt; String &gt; &amp;option_values, const String &amp;empty_default)</arglist>
-    </member>
-    <member kind="function">
-      <type>String</type>
-      <name>string_option_get</name>
-      <anchorfile>namespace_ase.html</anchorfile>
-      <anchor>aba4acf4a89b9c88811339143268c4e78</anchor>
-      <arglist>(const String &amp;option_string, const String &amp;option)</arglist>
-    </member>
-    <member kind="function">
-      <type>bool</type>
-      <name>string_option_check</name>
-      <anchorfile>namespace_ase.html</anchorfile>
-      <anchor>aa9914cc83579ad0c0912c96190b6b939</anchor>
-      <arglist>(const String &amp;option_string, const String &amp;option)</arglist>
+      <anchor>a9bb96baaf59112c1f6425b087ce5f455</anchor>
+      <arglist>(const char *string, const char *feature, const String &amp;fallback, const String &amp;denied, bool matchallnone)</arglist>
     </member>
     <member kind="function">
       <type>String</type>
       <name>string_option_find</name>
       <anchorfile>namespace_ase.html</anchorfile>
-      <anchor>a6f970bb6447d1e33dedc171b82412e99</anchor>
-      <arglist>(const String &amp;config, const String &amp;feature, const String &amp;fallback)</arglist>
+      <anchor>aad4c4efa81dbd98d47f47a615a1f8a75</anchor>
+      <arglist>(const String &amp;optionlist, const String &amp;feature, const String &amp;fallback)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>string_option_check</name>
+      <anchorfile>namespace_ase.html</anchorfile>
+      <anchor>a407d5ed60a0ccc9cec2c96548de6c448</anchor>
+      <arglist>(const String &amp;optionlist, const String &amp;feature)</arglist>
     </member>
     <member kind="function">
       <type>bool</type>
@@ -12074,6 +12629,20 @@
       <anchorfile>namespace_ase.html</anchorfile>
       <anchor>a281b2d33ab9b2cc6e1859b0dac02a214</anchor>
       <arglist>(const std::vector&lt; uint32_t &gt; &amp;codepoints)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>string_is_ncname</name>
+      <anchorfile>namespace_ase.html</anchorfile>
+      <anchor>a08f0f9d5469f185ffa317778d0094e66</anchor>
+      <arglist>(const String &amp;input)</arglist>
+    </member>
+    <member kind="function">
+      <type>String</type>
+      <name>string_to_ncname</name>
+      <anchorfile>namespace_ase.html</anchorfile>
+      <anchor>ae8e6b4a63e4442dd7d76745b4c4f45f8</anchor>
+      <arglist>(const String &amp;input, uint32_t substitute)</arglist>
     </member>
     <member kind="function">
       <type>constexpr bool</type>
@@ -12223,6 +12792,27 @@
       <arglist>(const char *format, const Args &amp;...args)</arglist>
     </member>
     <member kind="variable">
+      <type>constexpr const char</type>
+      <name>GUIONLY</name>
+      <anchorfile>namespace_ase.html</anchorfile>
+      <anchor>a645e93945a73abacf3fe1680f01f4c0d</anchor>
+      <arglist>[]</arglist>
+    </member>
+    <member kind="variable">
+      <type>constexpr const char</type>
+      <name>STORAGE</name>
+      <anchorfile>namespace_ase.html</anchorfile>
+      <anchor>a7ef7f0bf8ce3bc2e2f88091faa533572</anchor>
+      <arglist>[]</arglist>
+    </member>
+    <member kind="variable">
+      <type>constexpr const char</type>
+      <name>STANDARD</name>
+      <anchorfile>namespace_ase.html</anchorfile>
+      <anchor>ac8942b0d8f3a6d1f1892bf090eae7f64</anchor>
+      <arglist>[]</arglist>
+    </member>
+    <member kind="variable">
       <type>constexpr const uint</type>
       <name>MIDI_NOTE_ID_FIRST</name>
       <anchorfile>namespace_ase.html</anchorfile>
@@ -12304,6 +12894,13 @@
       <name>ase_debugging_enabled</name>
       <anchorfile>namespace_ase.html</anchorfile>
       <anchor>a923849733301af1eeeedabacab79582a</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>bool</type>
+      <name>ase_fatal_warnings</name>
+      <anchorfile>namespace_ase.html</anchorfile>
+      <anchor>a0fc26df94bcb0bfd1f305052d054cb47</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -12707,88 +13304,6 @@
     </member>
   </compound>
   <compound kind="namespace">
-    <name>Ase::Properties</name>
-    <filename>namespace_ase_1_1_properties.html</filename>
-    <class kind="class">Ase::Properties::Bag</class>
-    <member kind="function">
-      <type>String</type>
-      <name>construct_hints</name>
-      <anchorfile>namespace_ase_1_1_properties.html</anchorfile>
-      <anchor>a3c429cb505d3fd8c889a246c942b1a97</anchor>
-      <arglist>(const String &amp;hints, const String &amp;more, double pmin=0, double pmax=0)</arglist>
-    </member>
-    <member kind="function">
-      <type>PropertyImplP</type>
-      <name>mkprop</name>
-      <anchorfile>namespace_ase_1_1_properties.html</anchorfile>
-      <anchor>a1649118f6abbe14804d562aca317aa1b</anchor>
-      <arglist>(const Initializer &amp;initializer, const ValueGetter &amp;, const ValueSetter &amp;, const ValueLister &amp;)</arglist>
-    </member>
-    <member kind="function">
-      <type>PropertyP</type>
-      <name>Bool</name>
-      <anchorfile>namespace_ase_1_1_properties.html</anchorfile>
-      <anchor>a50db48e817778744387e0e20986fe3f0</anchor>
-      <arglist>(const String &amp;ident, bool *v, const String &amp;label, const String &amp;nickname, bool dflt, const String &amp;hints=&quot;&quot;, const String &amp;blurb=&quot;&quot;, const String &amp;description=&quot;&quot;)</arglist>
-    </member>
-    <member kind="function">
-      <type>PropertyP</type>
-      <name>Range</name>
-      <anchorfile>namespace_ase_1_1_properties.html</anchorfile>
-      <anchor>a19e2195538234a1099ab5ef37253e888</anchor>
-      <arglist>(const String &amp;ident, const ValueGetter &amp;getter, const ValueSetter &amp;setter, const String &amp;label, const String &amp;nickname, double pmin, double pmax, double dflt, const String &amp;unit=&quot;&quot;, const String &amp;hints=&quot;&quot;, const String &amp;blurb=&quot;&quot;, const String &amp;description=&quot;&quot;)</arglist>
-    </member>
-    <member kind="function">
-      <type>PropertyP</type>
-      <name>Range</name>
-      <anchorfile>namespace_ase_1_1_properties.html</anchorfile>
-      <anchor>a4182a9b9840416bf15bdfc1cd87de39d</anchor>
-      <arglist>(const String &amp;ident, int32 *v, const String &amp;label, const String &amp;nickname, int32 pmin, int32 pmax, int32 dflt, const String &amp;unit=&quot;&quot;, const String &amp;hints=&quot;&quot;, const String &amp;blurb=&quot;&quot;, const String &amp;description=&quot;&quot;)</arglist>
-    </member>
-    <member kind="function">
-      <type>PropertyP</type>
-      <name>Range</name>
-      <anchorfile>namespace_ase_1_1_properties.html</anchorfile>
-      <anchor>ac06ab0d35e1682aa49606a52edb1b8f8</anchor>
-      <arglist>(const String &amp;ident, float *v, const String &amp;label, const String &amp;nickname, double pmin, double pmax, double dflt, const String &amp;unit=&quot;&quot;, const String &amp;hints=&quot;&quot;, const String &amp;blurb=&quot;&quot;, const String &amp;description=&quot;&quot;)</arglist>
-    </member>
-    <member kind="function">
-      <type>PropertyP</type>
-      <name>Range</name>
-      <anchorfile>namespace_ase_1_1_properties.html</anchorfile>
-      <anchor>a6dd0cad54a93cfa29314a9b4c1ce8c06</anchor>
-      <arglist>(const String &amp;ident, double *v, const String &amp;label, const String &amp;nickname, double pmin, double pmax, double dflt, const String &amp;unit=&quot;&quot;, const String &amp;hints=&quot;&quot;, const String &amp;blurb=&quot;&quot;, const String &amp;description=&quot;&quot;)</arglist>
-    </member>
-    <member kind="function">
-      <type>PropertyP</type>
-      <name>Text</name>
-      <anchorfile>namespace_ase_1_1_properties.html</anchorfile>
-      <anchor>a7cbd144d927316c29bdf4a1e5bab4a8c</anchor>
-      <arglist>(const String &amp;ident, String *v, const String &amp;label, const String &amp;nickname, const String &amp;hints=&quot;&quot;, const String &amp;blurb=&quot;&quot;, const String &amp;description=&quot;&quot;)</arglist>
-    </member>
-    <member kind="function">
-      <type>PropertyP</type>
-      <name>Text</name>
-      <anchorfile>namespace_ase_1_1_properties.html</anchorfile>
-      <anchor>a23180193581eaf2875e2281c9ea6c67b</anchor>
-      <arglist>(const String &amp;ident, String *v, const String &amp;label, const String &amp;nickname, const ValueLister &amp;vl, const String &amp;hints=&quot;&quot;, const String &amp;blurb=&quot;&quot;, const String &amp;description=&quot;&quot;)</arglist>
-    </member>
-    <member kind="function">
-      <type>PropertyP</type>
-      <name>Enum</name>
-      <anchorfile>namespace_ase_1_1_properties.html</anchorfile>
-      <anchor>a8907ce27b1f0ab29d962b09c3a9fa07c</anchor>
-      <arglist>(const String &amp;ident, E *v, const String &amp;label, const String &amp;nickname, const String &amp;hints=&quot;&quot;, const String &amp;blurb=&quot;&quot;, const String &amp;description=&quot;&quot;)</arglist>
-    </member>
-    <member kind="function">
-      <type>ValueGetter</type>
-      <name>Getter</name>
-      <anchorfile>namespace_ase_1_1_properties.html</anchorfile>
-      <anchor>aa96b7f7c7b4b3da2e4f5c9ea76a77659</anchor>
-      <arglist>(const V *p)</arglist>
-    </member>
-  </compound>
-  <compound kind="namespace">
     <name>Ase::Test</name>
     <filename>namespace_ase_1_1_test.html</filename>
     <class kind="class">Ase::Test::Timer</class>
@@ -12878,7 +13393,7 @@
   </compound>
   <compound kind="page">
     <name>index</name>
-    <title>Anklang 3a7c2d398dacf07a8b4bcc2a996f0c410a708db0</title>
+    <title>Anklang c7ece44aabdbe1f89bfdad8f72ff702ed30011ff</title>
     <filename>index</filename>
   </compound>
 </tagfile>

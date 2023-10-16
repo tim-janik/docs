@@ -572,8 +572,6 @@ Class Inheritance Tree</h2>
    +Ase::Emittable
       |
       +Ase::Property
-      |  |
-      |  +Ase::Properties::LambdaPropertyImpl
       |
       +Ase::Object
          |
@@ -796,7 +794,7 @@ Props:</h3>
 <dl>
 <dt><em>value</em></dt>
 <dd>
-Integer, the index of the choice value to be displayed.
+The choice value to be displayed.
 </dd>
 <dt><em>choices</em></dt>
 <dd>
@@ -923,7 +921,7 @@ activation occoured or not.
 <h3 data-number="3.9.4"><span class="header-section-number">3.9.4</span>
 Methods:</h3>
 <dl>
-<dt><em>popup (event, { origin, data-contextmenu })</em></dt>
+<dt><em>popup (event, { origin, focus_uri, data-contextmenu })</em></dt>
 <dd>
 Popup the contextmenu, propagation of <code>event</code> is halted and
 the event coordinates or target is
@@ -934,6 +932,10 @@ used for positioning unless <code>origin</code> is given.
 <dd>
 The <code>origin</code> is a reference DOM element to use for drop-down
 positioning.
+</dd>
+<dd>
+The <code>focus_uri</code> is a &lt;b-menuitem/&gt; URI to receive focus
+after popup.
 </dd>
 <dd>
 The <code>data-contextmenu</code> element (or <code>origin</code>) has
