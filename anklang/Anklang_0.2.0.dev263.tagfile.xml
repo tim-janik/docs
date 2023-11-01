@@ -2069,14 +2069,6 @@
     <namespace>Ase</namespace>
   </compound>
   <compound kind="file">
-    <name>resampler2.hh</name>
-    <path>/cirun/poxy/ase/</path>
-    <filename>resampler2_8hh.html</filename>
-    <includes id="cxxaux_8hh" name="cxxaux.hh" local="no" imported="no">ase/cxxaux.hh</includes>
-    <class kind="class">Ase::Resampler2</class>
-    <namespace>Ase</namespace>
-  </compound>
-  <compound kind="file">
     <name>serialize.hh</name>
     <path>/cirun/poxy/ase/</path>
     <filename>serialize_8hh.html</filename>
@@ -5873,10 +5865,6 @@
     <templarg>ALIGNMENT</templarg>
   </compound>
   <compound kind="class">
-    <name>FastMemArray&lt; float &gt;</name>
-    <filename>class_ase_1_1_fast_mem_array.html</filename>
-  </compound>
-  <compound kind="class">
     <name>Ase::AudioProcessor::FloatBuffer</name>
     <filename>class_ase_1_1_audio_processor_1_1_float_buffer.html</filename>
   </compound>
@@ -9131,80 +9119,6 @@
       <arglist>(const String &amp;regex, const String &amp;sbref, const String &amp;input, Flags=DEFAULT)</arglist>
     </member>
   </compound>
-  <compound kind="class">
-    <name>Ase::Resampler2</name>
-    <filename>class_ase_1_1_resampler2.html</filename>
-    <member kind="function">
-      <type></type>
-      <name>Resampler2</name>
-      <anchorfile>class_ase_1_1_resampler2.html</anchorfile>
-      <anchor>a5c8b766af3bf07bf225104fda83cae17</anchor>
-      <arglist>(Mode mode, Precision precision, bool use_sse_if_available=true)</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>process_block</name>
-      <anchorfile>class_ase_1_1_resampler2.html</anchorfile>
-      <anchor>aeeae4514f88cd8e3ba2ecbe935cacd51</anchor>
-      <arglist>(const float *input, uint n_input_samples, float *output)</arglist>
-    </member>
-    <member kind="function">
-      <type>uint</type>
-      <name>order</name>
-      <anchorfile>class_ase_1_1_resampler2.html</anchorfile>
-      <anchor>ac339f2b76f7278ad7a34302c8ca77a05</anchor>
-      <arglist>() const</arglist>
-    </member>
-    <member kind="function">
-      <type>double</type>
-      <name>delay</name>
-      <anchorfile>class_ase_1_1_resampler2.html</anchorfile>
-      <anchor>ac67587d940e261c6b29dc5a7a9586b33</anchor>
-      <arglist>() const</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>reset</name>
-      <anchorfile>class_ase_1_1_resampler2.html</anchorfile>
-      <anchor>a34e79f73b8ea25e0882da734ff6772d5</anchor>
-      <arglist>()</arglist>
-    </member>
-    <member kind="function">
-      <type>bool</type>
-      <name>sse_enabled</name>
-      <anchorfile>class_ase_1_1_resampler2.html</anchorfile>
-      <anchor>aa83e1904a7d82491839752b819bf1796</anchor>
-      <arglist>() const</arglist>
-    </member>
-    <member kind="function" static="yes">
-      <type>static bool</type>
-      <name>sse_available</name>
-      <anchorfile>class_ase_1_1_resampler2.html</anchorfile>
-      <anchor>a46393018c0a1e3c7b595f477d6cb0f8e</anchor>
-      <arglist>()</arglist>
-    </member>
-    <member kind="function" static="yes">
-      <type>static bool</type>
-      <name>test_filter_impl</name>
-      <anchorfile>class_ase_1_1_resampler2.html</anchorfile>
-      <anchor>ad7411b101159953f3e57e51f18ec9a46</anchor>
-      <arglist>(bool verbose)</arglist>
-    </member>
-    <member kind="function" static="yes">
-      <type>static Precision</type>
-      <name>find_precision_for_bits</name>
-      <anchorfile>class_ase_1_1_resampler2.html</anchorfile>
-      <anchor>ab4ad68c627e910c5ad78598e322b00c3</anchor>
-      <arglist>(uint bits)</arglist>
-    </member>
-    <member kind="function" static="yes">
-      <type>static const char *</type>
-      <name>precision_name</name>
-      <anchorfile>class_ase_1_1_resampler2.html</anchorfile>
-      <anchor>a6767f56dfe3b86fb18b80a38c701b7b9</anchor>
-      <arglist>(Precision precision)</arglist>
-    </member>
-  </compound>
   <compound kind="struct">
     <name>Ase::Resource</name>
     <filename>struct_ase_1_1_resource.html</filename>
@@ -10929,7 +10843,6 @@
     <class kind="struct">Ase::PropertyBag</class>
     <class kind="class">Ase::PropertyImpl</class>
     <class kind="class">Ase::Re</class>
-    <class kind="class">Ase::Resampler2</class>
     <class kind="struct">Ase::Resource</class>
     <class kind="class">Ase::ResourceCrawler</class>
     <class kind="struct">Ase::RtCall</class>
@@ -13393,7 +13306,7 @@
   </compound>
   <compound kind="page">
     <name>index</name>
-    <title>Anklang fff51b9eceb89555cf60d03ebdfaeb78a9b82a0b</title>
+    <title>Anklang 441cbca2581a3cc6a91606fd2120a60f67c247eb</title>
     <filename>index</filename>
   </compound>
 </tagfile>

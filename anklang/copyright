@@ -446,18 +446,6 @@ Files: ase/regex.hh
 Copyright: Copyright (C) 2021-2022 Tim Janik
 License: MPL-2.0
 
-Files: ase/resampler2.cc
-Copyright:
-  Copyright (C) 2020-2021 Tim Janik
-  Copyright (C) 2006 Stefan Westerfeld
-License: MPL-2.0
-
-Files: ase/resampler2.hh
-Copyright:
-  Copyright (C) 2021 Tim Janik
-  Copyright (C) 2006 Stefan Westerfeld
-License: MPL-2.0
-
 Files: ase/serialize.cc
 Copyright: Copyright (C) 2021-2023 Tim Janik
 License: MPL-2.0
@@ -597,7 +585,9 @@ Copyright: Copyright (C) 2020 Tim Janik
 License: CC0-1.0
 
 Files: devices/blepsynth/Makefile.mk
-Copyright: Copyright (C) 2021-2022 Tim Janik
+Copyright:
+  Copyright (C) 2021-2023 Tim Janik
+  Copyright (C) 2023 Stefan Westerfeld
 License: MPL-2.0
 
 Files: devices/blepsynth/TODO
@@ -618,8 +608,8 @@ License: MPL-2.0
 
 Files: devices/blepsynth/blepsynth.cc
 Copyright:
-  Copyright (C) 2020-2022 Tim Janik
-  Copyright (C) 2022 Stefan Westerfeld
+  Copyright (C) 2020-2023 Tim Janik
+  Copyright (C) 2022-2023 Stefan Westerfeld
   Copyright (C) 2020 Stefan Westerfeld
 License: MPL-2.0
 
@@ -637,13 +627,14 @@ License: MPL-2.0
 
 Files: devices/blepsynth/laddervcf.hh
 Copyright:
-  Copyright (C) 2022 Stefan Westerfeld
+  Copyright (C) 2022-2023 Stefan Westerfeld
   Copyright (C) 2020-2021 Tim Janik
   Copyright (C) 2020 Stefan Westerfeld
 License: MPL-2.0
 
 Files: devices/blepsynth/linearsmooth.hh
 Copyright:
+  Copyright (C) 2023 Stefan Westerfeld
   Copyright (C) 2021 Tim Janik
   Copyright (C) 2020 Stefan Westerfeld
 License: MPL-2.0
@@ -652,6 +643,10 @@ Files: devices/blepsynth/plotblep.py
 Copyright:
   Copyright (C) 2021 Tim Janik
   Copyright (C) 2020 Stefan Westerfeld
+License: MPL-2.0
+
+Files: devices/blepsynth/skfilter.hh
+Copyright: Copyright (C) 2023 Stefan Westerfeld
 License: MPL-2.0
 
 Files: devices/blepsynth/testblep.cpp
