@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en"><head>
   <meta charset="utf-8"/>
-  <title>ase/entropy.hh file | Anklang 0.2.0.dev274 Anklang Programming Reference</title>
+  <title>Ase::Loft::AllocatorBase struct | Anklang 0.2.0.dev274 Anklang Programming Reference</title>
   <link href="favicon.svg" rel="icon" type="image/svg+xml"/>
   <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
   <meta content="#cb4b16" name="theme-color"/>
@@ -59,41 +59,33 @@
     <div class="m-row">
       <div class="m-col-l-10 m-push-l-1">
         <h1>
-          <span class="m-breadcrumb"><a href="dir_348db03b1ba8af29dd5c640acd69ada0.html">ase</a>/</span>entropy.hh <span class="m-thin">file</span>
+          <span class="m-breadcrumb"><a href="namespace_ase.html">Ase</a>::<wbr/></span><span class="m-breadcrumb"><a href="namespace_ase_1_1_loft.html">Loft</a>::<wbr/></span>AllocatorBase <span class="m-thin">struct</span>
         </h1>
+        <p>Internal Helper.</p>
         <nav class="m-block m-default poxy-toc" id="poxy-toc">
           <h3>Contents</h3>
           <ul>
             <li>
               Reference
               <ul>
-                <li><a href="#namespaces">Namespaces</a></li>
-                <li><a href="#func-members">Functions</a></li>
+                <li><a href="#pro-static-methods">Protected static functions</a></li>
               </ul>
             </li>
           </ul>
         </nav>
-<p><br/></p>
-        <section id="namespaces">
-          <h2><a href="#namespaces">Namespaces</a></h2>
+        <section id="pro-static-methods">
+          <h2><a href="#pro-static-methods">Protected static functions</a></h2>
           <dl class="m-doc">
-            <dt>namespace <a class="m-doc" href="namespace_ase.html">Ase</a></dt>
-            <dd>The Anklang C++ API namespace.</dd>
-          </dl>
-        </section>
-        <section id="func-members">
-          <h2><a href="#func-members">Functions</a></h2>
-          <dl class="m-doc">
-            <dt>
-              <span class="m-doc-wrap-bumper">void <a class="m-doc" href="namespace_ase.html#a2dbb0db5cbd8dc4552c8c789be3115d3">collect_runtime_entropy</a>(</span><span class="m-doc-wrap">uint64* data,
-              <a class="m-doc poxy-injected poxy-external poxy-cppreference" href="https://en.cppreference.com/w/cpp/types/size_t" target="_blank">size_t</a> n)</span>
+            <dt id="ab31d2ab74e722342c5303ad8f4ddecfd">
+              <span class="m-doc-wrap-bumper">static auto <a class="m-doc-self" href="#ab31d2ab74e722342c5303ad8f4ddecfd">loft_btalloc</a>(</span><span class="m-doc-wrap"><a class="m-doc poxy-injected poxy-external poxy-cppreference" href="https://en.cppreference.com/w/cpp/types/size_t" target="_blank">size_t</a> size,
+              <a class="m-doc poxy-injected poxy-external poxy-cppreference" href="https://en.cppreference.com/w/cpp/types/size_t" target="_blank">size_t</a> align) -&gt; void*</span>
             </dt>
-            <dd>Collect entropy from the current process, usually quicker than <a class="m-doc" href="namespace_ase.html#a8ee68f16b77657d551f68f4d1781bd98">collect_<wbr/>system_<wbr/>entropy()</a>.</dd>
-            <dt>
-              <span class="m-doc-wrap-bumper">void <a class="m-doc" href="namespace_ase.html#a8ee68f16b77657d551f68f4d1781bd98">collect_system_entropy</a>(</span><span class="m-doc-wrap">uint64* data,
-              <a class="m-doc poxy-injected poxy-external poxy-cppreference" href="https://en.cppreference.com/w/cpp/types/size_t" target="_blank">size_t</a> n)</span>
+            <dd>Alloc in a fashion similar to malloc(), using boundary tags.</dd>
+            <dt id="a06f58a00ad86eedd60f001b9c3d24e4a">
+              <span class="m-doc-wrap-bumper">static void <a class="m-doc-self" href="#a06f58a00ad86eedd60f001b9c3d24e4a">loft_btfree</a>(</span><span class="m-doc-wrap">void* p,
+              <a class="m-doc poxy-injected poxy-external poxy-cppreference" href="https://en.cppreference.com/w/cpp/types/size_t" target="_blank">size_t</a> size)</span>
             </dt>
-            <dd>Collect entropy from system devices, like interrupt counters, clocks and random devices.</dd>
+            <dd>Free memory allocted from <a class="m-doc" href="#ab31d2ab74e722342c5303ad8f4ddecfd">loft_<wbr/>btalloc()</a>.</dd>
           </dl>
         </section>
       </div>

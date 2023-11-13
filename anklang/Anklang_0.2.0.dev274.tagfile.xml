@@ -950,6 +950,8 @@
     <class kind="struct">Ase::LoftFree</class>
     <class kind="struct">Ase::LoftConfig</class>
     <class kind="struct">Ase::LoftStats</class>
+    <class kind="struct">Ase::Loft::AllocatorBase</class>
+    <class kind="class">Ase::Loft::Allocator</class>
     <namespace>Ase</namespace>
     <namespace>Ase::Loft</namespace>
     <member kind="typedef">
@@ -3197,6 +3199,13 @@
       <arglist>(const char *conditional)</arglist>
     </member>
     <member kind="function">
+      <type>const char *</type>
+      <name>ase_gettext</name>
+      <anchorfile>namespace_ase.html</anchorfile>
+      <anchor>aeee5cae20a670fbe6f9d48d28a9b7a99</anchor>
+      <arglist>(const char *format, const A0 &amp;a0, const Ar &amp;...restargs)</arglist>
+    </member>
+    <member kind="function">
       <type>constexpr uint16_t</type>
       <name>uint16_swap_le_be</name>
       <anchorfile>namespace_ase.html</anchorfile>
@@ -3264,13 +3273,6 @@
       <name>printerr</name>
       <anchorfile>namespace_ase.html</anchorfile>
       <anchor>a34b15b028f6d5b00f8c7f4473e8334ab</anchor>
-      <arglist>(const char *format, const Args &amp;...args)</arglist>
-    </member>
-    <member kind="function">
-      <type>const char *</type>
-      <name>ase_gettext</name>
-      <anchorfile>namespace_ase.html</anchorfile>
-      <anchor>a6103a1db4fd9aa6a7f2e08f418e4af62</anchor>
       <arglist>(const char *format, const Args &amp;...args)</arglist>
     </member>
     <member kind="function">
@@ -3590,6 +3592,30 @@
   <compound kind="class">
     <name>AlignedPOD&lt; 232 &gt;</name>
     <filename>struct_ase_1_1_aligned_p_o_d.html</filename>
+  </compound>
+  <compound kind="class">
+    <name>Ase::Loft::Allocator</name>
+    <filename>class_ase_1_1_loft_1_1_allocator.html</filename>
+    <templarg></templarg>
+    <base protection="private">Ase::Loft::AllocatorBase</base>
+  </compound>
+  <compound kind="struct">
+    <name>Ase::Loft::AllocatorBase</name>
+    <filename>struct_ase_1_1_loft_1_1_allocator_base.html</filename>
+    <member kind="function" protection="protected" static="yes">
+      <type>static void *</type>
+      <name>loft_btalloc</name>
+      <anchorfile>struct_ase_1_1_loft_1_1_allocator_base.html</anchorfile>
+      <anchor>ab31d2ab74e722342c5303ad8f4ddecfd</anchor>
+      <arglist>(size_t size, size_t align)</arglist>
+    </member>
+    <member kind="function" protection="protected" static="yes">
+      <type>static void</type>
+      <name>loft_btfree</name>
+      <anchorfile>struct_ase_1_1_loft_1_1_allocator_base.html</anchorfile>
+      <anchor>a06f58a00ad86eedd60f001b9c3d24e4a</anchor>
+      <arglist>(void *p, size_t size)</arglist>
+    </member>
   </compound>
   <compound kind="struct">
     <name>Ase::FastMemory::Arena</name>
@@ -12658,6 +12684,13 @@
       <arglist>()</arglist>
     </member>
     <member kind="function">
+      <type>const char *</type>
+      <name>ase_gettext</name>
+      <anchorfile>namespace_ase.html</anchorfile>
+      <anchor>aeee5cae20a670fbe6f9d48d28a9b7a99</anchor>
+      <arglist>(const char *format, const A0 &amp;a0, const Ar &amp;...restargs)</arglist>
+    </member>
+    <member kind="function">
       <type>constexpr uint16_t</type>
       <name>uint16_swap_le_be</name>
       <anchorfile>namespace_ase.html</anchorfile>
@@ -12711,13 +12744,6 @@
       <name>printerr</name>
       <anchorfile>namespace_ase.html</anchorfile>
       <anchor>a34b15b028f6d5b00f8c7f4473e8334ab</anchor>
-      <arglist>(const char *format, const Args &amp;...args)</arglist>
-    </member>
-    <member kind="function">
-      <type>const char *</type>
-      <name>ase_gettext</name>
-      <anchorfile>namespace_ase.html</anchorfile>
-      <anchor>a6103a1db4fd9aa6a7f2e08f418e4af62</anchor>
       <arglist>(const char *format, const Args &amp;...args)</arglist>
     </member>
     <member kind="variable">
@@ -12963,6 +12989,8 @@
   <compound kind="namespace">
     <name>Ase::Loft</name>
     <filename>namespace_ase_1_1_loft.html</filename>
+    <class kind="class">Ase::Loft::Allocator</class>
+    <class kind="struct">Ase::Loft::AllocatorBase</class>
     <member kind="enumeration">
       <type></type>
       <name>Flags</name>
@@ -13322,7 +13350,7 @@
   </compound>
   <compound kind="page">
     <name>index</name>
-    <title>Anklang e1031e5f9ef64fd8ae3fea6368a64dabd2813f89</title>
+    <title>Anklang 89cc7d6c5f68e9a10dd354a7e85f38ea1656b9cf</title>
     <filename>index</filename>
   </compound>
 </tagfile>
