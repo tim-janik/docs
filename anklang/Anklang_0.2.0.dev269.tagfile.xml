@@ -1954,6 +1954,14 @@
     </member>
   </compound>
   <compound kind="file">
+    <name>queuemux.hh</name>
+    <path>/cirun/poxy/ase/</path>
+    <filename>queuemux_8hh.html</filename>
+    <includes id="cxxaux_8hh" name="cxxaux.hh" local="no" imported="no">ase/cxxaux.hh</includes>
+    <class kind="struct">Ase::QueueMultiplexer</class>
+    <namespace>Ase</namespace>
+  </compound>
+  <compound kind="file">
     <name>randomhash.hh</name>
     <path>/cirun/poxy/ase/</path>
     <filename>randomhash_8hh.html</filename>
@@ -9087,6 +9095,13 @@
       <arglist>(const String &amp;detail)</arglist>
     </member>
   </compound>
+  <compound kind="struct">
+    <name>Ase::QueueMultiplexer</name>
+    <filename>struct_ase_1_1_queue_multiplexer.html</filename>
+    <templarg>MAXQUEUES</templarg>
+    <templarg></templarg>
+    <templarg></templarg>
+  </compound>
   <compound kind="class">
     <name>Ase::Re</name>
     <filename>class_ase_1_1_re.html</filename>
@@ -10842,6 +10857,7 @@
     <class kind="class">Ase::Property</class>
     <class kind="struct">Ase::PropertyBag</class>
     <class kind="class">Ase::PropertyImpl</class>
+    <class kind="struct">Ase::QueueMultiplexer</class>
     <class kind="class">Ase::Re</class>
     <class kind="struct">Ase::Resource</class>
     <class kind="class">Ase::ResourceCrawler</class>
@@ -13306,7 +13322,7 @@
   </compound>
   <compound kind="page">
     <name>index</name>
-    <title>Anklang 409e87d3a2ec50a8898c8246714121b48da174ba</title>
+    <title>Anklang e1031e5f9ef64fd8ae3fea6368a64dabd2813f89</title>
     <filename>index</filename>
   </compound>
 </tagfile>
