@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en"><head>
   <meta charset="utf-8"/>
-  <title>ase/internal.hh file | Anklang 0.2.0.dev300 Anklang Programming Reference</title>
+  <title>Ase::MidiEventReader class | Anklang 0.2.0.dev300 Anklang Programming Reference</title>
   <link href="favicon.svg" rel="icon" type="image/svg+xml"/>
   <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
   <meta content="#cb4b16" name="theme-color"/>
@@ -22,7 +22,7 @@
   <meta content="Poxy v0.13.9" name="generator"/>
   <meta content="strict-origin-when-cross-origin" name="referrer"/>
 </head>
-<body class="poxy-has-toc">
+<body>
 <header><nav id="navigation">
   <div class="m-container">
     <div class="m-row">
@@ -59,135 +59,10 @@
     <div class="m-row">
       <div class="m-col-l-10 m-push-l-1">
         <h1>
-          <span class="m-breadcrumb"><a href="dir_348db03b1ba8af29dd5c640acd69ada0.html">ase</a>/</span>internal.hh <span class="m-thin">file</span>
+          <div class="m-doc-template">template &lt;<span class="m-doc-template-params"><span class="m-doc-template-param"><a class="m-doc poxy-injected poxy-external poxy-cppreference" href="https://en.cppreference.com/w/cpp/types/size_t" target="_blank">size_t</a> MAXQUEUES</span></span>&gt;</div>
+          <span class="m-breadcrumb"><a href="namespace_ase.html">Ase</a>::<wbr/></span>MidiEventReader <span class="m-thin">class</span>
         </h1>
-        <nav class="m-block m-default poxy-toc" id="poxy-toc">
-          <h3>Contents</h3>
-          <ul>
-            <li>
-              Reference
-              <ul>
-                <li><a href="#namespaces">Namespaces</a></li>
-                <li><a href="#define-members">Defines</a></li>
-              </ul>
-            </li>
-          </ul>
-        </nav>
-<p><br/></p>
-        <section id="namespaces">
-          <h2><a href="#namespaces">Namespaces</a></h2>
-          <dl class="m-doc">
-            <dt>namespace <a class="m-doc" href="namespace_ase.html">Ase</a></dt>
-            <dd>The Anklang C++ API namespace.</dd>
-            <dt>namespace <a class="m-doc" href="namespace_ase_1_1_test.html">Ase::Test</a></dt>
-            <dd>Helper namespace for unit testing.</dd>
-          </dl>
-        </section>
-        <section id="define-members">
-          <h2><a href="#define-members">Defines</a></h2>
-          <dl class="m-doc">
-            <dt id="a6811cc9b22527b12a3de229332bc73cc">
-              <span class="m-doc-wrap-bumper">#define <a class="m-doc-self" href="#a6811cc9b22527b12a3de229332bc73cc">ALIGNED16</a>(</span><span class="m-doc-wrap">pointer)</span>
-            </dt>
-            <dd>Check if a pointer address is 16-Byte aligned.</dd>
-            <dt id="a6d0bc1ba679e675f89e88f2b7cd5fc75">
-              <span class="m-doc-wrap-bumper">#define <a class="m-doc-self" href="#a6d0bc1ba679e675f89e88f2b7cd5fc75">ALIGNMENT16</a>(</span><span class="m-doc-wrap">pointer)</span>
-            </dt>
-            <dd>Yield 16-Byte alignment of a pointer address.</dd>
-            <dt id="a1716729327860872d0d906dcfd49a831">
-              <span class="m-doc-wrap-bumper">#define <a class="m-doc-self" href="#a1716729327860872d0d906dcfd49a831">APPLY_IDL_PROPERTY</a>(</span><span class="m-doc-wrap">lvalue,
-              rvalue)</span>
-            </dt>
-            <dd>Constrain, apply, notify and implement a property change, the property name must equal <code>__func__</code>.</dd>
-            <dt id="a70c57aae3eb654e205459b4362c8089a">
-              <span class="m-doc-wrap-bumper">#define <a class="m-doc-self" href="#a70c57aae3eb654e205459b4362c8089a">ARRAY_SIZE</a>(</span><span class="m-doc-wrap">array)</span>
-            </dt>
-            <dd>Yield the number of C <em>array</em> elements.</dd>
-            <dt id="a485ec145be89e8d8068c999d4da9bca0">
-              <span class="m-doc-wrap-bumper">#define <a class="m-doc-self" href="#a485ec145be89e8d8068c999d4da9bca0">CLAMP</a>(</span><span class="m-doc-wrap">v,
-              mi,
-              ma)</span>
-            </dt>
-            <dd>Yield <code>v</code> clamped to <code>[mi … ma]</code>.</dd>
-            <dt id="abc16d95b3e5a422ba6901427d91427b7">
-              <span class="m-doc-wrap-bumper">#define <a class="m-doc-self" href="#abc16d95b3e5a422ba6901427d91427b7">CQUOTE</a>(</span><span class="m-doc-wrap">str)</span>
-            </dt>
-            <dd>Produce a const char* string, wrapping <em>str</em> into C-style double quotes.</dd>
-            <dt id="afe6b00653468db86daee78090e900fc9">
-              <span class="m-doc-wrap-bumper">#define <a class="m-doc-self" href="#afe6b00653468db86daee78090e900fc9">ISLIKELY</a>(</span><span class="m-doc-wrap">cond)</span>
-            </dt>
-            <dd>Hint to the compiler to optimize for <em>cond</em> == TRUE.</dd>
-            <dt id="a1660b2f977eb46ccf83544b59a66e8cd">
-              <span class="m-doc-wrap-bumper">#define <a class="m-doc-self" href="#a1660b2f977eb46ccf83544b59a66e8cd">JSONIPC_INHERIT</a>(</span><span class="m-doc-wrap">IMPL,
-              INTERFACE)</span>
-            </dt>
-            <dd>Register <code>IMPL</code> with Jsonipc and indicate it inherits from <code>INTERFACE</code>.</dd>
-            <dt id="afa99ec4acc4ecb2dc3c2d05da15d0e3f">
-              <span class="m-doc-wrap-bumper">#define <a class="m-doc-self" href="#afa99ec4acc4ecb2dc3c2d05da15d0e3f">MAX</a>(</span><span class="m-doc-wrap">a,
-              b)</span>
-            </dt>
-            <dd>Yield maximum of <code>a</code> and <code>b</code>.</dd>
-            <dt id="a3acffbd305ee72dcd4593c0d8af64a4f">
-              <span class="m-doc-wrap-bumper">#define <a class="m-doc-self" href="#a3acffbd305ee72dcd4593c0d8af64a4f">MIN</a>(</span><span class="m-doc-wrap">a,
-              b)</span>
-            </dt>
-            <dd>Yield minimum of <code>a</code> and <code>b</code>.</dd>
-            <dt id="a2091f4107eaba5336ec06bb5e38a5711">
-              <span class="m-doc-wrap-bumper">#define <a class="m-doc-self" href="#a2091f4107eaba5336ec06bb5e38a5711">N_</a>(</span><span class="m-doc-wrap">str)</span>
-            </dt>
-            <dd>Mark a string for translation, passed through verbatim by the preprocessor.</dd>
-            <dt id="aac25174bfb51078a50b85798b6fe92b3">
-              <span class="m-doc-wrap-bumper">#define <a class="m-doc-self" href="#aac25174bfb51078a50b85798b6fe92b3">STRING_VECTOR_FROM_ARRAY</a>(</span><span class="m-doc-wrap">ConstCharArray)</span>
-            </dt>
-            <dd>Create a Ase::StringVector, from a const char* C-style array.</dd>
-            <dt id="af13c7b07f2c68f11e0ca125a1db2cc8a">
-              <span class="m-doc-wrap-bumper">#define <a class="m-doc-self" href="#af13c7b07f2c68f11e0ca125a1db2cc8a">TEST_BENCHMARK</a>(</span><span class="m-doc-wrap">FUNC)</span>
-            </dt>
-            <dd>Register <code>func</code> as a benchmark test.</dd>
-            <dt id="af8a0cfecd1654cb63c6de4f08dd75781">
-              <span class="m-doc-wrap-bumper">#define <a class="m-doc-self" href="#af8a0cfecd1654cb63c6de4f08dd75781">TEST_INTEGRITY</a>(</span><span class="m-doc-wrap">FUNC)</span>
-            </dt>
-            <dd>Register <code>func</code> as an integrity test.</dd>
-            <dt id="a9bc47b0f2ca95a82343eaf253567b354">
-              <span class="m-doc-wrap-bumper">#define <a class="m-doc-self" href="#a9bc47b0f2ca95a82343eaf253567b354">UNLIKELY</a>(</span><span class="m-doc-wrap">cond)</span>
-            </dt>
-            <dd>Hint to the compiler to optimize for <em>cond</em> == FALSE.</dd>
-            <dt id="a98d5622bbebe621b3d24c81ae903864d">
-              <span class="m-doc-wrap-bumper">#define <a class="m-doc-self" href="#a98d5622bbebe621b3d24c81ae903864d">_</a>(</span><span class="m-doc-wrap">...)</span>
-            </dt>
-            <dd>Retrieve the translation of a C or C++ string.</dd>
-            <dt id="a63f4629b124d24c95805afc397703f91">
-              <span class="m-doc-wrap-bumper">#define <a class="m-doc-self" href="#a63f4629b124d24c95805afc397703f91">assert_paranoid</a>(</span><span class="m-doc-wrap">expr)</span>
-            </dt>
-            <dd>Issue an assertion warning if <code>expr</code> evaluates to false, check might be disabled in production.</dd>
-            <dt id="a1c4d3642f226286834f8b9493ddaf8d0">
-              <span class="m-doc-wrap-bumper">#define <a class="m-doc-self" href="#a1c4d3642f226286834f8b9493ddaf8d0">assert_return</a>(</span><span class="m-doc-wrap">expr,
-              ...)</span>
-            </dt>
-            <dd>Return from the current function if <code>expr</code> is unmet and issue an assertion warning.</dd>
-            <dt id="a7e92dd4f2425d66862089ef179c6b480">
-              <span class="m-doc-wrap-bumper">#define <a class="m-doc-self" href="#a7e92dd4f2425d66862089ef179c6b480">assert_return_unreached</a>(</span><span class="m-doc-wrap">...)</span>
-            </dt>
-            <dd>Return from the current function and issue an assertion warning.</dd>
-            <dt id="af7e4da35973168e6c7b2bbdae75716c1">
-              <span class="m-doc-wrap-bumper">#define <a class="m-doc-self" href="#af7e4da35973168e6c7b2bbdae75716c1">assert_unreached</a>(</span><span class="m-doc-wrap">)</span>
-            </dt>
-            <dd>Explicitely mark unreachable code locations.</dd>
-            <dt id="a5733f806ead34bbf4d047ebb704b64aa">
-              <span class="m-doc-wrap-bumper">#define <a class="m-doc-self" href="#a5733f806ead34bbf4d047ebb704b64aa">assert_warn</a>(</span><span class="m-doc-wrap">expr)</span>
-            </dt>
-            <dd>Issue an assertion warning if <code>expr</code> evaluates to false.</dd>
-            <dt id="ac03b7e5a3148381040501946b45e2cfc">
-              <span class="m-doc-wrap-bumper">#define <a class="m-doc-self" href="#ac03b7e5a3148381040501946b45e2cfc">if_constexpr</a></span>
-            </dt>
-            <dd>Indentation helper for editors that cannot (yet) decipher <code>if constexpr</code></dd>
-            <dt id="a3d5657dcebffe51245166f30065c5b40">
-              <span class="m-doc-wrap-bumper">#define <a class="m-doc-self" href="#a3d5657dcebffe51245166f30065c5b40">return_unless</a>(</span><span class="m-doc-wrap">cond,
-              ...)</span>
-            </dt>
-            <dd>Return silently if <em>cond</em> does not evaluate to true with return value ...</dd>
-          </dl>
-        </section>
+        <p>An in-order <a class="m-doc" href="struct_ase_1_1_midi_event.html">MidiEvent</a> reader for multiple <a class="m-doc" href="struct_ase_1_1_midi_event.html">MidiEvent</a> sources.</p>
       </div>
     </div>
   </div>

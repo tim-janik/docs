@@ -329,7 +329,7 @@ Copyright: Copyright (C) 2021-2023 Tim Janik
 License: MPL-2.0
 
 Files: ase/midievent.hh
-Copyright: Copyright (C) 2021-2022 Tim Janik
+Copyright: Copyright (C) 2021-2023 Tim Janik
 License: MPL-2.0
 
 Files: ase/midilib.cc
@@ -337,7 +337,7 @@ Copyright: Copyright (C) 2021-2023 Tim Janik
 License: MPL-2.0
 
 Files: ase/midilib.hh
-Copyright: Copyright (C) 2021-2022 Tim Janik
+Copyright: Copyright (C) 2021-2023 Tim Janik
 License: MPL-2.0
 
 Files: ase/mime-types.hh
@@ -668,7 +668,7 @@ Copyright:
 License: MPL-2.0
 
 Files: devices/colorednoise.cc
-Copyright: Copyright (C) 2021-2022 Tim Janik
+Copyright: Copyright (C) 2021-2023 Tim Janik
 License: MPL-2.0
 
 Files: devices/freeverb/GNUmakefile
@@ -713,7 +713,7 @@ License: CC-PDDC
 
 Files: devices/freeverb/freeverb.cc
 Copyright:
-  Copyright (C) 2022 Tim Janik
+  Copyright (C) 2022-2023 Tim Janik
   Copyright (C) 2020 Tim Janik
 License: MPL-2.0
 

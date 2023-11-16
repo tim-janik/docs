@@ -546,6 +546,13 @@
       <arglist>((always_inline)) inline void delete_inplace(Type &amp;typemem)</arglist>
     </member>
     <member kind="function">
+      <type>void</type>
+      <name>call_delete</name>
+      <anchorfile>namespace_ase.html</anchorfile>
+      <anchor>a15157f821281459325be9c560547279b</anchor>
+      <arglist>(T *o)</arglist>
+    </member>
+    <member kind="function">
       <type>std::shared_ptr&lt; typename std::remove_pointer&lt; Target &gt;::type &gt;</type>
       <name>shared_ptr_cast</name>
       <anchorfile>namespace_ase.html</anchorfile>
@@ -1163,10 +1170,11 @@
     <path>/cirun/poxy/ase/</path>
     <filename>midievent_8hh.html</filename>
     <includes id="memory_8hh" name="memory.hh" local="no" imported="no">ase/memory.hh</includes>
+    <includes id="queuemux_8hh" name="queuemux.hh" local="no" imported="no">ase/queuemux.hh</includes>
     <includes id="mathutils_8hh" name="mathutils.hh" local="no" imported="no">ase/mathutils.hh</includes>
     <class kind="struct">Ase::MidiEvent</class>
-    <class kind="class">Ase::MidiEventStream</class>
-    <class kind="class">Ase::MidiEventRange</class>
+    <class kind="class">Ase::MidiEventOutput</class>
+    <class kind="class">Ase::MidiEventReader</class>
     <class kind="struct">Ase::MidiNote</class>
     <namespace>Ase</namespace>
     <member kind="enumeration">
@@ -1175,6 +1183,15 @@
       <anchorfile>namespace_ase.html</anchorfile>
       <anchor>ac89ef908c78cabb30e73a3e03b1a1d12</anchor>
       <arglist></arglist>
+      <enumvalue file="namespace_ase.html" anchor="ac89ef908c78cabb30e73a3e03b1a1d12a9bb914d2eaedd80abc450b5a48f4bf67">PARAM_VALUE</enumvalue>
+      <enumvalue file="namespace_ase.html" anchor="ac89ef908c78cabb30e73a3e03b1a1d12a64c4eb278d5b288304f476ccbc70d958">NOTE_OFF</enumvalue>
+      <enumvalue file="namespace_ase.html" anchor="ac89ef908c78cabb30e73a3e03b1a1d12a42ab8d6057c68dc3ca7829a9173c24a4">NOTE_ON</enumvalue>
+      <enumvalue file="namespace_ase.html" anchor="ac89ef908c78cabb30e73a3e03b1a1d12add5ad791cdebdae08885215f40e4e08a">AFTERTOUCH</enumvalue>
+      <enumvalue file="namespace_ase.html" anchor="ac89ef908c78cabb30e73a3e03b1a1d12ac08bccd1d86dc7033fb7a426455a8ae6">CONTROL_CHANGE</enumvalue>
+      <enumvalue file="namespace_ase.html" anchor="ac89ef908c78cabb30e73a3e03b1a1d12a9c1ebbbad317dc20a7aebc4e433b0f2e">PROGRAM_CHANGE</enumvalue>
+      <enumvalue file="namespace_ase.html" anchor="ac89ef908c78cabb30e73a3e03b1a1d12af6820257bf108b57ff10d99b14aadd73">CHANNEL_PRESSURE</enumvalue>
+      <enumvalue file="namespace_ase.html" anchor="ac89ef908c78cabb30e73a3e03b1a1d12ac9718325980196dee9b53c5e375d5023">PITCH_BEND</enumvalue>
+      <enumvalue file="namespace_ase.html" anchor="ac89ef908c78cabb30e73a3e03b1a1d12a8ceaa46c365ea6c4d1a2e413d94d9d47">SYSEX</enumvalue>
     </member>
     <member kind="enumeration">
       <type></type>
@@ -1191,6 +1208,7 @@
       <enumvalue file="namespace_ase.html" anchor="a7d3daccf90d232899fe6b65d2f4079f4ac9c4fc8d7393e120ff873d2c6e89d722">OMNI_MODE_ON</enumvalue>
       <enumvalue file="namespace_ase.html" anchor="a7d3daccf90d232899fe6b65d2f4079f4a53aa0e7dbfa71a43809bb387623a65dc">MONO_MODE_ON</enumvalue>
       <enumvalue file="namespace_ase.html" anchor="a7d3daccf90d232899fe6b65d2f4079f4aba96b42e49c8c80bcaff736c23a4ac75">POLY_MODE_ON</enumvalue>
+      <enumvalue file="namespace_ase.html" anchor="a7d3daccf90d232899fe6b65d2f4079f4a9bb914d2eaedd80abc450b5a48f4bf67">PARAM_VALUE</enumvalue>
       <enumvalue file="namespace_ase.html" anchor="a7d3daccf90d232899fe6b65d2f4079f4a64c4eb278d5b288304f476ccbc70d958">NOTE_OFF</enumvalue>
       <enumvalue file="namespace_ase.html" anchor="a7d3daccf90d232899fe6b65d2f4079f4a42ab8d6057c68dc3ca7829a9173c24a4">NOTE_ON</enumvalue>
       <enumvalue file="namespace_ase.html" anchor="a7d3daccf90d232899fe6b65d2f4079f4add5ad791cdebdae08885215f40e4e08a">AFTERTOUCH</enumvalue>
@@ -1250,6 +1268,8 @@
     <includes id="memory_8hh" name="memory.hh" local="no" imported="no">ase/memory.hh</includes>
     <class kind="struct">Ase::Param</class>
     <class kind="struct">Ase::Parameter</class>
+    <class kind="struct">Ase::ParameterMap</class>
+    <class kind="struct">Ase::ParameterMap::Entry</class>
     <class kind="class">Ase::ParameterProperty</class>
     <namespace>Ase</namespace>
     <member kind="typedef">
@@ -1858,6 +1878,7 @@
     <includes id="atomics_8hh" name="atomics.hh" local="no" imported="no">ase/atomics.hh</includes>
     <class kind="struct">Ase::AudioProcessorInfo</class>
     <class kind="struct">Ase::BusInfo</class>
+    <class kind="struct">Ase::AudioParams</class>
     <class kind="class">Ase::AudioProcessor</class>
     <class kind="class">Ase::AudioProcessor::FloatBuffer</class>
     <class kind="class">Ase::ProcessorManager</class>
@@ -3817,6 +3838,59 @@
       <arglist></arglist>
     </member>
   </compound>
+  <compound kind="struct">
+    <name>Ase::AudioParams</name>
+    <filename>struct_ase_1_1_audio_params.html</filename>
+    <member kind="function">
+      <type>void</type>
+      <name>clear</name>
+      <anchorfile>struct_ase_1_1_audio_params.html</anchorfile>
+      <anchor>a994e2b8274ecec4f9023297d5f912946</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>install</name>
+      <anchorfile>struct_ase_1_1_audio_params.html</anchorfile>
+      <anchor>a868523b6a56dd9ec3cf5e710ebf85640</anchor>
+      <arglist>(const Map &amp;params)</arglist>
+    </member>
+    <member kind="function">
+      <type>ssize_t</type>
+      <name>index</name>
+      <anchorfile>struct_ase_1_1_audio_params.html</anchorfile>
+      <anchor>aa5b259beececa169338d6aa06f337caa</anchor>
+      <arglist>(uint32_t id) const</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>value</name>
+      <anchorfile>struct_ase_1_1_audio_params.html</anchorfile>
+      <anchor>a6a008dfe24ae900d8a09684540925544</anchor>
+      <arglist>(uint32_t id) const</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>value</name>
+      <anchorfile>struct_ase_1_1_audio_params.html</anchorfile>
+      <anchor>a63f2c4999b749a8b35ce5c575634dd91</anchor>
+      <arglist>(uint32_t id, double newval)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>dirty_index</name>
+      <anchorfile>struct_ase_1_1_audio_params.html</anchorfile>
+      <anchor>ae245a7c0e2244a6ca8bc5b747a987cb1</anchor>
+      <arglist>(uint32_t idx) const</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>dirty_index</name>
+      <anchorfile>struct_ase_1_1_audio_params.html</anchorfile>
+      <anchor>a2d0c6fef09e2e35b457249ee0883de9e</anchor>
+      <arglist>(uint32_t idx, bool d)</arglist>
+    </member>
+  </compound>
   <compound kind="class">
     <name>Ase::AudioProcessor</name>
     <filename>class_ase_1_1_audio_processor.html</filename>
@@ -3873,10 +3947,10 @@
     </member>
     <member kind="function">
       <type>bool</type>
-      <name>set_param</name>
+      <name>send_param</name>
       <anchorfile>class_ase_1_1_audio_processor.html</anchorfile>
-      <anchor>a9c9b6223aa0aadc58877d050aebc9d2d</anchor>
-      <arglist>(Id32 paramid, double value, bool sendnotify=true)</arglist>
+      <anchor>a534eb26172416c22ac2e3c84ceba6681</anchor>
+      <arglist>(Id32 paramid, double value)</arglist>
     </member>
     <member kind="function">
       <type>ParameterC</type>
@@ -3910,15 +3984,15 @@
       <type>virtual String</type>
       <name>param_value_to_text</name>
       <anchorfile>class_ase_1_1_audio_processor.html</anchorfile>
-      <anchor>a19f8ebf1cf3ff2cf277f34e961eab840</anchor>
-      <arglist>(Id32 paramid, double value) const</arglist>
+      <anchor>a50519ed71f8bbc10ea3450279f0c757a</anchor>
+      <arglist>(uint32_t paramid, double value) const</arglist>
     </member>
     <member kind="function" virtualness="virtual">
       <type>virtual double</type>
       <name>param_value_from_text</name>
       <anchorfile>class_ase_1_1_audio_processor.html</anchorfile>
-      <anchor>a751982e0512de6abae694d4e7280adaf</anchor>
-      <arglist>(Id32 paramid, const String &amp;text) const</arglist>
+      <anchor>a5eac86b42bb9b0653411817c309193ee</anchor>
+      <arglist>(uint32_t paramid, const String &amp;text) const</arglist>
     </member>
     <member kind="function">
       <type>double</type>
@@ -3931,8 +4005,8 @@
       <type>bool</type>
       <name>set_normalized</name>
       <anchorfile>class_ase_1_1_audio_processor.html</anchorfile>
-      <anchor>ab0824ae209695af4e2171d40aa1dbca9</anchor>
-      <arglist>(Id32 paramid, double normalized, bool sendnotify=true)</arglist>
+      <anchor>a050ee50993e3360366cee71ff0eff68f</anchor>
+      <arglist>(Id32 paramid, double normalized)</arglist>
     </member>
     <member kind="function">
       <type>bool</type>
@@ -4113,8 +4187,8 @@
       <type></type>
       <name>AudioProcessor</name>
       <anchorfile>class_ase_1_1_audio_processor.html</anchorfile>
-      <anchor>a3fae1c7ec9408e106ad36488de05c19f</anchor>
-      <arglist>(AudioEngine &amp;engine)</arglist>
+      <anchor>add259f1d39397fa6f5afd578a55e6340</anchor>
+      <arglist>(const ProcessorSetup &amp;)</arglist>
     </member>
     <member kind="function" protection="protected" virtualness="virtual">
       <type>virtual</type>
@@ -4152,67 +4226,25 @@
       <arglist>()</arglist>
     </member>
     <member kind="function" protection="protected">
-      <type>ParamId</type>
-      <name>nextid</name>
+      <type>void</type>
+      <name>install_params</name>
       <anchorfile>class_ase_1_1_audio_processor.html</anchorfile>
-      <anchor>a2194f44762e0877b342eea77b5bcdd00</anchor>
-      <arglist>() const</arglist>
-    </member>
-    <member kind="function" protection="protected">
-      <type>ParamId</type>
-      <name>add_param</name>
-      <anchorfile>class_ase_1_1_audio_processor.html</anchorfile>
-      <anchor>affbadf5db671cf68c6ab3144e3969b5d</anchor>
-      <arglist>(Id32 id, const Param &amp;initparam, double value)</arglist>
-    </member>
-    <member kind="function" protection="protected">
-      <type>ParamId</type>
-      <name>add_param</name>
-      <anchorfile>class_ase_1_1_audio_processor.html</anchorfile>
-      <anchor>a2e820dcc0dfb1dd2b40f43c6958c3248</anchor>
-      <arglist>(Id32 id, const String &amp;clabel, const String &amp;nickname, double pmin, double pmax, double value, const String &amp;unit=&quot;&quot;, String hints=&quot;&quot;, const String &amp;blurb=&quot;&quot;, const String &amp;description=&quot;&quot;)</arglist>
-    </member>
-    <member kind="function" protection="protected">
-      <type>ParamId</type>
-      <name>add_param</name>
-      <anchorfile>class_ase_1_1_audio_processor.html</anchorfile>
-      <anchor>ab70b8198bea3bb27591d2e142e7955f7</anchor>
-      <arglist>(Id32 id, const String &amp;clabel, const String &amp;nickname, ChoiceS &amp;&amp;centries, double value, String hints=&quot;&quot;, const String &amp;blurb=&quot;&quot;, const String &amp;description=&quot;&quot;)</arglist>
-    </member>
-    <member kind="function" protection="protected">
-      <type>ParamId</type>
-      <name>add_param</name>
-      <anchorfile>class_ase_1_1_audio_processor.html</anchorfile>
-      <anchor>aa78325b9b563d872169c1ea272b9d5d0</anchor>
-      <arglist>(Id32 id, const String &amp;clabel, const String &amp;nickname, bool boolvalue, String hints=&quot;&quot;, const String &amp;blurb=&quot;&quot;, const String &amp;description=&quot;&quot;)</arglist>
+      <anchor>aedfac318141ccd404c9b418c5ad008c5</anchor>
+      <arglist>(const AudioParams::Map &amp;params)</arglist>
     </member>
     <member kind="function" protection="protected">
       <type>void</type>
-      <name>start_group</name>
+      <name>apply_event</name>
       <anchorfile>class_ase_1_1_audio_processor.html</anchorfile>
-      <anchor>a138549f6c91f5cadefcc456bbf7b085e</anchor>
-      <arglist>(const String &amp;groupname) const</arglist>
+      <anchor>abe54ffa33075d56bd8a07923bff6ddab</anchor>
+      <arglist>(const MidiEvent &amp;event)</arglist>
     </member>
     <member kind="function" protection="protected">
-      <type>ParamId</type>
-      <name>add_param</name>
+      <type>void</type>
+      <name>apply_input_events</name>
       <anchorfile>class_ase_1_1_audio_processor.html</anchorfile>
-      <anchor>aedd0441643b2e0fb9dfd3d05415c3ea9</anchor>
-      <arglist>(const String &amp;clabel, const String &amp;nickname, double pmin, double pmax, double value, const String &amp;unit=&quot;&quot;, String hints=&quot;&quot;, const String &amp;blurb=&quot;&quot;, const String &amp;description=&quot;&quot;)</arglist>
-    </member>
-    <member kind="function" protection="protected">
-      <type>ParamId</type>
-      <name>add_param</name>
-      <anchorfile>class_ase_1_1_audio_processor.html</anchorfile>
-      <anchor>a35c75d37491889126b1b5aa5cb4b523e</anchor>
-      <arglist>(const String &amp;clabel, const String &amp;nickname, ChoiceS &amp;&amp;centries, double value, String hints=&quot;&quot;, const String &amp;blurb=&quot;&quot;, const String &amp;description=&quot;&quot;)</arglist>
-    </member>
-    <member kind="function" protection="protected">
-      <type>ParamId</type>
-      <name>add_param</name>
-      <anchorfile>class_ase_1_1_audio_processor.html</anchorfile>
-      <anchor>a2c6248afbe57e8ad0bf6e7e59b371814</anchor>
-      <arglist>(const String &amp;clabel, const String &amp;nickname, bool boolvalue, String hints=&quot;&quot;, const String &amp;blurb=&quot;&quot;, const String &amp;description=&quot;&quot;)</arglist>
+      <anchor>a36e27f3d62e1e5d0caa48a84aa54e096</anchor>
+      <arglist>()</arglist>
     </member>
     <member kind="function" protection="protected">
       <type>double</type>
@@ -4313,13 +4345,6 @@
       <arglist>()</arglist>
     </member>
     <member kind="function" protection="protected">
-      <type>MidiEventRange</type>
-      <name>get_event_input</name>
-      <anchorfile>class_ase_1_1_audio_processor.html</anchorfile>
-      <anchor>a9db19994b78b6fb39285452b5c7d3d0e</anchor>
-      <arglist>()</arglist>
-    </member>
-    <member kind="function" protection="protected">
       <type>void</type>
       <name>prepare_event_output</name>
       <anchorfile>class_ase_1_1_audio_processor.html</anchorfile>
@@ -4327,10 +4352,17 @@
       <arglist>()</arglist>
     </member>
     <member kind="function" protection="protected">
-      <type>MidiEventStream &amp;</type>
-      <name>get_event_output</name>
+      <type>MidiEventInput</type>
+      <name>midi_event_input</name>
       <anchorfile>class_ase_1_1_audio_processor.html</anchorfile>
-      <anchor>a31dcd653f3b439e03c4c95d44ef86125</anchor>
+      <anchor>a56abb8d8945777ea6851c8f6d5931319</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" protection="protected">
+      <type>MidiEventOutput &amp;</type>
+      <name>midi_event_output</name>
+      <anchorfile>class_ase_1_1_audio_processor.html</anchorfile>
+      <anchor>a5be2b9123faabd1882093a11ed55b7ec</anchor>
       <arglist>()</arglist>
     </member>
     <member kind="function" protection="protected">
@@ -5398,6 +5430,10 @@
       <anchor>af5fad81722713d48cacff12477d1b877</anchor>
       <arglist>(const String &amp;detail)</arglist>
     </member>
+  </compound>
+  <compound kind="struct">
+    <name>Ase::ParameterMap::Entry</name>
+    <filename>struct_ase_1_1_parameter_map_1_1_entry.html</filename>
   </compound>
   <compound kind="struct">
     <name>Ase::EnumInfo</name>
@@ -7279,13 +7315,6 @@
       <arglist>() const</arglist>
     </member>
     <member kind="variable">
-      <type>MidiEventType</type>
-      <name>type</name>
-      <anchorfile>struct_ase_1_1_midi_event.html</anchorfile>
-      <anchor>a5391623536fbde644d4dc596ff37581f</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
       <type>int</type>
       <name>frame</name>
       <anchorfile>struct_ase_1_1_midi_event.html</anchorfile>
@@ -7297,6 +7326,13 @@
       <name>channel</name>
       <anchorfile>struct_ase_1_1_midi_event.html</anchorfile>
       <anchor>ac73ce150d31290ac5ca978a98670f2b0</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>MidiEventType</type>
+      <name>type</name>
+      <anchorfile>struct_ase_1_1_midi_event.html</anchorfile>
+      <anchor>a5391623536fbde644d4dc596ff37581f</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
@@ -7342,6 +7378,13 @@
       <arglist></arglist>
     </member>
     <member kind="variable">
+      <type>double</type>
+      <name>pvalue</name>
+      <anchorfile>struct_ase_1_1_midi_event.html</anchorfile>
+      <anchor>ac96d9c28e58ee9c9701332d24e3a5bb0</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
       <type>float</type>
       <name>value</name>
       <anchorfile>struct_ase_1_1_midi_event.html</anchorfile>
@@ -7369,63 +7412,44 @@
       <anchor>addce2fc30d9c8fe107a01064d0fea10a</anchor>
       <arglist></arglist>
     </member>
-    <member kind="variable" static="yes">
-      <type>constexpr static MidiEventType</type>
-      <name>AFTERTOUCH</name>
-      <anchorfile>struct_ase_1_1_midi_event.html</anchorfile>
-      <anchor>aa0b1f1dbbfea99ab403fd0e425160746</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable" static="yes">
-      <type>constexpr static MidiEventType</type>
-      <name>CONTROL_CHANGE</name>
-      <anchorfile>struct_ase_1_1_midi_event.html</anchorfile>
-      <anchor>ac830ba662b6b3b5efd64f991dc9c34f7</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable" static="yes">
-      <type>constexpr static MidiEventType</type>
-      <name>CHANNEL_PRESSURE</name>
-      <anchorfile>struct_ase_1_1_midi_event.html</anchorfile>
-      <anchor>a632c7e7579b1fd6f17dff390e45edb82</anchor>
-      <arglist></arglist>
-    </member>
   </compound>
   <compound kind="class">
-    <name>Ase::MidiEventRange</name>
-    <filename>class_ase_1_1_midi_event_range.html</filename>
-  </compound>
-  <compound kind="class">
-    <name>Ase::MidiEventStream</name>
-    <filename>class_ase_1_1_midi_event_stream.html</filename>
+    <name>Ase::MidiEventOutput</name>
+    <filename>class_ase_1_1_midi_event_output.html</filename>
     <member kind="function">
       <type>void</type>
       <name>append</name>
-      <anchorfile>class_ase_1_1_midi_event_stream.html</anchorfile>
-      <anchor>a79f548005d6a66836c0f32fb3867ffec</anchor>
+      <anchorfile>class_ase_1_1_midi_event_output.html</anchorfile>
+      <anchor>af23b207e0dceb17fb038589a40c97b74</anchor>
       <arglist>(int16_t frame, const MidiEvent &amp;event)</arglist>
     </member>
     <member kind="function">
       <type>bool</type>
       <name>append_unsorted</name>
-      <anchorfile>class_ase_1_1_midi_event_stream.html</anchorfile>
-      <anchor>a979c7f6fde7ff3b5e0b72c9a7ae73868</anchor>
+      <anchorfile>class_ase_1_1_midi_event_output.html</anchorfile>
+      <anchor>a5100d4edde6f9b77aa934cefb4c1261f</anchor>
       <arglist>(int16_t frame, const MidiEvent &amp;event)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>ensure_order</name>
-      <anchorfile>class_ase_1_1_midi_event_stream.html</anchorfile>
-      <anchor>abef42bfb54added98574ebd628289a6f</anchor>
+      <anchorfile>class_ase_1_1_midi_event_output.html</anchorfile>
+      <anchor>a6f218f1b74aec4a68d60fa63ecb35ebe</anchor>
       <arglist>()</arglist>
     </member>
     <member kind="function">
       <type>int64_t</type>
       <name>last_frame</name>
-      <anchorfile>class_ase_1_1_midi_event_stream.html</anchorfile>
-      <anchor>aba4954b9069dc07a20173a9736674f5a</anchor>
+      <anchorfile>class_ase_1_1_midi_event_output.html</anchorfile>
+      <anchor>ac3c1235ab8879bc3f6639617f6eab767</anchor>
       <arglist>() const ASE_PURE</arglist>
     </member>
+  </compound>
+  <compound kind="class">
+    <name>Ase::MidiEventReader</name>
+    <filename>class_ase_1_1_midi_event_reader.html</filename>
+    <templarg>MAXQUEUES</templarg>
+    <base protection="private">QueueMultiplexer&lt; MAXQUEUES, std::vector&lt; MidiEvent &gt;::const_iterator &gt;</base>
   </compound>
   <compound kind="struct">
     <name>Ase::MidiLib::MidiFeed</name>
@@ -7783,6 +7807,13 @@
     <filename>struct_ase_1_1_param.html</filename>
     <member kind="variable">
       <type>String</type>
+      <name>ident</name>
+      <anchorfile>struct_ase_1_1_param.html</anchorfile>
+      <anchor>ad3865cdce7c1928caba00023d2814705</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>String</type>
       <name>label</name>
       <anchorfile>struct_ase_1_1_param.html</anchorfile>
       <anchor>a2d512c82fe8cf7ae6199e40adbc87597</anchor>
@@ -7845,13 +7876,6 @@
       <arglist></arglist>
     </member>
     <member kind="variable">
-      <type>String</type>
-      <name>ident</name>
-      <anchorfile>struct_ase_1_1_param.html</anchorfile>
-      <anchor>ad3865cdce7c1928caba00023d2814705</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
       <type>StringS</type>
       <name>details</name>
       <anchorfile>struct_ase_1_1_param.html</anchorfile>
@@ -7868,6 +7892,26 @@
       <anchorfile>struct_ase_1_1_parameter.html</anchorfile>
       <anchor>aa93a9c0f5eea508c54a2836a7aade38e</anchor>
       <arglist>() const</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>Ase::ParameterMap</name>
+    <filename>struct_ase_1_1_parameter_map.html</filename>
+    <base>map&lt; uint32_t, ParameterC &gt;</base>
+    <class kind="struct">Ase::ParameterMap::Entry</class>
+    <member kind="function">
+      <type>Entry</type>
+      <name>operator[]</name>
+      <anchorfile>struct_ase_1_1_parameter_map.html</anchorfile>
+      <anchor>a3bde4bf3ea918d347a174bb72debdc81</anchor>
+      <arglist>(uint32_t id)</arglist>
+    </member>
+    <member kind="variable">
+      <type>String</type>
+      <name>group</name>
+      <anchorfile>struct_ase_1_1_parameter_map.html</anchorfile>
+      <anchor>ab1546fd8e8e7b8654e7f4be9824e37e9</anchor>
+      <arglist></arglist>
     </member>
   </compound>
   <compound kind="class">
@@ -8785,13 +8829,6 @@
     <name>Ase::Prop</name>
     <filename>struct_ase_1_1_prop.html</filename>
     <member kind="variable">
-      <type>CString</type>
-      <name>ident</name>
-      <anchorfile>struct_ase_1_1_prop.html</anchorfile>
-      <anchor>a91b4c93bf3558caa152682040103a095</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
       <type>PropertyGetter</type>
       <name>getter</name>
       <anchorfile>struct_ase_1_1_prop.html</anchorfile>
@@ -9126,7 +9163,10 @@
     <filename>struct_ase_1_1_queue_multiplexer.html</filename>
     <templarg>MAXQUEUES</templarg>
     <templarg></templarg>
-    <templarg></templarg>
+  </compound>
+  <compound kind="class">
+    <name>QueueMultiplexer&lt; MAXQUEUES, std::vector&lt; MidiEvent &gt;::const_iterator &gt;</name>
+    <filename>struct_ase_1_1_queue_multiplexer.html</filename>
   </compound>
   <compound kind="class">
     <name>Ase::Re</name>
@@ -9376,6 +9416,13 @@
       <anchorfile>class_ase_1_1_server.html</anchorfile>
       <anchor>a40617daa6ccfce19ebe17554c641b4df</anchor>
       <arglist>(const String &amp;ident)=0</arglist>
+    </member>
+    <member kind="function">
+      <type>String</type>
+      <name>engine_stats</name>
+      <anchorfile>class_ase_1_1_server.html</anchorfile>
+      <anchor>ad9e2cf79a35d3ef824fdc27cdc49abde</anchor>
+      <arglist>()</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual ProjectP</type>
@@ -10807,6 +10854,7 @@
     <class kind="class">Ase::AtomicBits</class>
     <class kind="class">Ase::AtomicIntrusiveStack</class>
     <class kind="class">Ase::AudioEngine</class>
+    <class kind="struct">Ase::AudioParams</class>
     <class kind="class">Ase::AudioProcessor</class>
     <class kind="struct">Ase::AudioProcessorInfo</class>
     <class kind="struct">Ase::AudioTransport</class>
@@ -10857,8 +10905,8 @@
     <class kind="struct">Ase::Logscale</class>
     <class kind="class">Ase::MainLoop</class>
     <class kind="struct">Ase::MidiEvent</class>
-    <class kind="class">Ase::MidiEventRange</class>
-    <class kind="class">Ase::MidiEventStream</class>
+    <class kind="class">Ase::MidiEventOutput</class>
+    <class kind="class">Ase::MidiEventReader</class>
     <class kind="struct">Ase::MidiNote</class>
     <class kind="class">Ase::Monitor</class>
     <class kind="struct">Ase::MpmcStack</class>
@@ -10870,6 +10918,7 @@
     <class kind="struct">Ase::OrderedEventList</class>
     <class kind="struct">Ase::Param</class>
     <class kind="struct">Ase::Parameter</class>
+    <class kind="struct">Ase::ParameterMap</class>
     <class kind="class">Ase::ParameterProperty</class>
     <class kind="class">Ase::Pcg32Rng</class>
     <class kind="class">Ase::Persistent</class>
@@ -11145,6 +11194,15 @@
       <anchorfile>namespace_ase.html</anchorfile>
       <anchor>ac89ef908c78cabb30e73a3e03b1a1d12</anchor>
       <arglist></arglist>
+      <enumvalue file="namespace_ase.html" anchor="ac89ef908c78cabb30e73a3e03b1a1d12a9bb914d2eaedd80abc450b5a48f4bf67">PARAM_VALUE</enumvalue>
+      <enumvalue file="namespace_ase.html" anchor="ac89ef908c78cabb30e73a3e03b1a1d12a64c4eb278d5b288304f476ccbc70d958">NOTE_OFF</enumvalue>
+      <enumvalue file="namespace_ase.html" anchor="ac89ef908c78cabb30e73a3e03b1a1d12a42ab8d6057c68dc3ca7829a9173c24a4">NOTE_ON</enumvalue>
+      <enumvalue file="namespace_ase.html" anchor="ac89ef908c78cabb30e73a3e03b1a1d12add5ad791cdebdae08885215f40e4e08a">AFTERTOUCH</enumvalue>
+      <enumvalue file="namespace_ase.html" anchor="ac89ef908c78cabb30e73a3e03b1a1d12ac08bccd1d86dc7033fb7a426455a8ae6">CONTROL_CHANGE</enumvalue>
+      <enumvalue file="namespace_ase.html" anchor="ac89ef908c78cabb30e73a3e03b1a1d12a9c1ebbbad317dc20a7aebc4e433b0f2e">PROGRAM_CHANGE</enumvalue>
+      <enumvalue file="namespace_ase.html" anchor="ac89ef908c78cabb30e73a3e03b1a1d12af6820257bf108b57ff10d99b14aadd73">CHANNEL_PRESSURE</enumvalue>
+      <enumvalue file="namespace_ase.html" anchor="ac89ef908c78cabb30e73a3e03b1a1d12ac9718325980196dee9b53c5e375d5023">PITCH_BEND</enumvalue>
+      <enumvalue file="namespace_ase.html" anchor="ac89ef908c78cabb30e73a3e03b1a1d12a8ceaa46c365ea6c4d1a2e413d94d9d47">SYSEX</enumvalue>
     </member>
     <member kind="enumeration">
       <type></type>
@@ -11161,6 +11219,7 @@
       <enumvalue file="namespace_ase.html" anchor="a7d3daccf90d232899fe6b65d2f4079f4ac9c4fc8d7393e120ff873d2c6e89d722">OMNI_MODE_ON</enumvalue>
       <enumvalue file="namespace_ase.html" anchor="a7d3daccf90d232899fe6b65d2f4079f4a53aa0e7dbfa71a43809bb387623a65dc">MONO_MODE_ON</enumvalue>
       <enumvalue file="namespace_ase.html" anchor="a7d3daccf90d232899fe6b65d2f4079f4aba96b42e49c8c80bcaff736c23a4ac75">POLY_MODE_ON</enumvalue>
+      <enumvalue file="namespace_ase.html" anchor="a7d3daccf90d232899fe6b65d2f4079f4a9bb914d2eaedd80abc450b5a48f4bf67">PARAM_VALUE</enumvalue>
       <enumvalue file="namespace_ase.html" anchor="a7d3daccf90d232899fe6b65d2f4079f4a64c4eb278d5b288304f476ccbc70d958">NOTE_OFF</enumvalue>
       <enumvalue file="namespace_ase.html" anchor="a7d3daccf90d232899fe6b65d2f4079f4a42ab8d6057c68dc3ca7829a9173c24a4">NOTE_ON</enumvalue>
       <enumvalue file="namespace_ase.html" anchor="a7d3daccf90d232899fe6b65d2f4079f4add5ad791cdebdae08885215f40e4e08a">AFTERTOUCH</enumvalue>
@@ -11289,6 +11348,13 @@
       <anchorfile>namespace_ase.html</anchorfile>
       <anchor>a2c4aad366b114ede3c423b9ad1c79637</anchor>
       <arglist>((always_inline)) inline void delete_inplace(Type &amp;typemem)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>call_delete</name>
+      <anchorfile>namespace_ase.html</anchorfile>
+      <anchor>a15157f821281459325be9c560547279b</anchor>
+      <arglist>(T *o)</arglist>
     </member>
     <member kind="function">
       <type>std::shared_ptr&lt; typename std::remove_pointer&lt; Target &gt;::type &gt;</type>
@@ -13350,7 +13416,7 @@
   </compound>
   <compound kind="page">
     <name>index</name>
-    <title>Anklang 89cc7d6c5f68e9a10dd354a7e85f38ea1656b9cf</title>
+    <title>Anklang 8f23a2dfadfe0a01a2944ce658e7b3ab74526799</title>
     <filename>index</filename>
   </compound>
 </tagfile>
