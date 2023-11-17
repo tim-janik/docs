@@ -365,13 +365,6 @@
     </member>
     <member kind="define">
       <type>#define</type>
-      <name>ASE_ASSERT_ALWAYS</name>
-      <anchorfile>cxxaux_8hh.html</anchorfile>
-      <anchor>a31f2a244bc69e8f3a588d3de88aa75f1</anchor>
-      <arglist>(expr,...)</arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
       <name>ASE_CLASS_NON_COPYABLE</name>
       <anchorfile>cxxaux_8hh.html</anchorfile>
       <anchor>ab86fc738dd5607531bf3f54e08023900</anchor>
@@ -521,8 +514,8 @@
       <type>void</type>
       <name>assertion_failed</name>
       <anchorfile>namespace_ase.html</anchorfile>
-      <anchor>a5489f074b88f07768641ea003b832711</anchor>
-      <arglist>(const std::string &amp;msg=&quot;&quot;, const char *file=__builtin_FILE(), int line=__builtin_LINE(), const char *func=__builtin_FUNCTION())</arglist>
+      <anchor>a5cab9c95d4b722259ac4c96b22522f35</anchor>
+      <arglist>(const char *msg=nullptr, const char *file=__builtin_FILE(), int line=__builtin_LINE(), const char *func=__builtin_FUNCTION()) noexcept</arglist>
     </member>
     <member kind="function">
       <type>constexpr bool</type>
@@ -11311,8 +11304,8 @@
       <type>void</type>
       <name>assertion_failed</name>
       <anchorfile>namespace_ase.html</anchorfile>
-      <anchor>a5489f074b88f07768641ea003b832711</anchor>
-      <arglist>(const std::string &amp;msg=&quot;&quot;, const char *file=__builtin_FILE(), int line=__builtin_LINE(), const char *func=__builtin_FUNCTION())</arglist>
+      <anchor>a5cab9c95d4b722259ac4c96b22522f35</anchor>
+      <arglist>(const char *msg=nullptr, const char *file=__builtin_FILE(), int line=__builtin_LINE(), const char *func=__builtin_FUNCTION()) noexcept</arglist>
     </member>
     <member kind="function">
       <type></type>
@@ -13416,7 +13409,7 @@
   </compound>
   <compound kind="page">
     <name>index</name>
-    <title>Anklang 47565461d7969bfaebebc2f4efe5f98d30b354ae</title>
+    <title>Anklang b9dcc9b804694ad29828835b40d0024172e4d67f</title>
     <filename>index</filename>
   </compound>
 </tagfile>
