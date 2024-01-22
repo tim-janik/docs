@@ -156,20 +156,6 @@
     </member>
   </compound>
   <compound kind="file">
-    <name>backtrace.hh</name>
-    <filename>backtrace_8hh.html</filename>
-    <includes id="platform_8hh" name="platform.hh" local="no" imported="no">ase/platform.hh</includes>
-    <class kind="struct">Ase::BacktraceCommand</class>
-    <namespace>Ase</namespace>
-    <member kind="define">
-      <type>#define</type>
-      <name>ASE_PRINT_BACKTRACE</name>
-      <anchorfile>backtrace_8hh.html</anchorfile>
-      <anchor>aa8a50295f8eb181e4834589138739733</anchor>
-      <arglist>(file, line, func)</arglist>
-    </member>
-  </compound>
-  <compound kind="file">
     <name>blob.hh</name>
     <filename>blob_8hh.html</filename>
     <includes id="cxxaux_8hh" name="cxxaux.hh" local="no" imported="no">ase/cxxaux.hh</includes>
@@ -351,6 +337,20 @@
     </member>
     <member kind="define">
       <type>#define</type>
+      <name>ASE_ASSERT_UNREACHED</name>
+      <anchorfile>cxxaux_8hh.html</anchorfile>
+      <anchor>a3fa8fa1d579df51a0b1098065b94e13a</anchor>
+      <arglist>(...)</arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>ASE_ASSERT</name>
+      <anchorfile>cxxaux_8hh.html</anchorfile>
+      <anchor>a0caea3c432494783a44ed7815ec1a825</anchor>
+      <arglist>(expr)</arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
       <name>ASE_ASSERT_WARN</name>
       <anchorfile>cxxaux_8hh.html</anchorfile>
       <anchor>a668b59546a0b3b168ce6441d12642abc</anchor>
@@ -493,8 +493,8 @@
       <type>String</type>
       <name>string_demangle_cxx</name>
       <anchorfile>namespace_ase.html</anchorfile>
-      <anchor>a486035df582d0adb799d913aa11b7a22</anchor>
-      <arglist>(const char *mangled_identifier)</arglist>
+      <anchor>a87a14d1027b91cfbf81284285c18f4d8</anchor>
+      <arglist>(const char *mangled_identifier) noexcept</arglist>
     </member>
     <member kind="function">
       <type></type>
@@ -514,8 +514,15 @@
       <type>void</type>
       <name>assertion_failed</name>
       <anchorfile>namespace_ase.html</anchorfile>
-      <anchor>a5cab9c95d4b722259ac4c96b22522f35</anchor>
-      <arglist>(const char *msg=nullptr, const char *file=__builtin_FILE(), int line=__builtin_LINE(), const char *func=__builtin_FUNCTION()) noexcept</arglist>
+      <anchor>a1c34b806be82073c447edc0ceec928d4</anchor>
+      <arglist>(const char *msg, const char *file, int line, const char *func) noexcept</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>assertion_fatal</name>
+      <anchorfile>namespace_ase.html</anchorfile>
+      <anchor>a531baec9d8028967dc9b35dad52d87ba</anchor>
+      <arglist>(const char *msg, const char *file, int line, const char *func) noexcept</arglist>
     </member>
     <member kind="function">
       <type>constexpr bool</type>
@@ -658,7 +665,6 @@
   </compound>
   <compound kind="file">
     <name>driver.hh</name>
-    <path>/cirun/poxy/ase/</path>
     <filename>driver_8hh.html</filename>
     <includes id="api_8hh" name="api.hh" local="no" imported="no">ase/api.hh</includes>
     <includes id="midievent_8hh" name="midievent.hh" local="no" imported="no">ase/midievent.hh</includes>
@@ -3249,10 +3255,17 @@
     </member>
     <member kind="function">
       <type>void</type>
-      <name>diag_message</name>
+      <name>diag_flush</name>
       <anchorfile>namespace_ase.html</anchorfile>
-      <anchor>a9153a47e8bd43bd6f0ff86b09087101c</anchor>
-      <arglist>(uint8 code, const std::string &amp;message)</arglist>
+      <anchor>a482c0f5a6f7d73f27786172a44b3c9ac</anchor>
+      <arglist>(uint8 code, const String &amp;txt)</arglist>
+    </member>
+    <member kind="function">
+      <type>String</type>
+      <name>diag_prefix</name>
+      <anchorfile>namespace_ase.html</anchorfile>
+      <anchor>a28063c7313f19003c5c8e3f972c860d1</anchor>
+      <arglist>(uint8 code)</arglist>
     </member>
     <member kind="function">
       <type>void ASE_ALWAYS_INLINE</type>
@@ -4564,38 +4577,6 @@
       <name>random</name>
       <anchorfile>class_ase_1_1_auto_seeder.html</anchorfile>
       <anchor>a68d4220f4a962064f30a316ce5d59c6f</anchor>
-      <arglist>()</arglist>
-    </member>
-  </compound>
-  <compound kind="struct">
-    <name>Ase::BacktraceCommand</name>
-    <filename>struct_ase_1_1_backtrace_command.html</filename>
-    <member kind="function">
-      <type></type>
-      <name>BacktraceCommand</name>
-      <anchorfile>struct_ase_1_1_backtrace_command.html</anchorfile>
-      <anchor>abd2fe509eb2de67bb576c24ee593c065</anchor>
-      <arglist>()</arglist>
-    </member>
-    <member kind="function">
-      <type>bool</type>
-      <name>can_backtrace</name>
-      <anchorfile>struct_ase_1_1_backtrace_command.html</anchorfile>
-      <anchor>a9fef5eddbdb03d343a32426070471c5d</anchor>
-      <arglist>()</arglist>
-    </member>
-    <member kind="function">
-      <type>const char *</type>
-      <name>command</name>
-      <anchorfile>struct_ase_1_1_backtrace_command.html</anchorfile>
-      <anchor>a954c658f309c7912487ff364506c21ec</anchor>
-      <arglist>()</arglist>
-    </member>
-    <member kind="function">
-      <type>const char *</type>
-      <name>message</name>
-      <anchorfile>struct_ase_1_1_backtrace_command.html</anchorfile>
-      <anchor>a46cc8933bda671e8d30981c7f4371404</anchor>
       <arglist>()</arglist>
     </member>
   </compound>
@@ -10852,7 +10833,6 @@
     <class kind="struct">Ase::AudioProcessorInfo</class>
     <class kind="struct">Ase::AudioTransport</class>
     <class kind="class">Ase::AutoSeeder</class>
-    <class kind="struct">Ase::BacktraceCommand</class>
     <class kind="class">Ase::Blob</class>
     <class kind="struct">Ase::BusInfo</class>
     <class kind="class">Ase::CallbackList</class>
@@ -11297,15 +11277,22 @@
       <type>String</type>
       <name>string_demangle_cxx</name>
       <anchorfile>namespace_ase.html</anchorfile>
-      <anchor>a486035df582d0adb799d913aa11b7a22</anchor>
-      <arglist>(const char *mangled_identifier)</arglist>
+      <anchor>a87a14d1027b91cfbf81284285c18f4d8</anchor>
+      <arglist>(const char *mangled_identifier) noexcept</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>assertion_fatal</name>
+      <anchorfile>namespace_ase.html</anchorfile>
+      <anchor>a531baec9d8028967dc9b35dad52d87ba</anchor>
+      <arglist>(const char *msg, const char *file, int line, const char *func) noexcept</arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>assertion_failed</name>
       <anchorfile>namespace_ase.html</anchorfile>
-      <anchor>a5cab9c95d4b722259ac4c96b22522f35</anchor>
-      <arglist>(const char *msg=nullptr, const char *file=__builtin_FILE(), int line=__builtin_LINE(), const char *func=__builtin_FUNCTION()) noexcept</arglist>
+      <anchor>a1c34b806be82073c447edc0ceec928d4</anchor>
+      <arglist>(const char *msg, const char *file, int line, const char *func) noexcept</arglist>
     </member>
     <member kind="function">
       <type></type>
@@ -12730,10 +12717,17 @@
     </member>
     <member kind="function">
       <type>void</type>
-      <name>diag_message</name>
+      <name>diag_flush</name>
       <anchorfile>namespace_ase.html</anchorfile>
-      <anchor>a9153a47e8bd43bd6f0ff86b09087101c</anchor>
-      <arglist>(uint8 code, const std::string &amp;message)</arglist>
+      <anchor>a482c0f5a6f7d73f27786172a44b3c9ac</anchor>
+      <arglist>(uint8 code, const String &amp;txt)</arglist>
+    </member>
+    <member kind="function">
+      <type>String</type>
+      <name>diag_prefix</name>
+      <anchorfile>namespace_ase.html</anchorfile>
+      <anchor>a28063c7313f19003c5c8e3f972c860d1</anchor>
+      <arglist>(uint8 code)</arglist>
     </member>
     <member kind="function">
       <type>bool</type>
@@ -12838,6 +12832,13 @@
       <name>MIDI_NOTE_ID_LAST</name>
       <anchorfile>namespace_ase.html</anchorfile>
       <anchor>a541a1a544b7ff74a13d00bf2bc15ed87</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>bool</type>
+      <name>assertion_failed_fatal</name>
+      <anchorfile>namespace_ase.html</anchorfile>
+      <anchor>aa6137d5a51e5a35677ecef56ecabcc73</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">

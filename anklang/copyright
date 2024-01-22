@@ -29,7 +29,7 @@ Copyright: Copyright (C) 2020 Tim Janik
 License: CC0-1.0
 
 Files: Makefile.mk
-Copyright: Copyright (C) 2020-2023 Tim Janik
+Copyright: Copyright (C) 2020-2024 Tim Janik
 License: MPL-2.0
 
 Files: NEWS.md
@@ -45,7 +45,7 @@ Copyright: Copyright (C) 2020 Tim Janik
 License: CC0-1.0
 
 Files: ase/Makefile.mk
-Copyright: Copyright (C) 2020-2023 Tim Janik
+Copyright: Copyright (C) 2020-2024 Tim Janik
 License: MPL-2.0
 
 Files: ase/api.hh
@@ -53,19 +53,13 @@ Copyright: Copyright (C) 2021-2023 Tim Janik
 License: MPL-2.0
 
 Files: ase/atomics.cc
-Copyright: Copyright (C) 2022 Tim Janik
+Copyright:
+  Copyright (C) 2024 Tim Janik
+  Copyright (C) 2022 Tim Janik
 License: MPL-2.0
 
 Files: ase/atomics.hh
 Copyright: Copyright (C) 2021-2022 Tim Janik
-License: MPL-2.0
-
-Files: ase/backtrace.cc
-Copyright: Copyright (C) 2021 Tim Janik
-License: MPL-2.0
-
-Files: ase/backtrace.hh
-Copyright: Copyright (C) 2021 Tim Janik
 License: MPL-2.0
 
 Files: ase/blob.cc
@@ -138,12 +132,12 @@ License: MPL-2.0
 
 Files: ase/cxxaux.cc
 Copyright:
-  Copyright (C) 2023 Tim Janik
+  Copyright (C) 2023-2024 Tim Janik
   Copyright (C) 2021 Tim Janik
 License: MPL-2.0
 
 Files: ase/cxxaux.hh
-Copyright: Copyright (C) 2021-2023 Tim Janik
+Copyright: Copyright (C) 2021-2024 Tim Janik
 License: MPL-2.0
 
 Files: ase/datautils.cc
@@ -557,11 +551,11 @@ Copyright:
 License: MPL-2.0
 
 Files: ase/utils.cc
-Copyright: Copyright (C) 2021-2023 Tim Janik
+Copyright: Copyright (C) 2021-2024 Tim Janik
 License: MPL-2.0
 
 Files: ase/utils.hh
-Copyright: Copyright (C) 2021-2023 Tim Janik
+Copyright: Copyright (C) 2021-2024 Tim Janik
 License: MPL-2.0
 
 Files: ase/value.cc
@@ -872,7 +866,9 @@ Copyright: Copyright (C) 2020-2021 Tim Janik
 License: MPL-2.0
 
 Files: images/knobs/Makefile.mk
-Copyright: Copyright (C) 2022 Tim Janik
+Copyright:
+  Copyright (C) 2024 Tim Janik
+  Copyright (C) 2022 Tim Janik
 License: MPL-2.0
 
 Files: images/knobs/cknob.svg
@@ -926,7 +922,7 @@ Copyright: Copyright (C) 2023 Tim Janik
 License: MPL-2.0
 
 Files: misc/Makefile.mk
-Copyright: Copyright (C) 2021-2023 Tim Janik
+Copyright: Copyright (C) 2021-2024 Tim Janik
 License: MPL-2.0
 
 Files: misc/anklang-mime.xml
@@ -974,7 +970,7 @@ Copyright: Copyright (C) 2020-2023 Tim Janik
 License: MPL-2.0
 
 Files: misc/mkAppImage.sh
-Copyright: Copyright (C) 2022-2023 Tim Janik
+Copyright: Copyright (C) 2022-2024 Tim Janik
 License: MPL-2.0
 
 Files: misc/mkassets.sh
@@ -988,19 +984,19 @@ Copyright:
 License: MPL-2.0
 
 Files: misc/mkdeb.sh
-Copyright: Copyright (C) 2021-2023 Tim Janik
+Copyright: Copyright (C) 2021-2024 Tim Janik
 License: MPL-2.0
 
 Files: misc/mknews.sh
-Copyright: Copyright (C) 2023 Tim Janik
+Copyright: Copyright (C) 2023-2024 Tim Janik
 License: MPL-2.0
 
 Files: misc/package.json.in
-Copyright: Copyright (C) 2021-2023 Tim Janik
+Copyright: Copyright (C) 2021-2024 Tim Janik
 License: MPL-2.0
 
 Files: misc/publish.sh
-Copyright: Copyright (C) 2023 Tim Janik
+Copyright: Copyright (C) 2023-2024 Tim Janik
 License: MPL-2.0
 
 Files: misc/subdirs.mk
@@ -1022,7 +1018,7 @@ Copyright:
 License: CC0-1.0
 
 Files: ui/Makefile.mk
-Copyright: Copyright (C) 2021-2023 Tim Janik
+Copyright: Copyright (C) 2021-2024 Tim Janik
 License: MPL-2.0
 
 Files: ui/assets/favicon.svg
