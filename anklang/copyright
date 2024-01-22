@@ -608,10 +608,6 @@ Copyright:
   Copyright (C) 2023 Stefan Westerfeld
 License: MPL-2.0
 
-Files: devices/blepsynth/TODO
-Copyright: Copyright (C) 2020 Stefan Westerfeld
-License: MPL-2.0
-
 Files: devices/blepsynth/bleposc.hh
 Copyright:
   Copyright (C) 2020-2021 Tim Janik
@@ -631,18 +627,6 @@ Copyright:
   Copyright (C) 2020 Stefan Westerfeld
 License: MPL-2.0
 
-Files: devices/blepsynth/bleputils.hh
-Copyright:
-  Copyright (C) 2021 Tim Janik
-  Copyright (C) 2020 Stefan Westerfeld
-License: MPL-2.0
-
-Files: devices/blepsynth/designblep.cpp
-Copyright:
-  Copyright (C) 2021 Tim Janik
-  Copyright (C) 2020 Stefan Westerfeld
-License: MPL-2.0
-
 Files: devices/blepsynth/laddervcf.hh
 Copyright:
   Copyright (C) 2022-2023 Stefan Westerfeld
@@ -657,20 +641,8 @@ Copyright:
   Copyright (C) 2020 Stefan Westerfeld
 License: MPL-2.0
 
-Files: devices/blepsynth/plotblep.py
-Copyright:
-  Copyright (C) 2021 Tim Janik
-  Copyright (C) 2020 Stefan Westerfeld
-License: MPL-2.0
-
 Files: devices/blepsynth/skfilter.hh
 Copyright: Copyright (C) 2023 Stefan Westerfeld
-License: MPL-2.0
-
-Files: devices/blepsynth/testblep.cpp
-Copyright:
-  Copyright (C) 2021 Tim Janik
-  Copyright (C) 2020 Stefan Westerfeld
 License: MPL-2.0
 
 Files: devices/colorednoise.cc
