@@ -912,6 +912,10 @@ Files: misc/subdirs.mk
 Copyright: Copyright (C) 2024 Tim Janik
 License: MPL-2.0
 
+Files: misc/synsmell.py
+Copyright: Copyright (C) 2024 Tim Janik
+License: MPL-2.0
+
 Files: misc/version.sh
 Copyright: Copyright (C) 2024 Tim Janik
 License: MPL-2.0
