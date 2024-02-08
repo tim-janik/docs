@@ -322,13 +322,13 @@ License: MPL-2.0
 
 Files: ase/memory.cc
 Copyright:
-  Copyright (C) 2023 Tim Janik
+  Copyright (C) 2023-2024 Tim Janik
   Copyright (C) 2021 Tim Janik
 License: MPL-2.0
 
 Files: ase/memory.hh
 Copyright:
-  Copyright (C) 2023 Tim Janik
+  Copyright (C) 2023-2024 Tim Janik
   Copyright (C) 2021 Tim Janik
 License: MPL-2.0
 
@@ -735,7 +735,9 @@ Copyright:
 License: MPL-2.0
 
 Files: devices/liquidsfz/liquidsfz.cc
-Copyright: Copyright (C) 2022-2023 Stefan Westerfeld
+Copyright:
+  Copyright (C) 2022-2023 Stefan Westerfeld
+  Copyright (C) 2023 Tim Janik
 License: MPL-2.0
 
 Files: devices/saturation/Makefile.mk
