@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en"><head>
   <meta charset="utf-8"/>
-  <title>Ase::AudioProcessor class | Anklang 0.2.0.dev408 Anklang Programming Reference</title>
+  <title>Ase::AudioProcessor class | Anklang 0.2.0.dev416 Anklang Programming Reference</title>
   <link href="favicon.svg" rel="icon" type="image/svg+xml"/>
   <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
   <meta content="#cb4b16" name="theme-color"/>
@@ -9,9 +9,9 @@
   <link href="poxystyle.css" referrerpolicy="no-referrer" rel="stylesheet"/>
   <script src="poxy/poxy.js"></script>
   <script>initialize_theme("light");</script>
-  <meta content="Anklang 0.2.0.dev408" name="twitter:title"/>
-  <meta content="Anklang 0.2.0.dev408" property="og:title"/>
-  <meta content="Anklang 0.2.0.dev408" itemprop="name"/>
+  <meta content="Anklang 0.2.0.dev416" name="twitter:title"/>
+  <meta content="Anklang 0.2.0.dev416" property="og:title"/>
+  <meta content="Anklang 0.2.0.dev416" itemprop="name"/>
   <meta content="Tim Janik" name="author"/>
   <meta content="Tim Janik" property="article:author"/>
   <meta content="Anklang Programming Reference" name="description"/>
@@ -19,14 +19,14 @@
   <meta content="Anklang Programming Reference" property="og:description"/>
   <meta content="Anklang Programming Reference" itemprop="description"/>
   <meta content="telephone=no" name="format-detection"/>
-  <meta content="Poxy v0.15.0" name="generator"/>
+  <meta content="Poxy v0.16.0" name="generator"/>
   <meta content="strict-origin-when-cross-origin" name="referrer"/>
 </head>
 <body class="poxy-has-toc">
 <header><nav id="navigation">
   <div class="m-container">
     <div class="m-row">
-      <a class="m-col-t-8 m-col-m-none m-left-m" href="index.html" id="m-navbar-brand"><svg class="poxy-injected-svg" height="32" id="poxy-injected-svg-0" version="1.1" viewBox="0 0 64 64" width="32" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg"><metadata><rdf:rdf><cc:work><cc:license rdf:resource="MPL-2.0"></cc:license></cc:work></rdf:rdf></metadata><g><rect height="60" rx="1" ry="1" style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:4;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" width="60" x="2" y="2"></rect><g><path d="M 19.078125,2 V 2.5 H 14 V 40.972656 C 13.97726,42.63277 15.372472,44 17,44 h 2.023438 L 19,61.994141 22.921875,62 22.945312,44 H 25 c 1.627528,0 3.02274,-1.36723 3,-3.027344 V 2.5 H 23 V 2.0058594 Z" style="fill:#000000;fill-opacity:1"></path><path d="m 41.078399,1.9999594 v 0.5 H 36.000274 V 40.972615 c -0.02274,1.660114 1.372472,3.027344 3,3.027344 h 2.023438 L 41.000272,61.9941 44.922147,62 44.945587,44 h 2.054688 c 1.627528,0 3.02274,-1.36723 3,-3.027344 V 2.4999594 h -5 V 2.0058188 Z" style="fill:#000000;fill-opacity:1"></path></g><rect height="21" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:4;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" width="60" x="2" y="2"></rect><g><circle cx="11.5" cy="11" r="5.5" style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:4.00000095;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"></circle><circle cx="32" cy="11" r="5.5" style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:4.00000095;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"></circle><circle cx="52.5" cy="11" r="5.5" style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:4.00000095;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"></circle></g></g></svg>Anklang 0.2.0.dev408 <span class="m-thin">Anklang Programming Reference</span></a>
+      <a class="m-col-t-8 m-col-m-none m-left-m" href="index.html" id="m-navbar-brand"><svg class="poxy-injected-svg" height="32" id="poxy-injected-svg-0" version="1.1" viewBox="0 0 64 64" width="32" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg"><metadata><rdf:rdf><cc:work><cc:license rdf:resource="MPL-2.0"></cc:license></cc:work></rdf:rdf></metadata><g><rect height="60" rx="1" ry="1" style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:4;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" width="60" x="2" y="2"></rect><g><path d="M 19.078125,2 V 2.5 H 14 V 40.972656 C 13.97726,42.63277 15.372472,44 17,44 h 2.023438 L 19,61.994141 22.921875,62 22.945312,44 H 25 c 1.627528,0 3.02274,-1.36723 3,-3.027344 V 2.5 H 23 V 2.0058594 Z" style="fill:#000000;fill-opacity:1"></path><path d="m 41.078399,1.9999594 v 0.5 H 36.000274 V 40.972615 c -0.02274,1.660114 1.372472,3.027344 3,3.027344 h 2.023438 L 41.000272,61.9941 44.922147,62 44.945587,44 h 2.054688 c 1.627528,0 3.02274,-1.36723 3,-3.027344 V 2.4999594 h -5 V 2.0058188 Z" style="fill:#000000;fill-opacity:1"></path></g><rect height="21" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:4;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" width="60" x="2" y="2"></rect><g><circle cx="11.5" cy="11" r="5.5" style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:4.00000095;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"></circle><circle cx="32" cy="11" r="5.5" style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:4.00000095;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"></circle><circle cx="52.5" cy="11" r="5.5" style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:4.00000095;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"></circle></g></g></svg>Anklang 0.2.0.dev416 <span class="m-thin">Anklang Programming Reference</span></a>
       <div class="m-col-t-4 m-hide-m m-text-right m-nopadr">
         <a class="m-doc-search-icon" accesskey="f" href="#search" onclick="return showSearch()" title="Search"><svg style="height: 0.9rem;" viewBox="0 0 16 16">
           <path d="m6 0c-3.31 0-6 2.69-6 6 0 3.31 2.69 6 6 6 1.49 0 2.85-0.541 3.89-1.44-0.0164 0.338 0.147 0.759 0.5 1.15l3.22 3.79c0.552 0.614 1.45 0.665 2 0.115 0.55-0.55 0.499-1.45-0.115-2l-3.79-3.22c-0.392-0.353-0.812-0.515-1.15-0.5 0.895-1.05 1.44-2.41 1.44-3.89 0-3.31-2.69-6-6-6zm0 1.56a4.44 4.44 0 0 1 4.44 4.44 4.44 4.44 0 0 1-4.44 4.44 4.44 4.44 0 0 1-4.44-4.44 4.44 4.44 0 0 1 4.44-4.44z" id="m-doc-search-icon-path"></path>
@@ -284,6 +284,16 @@
               double normalized) -&gt; bool</span>
             </dt>
             <dd>Set param value normalized into 0…1.</dd>
+            <dt id="aa4917719b5f58beb6793cae631c354f3">
+              <span class="m-doc-wrap-bumper">auto <a class="m-doc-self" href="#aa4917719b5f58beb6793cae631c354f3">text_param_from_quark</a>(</span><span class="m-doc-wrap"><a class="m-doc poxy-injected poxy-external poxy-cppreference" href="https://en.cppreference.com/w/cpp/types/integer" target="_blank">uint32_t</a> paramid,
+              <a class="m-doc" href="namespace_ase.html#ad69887c4e893bf027b4aa6237d8c08d7">uint</a> vint) -&gt; <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a></span>
+            </dt>
+            <dd>Helper for temporary uint&lt;-&gt;string conversions.</dd>
+            <dt id="a99f108a8a90b0b3ce8c625a06acff1d9">
+              <span class="m-doc-wrap-bumper">auto <a class="m-doc-self" href="#a99f108a8a90b0b3ce8c625a06acff1d9">text_param_to_quark</a>(</span><span class="m-doc-wrap"><a class="m-doc poxy-injected poxy-external poxy-cppreference" href="https://en.cppreference.com/w/cpp/types/integer" target="_blank">uint32_t</a> paramid,
+              const <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a>&amp; text) -&gt; <a class="m-doc" href="namespace_ase.html#ad69887c4e893bf027b4aa6237d8c08d7">uint</a></span>
+            </dt>
+            <dd><a class="m-doc" href="namespace_ase.html">Ase</a> main-thread helper for temporary string&lt;-&gt;uint conversions.</dd>
             <dt id="a49dbc69f870239711d7d506190c38512">
               <span class="m-doc-wrap-bumper">auto <a class="m-doc-self" href="#a49dbc69f870239711d7d506190c38512">transport</a>(</span><span class="m-doc-wrap">) const ASE_CONST -&gt; const <a class="m-doc" href="struct_ase_1_1_audio_transport.html">AudioTransport</a>&amp;</span>
             </dt>
@@ -360,12 +370,12 @@
               <span class="m-doc-wrap-bumper">void <a class="m-doc-self" href="#aedfac318141ccd404c9b418c5ad008c5">install_params</a>(</span><span class="m-doc-wrap">const <a class="m-doc-external poxy-cppreference poxy-external" href="http://en.cppreference.com/w/cpp/container/map.html" target="_blank">AudioParams::<wbr/>Map</a>&amp; params)</span>
             </dt>
             <dd>Reset list of parameters, enqueues parameter value initializaiton events.</dd>
-            <dt id="a0f8466c28f11914dc60ba3e4fe321824">
-              <span class="m-doc-wrap-bumper">auto <a class="m-doc-self" href="#a0f8466c28f11914dc60ba3e4fe321824">iobus</a>(</span><span class="m-doc-wrap"><a class="m-doc" href="namespace_ase.html#a2b1c0faab7eb92829c386b4e0278b5f6">OBusId</a> busid) -&gt; OBus&amp;</span>
+            <dt id="a4b6ba71ad1764b730ba7d06a6b40a5d9">
+              <span class="m-doc-wrap-bumper">auto <a class="m-doc-self" href="#a4b6ba71ad1764b730ba7d06a6b40a5d9">iobus</a>(</span><span class="m-doc-wrap"><a class="m-doc" href="namespace_ase.html#a2b1c0faab7eb92829c386b4e0278b5f6">OBusId</a> busid) -&gt; IOBus&amp;</span>
             </dt>
             <dd>Get internal output bus handle.</dd>
-            <dt id="a217cccfd2f9c936f2e509cc52432b6c2">
-              <span class="m-doc-wrap-bumper">auto <a class="m-doc-self" href="#a217cccfd2f9c936f2e509cc52432b6c2">iobus</a>(</span><span class="m-doc-wrap"><a class="m-doc" href="namespace_ase.html#a1b2b04028bdeac661ac8a6ddccb1dad3">IBusId</a> busid) -&gt; IBus&amp;</span>
+            <dt id="adcefc2c20ae7318bee9f62ff043e3996">
+              <span class="m-doc-wrap-bumper">auto <a class="m-doc-self" href="#adcefc2c20ae7318bee9f62ff043e3996">iobus</a>(</span><span class="m-doc-wrap"><a class="m-doc" href="namespace_ase.html#a1b2b04028bdeac661ac8a6ddccb1dad3">IBusId</a> busid) -&gt; IOBus&amp;</span>
             </dt>
             <dd>Get internal input bus handle.</dd>
             <dt id="a56abb8d8945777ea6851c8f6d5931319">
@@ -591,7 +601,7 @@
 <a class="poxy-external" href="https://github.com/tim-janik/anklang" target="_blank">GitHub</a>
 • <a class="poxy-external" href="https://github.com/tim-janik/anklang/issues" target="_blank">Report an issue</a>
 • <a class="poxy-external" href="https://mozilla.org/MPL/2.0" target="_blank">License</a>
-• <a download="" href="Anklang_0.2.0.dev408.tagfile.xml" target="_blank" type="text/xml">Doxygen tagfile</a>
+• <a download="" href="Anklang_0.2.0.dev416.tagfile.xml" target="_blank" type="text/xml">Doxygen tagfile</a>
 <br/><br/>
 Site generated using <a class="poxy-external" href="https://github.com/marzer/poxy/" target="_blank">Poxy</a>
 

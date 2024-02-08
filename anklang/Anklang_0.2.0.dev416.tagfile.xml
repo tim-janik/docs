@@ -4022,6 +4022,20 @@
       <arglist>() const</arglist>
     </member>
     <member kind="function">
+      <type>uint</type>
+      <name>text_param_to_quark</name>
+      <anchorfile>class_ase_1_1_audio_processor.html</anchorfile>
+      <anchor>a99f108a8a90b0b3ce8c625a06acff1d9</anchor>
+      <arglist>(uint32_t paramid, const String &amp;text)</arglist>
+    </member>
+    <member kind="function">
+      <type>String</type>
+      <name>text_param_from_quark</name>
+      <anchorfile>class_ase_1_1_audio_processor.html</anchorfile>
+      <anchor>aa4917719b5f58beb6793cae631c354f3</anchor>
+      <arglist>(uint32_t paramid, uint vint)</arglist>
+    </member>
+    <member kind="function">
       <type>IBusId</type>
       <name>find_ibus</name>
       <anchorfile>class_ase_1_1_audio_processor.html</anchorfile>
@@ -4281,17 +4295,17 @@
       <arglist>()</arglist>
     </member>
     <member kind="function" protection="protected">
-      <type>OBus &amp;</type>
+      <type>IOBus &amp;</type>
       <name>iobus</name>
       <anchorfile>class_ase_1_1_audio_processor.html</anchorfile>
-      <anchor>a0f8466c28f11914dc60ba3e4fe321824</anchor>
+      <anchor>a4b6ba71ad1764b730ba7d06a6b40a5d9</anchor>
       <arglist>(OBusId busid)</arglist>
     </member>
     <member kind="function" protection="protected">
-      <type>IBus &amp;</type>
+      <type>IOBus &amp;</type>
       <name>iobus</name>
       <anchorfile>class_ase_1_1_audio_processor.html</anchorfile>
-      <anchor>a217cccfd2f9c936f2e509cc52432b6c2</anchor>
+      <anchor>adcefc2c20ae7318bee9f62ff043e3996</anchor>
       <arglist>(IBusId busid)</arglist>
     </member>
     <member kind="function" protection="protected">
@@ -5041,8 +5055,8 @@
       <type>CString &amp;</type>
       <name>assign</name>
       <anchorfile>class_ase_1_1_c_string.html</anchorfile>
-      <anchor>a190cfc2963ed45366b8394cdcd42a735</anchor>
-      <arglist>(const std::string &amp;s)</arglist>
+      <anchor>ab2a342e13abf0fb36660e5c5a3367b79</anchor>
+      <arglist>(const std::string &amp;s) noexcept</arglist>
     </member>
     <member kind="function">
       <type>const std::string &amp;</type>
