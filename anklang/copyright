@@ -21,7 +21,9 @@ Copyright: Copyright (C) 2020-2023 Tim Janik
 License: MPL-2.0
 
 Files: .gitmodules
-Copyright: Copyright (C) 2023 Tim Janik
+Copyright:
+  Copyright (C) 2023 Stefan Westerfeld
+  Copyright (C) 2023 Tim Janik
 License: MPL-2.0
 
 Files: GNUmakefile
@@ -270,6 +272,14 @@ License: MPL-2.0
 
 Files: ase/levenshtein.hh
 Copyright: Copyright (C) 2023 Tim Janik
+License: MPL-2.0
+
+Files: ase/liquidsfz.cc
+Copyright: Copyright (C) 2023 Stefan Westerfeld
+License: MPL-2.0
+
+Files: ase/liquidsfzapi.cc
+Copyright: Copyright (C) 2023 Stefan Westerfeld
 License: MPL-2.0
 
 Files: ase/loft.cc
@@ -597,7 +607,7 @@ License: CC0-1.0
 Files: devices/Makefile.mk
 Copyright:
   Copyright (C) 2021-2024 Tim Janik
-  Copyright (C) 2023 Stefan Westerfeld
+  Copyright (C) 2022-2023 Stefan Westerfeld
 License: MPL-2.0
 
 Files: devices/blepsynth/GNUmakefile
@@ -716,6 +726,17 @@ License: CC-PDDC
 Files: devices/freeverb/tuning.h
 Copyright: Copyright (C) 2000 Jeremy Wakefield
 License: CC-PDDC
+
+Files: devices/liquidsfz/Makefile.mk
+Copyright:
+  Copyright (C) 2024 Tim Janik
+  Copyright (C) 2022-2023 Stefan Westerfeld
+  Copyright (C) 2022 Tim Janik
+License: MPL-2.0
+
+Files: devices/liquidsfz/liquidsfz.cc
+Copyright: Copyright (C) 2022-2023 Stefan Westerfeld
+License: MPL-2.0
 
 Files: devices/saturation/Makefile.mk
 Copyright:
