@@ -67,7 +67,7 @@ Search.__extra_tokens = [
 {name:"ui/kbd.js:list_focusables",typeName:"func",url:"kbd_8js.html#list_focusables"},
 {name:"ui/kbd.js:push_focus_root",typeName:"func",url:"kbd_8js.html#push_focus_root"},
 {name:"ui/kbd.js:remove_focus_root",typeName:"func",url:"kbd_8js.html#remove_focus_root"},
-{name:"ui/kbd.js:element_midpoint",typeName:"func",url:"kbd_8js.html#element_midpoint"},
+{name:"ui/kbd.js:element_rect",typeName:"func",url:"kbd_8js.html#element_rect"},
 {name:"ui/kbd.js:keydown_move_focus",typeName:"func",url:"kbd_8js.html#keydown_move_focus"},
 {name:"ui/kbd.js:move_focus",typeName:"func",url:"kbd_8js.html#move_focus"},
 {name:"ui/kbd.js:forget_focus",typeName:"func",url:"kbd_8js.html#forget_focus"},
