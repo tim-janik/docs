@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en"><head>
   <meta charset="utf-8"/>
-  <title>Ase::IniWriter class | Anklang 0.2.0.dev443 Anklang Programming Reference</title>
+  <title>Ase::AtomicStack struct | Anklang 0.2.0.dev443 Anklang Programming Reference</title>
   <link href="favicon.svg" rel="icon" type="image/svg+xml"/>
   <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
   <meta content="#cb4b16" name="theme-color"/>
@@ -59,9 +59,9 @@
     <div class="m-row">
       <div class="m-col-l-10 m-push-l-1">
         <h1>
-          <span class="m-breadcrumb"><a href="namespace_ase.html">Ase</a>::<wbr/></span>IniWriter <span class="m-thin">class</span>
+          <div class="m-doc-template">template &lt;<span class="m-doc-template-params"><span class="m-doc-template-param">typename <a class="m-doc" href="struct_ase_1_1_value.html">Value</a></span>, <span class="m-doc-template-param">template&lt;class&gt; class GrowOnlyAllocator = <a class="m-doc" href="class_ase_1_1_loft_1_1_allocator.html">Loft::<wbr/>Allocator</a></span></span>&gt;</div>
+          <span class="m-breadcrumb"><a href="namespace_ase.html">Ase</a>::<wbr/></span>AtomicStack <span class="m-thin">struct</span>
         </h1>
-        <p>Class to write INI configuration file sections and values.</p>
         <nav class="m-block m-default poxy-toc" id="poxy-toc">
           <h3>Contents</h3>
           <ul>
@@ -73,19 +73,26 @@
             </li>
           </ul>
         </nav>
-<p>This class implements a simple section and value syntax writer as used in INI files. For a detailed reference, see: <a class="poxy-external" href="http://wikipedia.org/wiki/INI_file" target="_blank">http://wikipedia.org/wiki/INI_<wbr/>file</a><br/>To parse the output of this class, refer to the <a class="m-doc" href="class_ase_1_1_ini_file.html">IniFile</a> class.</p>
+<p>Thread-safe, lock-free stack based on <a class="m-doc" href="struct_ase_1_1_mpmc_stack.html">MpmcStack</a> and an <a class="m-doc poxy-injected poxy-external poxy-cppreference poxy-named-requirement" href="https://en.cppreference.com/w/cpp/named_req/Allocator" target="_blank">Allocator</a> with <code>allows_read_after_free</code>.</p>
         <section id="pub-methods">
           <h2><a href="#pub-methods">Public functions</a></h2>
           <dl class="m-doc">
-            <dt id="afd48e05570636301eb50983e17a77b30">
-              <span class="m-doc-wrap-bumper">auto <a class="m-doc-self" href="#afd48e05570636301eb50983e17a77b30">output</a>(</span><span class="m-doc-wrap">) -&gt; <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a></span>
+            <dt id="a8a584d91ad86e1a02d50f6fcb57e2e90">
+              <span class="m-doc-wrap-bumper">auto <a class="m-doc-self" href="#a8a584d91ad86e1a02d50f6fcb57e2e90">empty</a>(</span><span class="m-doc-wrap">) const -&gt; bool</span>
             </dt>
-            <dd>Generate INI file syntax for all values store in the class.</dd>
-            <dt id="a22eb3095f6c68d5d9cbc1d209223ff44">
-              <span class="m-doc-wrap-bumper">void <a class="m-doc-self" href="#a22eb3095f6c68d5d9cbc1d209223ff44">set</a>(</span><span class="m-doc-wrap"><a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a> key,
-              <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a> value)</span>
+            <dd>Return <code>true</code> if the stack holds no items.</dd>
+            <dt id="ac931e996e7f170c68ef3f8a0ab3265bb">
+              <span class="m-doc-wrap-bumper">auto <a class="m-doc-self" href="#ac931e996e7f170c68ef3f8a0ab3265bb">pop</a>(</span><span class="m-doc-wrap"><a class="m-doc" href="struct_ase_1_1_value.html">Value</a>&amp; value) -&gt; bool</span>
             </dt>
-            <dd>Set (or add) a value with INI file semantics: <code>section.key = value.</code></dd>
+            <dd>Pop <code>value</code> from top of the stack, returns if <code>value</code> was reassigned (true), otherwise the stack was empty.</dd>
+            <dt id="afb3c18442968b1208370c17ea517d641">
+              <span class="m-doc-wrap-bumper">auto <a class="m-doc-self" href="#afb3c18442968b1208370c17ea517d641">push</a>(</span><span class="m-doc-wrap"><a class="m-doc" href="struct_ase_1_1_value.html">Value</a>&amp;&amp; value) -&gt; bool</span>
+            </dt>
+            <dd>Add <code>value</code> to top of the stack, returns if the stack was empty (true).</dd>
+            <dt id="a6e46d94f3c852f2700b21f658e5d2207">
+              <span class="m-doc-wrap-bumper">auto <a class="m-doc-self" href="#a6e46d94f3c852f2700b21f658e5d2207">push</a>(</span><span class="m-doc-wrap">const <a class="m-doc" href="struct_ase_1_1_value.html">Value</a>&amp; value) -&gt; bool</span>
+            </dt>
+            <dd>Add a copy of <code>value</code> to top of the stack, returns if the stack was empty (true).</dd>
           </dl>
         </section>
       </div>

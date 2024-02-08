@@ -61,7 +61,9 @@ Copyright:
 License: MPL-2.0
 
 Files: ase/atomics.hh
-Copyright: Copyright (C) 2021-2022 Tim Janik
+Copyright:
+  Copyright (C) 2024 Tim Janik
+  Copyright (C) 2021-2022 Tim Janik
 License: MPL-2.0
 
 Files: ase/blob.cc
@@ -287,7 +289,7 @@ Copyright: Copyright (C) 2022-2023 Tim Janik
 License: MPL-2.0
 
 Files: ase/loft.hh
-Copyright: Copyright (C) 2022-2023 Tim Janik
+Copyright: Copyright (C) 2022-2024 Tim Janik
 License: MPL-2.0
 
 Files: ase/loop.cc

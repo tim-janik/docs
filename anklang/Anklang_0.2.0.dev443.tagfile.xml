@@ -143,8 +143,10 @@
     <name>atomics.hh</name>
     <filename>atomics_8hh.html</filename>
     <includes id="platform_8hh" name="platform.hh" local="no" imported="no">ase/platform.hh</includes>
+    <includes id="loft_8hh" name="loft.hh" local="no" imported="no">ase/loft.hh</includes>
     <class kind="class">Ase::AtomicIntrusiveStack</class>
     <class kind="struct">Ase::MpmcStack</class>
+    <class kind="struct">Ase::AtomicStack</class>
     <class kind="class">Ase::AtomicBits</class>
     <namespace>Ase</namespace>
     <member kind="typedef">
@@ -952,7 +954,7 @@
     <name>loft.hh</name>
     <path>/cirun/poxy/ase/</path>
     <filename>loft_8hh.html</filename>
-    <includes id="defs_8hh" name="defs.hh" local="no" imported="no">ase/defs.hh</includes>
+    <includes id="cxxaux_8hh" name="cxxaux.hh" local="no" imported="no">ase/cxxaux.hh</includes>
     <class kind="struct">Ase::LoftFree</class>
     <class kind="struct">Ase::LoftConfig</class>
     <class kind="struct">Ase::LoftStats</class>
@@ -3828,6 +3830,40 @@
       <anchorfile>class_ase_1_1_atomic_intrusive_stack.html</anchorfile>
       <anchor>a487a23b74d8aa009381f70a99d705478</anchor>
       <arglist>()</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>Ase::AtomicStack</name>
+    <filename>struct_ase_1_1_atomic_stack.html</filename>
+    <templarg></templarg>
+    <templarg>GrowOnlyAllocator</templarg>
+    <member kind="function">
+      <type>bool</type>
+      <name>empty</name>
+      <anchorfile>struct_ase_1_1_atomic_stack.html</anchorfile>
+      <anchor>a8a584d91ad86e1a02d50f6fcb57e2e90</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>push</name>
+      <anchorfile>struct_ase_1_1_atomic_stack.html</anchorfile>
+      <anchor>afb3c18442968b1208370c17ea517d641</anchor>
+      <arglist>(Value &amp;&amp;value)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>push</name>
+      <anchorfile>struct_ase_1_1_atomic_stack.html</anchorfile>
+      <anchor>a6e46d94f3c852f2700b21f658e5d2207</anchor>
+      <arglist>(const Value &amp;value)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>pop</name>
+      <anchorfile>struct_ase_1_1_atomic_stack.html</anchorfile>
+      <anchor>ac931e996e7f170c68ef3f8a0ab3265bb</anchor>
+      <arglist>(Value &amp;value)</arglist>
     </member>
   </compound>
   <compound kind="class">
@@ -10846,6 +10882,7 @@
     <class kind="class">Ase::AsyncBlockingQueue</class>
     <class kind="class">Ase::AtomicBits</class>
     <class kind="class">Ase::AtomicIntrusiveStack</class>
+    <class kind="struct">Ase::AtomicStack</class>
     <class kind="class">Ase::AudioEngine</class>
     <class kind="struct">Ase::AudioParams</class>
     <class kind="class">Ase::AudioProcessor</class>
