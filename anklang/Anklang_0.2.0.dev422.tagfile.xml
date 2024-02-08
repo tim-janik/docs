@@ -3437,6 +3437,11 @@
     <filename>databubble_8js.html</filename>
   </compound>
   <compound kind="file">
+    <name>deviceeditor.js</name>
+    <path>/cirun/poxy/ui/b/</path>
+    <filename>deviceeditor_8js.html</filename>
+  </compound>
+  <compound kind="file">
     <name>envue.js</name>
     <path>/cirun/poxy/ui/b/</path>
     <filename>envue_8js.html</filename>

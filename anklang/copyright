@@ -1087,8 +1087,8 @@ Files: ui/b/databubble.js
 Copyright: Copyright (C) 2020-2023 Tim Janik
 License: MPL-2.0
 
-Files: ui/b/deviceeditor.vue
-Copyright: Copyright (C) 2020-2023 Tim Janik
+Files: ui/b/deviceeditor.js
+Copyright: Copyright (C) 2020-2024 Tim Janik
 License: MPL-2.0
 
 Files: ui/b/devicepanel.vue
