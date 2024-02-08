@@ -1081,7 +1081,7 @@ Copyright: Copyright (C) 2023 Tim Janik
 License: MPL-2.0
 
 Files: ui/b/app.js
-Copyright: Copyright (C) 2020-2023 Tim Janik
+Copyright: Copyright (C) 2020-2024 Tim Janik
 License: MPL-2.0
 
 Files: ui/b/basics.js
@@ -1151,7 +1151,7 @@ Copyright: Copyright (C) 2022-2023 Tim Janik
 License: MPL-2.0
 
 Files: ui/b/knob.js
-Copyright: Copyright (C) 2022-2023 Tim Janik
+Copyright: Copyright (C) 2022-2024 Tim Janik
 License: MPL-2.0
 
 Files: ui/b/menubar.js
@@ -1201,7 +1201,7 @@ Copyright:
 License: MPL-2.0
 
 Files: ui/b/pianoroll.js
-Copyright: Copyright (C) 2022-2023 Tim Janik
+Copyright: Copyright (C) 2022-2024 Tim Janik
 License: MPL-2.0
 
 Files: ui/b/playcontrols.js
@@ -1320,7 +1320,7 @@ License: MPL-2.0
 
 Files: ui/index.html
 Copyright:
-  Copyright (C) 2022-2023 Tim Janik
+  Copyright (C) 2022-2024 Tim Janik
   Copyright (C) 2020 Tim Janik
 License: MPL-2.0
 
@@ -1338,6 +1338,10 @@ License: MPL-2.0
 
 Files: ui/mixins.scss
 Copyright: Copyright (C) 2020-2023 Tim Janik
+License: MPL-2.0
+
+Files: ui/mouse.js
+Copyright: Copyright (C) 2024 Tim Janik
 License: MPL-2.0
 
 Files: ui/normalize.scss
@@ -1381,7 +1385,7 @@ Copyright: Copyright (C) 2023 Tim Janik
 License: MPL-2.0
 
 Files: ui/util.js
-Copyright: Copyright (C) 2020-2023 Tim Janik
+Copyright: Copyright (C) 2020-2024 Tim Janik
 License: MPL-2.0
 
 Files: ui/wrapper.js

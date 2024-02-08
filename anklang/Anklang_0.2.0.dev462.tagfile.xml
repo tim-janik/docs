@@ -3399,11 +3399,6 @@
     <filename>aboutdialog_8js.html</filename>
   </compound>
   <compound kind="file">
-    <name>app.js</name>
-    <path>/cirun/poxy/ui/b/</path>
-    <filename>app_8js.html</filename>
-  </compound>
-  <compound kind="file">
     <name>basics.js</name>
     <path>/cirun/poxy/ui/b/</path>
     <filename>basics_8js.html</filename>
@@ -3582,6 +3577,11 @@
     <name>little.js</name>
     <path>/cirun/poxy/ui/</path>
     <filename>little_8js.html</filename>
+  </compound>
+  <compound kind="file">
+    <name>mouse.js</name>
+    <path>/cirun/poxy/ui/</path>
+    <filename>mouse_8js.html</filename>
   </compound>
   <compound kind="file">
     <name>postcss.js</name>
