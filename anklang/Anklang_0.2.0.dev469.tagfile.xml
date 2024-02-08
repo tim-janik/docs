@@ -1949,10 +1949,10 @@
       <arglist></arglist>
     </member>
     <member kind="typedef">
-      <type>std::function&lt; ChoiceS(ParameterProperty &amp;)&gt;</type>
+      <type>std::function&lt; ChoiceS(const ParameterProperty &amp;)&gt;</type>
       <name>PropertyLister</name>
       <anchorfile>namespace_ase.html</anchorfile>
-      <anchor>a2439eba256e7d0acf103c0e1845f58ed</anchor>
+      <anchor>aa6f8907868fbdbb4a5273d0eb39b8cae</anchor>
       <arglist></arglist>
     </member>
     <member kind="function">
@@ -1973,8 +1973,8 @@
       <type>requires IsEnum&lt; Enum &gt; ChoiceS</type>
       <name>enum_lister</name>
       <anchorfile>namespace_ase.html</anchorfile>
-      <anchor>ac3dc42389e3bfb8ee3fb757da44e0cb1</anchor>
-      <arglist>(ParameterProperty &amp;)</arglist>
+      <anchor>a252ff63dfb6101aa0df83c554521b469</anchor>
+      <arglist>(const ParameterProperty &amp;)</arglist>
     </member>
   </compound>
   <compound kind="file">
@@ -7884,31 +7884,10 @@
       <arglist></arglist>
     </member>
     <member kind="variable">
-      <type>String</type>
-      <name>blurb</name>
-      <anchorfile>struct_ase_1_1_param.html</anchorfile>
-      <anchor>a65fda74e58f7b1d12a3a6407cab3fb9e</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>String</type>
-      <name>descr</name>
-      <anchorfile>struct_ase_1_1_param.html</anchorfile>
-      <anchor>ae5be721c69904636c325241a6421171f</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>String</type>
-      <name>group</name>
-      <anchorfile>struct_ase_1_1_param.html</anchorfile>
-      <anchor>af640a7d35749e38d8cd0173fdc6513b7</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
       <type>StringS</type>
-      <name>details</name>
+      <name>metadata</name>
       <anchorfile>struct_ase_1_1_param.html</anchorfile>
-      <anchor>a02733efea80f317a6884d66de8ca37e7</anchor>
+      <anchor>a1457c6afc2a6c3db6d3ae6c32363a731</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -7952,92 +7931,71 @@
       <type>String</type>
       <name>ident</name>
       <anchorfile>class_ase_1_1_parameter_property.html</anchorfile>
-      <anchor>af085e2be1f72b3735932d398f5188434</anchor>
-      <arglist>() override</arglist>
+      <anchor>a5f6d60f514d2634b2adfe40969b6fe43</anchor>
+      <arglist>() const override</arglist>
     </member>
     <member kind="function">
       <type>String</type>
       <name>label</name>
       <anchorfile>class_ase_1_1_parameter_property.html</anchorfile>
-      <anchor>a97980feccf6ef2ab768204771a228345</anchor>
-      <arglist>() override</arglist>
+      <anchor>adcdfc370aafca2a93888433d0932cd0b</anchor>
+      <arglist>() const override</arglist>
     </member>
     <member kind="function">
       <type>String</type>
       <name>nick</name>
       <anchorfile>class_ase_1_1_parameter_property.html</anchorfile>
-      <anchor>a88c71b25e423299585a63441dfa51e33</anchor>
-      <arglist>() override</arglist>
+      <anchor>a3fb147701bfa8cb07532e5ec00ce0acc</anchor>
+      <arglist>() const override</arglist>
     </member>
     <member kind="function">
       <type>String</type>
       <name>unit</name>
       <anchorfile>class_ase_1_1_parameter_property.html</anchorfile>
-      <anchor>a919ece5220401ec0d89b7fa221238682</anchor>
-      <arglist>() override</arglist>
-    </member>
-    <member kind="function">
-      <type>String</type>
-      <name>hints</name>
-      <anchorfile>class_ase_1_1_parameter_property.html</anchorfile>
-      <anchor>a99ff244de08cc6f2458c6c35562cb957</anchor>
-      <arglist>() override</arglist>
-    </member>
-    <member kind="function">
-      <type>String</type>
-      <name>blurb</name>
-      <anchorfile>class_ase_1_1_parameter_property.html</anchorfile>
-      <anchor>a4727eed016c9f708a7ab5e006f27139e</anchor>
-      <arglist>() override</arglist>
-    </member>
-    <member kind="function">
-      <type>String</type>
-      <name>descr</name>
-      <anchorfile>class_ase_1_1_parameter_property.html</anchorfile>
-      <anchor>aebbe6016b9f1d72361439ace3dcb9ded</anchor>
-      <arglist>() override</arglist>
-    </member>
-    <member kind="function">
-      <type>String</type>
-      <name>group</name>
-      <anchorfile>class_ase_1_1_parameter_property.html</anchorfile>
-      <anchor>a048e80ae38f15b4f2712a50467f96e66</anchor>
-      <arglist>() override</arglist>
+      <anchor>a50608ddf757c99061344b4d73a63f3da</anchor>
+      <arglist>() const override</arglist>
     </member>
     <member kind="function">
       <type>double</type>
       <name>get_min</name>
       <anchorfile>class_ase_1_1_parameter_property.html</anchorfile>
-      <anchor>ae7f7607db020fdd0d86aaa622d00a8d4</anchor>
-      <arglist>() override</arglist>
+      <anchor>a3db2e1a1530bda483b7394d15a473373</anchor>
+      <arglist>() const override</arglist>
     </member>
     <member kind="function">
       <type>double</type>
       <name>get_max</name>
       <anchorfile>class_ase_1_1_parameter_property.html</anchorfile>
-      <anchor>a6c973427f31d7fb64aa563929ac9ca17</anchor>
-      <arglist>() override</arglist>
+      <anchor>ac55bcaffca0253f0ef11b28bda99727d</anchor>
+      <arglist>() const override</arglist>
     </member>
     <member kind="function">
       <type>double</type>
       <name>get_step</name>
       <anchorfile>class_ase_1_1_parameter_property.html</anchorfile>
-      <anchor>afc302f661c0f8403a9e70fb23a059711</anchor>
-      <arglist>() override</arglist>
+      <anchor>a1bceb904b4a25699059be3541cdc75ca</anchor>
+      <arglist>() const override</arglist>
     </member>
     <member kind="function">
       <type>bool</type>
       <name>is_numeric</name>
       <anchorfile>class_ase_1_1_parameter_property.html</anchorfile>
-      <anchor>ab9c066d6bb085c9130223d48a7785c5a</anchor>
-      <arglist>() override</arglist>
+      <anchor>a1e9d8ebd27490e83989e47db8758d2db</anchor>
+      <arglist>() const override</arglist>
     </member>
     <member kind="function">
       <type>ChoiceS</type>
       <name>choices</name>
       <anchorfile>class_ase_1_1_parameter_property.html</anchorfile>
-      <anchor>a6ec0355386c777f208a022ba5bc92137</anchor>
-      <arglist>() override</arglist>
+      <anchor>acae07361853c1399f9edf3e6e7408b28</anchor>
+      <arglist>() const override</arglist>
+    </member>
+    <member kind="function">
+      <type>StringS</type>
+      <name>metadata</name>
+      <anchorfile>class_ase_1_1_parameter_property.html</anchorfile>
+      <anchor>a1f96ef9ec5c679c5d523188c2c5aef54</anchor>
+      <arglist>() const override</arglist>
     </member>
     <member kind="function">
       <type>void</type>
@@ -8050,8 +8008,8 @@
       <type>double</type>
       <name>get_normalized</name>
       <anchorfile>class_ase_1_1_parameter_property.html</anchorfile>
-      <anchor>a58ba7ca080bdac16855098461735b75e</anchor>
-      <arglist>() override</arglist>
+      <anchor>a9dbb359cddf46adb6844a1d4ea0d9d0b</anchor>
+      <arglist>() const override</arglist>
     </member>
     <member kind="function">
       <type>bool</type>
@@ -8064,8 +8022,8 @@
       <type>String</type>
       <name>get_text</name>
       <anchorfile>class_ase_1_1_parameter_property.html</anchorfile>
-      <anchor>a617e139bd1d745eeacb5087e38872fd3</anchor>
-      <arglist>() override</arglist>
+      <anchor>a466a6279c1c3ae599e11e4cf02b597d5</anchor>
+      <arglist>() const override</arglist>
     </member>
     <member kind="function">
       <type>bool</type>
@@ -8078,8 +8036,8 @@
       <type>Value</type>
       <name>get_value</name>
       <anchorfile>class_ase_1_1_parameter_property.html</anchorfile>
-      <anchor>ae55b4e2b12d678f8bace94c6659cfb03</anchor>
-      <arglist>() override=0</arglist>
+      <anchor>a56d3c63a468980b9860c8c907976353f</anchor>
+      <arglist>() const override=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>bool</type>
@@ -8094,6 +8052,34 @@
       <anchorfile>class_ase_1_1_emittable_impl.html</anchorfile>
       <anchor>af5fad81722713d48cacff12477d1b877</anchor>
       <arglist>(const String &amp;detail)</arglist>
+    </member>
+    <member kind="function">
+      <type>String</type>
+      <name>hints</name>
+      <anchorfile>class_ase_1_1_property.html</anchorfile>
+      <anchor>aa160da34795c6288a0714521c092236d</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>String</type>
+      <name>blurb</name>
+      <anchorfile>class_ase_1_1_property.html</anchorfile>
+      <anchor>a28295577f36fcb43a65e4d59c5486202</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>String</type>
+      <name>descr</name>
+      <anchorfile>class_ase_1_1_property.html</anchorfile>
+      <anchor>a2158eb32d1ec57a32bb74e0641d5d1a3</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>String</type>
+      <name>group</name>
+      <anchorfile>class_ase_1_1_property.html</anchorfile>
+      <anchor>ac70af03307d44735ad0433fad6a3f3b4</anchor>
+      <arglist>() const</arglist>
     </member>
   </compound>
   <compound kind="class">
@@ -8396,8 +8382,8 @@
       <type>Value</type>
       <name>get_value</name>
       <anchorfile>class_ase_1_1_preference.html</anchorfile>
-      <anchor>a0ed2ca84fca083e6fcb5c2abec0f0322</anchor>
-      <arglist>() override</arglist>
+      <anchor>a99945ee7fed58c79d31ee60d39438f1c</anchor>
+      <arglist>() const override</arglist>
     </member>
     <member kind="function">
       <type>bool</type>
@@ -8410,92 +8396,71 @@
       <type>String</type>
       <name>ident</name>
       <anchorfile>class_ase_1_1_parameter_property.html</anchorfile>
-      <anchor>af085e2be1f72b3735932d398f5188434</anchor>
-      <arglist>() override</arglist>
+      <anchor>a5f6d60f514d2634b2adfe40969b6fe43</anchor>
+      <arglist>() const override</arglist>
     </member>
     <member kind="function">
       <type>String</type>
       <name>label</name>
       <anchorfile>class_ase_1_1_parameter_property.html</anchorfile>
-      <anchor>a97980feccf6ef2ab768204771a228345</anchor>
-      <arglist>() override</arglist>
+      <anchor>adcdfc370aafca2a93888433d0932cd0b</anchor>
+      <arglist>() const override</arglist>
     </member>
     <member kind="function">
       <type>String</type>
       <name>nick</name>
       <anchorfile>class_ase_1_1_parameter_property.html</anchorfile>
-      <anchor>a88c71b25e423299585a63441dfa51e33</anchor>
-      <arglist>() override</arglist>
+      <anchor>a3fb147701bfa8cb07532e5ec00ce0acc</anchor>
+      <arglist>() const override</arglist>
     </member>
     <member kind="function">
       <type>String</type>
       <name>unit</name>
       <anchorfile>class_ase_1_1_parameter_property.html</anchorfile>
-      <anchor>a919ece5220401ec0d89b7fa221238682</anchor>
-      <arglist>() override</arglist>
-    </member>
-    <member kind="function">
-      <type>String</type>
-      <name>hints</name>
-      <anchorfile>class_ase_1_1_parameter_property.html</anchorfile>
-      <anchor>a99ff244de08cc6f2458c6c35562cb957</anchor>
-      <arglist>() override</arglist>
-    </member>
-    <member kind="function">
-      <type>String</type>
-      <name>blurb</name>
-      <anchorfile>class_ase_1_1_parameter_property.html</anchorfile>
-      <anchor>a4727eed016c9f708a7ab5e006f27139e</anchor>
-      <arglist>() override</arglist>
-    </member>
-    <member kind="function">
-      <type>String</type>
-      <name>descr</name>
-      <anchorfile>class_ase_1_1_parameter_property.html</anchorfile>
-      <anchor>aebbe6016b9f1d72361439ace3dcb9ded</anchor>
-      <arglist>() override</arglist>
-    </member>
-    <member kind="function">
-      <type>String</type>
-      <name>group</name>
-      <anchorfile>class_ase_1_1_parameter_property.html</anchorfile>
-      <anchor>a048e80ae38f15b4f2712a50467f96e66</anchor>
-      <arglist>() override</arglist>
+      <anchor>a50608ddf757c99061344b4d73a63f3da</anchor>
+      <arglist>() const override</arglist>
     </member>
     <member kind="function">
       <type>double</type>
       <name>get_min</name>
       <anchorfile>class_ase_1_1_parameter_property.html</anchorfile>
-      <anchor>ae7f7607db020fdd0d86aaa622d00a8d4</anchor>
-      <arglist>() override</arglist>
+      <anchor>a3db2e1a1530bda483b7394d15a473373</anchor>
+      <arglist>() const override</arglist>
     </member>
     <member kind="function">
       <type>double</type>
       <name>get_max</name>
       <anchorfile>class_ase_1_1_parameter_property.html</anchorfile>
-      <anchor>a6c973427f31d7fb64aa563929ac9ca17</anchor>
-      <arglist>() override</arglist>
+      <anchor>ac55bcaffca0253f0ef11b28bda99727d</anchor>
+      <arglist>() const override</arglist>
     </member>
     <member kind="function">
       <type>double</type>
       <name>get_step</name>
       <anchorfile>class_ase_1_1_parameter_property.html</anchorfile>
-      <anchor>afc302f661c0f8403a9e70fb23a059711</anchor>
-      <arglist>() override</arglist>
+      <anchor>a1bceb904b4a25699059be3541cdc75ca</anchor>
+      <arglist>() const override</arglist>
     </member>
     <member kind="function">
       <type>bool</type>
       <name>is_numeric</name>
       <anchorfile>class_ase_1_1_parameter_property.html</anchorfile>
-      <anchor>ab9c066d6bb085c9130223d48a7785c5a</anchor>
-      <arglist>() override</arglist>
+      <anchor>a1e9d8ebd27490e83989e47db8758d2db</anchor>
+      <arglist>() const override</arglist>
     </member>
     <member kind="function">
       <type>ChoiceS</type>
       <name>choices</name>
       <anchorfile>class_ase_1_1_parameter_property.html</anchorfile>
-      <anchor>a6ec0355386c777f208a022ba5bc92137</anchor>
-      <arglist>() override</arglist>
+      <anchor>acae07361853c1399f9edf3e6e7408b28</anchor>
+      <arglist>() const override</arglist>
+    </member>
+    <member kind="function">
+      <type>StringS</type>
+      <name>metadata</name>
+      <anchorfile>class_ase_1_1_parameter_property.html</anchorfile>
+      <anchor>a1f96ef9ec5c679c5d523188c2c5aef54</anchor>
+      <arglist>() const override</arglist>
     </member>
     <member kind="function">
       <type>void</type>
@@ -8508,8 +8473,8 @@
       <type>double</type>
       <name>get_normalized</name>
       <anchorfile>class_ase_1_1_parameter_property.html</anchorfile>
-      <anchor>a58ba7ca080bdac16855098461735b75e</anchor>
-      <arglist>() override</arglist>
+      <anchor>a9dbb359cddf46adb6844a1d4ea0d9d0b</anchor>
+      <arglist>() const override</arglist>
     </member>
     <member kind="function">
       <type>bool</type>
@@ -8522,8 +8487,8 @@
       <type>String</type>
       <name>get_text</name>
       <anchorfile>class_ase_1_1_parameter_property.html</anchorfile>
-      <anchor>a617e139bd1d745eeacb5087e38872fd3</anchor>
-      <arglist>() override</arglist>
+      <anchor>a466a6279c1c3ae599e11e4cf02b597d5</anchor>
+      <arglist>() const override</arglist>
     </member>
     <member kind="function">
       <type>bool</type>
@@ -8538,6 +8503,34 @@
       <anchorfile>class_ase_1_1_emittable_impl.html</anchorfile>
       <anchor>af5fad81722713d48cacff12477d1b877</anchor>
       <arglist>(const String &amp;detail)</arglist>
+    </member>
+    <member kind="function">
+      <type>String</type>
+      <name>hints</name>
+      <anchorfile>class_ase_1_1_property.html</anchorfile>
+      <anchor>aa160da34795c6288a0714521c092236d</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>String</type>
+      <name>blurb</name>
+      <anchorfile>class_ase_1_1_property.html</anchorfile>
+      <anchor>a28295577f36fcb43a65e4d59c5486202</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>String</type>
+      <name>descr</name>
+      <anchorfile>class_ase_1_1_property.html</anchorfile>
+      <anchor>a2158eb32d1ec57a32bb74e0641d5d1a3</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>String</type>
+      <name>group</name>
+      <anchorfile>class_ase_1_1_property.html</anchorfile>
+      <anchor>ac70af03307d44735ad0433fad6a3f3b4</anchor>
+      <arglist>() const</arglist>
     </member>
   </compound>
   <compound kind="struct">
@@ -8894,78 +8887,50 @@
       <type>virtual String</type>
       <name>ident</name>
       <anchorfile>class_ase_1_1_property.html</anchorfile>
-      <anchor>a0670f5a64083eaec57ee2e57b92fe013</anchor>
-      <arglist>()=0</arglist>
+      <anchor>aa61d75f55104b5918e66723ca8de1959</anchor>
+      <arglist>() const =0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual String</type>
       <name>label</name>
       <anchorfile>class_ase_1_1_property.html</anchorfile>
-      <anchor>a61e5f7a3373f48053fb2f289e7890deb</anchor>
-      <arglist>()=0</arglist>
+      <anchor>a6e04dfc5cffa6f76d97513ab160232f6</anchor>
+      <arglist>() const =0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual String</type>
       <name>nick</name>
       <anchorfile>class_ase_1_1_property.html</anchorfile>
-      <anchor>a1a1b99212747b026de8c870a1e0a75c1</anchor>
-      <arglist>()=0</arglist>
+      <anchor>a877ca4936b6de2454429721b2f884ead</anchor>
+      <arglist>() const =0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual String</type>
       <name>unit</name>
       <anchorfile>class_ase_1_1_property.html</anchorfile>
-      <anchor>a8f578df0f80ac01cee9a869ff1d5ef25</anchor>
-      <arglist>()=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual String</type>
-      <name>hints</name>
-      <anchorfile>class_ase_1_1_property.html</anchorfile>
-      <anchor>a80e69b9e2fc3a0e1020b183b66f6952e</anchor>
-      <arglist>()=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual String</type>
-      <name>group</name>
-      <anchorfile>class_ase_1_1_property.html</anchorfile>
-      <anchor>a8e6b027e6ca60216880d1b452f9eaa38</anchor>
-      <arglist>()=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual String</type>
-      <name>blurb</name>
-      <anchorfile>class_ase_1_1_property.html</anchorfile>
-      <anchor>ac101cb7aa63db4c81479d0652a4c04d6</anchor>
-      <arglist>()=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual String</type>
-      <name>descr</name>
-      <anchorfile>class_ase_1_1_property.html</anchorfile>
-      <anchor>a7223a635e58260926ec55ee83da3fc26</anchor>
-      <arglist>()=0</arglist>
+      <anchor>ad6d99a5e497c601892e73bfe69460e29</anchor>
+      <arglist>() const =0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual double</type>
       <name>get_min</name>
       <anchorfile>class_ase_1_1_property.html</anchorfile>
-      <anchor>a10c702f2adc9b4c0a71d5b0b2f7f01ba</anchor>
-      <arglist>()=0</arglist>
+      <anchor>ad60b613b509974c63f6436b0ca0aca3c</anchor>
+      <arglist>() const =0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual double</type>
       <name>get_max</name>
       <anchorfile>class_ase_1_1_property.html</anchorfile>
-      <anchor>a1d6f1eeb9121f08f1f5f785f57bd3aa0</anchor>
-      <arglist>()=0</arglist>
+      <anchor>a3e698cd0e8f4c362cbd01c37c1a856d3</anchor>
+      <arglist>() const =0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual double</type>
       <name>get_step</name>
       <anchorfile>class_ase_1_1_property.html</anchorfile>
-      <anchor>a51c06c3f6c0a9e3579d964c563119780</anchor>
-      <arglist>()=0</arglist>
+      <anchor>a42b07fc41fd3b237e68d08e5f330ce11</anchor>
+      <arglist>() const =0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
@@ -8978,8 +8943,8 @@
       <type>virtual Value</type>
       <name>get_value</name>
       <anchorfile>class_ase_1_1_property.html</anchorfile>
-      <anchor>afb0995cd5df267e885f1400c4d35e765</anchor>
-      <arglist>()=0</arglist>
+      <anchor>aa622452a3575613f35cd712e756764f3</anchor>
+      <arglist>() const =0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual bool</type>
@@ -8992,8 +8957,8 @@
       <type>virtual double</type>
       <name>get_normalized</name>
       <anchorfile>class_ase_1_1_property.html</anchorfile>
-      <anchor>a6d2716b83b4ab0ab88ef351e16b150d8</anchor>
-      <arglist>()=0</arglist>
+      <anchor>a20219c0c9863489999e7bbf40fa2a4a6</anchor>
+      <arglist>() const =0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual bool</type>
@@ -9006,8 +8971,8 @@
       <type>virtual String</type>
       <name>get_text</name>
       <anchorfile>class_ase_1_1_property.html</anchorfile>
-      <anchor>a6d898c81c526d5182c7cbe169aa61b61</anchor>
-      <arglist>()=0</arglist>
+      <anchor>a27bc86798cb2c9702104da622775e57e</anchor>
+      <arglist>() const =0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual bool</type>
@@ -9020,15 +8985,50 @@
       <type>virtual bool</type>
       <name>is_numeric</name>
       <anchorfile>class_ase_1_1_property.html</anchorfile>
-      <anchor>a27851cc4d2ab1a41f61dd3ddf469d7fe</anchor>
-      <arglist>()=0</arglist>
+      <anchor>a6ff45c2bdfd2c193101baa0a3838bff0</anchor>
+      <arglist>() const =0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual ChoiceS</type>
       <name>choices</name>
       <anchorfile>class_ase_1_1_property.html</anchorfile>
-      <anchor>a8a2da03b31101939643846ee3932a11e</anchor>
-      <arglist>()=0</arglist>
+      <anchor>a3b32704ecb62f309a5d9c0850ead58bf</anchor>
+      <arglist>() const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual StringS</type>
+      <name>metadata</name>
+      <anchorfile>class_ase_1_1_property.html</anchorfile>
+      <anchor>ad01ec3b2ac58cdc7934c0d761456b671</anchor>
+      <arglist>() const =0</arglist>
+    </member>
+    <member kind="function">
+      <type>String</type>
+      <name>hints</name>
+      <anchorfile>class_ase_1_1_property.html</anchorfile>
+      <anchor>aa160da34795c6288a0714521c092236d</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>String</type>
+      <name>blurb</name>
+      <anchorfile>class_ase_1_1_property.html</anchorfile>
+      <anchor>a28295577f36fcb43a65e4d59c5486202</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>String</type>
+      <name>descr</name>
+      <anchorfile>class_ase_1_1_property.html</anchorfile>
+      <anchor>a2158eb32d1ec57a32bb74e0641d5d1a3</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>String</type>
+      <name>group</name>
+      <anchorfile>class_ase_1_1_property.html</anchorfile>
+      <anchor>ac70af03307d44735ad0433fad6a3f3b4</anchor>
+      <arglist>() const</arglist>
     </member>
   </compound>
   <compound kind="struct">
@@ -9043,8 +9043,8 @@
       <type>Value</type>
       <name>get_value</name>
       <anchorfile>class_ase_1_1_property_impl.html</anchorfile>
-      <anchor>ab605fd5c1014a0cf8e168c30435a3aa4</anchor>
-      <arglist>() override</arglist>
+      <anchor>a46e14e87b933b1259cfa6f3e857f0c08</anchor>
+      <arglist>() const override</arglist>
     </member>
     <member kind="function">
       <type>bool</type>
@@ -9057,92 +9057,71 @@
       <type>ChoiceS</type>
       <name>choices</name>
       <anchorfile>class_ase_1_1_property_impl.html</anchorfile>
-      <anchor>a05ab111821559a910a6606b8f2c71c39</anchor>
-      <arglist>() override</arglist>
+      <anchor>a308ac7561bd755e275bcfa83df731f26</anchor>
+      <arglist>() const override</arglist>
     </member>
     <member kind="function">
       <type>String</type>
       <name>ident</name>
       <anchorfile>class_ase_1_1_parameter_property.html</anchorfile>
-      <anchor>af085e2be1f72b3735932d398f5188434</anchor>
-      <arglist>() override</arglist>
+      <anchor>a5f6d60f514d2634b2adfe40969b6fe43</anchor>
+      <arglist>() const override</arglist>
     </member>
     <member kind="function">
       <type>String</type>
       <name>label</name>
       <anchorfile>class_ase_1_1_parameter_property.html</anchorfile>
-      <anchor>a97980feccf6ef2ab768204771a228345</anchor>
-      <arglist>() override</arglist>
+      <anchor>adcdfc370aafca2a93888433d0932cd0b</anchor>
+      <arglist>() const override</arglist>
     </member>
     <member kind="function">
       <type>String</type>
       <name>nick</name>
       <anchorfile>class_ase_1_1_parameter_property.html</anchorfile>
-      <anchor>a88c71b25e423299585a63441dfa51e33</anchor>
-      <arglist>() override</arglist>
+      <anchor>a3fb147701bfa8cb07532e5ec00ce0acc</anchor>
+      <arglist>() const override</arglist>
     </member>
     <member kind="function">
       <type>String</type>
       <name>unit</name>
       <anchorfile>class_ase_1_1_parameter_property.html</anchorfile>
-      <anchor>a919ece5220401ec0d89b7fa221238682</anchor>
-      <arglist>() override</arglist>
-    </member>
-    <member kind="function">
-      <type>String</type>
-      <name>hints</name>
-      <anchorfile>class_ase_1_1_parameter_property.html</anchorfile>
-      <anchor>a99ff244de08cc6f2458c6c35562cb957</anchor>
-      <arglist>() override</arglist>
-    </member>
-    <member kind="function">
-      <type>String</type>
-      <name>blurb</name>
-      <anchorfile>class_ase_1_1_parameter_property.html</anchorfile>
-      <anchor>a4727eed016c9f708a7ab5e006f27139e</anchor>
-      <arglist>() override</arglist>
-    </member>
-    <member kind="function">
-      <type>String</type>
-      <name>descr</name>
-      <anchorfile>class_ase_1_1_parameter_property.html</anchorfile>
-      <anchor>aebbe6016b9f1d72361439ace3dcb9ded</anchor>
-      <arglist>() override</arglist>
-    </member>
-    <member kind="function">
-      <type>String</type>
-      <name>group</name>
-      <anchorfile>class_ase_1_1_parameter_property.html</anchorfile>
-      <anchor>a048e80ae38f15b4f2712a50467f96e66</anchor>
-      <arglist>() override</arglist>
+      <anchor>a50608ddf757c99061344b4d73a63f3da</anchor>
+      <arglist>() const override</arglist>
     </member>
     <member kind="function">
       <type>double</type>
       <name>get_min</name>
       <anchorfile>class_ase_1_1_parameter_property.html</anchorfile>
-      <anchor>ae7f7607db020fdd0d86aaa622d00a8d4</anchor>
-      <arglist>() override</arglist>
+      <anchor>a3db2e1a1530bda483b7394d15a473373</anchor>
+      <arglist>() const override</arglist>
     </member>
     <member kind="function">
       <type>double</type>
       <name>get_max</name>
       <anchorfile>class_ase_1_1_parameter_property.html</anchorfile>
-      <anchor>a6c973427f31d7fb64aa563929ac9ca17</anchor>
-      <arglist>() override</arglist>
+      <anchor>ac55bcaffca0253f0ef11b28bda99727d</anchor>
+      <arglist>() const override</arglist>
     </member>
     <member kind="function">
       <type>double</type>
       <name>get_step</name>
       <anchorfile>class_ase_1_1_parameter_property.html</anchorfile>
-      <anchor>afc302f661c0f8403a9e70fb23a059711</anchor>
-      <arglist>() override</arglist>
+      <anchor>a1bceb904b4a25699059be3541cdc75ca</anchor>
+      <arglist>() const override</arglist>
     </member>
     <member kind="function">
       <type>bool</type>
       <name>is_numeric</name>
       <anchorfile>class_ase_1_1_parameter_property.html</anchorfile>
-      <anchor>ab9c066d6bb085c9130223d48a7785c5a</anchor>
-      <arglist>() override</arglist>
+      <anchor>a1e9d8ebd27490e83989e47db8758d2db</anchor>
+      <arglist>() const override</arglist>
+    </member>
+    <member kind="function">
+      <type>StringS</type>
+      <name>metadata</name>
+      <anchorfile>class_ase_1_1_parameter_property.html</anchorfile>
+      <anchor>a1f96ef9ec5c679c5d523188c2c5aef54</anchor>
+      <arglist>() const override</arglist>
     </member>
     <member kind="function">
       <type>void</type>
@@ -9155,8 +9134,8 @@
       <type>double</type>
       <name>get_normalized</name>
       <anchorfile>class_ase_1_1_parameter_property.html</anchorfile>
-      <anchor>a58ba7ca080bdac16855098461735b75e</anchor>
-      <arglist>() override</arglist>
+      <anchor>a9dbb359cddf46adb6844a1d4ea0d9d0b</anchor>
+      <arglist>() const override</arglist>
     </member>
     <member kind="function">
       <type>bool</type>
@@ -9169,8 +9148,8 @@
       <type>String</type>
       <name>get_text</name>
       <anchorfile>class_ase_1_1_parameter_property.html</anchorfile>
-      <anchor>a617e139bd1d745eeacb5087e38872fd3</anchor>
-      <arglist>() override</arglist>
+      <anchor>a466a6279c1c3ae599e11e4cf02b597d5</anchor>
+      <arglist>() const override</arglist>
     </member>
     <member kind="function">
       <type>bool</type>
@@ -9185,6 +9164,34 @@
       <anchorfile>class_ase_1_1_emittable_impl.html</anchorfile>
       <anchor>af5fad81722713d48cacff12477d1b877</anchor>
       <arglist>(const String &amp;detail)</arglist>
+    </member>
+    <member kind="function">
+      <type>String</type>
+      <name>hints</name>
+      <anchorfile>class_ase_1_1_property.html</anchorfile>
+      <anchor>aa160da34795c6288a0714521c092236d</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>String</type>
+      <name>blurb</name>
+      <anchorfile>class_ase_1_1_property.html</anchorfile>
+      <anchor>a28295577f36fcb43a65e4d59c5486202</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>String</type>
+      <name>descr</name>
+      <anchorfile>class_ase_1_1_property.html</anchorfile>
+      <anchor>a2158eb32d1ec57a32bb74e0641d5d1a3</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>String</type>
+      <name>group</name>
+      <anchorfile>class_ase_1_1_property.html</anchorfile>
+      <anchor>ac70af03307d44735ad0433fad6a3f3b4</anchor>
+      <arglist>() const</arglist>
     </member>
   </compound>
   <compound kind="struct">
@@ -11127,10 +11134,10 @@
       <arglist></arglist>
     </member>
     <member kind="typedef">
-      <type>std::function&lt; ChoiceS(ParameterProperty &amp;)&gt;</type>
+      <type>std::function&lt; ChoiceS(const ParameterProperty &amp;)&gt;</type>
       <name>PropertyLister</name>
       <anchorfile>namespace_ase.html</anchorfile>
-      <anchor>a2439eba256e7d0acf103c0e1845f58ed</anchor>
+      <anchor>aa6f8907868fbdbb4a5273d0eb39b8cae</anchor>
       <arglist></arglist>
     </member>
     <member kind="typedef">
@@ -11837,8 +11844,8 @@
       <type>requires IsEnum&lt; Enum &gt; ChoiceS</type>
       <name>enum_lister</name>
       <anchorfile>namespace_ase.html</anchorfile>
-      <anchor>ac3dc42389e3bfb8ee3fb757da44e0cb1</anchor>
-      <arglist>(ParameterProperty &amp;)</arglist>
+      <anchor>a252ff63dfb6101aa0df83c554521b469</anchor>
+      <arglist>(const ParameterProperty &amp;)</arglist>
     </member>
     <member kind="function">
       <type>void</type>

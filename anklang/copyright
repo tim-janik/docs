@@ -51,7 +51,7 @@ Copyright: Copyright (C) 2020-2024 Tim Janik
 License: MPL-2.0
 
 Files: ase/api.hh
-Copyright: Copyright (C) 2021-2023 Tim Janik
+Copyright: Copyright (C) 2021-2024 Tim Janik
 License: MPL-2.0
 
 Files: ase/atomics.cc
@@ -85,7 +85,7 @@ Copyright: Copyright (C) 2023 Tim Janik
 License: MPL-2.0
 
 Files: ase/clapdevice.cc
-Copyright: Copyright (C) 2022-2023 Tim Janik
+Copyright: Copyright (C) 2022-2024 Tim Janik
 License: MPL-2.0
 
 Files: ase/clapdevice.hh
@@ -199,7 +199,7 @@ Copyright:
 License: MPL-2.0
 
 Files: ase/engine.cc
-Copyright: Copyright (C) 2021-2023 Tim Janik
+Copyright: Copyright (C) 2021-2024 Tim Janik
 License: MPL-2.0
 
 Files: ase/engine.hh
@@ -231,7 +231,7 @@ Copyright: Copyright (C) 2021-2023 Tim Janik
 License: MPL-2.0
 
 Files: ase/gadget.cc
-Copyright: Copyright (C) 2021-2023 Tim Janik
+Copyright: Copyright (C) 2021-2024 Tim Janik
 License: MPL-2.0
 
 Files: ase/gadget.hh
@@ -391,11 +391,11 @@ Copyright: Copyright (C) 2021-2022 Tim Janik
 License: MPL-2.0
 
 Files: ase/parameter.cc
-Copyright: Copyright (C) 2023 Tim Janik
+Copyright: Copyright (C) 2023-2024 Tim Janik
 License: MPL-2.0
 
 Files: ase/parameter.hh
-Copyright: Copyright (C) 2023 Tim Janik
+Copyright: Copyright (C) 2023-2024 Tim Janik
 License: MPL-2.0
 
 Files: ase/path.cc
@@ -423,7 +423,7 @@ Copyright: Copyright (C) 2021-2023 Tim Janik
 License: MPL-2.0
 
 Files: ase/project.cc
-Copyright: Copyright (C) 2021-2023 Tim Janik
+Copyright: Copyright (C) 2021-2024 Tim Janik
 License: MPL-2.0
 
 Files: ase/project.hh
@@ -431,11 +431,11 @@ Copyright: Copyright (C) 2021-2024 Tim Janik
 License: MPL-2.0
 
 Files: ase/properties.cc
-Copyright: Copyright (C) 2021-2023 Tim Janik
+Copyright: Copyright (C) 2021-2024 Tim Janik
 License: MPL-2.0
 
 Files: ase/properties.hh
-Copyright: Copyright (C) 2021-2023 Tim Janik
+Copyright: Copyright (C) 2021-2024 Tim Janik
 License: MPL-2.0
 
 Files: ase/queuemux.cc
@@ -636,7 +636,7 @@ License: MPL-2.0
 
 Files: devices/blepsynth/blepsynth.cc
 Copyright:
-  Copyright (C) 2020-2023 Tim Janik
+  Copyright (C) 2020-2024 Tim Janik
   Copyright (C) 2022-2023 Stefan Westerfeld
   Copyright (C) 2020 Stefan Westerfeld
 License: MPL-2.0
@@ -705,7 +705,7 @@ License: CC-PDDC
 
 Files: devices/freeverb/freeverb.cc
 Copyright:
-  Copyright (C) 2022-2023 Tim Janik
+  Copyright (C) 2022-2024 Tim Janik
   Copyright (C) 2020 Tim Janik
 License: MPL-2.0
 
@@ -738,8 +738,8 @@ License: MPL-2.0
 
 Files: devices/liquidsfz/liquidsfz.cc
 Copyright:
+  Copyright (C) 2023-2024 Tim Janik
   Copyright (C) 2022-2023 Stefan Westerfeld
-  Copyright (C) 2023 Tim Janik
 License: MPL-2.0
 
 Files: devices/saturation/Makefile.mk
@@ -749,7 +749,9 @@ Copyright:
 License: MPL-2.0
 
 Files: devices/saturation/saturation.cc
-Copyright: Copyright (C) 2023 Stefan Westerfeld
+Copyright:
+  Copyright (C) 2024 Tim Janik
+  Copyright (C) 2023 Stefan Westerfeld
 License: MPL-2.0
 
 Files: devices/saturation/saturationdsp.hh
