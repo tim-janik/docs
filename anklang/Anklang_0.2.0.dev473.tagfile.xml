@@ -1402,6 +1402,13 @@
     </member>
     <member kind="function">
       <type>bool</type>
+      <name>isroot</name>
+      <anchorfile>namespace_ase_1_1_path.html</anchorfile>
+      <anchor>ad71f25c1e6b946483763ad824d34a5eb</anchor>
+      <arglist>(const String &amp;path, bool dos_drives)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
       <name>isdirname</name>
       <anchorfile>namespace_ase_1_1_path.html</anchorfile>
       <anchor>a8cc52333c0e00cc5c8719d8f33530989</anchor>
@@ -13185,6 +13192,13 @@
       <anchorfile>namespace_ase_1_1_path.html</anchorfile>
       <anchor>ad2deaf982ff582c6582daf94708e16d6</anchor>
       <arglist>(const String &amp;path)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>isroot</name>
+      <anchorfile>namespace_ase_1_1_path.html</anchorfile>
+      <anchor>ad71f25c1e6b946483763ad824d34a5eb</anchor>
+      <arglist>(const String &amp;path, bool dos_drives)</arglist>
     </member>
     <member kind="function">
       <type>bool</type>

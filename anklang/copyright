@@ -17,7 +17,7 @@ Copyright: Copyright (C) 2021-2024 Tim Janik
 License: MPL-2.0
 
 Files: .gitignore
-Copyright: Copyright (C) 2020-2023 Tim Janik
+Copyright: Copyright (C) 2020-2024 Tim Janik
 License: MPL-2.0
 
 Files: .gitmodules
@@ -399,11 +399,15 @@ Copyright: Copyright (C) 2023-2024 Tim Janik
 License: MPL-2.0
 
 Files: ase/path.cc
-Copyright: Copyright (C) 2021-2022 Tim Janik
+Copyright:
+  Copyright (C) 2024 Tim Janik
+  Copyright (C) 2021-2022 Tim Janik
 License: MPL-2.0
 
 Files: ase/path.hh
-Copyright: Copyright (C) 2021-2022 Tim Janik
+Copyright:
+  Copyright (C) 2024 Tim Janik
+  Copyright (C) 2021-2022 Tim Janik
 License: MPL-2.0
 
 Files: ase/platform.cc
