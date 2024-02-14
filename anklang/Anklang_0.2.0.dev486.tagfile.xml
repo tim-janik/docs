@@ -1584,6 +1584,13 @@
     </member>
     <member kind="function">
       <type>void</type>
+      <name>glob</name>
+      <anchorfile>namespace_ase_1_1_path.html</anchorfile>
+      <anchor>a24ca52b064f0f366513fcd8c2e619e30</anchor>
+      <arglist>(const String &amp;pathpattern, StringS &amp;dirs, StringS &amp;files)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
       <name>rglob</name>
       <anchorfile>namespace_ase_1_1_path.html</anchorfile>
       <anchor>ae5c3730ed4e6a4f5d6f6da17940cee68</anchor>
@@ -2594,10 +2601,24 @@
     </member>
     <member kind="function">
       <type>bool</type>
+      <name>string_startswith</name>
+      <anchorfile>namespace_ase.html</anchorfile>
+      <anchor>a4c078f484025339a74d836d5e9b51e22</anchor>
+      <arglist>(const String &amp;string, const StringS &amp;fragments)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
       <name>string_endswith</name>
       <anchorfile>namespace_ase.html</anchorfile>
       <anchor>ada811b3e347a1b626feee18985792d8e</anchor>
       <arglist>(const String &amp;string, const String &amp;fragment)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>string_endswith</name>
+      <anchorfile>namespace_ase.html</anchorfile>
+      <anchor>ad9b44c0dcf46f70a18da473b8977a078</anchor>
+      <arglist>(const String &amp;string, const StringS &amp;fragments)</arglist>
     </member>
     <member kind="function">
       <type>bool</type>
@@ -12465,10 +12486,24 @@
     </member>
     <member kind="function">
       <type>bool</type>
+      <name>string_startswith</name>
+      <anchorfile>namespace_ase.html</anchorfile>
+      <anchor>a4c078f484025339a74d836d5e9b51e22</anchor>
+      <arglist>(const String &amp;string, const StringS &amp;fragments)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
       <name>string_endswith</name>
       <anchorfile>namespace_ase.html</anchorfile>
       <anchor>ada811b3e347a1b626feee18985792d8e</anchor>
       <arglist>(const String &amp;string, const String &amp;fragment)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>string_endswith</name>
+      <anchorfile>namespace_ase.html</anchorfile>
+      <anchor>ad9b44c0dcf46f70a18da473b8977a078</anchor>
+      <arglist>(const String &amp;string, const StringS &amp;fragments)</arglist>
     </member>
     <member kind="function">
       <type>bool</type>
@@ -13367,6 +13402,13 @@
       <anchorfile>namespace_ase_1_1_path.html</anchorfile>
       <anchor>a667dad32e6ea768c098c2d66d8ced881</anchor>
       <arglist>(const String &amp;searchpath, const String &amp;postfixes)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>glob</name>
+      <anchorfile>namespace_ase_1_1_path.html</anchorfile>
+      <anchor>a24ca52b064f0f366513fcd8c2e619e30</anchor>
+      <arglist>(const String &amp;pathpattern, StringS &amp;dirs, StringS &amp;files)</arglist>
     </member>
     <member kind="function">
       <type>void</type>

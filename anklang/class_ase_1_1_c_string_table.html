@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en"><head>
   <meta charset="utf-8"/>
-  <title>Ase::GadgetImpl class | Anklang 0.2.0.dev486 Anklang Programming Reference</title>
+  <title>Ase::CStringTable class | Anklang 0.2.0.dev486 Anklang Programming Reference</title>
   <link href="favicon.svg" rel="icon" type="image/svg+xml"/>
   <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
   <meta content="#cb4b16" name="theme-color"/>
@@ -22,7 +22,7 @@
   <meta content="Poxy v0.16.0" name="generator"/>
   <meta content="strict-origin-when-cross-origin" name="referrer"/>
 </head>
-<body class="poxy-has-toc">
+<body>
 <header><nav id="navigation">
   <div class="m-container">
     <div class="m-row">
@@ -59,124 +59,9 @@
     <div class="m-row">
       <div class="m-col-l-10 m-push-l-1">
         <h1>
-          <span class="m-breadcrumb"><a href="namespace_ase.html">Ase</a>::<wbr/></span>GadgetImpl <span class="m-thin">class</span>
+          <span class="m-breadcrumb"><a href="namespace_ase.html">Ase</a>::<wbr/></span>CStringTable <span class="m-thin">class</span>
         </h1>
-        <p>Base type for classes that have a <a class="m-doc" href="class_ase_1_1_property.html">Property</a>.</p>
-        <nav class="m-block m-default poxy-toc" id="poxy-toc">
-          <h3>Contents</h3>
-          <ul>
-            <li>
-              Reference
-              <ul>
-                <li><a href="#base-classes">Base classes</a></li>
-                <li><a href="#pub-methods">Public functions</a></li>
-                <li><a href="#pro-methods">Protected functions</a></li>
-              </ul>
-            </li>
-          </ul>
-        </nav>
-        <section id="base-classes">
-          <h2><a href="#base-classes">Base classes</a></h2>
-          <dl class="m-doc">
-            <dt>
-              class <a class="m-doc" href="class_ase_1_1_object_impl.html">ObjectImpl</a>
-            </dt>
-            <dd>Implementation type for classes with <a class="m-doc" href="class_ase_1_1_property.html">Property</a> interfaces.</dd>
-            <dt>
-              class <a class="m-doc" href="class_ase_1_1_custom_data_container.html">CustomDataContainer</a>
-            </dt>
-            <dd></dd>
-            <dt>
-              class <a class="m-doc" href="class_ase_1_1_gadget.html">Gadget</a> <span class="m-label m-flat m-warning">virtual</span>
-            </dt>
-            <dd>Base type for classes that have a <a class="m-doc" href="class_ase_1_1_property.html">Property</a>.</dd>
-            <dt>
-              class <a class="m-doc" href="class_ase_1_1_serializable.html">Serializable</a> <span class="m-label m-flat m-warning">virtual</span>
-            </dt>
-            <dd>Interface for serializable objects with Reflink support.</dd>
-          </dl>
-        </section>
-        <section id="pub-methods">
-          <h2><a href="#pub-methods">Public functions</a></h2>
-          <dl class="m-doc">
-            <dt id="a88c1a8f264731d155cb28c68149de47f">
-              <span class="m-doc-wrap-bumper">auto <a class="m-doc-self" href="#a88c1a8f264731d155cb28c68149de47f">_parent</a>(</span><span class="m-doc-wrap">) const -&gt; <a class="m-doc" href="class_ase_1_1_gadget_impl.html">GadgetImpl</a>* <span class="m-label m-flat m-warning">override</span></span>
-            </dt>
-            <dd>Retrieve parent container.</dd>
-            <dt>
-              <span class="m-doc-wrap-bumper">auto <a class="m-doc" href="class_ase_1_1_gadget.html#a67df01a6a89e8441b776f8f64ec23e60">_project</a>(</span><span class="m-doc-wrap">) const -&gt; ProjectImpl*</span>
-            </dt>
-            <dd>Find <a class="m-doc" href="class_ase_1_1_project.html">Project</a> in parent ancestry.</dd>
-            <dt id="a6d534e0a27cd271f4809bd866ed7db28">
-              <span class="m-doc-wrap-bumper">void <a class="m-doc-self" href="#a6d534e0a27cd271f4809bd866ed7db28">_set_parent</a>(</span><span class="m-doc-wrap"><a class="m-doc" href="class_ase_1_1_gadget_impl.html">GadgetImpl</a>* parent) <span class="m-label m-flat m-warning">override</span></span>
-            </dt>
-            <dd>Assign parent container.</dd>
-            <dt id="a46a6ee8c9452f0dfb17a895e207ed75a">
-              <span class="m-doc-wrap-bumper">auto <a class="m-doc-self" href="#a46a6ee8c9452f0dfb17a895e207ed75a">access_properties</a>(</span><span class="m-doc-wrap">) -&gt; PropertyS <span class="m-label m-flat m-warning">override</span></span>
-            </dt>
-            <dd>Retrieve handles for all properties.</dd>
-            <dt>
-              <span class="m-doc-wrap-bumper">auto <a class="m-doc" href="class_ase_1_1_gadget.html#a5a0109cd71e3af9fc1f63a5580bff8e0">access_property</a>(</span><span class="m-doc-wrap"><a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a> ident) -&gt; PropertyP <span class="m-label m-flat m-warning">virtual</span></span>
-            </dt>
-            <dd>Retrieve handle for a <a class="m-doc" href="class_ase_1_1_property.html">Property</a>.</dd>
-            <dt>
-              <div class="m-doc-template">template &lt;<span class="m-doc-template-params"><span class="m-doc-template-param">class T</span></span>&gt;</div>
-              <span class="m-doc-wrap-bumper">auto <a class="m-doc" href="class_ase_1_1_custom_data_container.html#a608bf027faa9105307ad21252f7beb89">del_custom_data</a>(</span><span class="m-doc-wrap"><a class="m-doc" href="class_ase_1_1_custom_data_key.html">CustomDataKey</a>&lt;T&gt;* key) -&gt; bool</span>
-            </dt>
-            <dd>Delete the current contents of the custom keyed data member, invokes DataKey::destroy.</dd>
-            <dt>
-              <span class="m-doc-wrap-bumper">void <a class="m-doc" href="class_ase_1_1_emittable_impl.html#af5fad81722713d48cacff12477d1b877">emit_notify</a>(</span><span class="m-doc-wrap">const <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a>&amp; detail)</span>
-            </dt>
-            <dd>Emit <code>notify:detail</code>, multiple notifications maybe coalesced if a CoalesceNotifies instance exists.</dd>
-            <dt>
-              <div class="m-doc-template">template &lt;<span class="m-doc-template-params"><span class="m-doc-template-param">class T</span></span>&gt;</div>
-              <span class="m-doc-wrap-bumper">auto <a class="m-doc" href="class_ase_1_1_custom_data_container.html#a327f3ffb1c6adcac1279e4b5883cbdab">get_custom_data</a>(</span><span class="m-doc-wrap"><a class="m-doc" href="class_ase_1_1_custom_data_key.html">CustomDataKey</a>&lt;T&gt;* key) const -&gt; T</span>
-            </dt>
-            <dd>Retrieve contents of the custom keyed data member, returns DataKey::fallback if nothing was set.</dd>
-            <dt id="a5a87f6e0a2ef17d355cf8a739f2fd10c">
-              <span class="m-doc-wrap-bumper">auto <a class="m-doc-self" href="#a5a87f6e0a2ef17d355cf8a739f2fd10c">get_data</a>(</span><span class="m-doc-wrap">const <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a>&amp; key) const -&gt; <a class="m-doc" href="struct_ase_1_1_value.html">Value</a> <span class="m-label m-flat m-warning">override</span></span>
-            </dt>
-            <dd>Retrieve session data.</dd>
-            <dt>
-              <span class="m-doc-wrap-bumper">auto <a class="m-doc" href="class_ase_1_1_gadget.html#aacecbd8080097bf8b4a11071b0a37882">get_value</a>(</span><span class="m-doc-wrap"><a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a> ident) -&gt; <a class="m-doc" href="struct_ase_1_1_value.html">Value</a></span>
-            </dt>
-            <dd>Get native property value.</dd>
-            <dt>
-              <div class="m-doc-template">template &lt;<span class="m-doc-template-params"><span class="m-doc-template-param">class T</span></span>&gt;</div>
-              <span class="m-doc-wrap-bumper">auto <a class="m-doc" href="class_ase_1_1_custom_data_container.html#a526b8883a8b0fe2457dc9a9751c2208e">has_custom_data</a>(</span><span class="m-doc-wrap"><a class="m-doc" href="class_ase_1_1_custom_data_key.html">CustomDataKey</a>&lt;T&gt;* key) const -&gt; bool</span>
-            </dt>
-            <dd>Retrieve wether contents of the custom keyed data member exists.</dd>
-            <dt>
-              <span class="m-doc-wrap-bumper">auto <a class="m-doc" href="class_ase_1_1_gadget.html#a35445e0c979a2147f10bb6619d8f2a71">list_properties</a>(</span><span class="m-doc-wrap">) -&gt; <a class="m-doc" href="namespace_ase.html#a444d3b63203b49bc45b14c9d0761453b">StringS</a> <span class="m-label m-flat m-warning">virtual</span></span>
-            </dt>
-            <dd>List all property identifiers.</dd>
-            <dt>
-              <div class="m-doc-template">template &lt;<span class="m-doc-template-params"><span class="m-doc-template-param">class T</span></span>&gt;</div>
-              <span class="m-doc-wrap-bumper">void <a class="m-doc" href="class_ase_1_1_custom_data_container.html#acd524fb742ea2f58bb68878a7552b3d0">set_custom_data</a>(</span><span class="m-doc-wrap"><a class="m-doc" href="class_ase_1_1_custom_data_key.html">CustomDataKey</a>&lt;T&gt;* key,
-              T data)</span>
-            </dt>
-            <dd>Assign data to the custom keyed data member, deletes any previously set data.</dd>
-            <dt id="a6a041c6f97997888622adb3fa4ad8d8e">
-              <span class="m-doc-wrap-bumper">auto <a class="m-doc-self" href="#a6a041c6f97997888622adb3fa4ad8d8e">set_data</a>(</span><span class="m-doc-wrap">const <a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a>&amp; key,
-              const <a class="m-doc" href="struct_ase_1_1_value.html">Value</a>&amp; v) -&gt; bool <span class="m-label m-flat m-warning">override</span></span>
-            </dt>
-            <dd>Assign session data, prefix ephemerals with '_'.</dd>
-            <dt>
-              <span class="m-doc-wrap-bumper">auto <a class="m-doc" href="class_ase_1_1_gadget.html#ab4fb4509a4a61b4258d0210b50cb30a7">set_value</a>(</span><span class="m-doc-wrap"><a class="m-doc" href="namespace_ase.html#abcfad6508b790c2bc6361655cf199a9a">String</a> ident,
-              const <a class="m-doc" href="struct_ase_1_1_value.html">Value</a>&amp; v) -&gt; bool</span>
-            </dt>
-            <dd></dd>
-          </dl>
-        </section>
-        <section id="pro-methods">
-          <h2><a href="#pro-methods">Protected functions</a></h2>
-          <dl class="m-doc">
-            <dt id="a82d3365363e933c43a3ea8474b541978">
-              <span class="m-doc-wrap-bumper">void <a class="m-doc-self" href="#a82d3365363e933c43a3ea8474b541978">serialize</a>(</span><span class="m-doc-wrap"><a class="m-doc" href="class_ase_1_1_writ_node.html">WritNode</a>&amp; xs) <span class="m-label m-flat m-warning">override</span></span>
-            </dt>
-            <dd>Serialize members and childern.</dd>
-          </dl>
-        </section>
+        <p>Map <a class="m-doc-external poxy-cppreference poxy-external" href="http://en.cppreference.com/w/cpp/string/basic_string.html" target="_blank">std::<wbr/>string</a> &lt;-&gt; uint IDs, thread safe.</p>
       </div>
     </div>
   </div>
