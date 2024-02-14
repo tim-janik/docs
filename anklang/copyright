@@ -718,6 +718,7 @@ License: CC-PDDC
 Files: devices/freeverb/freeverb.cc
 Copyright:
   Copyright (C) 2022-2024 Tim Janik
+  Copyright (C) 2024 Stefan Westerfeld
   Copyright (C) 2020 Tim Janik
 License: MPL-2.0
 
