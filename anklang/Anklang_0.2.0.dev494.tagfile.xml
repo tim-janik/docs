@@ -7372,10 +7372,10 @@
       <arglist>() const</arglist>
     </member>
     <member kind="variable">
-      <type>int</type>
+      <type>uint</type>
       <name>frame</name>
       <anchorfile>struct_ase_1_1_midi_event.html</anchorfile>
-      <anchor>aed14fa1d4aa87dc4fda1c21c32683d9a</anchor>
+      <anchor>ac0cb4d5df4b8228366c1d4fda5178774</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">

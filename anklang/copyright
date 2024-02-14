@@ -95,7 +95,7 @@ License: MPL-2.0
 Files: ase/clapplugin.cc
 Copyright:
   Copyright (C) 2022-2024 Tim Janik
-  Copyright (C) 2023 Stefan Westerfeld
+  Copyright (C) 2023-2024 Stefan Westerfeld
 License: MPL-2.0
 
 Files: ase/clapplugin.hh
@@ -335,15 +335,21 @@ Copyright:
 License: MPL-2.0
 
 Files: ase/midievent.cc
-Copyright: Copyright (C) 2021-2023 Tim Janik
+Copyright:
+  Copyright (C) 2024 Stefan Westerfeld
+  Copyright (C) 2021-2023 Tim Janik
 License: MPL-2.0
 
 Files: ase/midievent.hh
-Copyright: Copyright (C) 2021-2023 Tim Janik
+Copyright:
+  Copyright (C) 2024 Stefan Westerfeld
+  Copyright (C) 2021-2023 Tim Janik
 License: MPL-2.0
 
 Files: ase/midilib.cc
-Copyright: Copyright (C) 2021-2023 Tim Janik
+Copyright:
+  Copyright (C) 2024 Stefan Westerfeld
+  Copyright (C) 2021-2023 Tim Janik
 License: MPL-2.0
 
 Files: ase/midilib.hh
@@ -643,7 +649,7 @@ License: MPL-2.0
 Files: devices/blepsynth/blepsynth.cc
 Copyright:
   Copyright (C) 2020-2024 Tim Janik
-  Copyright (C) 2022-2023 Stefan Westerfeld
+  Copyright (C) 2022-2024 Stefan Westerfeld
   Copyright (C) 2020 Stefan Westerfeld
 License: MPL-2.0
 
@@ -744,8 +750,8 @@ License: MPL-2.0
 
 Files: devices/liquidsfz/liquidsfz.cc
 Copyright:
+  Copyright (C) 2022-2024 Stefan Westerfeld
   Copyright (C) 2023-2024 Tim Janik
-  Copyright (C) 2022-2023 Stefan Westerfeld
 License: MPL-2.0
 
 Files: devices/saturation/Makefile.mk
@@ -756,8 +762,8 @@ License: MPL-2.0
 
 Files: devices/saturation/saturation.cc
 Copyright:
+  Copyright (C) 2023-2024 Stefan Westerfeld
   Copyright (C) 2024 Tim Janik
-  Copyright (C) 2023 Stefan Westerfeld
 License: MPL-2.0
 
 Files: devices/saturation/saturationdsp.hh
