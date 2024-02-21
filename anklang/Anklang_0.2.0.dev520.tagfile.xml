@@ -527,6 +527,13 @@
       <arglist>(const char *msg, const char *file, int line, const char *func) noexcept</arglist>
     </member>
     <member kind="function">
+      <type>std::string</type>
+      <name>backtrace_command</name>
+      <anchorfile>namespace_ase.html</anchorfile>
+      <anchor>a8fc53e0cb2ff6032bc8641ef389dfd12</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
       <type>constexpr bool</type>
       <name>constexpr_equals</name>
       <anchorfile>namespace_ase.html</anchorfile>
@@ -3119,16 +3126,16 @@
     <namespace>Ase</namespace>
     <member kind="function">
       <type>std::string</type>
-      <name>string_from_unicode</name>
+      <name>utf8encode</name>
       <anchorfile>namespace_ase.html</anchorfile>
-      <anchor>a281b2d33ab9b2cc6e1859b0dac02a214</anchor>
+      <anchor>a2fb0596683d3154eb5db404e96ea6431</anchor>
       <arglist>(const std::vector&lt; uint32_t &gt; &amp;codepoints)</arglist>
     </member>
     <member kind="function">
       <type>std::string</type>
-      <name>string_from_unicode</name>
+      <name>utf8encode</name>
       <anchorfile>namespace_ase.html</anchorfile>
-      <anchor>a8056a2fbbef76c711165491bdd11e16b</anchor>
+      <anchor>a1ba73aec2d3c6e127079c0620dfb5963</anchor>
       <arglist>(const uint32_t *codepoints, size_t n_codepoints)</arglist>
     </member>
     <member kind="function">
@@ -3214,6 +3221,34 @@
       <anchorfile>namespace_ase.html</anchorfile>
       <anchor>a2a79e07a7fb3efe31c346e6725a2bc94</anchor>
       <arglist>(uint32_t u)</arglist>
+    </member>
+    <member kind="function">
+      <type>std::string</type>
+      <name>encodefs</name>
+      <anchorfile>namespace_ase.html</anchorfile>
+      <anchor>ae3169253963dfd5c1d938880fc6a458a</anchor>
+      <arglist>(const std::string &amp;fschars)</arglist>
+    </member>
+    <member kind="function">
+      <type>std::string</type>
+      <name>decodefs</name>
+      <anchorfile>namespace_ase.html</anchorfile>
+      <anchor>a786b0acbfcf566f63c75aade3907036e</anchor>
+      <arglist>(const std::string &amp;utf8str)</arglist>
+    </member>
+    <member kind="function">
+      <type>std::string</type>
+      <name>displayfs</name>
+      <anchorfile>namespace_ase.html</anchorfile>
+      <anchor>ab413c037692fbaf8ab750518bc940ac9</anchor>
+      <arglist>(const std::string &amp;utf8str)</arglist>
+    </member>
+    <member kind="function">
+      <type>std::vector&lt; uint32_t &gt;</type>
+      <name>utf8decode</name>
+      <anchorfile>namespace_ase.html</anchorfile>
+      <anchor>aec909a6d002c76ef214f0b97325c55c4</anchor>
+      <arglist>(const std::string &amp;utf8str)</arglist>
     </member>
   </compound>
   <compound kind="file">
@@ -3630,6 +3665,11 @@
     <name>startup.js</name>
     <path>/cirun/poxy/ui/</path>
     <filename>startup_8js.html</filename>
+  </compound>
+  <compound kind="file">
+    <name>strings.js</name>
+    <path>/cirun/poxy/ui/</path>
+    <filename>strings_8js.html</filename>
   </compound>
   <compound kind="file">
     <name>util.js</name>
@@ -8661,8 +8701,8 @@
       <type>virtual Error</type>
       <name>save_project</name>
       <anchorfile>class_ase_1_1_project.html</anchorfile>
-      <anchor>a2e55cddaeafad461f5451b31e8f874c5</anchor>
-      <arglist>(const String &amp;filename, bool collect)=0</arglist>
+      <anchor>a055f0f6948865865a63b782b7efa9c23</anchor>
+      <arglist>(const String &amp;utf8filename, bool collect)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual String</type>
@@ -8675,8 +8715,8 @@
       <type>virtual Error</type>
       <name>load_project</name>
       <anchorfile>class_ase_1_1_project.html</anchorfile>
-      <anchor>a6058261e111fb4db8846f2a59e8cddea</anchor>
-      <arglist>(const String &amp;filename)=0</arglist>
+      <anchor>ad56e1ed890321e1fb9194c9cab59edbc</anchor>
+      <arglist>(const String &amp;utf8filename)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual TelemetryFieldS</type>
@@ -9325,15 +9365,15 @@
       <type>virtual void</type>
       <name>assign</name>
       <anchorfile>class_ase_1_1_resource_crawler.html</anchorfile>
-      <anchor>a24b652c55ccf5939068f216f12b2c78b</anchor>
-      <arglist>(const String &amp;path)=0</arglist>
+      <anchor>a8f973d659cd4c0f6309ac39fa72763d3</anchor>
+      <arglist>(const String &amp;utf8path)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
-      <type>virtual String</type>
+      <type>virtual Resource</type>
       <name>canonify</name>
       <anchorfile>class_ase_1_1_resource_crawler.html</anchorfile>
-      <anchor>a415c16ba8d6e03405188258be4dbaa62</anchor>
-      <arglist>(const String &amp;cwd, const String &amp;fragment, bool constraindir, bool constrainfile)=0</arglist>
+      <anchor>a9a5cb0f10087ee29c6e204ef0ccf05af</anchor>
+      <arglist>(const String &amp;utf8cwd, const String &amp;utf8fragment, bool constraindir, bool constrainfile)=0</arglist>
     </member>
   </compound>
   <compound kind="struct">
@@ -11372,6 +11412,13 @@
       <arglist>(const char *mangled_identifier) noexcept</arglist>
     </member>
     <member kind="function">
+      <type>std::string</type>
+      <name>backtrace_command</name>
+      <anchorfile>namespace_ase.html</anchorfile>
+      <anchor>a8fc53e0cb2ff6032bc8641ef389dfd12</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
       <type>void</type>
       <name>assertion_fatal</name>
       <anchorfile>namespace_ase.html</anchorfile>
@@ -12695,6 +12742,27 @@
       <arglist>(const char *format, const Args &amp;...args)</arglist>
     </member>
     <member kind="function">
+      <type>std::string</type>
+      <name>encodefs</name>
+      <anchorfile>namespace_ase.html</anchorfile>
+      <anchor>ae3169253963dfd5c1d938880fc6a458a</anchor>
+      <arglist>(const std::string &amp;fschars)</arglist>
+    </member>
+    <member kind="function">
+      <type>std::string</type>
+      <name>decodefs</name>
+      <anchorfile>namespace_ase.html</anchorfile>
+      <anchor>a786b0acbfcf566f63c75aade3907036e</anchor>
+      <arglist>(const std::string &amp;utf8str)</arglist>
+    </member>
+    <member kind="function">
+      <type>std::string</type>
+      <name>displayfs</name>
+      <anchorfile>namespace_ase.html</anchorfile>
+      <anchor>ab413c037692fbaf8ab750518bc940ac9</anchor>
+      <arglist>(const std::string &amp;utf8str)</arglist>
+    </member>
+    <member kind="function">
       <type>size_t</type>
       <name>utf8len</name>
       <anchorfile>namespace_ase.html</anchorfile>
@@ -12707,6 +12775,13 @@
       <anchorfile>namespace_ase.html</anchorfile>
       <anchor>a98183669e6d8ce9fd8bf62cb8a1feeb4</anchor>
       <arglist>(const std::string &amp;str)</arglist>
+    </member>
+    <member kind="function">
+      <type>std::vector&lt; uint32_t &gt;</type>
+      <name>utf8decode</name>
+      <anchorfile>namespace_ase.html</anchorfile>
+      <anchor>aec909a6d002c76ef214f0b97325c55c4</anchor>
+      <arglist>(const std::string &amp;utf8str)</arglist>
     </member>
     <member kind="function">
       <type>size_t</type>
@@ -12724,16 +12799,16 @@
     </member>
     <member kind="function">
       <type>std::string</type>
-      <name>string_from_unicode</name>
+      <name>utf8encode</name>
       <anchorfile>namespace_ase.html</anchorfile>
-      <anchor>a8056a2fbbef76c711165491bdd11e16b</anchor>
+      <anchor>a1ba73aec2d3c6e127079c0620dfb5963</anchor>
       <arglist>(const uint32_t *codepoints, size_t n_codepoints)</arglist>
     </member>
     <member kind="function">
       <type>std::string</type>
-      <name>string_from_unicode</name>
+      <name>utf8encode</name>
       <anchorfile>namespace_ase.html</anchorfile>
-      <anchor>a281b2d33ab9b2cc6e1859b0dac02a214</anchor>
+      <anchor>a2fb0596683d3154eb5db404e96ea6431</anchor>
       <arglist>(const std::vector&lt; uint32_t &gt; &amp;codepoints)</arglist>
     </member>
     <member kind="function">

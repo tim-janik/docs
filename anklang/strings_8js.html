@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en"><head>
   <meta charset="utf-8"/>
-  <title>ase/datautils.hh file | Anklang 0.2.0.dev520 Anklang Programming Reference</title>
+  <title>ui/strings.js file | Anklang 0.2.0.dev520 Anklang Programming Reference</title>
   <link href="favicon.svg" rel="icon" type="image/svg+xml"/>
   <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
   <meta content="#cb4b16" name="theme-color"/>
@@ -22,7 +22,7 @@
   <meta content="Poxy v0.16.0" name="generator"/>
   <meta content="strict-origin-when-cross-origin" name="referrer"/>
 </head>
-<body class="poxy-has-toc">
+<body>
 <header><nav id="navigation">
   <div class="m-container">
     <div class="m-row">
@@ -59,71 +59,45 @@
     <div class="m-row">
       <div class="m-col-l-10 m-push-l-1">
         <h1>
-          <span class="m-breadcrumb"><a href="dir_348db03b1ba8af29dd5c640acd69ada0.html">ase</a>/</span>datautils.hh <span class="m-thin">file</span>
+          <span class="m-breadcrumb"><a href="dir_1788f8309b1a812dcb800a185471cf6c.html">ui</a>/</span>strings.js <span class="m-thin">file</span>
         </h1>
-        <nav class="m-block m-default poxy-toc" id="poxy-toc">
-          <h3>Contents</h3>
-          <ul>
-            <li>
-              Reference
-              <ul>
-                <li><a href="#namespaces">Namespaces</a></li>
-                <li><a href="#func-members">Functions</a></li>
-                <li><a href="#var-members">Variables</a></li>
-              </ul>
-            </li>
-          </ul>
-        </nav>
-<p><br/></p>
-        <section id="namespaces">
-          <h2><a href="#namespaces">Namespaces</a></h2>
-          <dl class="m-doc">
-            <dt>namespace <a class="m-doc" href="namespace_ase.html">Ase</a></dt>
-            <dd>The Anklang C++ API namespace.</dd>
-          </dl>
-        </section>
-        <section id="func-members">
-          <h2><a href="#func-members">Functions</a></h2>
-          <dl class="m-doc">
-            <dt>
-              <span class="m-doc-wrap-bumper">void <a class="m-doc" href="namespace_ase.html#af14c3702e1c5fc773cc2ef8b5f567c6e">fast_copy</a>(</span><span class="m-doc-wrap"><a class="m-doc poxy-injected poxy-external poxy-cppreference" href="https://en.cppreference.com/w/cpp/types/size_t" target="_blank">size_t</a> n,
-              float* d,
-              const float* s)</span>
-            </dt>
-            <dd>Copy a block of floats.</dd>
-            <dt>
-              <span class="m-doc-wrap-bumper">void <a class="m-doc" href="namespace_ase.html#aabc82555a0b73f673ccee2ea3dbaf1cb">fast_copy</a>(</span><span class="m-doc-wrap"><a class="m-doc poxy-injected poxy-external poxy-cppreference" href="https://en.cppreference.com/w/cpp/types/size_t" target="_blank">size_t</a> n,
-              <a class="m-doc poxy-injected poxy-external poxy-cppreference" href="https://en.cppreference.com/w/cpp/types/integer" target="_blank">uint32_t</a>* d,
-              const <a class="m-doc poxy-injected poxy-external poxy-cppreference" href="https://en.cppreference.com/w/cpp/types/integer" target="_blank">uint32_t</a>* s)</span>
-            </dt>
-            <dd>Copy a block of integers.</dd>
-            <dt>
-              <span class="m-doc-wrap-bumper">void <a class="m-doc" href="namespace_ase.html#a1cc46db2ab07dd365ae5899ded6952c3">floatfill</a>(</span><span class="m-doc-wrap">float* dst,
-              float f,
-              <a class="m-doc poxy-injected poxy-external poxy-cppreference" href="https://en.cppreference.com/w/cpp/types/size_t" target="_blank">size_t</a> n)</span>
-            </dt>
-            <dd>Fill <code>n</code> values of <code>dst</code> with <code>f</code>.</dd>
-            <dt>
-              <span class="m-doc-wrap-bumper">auto <a class="m-doc" href="namespace_ase.html#a9041e0025b73f9ad84b70ef59ba8f57d">square_max</a>(</span><span class="m-doc-wrap">uint n_values,
-              const float* ivalues) -&gt; float</span>
-            </dt>
-            <dd>Find the maximum suqared value in a block of floats.</dd>
-            <dt>
-              <span class="m-doc-wrap-bumper">auto <a class="m-doc" href="namespace_ase.html#a1c5608b4ee5a105527f3a6ddbffdd47e">square_sum</a>(</span><span class="m-doc-wrap">uint n_values,
-              const float* ivalues) -&gt; float</span>
-            </dt>
-            <dd>Calculate suqare sum of a block of floats.</dd>
-          </dl>
-        </section>
-        <section id="var-members">
-          <h2><a href="#var-members">Variables</a></h2>
-          <dl class="m-doc">
-            <dt>
-              const uint <a class="m-doc" href="namespace_ase.html#a0b280adca55537bf1c7e64f4c5cb84fe">AUDIO_BLOCK_FLOAT_ZEROS_SIZE</a> <span class="m-label m-flat m-primary">constexpr</span>
-            </dt>
-            <dd>Maximum number of values in the const_float_zeros block.</dd>
-          </dl>
-        </section>
+<section class="level3" id="functions">
+<h3>Functions</h3>
+<dl>
+<dt><span data-4search="ui/strings.js:hex;func" id="hex"><strong><code>hex</code></strong></span>
+<code>(</code><em>s, prefix</em><code>)</code></dt>
+<dd>
+Convert bytes in <code>s</code> into 2-digit hex representation.
+</dd>
+<dt><span data-4search="ui/strings.js:displayfs;func" id="displayfs"><strong><code>displayfs</code></strong></span>
+<code>(</code><em>utf16pua</em><code>)</code></dt>
+<dd>
+Map a UTF-16 encoded filename with PUA byte encodings to visible
+characters.
+</dd>
+<dt><span data-4search="ui/strings.js:basename;func" id="basename"><strong><code>basename</code></strong></span>
+<code>(</code><em>path</em><code>)</code></dt>
+<dd>
+Strip the directory parts of a <code>path</code>.
+</dd>
+<dt><span data-4search="ui/strings.js:displaybasename;func" id="displaybasename"><strong><code>displaybasename</code></strong></span>
+<code>(</code><em>path</em><code>)</code></dt>
+<dd>
+Strip the directory parts of displayfs (<code>path</code>).
+</dd>
+<dt><span data-4search="ui/strings.js:dirname;func" id="dirname"><strong><code>dirname</code></strong></span>
+<code>(</code><em>path</em><code>)</code></dt>
+<dd>
+Strip basename and return only directory parts of a <code>path</code>.
+</dd>
+<dt><span data-4search="ui/strings.js:displaydirname;func" id="displaydirname"><strong><code>displaydirname</code></strong></span>
+<code>(</code><em>path</em><code>)</code></dt>
+<dd>
+Strip basename and return only directory parts of a displayfs
+(<code>path</code>).
+</dd>
+</dl>
+</section>
       </div>
     </div>
   </div>

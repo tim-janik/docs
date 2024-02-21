@@ -423,14 +423,16 @@ data-4search="ui/script.js:ScriptHost;section">ScriptHost</span></a>
 class="toc-section-number">7.3.1</span> Functions</a></li>
 <li><a href="#functions-11" id="toc-functions-11"><span
 class="toc-section-number">7.3.2</span> Functions</a></li>
-<li><a href="#pointerdrag-class" id="toc-pointerdrag-class"><span
-class="toc-section-number">7.3.3</span> PointerDrag class</a></li>
-<li><a href="#vue_mixins-class" id="toc-vue_mixins-class"><span
-class="toc-section-number">7.3.4</span> vue_mixins class</a></li>
-<li><a href="#constants-4" id="toc-constants-4"><span
-class="toc-section-number">7.3.5</span> Constants</a></li>
 <li><a href="#functions-12" id="toc-functions-12"><span
-class="toc-section-number">7.3.6</span> Functions</a></li>
+class="toc-section-number">7.3.3</span> Functions</a></li>
+<li><a href="#pointerdrag-class" id="toc-pointerdrag-class"><span
+class="toc-section-number">7.3.4</span> PointerDrag class</a></li>
+<li><a href="#vue_mixins-class" id="toc-vue_mixins-class"><span
+class="toc-section-number">7.3.5</span> vue_mixins class</a></li>
+<li><a href="#constants-4" id="toc-constants-4"><span
+class="toc-section-number">7.3.6</span> Constants</a></li>
+<li><a href="#functions-13" id="toc-functions-13"><span
+class="toc-section-number">7.3.7</span> Functions</a></li>
 </ul></li>
 <li><a href="#asecachingwrapper" id="toc-asecachingwrapper"><span
 class="toc-section-number">7.4</span> <span id="AseCachingWrapper"
@@ -441,9 +443,9 @@ id="toc-asecachingwrapper-class"><span
 class="toc-section-number">7.4.1</span> AseCachingWrapper class</a></li>
 <li><a href="#constants-5" id="toc-constants-5"><span
 class="toc-section-number">7.4.2</span> Constants</a></li>
-<li><a href="#functions-13" id="toc-functions-13"><span
-class="toc-section-number">7.4.3</span> Functions</a></li>
 <li><a href="#functions-14" id="toc-functions-14"><span
+class="toc-section-number">7.4.3</span> Functions</a></li>
+<li><a href="#functions-15" id="toc-functions-15"><span
 class="toc-section-number">7.4.4</span> Functions</a></li>
 </ul></li>
 </ul></li>
@@ -2493,8 +2495,52 @@ Jsonipc handler for IDs of GC-ed objects.
 </dd>
 </dl>
 </section>
-<section id="pointerdrag-class" class="level3" data-number="7.3.3">
+<section id="functions-12" class="level3" data-number="7.3.3">
 <h3 data-number="7.3.3"><span class="header-section-number">7.3.3</span>
+Functions</h3>
+<dl>
+<dt><span id="hex"
+data-4search="ui/strings.js:hex;func"><strong><code>hex</code></strong></span>
+<code>(</code><em>s, prefix</em><code>)</code></dt>
+<dd>
+Convert bytes in <code>s</code> into 2-digit hex representation.
+</dd>
+<dt><span id="displayfs"
+data-4search="ui/strings.js:displayfs;func"><strong><code>displayfs</code></strong></span>
+<code>(</code><em>utf16pua</em><code>)</code></dt>
+<dd>
+Map a UTF-16 encoded filename with PUA byte encodings to visible
+characters.
+</dd>
+<dt><span id="basename"
+data-4search="ui/strings.js:basename;func"><strong><code>basename</code></strong></span>
+<code>(</code><em>path</em><code>)</code></dt>
+<dd>
+Strip the directory parts of a <code>path</code>.
+</dd>
+<dt><span id="displaybasename"
+data-4search="ui/strings.js:displaybasename;func"><strong><code>displaybasename</code></strong></span>
+<code>(</code><em>path</em><code>)</code></dt>
+<dd>
+Strip the directory parts of displayfs (<code>path</code>).
+</dd>
+<dt><span id="dirname"
+data-4search="ui/strings.js:dirname;func"><strong><code>dirname</code></strong></span>
+<code>(</code><em>path</em><code>)</code></dt>
+<dd>
+Strip basename and return only directory parts of a <code>path</code>.
+</dd>
+<dt><span id="displaydirname"
+data-4search="ui/strings.js:displaydirname;func"><strong><code>displaydirname</code></strong></span>
+<code>(</code><em>path</em><code>)</code></dt>
+<dd>
+Strip basename and return only directory parts of a displayfs
+(<code>path</code>).
+</dd>
+</dl>
+</section>
+<section id="pointerdrag-class" class="level3" data-number="7.3.4">
+<h3 data-number="7.3.4"><span class="header-section-number">7.3.4</span>
 PointerDrag class</h3>
 <dl>
 <dt><em>class</em> <span id="PointerDrag"
@@ -2505,8 +2551,8 @@ Meld all pointer drag handling functions into a single
 </dd>
 </dl>
 </section>
-<section id="vue_mixins-class" class="level3" data-number="7.3.4">
-<h3 data-number="7.3.4"><span class="header-section-number">7.3.4</span>
+<section id="vue_mixins-class" class="level3" data-number="7.3.5">
+<h3 data-number="7.3.5"><span class="header-section-number">7.3.5</span>
 vue_mixins class</h3>
 <dl>
 <dt><em>class</em> <span id="vue_mixins"
@@ -2559,8 +2605,8 @@ is removed.</li>
 </dd>
 </dl>
 </section>
-<section id="constants-4" class="level3" data-number="7.3.5">
-<h3 data-number="7.3.5"><span class="header-section-number">7.3.5</span>
+<section id="constants-4" class="level3" data-number="7.3.6">
+<h3 data-number="7.3.6"><span class="header-section-number">7.3.6</span>
 Constants</h3>
 <dl>
 <dt><span id="ResizeObserver"
@@ -2576,8 +2622,8 @@ handlers against closure.
 </dd>
 </dl>
 </section>
-<section id="functions-12" class="level3" data-number="7.3.6">
-<h3 data-number="7.3.6"><span class="header-section-number">7.3.6</span>
+<section id="functions-13" class="level3" data-number="7.3.7">
+<h3 data-number="7.3.7"><span class="header-section-number">7.3.7</span>
 Functions</h3>
 <dl>
 <dt><span id="now"
@@ -3289,7 +3335,7 @@ FinalizationRegistry to call cleanup callback upon object destruction.
 </dd>
 </dl>
 </section>
-<section id="functions-13" class="level3" data-number="7.4.3">
+<section id="functions-14" class="level3" data-number="7.4.3">
 <h3 data-number="7.4.3"><span class="header-section-number">7.4.3</span>
 Functions</h3>
 <dl>
@@ -3317,7 +3363,7 @@ changes run <code>notifier()</code>.
 </dd>
 </dl>
 </section>
-<section id="functions-14" class="level3" data-number="7.4.4">
+<section id="functions-15" class="level3" data-number="7.4.4">
 <h3 data-number="7.4.4"><span class="header-section-number">7.4.4</span>
 Functions</h3>
 <dl>
