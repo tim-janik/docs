@@ -1338,7 +1338,7 @@ Copyright: Copyright (C) 2020-2024 Tim Janik
 License: MPL-2.0
 
 Files: ui/global.scss
-Copyright: Copyright (C) 2023 Tim Janik
+Copyright: Copyright (C) 2023-2024 Tim Janik
 License: MPL-2.0
 
 Files: ui/host.js
@@ -1371,10 +1371,6 @@ Files: ui/mouse.js
 Copyright: Copyright (C) 2024 Tim Janik
 License: MPL-2.0
 
-Files: ui/normalize.scss
-Copyright: Copyright (C) 2023 Tim Janik
-License: MIT
-
 Files: ui/palette.scss
 Copyright: Copyright (C) 2023 Tim Janik
 License: MPL-2.0
@@ -1401,6 +1397,10 @@ License: MPL-2.0
 
 Files: ui/stylelintrc.cjs
 Copyright: Copyright (C) 2023 Tim Janik
+License: MPL-2.0
+
+Files: ui/tailwind.scss
+Copyright: Copyright (C) 2024 Tim Janik
 License: MPL-2.0
 
 Files: ui/theme.scss
@@ -1452,11 +1452,6 @@ License: CC0-1.0
  Creative Commons Zero v1.0 Universal
  https://spdx.org/licenses/CC0-1.0.html
  https://creativecommons.org/publicdomain/zero/1.0/legalcode
-
-License: MIT
- MIT License
- https://spdx.org/licenses/MIT.html
- https://opensource.org/licenses/MIT
 
 License: MPL-2.0
  Mozilla Public License 2.0
