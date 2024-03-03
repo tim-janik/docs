@@ -1290,7 +1290,7 @@ Copyright:
 License: MPL-2.0
 
 Files: ui/colors.js
-Copyright: Copyright (C) 2022-2023 Tim Janik
+Copyright: Copyright (C) 2022-2024 Tim Janik
 License: MPL-2.0
 
 Files: ui/cursors/cross.svg
@@ -1376,7 +1376,7 @@ Copyright: Copyright (C) 2023 Tim Janik
 License: MPL-2.0
 
 Files: ui/postcss.js
-Copyright: Copyright (C) 2022-2023 Tim Janik
+Copyright: Copyright (C) 2022-2024 Tim Janik
 License: MPL-2.0
 
 Files: ui/script.js

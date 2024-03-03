@@ -23,6 +23,7 @@ Search.__extra_tokens = [
 {name:"ui/colors.js:zmod_assignop",typeName:"func",url:"colors_8js.html#zmod_assignop"},
 {name:"ui/colors.js:zmod",typeName:"func",url:"colors_8js.html#zmod"},
 {name:"ui/colors.js:zmod4",typeName:"func",url:"colors_8js.html#zmod4"},
+{name:"ui/colors.js:zcam4",typeName:"func",url:"colors_8js.html#zcam4"},
 {name:"ui/colors.js:zlerp",typeName:"func",url:"colors_8js.html#zlerp"},
 {name:"ui/colors.js:lgrey",typeName:"func",url:"colors_8js.html#lgrey"},
 {name:"ui/b/contextmenu.js:BContextMenu",typeName:"section",url:"contextmenu_8js.html#BContextMenu"},
