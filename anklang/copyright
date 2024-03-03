@@ -1221,12 +1221,14 @@ License: MPL-2.0
 
 Files: ui/b/piano-ctrl.js
 Copyright:
+  Copyright (C) 2023-2024 Stefan Westerfeld
   Copyright (C) 2020-2023 Tim Janik
-  Copyright (C) 2023 Stefan Westerfeld
 License: MPL-2.0
 
 Files: ui/b/pianoroll.js
-Copyright: Copyright (C) 2022-2024 Tim Janik
+Copyright:
+  Copyright (C) 2022-2024 Tim Janik
+  Copyright (C) 2024 Stefan Westerfeld
 License: MPL-2.0
 
 Files: ui/b/playcontrols.js
