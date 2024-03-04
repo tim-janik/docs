@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en"><head>
   <meta charset="utf-8"/>
-  <title>ase/signalmath.hh file | Anklang 0.2.0.dev641 Anklang Programming Reference</title>
+  <title>ui/dom.js file | Anklang 0.2.0.dev641 Anklang Programming Reference</title>
   <link href="favicon.svg" rel="icon" type="image/svg+xml"/>
   <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
   <meta content="#cb4b16" name="theme-color"/>
@@ -22,7 +22,7 @@
   <meta content="Poxy v0.16.0" name="generator"/>
   <meta content="strict-origin-when-cross-origin" name="referrer"/>
 </head>
-<body class="poxy-has-toc">
+<body>
 <header><nav id="navigation">
   <div class="m-container">
     <div class="m-row">
@@ -59,135 +59,35 @@
     <div class="m-row">
       <div class="m-col-l-10 m-push-l-1">
         <h1>
-          <span class="m-breadcrumb"><a href="dir_348db03b1ba8af29dd5c640acd69ada0.html">ase</a>/</span>signalmath.hh <span class="m-thin">file</span>
+          <span class="m-breadcrumb"><a href="dir_1788f8309b1a812dcb800a185471cf6c.html">ui</a>/</span>dom.js <span class="m-thin">file</span>
         </h1>
-        <nav class="m-block m-default poxy-toc" id="poxy-toc">
-          <h3>Contents</h3>
-          <ul>
-            <li>
-              Reference
-              <ul>
-                <li><a href="#namespaces">Namespaces</a></li>
-                <li><a href="#nested-classes">Classes</a></li>
-                <li><a href="#func-members">Functions</a></li>
-              </ul>
-            </li>
-          </ul>
-        </nav>
-<p><br/></p>
-        <section id="namespaces">
-          <h2><a href="#namespaces">Namespaces</a></h2>
-          <dl class="m-doc">
-            <dt>namespace <a class="m-doc" href="namespace_ase.html">Ase</a></dt>
-            <dd>The Anklang C++ API namespace.</dd>
-          </dl>
-        </section>
-        <section id="nested-classes">
-          <h2><a href="#nested-classes">Classes</a></h2>
-          <dl class="m-doc">
-            <dt>
-              struct <a class="m-doc" href="struct_ase_1_1_logscale.html">Ase::Logscale</a>
-            </dt>
-            <dd>Logarithmically map (and invert) a range onto 0…+1.</dd>
-          </dl>
-        </section>
-        <section id="func-members">
-          <h2><a href="#func-members">Functions</a></h2>
-          <dl class="m-doc">
-            <dt>
-              <div class="m-doc-template">template &lt;<span class="m-doc-template-params"><span class="m-doc-template-param">typename Float</span></span>&gt;</div>
-              <span class="m-doc-wrap-bumper">auto <a class="m-doc" href="namespace_ase.html#ae7a6fac85ed40cddaa7e95194603661f">db2voltage</a>(</span><span class="m-doc-wrap">Float x) -&gt; Float</span>
-            </dt>
-            <dd>Convert Decibel to synthesizer value (Voltage).</dd>
-            <dt>
-              <div class="m-doc-template">template &lt;<span class="m-doc-template-params"><span class="m-doc-template-param">typename Float</span></span>&gt;</div>
-              <span class="m-doc-wrap-bumper">auto <a class="m-doc" href="namespace_ase.html#aaf9ec17dfbef9df1f1e1530f60b49772">db2voltage</a>(</span><span class="m-doc-wrap">Float x) -&gt; ASE_CONST Float</span>
-            </dt>
-            <dd>Convert Decibel to synthesizer value (Voltage).</dd>
-            <dt>
-              <div class="m-doc-template">template &lt;<span class="m-doc-template-params"><span class="m-doc-template-param">typename Float</span></span>&gt;</div>
-              <span class="m-doc-wrap-bumper">auto <a class="m-doc" href="namespace_ase.html#a6eab1298334dc6fd76e031d4310b040e">db_changed</a>(</span><span class="m-doc-wrap">Float a,
-              Float b) -&gt; Float</span>
-            </dt>
-            <dd>Determine a significant Decibel change.</dd>
-            <dt>
-              <div class="m-doc-template">template &lt;<span class="m-doc-template-params"><span class="m-doc-template-param">typename Float</span></span>&gt;</div>
-              <span class="m-doc-wrap-bumper">auto <a class="m-doc" href="namespace_ase.html#a21cfa7f74638056e0d16c6ed277fd56c">db_changed</a>(</span><span class="m-doc-wrap">Float a,
-              Float b) -&gt; ASE_CONST Float</span>
-            </dt>
-            <dd>Determine a significant Decibel change.</dd>
-            <dt>
-              <span class="m-doc-wrap-bumper">auto <a class="m-doc" href="namespace_ase.html#a05c168b254058b3d3fc3a4222221a61b">fast_db2voltage</a>(</span><span class="m-doc-wrap">float x) -&gt; float</span>
-            </dt>
-            <dd>Float precision variant of db2voltage using <a class="m-doc" href="namespace_ase.html#a6b62ab47110aa30b63e57c031a32600f">fast_<wbr/>exp2()</a>.</dd>
-            <dt>
-              <span class="m-doc-wrap-bumper">auto <a class="m-doc" href="namespace_ase.html#a7231bdf9bff23de61c171ba8b406c35c">fast_hz2voltage</a>(</span><span class="m-doc-wrap">float x) -&gt; float</span>
-            </dt>
-            <dd>Float precision variant of hz2voltage using <a class="m-doc" href="namespace_ase.html#ad8e7c995facbfcfd52c9d029faa59f36">fast_<wbr/>log2()</a>.</dd>
-            <dt>
-              <span class="m-doc-wrap-bumper">auto <a class="m-doc" href="namespace_ase.html#a1de0810d0502631404f16f055e20c6f6">fast_voltage2db</a>(</span><span class="m-doc-wrap">float x) -&gt; float</span>
-            </dt>
-            <dd>Float precision variant of voltage2db using <a class="m-doc" href="namespace_ase.html#ad8e7c995facbfcfd52c9d029faa59f36">fast_<wbr/>log2()</a>.</dd>
-            <dt>
-              <span class="m-doc-wrap-bumper">auto <a class="m-doc" href="namespace_ase.html#a1f59a72e6648644cf09fa73e713803f9">fast_voltage2hz</a>(</span><span class="m-doc-wrap">float x) -&gt; float</span>
-            </dt>
-            <dd>Float precision variant of voltage2hz using <a class="m-doc" href="namespace_ase.html#a6b62ab47110aa30b63e57c031a32600f">fast_<wbr/>exp2()</a>.</dd>
-            <dt>
-              <div class="m-doc-template">template &lt;<span class="m-doc-template-params"><span class="m-doc-template-param">typename Float</span></span>&gt;</div>
-              <span class="m-doc-wrap-bumper">auto <a class="m-doc" href="namespace_ase.html#a71465d516c173df412f6956a2600194b">hz2voltage</a>(</span><span class="m-doc-wrap">Float x) -&gt; Float</span>
-            </dt>
-            <dd>Convert Hertz to synthesizer value (Voltage).</dd>
-            <dt>
-              <div class="m-doc-template">template &lt;<span class="m-doc-template-params"><span class="m-doc-template-param">typename Float</span></span>&gt;</div>
-              <span class="m-doc-wrap-bumper">auto <a class="m-doc" href="namespace_ase.html#a736a99f33821c5a77f099e1efbf64ee1">hz2voltage</a>(</span><span class="m-doc-wrap">Float x) -&gt; ASE_CONST Float</span>
-            </dt>
-            <dd>Convert Hertz to synthesizer value (Voltage).</dd>
-            <dt>
-              <div class="m-doc-template">template &lt;<span class="m-doc-template-params"><span class="m-doc-template-param">typename Float</span></span>&gt;</div>
-              <span class="m-doc-wrap-bumper">auto <a class="m-doc" href="namespace_ase.html#adc07310efd92730d29d339c492798d5b">hz_changed</a>(</span><span class="m-doc-wrap">Float a,
-              Float b) -&gt; Float</span>
-            </dt>
-            <dd>Determine a significant frequency change (audible Hertz).</dd>
-            <dt>
-              <div class="m-doc-template">template &lt;<span class="m-doc-template-params"><span class="m-doc-template-param">typename Float</span></span>&gt;</div>
-              <span class="m-doc-wrap-bumper">auto <a class="m-doc" href="namespace_ase.html#a9f709308cbc3f71ca3dc5336152086fe">hz_changed</a>(</span><span class="m-doc-wrap">Float a,
-              Float b) -&gt; ASE_CONST Float</span>
-            </dt>
-            <dd>Determine a significant frequency change (audible Hertz).</dd>
-            <dt>
-              <div class="m-doc-template">template &lt;<span class="m-doc-template-params"><span class="m-doc-template-param">typename Float</span></span>&gt;</div>
-              <span class="m-doc-wrap-bumper">auto <a class="m-doc" href="namespace_ase.html#ae22215fe20252a0717082f4c793da4f3">voltage2db</a>(</span><span class="m-doc-wrap">Float x) -&gt; Float</span>
-            </dt>
-            <dd>Convert synthesizer value (Voltage) to Decibel.</dd>
-            <dt>
-              <div class="m-doc-template">template &lt;<span class="m-doc-template-params"><span class="m-doc-template-param">typename Float</span></span>&gt;</div>
-              <span class="m-doc-wrap-bumper">auto <a class="m-doc" href="namespace_ase.html#aca820783d6c6f799fe95370cba305e4c">voltage2db</a>(</span><span class="m-doc-wrap">Float x) -&gt; ASE_CONST Float</span>
-            </dt>
-            <dd>Convert synthesizer value (Voltage) to Decibel.</dd>
-            <dt>
-              <div class="m-doc-template">template &lt;<span class="m-doc-template-params"><span class="m-doc-template-param">typename Float</span></span>&gt;</div>
-              <span class="m-doc-wrap-bumper">auto <a class="m-doc" href="namespace_ase.html#a4ca5925a1c96faf96f0560de12869d1c">voltage2hz</a>(</span><span class="m-doc-wrap">Float x) -&gt; Float</span>
-            </dt>
-            <dd>Convert synthesizer value (Voltage) to Hertz.</dd>
-            <dt>
-              <div class="m-doc-template">template &lt;<span class="m-doc-template-params"><span class="m-doc-template-param">typename Float</span></span>&gt;</div>
-              <span class="m-doc-wrap-bumper">auto <a class="m-doc" href="namespace_ase.html#ac1c4ef3e01d17015cf9cf483a05ffb92">voltage2hz</a>(</span><span class="m-doc-wrap">Float x) -&gt; ASE_CONST Float</span>
-            </dt>
-            <dd>Convert synthesizer value (Voltage) to Hertz.</dd>
-            <dt>
-              <div class="m-doc-template">template &lt;<span class="m-doc-template-params"><span class="m-doc-template-param">typename Float</span></span>&gt;</div>
-              <span class="m-doc-wrap-bumper">auto <a class="m-doc" href="namespace_ase.html#ac4d103c11d35fe255e011e322f855d27">voltage_changed</a>(</span><span class="m-doc-wrap">Float a,
-              Float b) -&gt; Float</span>
-            </dt>
-            <dd>Determine a significant synthesizer value (Voltage) change.</dd>
-            <dt>
-              <div class="m-doc-template">template &lt;<span class="m-doc-template-params"><span class="m-doc-template-param">typename Float</span></span>&gt;</div>
-              <span class="m-doc-wrap-bumper">auto <a class="m-doc" href="namespace_ase.html#a87fb9da93f934cb8249570c02d237680">voltage_changed</a>(</span><span class="m-doc-wrap">Float a,
-              Float b) -&gt; ASE_CONST Float</span>
-            </dt>
-            <dd>Determine a significant synthesizer value (Voltage) change.</dd>
-          </dl>
-        </section>
+<section class="level3" id="functions">
+<h3>Functions</h3>
+<dl>
+<dt><span data-4search="ui/dom.js:get_uri;func" id="get_uri"><strong><code>get_uri</code></strong></span>
+<code>(</code><em>element</em><code>)</code></dt>
+<dd>
+Fetch URI from a DOM element, returns undefined if none is found (e.g.
+Number(0) is a valid URI).
+</dd>
+<dt><span data-4search="ui/dom.js:valid_uri;func" id="valid_uri"><strong><code>valid_uri</code></strong></span>
+<code>(</code><em>uri</em><code>)</code></dt>
+<dd>
+Check if URI is not undefined.
+</dd>
+<dt><span data-4search="ui/dom.js:has_uri;func" id="has_uri"><strong><code>has_uri</code></strong></span>
+<code>(</code><em>element</em><code>)</code></dt>
+<dd>
+Check if DOM element has valid URI.
+</dd>
+<dt><span data-4search="ui/dom.js:text_content;func" id="text_content"><strong><code>text_content</code></strong></span>
+<code>(</code><em>element, with_children</em><code>)</code></dt>
+<dd>
+Get <code>.textContent</code> with or without children from a DOM
+element.
+</dd>
+</dl>
+</section>
       </div>
     </div>
   </div>

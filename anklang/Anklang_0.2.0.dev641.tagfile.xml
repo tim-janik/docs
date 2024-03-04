@@ -3622,6 +3622,11 @@
     <filename>colors_8js.html</filename>
   </compound>
   <compound kind="file">
+    <name>dom.js</name>
+    <path>/cirun/poxy/ui/</path>
+    <filename>dom_8js.html</filename>
+  </compound>
+  <compound kind="file">
     <name>host.js</name>
     <path>/cirun/poxy/ui/</path>
     <filename>host_8js.html</filename>

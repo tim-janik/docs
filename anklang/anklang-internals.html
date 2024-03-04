@@ -137,9 +137,13 @@ Tree</a></li>
 id="toc-web-component-implementations"><span
 class="toc-section-number">2</span> Web Component Implementations</a>
 <ul>
+<li><a href="#guidelines-for-web-components"
+id="toc-guidelines-for-web-components"><span
+class="toc-section-number">2.1</span> Guidelines for Web
+Components</a></li>
 <li><a href="#legacy-vue-components"
 id="toc-legacy-vue-components"><span
-class="toc-section-number">2.1</span> Legacy Vue Components</a></li>
+class="toc-section-number">2.2</span> Legacy Vue Components</a></li>
 </ul></li>
 <li><a href="#ui-component-reference"
 id="toc-ui-component-reference"><span
@@ -199,6 +203,8 @@ class="toc-section-number">3.9.3</span> Events:</a></li>
 class="toc-section-number">3.9.4</span> Methods:</a></li>
 <li><a href="#bcontextmenu-class" id="toc-bcontextmenu-class"><span
 class="toc-section-number">3.9.5</span> BContextMenu class</a></li>
+<li><a href="#functions" id="toc-functions"><span
+class="toc-section-number">3.9.6</span> Functions</a></li>
 </ul></li>
 <li><a href="#databubbleimpl" id="toc-databubbleimpl"><span
 class="toc-section-number">3.10</span> <span id="DataBubbleImpl"
@@ -214,11 +220,11 @@ data-4search="ui/b/deviceeditor.js:BDeviceEditor;section">BDeviceEditor</span></
 <li><a href="#props-1" id="toc-props-1"><span
 class="toc-section-number">3.12</span> Props:</a>
 <ul>
-<li><a href="#functions" id="toc-functions"><span
+<li><a href="#functions-1" id="toc-functions-1"><span
 class="toc-section-number">3.12.1</span> Functions</a></li>
 <li><a href="#component-class" id="toc-component-class"><span
 class="toc-section-number">3.12.2</span> Component class</a></li>
-<li><a href="#functions-1" id="toc-functions-1"><span
+<li><a href="#functions-2" id="toc-functions-2"><span
 class="toc-section-number">3.12.3</span> Functions</a></li>
 </ul></li>
 <li><a href="#bicon" id="toc-bicon"><span
@@ -236,7 +242,7 @@ data-4search="ui/b/knob.js:BKnob;section">BKnob</span></a>
 class="toc-section-number">3.14.1</span> Props:</a></li>
 <li><a href="#implementation-notes" id="toc-implementation-notes"><span
 class="toc-section-number">3.14.2</span> Implementation Notes</a></li>
-<li><a href="#functions-2" id="toc-functions-2"><span
+<li><a href="#functions-3" id="toc-functions-3"><span
 class="toc-section-number">3.14.3</span> Functions</a></li>
 </ul></li>
 <li><a href="#bmenubar" id="toc-bmenubar"><span
@@ -301,14 +307,14 @@ data-4search="ui/b/partlist.js:BPartList;section">BPartList</span></a>
 <ul>
 <li><a href="#constants" id="toc-constants"><span
 class="toc-section-number">3.23.1</span> Constants</a></li>
-<li><a href="#functions-3" id="toc-functions-3"><span
+<li><a href="#functions-4" id="toc-functions-4"><span
 class="toc-section-number">3.23.2</span> Functions</a></li>
 </ul></li>
 <li><a href="#bpianoroll" id="toc-bpianoroll"><span
 class="toc-section-number">3.24</span> <span id="BPianoRoll"
 data-4search="ui/b/pianoroll.js:BPianoRoll;section">BPianoRoll</span></a>
 <ul>
-<li><a href="#functions-4" id="toc-functions-4"><span
+<li><a href="#functions-5" id="toc-functions-5"><span
 class="toc-section-number">3.24.1</span> Functions</a></li>
 </ul></li>
 <li><a href="#bplaycontrols" id="toc-bplaycontrols"><span
@@ -366,8 +372,10 @@ class="toc-section-number">3.32.1</span> Props:</a></li>
 class="toc-section-number">3.32.2</span> Events:</a></li>
 <li><a href="#huesaturation-class" id="toc-huesaturation-class"><span
 class="toc-section-number">3.32.3</span> HueSaturation class</a></li>
-<li><a href="#functions-5" id="toc-functions-5"><span
+<li><a href="#functions-6" id="toc-functions-6"><span
 class="toc-section-number">3.32.4</span> Functions</a></li>
+<li><a href="#functions-7" id="toc-functions-7"><span
+class="toc-section-number">3.32.5</span> Functions</a></li>
 </ul></li>
 <li><a href="#workerclip" id="toc-workerclip"><span
 class="toc-section-number">3.33</span> <span id="WorkerClip"
@@ -395,7 +403,7 @@ data-4search="ui/kbd.js:FocusGuard;section">FocusGuard</span></a>
 <ul>
 <li><a href="#constants-1" id="toc-constants-1"><span
 class="toc-section-number">7.1.1</span> Constants</a></li>
-<li><a href="#functions-6" id="toc-functions-6"><span
+<li><a href="#functions-8" id="toc-functions-8"><span
 class="toc-section-number">7.1.2</span> Functions</a></li>
 </ul></li>
 <li><a href="#litcomponent" id="toc-litcomponent"><span
@@ -406,24 +414,24 @@ data-4search="ui/little.js:LitComponent;section">LitComponent</span></a>
 class="toc-section-number">7.2.1</span> Props:</a></li>
 <li><a href="#constants-2" id="toc-constants-2"><span
 class="toc-section-number">7.2.2</span> Constants</a></li>
-<li><a href="#functions-7" id="toc-functions-7"><span
+<li><a href="#functions-9" id="toc-functions-9"><span
 class="toc-section-number">7.2.3</span> Functions</a></li>
 <li><a href="#constants-3" id="toc-constants-3"><span
 class="toc-section-number">7.2.4</span> Constants</a></li>
-<li><a href="#functions-8" id="toc-functions-8"><span
+<li><a href="#functions-10" id="toc-functions-10"><span
 class="toc-section-number">7.2.5</span> Functions</a></li>
-<li><a href="#functions-9" id="toc-functions-9"><span
+<li><a href="#functions-11" id="toc-functions-11"><span
 class="toc-section-number">7.2.6</span> Functions</a></li>
 </ul></li>
 <li><a href="#scripthost" id="toc-scripthost"><span
 class="toc-section-number">7.3</span> <span id="ScriptHost"
 data-4search="ui/script.js:ScriptHost;section">ScriptHost</span></a>
 <ul>
-<li><a href="#functions-10" id="toc-functions-10"><span
-class="toc-section-number">7.3.1</span> Functions</a></li>
-<li><a href="#functions-11" id="toc-functions-11"><span
-class="toc-section-number">7.3.2</span> Functions</a></li>
 <li><a href="#functions-12" id="toc-functions-12"><span
+class="toc-section-number">7.3.1</span> Functions</a></li>
+<li><a href="#functions-13" id="toc-functions-13"><span
+class="toc-section-number">7.3.2</span> Functions</a></li>
+<li><a href="#functions-14" id="toc-functions-14"><span
 class="toc-section-number">7.3.3</span> Functions</a></li>
 <li><a href="#pointerdrag-class" id="toc-pointerdrag-class"><span
 class="toc-section-number">7.3.4</span> PointerDrag class</a></li>
@@ -431,7 +439,7 @@ class="toc-section-number">7.3.4</span> PointerDrag class</a></li>
 class="toc-section-number">7.3.5</span> vue_mixins class</a></li>
 <li><a href="#constants-4" id="toc-constants-4"><span
 class="toc-section-number">7.3.6</span> Constants</a></li>
-<li><a href="#functions-13" id="toc-functions-13"><span
+<li><a href="#functions-15" id="toc-functions-15"><span
 class="toc-section-number">7.3.7</span> Functions</a></li>
 </ul></li>
 <li><a href="#asecachingwrapper" id="toc-asecachingwrapper"><span
@@ -443,9 +451,9 @@ id="toc-asecachingwrapper-class"><span
 class="toc-section-number">7.4.1</span> AseCachingWrapper class</a></li>
 <li><a href="#constants-5" id="toc-constants-5"><span
 class="toc-section-number">7.4.2</span> Constants</a></li>
-<li><a href="#functions-14" id="toc-functions-14"><span
+<li><a href="#functions-16" id="toc-functions-16"><span
 class="toc-section-number">7.4.3</span> Functions</a></li>
-<li><a href="#functions-15" id="toc-functions-15"><span
+<li><a href="#functions-17" id="toc-functions-17"><span
 class="toc-section-number">7.4.4</span> Functions</a></li>
 </ul></li>
 </ul></li>
@@ -667,8 +675,47 @@ href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement">HTMLElement<
 and none of the other <a
 href="https://developer.mozilla.org/en-US/docs/Web/API/HTML_DOM_API#html_element_interfaces_2">HTML
 element interfaces</a>.</p>
-<section id="legacy-vue-components" class="level2" data-number="2.1">
+<section id="guidelines-for-web-components" class="level2"
+data-number="2.1">
 <h2 data-number="2.1"><span class="header-section-number">2.1</span>
+Guidelines for Web Components</h2>
+<p>Guidelines capturing past experiences:</p>
+<ul>
+<li><p>Create a component to encapsulate possible state and specific
+UI/UX behavior or API functionality.</p></li>
+<li><p>Avoid adding components purely for layout or style reasons.
+Horizontal or vertical <a
+href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox">flex</a>
+boxes, <a
+href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox">grid</a>
+layout, dialog and menu styling are much better addressed with CSS
+classes and are more often subject to change than encapsulated
+behavior.</p></li>
+<li><p>Use CSS utility classes instead of custom or adhoc styles that
+have to be given a dedicated name. <a
+href="https://tailwindcss.com/docs/utility-first#maintainability-concerns">TailwindCSS</a>
+gives good guidance here.</p></li>
+<li><p>Use simple custom element components if that suffices, components
+that do not expect external children can get away without a shadow
+DOM.</p></li>
+<li><p>Components with external children need <a
+href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/slot"><code>&lt;slot/&gt;</code></a>
+elements, these require shadow DOM handling as provided by LitElement,
+use it via our <a
+href="https://tim-janik.github.io/docs/anklang/little_8js.html#LitComponent">LitComponent</a>
+class.</p></li>
+<li><p>Focussable elements <strong>MUST NOT</strong> be buried inside
+the shadow DOM tree. It is perfectly fine to add focussable elements as
+(external) children to a ready-made web component that has a shadow DOM
+with <code>&lt;slot/&gt;</code> elements, but proper focus handling,
+focus related styling, keyboard and focus chain handling is not reliably
+possible when focussable elements are <strong>inside the shadow
+DOM</strong>, instead of staying part of the light DOM by adding them
+into <code>&lt;slot/&gt;</code> elements.</p></li>
+</ul>
+</section>
+<section id="legacy-vue-components" class="level2" data-number="2.2">
+<h2 data-number="2.2"><span class="header-section-number">2.2</span>
 Legacy Vue Components</h2>
 <p>Some components are still implemented via Vue and are slowly phased
 out. We often use <code>&lt;canvas&gt;</code> elements for Anklang
@@ -923,7 +970,7 @@ Events:</h3>
 <dt><em>click (event)</em></dt>
 <dd>
 Event signaling activation of a menu item, the <code>uri</code> can be
-found via <code>event.target.uri</code>.
+found via <code>get_uri (event.target)</code>.
 </dd>
 <dt><em>close (event)</em></dt>
 <dd>
@@ -949,8 +996,8 @@ The <code>origin</code> is a reference DOM element to use for drop-down
 positioning.
 </dd>
 <dd>
-The <code>focus_uri</code> is a &lt;b-menuitem/&gt; URI to receive focus
-after popup.
+The <code>focus_uri</code> is a &lt;button/&gt; menu item URI to receive
+focus after popup.
 </dd>
 <dd>
 The <code>data-contextmenu</code> element (or <code>origin</code>) has
@@ -989,6 +1036,18 @@ data-4search="ui/b/contextmenu.js:find_menuitem;func"><strong><code>find_menuite
 Find a menuitem via its <code>uri</code>.
 </dd>
 </dl>
+</dd>
+</dl>
+</section>
+<section id="functions" class="level3" data-number="3.9.6">
+<h3 data-number="3.9.6"><span class="header-section-number">3.9.6</span>
+Functions</h3>
+<dl>
+<dt><span id="integrate_button"
+data-4search="ui/b/contextmenu.js:integrate_button;func"><strong><code>integrate_button</code></strong></span>
+<code>(</code><em>contextmenu</em><code>)</code></dt>
+<dd>
+Integrate <code>b-contextmenu button</code> into contextmenu handling.
 </dd>
 </dl>
 </section>
@@ -1063,7 +1122,7 @@ Props:</h2>
 Audio signal processing device.
 </dd>
 </dl>
-<section id="functions" class="level3" data-number="3.12.1">
+<section id="functions-1" class="level3" data-number="3.12.1">
 <h3 data-number="3.12.1"><span
 class="header-section-number">3.12.1</span> Functions</h3>
 <dl>
@@ -1125,7 +1184,7 @@ exports.
 </dd>
 </dl>
 </section>
-<section id="functions-1" class="level3" data-number="3.12.3">
+<section id="functions-2" class="level3" data-number="3.12.3">
 <h3 data-number="3.12.3"><span
 class="header-section-number">3.12.3</span> Functions</h3>
 <dl>
@@ -1189,10 +1248,6 @@ Icons</a>.
 The 'mi-' prefix indicates an icon from the "Material Icons" collection,
 see the <a href="https://material.io/tools/icons/">Material Design
 Icons</a>.
-</dd>
-<dt><em>nosize</em></dt>
-<dd>
-Prevent the element from applying default size constraints.
 </dd>
 <dt><em>fw</em></dt>
 <dd>
@@ -1271,7 +1326,7 @@ GPU acceleration requires splitting the original SVG into several SVG
 layers, each of which can be utilized as a seperate GPU texture with the
 CSS setting <code>will-change: transform</code>.</p>
 </section>
-<section id="functions-2" class="level3" data-number="3.14.3">
+<section id="functions-3" class="level3" data-number="3.14.3">
 <h3 data-number="3.14.3"><span
 class="header-section-number">3.14.3</span> Functions</h3>
 <dl>
@@ -1546,7 +1601,7 @@ List menu actions for PianoRoll.
 </dd>
 </dl>
 </section>
-<section id="functions-3" class="level3" data-number="3.23.2">
+<section id="functions-4" class="level3" data-number="3.23.2">
 <h3 data-number="3.23.2"><span
 class="header-section-number">3.23.2</span> Functions</h3>
 <dl>
@@ -1642,7 +1697,7 @@ Translate event offsetX,offsetY into taret element
 <span id="BPianoRoll"
 data-4search="ui/b/pianoroll.js:BPianoRoll;section">BPianoRoll</span></h2>
 <p>The &lt;b-piano-roll&gt; element allows note editing.</p>
-<section id="functions-4" class="level3" data-number="3.24.1">
+<section id="functions-5" class="level3" data-number="3.24.1">
 <h3 data-number="3.24.1"><span
 class="header-section-number">3.24.1</span> Functions</h3>
 <dl>
@@ -1889,7 +1944,7 @@ Class with logic and spline approximations to calculate ZHSV.
 </dd>
 </dl>
 </section>
-<section id="functions-5" class="level3" data-number="3.32.4">
+<section id="functions-6" class="level3" data-number="3.32.4">
 <h3 data-number="3.32.4"><span
 class="header-section-number">3.32.4</span> Functions</h3>
 <dl>
@@ -1989,6 +2044,38 @@ data-4search="ui/colors.js:lgrey;func"><strong><code>lgrey</code></strong></span
 <code>(</code><em>lightness</em><code>)</code></dt>
 <dd>
 Yield a grey tone with CIELAB lightness.
+</dd>
+</dl>
+</section>
+<section id="functions-7" class="level3" data-number="3.32.5">
+<h3 data-number="3.32.5"><span
+class="header-section-number">3.32.5</span> Functions</h3>
+<dl>
+<dt><span id="get_uri"
+data-4search="ui/dom.js:get_uri;func"><strong><code>get_uri</code></strong></span>
+<code>(</code><em>element</em><code>)</code></dt>
+<dd>
+Fetch URI from a DOM element, returns undefined if none is found (e.g.
+Number(0) is a valid URI).
+</dd>
+<dt><span id="valid_uri"
+data-4search="ui/dom.js:valid_uri;func"><strong><code>valid_uri</code></strong></span>
+<code>(</code><em>uri</em><code>)</code></dt>
+<dd>
+Check if URI is not undefined.
+</dd>
+<dt><span id="has_uri"
+data-4search="ui/dom.js:has_uri;func"><strong><code>has_uri</code></strong></span>
+<code>(</code><em>element</em><code>)</code></dt>
+<dd>
+Check if DOM element has valid URI.
+</dd>
+<dt><span id="text_content"
+data-4search="ui/dom.js:text_content;func"><strong><code>text_content</code></strong></span>
+<code>(</code><em>element, with_children</em><code>)</code></dt>
+<dd>
+Get <code>.textContent</code> with or without children from a DOM
+element.
 </dd>
 </dl>
 </section>
@@ -2110,7 +2197,7 @@ Symbolic names for key codes
 </dd>
 </dl>
 </section>
-<section id="functions-6" class="level3" data-number="7.1.2">
+<section id="functions-8" class="level3" data-number="7.1.2">
 <h3 data-number="7.1.2"><span class="header-section-number">7.1.2</span>
 Functions</h3>
 <dl>
@@ -2188,6 +2275,12 @@ data-4search="ui/kbd.js:forget_focus;func"><strong><code>forget_focus</code></st
 <code>(</code><em>element</em><code>)</code></dt>
 <dd>
 Forget the last focus element inside <code>element</code>
+</dd>
+<dt><span id="hotkey_handler"
+data-4search="ui/kbd.js:hotkey_handler;func"><strong><code>hotkey_handler</code></strong></span>
+<code>(</code><em>event</em><code>)</code></dt>
+<dd>
+Global key handler to dispatch key events according to global keymaps.
 </dd>
 <dt><span id="add_hotkey"
 data-4search="ui/kbd.js:add_hotkey;func"><strong><code>add_hotkey</code></strong></span>
@@ -2305,7 +2398,7 @@ Variant of the above that just provides the stylesheet URL.</li>
 </dd>
 </dl>
 </section>
-<section id="functions-7" class="level3" data-number="7.2.3">
+<section id="functions-9" class="level3" data-number="7.2.3">
 <h3 data-number="7.2.3"><span class="header-section-number">7.2.3</span>
 Functions</h3>
 <dl>
@@ -2349,7 +2442,7 @@ Flag indicating Chrome UserAgent.
 </dd>
 </dl>
 </section>
-<section id="functions-8" class="level3" data-number="7.2.5">
+<section id="functions-10" class="level3" data-number="7.2.5">
 <h3 data-number="7.2.5"><span class="header-section-number">7.2.5</span>
 Functions</h3>
 <dl>
@@ -2404,7 +2497,7 @@ changes.
 </dd>
 </dl>
 </section>
-<section id="functions-9" class="level3" data-number="7.2.6">
+<section id="functions-11" class="level3" data-number="7.2.6">
 <h3 data-number="7.2.6"><span class="header-section-number">7.2.6</span>
 Functions</h3>
 <dl>
@@ -2451,7 +2544,7 @@ thread to the Worker thread. The WorkerHost then loads and calls into a
 user provided ES Module, the actual user script which communicates via
 the WorkerHost global variable <code>host</code>. See also
 #WorkerHost.</p>
-<section id="functions-10" class="level3" data-number="7.3.1">
+<section id="functions-12" class="level3" data-number="7.3.1">
 <h3 data-number="7.3.1"><span class="header-section-number">7.3.1</span>
 Functions</h3>
 <dl>
@@ -2483,7 +2576,7 @@ Process and write style information
 </dd>
 </dl>
 </section>
-<section id="functions-11" class="level3" data-number="7.3.2">
+<section id="functions-13" class="level3" data-number="7.3.2">
 <h3 data-number="7.3.2"><span class="header-section-number">7.3.2</span>
 Functions</h3>
 <dl>
@@ -2501,7 +2594,7 @@ Jsonipc handler for IDs of GC-ed objects.
 </dd>
 </dl>
 </section>
-<section id="functions-12" class="level3" data-number="7.3.3">
+<section id="functions-14" class="level3" data-number="7.3.3">
 <h3 data-number="7.3.3"><span class="header-section-number">7.3.3</span>
 Functions</h3>
 <dl>
@@ -2628,7 +2721,7 @@ handlers against closure.
 </dd>
 </dl>
 </section>
-<section id="functions-13" class="level3" data-number="7.3.7">
+<section id="functions-15" class="level3" data-number="7.3.7">
 <h3 data-number="7.3.7"><span class="header-section-number">7.3.7</span>
 Functions</h3>
 <dl>
@@ -2989,12 +3082,6 @@ inside <code>containee</code>, call <code>closer(event)</code> for
 pointer clicks on <code>shield</code> or when <code>ESCAPE</code> is
 pressed.
 </dd>
-<dt><span id="fullstop"
-data-4search="ui/util.js:fullstop;func"><strong><code>fullstop</code></strong></span>
-<code>(</code><em>event</em><code>)</code></dt>
-<dd>
-Stop (immediate) propagation and prevent default handler for an event.
-</dd>
 <dt><span id="swallow_event"
 data-4search="ui/util.js:swallow_event;func"><strong><code>swallow_event</code></strong></span>
 <code>(</code><em>type, timeout</em><code>)</code></dt>
@@ -3341,7 +3428,7 @@ FinalizationRegistry to call cleanup callback upon object destruction.
 </dd>
 </dl>
 </section>
-<section id="functions-14" class="level3" data-number="7.4.3">
+<section id="functions-16" class="level3" data-number="7.4.3">
 <h3 data-number="7.4.3"><span class="header-section-number">7.4.3</span>
 Functions</h3>
 <dl>
@@ -3369,7 +3456,7 @@ changes run <code>notifier()</code>.
 </dd>
 </dl>
 </section>
-<section id="functions-15" class="level3" data-number="7.4.4">
+<section id="functions-17" class="level3" data-number="7.4.4">
 <h3 data-number="7.4.4"><span class="header-section-number">7.4.4</span>
 Functions</h3>
 <dl>
