@@ -1126,7 +1126,7 @@ Copyright: Copyright (C) 2023 Tim Janik
 License: MPL-2.0
 
 Files: ui/b/clipview.js
-Copyright: Copyright (C) 2021-2023 Tim Janik
+Copyright: Copyright (C) 2021-2024 Tim Janik
 License: MPL-2.0
 
 Files: ui/b/contextmenu.js
@@ -1142,11 +1142,11 @@ Copyright: Copyright (C) 2020-2024 Tim Janik
 License: MPL-2.0
 
 Files: ui/b/devicepanel.vue
-Copyright: Copyright (C) 2020-2023 Tim Janik
+Copyright: Copyright (C) 2020-2024 Tim Janik
 License: MPL-2.0
 
 Files: ui/b/dialog.vue
-Copyright: Copyright (C) 2021-2023 Tim Janik
+Copyright: Copyright (C) 2021-2024 Tim Janik
 License: MPL-2.0
 
 Files: ui/b/editable.js
@@ -1181,10 +1181,6 @@ License: MPL-2.0
 
 Files: ui/b/menubar.js
 Copyright: Copyright (C) 2023-2024 Tim Janik
-License: MPL-2.0
-
-Files: ui/b/menuitem.js
-Copyright: Copyright (C) 2022-2023 Tim Janik
 License: MPL-2.0
 
 Files: ui/b/menurow.js
@@ -1244,7 +1240,7 @@ Copyright: Copyright (C) 2020-2024 Tim Janik
 License: MPL-2.0
 
 Files: ui/b/propgroup.js
-Copyright: Copyright (C) 2023 Tim Janik
+Copyright: Copyright (C) 2023-2024 Tim Janik
 License: MPL-2.0
 
 Files: ui/b/propinput.js
@@ -1256,7 +1252,7 @@ Copyright: Copyright (C) 2020-2024 Tim Janik
 License: MPL-2.0
 
 Files: ui/b/statusbar.js
-Copyright: Copyright (C) 2023 Tim Janik
+Copyright: Copyright (C) 2023-2024 Tim Janik
 License: MPL-2.0
 
 Files: ui/b/switchinput.js
@@ -1364,7 +1360,7 @@ Copyright: Copyright (C) 2022-2023 Tim Janik
 License: MPL-2.0
 
 Files: ui/mixins.scss
-Copyright: Copyright (C) 2020-2023 Tim Janik
+Copyright: Copyright (C) 2020-2024 Tim Janik
 License: MPL-2.0
 
 Files: ui/mouse.js

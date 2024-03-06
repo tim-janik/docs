@@ -3522,11 +3522,6 @@
     <filename>menubar_8js.html</filename>
   </compound>
   <compound kind="file">
-    <name>menuitem.js</name>
-    <path>/cirun/poxy/ui/b/</path>
-    <filename>menuitem_8js.html</filename>
-  </compound>
-  <compound kind="file">
     <name>menurow.js</name>
     <path>/cirun/poxy/ui/b/</path>
     <filename>menurow_8js.html</filename>
