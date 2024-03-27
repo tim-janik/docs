@@ -1122,7 +1122,7 @@ Copyright: Copyright (C) 2023-2024 Tim Janik
 License: MPL-2.0
 
 Files: ui/b/cliplist.js
-Copyright: Copyright (C) 2023 Tim Janik
+Copyright: Copyright (C) 2023-2024 Tim Janik
 License: MPL-2.0
 
 Files: ui/b/clipview.js
@@ -1356,7 +1356,7 @@ Copyright: Copyright (C) 2022-2024 Tim Janik
 License: MPL-2.0
 
 Files: ui/little.js
-Copyright: Copyright (C) 2022-2023 Tim Janik
+Copyright: Copyright (C) 2022-2024 Tim Janik
 License: MPL-2.0
 
 Files: ui/mixins.scss
@@ -1416,7 +1416,7 @@ Copyright: Copyright (C) 2020-2024 Tim Janik
 License: MPL-2.0
 
 Files: ui/wrapper.js
-Copyright: Copyright (C) 2022-2023 Tim Janik
+Copyright: Copyright (C) 2022-2024 Tim Janik
 License: MPL-2.0
 
 Files: ui/xbcomments.js
