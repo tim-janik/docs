@@ -309,16 +309,12 @@ class="toc-section-number">3.24</span> <span id="BPlayControls"
 data-4search="ui/b/playcontrols.js:BPlayControls;section">BPlayControls</span></a></li>
 <li><a href="#bpositionview" id="toc-bpositionview"><span
 class="toc-section-number">3.25</span> <span id="BPositionView"
-data-4search="ui/b/positionview.js:BPositionView;section">BPositionView</span></a>
-<ul>
-<li><a href="#props-5" id="toc-props-5"><span
-class="toc-section-number">3.25.1</span> Props:</a></li>
-</ul></li>
+data-4search="ui/b/positionview.js:BPositionView;section">BPositionView</span></a></li>
 <li><a href="#bpropinput" id="toc-bpropinput"><span
 class="toc-section-number">3.26</span> <span id="BPropInput"
 data-4search="ui/b/propinput.js:BPropInput;section">BPropInput</span></a>
 <ul>
-<li><a href="#props-6" id="toc-props-6"><span
+<li><a href="#props-5" id="toc-props-5"><span
 class="toc-section-number">3.26.1</span> Props:</a></li>
 </ul></li>
 <li><a href="#shellclass" id="toc-shellclass"><span
@@ -353,7 +349,7 @@ class="toc-section-number">3.30.2</span> Events:</a></li>
 class="toc-section-number">3.31</span> <span id="BToggle"
 data-4search="ui/b/toggle.js:BToggle;section">BToggle</span></a>
 <ul>
-<li><a href="#props-7" id="toc-props-7"><span
+<li><a href="#props-6" id="toc-props-6"><span
 class="toc-section-number">3.31.1</span> Props:</a></li>
 <li><a href="#events-7" id="toc-events-7"><span
 class="toc-section-number">3.31.2</span> Events:</a></li>
@@ -397,8 +393,8 @@ class="toc-section-number">7.1.2</span> Functions</a></li>
 class="toc-section-number">7.2</span> <span id="LitComponent"
 data-4search="ui/little.js:LitComponent;section">LitComponent</span></a>
 <ul>
-<li><a href="#props-8" id="toc-props-8"><span
-class="toc-section-number">7.2.1</span> Props:</a></li>
+<li><a href="#methods-1" id="toc-methods-1"><span
+class="toc-section-number">7.2.1</span> Methods:</a></li>
 <li><a href="#constants-2" id="toc-constants-2"><span
 class="toc-section-number">7.2.2</span> Constants</a></li>
 <li><a href="#functions-9" id="toc-functions-9"><span
@@ -1698,20 +1694,13 @@ and seek controls for a Ase.song.</p>
 data-4search="ui/b/positionview.js:BPositionView;section">BPositionView</span></h2>
 <p>The &lt;b-positionview&gt; element displays the project transport
 position pointer and related information.</p>
-<section id="props-5" class="level3" data-number="3.25.1">
-<h3 data-number="3.25.1"><span
-class="header-section-number">3.25.1</span> Props:</h3>
-<ul>
-<li><strong>project</strong> - The object providing playback API.</li>
-</ul>
-</section>
 </section>
 <section id="bpropinput" class="level2" data-number="3.26">
 <h2 data-number="3.26"><span class="header-section-number">3.26</span>
 <span id="BPropInput"
 data-4search="ui/b/propinput.js:BPropInput;section">BPropInput</span></h2>
 <p>A property input element, usually for numbers, toggles or menus.</p>
-<section id="props-6" class="level3" data-number="3.26.1">
+<section id="props-5" class="level3" data-number="3.26.1">
 <h3 data-number="3.26.1"><span
 class="header-section-number">3.26.1</span> Props:</h3>
 <dl>
@@ -1852,7 +1841,7 @@ data-4search="ui/b/toggle.js:BToggle;section">BToggle</span></h2>
 boolean audio processor input properties. Its <code>value</code> can be
 accessed as a property and <code>valuechange</code> is emitted on
 changes.</p>
-<section id="props-7" class="level3" data-number="3.31.1">
+<section id="props-6" class="level3" data-number="3.31.1">
 <h3 data-number="3.31.1"><span
 class="header-section-number">3.31.1</span> Props:</h3>
 <dl>
@@ -2305,21 +2294,31 @@ Display shortcut editing dialog
 data-4search="ui/little.js:LitComponent;section">LitComponent</span></h2>
 <p>An interface extending LitElement with reactive render() and
 updated() methods.</p>
-<section id="props-8" class="level3" data-number="7.2.1">
+<section id="methods-1" class="level3" data-number="7.2.1">
 <h3 data-number="7.2.1"><span class="header-section-number">7.2.1</span>
-Props:</h3>
+Methods:</h3>
 <dl>
-<dt><em>render</em></dt>
+<dt><em>render()</em></dt>
 <dd>
-A pre-bound Wrapper.reactive_wrapper() around LitElement.render().
+A this-bound Wrapper around LitElement.render() with JS Signal tracking.
 </dd>
-<dt><em>updated</em></dt>
+<dt><em>updated (changedProps)</em></dt>
 <dd>
-A pre-bound Wrapper.reactive_wrapper() around LitElement.updated().
+A this-bound Wrapper around LitElement.updated() with JS Signal
+tracking.
 </dd>
-<dt><em>request_update_</em></dt>
+<dt><em>request_update()</em></dt>
 <dd>
-A pre-bound wrapper around LitElement.requestUpdate().
+A this-bound wrapper around LitElement.requestUpdate().
+</dd>
+<dt><em>weak_this()</em></dt>
+<dd>
+A new WeakRef to this.
+</dd>
+<dt><em>createRenderRoot()</em></dt>
+<dd>
+In addition to calling LitElement.createRenderRoot() this will call
+adopt_component_styles().
 </dd>
 </dl>
 </section>

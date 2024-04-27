@@ -3,6 +3,7 @@
   <compound kind="file">
     <name>api.hh</name>
     <filename>api_8hh.html</filename>
+    <includes id="member_8hh" name="member.hh" local="no" imported="no">ase/member.hh</includes>
     <includes id="value_8hh" name="value.hh" local="no" imported="no">ase/value.hh</includes>
     <class kind="class">Ase::SharedBase</class>
     <class kind="struct">Ase::Choice</class>
@@ -237,6 +238,7 @@
     <name>crawler.hh</name>
     <filename>crawler_8hh.html</filename>
     <includes id="gadget_8hh" name="gadget.hh" local="no" imported="no">ase/gadget.hh</includes>
+    <class kind="class">Ase::FileCrawler</class>
     <namespace>Ase</namespace>
   </compound>
   <compound kind="file">
@@ -492,25 +494,25 @@
       <arglist></arglist>
     </member>
     <member kind="function">
-      <type>String</type>
+      <type>const char *</type>
       <name>string_demangle_cxx</name>
       <anchorfile>namespace_ase.html</anchorfile>
-      <anchor>a87a14d1027b91cfbf81284285c18f4d8</anchor>
+      <anchor>a85440eab77a82fa270604f34f62b52d2</anchor>
       <arglist>(const char *mangled_identifier) noexcept</arglist>
     </member>
     <member kind="function">
       <type></type>
       <name>__attribute__</name>
       <anchorfile>namespace_ase.html</anchorfile>
-      <anchor>a9e287795697d626b0570ba27d540cd5b</anchor>
-      <arglist>((__pure__)) static inline String typeid_name()</arglist>
+      <anchor>a6d1f84eebb09d082af96cea3994eadf1</anchor>
+      <arglist>((__pure__)) static inline const char *typeid_name()</arglist>
     </member>
     <member kind="function">
       <type></type>
       <name>__attribute__</name>
       <anchorfile>namespace_ase.html</anchorfile>
-      <anchor>adc10ef3ffd73bfec6be7629171a77945</anchor>
-      <arglist>((__pure__)) static inline String typeid_name(T &amp;obj)</arglist>
+      <anchor>a280bb9e5648777ccdba0d7e72175114b</anchor>
+      <arglist>((__pure__)) static inline const char *typeid_name(T &amp;obj)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
@@ -678,7 +680,25 @@
     <includes id="api_8hh" name="api.hh" local="no" imported="no">ase/api.hh</includes>
     <includes id="midievent_8hh" name="midievent.hh" local="no" imported="no">ase/midievent.hh</includes>
     <class kind="struct">Ase::DriverEntry</class>
+    <class kind="class">Ase::Driver</class>
+    <class kind="class">Ase::MidiDriver</class>
+    <class kind="struct">Ase::PcmDriverConfig</class>
+    <class kind="class">Ase::PcmDriver</class>
     <namespace>Ase</namespace>
+    <member kind="function">
+      <type>bool *</type>
+      <name>register_driver_loader</name>
+      <anchorfile>namespace_ase.html</anchorfile>
+      <anchor>a84c9b8667485a4bb933602dcc07b179f</anchor>
+      <arglist>(const char *staticwhat, Error(*loader)())</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>load_registered_drivers</name>
+      <anchorfile>namespace_ase.html</anchorfile>
+      <anchor>adb4f757600cb3fcf67df58af722ff2d3</anchor>
+      <arglist>()</arglist>
+    </member>
   </compound>
   <compound kind="file">
     <name>engine.hh</name>
@@ -1154,6 +1174,27 @@
     </member>
   </compound>
   <compound kind="file">
+    <name>member.hh</name>
+    <path>/cirun/poxy/ase/</path>
+    <filename>member_8hh.html</filename>
+    <includes id="parameter_8hh" name="parameter.hh" local="no" imported="no">ase/parameter.hh</includes>
+    <class kind="struct">Ase::Lib::FunctionTraits</class>
+    <class kind="struct">Ase::Lib::FunctionTraits&lt; R(C::*)(Args...)&gt;</class>
+    <class kind="struct">Ase::Lib::FunctionTraits&lt; R(C::*)(Args...) const &gt;</class>
+    <class kind="struct">Ase::Lib::MemberFunctionTraits</class>
+    <class kind="class">Ase::Member</class>
+    <class kind="class">Ase::Member&lt; accessor, nullptr &gt;</class>
+    <namespace>Ase</namespace>
+    <namespace>Ase::Lib</namespace>
+    <member kind="function">
+      <type>C *</type>
+      <name>host_member_offset</name>
+      <anchorfile>namespace_ase_1_1_lib.html</anchorfile>
+      <anchor>a8716bcda6e78bbd9e459592d17e369b9</anchor>
+      <arglist>(ptrdiff_t *hmoffsetp, const M *member, C *host)</arglist>
+    </member>
+  </compound>
+  <compound kind="file">
     <name>memory.hh</name>
     <path>/cirun/poxy/ase/</path>
     <filename>memory_8hh.html</filename>
@@ -1271,20 +1312,34 @@
     <name>parameter.hh</name>
     <path>/cirun/poxy/ase/</path>
     <filename>parameter_8hh.html</filename>
-    <includes id="api_8hh" name="api.hh" local="no" imported="no">ase/api.hh</includes>
-    <includes id="object_8hh" name="object.hh" local="no" imported="no">ase/object.hh</includes>
+    <includes id="defs_8hh" name="defs.hh" local="no" imported="no">ase/defs.hh</includes>
     <includes id="memory_8hh" name="memory.hh" local="no" imported="no">ase/memory.hh</includes>
+    <includes id="value_8hh" name="value.hh" local="no" imported="no">ase/value.hh</includes>
+    <class kind="struct">Ase::ParamExtraVals</class>
     <class kind="struct">Ase::Param</class>
     <class kind="struct">Ase::Parameter</class>
     <class kind="struct">Ase::ParameterMap</class>
     <class kind="struct">Ase::ParameterMap::Entry</class>
-    <class kind="class">Ase::ParameterProperty</class>
     <namespace>Ase</namespace>
     <member kind="typedef">
       <type>std::tuple&lt; double, double, double &gt;</type>
       <name>MinMaxStep</name>
       <anchorfile>namespace_ase.html</anchorfile>
       <anchor>a3e2d3fec13fb0fe4110686f13492e26d</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>std::function&lt; ChoiceS(const CString &amp;)&gt;</type>
+      <name>ChoicesFunc</name>
+      <anchorfile>namespace_ase.html</anchorfile>
+      <anchor>a5b4310b0f4f858ed7d0ba1d0bcfdc381</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>std::variant&lt; bool, int8_t, uint8_t, int16_t, uint16_t, int32_t, uint32_t, int64_t, uint64_t, float, double, const char *, std::string &gt;</type>
+      <name>ParamInitialVal</name>
+      <anchorfile>namespace_ase.html</anchorfile>
+      <anchor>aa8d2d9f9112f8a84e0156519bd62d7f3</anchor>
       <arglist></arglist>
     </member>
     <member kind="function">
@@ -1940,6 +1995,7 @@
     <filename>project_8hh.html</filename>
     <includes id="device_8hh" name="device.hh" local="no" imported="no">ase/device.hh</includes>
     <includes id="track_8hh" name="track.hh" local="no" imported="no">ase/track.hh</includes>
+    <includes id="member_8hh" name="member.hh" local="no" imported="no">ase/member.hh</includes>
     <includes id="transport_8hh" name="transport.hh" local="no" imported="no">ase/transport.hh</includes>
     <namespace>Ase</namespace>
   </compound>
@@ -1947,13 +2003,12 @@
     <name>properties.hh</name>
     <path>/cirun/poxy/ase/</path>
     <filename>properties_8hh.html</filename>
-    <includes id="parameter_8hh" name="parameter.hh" local="no" imported="no">ase/parameter.hh</includes>
-    <includes id="memory_8hh" name="memory.hh" local="no" imported="no">ase/memory.hh</includes>
+    <includes id="api_8hh" name="api.hh" local="no" imported="no">ase/api.hh</includes>
+    <includes id="object_8hh" name="object.hh" local="no" imported="no">ase/object.hh</includes>
     <includes id="jsonapi_8hh" name="jsonapi.hh" local="no" imported="no">ase/jsonapi.hh</includes>
+    <class kind="class">Ase::ParameterProperty</class>
     <class kind="class">Ase::Preference</class>
-    <class kind="struct">Ase::Prop</class>
     <class kind="class">Ase::PropertyImpl</class>
-    <class kind="struct">Ase::PropertyBag</class>
     <namespace>Ase</namespace>
     <member kind="typedef">
       <type>std::function&lt; void(Value &amp;)&gt;</type>
@@ -4940,25 +4995,11 @@
       <arglist>() const =0</arglist>
     </member>
     <member kind="function" virtualness="pure">
-      <type>virtual int64</type>
-      <name>end_tick</name>
-      <anchorfile>class_ase_1_1_clip.html</anchorfile>
-      <anchor>ad26447ef3abc7aeeb4c1d76c0e0c15d4</anchor>
-      <arglist>() const =0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
       <type>virtual void</type>
       <name>assign_range</name>
       <anchorfile>class_ase_1_1_clip.html</anchorfile>
       <anchor>a715199920ce0a6105daab2771ed51adf</anchor>
       <arglist>(int64 starttick, int64 stoptick)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual ClipNoteS</type>
-      <name>all_notes</name>
-      <anchorfile>class_ase_1_1_clip.html</anchorfile>
-      <anchor>a3ffc9d8522fe084f88546f925a30ccda</anchor>
-      <arglist>() const =0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual int32</type>
@@ -5043,6 +5084,20 @@
       <anchorfile>class_ase_1_1_gadget.html</anchorfile>
       <anchor>a3655b227ac47a7e924c576f16b2686b2</anchor>
       <arglist>(const String &amp;key) const =0</arglist>
+    </member>
+    <member kind="variable">
+      <type>Member&lt;&amp;Clip::all_notes_ &gt;</type>
+      <name>all_notes</name>
+      <anchorfile>class_ase_1_1_clip.html</anchorfile>
+      <anchor>a3892ddfd6c66842190747839b6bddd45</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>Member&lt;&amp;Clip::end_tick_ &gt;</type>
+      <name>end_tick</name>
+      <anchorfile>class_ase_1_1_clip.html</anchorfile>
+      <anchor>a223c157444f364b81f1164032de4268e</anchor>
+      <arglist></arglist>
     </member>
   </compound>
   <compound kind="struct">
@@ -5507,6 +5562,25 @@
       <arglist>(const LoopState &amp;state)</arglist>
     </member>
   </compound>
+  <compound kind="class">
+    <name>Ase::Driver</name>
+    <filename>class_ase_1_1_driver.html</filename>
+    <base>enable_shared_from_this&lt; Driver &gt;</base>
+    <member kind="function">
+      <type>String</type>
+      <name>devid</name>
+      <anchorfile>class_ase_1_1_driver.html</anchorfile>
+      <anchor>a3833ba948ad2e29e7960abc7868a0c0b</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static String</type>
+      <name>priority_string</name>
+      <anchorfile>class_ase_1_1_driver.html</anchorfile>
+      <anchor>a1b3c1b674fa55995121137e6aa664802</anchor>
+      <arglist>(uint priority)</arglist>
+    </member>
+  </compound>
   <compound kind="struct">
     <name>Ase::DriverEntry</name>
     <filename>struct_ase_1_1_driver_entry.html</filename>
@@ -5524,8 +5598,8 @@
       <type>void</type>
       <name>emit_notify</name>
       <anchorfile>class_ase_1_1_emittable_impl.html</anchorfile>
-      <anchor>af5fad81722713d48cacff12477d1b877</anchor>
-      <arglist>(const String &amp;detail)</arglist>
+      <anchor>a4360349a1572463a7b9edc66e9194b70</anchor>
+      <arglist>(const String &amp;detail) override</arglist>
     </member>
   </compound>
   <compound kind="struct">
@@ -6032,6 +6106,68 @@
     <templarg>ALIGNMENT</templarg>
   </compound>
   <compound kind="class">
+    <name>Ase::FileCrawler</name>
+    <filename>class_ase_1_1_file_crawler.html</filename>
+    <base>Ase::ObjectImpl</base>
+    <base virtualness="virtual">Ase::ResourceCrawler</base>
+    <member kind="function">
+      <type>ResourceS</type>
+      <name>list_entries</name>
+      <anchorfile>class_ase_1_1_file_crawler.html</anchorfile>
+      <anchor>a29d29146fec7c7e1cfb4526d0f83d8f6</anchor>
+      <arglist>() override</arglist>
+    </member>
+    <member kind="function">
+      <type>Resource</type>
+      <name>current_folder</name>
+      <anchorfile>class_ase_1_1_file_crawler.html</anchorfile>
+      <anchor>a6a26c82f6b4658b8820bfb7fba022016</anchor>
+      <arglist>() override</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>assign</name>
+      <anchorfile>class_ase_1_1_file_crawler.html</anchorfile>
+      <anchor>a7935d4c969339b385f15ae6699290e56</anchor>
+      <arglist>(const String &amp;utf8path) override</arglist>
+    </member>
+    <member kind="function">
+      <type>Resource</type>
+      <name>canonify</name>
+      <anchorfile>class_ase_1_1_file_crawler.html</anchorfile>
+      <anchor>ae205d9dfecba133abb026ef60c09a734</anchor>
+      <arglist>(const String &amp;utf8cwd, const String &amp;utf8fragment, bool constraindir, bool constrainfile) override</arglist>
+    </member>
+    <member kind="function">
+      <type>String</type>
+      <name>canonify_fspath</name>
+      <anchorfile>class_ase_1_1_file_crawler.html</anchorfile>
+      <anchor>a2f2ca780d062f0d52d495f3654370620</anchor>
+      <arglist>(const String &amp;fspath, const String &amp;fsfragment, bool constraindir, bool constrainfile)</arglist>
+    </member>
+    <member kind="function">
+      <type>String</type>
+      <name>expand_fsdir</name>
+      <anchorfile>class_ase_1_1_file_crawler.html</anchorfile>
+      <anchor>a5675ff16d466aa3defcb2d572c562a8a</anchor>
+      <arglist>(const String &amp;fsdir)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>emit_notify</name>
+      <anchorfile>class_ase_1_1_emittable_impl.html</anchorfile>
+      <anchor>a4360349a1572463a7b9edc66e9194b70</anchor>
+      <arglist>(const String &amp;detail) override</arglist>
+    </member>
+    <member kind="function" protection="protected">
+      <type>void</type>
+      <name>assign</name>
+      <anchorfile>class_ase_1_1_file_crawler.html</anchorfile>
+      <anchor>a16bde3ee51544325156dc8e7fc314f84</anchor>
+      <arglist>(const String &amp;utf8path, bool notify)</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
     <name>Ase::AudioProcessor::FloatBuffer</name>
     <filename>class_ase_1_1_audio_processor_1_1_float_buffer.html</filename>
   </compound>
@@ -6080,6 +6216,35 @@
       <anchor>a24a982960c609d6b5c66022cac992173</anchor>
       <arglist></arglist>
     </member>
+  </compound>
+  <compound kind="struct">
+    <name>Ase::Lib::FunctionTraits</name>
+    <filename>struct_ase_1_1_lib_1_1_function_traits.html</filename>
+    <templarg></templarg>
+  </compound>
+  <compound kind="class">
+    <name>FunctionTraits&lt; R(C &amp;, Args...)&gt;</name>
+    <filename>struct_ase_1_1_lib_1_1_function_traits.html</filename>
+  </compound>
+  <compound kind="struct">
+    <name>Ase::Lib::FunctionTraits&lt; R(C::*)(Args...) const &gt;</name>
+    <filename>struct_ase_1_1_lib_1_1_function_traits_3_01_r_07_c_1_1_5_08_07_args_8_8_8_08_01const_01_4.html</filename>
+    <templarg></templarg>
+    <templarg></templarg>
+    <templarg>Args</templarg>
+    <base>FunctionTraits&lt; R(const C &amp;, Args...)&gt;</base>
+  </compound>
+  <compound kind="struct">
+    <name>Ase::Lib::FunctionTraits&lt; R(C::*)(Args...)&gt;</name>
+    <filename>struct_ase_1_1_lib_1_1_function_traits_3_01_r_07_c_1_1_5_08_07_args_8_8_8_08_4.html</filename>
+    <templarg></templarg>
+    <templarg></templarg>
+    <templarg>Args</templarg>
+    <base>FunctionTraits&lt; R(C &amp;, Args...)&gt;</base>
+  </compound>
+  <compound kind="class">
+    <name>FunctionTraits&lt; R(const C &amp;, Args...)&gt;</name>
+    <filename>struct_ase_1_1_lib_1_1_function_traits.html</filename>
   </compound>
   <compound kind="class">
     <name>Ase::Gadget</name>
@@ -6202,8 +6367,8 @@
       <type>void</type>
       <name>emit_notify</name>
       <anchorfile>class_ase_1_1_emittable_impl.html</anchorfile>
-      <anchor>af5fad81722713d48cacff12477d1b877</anchor>
-      <arglist>(const String &amp;detail)</arglist>
+      <anchor>a4360349a1572463a7b9edc66e9194b70</anchor>
+      <arglist>(const String &amp;detail) override</arglist>
     </member>
     <member kind="function">
       <type>void</type>
@@ -7401,6 +7566,177 @@
       <arglist></arglist>
     </member>
   </compound>
+  <compound kind="class">
+    <name>Ase::Member</name>
+    <filename>class_ase_1_1_member.html</filename>
+    <templarg>setter</templarg>
+    <templarg>getter</templarg>
+    <member kind="function" static="yes">
+      <type>static Class *</type>
+      <name>host_</name>
+      <anchorfile>class_ase_1_1_member.html</anchorfile>
+      <anchor>ac2374a595fc1ca65948eca54e3f695a9</anchor>
+      <arglist>(const Member *m, Class *o=nullptr)</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static const MemberDetails &amp;</type>
+      <name>meta_</name>
+      <anchorfile>class_ase_1_1_member.html</anchorfile>
+      <anchor>a672bc258a2d8a46082bcae32f9d9fc65</anchor>
+      <arglist>(const MemberDetails *n=nullptr)</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>Ase::Member&lt; accessor, nullptr &gt;</name>
+    <filename>class_ase_1_1_member_3_01accessor_00_01nullptr_01_4.html</filename>
+    <templarg>accessor</templarg>
+    <member kind="function" static="yes">
+      <type>static Class *</type>
+      <name>host_</name>
+      <anchorfile>class_ase_1_1_member_3_01accessor_00_01nullptr_01_4.html</anchorfile>
+      <anchor>ab73b481dfecb31d6b4f7cd1e10467475</anchor>
+      <arglist>(const Member *m, Class *o=nullptr)</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static const MemberDetails &amp;</type>
+      <name>meta_</name>
+      <anchorfile>class_ase_1_1_member_3_01accessor_00_01nullptr_01_4.html</anchorfile>
+      <anchor>abe60d9c2b9ce83ebc1f9e8bb65e64b4f</anchor>
+      <arglist>(const MemberDetails *n=nullptr)</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>Member&lt;&amp;Clip::all_notes_ &gt;</name>
+    <filename>class_ase_1_1_member.html</filename>
+    <member kind="function" static="yes">
+      <type>static Class *</type>
+      <name>host_</name>
+      <anchorfile>class_ase_1_1_member.html</anchorfile>
+      <anchor>ac2374a595fc1ca65948eca54e3f695a9</anchor>
+      <arglist>(const Member *m, Class *o=nullptr)</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static const MemberDetails &amp;</type>
+      <name>meta_</name>
+      <anchorfile>class_ase_1_1_member.html</anchorfile>
+      <anchor>a672bc258a2d8a46082bcae32f9d9fc65</anchor>
+      <arglist>(const MemberDetails *n=nullptr)</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>Member&lt;&amp;Clip::end_tick_ &gt;</name>
+    <filename>class_ase_1_1_member.html</filename>
+    <member kind="function" static="yes">
+      <type>static Class *</type>
+      <name>host_</name>
+      <anchorfile>class_ase_1_1_member.html</anchorfile>
+      <anchor>ac2374a595fc1ca65948eca54e3f695a9</anchor>
+      <arglist>(const Member *m, Class *o=nullptr)</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static const MemberDetails &amp;</type>
+      <name>meta_</name>
+      <anchorfile>class_ase_1_1_member.html</anchorfile>
+      <anchor>a672bc258a2d8a46082bcae32f9d9fc65</anchor>
+      <arglist>(const MemberDetails *n=nullptr)</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>Member&lt;&amp;Gadget::name_ &gt;</name>
+    <filename>class_ase_1_1_member.html</filename>
+    <member kind="function" static="yes">
+      <type>static Class *</type>
+      <name>host_</name>
+      <anchorfile>class_ase_1_1_member.html</anchorfile>
+      <anchor>ac2374a595fc1ca65948eca54e3f695a9</anchor>
+      <arglist>(const Member *m, Class *o=nullptr)</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static const MemberDetails &amp;</type>
+      <name>meta_</name>
+      <anchorfile>class_ase_1_1_member.html</anchorfile>
+      <anchor>a672bc258a2d8a46082bcae32f9d9fc65</anchor>
+      <arglist>(const MemberDetails *n=nullptr)</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>Member&lt;&amp;Project::bpm_ &gt;</name>
+    <filename>class_ase_1_1_member.html</filename>
+    <member kind="function" static="yes">
+      <type>static Class *</type>
+      <name>host_</name>
+      <anchorfile>class_ase_1_1_member.html</anchorfile>
+      <anchor>ac2374a595fc1ca65948eca54e3f695a9</anchor>
+      <arglist>(const Member *m, Class *o=nullptr)</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static const MemberDetails &amp;</type>
+      <name>meta_</name>
+      <anchorfile>class_ase_1_1_member.html</anchorfile>
+      <anchor>a672bc258a2d8a46082bcae32f9d9fc65</anchor>
+      <arglist>(const MemberDetails *n=nullptr)</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>Member&lt;&amp;Project::denominator_ &gt;</name>
+    <filename>class_ase_1_1_member.html</filename>
+    <member kind="function" static="yes">
+      <type>static Class *</type>
+      <name>host_</name>
+      <anchorfile>class_ase_1_1_member.html</anchorfile>
+      <anchor>ac2374a595fc1ca65948eca54e3f695a9</anchor>
+      <arglist>(const Member *m, Class *o=nullptr)</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static const MemberDetails &amp;</type>
+      <name>meta_</name>
+      <anchorfile>class_ase_1_1_member.html</anchorfile>
+      <anchor>a672bc258a2d8a46082bcae32f9d9fc65</anchor>
+      <arglist>(const MemberDetails *n=nullptr)</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>Member&lt;&amp;Project::numerator_ &gt;</name>
+    <filename>class_ase_1_1_member.html</filename>
+    <member kind="function" static="yes">
+      <type>static Class *</type>
+      <name>host_</name>
+      <anchorfile>class_ase_1_1_member.html</anchorfile>
+      <anchor>ac2374a595fc1ca65948eca54e3f695a9</anchor>
+      <arglist>(const Member *m, Class *o=nullptr)</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static const MemberDetails &amp;</type>
+      <name>meta_</name>
+      <anchorfile>class_ase_1_1_member.html</anchorfile>
+      <anchor>a672bc258a2d8a46082bcae32f9d9fc65</anchor>
+      <arglist>(const MemberDetails *n=nullptr)</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>Ase::Lib::MemberFunctionTraits</name>
+    <filename>struct_ase_1_1_lib_1_1_member_function_traits.html</filename>
+    <templarg>Handler</templarg>
+  </compound>
+  <compound kind="class">
+    <name>Ase::MidiDriver</name>
+    <filename>class_ase_1_1_midi_driver.html</filename>
+    <base>Ase::Driver</base>
+    <member kind="function">
+      <type>String</type>
+      <name>devid</name>
+      <anchorfile>class_ase_1_1_driver.html</anchorfile>
+      <anchor>a3833ba948ad2e29e7960abc7868a0c0b</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static String</type>
+      <name>priority_string</name>
+      <anchorfile>class_ase_1_1_driver.html</anchorfile>
+      <anchor>a1b3c1b674fa55995121137e6aa664802</anchor>
+      <arglist>(uint priority)</arglist>
+    </member>
+  </compound>
   <compound kind="struct">
     <name>Ase::MidiEvent</name>
     <filename>struct_ase_1_1_midi_event.html</filename>
@@ -7888,8 +8224,8 @@
       <type>void</type>
       <name>emit_notify</name>
       <anchorfile>class_ase_1_1_emittable_impl.html</anchorfile>
-      <anchor>af5fad81722713d48cacff12477d1b877</anchor>
-      <arglist>(const String &amp;detail)</arglist>
+      <anchor>a4360349a1572463a7b9edc66e9194b70</anchor>
+      <arglist>(const String &amp;detail) override</arglist>
     </member>
   </compound>
   <compound kind="struct">
@@ -8118,8 +8454,8 @@
       <type>void</type>
       <name>emit_notify</name>
       <anchorfile>class_ase_1_1_emittable_impl.html</anchorfile>
-      <anchor>af5fad81722713d48cacff12477d1b877</anchor>
-      <arglist>(const String &amp;detail)</arglist>
+      <anchor>a4360349a1572463a7b9edc66e9194b70</anchor>
+      <arglist>(const String &amp;detail) override</arglist>
     </member>
     <member kind="function">
       <type>String</type>
@@ -8149,6 +8485,11 @@
       <anchor>ac70af03307d44735ad0433fad6a3f3b4</anchor>
       <arglist>() const</arglist>
     </member>
+  </compound>
+  <compound kind="struct">
+    <name>Ase::ParamExtraVals</name>
+    <filename>struct_ase_1_1_param_extra_vals.html</filename>
+    <base>variant&lt; MinMaxStep, ChoiceS, ChoicesFunc &gt;</base>
   </compound>
   <compound kind="class">
     <name>Ase::Pcg32Rng</name>
@@ -8202,6 +8543,36 @@
       <anchor>a765fa2df36afabca7454da250b5db264</anchor>
       <arglist>()</arglist>
     </member>
+  </compound>
+  <compound kind="class">
+    <name>Ase::PcmDriver</name>
+    <filename>class_ase_1_1_pcm_driver.html</filename>
+    <base>Ase::Driver</base>
+    <member kind="function">
+      <type>String</type>
+      <name>devid</name>
+      <anchorfile>class_ase_1_1_driver.html</anchorfile>
+      <anchor>a3833ba948ad2e29e7960abc7868a0c0b</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static PcmDriverP</type>
+      <name>open</name>
+      <anchorfile>class_ase_1_1_pcm_driver.html</anchorfile>
+      <anchor>ae33f00b5ebf842508e61edac84b6073a</anchor>
+      <arglist>(const String &amp;devid, IODir desired, IODir required, const PcmDriverConfig &amp;config, Ase::Error *ep)</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static String</type>
+      <name>priority_string</name>
+      <anchorfile>class_ase_1_1_driver.html</anchorfile>
+      <anchor>a1b3c1b674fa55995121137e6aa664802</anchor>
+      <arglist>(uint priority)</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>Ase::PcmDriverConfig</name>
+    <filename>struct_ase_1_1_pcm_driver_config.html</filename>
   </compound>
   <compound kind="class">
     <name>Ase::Persistent</name>
@@ -8569,8 +8940,8 @@
       <type>void</type>
       <name>emit_notify</name>
       <anchorfile>class_ase_1_1_emittable_impl.html</anchorfile>
-      <anchor>af5fad81722713d48cacff12477d1b877</anchor>
-      <arglist>(const String &amp;detail)</arglist>
+      <anchor>a4360349a1572463a7b9edc66e9194b70</anchor>
+      <arglist>(const String &amp;detail) override</arglist>
     </member>
     <member kind="function">
       <type>String</type>
@@ -8915,38 +9286,6 @@
       <arglist>(const String &amp;key) const =0</arglist>
     </member>
   </compound>
-  <compound kind="struct">
-    <name>Ase::Prop</name>
-    <filename>struct_ase_1_1_prop.html</filename>
-    <member kind="variable">
-      <type>PropertyGetter</type>
-      <name>getter</name>
-      <anchorfile>struct_ase_1_1_prop.html</anchorfile>
-      <anchor>aeb7a601077e20ba6f4ea2fd81e08f94e</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>PropertySetter</type>
-      <name>setter</name>
-      <anchorfile>struct_ase_1_1_prop.html</anchorfile>
-      <anchor>aef2d8ae7fd83d5c2502b57ba4664552d</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>Param</type>
-      <name>param</name>
-      <anchorfile>struct_ase_1_1_prop.html</anchorfile>
-      <anchor>a5e196abe23a21f9eeb861c9b96851a33</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>PropertyLister</type>
-      <name>lister</name>
-      <anchorfile>struct_ase_1_1_prop.html</anchorfile>
-      <anchor>a1a9cf06531a9af1efb6ada12863dda67</anchor>
-      <arglist></arglist>
-    </member>
-  </compound>
   <compound kind="class">
     <name>Ase::Property</name>
     <filename>class_ase_1_1_property.html</filename>
@@ -9099,10 +9438,6 @@
       <arglist>() const</arglist>
     </member>
   </compound>
-  <compound kind="struct">
-    <name>Ase::PropertyBag</name>
-    <filename>struct_ase_1_1_property_bag.html</filename>
-  </compound>
   <compound kind="class">
     <name>Ase::PropertyImpl</name>
     <filename>class_ase_1_1_property_impl.html</filename>
@@ -9230,8 +9565,8 @@
       <type>void</type>
       <name>emit_notify</name>
       <anchorfile>class_ase_1_1_emittable_impl.html</anchorfile>
-      <anchor>af5fad81722713d48cacff12477d1b877</anchor>
-      <arglist>(const String &amp;detail)</arglist>
+      <anchor>a4360349a1572463a7b9edc66e9194b70</anchor>
+      <arglist>(const String &amp;detail) override</arglist>
     </member>
     <member kind="function">
       <type>String</type>
@@ -10556,8 +10891,8 @@
       <type>void</type>
       <name>emit_notify</name>
       <anchorfile>class_ase_1_1_emittable_impl.html</anchorfile>
-      <anchor>af5fad81722713d48cacff12477d1b877</anchor>
-      <arglist>(const String &amp;detail)</arglist>
+      <anchor>a4360349a1572463a7b9edc66e9194b70</anchor>
+      <arglist>(const String &amp;detail) override</arglist>
     </member>
     <member kind="function">
       <type>void</type>
@@ -10981,6 +11316,7 @@
     <class kind="class">Ase::Device</class>
     <class kind="struct">Ase::DeviceInfo</class>
     <class kind="class">Ase::DispatcherSource</class>
+    <class kind="class">Ase::Driver</class>
     <class kind="struct">Ase::DriverEntry</class>
     <class kind="class">Ase::Emittable</class>
     <class kind="class">Ase::EmittableImpl</class>
@@ -10991,6 +11327,7 @@
     <class kind="class">Ase::EventLoop</class>
     <class kind="class">Ase::EventSource</class>
     <class kind="class">Ase::FastMemArray</class>
+    <class kind="class">Ase::FileCrawler</class>
     <class kind="union">Ase::FloatIEEE754</class>
     <class kind="class">Ase::Gadget</class>
     <class kind="class">Ase::GadgetImpl</class>
@@ -11008,6 +11345,9 @@
     <class kind="struct">Ase::LoftStats</class>
     <class kind="struct">Ase::Logscale</class>
     <class kind="class">Ase::MainLoop</class>
+    <class kind="class">Ase::Member</class>
+    <class kind="class">Ase::Member&lt; accessor, nullptr &gt;</class>
+    <class kind="class">Ase::MidiDriver</class>
     <class kind="struct">Ase::MidiEvent</class>
     <class kind="class">Ase::MidiEventOutput</class>
     <class kind="class">Ase::MidiEventReader</class>
@@ -11024,7 +11364,10 @@
     <class kind="struct">Ase::Parameter</class>
     <class kind="struct">Ase::ParameterMap</class>
     <class kind="class">Ase::ParameterProperty</class>
+    <class kind="struct">Ase::ParamExtraVals</class>
     <class kind="class">Ase::Pcg32Rng</class>
+    <class kind="class">Ase::PcmDriver</class>
+    <class kind="struct">Ase::PcmDriverConfig</class>
     <class kind="class">Ase::Persistent</class>
     <class kind="struct">Ase::PollFD</class>
     <class kind="class">Ase::PollFDSource</class>
@@ -11032,9 +11375,7 @@
     <class kind="struct">Ase::ProbeFeatures</class>
     <class kind="class">Ase::ProcessorManager</class>
     <class kind="class">Ase::Project</class>
-    <class kind="struct">Ase::Prop</class>
     <class kind="class">Ase::Property</class>
-    <class kind="struct">Ase::PropertyBag</class>
     <class kind="class">Ase::PropertyImpl</class>
     <class kind="struct">Ase::QueueMultiplexer</class>
     <class kind="class">Ase::Re</class>
@@ -11185,6 +11526,20 @@
       <name>MinMaxStep</name>
       <anchorfile>namespace_ase.html</anchorfile>
       <anchor>a3e2d3fec13fb0fe4110686f13492e26d</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>std::function&lt; ChoiceS(const CString &amp;)&gt;</type>
+      <name>ChoicesFunc</name>
+      <anchorfile>namespace_ase.html</anchorfile>
+      <anchor>a5b4310b0f4f858ed7d0ba1d0bcfdc381</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>std::variant&lt; bool, int8_t, uint8_t, int16_t, uint16_t, int32_t, uint32_t, int64_t, uint64_t, float, double, const char *, std::string &gt;</type>
+      <name>ParamInitialVal</name>
+      <anchorfile>namespace_ase.html</anchorfile>
+      <anchor>aa8d2d9f9112f8a84e0156519bd62d7f3</anchor>
       <arglist></arglist>
     </member>
     <member kind="typedef">
@@ -11405,10 +11760,10 @@
       <arglist>(unsigned int decompressed_size, const unsigned char *cdata, unsigned int cdata_size)</arglist>
     </member>
     <member kind="function">
-      <type>String</type>
+      <type>const char *</type>
       <name>string_demangle_cxx</name>
       <anchorfile>namespace_ase.html</anchorfile>
-      <anchor>a87a14d1027b91cfbf81284285c18f4d8</anchor>
+      <anchor>a85440eab77a82fa270604f34f62b52d2</anchor>
       <arglist>(const char *mangled_identifier) noexcept</arglist>
     </member>
     <member kind="function">
@@ -11436,15 +11791,15 @@
       <type></type>
       <name>__attribute__</name>
       <anchorfile>namespace_ase.html</anchorfile>
-      <anchor>a9e287795697d626b0570ba27d540cd5b</anchor>
-      <arglist>((__pure__)) static inline String typeid_name()</arglist>
+      <anchor>a6d1f84eebb09d082af96cea3994eadf1</anchor>
+      <arglist>((__pure__)) static inline const char *typeid_name()</arglist>
     </member>
     <member kind="function">
       <type></type>
       <name>__attribute__</name>
       <anchorfile>namespace_ase.html</anchorfile>
-      <anchor>adc10ef3ffd73bfec6be7629171a77945</anchor>
-      <arglist>((__pure__)) static inline String typeid_name(T &amp;obj)</arglist>
+      <anchor>a280bb9e5648777ccdba0d7e72175114b</anchor>
+      <arglist>((__pure__)) static inline const char *typeid_name(T &amp;obj)</arglist>
     </member>
     <member kind="function">
       <type>constexpr bool</type>
@@ -11550,6 +11905,20 @@
       <anchorfile>namespace_ase.html</anchorfile>
       <anchor>aabc82555a0b73f673ccee2ea3dbaf1cb</anchor>
       <arglist>(size_t n, uint32_t *d, const uint32_t *s)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool *</type>
+      <name>register_driver_loader</name>
+      <anchorfile>namespace_ase.html</anchorfile>
+      <anchor>a84c9b8667485a4bb933602dcc07b179f</anchor>
+      <arglist>(const char *staticwhat, Error(*loader)())</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>load_registered_drivers</name>
+      <anchorfile>namespace_ase.html</anchorfile>
+      <anchor>adb4f757600cb3fcf67df58af722ff2d3</anchor>
+      <arglist>()</arglist>
     </member>
     <member kind="function">
       <type>void</type>
@@ -13221,10 +13590,21 @@
   <compound kind="namespace">
     <name>Ase::Lib</name>
     <filename>namespace_ase_1_1_lib.html</filename>
+    <class kind="struct">Ase::Lib::FunctionTraits</class>
+    <class kind="struct">Ase::Lib::FunctionTraits&lt; R(C::*)(Args...) const &gt;</class>
+    <class kind="struct">Ase::Lib::FunctionTraits&lt; R(C::*)(Args...)&gt;</class>
     <class kind="class">Ase::Lib::KeccakF1600</class>
+    <class kind="struct">Ase::Lib::MemberFunctionTraits</class>
     <class kind="class">Ase::Lib::ScopedLocale</class>
     <class kind="class">Ase::Lib::ScopedPosixLocale</class>
     <class kind="class">Ase::Lib::StringFormatter</class>
+    <member kind="function">
+      <type>C *</type>
+      <name>host_member_offset</name>
+      <anchorfile>namespace_ase_1_1_lib.html</anchorfile>
+      <anchor>a8716bcda6e78bbd9e459592d17e369b9</anchor>
+      <arglist>(ptrdiff_t *hmoffsetp, const M *member, C *host)</arglist>
+    </member>
   </compound>
   <compound kind="namespace">
     <name>Ase::Loft</name>

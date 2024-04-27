@@ -103,11 +103,15 @@ Copyright: Copyright (C) 2022-2023 Tim Janik
 License: MPL-2.0
 
 Files: ase/clip.cc
-Copyright: Copyright (C) 2021-2022 Tim Janik
+Copyright:
+  Copyright (C) 2024 Tim Janik
+  Copyright (C) 2021-2022 Tim Janik
 License: MPL-2.0
 
 Files: ase/clip.hh
-Copyright: Copyright (C) 2021-2022 Tim Janik
+Copyright:
+  Copyright (C) 2024 Tim Janik
+  Copyright (C) 2021-2022 Tim Janik
 License: MPL-2.0
 
 Files: ase/combo.cc
@@ -196,7 +200,7 @@ License: MPL-2.0
 
 Files: ase/driver.hh
 Copyright:
-  Copyright (C) 2023 Tim Janik
+  Copyright (C) 2023-2024 Tim Janik
   Copyright (C) 2021 Tim Janik
 License: MPL-2.0
 
@@ -237,7 +241,7 @@ Copyright: Copyright (C) 2021-2024 Tim Janik
 License: MPL-2.0
 
 Files: ase/gadget.hh
-Copyright: Copyright (C) 2021-2023 Tim Janik
+Copyright: Copyright (C) 2021-2024 Tim Janik
 License: MPL-2.0
 
 Files: ase/gtk2wrap.cc
@@ -306,7 +310,7 @@ License: MPL-2.0
 
 Files: ase/main.cc
 Copyright:
-  Copyright (C) 2021-2023 Tim Janik
+  Copyright (C) 2021-2024 Tim Janik
   Copyright (C) 2019 Stefan Westerfeld
 License: MPL-2.0
 
@@ -324,6 +328,14 @@ License: MPL-2.0
 
 Files: ase/mathutils.hh
 Copyright: Copyright (C) 2021 Tim Janik
+License: MPL-2.0
+
+Files: ase/member.cc
+Copyright: Copyright (C) 2024 Tim Janik
+License: MPL-2.0
+
+Files: ase/member.hh
+Copyright: Copyright (C) 2024 Tim Janik
 License: MPL-2.0
 
 Files: ase/memory.cc
@@ -397,7 +409,9 @@ Copyright: Copyright (C) 2021-2023 Tim Janik
 License: MPL-2.0
 
 Files: ase/object.hh
-Copyright: Copyright (C) 2021-2022 Tim Janik
+Copyright:
+  Copyright (C) 2024 Tim Janik
+  Copyright (C) 2021-2022 Tim Janik
 License: MPL-2.0
 
 Files: ase/parameter.cc
@@ -952,11 +966,12 @@ Copyright: Copyright (C) 2021-2023 Tim Janik
 License: MPL-2.0
 
 Files: jsonipc/jsonipc.hh
-Copyright: Copyright (C) 2019-2023 Tim Janik
+Copyright: Copyright (C) 2019-2024 Tim Janik
 License: MPL-2.0
 
 Files: jsonipc/jsonipc.js
 Copyright:
+  Copyright (C) 2024 Tim Janik
   Copyright (C) 2021-2022 Tim Janik
   Copyright (C) 2019 Tim Janik
 License: CC0-1.0
@@ -1219,8 +1234,8 @@ License: MPL-2.0
 
 Files: ui/b/piano-ctrl.js
 Copyright:
+  Copyright (C) 2020-2024 Tim Janik
   Copyright (C) 2023-2024 Stefan Westerfeld
-  Copyright (C) 2020-2023 Tim Janik
 License: MPL-2.0
 
 Files: ui/b/pianoroll.js
@@ -1383,6 +1398,10 @@ License: MPL-2.0
 
 Files: ui/sfc-compile.js
 Copyright: Copyright (C) 2020-2024 Tim Janik
+License: MPL-2.0
+
+Files: ui/signal.js
+Copyright: Copyright (C) 2024 Tim Janik
 License: MPL-2.0
 
 Files: ui/startup.js
