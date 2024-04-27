@@ -112,8 +112,8 @@ License: MPL-2.0
 
 Files: ase/combo.cc
 Copyright:
+  Copyright (C) 2021-2024 Tim Janik
   Copyright (C) 2024 Stefan Westerfeld
-  Copyright (C) 2021-2023 Tim Janik
 License: MPL-2.0
 
 Files: ase/combo.hh
@@ -173,7 +173,7 @@ Copyright: Copyright (C) 2021-2023 Tim Janik
 License: MPL-2.0
 
 Files: ase/device.cc
-Copyright: Copyright (C) 2021-2023 Tim Janik
+Copyright: Copyright (C) 2021-2024 Tim Janik
 License: MPL-2.0
 
 Files: ase/device.hh
@@ -181,7 +181,7 @@ Copyright: Copyright (C) 2021-2022 Tim Janik
 License: MPL-2.0
 
 Files: ase/driver-alsa.cc
-Copyright: Copyright (C) 2021-2023 Tim Janik
+Copyright: Copyright (C) 2021-2024 Tim Janik
 License: MPL-2.0
 
 Files: ase/driver-jack.cc
@@ -191,7 +191,7 @@ Copyright:
 License: MPL-2.0
 
 Files: ase/driver.cc
-Copyright: Copyright (C) 2021-2023 Tim Janik
+Copyright: Copyright (C) 2021-2024 Tim Janik
 License: MPL-2.0
 
 Files: ase/driver.hh
@@ -241,7 +241,9 @@ Copyright: Copyright (C) 2021-2023 Tim Janik
 License: MPL-2.0
 
 Files: ase/gtk2wrap.cc
-Copyright: Copyright (C) 2022 Tim Janik
+Copyright:
+  Copyright (C) 2024 Tim Janik
+  Copyright (C) 2022 Tim Janik
 License: MPL-2.0
 
 Files: ase/gtk2wrap.hh
@@ -250,7 +252,7 @@ License: MPL-2.0
 
 Files: ase/inifile.cc
 Copyright:
-  Copyright (C) 2023 Tim Janik
+  Copyright (C) 2023-2024 Tim Janik
   Copyright (C) 2021 Tim Janik
 License: MPL-2.0
 
