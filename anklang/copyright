@@ -1110,11 +1110,11 @@ Copyright: Copyright (C) 2020-2024 Tim Janik
 License: MPL-2.0
 
 Files: ui/b/basics.js
-Copyright: Copyright (C) 2023 Tim Janik
+Copyright: Copyright (C) 2023-2024 Tim Janik
 License: MPL-2.0
 
 Files: ui/b/buttonbar.js
-Copyright: Copyright (C) 2023 Tim Janik
+Copyright: Copyright (C) 2023-2024 Tim Janik
 License: MPL-2.0
 
 Files: ui/b/choiceinput.js
@@ -1134,7 +1134,7 @@ Copyright: Copyright (C) 2022-2024 Tim Janik
 License: MPL-2.0
 
 Files: ui/b/databubble.js
-Copyright: Copyright (C) 2020-2023 Tim Janik
+Copyright: Copyright (C) 2020-2024 Tim Janik
 License: MPL-2.0
 
 Files: ui/b/deviceeditor.js
@@ -1188,15 +1188,15 @@ Copyright: Copyright (C) 2022-2024 Tim Janik
 License: MPL-2.0
 
 Files: ui/b/menuseparator.js
-Copyright: Copyright (C) 2022-2023 Tim Janik
+Copyright: Copyright (C) 2022-2024 Tim Janik
 License: MPL-2.0
 
 Files: ui/b/menutitle.js
-Copyright: Copyright (C) 2022-2023 Tim Janik
+Copyright: Copyright (C) 2022-2024 Tim Janik
 License: MPL-2.0
 
 Files: ui/b/more.js
-Copyright: Copyright (C) 2022-2023 Tim Janik
+Copyright: Copyright (C) 2022-2024 Tim Janik
 License: MPL-2.0
 
 Files: ui/b/noteboard.vue
@@ -1204,7 +1204,7 @@ Copyright: Copyright (C) 2021-2023 Tim Janik
 License: MPL-2.0
 
 Files: ui/b/numberinput.js
-Copyright: Copyright (C) 2023 Tim Janik
+Copyright: Copyright (C) 2023-2024 Tim Janik
 License: MPL-2.0
 
 Files: ui/b/objecteditor.js
@@ -1212,7 +1212,7 @@ Copyright: Copyright (C) 2023-2024 Tim Janik
 License: MPL-2.0
 
 Files: ui/b/partlist.js
-Copyright: Copyright (C) 2023 Tim Janik
+Copyright: Copyright (C) 2023-2024 Tim Janik
 License: MPL-2.0
 
 Files: ui/b/piano-ctrl.js
@@ -1256,7 +1256,7 @@ Copyright: Copyright (C) 2023-2024 Tim Janik
 License: MPL-2.0
 
 Files: ui/b/switchinput.js
-Copyright: Copyright (C) 2023 Tim Janik
+Copyright: Copyright (C) 2023-2024 Tim Janik
 License: MPL-2.0
 
 Files: ui/b/textinput.js
@@ -1264,11 +1264,11 @@ Copyright: Copyright (C) 2022-2024 Tim Janik
 License: MPL-2.0
 
 Files: ui/b/toggle.js
-Copyright: Copyright (C) 2023 Tim Janik
+Copyright: Copyright (C) 2023-2024 Tim Janik
 License: MPL-2.0
 
 Files: ui/b/tracklist.js
-Copyright: Copyright (C) 2023 Tim Janik
+Copyright: Copyright (C) 2023-2024 Tim Janik
 License: MPL-2.0
 
 Files: ui/b/trackview.js
@@ -1393,6 +1393,10 @@ License: MPL-2.0
 
 Files: ui/stylelintrc.cjs
 Copyright: Copyright (C) 2023-2024 Tim Janik
+License: MPL-2.0
+
+Files: ui/tailwind.config.mjs
+Copyright: Copyright (C) 2024 Tim Janik
 License: MPL-2.0
 
 Files: ui/tailwind.scss
