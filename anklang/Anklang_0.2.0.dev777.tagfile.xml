@@ -2466,10 +2466,24 @@
       <arglist>()</arglist>
     </member>
     <member kind="function">
+      <type>bool</type>
+      <name>string_islower</name>
+      <anchorfile>namespace_ase.html</anchorfile>
+      <anchor>adc08b5d87bbbe899292dbe1bd70c3ddb</anchor>
+      <arglist>(const String &amp;str)</arglist>
+    </member>
+    <member kind="function">
       <type>String</type>
       <name>string_tolower</name>
       <anchorfile>namespace_ase.html</anchorfile>
       <anchor>a36221e5318ced5a44a256988951988b8</anchor>
+      <arglist>(const String &amp;str)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>string_isupper</name>
+      <anchorfile>namespace_ase.html</anchorfile>
+      <anchor>a02b4f7e41b7a89f2f00b4f4f89503718</anchor>
       <arglist>(const String &amp;str)</arglist>
     </member>
     <member kind="function">
@@ -3545,6 +3559,11 @@
     <name>contextmenu.js</name>
     <path>/cirun/poxy/ui/b/</path>
     <filename>contextmenu_8js.html</filename>
+  </compound>
+  <compound kind="file">
+    <name>crawlerdialog.js</name>
+    <path>/cirun/poxy/ui/b/</path>
+    <filename>crawlerdialog_8js.html</filename>
   </compound>
   <compound kind="file">
     <name>databubble.js</name>
@@ -6125,11 +6144,11 @@
       <arglist>() override</arglist>
     </member>
     <member kind="function">
-      <type>void</type>
+      <type>String2</type>
       <name>assign</name>
       <anchorfile>class_ase_1_1_file_crawler.html</anchorfile>
-      <anchor>a7935d4c969339b385f15ae6699290e56</anchor>
-      <arglist>(const String &amp;utf8path) override</arglist>
+      <anchor>a4c1ab8f444957ac27b19f329d7967528</anchor>
+      <arglist>(const String &amp;utf8path, bool existingfile) override</arglist>
     </member>
     <member kind="function">
       <type>Resource</type>
@@ -6159,12 +6178,26 @@
       <anchor>a4360349a1572463a7b9edc66e9194b70</anchor>
       <arglist>(const String &amp;detail) override</arglist>
     </member>
+    <member kind="variable">
+      <type>Member&lt;&amp;ResourceCrawler::folder_ &gt;</type>
+      <name>folder</name>
+      <anchorfile>class_ase_1_1_resource_crawler.html</anchorfile>
+      <anchor>a1da3957bf367616c8a5e6ff26918822c</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>Member&lt;&amp;ResourceCrawler::entries_ &gt;</type>
+      <name>entries</name>
+      <anchorfile>class_ase_1_1_resource_crawler.html</anchorfile>
+      <anchor>a2b9d4d95b5e75d56bc4d9bd355e2dd86</anchor>
+      <arglist></arglist>
+    </member>
     <member kind="function" protection="protected">
-      <type>void</type>
-      <name>assign</name>
+      <type>String2</type>
+      <name>assign_</name>
       <anchorfile>class_ase_1_1_file_crawler.html</anchorfile>
-      <anchor>a16bde3ee51544325156dc8e7fc314f84</anchor>
-      <arglist>(const String &amp;utf8path, bool notify)</arglist>
+      <anchor>ab9956d381e0ca193304dd74c477a6534</anchor>
+      <arglist>(const String &amp;utf8path, bool existingfile, bool notify=true)</arglist>
     </member>
   </compound>
   <compound kind="class">
@@ -7697,6 +7730,42 @@
   </compound>
   <compound kind="class">
     <name>Member&lt;&amp;Project::numerator_ &gt;</name>
+    <filename>class_ase_1_1_member.html</filename>
+    <member kind="function" static="yes">
+      <type>static Class *</type>
+      <name>host_</name>
+      <anchorfile>class_ase_1_1_member.html</anchorfile>
+      <anchor>ac2374a595fc1ca65948eca54e3f695a9</anchor>
+      <arglist>(const Member *m, Class *o=nullptr)</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static const MemberDetails &amp;</type>
+      <name>meta_</name>
+      <anchorfile>class_ase_1_1_member.html</anchorfile>
+      <anchor>a672bc258a2d8a46082bcae32f9d9fc65</anchor>
+      <arglist>(const MemberDetails *n=nullptr)</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>Member&lt;&amp;ResourceCrawler::entries_ &gt;</name>
+    <filename>class_ase_1_1_member.html</filename>
+    <member kind="function" static="yes">
+      <type>static Class *</type>
+      <name>host_</name>
+      <anchorfile>class_ase_1_1_member.html</anchorfile>
+      <anchor>ac2374a595fc1ca65948eca54e3f695a9</anchor>
+      <arglist>(const Member *m, Class *o=nullptr)</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static const MemberDetails &amp;</type>
+      <name>meta_</name>
+      <anchorfile>class_ase_1_1_member.html</anchorfile>
+      <anchor>a672bc258a2d8a46082bcae32f9d9fc65</anchor>
+      <arglist>(const MemberDetails *n=nullptr)</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>Member&lt;&amp;ResourceCrawler::folder_ &gt;</name>
     <filename>class_ase_1_1_member.html</filename>
     <member kind="function" static="yes">
       <type>static Class *</type>
@@ -9697,11 +9766,11 @@
       <arglist>()=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
-      <type>virtual void</type>
+      <type>virtual String2</type>
       <name>assign</name>
       <anchorfile>class_ase_1_1_resource_crawler.html</anchorfile>
-      <anchor>a8f973d659cd4c0f6309ac39fa72763d3</anchor>
-      <arglist>(const String &amp;utf8path)=0</arglist>
+      <anchor>a016fc540b6b95f0b36d68ab3c215558a</anchor>
+      <arglist>(const String &amp;utf8path, bool existingfile=false)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual Resource</type>
@@ -9709,6 +9778,20 @@
       <anchorfile>class_ase_1_1_resource_crawler.html</anchorfile>
       <anchor>a9a5cb0f10087ee29c6e204ef0ccf05af</anchor>
       <arglist>(const String &amp;utf8cwd, const String &amp;utf8fragment, bool constraindir, bool constrainfile)=0</arglist>
+    </member>
+    <member kind="variable">
+      <type>Member&lt;&amp;ResourceCrawler::folder_ &gt;</type>
+      <name>folder</name>
+      <anchorfile>class_ase_1_1_resource_crawler.html</anchorfile>
+      <anchor>a1da3957bf367616c8a5e6ff26918822c</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>Member&lt;&amp;ResourceCrawler::entries_ &gt;</type>
+      <name>entries</name>
+      <anchorfile>class_ase_1_1_resource_crawler.html</anchorfile>
+      <anchor>a2b9d4d95b5e75d56bc4d9bd355e2dd86</anchor>
+      <arglist></arglist>
     </member>
   </compound>
   <compound kind="struct">
@@ -12607,10 +12690,24 @@
       <arglist>(const String &amp;str)</arglist>
     </member>
     <member kind="function">
+      <type>bool</type>
+      <name>string_islower</name>
+      <anchorfile>namespace_ase.html</anchorfile>
+      <anchor>adc08b5d87bbbe899292dbe1bd70c3ddb</anchor>
+      <arglist>(const String &amp;str)</arglist>
+    </member>
+    <member kind="function">
       <type>String</type>
       <name>string_toupper</name>
       <anchorfile>namespace_ase.html</anchorfile>
       <anchor>a51b498faaac090d4120734e232416a40</anchor>
+      <arglist>(const String &amp;str)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>string_isupper</name>
+      <anchorfile>namespace_ase.html</anchorfile>
+      <anchor>a02b4f7e41b7a89f2f00b4f4f89503718</anchor>
       <arglist>(const String &amp;str)</arglist>
     </member>
     <member kind="function">

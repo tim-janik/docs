@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en"><head>
   <meta charset="utf-8"/>
-  <title>Ase::CustomDataContainer class | Anklang 0.2.0.dev777 Anklang Programming Reference</title>
+  <title>ui/b/crawlerdialog.js file | Anklang 0.2.0.dev777 Anklang Programming Reference</title>
   <link href="favicon.svg" rel="icon" type="image/svg+xml"/>
   <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
   <meta content="#cb4b16" name="theme-color"/>
@@ -22,7 +22,7 @@
   <meta content="Poxy v0.17.0" name="generator"/>
   <meta content="strict-origin-when-cross-origin" name="referrer"/>
 </head>
-<body class="poxy-has-toc">
+<body>
 <header><nav id="navigation">
   <div class="m-container">
     <div class="m-row">
@@ -59,56 +59,59 @@
     <div class="m-row">
       <div class="m-col-l-10 m-push-l-1">
         <h1>
-          <span class="m-breadcrumb"><a href="namespace_ase.html">Ase</a>::<wbr/></span>CustomDataContainer <span class="m-thin">class</span>
+          <span class="m-breadcrumb"><a href="dir_1788f8309b1a812dcb800a185471cf6c.html">ui</a>/</span><span class="m-breadcrumb"><a href="dir_8cd1e0dc53330a899bb8b54b9ae21f1b.html">b</a>/</span>crawlerdialog.js <span class="m-thin">file</span>
         </h1>
-        <nav class="m-block m-default poxy-toc" id="poxy-toc">
-          <h3>Contents</h3>
-          <ul>
-            <li>
-              Reference
-              <ul>
-                <li><a href="#derived-classes">Derived classes</a></li>
-                <li><a href="#pub-methods">Public functions</a></li>
-              </ul>
-            </li>
-          </ul>
-        </nav>
-<p>DataListContainer - typesafe storage and retrieval of arbitrary members. By using a DataKey, DataListContainer objects allow storage and retrieval of custom data members in a typesafe fashion. The custom data members will initially default to DataKey::fallback and are deleted by the DataListContainer destructor. Example:</p><pre class="m-code"></pre>
-        <section id="derived-classes">
-          <h2><a href="#derived-classes">Derived classes</a></h2>
-          <dl class="m-doc">
-            <dt>
-              class <a class="m-doc" href="class_ase_1_1_gadget_impl.html">GadgetImpl</a>
-            </dt>
-            <dd>Base type for classes that have a <a class="m-doc" href="class_ase_1_1_property.html">Property</a>.</dd>
-          </dl>
-        </section>
-        <section id="pub-methods">
-          <h2><a href="#pub-methods">Public functions</a></h2>
-          <dl class="m-doc">
-            <dt id="a608bf027faa9105307ad21252f7beb89">
-              <div class="m-doc-template">template &lt;<span class="m-doc-template-params"><span class="m-doc-template-param">class T</span></span>&gt;</div>
-              <span class="m-doc-wrap-bumper">auto <a class="m-doc-self" href="#a608bf027faa9105307ad21252f7beb89">del_custom_data</a>(</span><span class="m-doc-wrap"><a class="m-doc" href="class_ase_1_1_custom_data_key.html">CustomDataKey</a>&lt;T&gt;* key) -&gt; bool</span>
-            </dt>
-            <dd>Delete the current contents of the custom keyed data member, invokes DataKey::destroy.</dd>
-            <dt id="a327f3ffb1c6adcac1279e4b5883cbdab">
-              <div class="m-doc-template">template &lt;<span class="m-doc-template-params"><span class="m-doc-template-param">class T</span></span>&gt;</div>
-              <span class="m-doc-wrap-bumper">auto <a class="m-doc-self" href="#a327f3ffb1c6adcac1279e4b5883cbdab">get_custom_data</a>(</span><span class="m-doc-wrap"><a class="m-doc" href="class_ase_1_1_custom_data_key.html">CustomDataKey</a>&lt;T&gt;* key) const -&gt; T</span>
-            </dt>
-            <dd>Retrieve contents of the custom keyed data member, returns DataKey::fallback if nothing was set.</dd>
-            <dt id="a526b8883a8b0fe2457dc9a9751c2208e">
-              <div class="m-doc-template">template &lt;<span class="m-doc-template-params"><span class="m-doc-template-param">class T</span></span>&gt;</div>
-              <span class="m-doc-wrap-bumper">auto <a class="m-doc-self" href="#a526b8883a8b0fe2457dc9a9751c2208e">has_custom_data</a>(</span><span class="m-doc-wrap"><a class="m-doc" href="class_ase_1_1_custom_data_key.html">CustomDataKey</a>&lt;T&gt;* key) const -&gt; bool</span>
-            </dt>
-            <dd>Retrieve wether contents of the custom keyed data member exists.</dd>
-            <dt id="acd524fb742ea2f58bb68878a7552b3d0">
-              <div class="m-doc-template">template &lt;<span class="m-doc-template-params"><span class="m-doc-template-param">class T</span></span>&gt;</div>
-              <span class="m-doc-wrap-bumper">void <a class="m-doc-self" href="#acd524fb742ea2f58bb68878a7552b3d0">set_custom_data</a>(</span><span class="m-doc-wrap"><a class="m-doc" href="class_ase_1_1_custom_data_key.html">CustomDataKey</a>&lt;T&gt;* key,
-              T data)</span>
-            </dt>
-            <dd>Assign data to the custom keyed data member, deletes any previously set data.</dd>
-          </dl>
-        </section>
+<section class="level2" id="bcrawlerdialog">
+<h2><span data-4search="ui/b/crawlerdialog.js:BCrawlerDialog;section" id="BCrawlerDialog">BCrawlerDialog</span></h2>
+<p>Browse Ase::Crawler contents</p>
+<section class="level3" id="bcrawlerdialog-class">
+<h3>BCrawlerDialog class</h3>
+<dl>
+<dt><em>class</em> <span data-4search="ui/b/crawlerdialog.js:BCrawlerDialog;class" id="BCrawlerDialog"><strong>BCrawlerDialog</strong></span></dt>
+<dd>
+<p>…</p>
+<dl>
+<dt><span data-4search="ui/b/crawlerdialog.js:folder;func" id="folder"><strong><code>folder</code></strong></span>
+<code>()</code></dt>
+<dd>
+folder - getter for the current folder without protocol
+</dd>
+<dt><span data-4search="ui/b/crawlerdialog.js:update_inflight;func" id="update_inflight"><strong><code>update_inflight</code></strong></span>
+<code>()</code></dt>
+<dd>
+update_inflight - indicates if the crawler is asynchronously updating
+</dd>
+<dt><span data-4search="ui/b/crawlerdialog.js:assign_utf8path;func" id="assign_utf8path"><strong><code>assign_utf8path</code></strong></span>
+<code>(</code><em>filepath, pickfile</em><code>)</code></dt>
+<dd>
+assign_utf8path - assign a path in UTF-8 encoding and possibly select it
+</dd>
+<dt><span data-4search="ui/b/crawlerdialog.js:entry_event;func" id="entry_event"><strong><code>entry_event</code></strong></span>
+<code>(</code><em>event, entry</em><code>)</code></dt>
+<dd>
+entry_event - handle events on the file entries
+</dd>
+<dt><span data-4search="ui/b/crawlerdialog.js:filtered_entries;func" id="filtered_entries"><strong><code>filtered_entries</code></strong></span>
+<code>()</code></dt>
+<dd>
+filtered_entries - filter hidden entries
+</dd>
+<dt><span data-4search="ui/b/crawlerdialog.js:select_entry;func" id="select_entry"><strong><code>select_entry</code></strong></span>
+<code>(</code><em>entry</em><code>)</code></dt>
+<dd>
+select_entry - send 'select' event for <code>entry</code> or
+<code>pathentry.value</code>
+</dd>
+<dt><span data-4search="ui/b/crawlerdialog.js:close_click;func" id="close_click"><strong><code>close_click</code></strong></span>
+<code>(</code><em>ev</em><code>)</code></dt>
+<dd>
+close_click - send 'close' event for the dialog
+</dd>
+</dl>
+</dd>
+</dl>
+</section>
+</section>
       </div>
     </div>
   </div>

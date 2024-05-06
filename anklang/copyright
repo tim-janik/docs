@@ -1150,6 +1150,10 @@ Files: ui/b/contextmenu.js
 Copyright: Copyright (C) 2022-2024 Tim Janik
 License: MPL-2.0
 
+Files: ui/b/crawlerdialog.js
+Copyright: Copyright (C) 2024 Tim Janik
+License: MPL-2.0
+
 Files: ui/b/databubble.js
 Copyright: Copyright (C) 2020-2024 Tim Janik
 License: MPL-2.0
@@ -1174,18 +1178,6 @@ Files: ui/b/envue.js
 Copyright:
   Copyright (C) 2023 Tim Janik
   Copyright (C) 2020-2021 Tim Janik
-License: MPL-2.0
-
-Files: ui/b/filedialog.vue
-Copyright:
-  Copyright (C) 2023-2024 Tim Janik
-  Copyright (C) 2021 Tim Janik
-License: MPL-2.0
-
-Files: ui/b/folderview.vue
-Copyright:
-  Copyright (C) 2023-2024 Tim Janik
-  Copyright (C) 2021 Tim Janik
 License: MPL-2.0
 
 Files: ui/b/icon.js
