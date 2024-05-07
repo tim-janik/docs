@@ -7747,6 +7747,60 @@
     </member>
   </compound>
   <compound kind="class">
+    <name>Member&lt;&amp;Property::metadata_ &gt;</name>
+    <filename>class_ase_1_1_member.html</filename>
+    <member kind="function" static="yes">
+      <type>static Class *</type>
+      <name>host_</name>
+      <anchorfile>class_ase_1_1_member.html</anchorfile>
+      <anchor>ac2374a595fc1ca65948eca54e3f695a9</anchor>
+      <arglist>(const Member *m, Class *o=nullptr)</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static const MemberDetails &amp;</type>
+      <name>meta_</name>
+      <anchorfile>class_ase_1_1_member.html</anchorfile>
+      <anchor>a672bc258a2d8a46082bcae32f9d9fc65</anchor>
+      <arglist>(const MemberDetails *n=nullptr)</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>Member&lt;&amp;Property::name_ &gt;</name>
+    <filename>class_ase_1_1_member.html</filename>
+    <member kind="function" static="yes">
+      <type>static Class *</type>
+      <name>host_</name>
+      <anchorfile>class_ase_1_1_member.html</anchorfile>
+      <anchor>ac2374a595fc1ca65948eca54e3f695a9</anchor>
+      <arglist>(const Member *m, Class *o=nullptr)</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static const MemberDetails &amp;</type>
+      <name>meta_</name>
+      <anchorfile>class_ase_1_1_member.html</anchorfile>
+      <anchor>a672bc258a2d8a46082bcae32f9d9fc65</anchor>
+      <arglist>(const MemberDetails *n=nullptr)</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>Member&lt;&amp;Property::value_ &gt;</name>
+    <filename>class_ase_1_1_member.html</filename>
+    <member kind="function" static="yes">
+      <type>static Class *</type>
+      <name>host_</name>
+      <anchorfile>class_ase_1_1_member.html</anchorfile>
+      <anchor>ac2374a595fc1ca65948eca54e3f695a9</anchor>
+      <arglist>(const Member *m, Class *o=nullptr)</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static const MemberDetails &amp;</type>
+      <name>meta_</name>
+      <anchorfile>class_ase_1_1_member.html</anchorfile>
+      <anchor>a672bc258a2d8a46082bcae32f9d9fc65</anchor>
+      <arglist>(const MemberDetails *n=nullptr)</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
     <name>Member&lt;&amp;ResourceCrawler::entries_ &gt;</name>
     <filename>class_ase_1_1_member.html</filename>
     <member kind="function" static="yes">
@@ -8464,13 +8518,6 @@
       <arglist>() const override</arglist>
     </member>
     <member kind="function">
-      <type>StringS</type>
-      <name>metadata</name>
-      <anchorfile>class_ase_1_1_parameter_property.html</anchorfile>
-      <anchor>a1f96ef9ec5c679c5d523188c2c5aef54</anchor>
-      <arglist>() const override</arglist>
-    </member>
-    <member kind="function">
       <type>void</type>
       <name>reset</name>
       <anchorfile>class_ase_1_1_parameter_property.html</anchorfile>
@@ -8961,13 +9008,6 @@
       <name>choices</name>
       <anchorfile>class_ase_1_1_parameter_property.html</anchorfile>
       <anchor>acae07361853c1399f9edf3e6e7408b28</anchor>
-      <arglist>() const override</arglist>
-    </member>
-    <member kind="function">
-      <type>StringS</type>
-      <name>metadata</name>
-      <anchorfile>class_ase_1_1_parameter_property.html</anchorfile>
-      <anchor>a1f96ef9ec5c679c5d523188c2c5aef54</anchor>
       <arglist>() const override</arglist>
     </member>
     <member kind="function">
@@ -9471,13 +9511,6 @@
       <anchor>a3b32704ecb62f309a5d9c0850ead58bf</anchor>
       <arglist>() const =0</arglist>
     </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual StringS</type>
-      <name>metadata</name>
-      <anchorfile>class_ase_1_1_property.html</anchorfile>
-      <anchor>ad01ec3b2ac58cdc7934c0d761456b671</anchor>
-      <arglist>() const =0</arglist>
-    </member>
     <member kind="function">
       <type>String</type>
       <name>hints</name>
@@ -9586,13 +9619,6 @@
       <name>is_numeric</name>
       <anchorfile>class_ase_1_1_parameter_property.html</anchorfile>
       <anchor>a1e9d8ebd27490e83989e47db8758d2db</anchor>
-      <arglist>() const override</arglist>
-    </member>
-    <member kind="function">
-      <type>StringS</type>
-      <name>metadata</name>
-      <anchorfile>class_ase_1_1_parameter_property.html</anchorfile>
-      <anchor>a1f96ef9ec5c679c5d523188c2c5aef54</anchor>
       <arglist>() const override</arglist>
     </member>
     <member kind="function">
