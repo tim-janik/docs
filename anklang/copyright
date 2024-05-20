@@ -1209,7 +1209,7 @@ Copyright: Copyright (C) 2022-2024 Tim Janik
 License: MPL-2.0
 
 Files: ui/b/noteboard.vue
-Copyright: Copyright (C) 2021-2023 Tim Janik
+Copyright: Copyright (C) 2021-2024 Tim Janik
 License: MPL-2.0
 
 Files: ui/b/numberinput.js
@@ -1331,14 +1331,14 @@ Copyright: Copyright (C) 2020-2022 Tim Janik
 License: MPL-2.0
 
 Files: ui/dark.scss
-Copyright: Copyright (C) 2023 Tim Janik
+Copyright: Copyright (C) 2023-2024 Tim Janik
 License: MPL-2.0
 
 Files: ui/dom.js
 Copyright: Copyright (C) 2023-2024 Tim Janik
 License: MPL-2.0
 
-Files: ui/eslintrc.cjs
+Files: ui/eslintrc.js
 Copyright: Copyright (C) 2020-2024 Tim Janik
 License: MPL-2.0
 
@@ -1380,8 +1380,8 @@ Files: ui/palette.scss
 Copyright: Copyright (C) 2023 Tim Janik
 License: MPL-2.0
 
-Files: ui/postcss.js
-Copyright: Copyright (C) 2022-2024 Tim Janik
+Files: ui/postcss.config.mjs
+Copyright: Copyright (C) 2024 Tim Janik
 License: MPL-2.0
 
 Files: ui/script.js

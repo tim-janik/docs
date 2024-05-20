@@ -412,18 +412,16 @@ class="toc-section-number">7.2.4</span> Functions</a></li>
 class="toc-section-number">7.2.5</span> Constants</a></li>
 <li><a href="#functions-10" id="toc-functions-10"><span
 class="toc-section-number">7.2.6</span> Functions</a></li>
-<li><a href="#functions-11" id="toc-functions-11"><span
-class="toc-section-number">7.2.7</span> Functions</a></li>
 </ul></li>
 <li><a href="#scripthost" id="toc-scripthost"><span
 class="toc-section-number">7.3</span> <span id="ScriptHost"
 data-4search="ui/script.js:ScriptHost;section">ScriptHost</span></a>
 <ul>
-<li><a href="#functions-12" id="toc-functions-12"><span
+<li><a href="#functions-11" id="toc-functions-11"><span
 class="toc-section-number">7.3.1</span> Functions</a></li>
-<li><a href="#functions-13" id="toc-functions-13"><span
+<li><a href="#functions-12" id="toc-functions-12"><span
 class="toc-section-number">7.3.2</span> Functions</a></li>
-<li><a href="#functions-14" id="toc-functions-14"><span
+<li><a href="#functions-13" id="toc-functions-13"><span
 class="toc-section-number">7.3.3</span> Functions</a></li>
 <li><a href="#pointerdrag-class" id="toc-pointerdrag-class"><span
 class="toc-section-number">7.3.4</span> PointerDrag class</a></li>
@@ -431,7 +429,7 @@ class="toc-section-number">7.3.4</span> PointerDrag class</a></li>
 class="toc-section-number">7.3.5</span> vue_mixins class</a></li>
 <li><a href="#constants-4" id="toc-constants-4"><span
 class="toc-section-number">7.3.6</span> Constants</a></li>
-<li><a href="#functions-15" id="toc-functions-15"><span
+<li><a href="#functions-14" id="toc-functions-14"><span
 class="toc-section-number">7.3.7</span> Functions</a></li>
 </ul></li>
 <li><a href="#asecachingwrapper" id="toc-asecachingwrapper"><span
@@ -443,9 +441,9 @@ id="toc-asecachingwrapper-class"><span
 class="toc-section-number">7.4.1</span> AseCachingWrapper class</a></li>
 <li><a href="#constants-5" id="toc-constants-5"><span
 class="toc-section-number">7.4.2</span> Constants</a></li>
-<li><a href="#functions-16" id="toc-functions-16"><span
+<li><a href="#functions-15" id="toc-functions-15"><span
 class="toc-section-number">7.4.3</span> Functions</a></li>
-<li><a href="#functions-17" id="toc-functions-17"><span
+<li><a href="#functions-16" id="toc-functions-16"><span
 class="toc-section-number">7.4.4</span> Functions</a></li>
 </ul></li>
 </ul></li>
@@ -2056,6 +2054,12 @@ Yield a grey tone with CIELAB lightness.
 <h3 data-number="3.32.5"><span
 class="header-section-number">3.32.5</span> Functions</h3>
 <dl>
+<dt><span id="markdown_to_html"
+data-4search="ui/dom.js:markdown_to_html;func"><strong><code>markdown_to_html</code></strong></span>
+<code>(</code><em>element, markdown_text</em><code>)</code></dt>
+<dd>
+Generate <code>element.innerHTML</code> from <code>markdown_text</code>
+</dd>
 <dt><span id="font_family_loaded"
 data-4search="ui/dom.js:font_family_loaded;func"><strong><code>font_family_loaded</code></strong></span>
 <code>(</code><em>options</em><code>)</code></dt>
@@ -2538,38 +2542,6 @@ changes.
 </dd>
 </dl>
 </section>
-<section id="functions-11" class="level3" data-number="7.2.7">
-<h3 data-number="7.2.7"><span class="header-section-number">7.2.7</span>
-Functions</h3>
-<dl>
-<dt><span id="tofloat"
-data-4search="ui/postcss.js:tofloat;func"><strong><code>tofloat</code></strong></span>
-<code>(</code><em>value, fallback, min, max</em><code>)</code></dt>
-<dd>
-Yield <code>value</code> as number in <code>[min..max]</code>, converts
-percentages.
-</dd>
-<dt><span id="load_import"
-data-4search="ui/postcss.js:load_import;func"><strong><code>load_import</code></strong></span>
-<code>(</code><em>id, cwd, opts</em><code>)</code></dt>
-<dd>
-Load import files in nodejs to implement <code>@import</code>.
-</dd>
-<dt><span id="find_import"
-data-4search="ui/postcss.js:find_import;func"><strong><code>find_import</code></strong></span>
-<code>(</code><em>id, cwd, opts</em><code>)</code></dt>
-<dd>
-Provide canned CSS files or fetch css for use with <code>@import</code>.
-</dd>
-<dt><span id="add_import"
-data-4search="ui/postcss.js:add_import;func"><strong><code>add_import</code></strong></span>
-<code>(</code><em>filename, csstext</em><code>)</code></dt>
-<dd>
-Provide <code>filename</code> as <code>@import "filename";</code> source
-with contents <code>csstext</code>.
-</dd>
-</dl>
-</section>
 </section>
 <section id="scripthost" class="level2" data-number="7.3">
 <h2 data-number="7.3"><span class="header-section-number">7.3</span>
@@ -2585,7 +2557,7 @@ thread to the Worker thread. The WorkerHost then loads and calls into a
 user provided ES Module, the actual user script which communicates via
 the WorkerHost global variable <code>host</code>. See also
 #WorkerHost.</p>
-<section id="functions-12" class="level3" data-number="7.3.1">
+<section id="functions-11" class="level3" data-number="7.3.1">
 <h3 data-number="7.3.1"><span class="header-section-number">7.3.1</span>
 Functions</h3>
 <dl>
@@ -2617,7 +2589,7 @@ Process and write style information
 </dd>
 </dl>
 </section>
-<section id="functions-13" class="level3" data-number="7.3.2">
+<section id="functions-12" class="level3" data-number="7.3.2">
 <h3 data-number="7.3.2"><span class="header-section-number">7.3.2</span>
 Functions</h3>
 <dl>
@@ -2635,7 +2607,7 @@ Jsonipc handler for IDs of GC-ed objects.
 </dd>
 </dl>
 </section>
-<section id="functions-14" class="level3" data-number="7.3.3">
+<section id="functions-13" class="level3" data-number="7.3.3">
 <h3 data-number="7.3.3"><span class="header-section-number">7.3.3</span>
 Functions</h3>
 <dl>
@@ -2687,7 +2659,7 @@ PointerDrag class</h3>
 data-4search="ui/util.js:PointerDrag;class"><strong>PointerDrag</strong></span></dt>
 <dd>
 Meld all pointer drag handling functions into a single
-<code>drag_event(event,MODE)</code> method.
+<code>drag_event(event,MODE)</code> method
 </dd>
 </dl>
 </section>
@@ -2705,13 +2677,13 @@ data-4search="ui/util.js:vuechildren;func"><strong><code>vuechildren</code></str
 <code>()</code>   <code>[static]</code></dt>
 <dd>
 Provide <code>$children</code> (and <code>$vue_parent</code>) on every
-component.
+component
 </dd>
 <dt><span id="autodataattrs"
 data-4search="ui/util.js:autodataattrs;func"><strong><code>autodataattrs</code></strong></span>
 <code>()</code>   <code>[static]</code></dt>
 <dd>
-Automatically add <code>$attrs['data-*']</code> to <code>$el</code>.
+Automatically add <code>$attrs['data-*']</code> to <code>$el</code>
 </dd>
 <dt><span id="dom_updates"
 data-4search="ui/util.js:dom_updates;func"><strong><code>dom_updates</code></strong></span>
@@ -2749,20 +2721,15 @@ is removed.</li>
 <h3 data-number="7.3.6"><span class="header-section-number">7.3.6</span>
 Constants</h3>
 <dl>
-<dt><span id="ResizeObserver"
-data-4search="ui/util.js:ResizeObserver;export"><strong><code>ResizeObserver</code></strong></span></dt>
-<dd>
-Work around FireFox 68 having ResizeObserver disabled
-</dd>
 <dt><span id="clone_descriptors"
 data-4search="ui/util.js:clone_descriptors;export"><strong><code>clone_descriptors</code></strong></span></dt>
 <dd>
 Copy PropertyDescriptors from source to target, optionally binding
-handlers against closure.
+handlers against closure
 </dd>
 </dl>
 </section>
-<section id="functions-15" class="level3" data-number="7.3.7">
+<section id="functions-14" class="level3" data-number="7.3.7">
 <h3 data-number="7.3.7"><span class="header-section-number">7.3.7</span>
 Functions</h3>
 <dl>
@@ -2770,13 +2737,13 @@ Functions</h3>
 data-4search="ui/util.js:now;func"><strong><code>now</code></strong></span>
 <code>()</code></dt>
 <dd>
-Retrieve current time in milliseconds.
+Retrieve current time in milliseconds
 </dd>
 <dt><span id="frame_stamp"
 data-4search="ui/util.js:frame_stamp;func"><strong><code>frame_stamp</code></strong></span>
 <code>()</code></dt>
 <dd>
-Retrieve a timestamp that is unique per (animation) frame.
+Retrieve a timestamp that is unique per (animation) frame
 </dd>
 <dt><span id="debounce"
 data-4search="ui/util.js:debounce;func"><strong><code>debounce</code></strong></span>
@@ -2810,13 +2777,14 @@ exclusively
 data-4search="ui/util.js:coalesced_events;func"><strong><code>coalesced_events</code></strong></span>
 <code>(</code><em>event</em><code>)</code></dt>
 <dd>
-Expand pointer events into a list of possibly coalesced events.
+Expand pointer <code>event</code> into a list of possibly coalesced
+events
 </dd>
 <dt><span id="vue_component"
 data-4search="ui/util.js:vue_component;func"><strong><code>vue_component</code></strong></span>
 <code>(</code><em>element</em><code>)</code></dt>
 <dd>
-Get Vue component handle from element or its ancestors
+Get Vue component handle from <code>element</code> or its ancestors
 </dd>
 <dt><span id="envue_object"
 data-4search="ui/util.js:envue_object;func"><strong><code>envue_object</code></strong></span>
@@ -2872,7 +2840,7 @@ data-4search="ui/util.js:add_style_sheet;func"><strong><code>add_style_sheet</co
 <code>(</code><em>element, url</em><code>)</code></dt>
 <dd>
 Ensure the root node of <code>element</code> has a <code>url</code>
-stylesheet link.
+stylesheet link
 </dd>
 <dt><span id="vm_scope_selector"
 data-4search="ui/util.js:vm_scope_selector;func"><strong><code>vm_scope_selector</code></strong></span>
@@ -2891,13 +2859,15 @@ vm_scope_selector() for the <code>vm</code> CSS scope
 data-4search="ui/util.js:assign_forin;func"><strong><code>assign_forin</code></strong></span>
 <code>(</code><em>target, source</em><code>)</code></dt>
 <dd>
-Loop over all properties in <code>source</code> and assign to `target
+Loop over all properties in <code>source</code> and assign to
+<code>target</code>
 </dd>
 <dt><span id="assign_forof"
 data-4search="ui/util.js:assign_forof;func"><strong><code>assign_forof</code></strong></span>
 <code>(</code><em>target, source</em><code>)</code></dt>
 <dd>
-Loop over all elements of <code>source</code> and assign to `target
+Loop over all elements of <code>source</code> and assign to
+<code>target</code>
 </dd>
 <dt><span id="array_remove"
 data-4search="ui/util.js:array_remove;func"><strong><code>array_remove</code></strong></span>
@@ -2923,8 +2893,7 @@ data-4search="ui/util.js:range;func"><strong><code>range</code></strong></span>
 <code>(</code><em>bound, end, step</em><code>)</code></dt>
 <dd>
 Generate integers [0..<code>bound</code>[ if one arg is given or
-[<code>bound</code>..<code>end</code>[ by incrementing
-<code>step</code>.
+[<code>bound</code>..<code>end</code>[ by incrementing <code>step</code>
 </dd>
 <dt><span id="freeze_deep"
 data-4search="ui/util.js:freeze_deep;func"><strong><code>freeze_deep</code></strong></span>
@@ -2950,14 +2919,14 @@ Array or Object
 data-4search="ui/util.js:clamp;func"><strong><code>clamp</code></strong></span>
 <code>(</code><em>x, min, max</em><code>)</code></dt>
 <dd>
-Return 1 x clamped into 1 min and 1 max.
+Return 1 x clamped into 1 min and 1 max
 </dd>
 <dt><span id="fwdprovide"
 data-4search="ui/util.js:fwdprovide;func"><strong><code>fwdprovide</code></strong></span>
 <code>(</code><em>injectname, keys</em><code>)</code></dt>
 <dd>
 Create a Vue component provide() function that forwards selected
-properties.
+properties
 </dd>
 <dt><span id="hyphenate"
 data-4search="ui/util.js:hyphenate;func"><strong><code>hyphenate</code></strong></span>
@@ -2970,38 +2939,38 @@ Generate a kebab-case ('two-words') identifier from a camelCase
 data-4search="ui/util.js:weakid;func"><strong><code>weakid</code></strong></span>
 <code>(</code><em>object</em><code>)</code></dt>
 <dd>
-Fetch a unique id for any object.
+Fetch a unique id for any object
 </dd>
 <dt><span id="weakid_lookup"
 data-4search="ui/util.js:weakid_lookup;func"><strong><code>weakid_lookup</code></strong></span>
 <code>(</code><em>id</em><code>)</code></dt>
 <dd>
-Find an object from its unique id.
+Find an object from its unique id
 </dd>
 <dt><span id="uuname"
 data-4search="ui/util.js:uuname;func"><strong><code>uuname</code></strong></span>
 <code>(</code><em>object</em><code>)</code></dt>
 <dd>
-Get a universally unique name for any object.
+Get a universally unique name for any object
 </dd>
 <dt><span id="join_classes"
 data-4search="ui/util.js:join_classes;func"><strong><code>join_classes</code></strong></span>
 <code>(</code><em>args</em><code>)</code></dt>
 <dd>
-Join strings and arrays of class lists from <code>args</code>.
+Join strings and arrays of class lists from <code>args</code>
 </dd>
 <dt><span id="object_zip"
 data-4search="ui/util.js:object_zip;func"><strong><code>object_zip</code></strong></span>
 <code>(</code><em>obj, keys, values</em><code>)</code></dt>
 <dd>
 Assign <code>obj[k] = v</code> for all
-<code>k of keys, v of values</code>.
+<code>k of keys, v of values</code>
 </dd>
 <dt><span id="object_await_values"
 data-4search="ui/util.js:object_await_values;func"><strong><code>object_await_values</code></strong></span>
 <code>(</code><em>obj</em><code>)</code></dt>
 <dd>
-Await and reassign all object fields.
+Await and reassign all object fields
 </dd>
 <dt><span id="extend_property"
 data-4search="ui/util.js:extend_property;func"><strong><code>extend_property</code></strong></span>
@@ -3041,57 +3010,57 @@ Properties with a getter (and possibly setter) are turned into Vue
 data-4search="ui/util.js:fnv1a_hash;func"><strong><code>fnv1a_hash</code></strong></span>
 <code>(</code><em>str</em><code>)</code></dt>
 <dd>
-Produce hash code from a String, using an FNV-1a variant.
+Produce hash code from a String, using an FNV-1a variant
 </dd>
 <dt><span id="split_comma"
 data-4search="ui/util.js:split_comma;func"><strong><code>split_comma</code></strong></span>
 <code>(</code><em>str</em><code>)</code></dt>
 <dd>
 Split a string when encountering a comma, while preserving quoted or
-parenthesized segments.
+parenthesized segments
 </dd>
 <dt><span id="escape_html"
 data-4search="ui/util.js:escape_html;func"><strong><code>escape_html</code></strong></span>
 <code>(</code><em>unsafe</em><code>)</code></dt>
 <dd>
-Properly escape test into <code>&amp;amp;</code> and related sequences.
+Properly escape test into <code>&amp;amp;</code> and related sequences
 </dd>
 <dt><span id="parse_hex_color"
 data-4search="ui/util.js:parse_hex_color;func"><strong><code>parse_hex_color</code></strong></span>
 <code>(</code><em>colorstr</em><code>)</code></dt>
 <dd>
-Parse hexadecimal CSS color with 3 or 6 digits into [ R, G, B ].
+Parse hexadecimal CSS color with 3 or 6 digits into [ R, G, B ]
 </dd>
 <dt><span id="parse_hex_luminosity"
 data-4search="ui/util.js:parse_hex_luminosity;func"><strong><code>parse_hex_luminosity</code></strong></span>
 <code>(</code><em>colorstr</em><code>)</code></dt>
 <dd>
-Parse hexadecimal CSS color into luminosity.
+Parse hexadecimal CSS color into luminosity
 </dd>
 <dt><span id="parse_hex_brightness"
 data-4search="ui/util.js:parse_hex_brightness;func"><strong><code>parse_hex_brightness</code></strong></span>
 <code>(</code><em>colorstr</em><code>)</code></dt>
 <dd>
-Parse hexadecimal CSS color into brightness.
+Parse hexadecimal CSS color into brightness
 </dd>
 <dt><span id="parse_hex_pgrey"
 data-4search="ui/util.js:parse_hex_pgrey;func"><strong><code>parse_hex_pgrey</code></strong></span>
 <code>(</code><em>colorstr</em><code>)</code></dt>
 <dd>
-Parse hexadecimal CSS color into perception corrected grey.
+Parse hexadecimal CSS color into perception corrected grey
 </dd>
 <dt><span id="parse_hex_average"
 data-4search="ui/util.js:parse_hex_average;func"><strong><code>parse_hex_average</code></strong></span>
 <code>(</code><em>colorstr</em><code>)</code></dt>
 <dd>
-Parse hexadecimal CSS color into average grey.
+Parse hexadecimal CSS color into average grey
 </dd>
 <dt><span id="parse_colors"
 data-4search="ui/util.js:parse_colors;func"><strong><code>parse_colors</code></strong></span>
 <code>(</code><em>colorstr</em><code>)</code></dt>
 <dd>
 Parse CSS colors (via invisible DOM element) and yield an array of rgba
-tuples.
+tuples
 </dd>
 <dt><span id="compute_style_properties"
 data-4search="ui/util.js:compute_style_properties;func"><strong><code>compute_style_properties</code></strong></span>
@@ -3134,7 +3103,7 @@ Use capturing to swallow any <code>type</code> events until
 data-4search="ui/util.js:prevent_event;func"><strong><code>prevent_event</code></strong></span>
 <code>(</code><em>event_or_null</em><code>)</code></dt>
 <dd>
-Prevent default or any propagation for a possible event.
+Prevent default or any propagation for a possible event
 </dd>
 <dt><span id="dialog_backdrop_mousedown"
 data-4search="ui/util.js:dialog_backdrop_mousedown;func"><strong><code>dialog_backdrop_mousedown</code></strong></span>
@@ -3152,7 +3121,7 @@ Close dialog on backdrop clicks via actual closing at mouseup
 data-4search="ui/util.js:dialog_backdrop_autoclose;func"><strong><code>dialog_backdrop_autoclose</code></strong></span>
 <code>(</code><em>dialog, install_or_remove</em><code>)</code></dt>
 <dd>
-Install handlers to close a dialog on backdrop clicks.
+Install handlers to close a dialog on backdrop clicks
 </dd>
 <dt><span id="popup_position"
 data-4search="ui/util.js:popup_position;func"><strong><code>popup_position</code></strong></span>
@@ -3188,7 +3157,7 @@ data-4search="ui/util.js:roundRect;func"><strong><code>roundRect</code></strong>
 <code>(</code><em>ctx, x, y, width, height, radius, fill,
 stroke</em><code>)</code></dt>
 <dd>
-Fill and stroke a canvas rectangle with rounded corners.
+Fill and stroke a canvas rectangle with rounded corners
 </dd>
 <dt><span id="gradient_apply_stops"
 data-4search="ui/util.js:gradient_apply_stops;func"><strong><code>gradient_apply_stops</code></strong></span>
@@ -3220,37 +3189,37 @@ Retrieve the 'C-1' .. 'G8' label for midi note numbers
 data-4search="ui/util.js:align8;func"><strong><code>align8</code></strong></span>
 <code>(</code><em>int</em><code>)</code></dt>
 <dd>
-Align integer value to 8.
+Align integer value to 8
 </dd>
 <dt><span id="telemetry_subscribe"
 data-4search="ui/util.js:telemetry_subscribe;func"><strong><code>telemetry_subscribe</code></strong></span>
 <code>(</code><em>fun, telemetryfields</em><code>)</code></dt>
 <dd>
-Call <code>fun</code> for telemtry updates, returns unsubscribe handler.
+Call <code>fun</code> for telemtry updates, returns unsubscribe handler
 </dd>
 <dt><span id="telemetry_unsubscribe"
 data-4search="ui/util.js:telemetry_unsubscribe;func"><strong><code>telemetry_unsubscribe</code></strong></span>
 <code>(</code><em>telemetryobject</em><code>)</code></dt>
 <dd>
-Call <code>fun</code> for telemtry updates, returns unsubscribe handler.
+Call <code>fun</code> for telemtry updates, returns unsubscribe handler
 </dd>
 <dt><span id="in_keyboard_click"
 data-4search="ui/util.js:in_keyboard_click;func"><strong><code>in_keyboard_click</code></strong></span>
 <code>()</code></dt>
 <dd>
-Check if the current click event originates from keyboard activation.
+Check if the current click event originates from keyboard activation
 </dd>
 <dt><span id="keyboard_click_event"
 data-4search="ui/util.js:keyboard_click_event;func"><strong><code>keyboard_click_event</code></strong></span>
 <code>(</code><em>fallback</em><code>)</code></dt>
 <dd>
-Retrieve event that triggers keyboard_click().
+Retrieve event that triggers keyboard_click()
 </dd>
 <dt><span id="keyboard_click"
 data-4search="ui/util.js:keyboard_click;func"><strong><code>keyboard_click</code></strong></span>
 <code>(</code><em>element, event, callclick</em><code>)</code></dt>
 <dd>
-Trigger element click via keyboard.
+Trigger element click via keyboard
 </dd>
 <dt><span id="in_array"
 data-4search="ui/util.js:in_array;func"><strong><code>in_array</code></strong></span>
@@ -3269,20 +3238,20 @@ Check whether <code>element</code> is found during
 data-4search="ui/util.js:element_text;func"><strong><code>element_text</code></strong></span>
 <code>(</code><em>element, filter</em><code>)</code></dt>
 <dd>
-Extract filtered text nodes from Element.
+Extract filtered text nodes from Element
 </dd>
 <dt><span id="clone_menu_icon"
 data-4search="ui/util.js:clone_menu_icon;func"><strong><code>clone_menu_icon</code></strong></span>
 <code>(</code><em>menu, uri, title</em><code>)</code></dt>
 <dd>
-Clone a menuitem icon via its <code>uri</code>.
+Clone a menuitem icon via its <code>uri</code>
 </dd>
 <dt><span id="keyboard_map_name"
 data-4search="ui/util.js:keyboard_map_name;func"><strong><code>keyboard_map_name</code></strong></span>
 <code>(</code><em>keyname</em><code>)</code></dt>
 <dd>
 Retrieve user-printable name for a keyboard button, useful to describe
-KeyboardEvent.code.
+KeyboardEvent.code
 </dd>
 <dt><span id="has_ancestor"
 data-4search="ui/util.js:has_ancestor;func"><strong><code>has_ancestor</code></strong></span>
@@ -3290,14 +3259,14 @@ data-4search="ui/util.js:has_ancestor;func"><strong><code>has_ancestor</code></s
 escape_shadowdom</em><code>)</code></dt>
 <dd>
 Check if <code>ancestor</code> is an ancestor of <code>node</code>,
-maybe including shadowRoot elements.
+maybe including shadowRoot elements
 </dd>
 <dt><span id="closest"
 data-4search="ui/util.js:closest;func"><strong><code>closest</code></strong></span>
 <code>(</code><em>element, selector</em><code>)</code></dt>
 <dd>
 Find the closest element or parent matching <code>selector</code>,
-traversing shadow DOMs.
+traversing shadow DOMs
 </dd>
 <dt><span id="root_ancestor"
 data-4search="ui/util.js:root_ancestor;func"><strong><code>root_ancestor</code></strong></span>
@@ -3310,19 +3279,13 @@ data-4search="ui/util.js:find_element_from_point;func"><strong><code>find_elemen
 <code>(</code><em>root, x, y, predicate, visited</em><code>)</code></dt>
 <dd>
 Find an element at <code>(x,y)</code> for which
-<code>predicate (element)</code> is true.
+<code>predicate (element)</code> is true
 </dd>
 <dt><span id="create_note"
 data-4search="ui/util.js:create_note;func"><strong><code>create_note</code></strong></span>
 <code>(</code><em>text, timeout</em><code>)</code></dt>
 <dd>
 Show a notification popup, with adequate default timeout
-</dd>
-<dt><span id="markdown_to_html"
-data-4search="ui/util.js:markdown_to_html;func"><strong><code>markdown_to_html</code></strong></span>
-<code>(</code><em>element, markdown_text</em><code>)</code></dt>
-<dd>
-Generate <code>element.innerHTML</code> from <code>markdown_text</code>
 </dd>
 <dt><span id="assign_async_cleanup"
 data-4search="ui/util.js:assign_async_cleanup;func"><strong><code>assign_async_cleanup</code></strong></span>
@@ -3336,7 +3299,7 @@ data-4search="ui/util.js:observable_force_update;func"><strong><code>observable_
 <code>()</code></dt>
 <dd>
 Method to be added to a <code>observable_from_getters()</code> result to
-force updates.
+force updates
 </dd>
 <dt><span id="observable_from_getters"
 data-4search="ui/util.js:observable_from_getters;func"><strong><code>observable_from_getters</code></strong></span>
@@ -3384,39 +3347,39 @@ Pad <code>string</code> with <code>fill</code> until its length is
 data-4search="ui/util.js:lrstrip;func"><strong><code>lrstrip</code></strong></span>
 <code>(</code><em>str</em><code>)</code></dt>
 <dd>
-Strip whitespace from start and end of string.
+Strip whitespace from start and end of string
 </dd>
 <dt><span id="collect_text_content"
 data-4search="ui/util.js:collect_text_content;func"><strong><code>collect_text_content</code></strong></span>
 <code>(</code><em>node_or_array</em><code>)</code></dt>
 <dd>
-Gather text content from <code>node_or_array</code>.
+Gather text content from <code>node_or_array</code>
 </dd>
 <dt><span id="hash53"
 data-4search="ui/util.js:hash53;func"><strong><code>hash53</code></strong></span>
 <code>(</code><em>key, seed</em><code>)</code></dt>
 <dd>
-Generate 53-Bit hash from <code>key</code>.
+Generate 53-Bit hash from <code>key</code>
 </dd>
 <dt><span id="add_destroy_callback"
 data-4search="ui/util.js:add_destroy_callback;func"><strong><code>add_destroy_callback</code></strong></span>
 <code>(</code><em>callback</em><code>)</code></dt>
 <dd>
 Add a <code>callback</code> to <code>this</code> to be called from
-<code>call_destroy_callbacks()</code>.
+<code>call_destroy_callbacks()</code>
 </dd>
 <dt><span id="del_destroy_callback"
 data-4search="ui/util.js:del_destroy_callback;func"><strong><code>del_destroy_callback</code></strong></span>
 <code>(</code><em>callback</em><code>)</code></dt>
 <dd>
 Remove a <code>callback</code> from <code>this</code>, previously added
-via <code>add_destroy_callback()</code>.
+via <code>add_destroy_callback()</code>
 </dd>
 <dt><span id="call_destroy_callbacks"
 data-4search="ui/util.js:call_destroy_callbacks;func"><strong><code>call_destroy_callbacks</code></strong></span>
 <code>()</code></dt>
 <dd>
-Call destroy callbacks of <code>this</code>, clears the callback list.
+Call destroy callbacks of <code>this</code>, clears the callback list
 </dd>
 </dl>
 </section>
@@ -3469,7 +3432,7 @@ FinalizationRegistry to call cleanup callback upon object destruction.
 </dd>
 </dl>
 </section>
-<section id="functions-16" class="level3" data-number="7.4.3">
+<section id="functions-15" class="level3" data-number="7.4.3">
 <h3 data-number="7.4.3"><span class="header-section-number">7.4.3</span>
 Functions</h3>
 <dl>
@@ -3497,7 +3460,7 @@ changes run <code>notifier()</code>.
 </dd>
 </dl>
 </section>
-<section id="functions-17" class="level3" data-number="7.4.4">
+<section id="functions-16" class="level3" data-number="7.4.4">
 <h3 data-number="7.4.4"><span class="header-section-number">7.4.4</span>
 Functions</h3>
 <dl>
