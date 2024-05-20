@@ -2963,6 +2963,13 @@
       <arglist>(const String &amp;to_charset, String &amp;output_string, const String &amp;from_charset, const String &amp;input_string, const String &amp;fallback_charset, const String &amp;output_mark)</arglist>
     </member>
     <member kind="function">
+      <type>const char *</type>
+      <name>strerror</name>
+      <anchorfile>namespace_ase.html</anchorfile>
+      <anchor>a0a80e43d7afc3e2992020cc0ac41e46a</anchor>
+      <arglist>(int errno_num)</arglist>
+    </member>
+    <member kind="function">
       <type>ASE_NOINLINE String</type>
       <name>string_format</name>
       <anchorfile>namespace_ase.html</anchorfile>
@@ -13204,6 +13211,13 @@
       <anchorfile>namespace_ase.html</anchorfile>
       <anchor>ae180af13795b4e6a2b66f80422b717ca</anchor>
       <arglist>(const String &amp;to_charset, String &amp;output_string, const String &amp;from_charset, const String &amp;input_string, const String &amp;fallback_charset, const String &amp;output_mark)</arglist>
+    </member>
+    <member kind="function">
+      <type>const char *</type>
+      <name>strerror</name>
+      <anchorfile>namespace_ase.html</anchorfile>
+      <anchor>a0a80e43d7afc3e2992020cc0ac41e46a</anchor>
+      <arglist>(int errno_num)</arglist>
     </member>
     <member kind="function">
       <type>Type</type>
