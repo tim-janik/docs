@@ -315,7 +315,7 @@ Copyright:
 License: MPL-2.0
 
 Files: ase/main.hh
-Copyright: Copyright (C) 2021-2023 Tim Janik
+Copyright: Copyright (C) 2021-2024 Tim Janik
 License: MPL-2.0
 
 Files: ase/mathtables.cc
@@ -509,7 +509,7 @@ Copyright: Copyright (C) 2021-2022 Tim Janik
 License: MPL-2.0
 
 Files: ase/server.cc
-Copyright: Copyright (C) 2021-2023 Tim Janik
+Copyright: Copyright (C) 2021-2024 Tim Janik
 License: MPL-2.0
 
 Files: ase/server.hh
@@ -997,6 +997,12 @@ License: MPL-2.0
 Files: misc/Dockerfile.jammy
 Copyright: Copyright (C) 2023 Tim Janik
 License: MPL-2.0
+
+Files: misc/GNUmakefile
+Copyright:
+  Copyright (C) 2024 Tim Janik
+  Copyright (C) 2020 Tim Janik
+License: CC0-1.0
 
 Files: misc/Makefile.mk
 Copyright: Copyright (C) 2021-2024 Tim Janik
