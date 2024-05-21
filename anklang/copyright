@@ -81,7 +81,7 @@ Copyright: Copyright (C) 2023 Tim Janik
 License: MPL-2.0
 
 Files: ase/callback.hh
-Copyright: Copyright (C) 2023 Tim Janik
+Copyright: Copyright (C) 2023-2024 Tim Janik
 License: MPL-2.0
 
 Files: ase/clapdevice.cc
@@ -225,7 +225,9 @@ Copyright: Copyright (C) 2020 Tim Janik
 License: MPL-2.0
 
 Files: ase/eventlist.hh
-Copyright: Copyright (C) 2020-2022 Tim Janik
+Copyright:
+  Copyright (C) 2024 Tim Janik
+  Copyright (C) 2020-2022 Tim Janik
 License: MPL-2.0
 
 Files: ase/formatter.cc
@@ -298,6 +300,18 @@ License: MPL-2.0
 
 Files: ase/loft.hh
 Copyright: Copyright (C) 2022-2024 Tim Janik
+License: MPL-2.0
+
+Files: ase/logging.cc
+Copyright:
+  Copyright (C) 2024 Tim Janik
+  Copyright (C) 2023 Stefan Westerfeld
+License: MPL-2.0
+
+Files: ase/logging.hh
+Copyright:
+  Copyright (C) 2024 Tim Janik
+  Copyright (C) 2023 Stefan Westerfeld
 License: MPL-2.0
 
 Files: ase/loop.cc
@@ -435,7 +449,7 @@ Copyright:
 License: MPL-2.0
 
 Files: ase/platform.cc
-Copyright: Copyright (C) 2021-2023 Tim Janik
+Copyright: Copyright (C) 2021-2024 Tim Janik
 License: MPL-2.0
 
 Files: ase/platform.hh
@@ -533,7 +547,7 @@ Copyright: Copyright (C) 2021-2023 Tim Janik
 License: MPL-2.0
 
 Files: ase/sortnet.hh
-Copyright: Copyright (C) 2021-2023 Tim Janik
+Copyright: Copyright (C) 2021-2024 Tim Janik
 License: MPL-2.0
 
 Files: ase/storage.cc
@@ -908,7 +922,9 @@ Copyright: Copyright (C) 2021-2024 Tim Janik
 License: MPL-2.0
 
 Files: electron/main.js
-Copyright: Copyright (C) 2021-2022 Tim Janik
+Copyright:
+  Copyright (C) 2024 Tim Janik
+  Copyright (C) 2021-2022 Tim Janik
 License: MPL-2.0
 
 Files: electron/preload.js
