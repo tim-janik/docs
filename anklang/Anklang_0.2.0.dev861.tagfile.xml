@@ -3566,6 +3566,11 @@
     <filename>aboutdialog_8js.html</filename>
   </compound>
   <compound kind="file">
+    <name>app.js</name>
+    <path>/cirun/poxy/ui/b/</path>
+    <filename>app_8js.html</filename>
+  </compound>
+  <compound kind="file">
     <name>basics.js</name>
     <path>/cirun/poxy/ui/b/</path>
     <filename>basics_8js.html</filename>
@@ -3649,6 +3654,11 @@
     <name>more.js</name>
     <path>/cirun/poxy/ui/b/</path>
     <filename>more_8js.html</filename>
+  </compound>
+  <compound kind="file">
+    <name>noticeboard.js</name>
+    <path>/cirun/poxy/ui/b/</path>
+    <filename>noticeboard_8js.html</filename>
   </compound>
   <compound kind="file">
     <name>numberinput.js</name>

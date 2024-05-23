@@ -1230,7 +1230,7 @@ Files: ui/b/more.js
 Copyright: Copyright (C) 2022-2024 Tim Janik
 License: MPL-2.0
 
-Files: ui/b/noteboard.vue
+Files: ui/b/noticeboard.js
 Copyright: Copyright (C) 2021-2024 Tim Janik
 License: MPL-2.0
 
