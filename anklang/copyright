@@ -315,7 +315,7 @@ Copyright:
 License: MPL-2.0
 
 Files: ase/loop.cc
-Copyright: Copyright (C) 2021-2023 Tim Janik
+Copyright: Copyright (C) 2021-2024 Tim Janik
 License: MPL-2.0
 
 Files: ase/loop.hh
@@ -1306,12 +1306,8 @@ Files: ui/b/trackview.js
 Copyright: Copyright (C) 2023-2024 Tim Janik
 License: MPL-2.0
 
-Files: ui/b/treeselector-item.vue
-Copyright: Copyright (C) 2020-2024 Tim Janik
-License: MPL-2.0
-
-Files: ui/b/treeselector.vue
-Copyright: Copyright (C) 2020-2024 Tim Janik
+Files: ui/b/treebrowser.js
+Copyright: Copyright (C) 2024 Tim Janik
 License: MPL-2.0
 
 Files: ui/ch-component.md
@@ -1428,10 +1424,6 @@ License: MPL-2.0
 
 Files: ui/stylelintrc.cjs
 Copyright: Copyright (C) 2023-2024 Tim Janik
-License: MPL-2.0
-
-Files: ui/tailwind.config.mjs
-Copyright: Copyright (C) 2024 Tim Janik
 License: MPL-2.0
 
 Files: ui/tailwind.scss

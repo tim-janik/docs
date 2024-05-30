@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en"><head>
   <meta charset="utf-8"/>
-  <title>Ase::KeccakFastRng class | Anklang 0.2.0.dev889 Anklang Programming Reference</title>
+  <title>ui/b/treebrowser.js file | Anklang 0.2.0.dev889 Anklang Programming Reference</title>
   <link href="favicon.svg" rel="icon" type="image/svg+xml"/>
   <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
   <meta content="#cb4b16" name="theme-color"/>
@@ -22,7 +22,7 @@
   <meta content="Poxy v0.17.0" name="generator"/>
   <meta content="strict-origin-when-cross-origin" name="referrer"/>
 </head>
-<body class="poxy-has-toc">
+<body>
 <header><nav id="navigation">
   <div class="m-container">
     <div class="m-row">
@@ -59,121 +59,31 @@
     <div class="m-row">
       <div class="m-col-l-10 m-push-l-1">
         <h1>
-          <span class="m-breadcrumb"><a href="namespace_ase.html">Ase</a>::<wbr/></span>KeccakFastRng <span class="m-thin">class</span>
+          <span class="m-breadcrumb"><a href="dir_1788f8309b1a812dcb800a185471cf6c.html">ui</a>/</span><span class="m-breadcrumb"><a href="dir_8cd1e0dc53330a899bb8b54b9ae21f1b.html">b</a>/</span>treebrowser.js <span class="m-thin">file</span>
         </h1>
-        <nav class="m-block m-default poxy-toc" id="poxy-toc">
-          <h3>Contents</h3>
-          <ul>
-            <li>
-              Reference
-              <ul>
-                <li><a href="#base-classes">Base classes</a></li>
-                <li><a href="#pub-types">Public types</a></li>
-                <li><a href="#typeless-methods">Constructors, destructors, conversion operators</a></li>
-                <li><a href="#pub-methods">Public functions</a></li>
-              </ul>
-            </li>
-          </ul>
-        </nav>
-<p><a class="m-doc" href="class_ase_1_1_keccak_fast_rng.html">KeccakFastRng</a> - A KeccakF1600 based fast pseudo-random number generator. This class tunes the KeccakF1600 algorithm for best performance in pseudo random number generation. Performance is improved while still retaining quality random number generation, according to the findings in seciton "4.1.1 Statistical tests" from <a class="poxy-external" href="http://keccak.noekeon.org/Keccak-reference-3.0.pdf" target="_blank">http:/<wbr/>/<wbr/>keccak.noekeon.org/<wbr/>Keccak-reference-3.0.pdf</a>.</p>
-        <section id="base-classes">
-          <h2><a href="#base-classes">Base classes</a></h2>
-          <dl class="m-doc">
-            <dt>
-              class <a class="m-doc" href="class_ase_1_1_keccak_rng.html">KeccakRng</a>
-            </dt>
-            <dd></dd>
-          </dl>
-        </section>
-        <section id="pub-types">
-          <h2><a href="#pub-types">Public types</a></h2>
-          <dl class="m-doc">
-            <dt>
-              using <a class="m-doc" href="class_ase_1_1_keccak_rng.html#a07b108e5373c2ad2dcd64f4f333c4cdc">result_type</a> = <a class="m-doc poxy-injected poxy-external poxy-cppreference" href="https://en.cppreference.com/w/cpp/types/integer" target="_blank">uint64_t</a>
-            </dt>
-            <dd>Integral type of the <a class="m-doc" href="class_ase_1_1_keccak_rng.html">KeccakRng</a> generator results.</dd>
-          </dl>
-        </section>
-        <section id="typeless-methods">
-          <h2><a href="#typeless-methods">Constructors, destructors, conversion operators</a></h2>
-          <dl class="m-doc">
-            <dt id="a511c600c395ec206b102f93a7318a2b8">
-              <span class="m-doc-wrap-bumper"><a class="m-doc-self" href="#a511c600c395ec206b102f93a7318a2b8">KeccakFastRng</a>(</span><span class="m-doc-wrap">) <span class="m-label m-flat m-info">explicit</span> </span>
-            </dt>
-            <dd>Initialize and seed the generator from a system specific nondeterministic random source.</dd>
-            <dt id="a993c926aaf2f97f56aadff079be10e46">
-              <div class="m-doc-template">template &lt;<span class="m-doc-template-params"><span class="m-doc-template-param">class SeedSeq</span></span>&gt;</div>
-              <span class="m-doc-wrap-bumper"><a class="m-doc-self" href="#a993c926aaf2f97f56aadff079be10e46">KeccakFastRng</a>(</span><span class="m-doc-wrap">SeedSeq&amp; seed_sequence) <span class="m-label m-flat m-info">explicit</span> </span>
-            </dt>
-            <dd>Initialize and seed the generator from <em>seed_sequence</em>.</dd>
-          </dl>
-        </section>
-        <section id="pub-methods">
-          <h2><a href="#pub-methods">Public functions</a></h2>
-          <dl class="m-doc">
-            <dt>
-              <span class="m-doc-wrap-bumper">void <a class="m-doc" href="class_ase_1_1_keccak_rng.html#a8a883c69a582824b2705a10cd146654a">auto_seed</a>(</span><span class="m-doc-wrap">)</span>
-            </dt>
-            <dd>Seed the generator from a system specific nondeterministic random source.</dd>
-            <dt>
-              <span class="m-doc-wrap-bumper">auto <a class="m-doc" href="class_ase_1_1_keccak_rng.html#a7d104598192e3313c22dc3d4b0ed76b5">bit_capacity</a>(</span><span class="m-doc-wrap">) const -&gt; <a class="m-doc poxy-injected poxy-external poxy-cppreference" href="https://en.cppreference.com/w/cpp/types/size_t" target="_blank">size_t</a></span>
-            </dt>
-            <dd>Amount of bits used to store hidden random number generator state.</dd>
-            <dt>
-              <span class="m-doc-wrap-bumper">void <a class="m-doc" href="class_ase_1_1_keccak_rng.html#aa7803c87b2ce71b1094277f84e5152ae">discard</a>(</span><span class="m-doc-wrap">unsigned long long count)</span>
-            </dt>
-            <dd></dd>
-            <dt>
-              <span class="m-doc-wrap-bumper">void <a class="m-doc" href="class_ase_1_1_keccak_rng.html#a874c6ba2c6260bb487b6df6a9e773070">forget</a>(</span><span class="m-doc-wrap">)</span>
-            </dt>
-            <dd></dd>
-            <dt>
-              <div class="m-doc-template">template &lt;<span class="m-doc-template-params"><span class="m-doc-template-param">typename <a class="m-doc poxy-injected poxy-external poxy-cppreference poxy-named-requirement" href="https://en.cppreference.com/w/cpp/named_req/RandomAccessIterator" target="_blank">RandomAccessIterator</a></span></span>&gt;</div>
-              <span class="m-doc-wrap-bumper">void <a class="m-doc" href="class_ase_1_1_keccak_rng.html#a2cb23eff1d0f432862466b3b2b260f25">generate</a>(</span><span class="m-doc-wrap"><a class="m-doc poxy-injected poxy-external poxy-cppreference poxy-named-requirement" href="https://en.cppreference.com/w/cpp/named_req/RandomAccessIterator" target="_blank">RandomAccessIterator</a> begin,
-              <a class="m-doc poxy-injected poxy-external poxy-cppreference poxy-named-requirement" href="https://en.cppreference.com/w/cpp/named_req/RandomAccessIterator" target="_blank">RandomAccessIterator</a> end)</span>
-            </dt>
-            <dd>Fill the range [begin, end) with random unsigned integer values.</dd>
-            <dt>
-              <span class="m-doc-wrap-bumper">auto <a class="m-doc" href="class_ase_1_1_keccak_rng.html#af50b72589b84879e65eaabe07f2ae9db">max</a>(</span><span class="m-doc-wrap">) const -&gt; <a class="m-doc" href="class_ase_1_1_keccak_rng.html#a07b108e5373c2ad2dcd64f4f333c4cdc">result_<wbr/>type</a></span>
-            </dt>
-            <dd>Maximum of the result type, for <a class="m-doc poxy-injected poxy-external poxy-cppreference" href="https://en.cppreference.com/w/cpp/types/integer" target="_blank">uint64_t</a> that is 18446744073709551615.</dd>
-            <dt>
-              <span class="m-doc-wrap-bumper">auto <a class="m-doc" href="class_ase_1_1_keccak_rng.html#ad43fec1d81732bb07421f36c7565821e">min</a>(</span><span class="m-doc-wrap">) const -&gt; <a class="m-doc" href="class_ase_1_1_keccak_rng.html#a07b108e5373c2ad2dcd64f4f333c4cdc">result_<wbr/>type</a></span>
-            </dt>
-            <dd>Minimum of the result type, for <a class="m-doc poxy-injected poxy-external poxy-cppreference" href="https://en.cppreference.com/w/cpp/types/integer" target="_blank">uint64_t</a> that is 0.</dd>
-            <dt>
-              <span class="m-doc-wrap-bumper">auto <a class="m-doc" href="class_ase_1_1_keccak_rng.html#ab976783247b33b48830e6d47352d1cc3">n_nums</a>(</span><span class="m-doc-wrap">) const -&gt; <a class="m-doc poxy-injected poxy-external poxy-cppreference" href="https://en.cppreference.com/w/cpp/types/size_t" target="_blank">size_t</a></span>
-            </dt>
-            <dd>Amount of 64 bit random numbers per generated block.</dd>
-            <dt>
-              <span class="m-doc-wrap-bumper">auto <a class="m-doc" href="class_ase_1_1_keccak_rng.html#a776c2b376078b4c869faa46d395b41a9">operator()</a>(</span><span class="m-doc-wrap">) -&gt; <a class="m-doc" href="class_ase_1_1_keccak_rng.html#a07b108e5373c2ad2dcd64f4f333c4cdc">result_<wbr/>type</a></span>
-            </dt>
-            <dd>Generate uniformly distributed 32 bit pseudo random number.</dd>
-            <dt>
-              <span class="m-doc-wrap-bumper">auto <a class="m-doc" href="class_ase_1_1_keccak_rng.html#a7f3745c0bbb5ac03af959a37a79bfe90">random</a>(</span><span class="m-doc-wrap">) -&gt; <a class="m-doc poxy-injected poxy-external poxy-cppreference" href="https://en.cppreference.com/w/cpp/types/integer" target="_blank">uint64_t</a></span>
-            </dt>
-            <dd></dd>
-            <dt>
-              <span class="m-doc-wrap-bumper">void <a class="m-doc" href="class_ase_1_1_keccak_rng.html#aac560943db886056acd2bcd3781fb7b5">seed</a>(</span><span class="m-doc-wrap"><a class="m-doc poxy-injected poxy-external poxy-cppreference" href="https://en.cppreference.com/w/cpp/types/integer" target="_blank">uint64_t</a> seed_value = 1)</span>
-            </dt>
-            <dd>Reinitialize the generator state using a 64 bit <em>seed_value</em>.</dd>
-            <dt>
-              <span class="m-doc-wrap-bumper">void <a class="m-doc" href="class_ase_1_1_keccak_rng.html#a03f24d08cda7682bae1d7c8e04574046">seed</a>(</span><span class="m-doc-wrap">const <a class="m-doc poxy-injected poxy-external poxy-cppreference" href="https://en.cppreference.com/w/cpp/types/integer" target="_blank">uint64_t</a>* seeds,
-              <a class="m-doc poxy-injected poxy-external poxy-cppreference" href="https://en.cppreference.com/w/cpp/types/size_t" target="_blank">size_t</a> n_seeds)</span>
-            </dt>
-            <dd>Reinitialize the generator state using a nuber of 64 bit <em>seeds</em>.</dd>
-            <dt>
-              <div class="m-doc-template">template &lt;<span class="m-doc-template-params"><span class="m-doc-template-param">class SeedSeq</span></span>&gt;</div>
-              <span class="m-doc-wrap-bumper">void <a class="m-doc" href="class_ase_1_1_keccak_rng.html#ad5e0918cb63dbafde2ea911e75b7f635">seed</a>(</span><span class="m-doc-wrap">SeedSeq&amp; seed_sequence)</span>
-            </dt>
-            <dd>Seed the generator state from a <em>seed_sequence</em>.</dd>
-            <dt>
-              <span class="m-doc-wrap-bumper">void <a class="m-doc" href="class_ase_1_1_keccak_rng.html#ad852194083782f8c56fc4c74ccb31e3a">xor_seed</a>(</span><span class="m-doc-wrap">const <a class="m-doc poxy-injected poxy-external poxy-cppreference" href="https://en.cppreference.com/w/cpp/types/integer" target="_blank">uint64_t</a>* seeds,
-              <a class="m-doc poxy-injected poxy-external poxy-cppreference" href="https://en.cppreference.com/w/cpp/types/size_t" target="_blank">size_t</a> n_seeds)</span>
-            </dt>
-            <dd></dd>
-          </dl>
-        </section>
+<section class="level2" id="btreebrowser">
+<h2><span data-4search="ui/b/treebrowser.js:BTreeBrowser;section" id="BTreeBrowser">BTreeBrowser</span></h2>
+<p>This container can render tree structures with collapsible
+branches.</p>
+</section>
+<section class="level2" id="props">
+<h2>Props:</h2>
+<dl>
+<dt><em>expandall</em></dt>
+<dd>
+Expand all entries by default.
+</dd>
+</dl>
+</section>
+<section class="level2" id="events">
+<h2>Events:</h2>
+<dl>
+<dt><em>close</em></dt>
+<dd>
+A <em>close</em> event is emitted once the "Close" button activated.
+</dd>
+</dl>
+</section>
       </div>
     </div>
   </div>
