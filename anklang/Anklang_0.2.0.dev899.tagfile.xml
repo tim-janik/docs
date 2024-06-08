@@ -2431,6 +2431,13 @@
     <class kind="class">Ase::Strings</class>
     <namespace>Ase</namespace>
     <member kind="function">
+      <type>const char *</type>
+      <name>string_find_word</name>
+      <anchorfile>namespace_ase.html</anchorfile>
+      <anchor>a75406a1c1637b6fbc5a9c00c13ffa370</anchor>
+      <arglist>(const char *haystack, const char *word)</arglist>
+    </member>
+    <member kind="function">
       <type>String</type>
       <name>string_vprintf</name>
       <anchorfile>namespace_ase.html</anchorfile>
@@ -12939,6 +12946,13 @@
       <anchorfile>namespace_ase.html</anchorfile>
       <anchor>ac2ea08493c818758f33792cb9c9b0c45</anchor>
       <arglist>(const String &amp;string, bool fallback)</arglist>
+    </member>
+    <member kind="function">
+      <type>const char *</type>
+      <name>string_find_word</name>
+      <anchorfile>namespace_ase.html</anchorfile>
+      <anchor>a75406a1c1637b6fbc5a9c00c13ffa370</anchor>
+      <arglist>(const char *haystack, const char *word)</arglist>
     </member>
     <member kind="function">
       <type>String</type>
