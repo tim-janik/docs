@@ -181,7 +181,9 @@ Copyright: Copyright (C) 2021-2024 Tim Janik
 License: MPL-2.0
 
 Files: ase/device.hh
-Copyright: Copyright (C) 2021-2022 Tim Janik
+Copyright:
+  Copyright (C) 2024 Tim Janik
+  Copyright (C) 2021-2022 Tim Janik
 License: MPL-2.0
 
 Files: ase/driver-alsa.cc
@@ -411,11 +413,13 @@ Copyright: Copyright (C) 2021 Tim Janik
 License: MPL-2.0
 
 Files: ase/nativedevice.cc
-Copyright: Copyright (C) 2021-2023 Tim Janik
+Copyright: Copyright (C) 2021-2024 Tim Janik
 License: MPL-2.0
 
 Files: ase/nativedevice.hh
-Copyright: Copyright (C) 2022 Tim Janik
+Copyright:
+  Copyright (C) 2024 Tim Janik
+  Copyright (C) 2022 Tim Janik
 License: MPL-2.0
 
 Files: ase/object.cc
@@ -1186,8 +1190,8 @@ Files: ui/b/deviceeditor.js
 Copyright: Copyright (C) 2020-2024 Tim Janik
 License: MPL-2.0
 
-Files: ui/b/devicepanel.vue
-Copyright: Copyright (C) 2020-2024 Tim Janik
+Files: ui/b/devicepanel.js
+Copyright: Copyright (C) 2024 Tim Janik
 License: MPL-2.0
 
 Files: ui/b/dialog.vue

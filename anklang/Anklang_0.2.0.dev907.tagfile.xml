@@ -3623,6 +3623,11 @@
     <filename>deviceeditor_8js.html</filename>
   </compound>
   <compound kind="file">
+    <name>devicepanel.js</name>
+    <path>/cirun/poxy/ui/b/</path>
+    <filename>devicepanel_8js.html</filename>
+  </compound>
+  <compound kind="file">
     <name>envue.js</name>
     <path>/cirun/poxy/ui/b/</path>
     <filename>envue_8js.html</filename>
@@ -5402,6 +5407,13 @@
       <name>device_info</name>
       <anchorfile>class_ase_1_1_device.html</anchorfile>
       <anchor>afbdd7a8bb49a66db0ae1219bb0a94630</anchor>
+      <arglist>()=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual DeviceS</type>
+      <name>list_devices</name>
+      <anchorfile>class_ase_1_1_device.html</anchorfile>
+      <anchor>a5816ef40980c8856b955c9aeb277d6b7</anchor>
       <arglist>()=0</arglist>
     </member>
     <member kind="function">
@@ -7732,6 +7744,24 @@
     </member>
   </compound>
   <compound kind="class">
+    <name>Member&lt;&amp;Device::devs_ &gt;</name>
+    <filename>class_ase_1_1_member.html</filename>
+    <member kind="function" static="yes">
+      <type>static Class *</type>
+      <name>host_</name>
+      <anchorfile>class_ase_1_1_member.html</anchorfile>
+      <anchor>ac2374a595fc1ca65948eca54e3f695a9</anchor>
+      <arglist>(const Member *m, Class *o=nullptr)</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static const MemberDetails &amp;</type>
+      <name>meta_</name>
+      <anchorfile>class_ase_1_1_member.html</anchorfile>
+      <anchor>a672bc258a2d8a46082bcae32f9d9fc65</anchor>
+      <arglist>(const MemberDetails *n=nullptr)</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
     <name>Member&lt;&amp;Gadget::name_ &gt;</name>
     <filename>class_ase_1_1_member.html</filename>
     <member kind="function" static="yes">
@@ -8207,13 +8237,6 @@
       <anchor>a1293568b9dc3263be17d4ae974b73b96</anchor>
       <arglist>()=0</arglist>
     </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual DeviceS</type>
-      <name>list_devices</name>
-      <anchorfile>class_ase_1_1_native_device.html</anchorfile>
-      <anchor>a2b4b816ebf20e0a44d50f2cc680a4935</anchor>
-      <arglist>()=0</arglist>
-    </member>
     <member kind="function">
       <type>DeviceInfoS</type>
       <name>list_device_types</name>
@@ -8289,6 +8312,13 @@
       <name>device_info</name>
       <anchorfile>class_ase_1_1_device.html</anchorfile>
       <anchor>afbdd7a8bb49a66db0ae1219bb0a94630</anchor>
+      <arglist>()=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual DeviceS</type>
+      <name>list_devices</name>
+      <anchorfile>class_ase_1_1_device.html</anchorfile>
+      <anchor>a5816ef40980c8856b955c9aeb277d6b7</anchor>
       <arglist>()=0</arglist>
     </member>
     <member kind="function">
@@ -9351,6 +9381,13 @@
       <name>device_info</name>
       <anchorfile>class_ase_1_1_device.html</anchorfile>
       <anchor>afbdd7a8bb49a66db0ae1219bb0a94630</anchor>
+      <arglist>()=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual DeviceS</type>
+      <name>list_devices</name>
+      <anchorfile>class_ase_1_1_device.html</anchorfile>
+      <anchor>a5816ef40980c8856b955c9aeb277d6b7</anchor>
       <arglist>()=0</arglist>
     </member>
     <member kind="function">
@@ -10849,6 +10886,13 @@
       <name>device_info</name>
       <anchorfile>class_ase_1_1_device.html</anchorfile>
       <anchor>afbdd7a8bb49a66db0ae1219bb0a94630</anchor>
+      <arglist>()=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual DeviceS</type>
+      <name>list_devices</name>
+      <anchorfile>class_ase_1_1_device.html</anchorfile>
+      <anchor>a5816ef40980c8856b955c9aeb277d6b7</anchor>
       <arglist>()=0</arglist>
     </member>
     <member kind="function">
