@@ -59,6 +59,7 @@ Search.__extra_tokens = [
 {name:"ui/dom.js:valid_uri",typeName:"func",url:"dom_8js.html#valid_uri"},
 {name:"ui/dom.js:has_uri",typeName:"func",url:"dom_8js.html#has_uri"},
 {name:"ui/dom.js:text_content",typeName:"func",url:"dom_8js.html#text_content"},
+{name:"ui/dom.js:show_modal",typeName:"func",url:"dom_8js.html#show_modal"},
 {name:"ui/b/envue.js:Component",typeName:"class",url:"envue_8js.html#Component"},
 {name:"ui/b/envue.js:Component",typeName:"func",url:"envue_8js.html#Component"},
 {name:"ui/b/envue.js:update",typeName:"func",url:"envue_8js.html#update"},
