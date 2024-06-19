@@ -1476,6 +1476,10 @@ Files: x11test/replay.sh
 Copyright: Copyright (C) 2022-2024 Tim Janik
 License: MPL-2.0
 
+Files: x11test/trackrename.json
+Copyright: Copyright (C) 2024 Tim Janik
+License: MPL-2.0
+
 Files: x11test/x11rec.sh
 Copyright: Copyright (C) 2022-2024 Tim Janik
 License: MPL-2.0
