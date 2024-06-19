@@ -1101,6 +1101,20 @@
       <anchor>a5f76936c8642b64ec513216d6aefe8d3</anchor>
       <arglist>(bool inf2stderr, bool log2file)</arglist>
     </member>
+    <member kind="function">
+      <type>void</type>
+      <name>logtxt</name>
+      <anchorfile>namespace_ase.html</anchorfile>
+      <anchor>ad30048c547cfc9b0911ee8386ed16578</anchor>
+      <arglist>(const char *format, const A &amp;...args)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>logerr</name>
+      <anchorfile>namespace_ase.html</anchorfile>
+      <anchor>a5feae03ffc72f4a64b4d3f96e63c8a6d</anchor>
+      <arglist>(const String &amp;dept, const char *format, const A &amp;...args)</arglist>
+    </member>
   </compound>
   <compound kind="file">
     <name>loop.hh</name>
@@ -12248,6 +12262,20 @@
       <anchorfile>namespace_ase.html</anchorfile>
       <anchor>a52007fbc5f843ea8422fedd6b640cac3</anchor>
       <arglist>(const String &amp;dept, const char *format, const A &amp;...args) ASE_PRINTF(2</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>logtxt</name>
+      <anchorfile>namespace_ase.html</anchorfile>
+      <anchor>ad30048c547cfc9b0911ee8386ed16578</anchor>
+      <arglist>(const char *format, const A &amp;...args)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>logerr</name>
+      <anchorfile>namespace_ase.html</anchorfile>
+      <anchor>a5feae03ffc72f4a64b4d3f96e63c8a6d</anchor>
+      <arglist>(const String &amp;dept, const char *format, const A &amp;...args)</arglist>
     </member>
     <member kind="function">
       <type>ASE_CONST int</type>
