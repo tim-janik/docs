@@ -1284,10 +1284,6 @@ Files: ui/b/propgroup.js
 Copyright: Copyright (C) 2023-2024 Tim Janik
 License: MPL-2.0
 
-Files: ui/b/propinput.js
-Copyright: Copyright (C) 2023-2024 Tim Janik
-License: MPL-2.0
-
 Files: ui/b/shell.vue
 Copyright: Copyright (C) 2020-2024 Tim Janik
 License: MPL-2.0

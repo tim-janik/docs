@@ -3727,11 +3727,6 @@
     <filename>propgroup_8js.html</filename>
   </compound>
   <compound kind="file">
-    <name>propinput.js</name>
-    <path>/cirun/poxy/ui/b/</path>
-    <filename>propinput_8js.html</filename>
-  </compound>
-  <compound kind="file">
     <name>shell.vue.js</name>
     <path>/cirun/poxy/ui/b/</path>
     <filename>shell_8vue_8js.html</filename>
