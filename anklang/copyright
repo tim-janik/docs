@@ -511,11 +511,15 @@ Copyright:
 License: MPL-2.0
 
 Files: ase/regex.cc
-Copyright: Copyright (C) 2021-2022 Tim Janik
+Copyright:
+  Copyright (C) 2024 Tim Janik
+  Copyright (C) 2021-2022 Tim Janik
 License: MPL-2.0
 
 Files: ase/regex.hh
-Copyright: Copyright (C) 2021-2022 Tim Janik
+Copyright:
+  Copyright (C) 2024 Tim Janik
+  Copyright (C) 2021-2022 Tim Janik
 License: MPL-2.0
 
 Files: ase/serialize.cc
@@ -1059,7 +1063,7 @@ Copyright:
 License: MPL-2.0
 
 Files: misc/config-checks.mk
-Copyright: Copyright (C) 2020-2023 Tim Janik
+Copyright: Copyright (C) 2020-2024 Tim Janik
 License: MPL-2.0
 
 Files: misc/config-external.mk
@@ -1368,6 +1372,10 @@ License: MPL-2.0
 
 Files: ui/global.scss
 Copyright: Copyright (C) 2023-2024 Tim Janik
+License: MPL-2.0
+
+Files: ui/grepdialog.js
+Copyright: Copyright (C) 2024 Tim Janik
 License: MPL-2.0
 
 Files: ui/host.js

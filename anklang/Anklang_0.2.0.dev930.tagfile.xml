@@ -9348,6 +9348,13 @@
       <anchor>af3fcfcf89b6f9569b1fec2f8b10aacbf</anchor>
       <arglist>()=0</arglist>
     </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual String</type>
+      <name>match_serialized</name>
+      <anchorfile>class_ase_1_1_project.html</anchorfile>
+      <anchor>ad4351637de2ae5115c3a303fd3b4e1b0</anchor>
+      <arglist>(const String &amp;regex, int group=0)=0</arglist>
+    </member>
     <member kind="function">
       <type>Track *</type>
       <name>_track</name>
@@ -9826,6 +9833,13 @@
       <anchorfile>class_ase_1_1_re.html</anchorfile>
       <anchor>ae43d8c05300cfdca8aaf1d8f3f2f05da</anchor>
       <arglist>(const String &amp;regex, const String &amp;input, Flags=DEFAULT)</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static String</type>
+      <name>grep</name>
+      <anchorfile>class_ase_1_1_re.html</anchorfile>
+      <anchor>abe4b20033f00194ff75c4c9ed8d825bc</anchor>
+      <arglist>(const String &amp;regex, const String &amp;input, int group=0, Flags=DEFAULT)</arglist>
     </member>
     <member kind="function" static="yes">
       <type>static String</type>
