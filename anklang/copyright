@@ -1468,8 +1468,8 @@ Files: ui/xbcomments.js
 Copyright: Copyright (C) 2022-2024 Tim Janik
 License: MPL-2.0
 
-Files: x11test/ereplay.cjs
-Copyright: Copyright (C) 2022-2023 Tim Janik
+Files: x11test/epuppeteer.mjs
+Copyright: Copyright (C) 2024 Tim Janik
 License: MPL-2.0
 
 Files: x11test/play-notes.json
@@ -1481,7 +1481,7 @@ Copyright: Copyright (C) 2022-2024 Tim Janik
 License: MPL-2.0
 
 Files: x11test/x11rec.sh
-Copyright: Copyright (C) 2022-2023 Tim Janik
+Copyright: Copyright (C) 2022-2024 Tim Janik
 License: MPL-2.0
 
 License: CC-PDDC
