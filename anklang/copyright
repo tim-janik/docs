@@ -1052,10 +1052,6 @@ Copyright:
   Copyright (C) 2021 Tim Janik
 License: MPL-2.0
 
-Files: misc/cirun
-Copyright: Copyright (C) 2023-2024 Tim Janik
-License: MPL-2.0
-
 Files: misc/colorize.sh
 Copyright:
   Copyright (C) 2023-2024 Tim Janik
