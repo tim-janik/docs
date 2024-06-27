@@ -28,7 +28,7 @@ License: MPL-2.0
 
 Files: GNUmakefile
 Copyright: Copyright (C) 2020 Tim Janik
-License: CC0-1.0
+License: Unlicense
 
 Files: Makefile.mk
 Copyright: Copyright (C) 2020-2024 Tim Janik
@@ -44,7 +44,7 @@ License: MPL-2.0
 
 Files: ase/GNUmakefile
 Copyright: Copyright (C) 2020 Tim Janik
-License: CC0-1.0
+License: Unlicense
 
 Files: ase/Makefile.mk
 Copyright: Copyright (C) 2020-2024 Tim Janik
@@ -389,8 +389,10 @@ Copyright: Copyright (C) 2021-2023 Tim Janik
 License: MPL-2.0
 
 Files: ase/mime-types.hh
-Copyright: Copyright (C) 2021-2022 Tim Janik
-License: CC0-1.0
+Copyright:
+  Copyright (C) 2024 Tim Janik
+  Copyright (C) 2021-2022 Tim Janik
+License: Unlicense
 
 Files: ase/minizip.c
 Copyright:
@@ -662,7 +664,7 @@ License: MPL-2.0
 
 Files: devices/GNUmakefile
 Copyright: Copyright (C) 2020-2021 Tim Janik
-License: CC0-1.0
+License: Unlicense
 
 Files: devices/Makefile.mk
 Copyright:
@@ -672,7 +674,7 @@ License: MPL-2.0
 
 Files: devices/blepsynth/GNUmakefile
 Copyright: Copyright (C) 2020 Tim Janik
-License: CC0-1.0
+License: Unlicense
 
 Files: devices/blepsynth/Makefile.mk
 Copyright:
@@ -725,7 +727,7 @@ Files: devices/freeverb/GNUmakefile
 Copyright:
   Copyright (C) 2022 Tim Janik
   Copyright (C) 2020 Tim Janik
-License: CC0-1.0
+License: Unlicense
 
 Files: devices/freeverb/Makefile.mk
 Copyright: Copyright (C) 2022 Tim Janik
@@ -819,7 +821,7 @@ License: MPL-2.0
 
 Files: doc/GNUmakefile
 Copyright: Copyright (C) 2020-2021 Tim Janik
-License: CC0-1.0
+License: Unlicense
 
 Files: doc/Makefile.mk
 Copyright: Copyright (C) 2021-2024 Tim Janik
@@ -861,7 +863,7 @@ License: MPL-2.0
 
 Files: doc/copyright.ini
 Copyright: Copyright (C) 2021-2024 Tim Janik
-License: CC0-1.0
+License: Unlicense
 
 Files: doc/filt-docs2.py
 Copyright: Copyright (C) 2021 Tim Janik
@@ -1000,13 +1002,14 @@ Copyright:
   Copyright (C) 2024 Tim Janik
   Copyright (C) 2021-2022 Tim Janik
   Copyright (C) 2019 Tim Janik
-License: CC0-1.0
+License: Unlicense
 
 Files: jsonipc/testjsonipc.cc
 Copyright:
+  Copyright (C) 2024 Tim Janik
   Copyright (C) 2021-2022 Tim Janik
   Copyright (C) 2019 Tim Janik
-License: CC0-1.0
+License: Unlicense
 
 Files: misc/AppRun
 Copyright: Copyright (C) 2021 Tim Janik
@@ -1028,7 +1031,7 @@ Files: misc/GNUmakefile
 Copyright:
   Copyright (C) 2024 Tim Janik
   Copyright (C) 2020 Tim Janik
-License: CC0-1.0
+License: Unlicense
 
 Files: misc/Makefile.mk
 Copyright: Copyright (C) 2021-2024 Tim Janik
@@ -1084,9 +1087,9 @@ License: MPL-2.0
 
 Files: misc/mkcopyright.py
 Copyright:
-  Copyright (C) 2023 Tim Janik
+  Copyright (C) 2023-2024 Tim Janik
   Copyright (C) 2021 Tim Janik
-License: MPL-2.0
+License: Unlicense
 
 Files: misc/mkdeb.sh
 Copyright: Copyright (C) 2021-2024 Tim Janik
@@ -1124,7 +1127,7 @@ Files: ui/GNUmakefile
 Copyright:
   Copyright (C) 2022 Tim Janik
   Copyright (C) 2020 Tim Janik
-License: CC0-1.0
+License: Unlicense
 
 Files: ui/Makefile.mk
 Copyright: Copyright (C) 2021-2024 Tim Janik
@@ -1144,7 +1147,7 @@ License: MPL-2.0
 
 Files: ui/b/GNUmakefile
 Copyright: Copyright (C) 2020 Tim Janik
-License: CC0-1.0
+License: Unlicense
 
 Files: ui/b/aboutdialog.js
 Copyright: Copyright (C) 2023-2024 Tim Janik
@@ -1485,13 +1488,13 @@ License: CC-PDDC
  https://spdx.org/licenses/CC-PDDC.html
  https://creativecommons.org/licenses/publicdomain/
 
-License: CC0-1.0
- Creative Commons Zero v1.0 Universal
- https://spdx.org/licenses/CC0-1.0.html
- https://creativecommons.org/publicdomain/zero/1.0/legalcode
-
 License: MPL-2.0
  Mozilla Public License 2.0
  https://spdx.org/licenses/MPL-2.0.html
  https://www.mozilla.org/MPL/2.0/
  https://opensource.org/licenses/MPL-2.0
+
+License: Unlicense
+ The Unlicense
+ https://spdx.org/licenses/Unlicense.html
+ https://unlicense.org/
