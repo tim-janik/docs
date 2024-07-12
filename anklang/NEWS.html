@@ -173,8 +173,10 @@ body { max-width: 52em; margin: auto; }
   <![endif]-->
 </head>
 <body>
-<section id="anklang-0.2.0" class="level2">
-<h2>Anklang 0.2.0</h2>
+<section id="anklang-0.3.0" class="level2">
+<h2>Anklang 0.3.0</h2>
+<p><strong>Full Changelog</strong>: <a
+href="https://github.com/tim-janik/anklang/compare/v0.2.0...v0.3.0">https://github.com/tim-janik/anklang/compare/v0.2.0...v0.3.0</a></p>
 <section id="hardware-and-system-requirements" class="level3">
 <h3>Hardware and System Requirements</h3>
 <ul>
@@ -184,6 +186,191 @@ optimizations.</li>
 </ul>
 </section>
 <section id="documentation" class="level3">
+<h3>Documentation</h3>
+<ul>
+<li>Latest API reference documentation is auto generated: <a
+href="https://tim-janik.github.io/docs/anklang/index.html"
+class="uri">https://tim-janik.github.io/docs/anklang/index.html</a></li>
+</ul>
+</section>
+<section id="fixed-bugs" class="level3">
+<h3>Fixed Bugs</h3>
+<ul>
+<li>Choices are not rendered properly in device view <a
+href="https://github.com/tim-janik/anklang/issues/59">#59</a></li>
+<li>Focus, shadow DOM, submenus, buttons and input elements <a
+href="https://github.com/tim-janik/anklang/issues/55">#55</a></li>
+<li>Unify and fixate srcdir and builddir <a
+href="https://github.com/tim-janik/anklang/issues/54">#54</a></li>
+<li>UI websocket death on invalid UTF-8 <a
+href="https://github.com/tim-janik/anklang/issues/49">#49</a></li>
+<li>Insertion order doesn't work, every device is inserted at end <a
+href="https://github.com/tim-janik/anklang/issues/46">#46</a></li>
+<li>Inserting Reverb after BlepSynth has no effect <a
+href="https://github.com/tim-janik/anklang/issues/24">#24</a></li>
+</ul>
+</section>
+<section id="closed-issues" class="level3">
+<h3>Closed Issues</h3>
+<ul>
+<li>Build breaks: cp: ./ls-tree.lst: No such file or directory <a
+href="https://github.com/tim-janik/anklang/issues/18">#18</a></li>
+<li>Freeverb Default Settings <a
+href="https://github.com/tim-janik/anklang/issues/23">#23</a></li>
+<li>LV2: currently we need a X11 display since the Gtk Thread is
+unconditionally started <a
+href="https://github.com/tim-janik/anklang/issues/35">#35</a></li>
+<li>LV2: unique device name generation duplicated with CLAP <a
+href="https://github.com/tim-janik/anklang/issues/34">#34</a></li>
+<li>loop player <a
+href="https://github.com/tim-janik/anklang/issues/39">#39</a></li>
+<li>Negative frame offsets in MidiEvent <a
+href="https://github.com/tim-janik/anklang/issues/26">#26</a></li>
+<li>Shebangs in *.sh files are wrong <a
+href="https://github.com/tim-janik/anklang/issues/17">#17</a></li>
+</ul>
+</section>
+<section id="merged-pull-requests" class="level3">
+<h3>Merged Pull Requests</h3>
+<ul>
+<li>Ase/combo.cc: fix combo insertion order for devices inserted at end
+<a href="https://github.com/tim-janik/anklang/pull/47">#47</a> (<a
+href="https://github.com/swesterfeld">swesterfeld</a>)</li>
+<li>DEVICES: blepsynth/blepsynth.cc: introduce flexible ADSR model <a
+href="https://github.com/tim-janik/anklang/pull/6">#6</a> (<a
+href="https://github.com/swesterfeld">swesterfeld</a>)</li>
+<li>DEVICES: blepsynth: remove design/test tools (moved to dsp-research
+repo) <a href="https://github.com/tim-janik/anklang/pull/30">#30</a> (<a
+href="https://github.com/swesterfeld">swesterfeld</a>)</li>
+<li>Fix typo in ch-development.md <a
+href="https://github.com/tim-janik/anklang/pull/58">#58</a> (<a
+href="https://github.com/ritschwumm">ritschwumm</a>)</li>
+<li>Freeverb merge dry/wet into mix parameter <a
+href="https://github.com/tim-janik/anklang/pull/45">#45</a> (<a
+href="https://github.com/swesterfeld">swesterfeld</a>)</li>
+<li>Midi events uint offset <a
+href="https://github.com/tim-janik/anklang/pull/43">#43</a> (<a
+href="https://github.com/swesterfeld">swesterfeld</a>)</li>
+</ul>
+</section>
+<section id="synthesis-devices" class="level3">
+<h3>Synthesis Devices</h3>
+<ul>
+<li>Fixed race condition in LiquidSFZ device loader thread. <a
+href="https://github.com/swesterfeld">swesterfeld</a></li>
+<li>Improved Freeverb device with sample accurate parameter changes, mix
+optimization, and smoothing for automation. <a
+href="https://github.com/swesterfeld">swesterfeld</a></li>
+<li>Added support for String properties in AudioProcessor.</li>
+<li>Fixed midi event frame offsets to be unsigned integers, resolving
+issue #26. [<a
+href="https://github.com/swesterfeld">swesterfeld</a></li>
+<li>Integrated swesterfeld/liquidsfz submodule for SFZ support in ASE.
+<a href="https://github.com/swesterfeld">swesterfeld</a></li>
+<li>Moved blepsynth design/test tools to the dsp-research repository. <a
+href="https://github.com/swesterfeld">swesterfeld</a></li>
+<li>Improved sample accuracy in Blepsynth synth device, fixed bugs. <a
+href="https://github.com/swesterfeld">swesterfeld</a></li>
+<li>Added Saturation device with parameter smoothing and performance
+optimizations. <a
+href="https://github.com/swesterfeld">swesterfeld</a></li>
+<li>Introduced flexible ADSR model for volume envelope in Blepsynth
+device. <a href="https://github.com/swesterfeld">swesterfeld</a></li>
+<li>Added Sallen-Key Filter to Blepsynth device, improved LadderVCF
+filter. <a href="https://github.com/swesterfeld">swesterfeld</a></li>
+</ul>
+</section>
+<section id="ase" class="level3">
+<h3>ASE</h3>
+<ul>
+<li>New CLI options -M and -P to override audio and midi drivers.</li>
+<li>Added debug/info/error logging to a log file.</li>
+<li>Support gzip file compression for http transfers, pre-compressed all
+source maps.</li>
+<li>Added Member&lt;&gt; template to expose C++ member field as API to
+JavaScript.</li>
+<li>Default tempo set to 120 BPM, playback starts with transport
+tempo.</li>
+<li>Fixed loading from non-anklang directories.</li>
+</ul>
+</section>
+<section id="user-interface" class="level3">
+<h3>User Interface</h3>
+<ul>
+<li>Introduced a project state grep dialog accessible via Alt+F12.</li>
+<li>Consolidated UI components in various places and removed redundant
+code.</li>
+<li>Replacing error confirmation dialogs with notice popups.</li>
+<li>Simplified and converted most UI components to LitElement
+components.</li>
+<li>Updated UI components to use a new tree browser component.</li>
+<li>Added support for file selection in device UIs.</li>
+<li>Introduced JavaScript Signal polyfill to simplify for dependency
+tracking.</li>
+<li>Fixed JavaScript focus handling, error formatting, and type
+checking.</li>
+<li>Added Tailwind CSS for styling, removed normalize.scss.</li>
+<li>Fixed piano roll drawing order, shifted cursor movement, and other
+UI fixes. <a href="https://github.com/swesterfeld">swesterfeld</a></li>
+<li>Improved UTF-8 support for legacy filenames, including mapping to
+private use area.</li>
+<li>Fixed mouse wheel handling in modern Chrome and Firefox
+browsers.</li>
+<li>Switched file browser to use <code>&lt;grid/&gt;</code> component
+for faster rendering.</li>
+</ul>
+</section>
+<section id="testing" class="level3">
+<h3>Testing</h3>
+<ul>
+<li>CI, docker, Dockerfile fixups and improvements.</li>
+<li>Introduced a new test for track renaming in the X11 UI test
+suite.</li>
+<li>Enhanced the x11test-v to run silently by default, with optional
+verbose output.</li>
+<li>Added support for replay of multiple JSON files in X11 tests,
+upgraded electron and puppeteer dependencies.</li>
+<li>Parallelized automated test suite runs.</li>
+</ul>
+</section>
+</section>
+<section id="miscellaneous" class="level2">
+<h2>Miscellaneous</h2>
+<ul>
+<li>Various code cleanups, package dependency and include fixes.</li>
+<li>Switched to C++20, improved build system for better cross-platform
+support.</li>
+<li>Fixed WebSocket errors and improved callback handling in the API
+server.</li>
+<li>Switched to using git submodules for external dependencies.</li>
+<li>All public domain sources are dedicated via the Unlicense.</li>
+<li>Remove icon-gen, sharp dependencies, generate UI icons using
+mogrify.</li>
+</ul>
+<section id="contributors" class="level3">
+<h3>Contributors</h3>
+<ul>
+<li><a href="https://github.com/ritschwumm"><span class="citation"
+data-cites="ritschwumm">@ritschwumm</span></a> made his first
+contribution in <a href="https://github.com/tim-janik/anklang/pull/58"
+class="uri">https://github.com/tim-janik/anklang/pull/58</a></li>
+<li><a href="https://github.com/swesterfeld"><span class="citation"
+data-cites="swesterfeld">@swesterfeld</span></a> continued his excellent
+device work.</li>
+</ul>
+</section>
+</section>
+<section id="anklang-0.2.0" class="level2">
+<h2>Anklang 0.2.0</h2>
+<section id="hardware-and-system-requirements-1" class="level3">
+<h3>Hardware and System Requirements</h3>
+<ul>
+<li>Linux - the Anklang deb and AppImage are based on Ubuntu 20.04.</li>
+<li>Packaged sound engine binaries support SSE-only or AVX+FMA
+optimizations.</li>
+</ul>
+</section>
+<section id="documentation-1" class="level3">
 <h3>Documentation</h3>
 <ul>
 <li>Integrated documentation from JS components into the user manual and
@@ -216,7 +403,7 @@ fixes.</li>
 howto.</li>
 </ul>
 </section>
-<section id="ase" class="level3">
+<section id="ase-1" class="level3">
 <h3>ASE</h3>
 <ul>
 <li>Automatically stop audio playback with the new <code>-t time</code>
@@ -257,7 +444,7 @@ ASE.</li>
 clang++-15.</li>
 </ul>
 </section>
-<section id="user-interface" class="level3">
+<section id="user-interface-1" class="level3">
 <h3>User Interface</h3>
 <ul>
 <li>Added support for context help via F1 key in Lit components
@@ -329,7 +516,7 @@ environment.</li>
 significant trunk merge commit.</li>
 </ul>
 </section>
-<section id="testing" class="level3">
+<section id="testing-1" class="level3">
 <h3>Testing</h3>
 <ul>
 <li>Introduced end-to-end testing using X11 with headless runs.</li>
@@ -355,7 +542,7 @@ recordings.</li>
 optimizations.</li>
 </ul>
 </section>
-<section id="documentation-1" class="level3">
+<section id="documentation-2" class="level3">
 <h3>Documentation</h3>
 <ul>
 <li>Extended documentation in many places.</li>
@@ -364,7 +551,7 @@ optimizations.</li>
 <li>Provide developer documentation as anklang-internals.pdf.</li>
 </ul>
 </section>
-<section id="user-interface-1" class="level3">
+<section id="user-interface-2" class="level3">
 <h3>User Interface</h3>
 <ul>
 <li>Improve UI responsiveness when handling async API calls.</li>
@@ -448,7 +635,7 @@ steps.</li>
 <li>Prioritize drivers based on headset/USB/HDMI/Duplex properties</li>
 </ul>
 </section>
-<section id="documentation-2" class="level3">
+<section id="documentation-3" class="level3">
 <h3>Documentation</h3>
 <ul>
 <li>Add manpage (markdown), build documentation with pandoc2</li>
@@ -458,7 +645,7 @@ steps.</li>
 <li>Add comprehensive 'copyright' file generation</li>
 </ul>
 </section>
-<section id="user-interface-2" class="level3">
+<section id="user-interface-3" class="level3">
 <h3>User Interface</h3>
 <ul>
 <li>Support Web browser based UI (Firefox, Chrome)</li>
