@@ -12,6 +12,10 @@ Files: .github/workflows/ircbot.py
 Copyright: Copyright (C) 2021-2022 Tim Janik
 License: MPL-2.0
 
+Files: .github/workflows/pages.yml
+Copyright: Copyright (C) 2024 Tim Janik
+License: ?
+
 Files: .github/workflows/testing.yml
 Copyright: Copyright (C) 2021-2024 Tim Janik
 License: MPL-2.0
