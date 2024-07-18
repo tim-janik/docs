@@ -893,6 +893,10 @@ Files: doc/jsdocrc.json
 Copyright: Copyright (C) 2023-2024 Tim Janik
 License: MPL-2.0
 
+Files: doc/mkdocs.yml
+Copyright: Copyright (C) 2024 Tim Janik
+License: ?
+
 Files: doc/pandoc-pdf.tex
 Copyright: Copyright (C) 2021 Tim Janik
 License: MPL-2.0
@@ -1026,7 +1030,7 @@ Copyright: Copyright (C) 2021-2024 Tim Janik
 License: MPL-2.0
 
 Files: misc/Dockerfile.jammy
-Copyright: Copyright (C) 2023 Tim Janik
+Copyright: Copyright (C) 2023-2024 Tim Janik
 License: MPL-2.0
 
 Files: misc/GNUmakefile
