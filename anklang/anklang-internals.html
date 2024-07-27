@@ -2978,7 +2978,9 @@ Array or Object
 data-4search="ui/util.js:clamp;func"><strong><code>clamp</code></strong></span>
 <code>(</code><em>x, min, max</em><code>)</code></dt>
 <dd>
-Return 1 x clamped into 1 min and 1 max
+Return <span class="citation" data-cites="a">@a</span> x clamped into
+<span class="citation" data-cites="a">@a</span> min and <span
+class="citation" data-cites="a">@a</span> max
 </dd>
 <dt><span id="fwdprovide"
 data-4search="ui/util.js:fwdprovide;func"><strong><code>fwdprovide</code></strong></span>
@@ -3599,160 +3601,181 @@ dependency. Producing a distribution tarball depends on Git however.</p>
 <section id="appendix" class="level1" data-number="9">
 <h1 data-number="9"><span class="header-section-number">9</span>
 Appendix</h1>
-<p> </p>
 <section id="one-dimensional-cubic-interpolation" class="level2"
 data-number="9.1">
 <h2 data-number="9.1"><span class="header-section-number">9.1</span>
 One-dimensional Cubic Interpolation</h2>
-<p>With four sample values <span class="math inline">\(V_{0}\)</span>,
-<span class="math inline">\(V_{1}\)</span>, <span
-class="math inline">\(V_{2}\)</span> and <span
-class="math inline">\(V_{3}\)</span>, cubic interpolation approximates
-the curve segment connecting <span class="math inline">\(V_{1}\)</span>
-and <span class="math inline">\(V_{2}\)</span>, by using the beginning
-and ending slope, the curvature and the rate of curvature change to
+<p>With four sample values <span class="math inline">\(V_0\)</span>,
+<span class="math inline">\(V_1\)</span>, <span
+class="math inline">\(V_2\)</span> and <span
+class="math inline">\(V_3\)</span>, cubic interpolation approximates the
+curve segment connecting <span class="math inline">\(V_1\)</span> and
+<span class="math inline">\(V_2\)</span>, by using the beginning and
+ending slope, the curvature and the rate of curvature change to
 construct a cubic polynomial.</p>
 <p>The cubic polynomial starts out as:</p>
-<ol class="example" type="1">
-<li><span class="math inline">\(f(x) = w_{3} x^3 + w_{2} x^2 + w_{1} x +
-w_{0}\)</span></li>
-</ol>
+<ul>
+<li><ol type="a">
+<li><span class="math inline">\(f(x) = w_3 x^3 + w_2 x^2 + w_1 x +
+w_0\)</span></li>
+</ol></li>
+</ul>
 <p>Where <span class="math inline">\(0 &lt;= x &lt;= 1\)</span>,
 specifying the sample value of the curve segment between <span
-class="math inline">\(V_{1}\)</span> and <span
-class="math inline">\(V_{2}\)</span> to obtain.</p>
+class="math inline">\(V_1\)</span> and <span
+class="math inline">\(V_2\)</span> to obtain.</p>
 <p>To calculate the coefficients <span
-class="math inline">\(w_{0},…,w_{3}\)</span>, we set out the following
+class="math inline">\(w_0…w_3\)</span>, we set out the following
 conditions:</p>
-<ol start="2" class="example" type="1">
-<li><span class="math inline">\(f(0) = V_{1}\)</span></li>
-<li><span class="math inline">\(f(1) = V_{2}\)</span></li>
-<li><span class="math inline">\(f&#39;(0) = V_{1}&#39;\)</span></li>
-<li><span class="math inline">\(f&#39;(1) = V_{2}&#39;\)</span></li>
-</ol>
-<p>We obtain <span class="math inline">\(V_{1}&#39;\)</span> and <span
-class="math inline">\(V_{2}&#39;\)</span> from the respecting slope
+<ul>
+<li><ol start="2" type="a">
+<li><span class="math inline">\(f(0) = V_1\)</span></li>
+</ol></li>
+<li><ol start="3" type="a">
+<li><span class="math inline">\(f(1) = V_2\)</span></li>
+</ol></li>
+<li><ol start="4" type="a">
+<li><span class="math inline">\(f&#39;(0) = V_1&#39;\)</span></li>
+</ol></li>
+<li><ol start="5" type="a">
+<li><span class="math inline">\(f&#39;(1) = V_2&#39;\)</span></li>
+</ol></li>
+</ul>
+<p>We obtain <span class="math inline">\(V_1&#39;\)</span> and <span
+class="math inline">\(V_2&#39;\)</span> from the respecting slope
 triangles:</p>
-<ol start="6" class="example" type="1">
-<li><span class="math inline">\(V_{1}&#39; = \frac {V_{2} - V_{0}}
+<ul>
+<li><ol start="6" type="a">
+<li><span class="math inline">\(V_1&#39; = \frac {V_2 - V_0}
 {2}\)</span></li>
-<li><span class="math inline">\(V_{2}&#39; = \frac {V_{3} - V_{1}}
+</ol></li>
+<li><ol start="7" type="a">
+<li><span class="math inline">\(V_2&#39; = \frac {V_3 - V_1}
 {2}\)</span></li>
-</ol>
-<p>With (6) → (4) and (7) → (5) we get:</p>
-<ol start="8" class="example" type="1">
-<li><span class="math inline">\(f&#39;(0) = \frac {V_{2} - V_{0}}
+</ol></li>
+</ul>
+<p>With (f)→(d) and (g)→(e) we get:</p>
+<ul>
+<li><ol start="8" type="a">
+<li><span class="math inline">\(f&#39;(0) = \frac {V_2 - V_0}
 {2}\)</span></li>
-<li><span class="math inline">\(f&#39;(1) = \frac {V_{3} - V_{1}}
+</ol></li>
+<li><ol type="i">
+<li><span class="math inline">\(f&#39;(1) = \frac {V_3 - V_1}
 {2}\)</span></li>
-</ol>
+</ol></li>
+</ul>
 <p>The derivation of <span class="math inline">\(f(x)\)</span> is:</p>
-<ol start="10" class="example" type="1">
-<li><span class="math inline">\(f&#39;(x) = 3 w_{3} x^2 + 2 w_{2} x +
-w_{1}\)</span></li>
-</ol>
-<p>From <span class="math inline">\(x=0\)</span> → (1), i.e. (2), we
-obtain <span class="math inline">\(w_{0}\)</span> and from <span
-class="math inline">\(x=0\)</span> → (10), i.e. (8), we obtain <span
-class="math inline">\(w_{1}\)</span>. With <span
-class="math inline">\(w_{0}\)</span> and <span
-class="math inline">\(w_{1}\)</span> we can solve the linear equation
-system formed by (3) → (1) and (5) → (10) to obtain <span
-class="math inline">\(w_{2}\)</span> and <span
-class="math inline">\(w_{3}\)</span>.</p>
-<p>(<span class="citation" data-cites="c_a_">@c_a_</span>)   (3) → (1):
-  <span class="math inline">\(w_{3} + w_{2} + \frac {V_{2} - V_{0}} {2}
-+ V_{1} = V_{2}\)</span> (<span class="citation"
-data-cites="e_j_">@e_j_</span>)   (5) → (10):   <span
-class="math inline">\(3 w_{3} + 2 w_{2} + \frac {V_{2} - V_{0}} {2} =
-\frac {V_{3} - V_{1}} {2}\)</span></p>
+<ul>
+<li><ol start="10" type="a">
+<li><span class="math inline">\(f&#39;(x) = 3 w_3 x^2 + 2 w_2 x +
+w_1\)</span></li>
+</ol></li>
+</ul>
+<p>From <span class="math inline">\(x=0\)</span> →(a), i.e. (b), we
+obtain <span class="math inline">\(w_0\)</span> and from <span
+class="math inline">\(x=0\)</span> →(j), i.e. (h), we obtain <span
+class="math inline">\(w_1\)</span>. With <span
+class="math inline">\(w_0\)</span> and <span
+class="math inline">\(w_1\)</span> we can solve the linear equation
+system formed by (c)→(a) and (e)→(j) to obtain <span
+class="math inline">\(w_2\)</span> and <span
+class="math inline">\(w_3\)</span>.</p>
+<p><span class="math inline">\((c)→(a): w_3 + w_2 + \frac {V_2 - V_0}
+{2} + V_1 = V_2\)</span></p>
+<p><span class="math inline">\((e)→(j): 3 w_3 + 2 w_2 + \frac {V_2 -
+V_0} {2} = \frac {V_3 - V_1} {2}\)</span></p>
 <p>With the resulting coefficients:</p>
 <p><span class="math display">\[
 \begin{aligned}
-    w_{0} &amp;= V_{1}
+    w_0 &amp;= V_1
 &amp;                                        &amp;(initial\:value)           \\
-    w_{1} &amp;= \frac{V_{2} - V_{0}} {2}
+    w_1 &amp;= \frac{V_2 - V_0} {2}
 &amp;                       &amp;(initial\:slope)           \\
-    w_{2} &amp;= \frac{-V_{3} + 4 V_{2} - 5 V_{1} + 2 V_{0}} {2}
+    w_2 &amp;= \frac{-V_3 + 4 V_2 - 5 V_1 + 2 V_0} {2}
 &amp;    &amp;(initial\:curvature)       \\
-    w_{3} &amp;= \frac{V_{3} - 3 V_{2} + 3 V_{1} - V_{0}} {2}
+    w_3 &amp;= \frac{V_3 - 3 V_2 + 3 V_1 - V_0} {2}
 &amp;       &amp;(rate\:change\:of\:curvature)
 \end{aligned}
 \]</span></p>
-<p>Reformulating (1) to involve just multiplications and additions
+<p>Reformulating (a) to involve just multiplications and additions
 (eliminating power), we get:</p>
-<ol start="11" class="example" type="1">
-<li><span class="math inline">\(f(x) = ((w_{3} x + w_{2}) x + w_{1}) x +
-w_{0}\)</span></li>
-</ol>
-<p>Based on <span class="math inline">\(V_{0},…,V_{3}\)</span>, <span
-class="math inline">\(w_{0},…,w_{3}\)</span> and (11), we can now
-approximate all values of the curve segment between <span
-class="math inline">\(V_{1}\)</span> and <span
-class="math inline">\(V_{2}\)</span>.</p>
+<ul>
+<li><ol start="11" type="a">
+<li><span class="math inline">\(f(x) = ((w_3 x + w_2) x + w_1) x +
+w_0\)</span></li>
+</ol></li>
+</ul>
+<p>Based on <span class="math inline">\(V_0…V_3\)</span>, <span
+class="math inline">\(w_0…w_3\)</span> and (k), we can now approximate
+all values of the curve segment between <span
+class="math inline">\(V_1\)</span> and <span
+class="math inline">\(V_2\)</span>.</p>
 <p>However, for practical resampling applications where only a specific
 precision is required, the number of points we need out of the curve
 segment can be reduced to a finite amount. Lets assume we require <span
 class="math inline">\(n\)</span> equally spread values of the curve
 segment, then we can precalculate <span class="math inline">\(n\)</span>
-sets of <span class="math inline">\(W_{0,…,3}[i]\)</span>, <span
-class="math inline">\(i=[0,…,n]\)</span>, coefficients to speed up the
+sets of <span class="math inline">\(W_{0…3}[i]\)</span>, <span
+class="math inline">\(i=[0…n]\)</span>, coefficients to speed up the
 resampling calculation, trading memory for computational performance.
-With <span class="math inline">\(w_{0,…,3}\)</span> in (1):</p>
+With <span class="math inline">\(w_{0…3}\)</span> in (a):</p>
 <p><span class="math display">\[
 \begin{alignedat} {2}
-    f(x) \  &amp;= &amp;   \frac{V_{3} - 3 V_{2} + 3 V_{1} - V_{0}} 2
-x^3 \  +  &amp; \\
-            &amp;  &amp; \frac{-V_{3} + 4 V_{2} - 5 V_{1} + 2 V_{0}} 2
-x^2 \ +  &amp; \\
-            &amp;  &amp;                     \frac{V_{2} - V_{0}} 2 x
+    f(x) \  &amp;= &amp;   \frac{V_3 - 3 V_2 + 3 V_1 - V_0} 2 x^3
 \  +  &amp; \\
-            &amp;  &amp;                                   V1   \
-\     &amp;
+            &amp;  &amp; \frac{-V_3 + 4 V_2 - 5 V_1 + 2 V_0} 2 x^2 \
++  &amp; \\
+            &amp;  &amp;                     \frac{V_2 - V_0} 2 x
+\  +  &amp; \\
+            &amp;  &amp;                                   V1 \ \ \
+\   &amp;
 \end{alignedat}
 \]</span></p>
-<p>sorted for <span class="math inline">\(V_{0},…,V_{4}\)</span>, we
-have:</p>
-<ol start="12" class="example" type="1">
-<li><span class="math display">\[\begin{aligned}
-f(x) \  = \  &amp; V_{3} \  (0.5 x^3 - 0.5 x^2) \  +     &amp; \\
-          &amp; V_{2} \  (-1.5 x^3 + 2 x^2 + 0.5 x) \  +  &amp; \\
-          &amp; V_{1} \  (1.5 x^3 - 2.5 x^2 + 1) \  + &amp; \\
-          &amp; V_{0} \  (-0.5 x^3 + x^2 - 0.5 x)     &amp;
-\end{aligned}\]</span></li>
-</ol>
-<p>With (12) we can solve <span class="math inline">\(f(x)\)</span> for
+<p>sorted for <span class="math inline">\(V_0…V_4\)</span>, we have:</p>
+<ul>
+<li><ol start="12" type="a">
+<li><span class="math inline">\(\begin{aligned}  f(x) \  = \  &amp; V_3
+\  (0.5 x^3 - 0.5 x^2) \  + &amp; \\  &amp; V_2 \  (-1.5 x^3 + 2 x^2 +
+0.5 x) \  + &amp; \\  &amp; V_1 \  (1.5 x^3 - 2.5 x^2 + 1) \  + &amp;
+\\  &amp; V_0 \  (-0.5 x^3 + x^2 - 0.5 x) &amp;
+\end{aligned}\)</span></li>
+</ol></li>
+</ul>
+<p>With (l) we can solve <span class="math inline">\(f(x)\)</span> for
 all <span class="math inline">\(x = \frac i n\)</span>, where <span
 class="math inline">\(i = [0, 1, 2, …, n]\)</span> by substituting <span
 class="math inline">\(g(i) = f(\frac i n)\)</span> with</p>
-<ol start="13" class="example" type="1">
-<li><span class="math inline">\(g(i) = V_{3} W_{3}[i] + V_{2} W_{2}[i] +
-V_{1} W_{1}[i] + V_{0} W_{0}[i]\)</span></li>
-</ol>
+<ul>
+<li><ol start="13" type="a">
+<li><span class="math inline">\(g(i) = V_3 W_3[i] + V_2 W_2[i] + V_1
+W_1[i] + V_0 W_0[i]\)</span></li>
+</ol></li>
+</ul>
 <p>and using <span class="math inline">\(n\)</span> precalculated
-coefficients <span class="math inline">\(W_{0,…,3}\)</span> according
+coefficients <span class="math inline">\(W_{0…3}\)</span> according
 to:</p>
 <p><span class="math display">\[
 \begin{alignedat}{4}
         m      &amp;= \frac i n                                \\
-        W_{3}[i] &amp;=&amp;  0.5 m^3 &amp; - &amp; 0.5 m^2
+        W_3[i] &amp;=&amp;  0.5 m^3 &amp; - &amp; 0.5 m^2
 &amp;         &amp;      \\
-        W_{2}[i] &amp;=&amp; -1.5 m^3 &amp; + &amp;   2 m^2 &amp; + 0.5
-m &amp;      \\
-        W_{1}[i] &amp;=&amp;  1.5 m^3 &amp; - &amp; 2.5 m^2
+        W_2[i] &amp;=&amp; -1.5 m^3 &amp; + &amp;   2 m^2 &amp; + 0.5 m
+&amp;      \\
+        W_1[i] &amp;=&amp;  1.5 m^3 &amp; - &amp; 2.5 m^2
 &amp;         &amp; + 1  \\
-        W_{0}[i] &amp;=&amp; -0.5 m^3 &amp; + &amp;     m^2 &amp; - 0.5
-m &amp;
+        W_0[i] &amp;=&amp; -0.5 m^3 &amp; + &amp;     m^2 &amp; - 0.5 m
+&amp;
 \end{alignedat}
 \]</span></p>
 <p>We now need to setup <span
-class="math inline">\(W_{0,…,3}[0,…,n]\)</span> only once, and are then
-able to obtain up to <span class="math inline">\(n\)</span>
-approximation values of the curve segment between <span
-class="math inline">\(V_{1}\)</span> and <span
-class="math inline">\(V_{2}\)</span> with four multiplications and three
-additions using (13), given <span
-class="math inline">\(V_{0},…,V_{3}\)</span>.</p>
+class="math inline">\(W_{0…3}[0…n]\)</span> only once, and are then able
+to obtain up to <span class="math inline">\(n\)</span> approximation
+values of the curve segment between <span
+class="math inline">\(V_1\)</span> and <span
+class="math inline">\(V_2\)</span> with four multiplications and three
+additions using (m), given <span
+class="math inline">\(V_0…V_3\)</span>.</p>
 </section>
 <section id="modifier-keys" class="level2" data-number="9.2">
 <h2 data-number="9.2"><span class="header-section-number">9.2</span>
@@ -3803,65 +3826,50 @@ operations according to the following list:</p>
 <p>Regarding selections, the following email provides a short
 summary:</p>
 <blockquote>
-<pre><code>From: Tim Janik &lt;timj@gtk.org&gt;
-To: Hacking Gnomes &lt;Gnome-Hackers@gnome.org&gt;
-Subject: modifiers for the second selection
-Message-ID: &lt;Pine.LNX.4.21.0207111747190.12292-100000@rabbit.birnet.private&gt;
-Date: Thu, 11 Jul 2002 18:10:52 +0200 (CEST)
-
-hi all,
-
-in the course of reimplementing drag-selection for a widget,
-i did a small survey of modifier behaviour in other (gnome/
-gtk) programs and had to figure that there&#39;s no current
-standard behaviour to adhere to:
-
-for all applications, the first selection works as
-expected, i.e. press-drag-release selects the region
-(box) the mouse was draged over. also, starting a new
-selection without pressing any modifiers simply replaces
-the first one. differences occour when holding a modifier
-(shift or ctrl) when starting the second selection.
-
-Gimp:
-Shift upon button press:        the new seleciton is added to the existing one
-Ctrl upon button press:         the new selection is subtracted from the
-                                existing one
-Shift during drag:              the selection area (box or circle) has fixed
-                                aspect ratio
-Ctrl during drag:               the position of the initial button press
-                                serves as center of the selected box/circle,
-                                rather than the upper left corner
-
-Gnumeric:
-Shift upon button press:        the first selection is resized
-Ctrl upon button press:         the new seleciton is added to the existing one
-
-Abiword (selecting text regions):
-Shift upon button press:        the first selection is resized
-Ctrl upon button press:         triggers a compound (word) selection that
-                                replaces the first selection
-
-Mozilla (selecting text regions):
-Shift upon button press:        the first selection is resized
-
-Nautilus:
-Shift or Ctrl upon buttn press: the new selection is added to or subtracted
-                                from the first selection, depending on whether
-                                the newly selected region was selected before.
-                                i.e. implementing XOR integration of the newly
-                                selected area into the first.
-
-i&#39;m not pointing this out to start a flame war over what selection style
-is good or bad and i do realize that different applications have
-different needs (i.e. abiword does need compound selection, and
-the aspect-ratio/centering style for gimp wouldn&#39;t make too much
-sense for text), but i think for the benfit of the (new) users,
-there should me more consistency regarding modifier association
-with adding/subtracting/resizing/xoring to/from existing selections.
-
----
-ciaoTJ</code></pre>
+<p>From: Tim Janik
+<a href="&#x6d;&#x61;&#x69;&#108;&#116;&#x6f;&#58;&#116;&#x69;&#x6d;&#106;&#64;&#x67;&#116;&#x6b;&#46;&#x6f;&#114;&#x67;" class="email">&#116;&#x69;&#x6d;&#106;&#64;&#x67;&#116;&#x6b;&#46;&#x6f;&#114;&#x67;</a>
+To: Hacking Gnomes
+<a href="&#x6d;&#x61;&#x69;&#108;&#116;&#x6f;&#58;&#x47;&#110;&#x6f;&#x6d;&#x65;&#x2d;&#72;&#x61;&#x63;&#x6b;&#x65;&#114;&#x73;&#64;&#x67;&#110;&#x6f;&#x6d;&#x65;&#46;&#x6f;&#114;&#x67;" class="email">&#x47;&#110;&#x6f;&#x6d;&#x65;&#x2d;&#72;&#x61;&#x63;&#x6b;&#x65;&#114;&#x73;&#64;&#x67;&#110;&#x6f;&#x6d;&#x65;&#46;&#x6f;&#114;&#x67;</a>
+Subject: modifiers for the second selection Message-ID:
+<a href="&#x6d;&#x61;&#x69;&#108;&#116;&#x6f;&#58;&#80;&#x69;&#110;&#x65;&#46;&#76;&#78;&#88;&#46;&#52;&#46;&#50;&#x31;&#46;&#48;&#50;&#48;&#x37;&#x31;&#x31;&#x31;&#x37;&#52;&#x37;&#x31;&#x39;&#48;&#46;&#x31;&#50;&#50;&#x39;&#50;&#x2d;&#x31;&#48;&#48;&#48;&#48;&#48;&#64;&#114;&#x61;&#98;&#98;&#x69;&#116;&#46;&#98;&#x69;&#114;&#110;&#x65;&#116;&#46;&#112;&#114;&#x69;&#118;&#x61;&#116;&#x65;" class="email">&#80;&#x69;&#110;&#x65;&#46;&#76;&#78;&#88;&#46;&#52;&#46;&#50;&#x31;&#46;&#48;&#50;&#48;&#x37;&#x31;&#x31;&#x31;&#x37;&#52;&#x37;&#x31;&#x39;&#48;&#46;&#x31;&#50;&#50;&#x39;&#50;&#x2d;&#x31;&#48;&#48;&#48;&#48;&#48;&#64;&#114;&#x61;&#98;&#98;&#x69;&#116;&#46;&#98;&#x69;&#114;&#110;&#x65;&#116;&#46;&#112;&#114;&#x69;&#118;&#x61;&#116;&#x65;</a>
+Date: Thu, 11 Jul 2002 18:10:52 +0200 (CEST)</p>
+<p>hi all,</p>
+<p>in the course of reimplementing drag-selection for a widget, i did a
+small survey of modifier behaviour in other (gnome/ gtk) programs and
+had to figure that there's no current standard behaviour to adhere
+to:</p>
+<p>for all applications, the first selection works as expected, i.e.
+press-drag-release selects the region (box) the mouse was draged over.
+also, starting a new selection without pressing any modifiers simply
+replaces the first one. differences occour when holding a modifier
+(shift or ctrl) when starting the second selection.</p>
+<p>Gimp: Shift upon button press: the new seleciton is added to the
+existing one Ctrl upon button press: the new selection is subtracted
+from the existing one Shift during drag: the selection area (box or
+circle) has fixed aspect ratio Ctrl during drag: the position of the
+initial button press serves as center of the selected box/circle, rather
+than the upper left corner</p>
+<p>Gnumeric: Shift upon button press: the first selection is resized
+Ctrl upon button press: the new seleciton is added to the existing
+one</p>
+<p>Abiword (selecting text regions): Shift upon button press: the first
+selection is resized Ctrl upon button press: triggers a compound (word)
+selection that replaces the first selection</p>
+<p>Mozilla (selecting text regions): Shift upon button press: the first
+selection is resized</p>
+<p>Nautilus: Shift or Ctrl upon buttn press: the new selection is added
+to or subtracted from the first selection, depending on whether the
+newly selected region was selected before. i.e. implementing XOR
+integration of the newly selected area into the first.</p>
+<p>i'm not pointing this out to start a flame war over what selection
+style is good or bad and i do realize that different applications have
+different needs (i.e. abiword does need compound selection, and the
+aspect-ratio/centering style for gimp wouldn't make too much sense for
+text), but i think for the benfit of the (new) users, there should me
+more consistency regarding modifier association with
+adding/subtracting/resizing/xoring to/from existing selections.</p>
+<hr />
+<p>ciaoTJ</p>
 </blockquote>
 </section>
 </section>

@@ -14,7 +14,7 @@ License: MPL-2.0
 
 Files: .github/workflows/pages.yml
 Copyright: Copyright (C) 2024 Tim Janik
-License: ?
+License: MPL-2.0
 
 Files: .github/workflows/testing.yml
 Copyright: Copyright (C) 2021-2024 Tim Janik
@@ -838,25 +838,15 @@ Copyright: Copyright (C) 2021-2022 Tim Janik
 License: MPL-2.0
 
 Files: doc/ch-appendix.md
-Copyright: Copyright (C) 2021 Tim Janik
+Copyright:
+  Copyright (C) 2024 Tim Janik
+  Copyright (C) 2021 Tim Janik
 License: MPL-2.0
 
 Files: doc/ch-development.md
 Copyright:
   Copyright (C) 2024 ritschwumm
   Copyright (C) 2021-2023 Tim Janik
-License: MPL-2.0
-
-Files: doc/ch-editing.md
-Copyright: Copyright (C) 2022 Tim Janik
-License: MPL-2.0
-
-Files: doc/ch-install.md
-Copyright: Copyright (C) 2022 Tim Janik
-License: MPL-2.0
-
-Files: doc/ch-intro.md
-Copyright: Copyright (C) 2021-2022 Tim Janik
 License: MPL-2.0
 
 Files: doc/ch-releasing.md
@@ -883,6 +873,18 @@ Files: doc/highlights.theme
 Copyright: Copyright (C) 2021 Tim Janik
 License: MPL-2.0
 
+Files: doc/how-audio.md
+Copyright: Copyright (C) 2024 Tim Janik
+License: MPL-2.0
+
+Files: doc/index.md
+Copyright: Copyright (C) 2024 Tim Janik
+License: MPL-2.0
+
+Files: doc/javascript/mathjax.js
+Copyright: Copyright (C) 2024 Tim Janik
+License: MPL-2.0
+
 Files: doc/jsdoc-slashes.cjs
 Copyright:
   Copyright (C) 2023-2024 Tim Janik
@@ -899,7 +901,7 @@ License: MPL-2.0
 
 Files: doc/mkdocs.yml
 Copyright: Copyright (C) 2024 Tim Janik
-License: ?
+License: MPL-2.0
 
 Files: doc/pandoc-pdf.tex
 Copyright: Copyright (C) 2021 Tim Janik
@@ -937,6 +939,10 @@ License: MPL-2.0
 
 Files: doc/template.diff
 Copyright: Copyright (C) 2021 Tim Janik
+License: MPL-2.0
+
+Files: doc/tut-play.md
+Copyright: Copyright (C) 2024 Tim Janik
 License: MPL-2.0
 
 Files: electron/Makefile.mk
