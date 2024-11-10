@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en"><head>
   <meta charset="utf-8"/>
-  <title>ase/midilib.hh file | Anklang 0.3.0.dev38 Anklang Programming Reference</title>
+  <title>Web Component Implementations | Anklang 0.3.0.dev38 Anklang Programming Reference</title>
   <link href="favicon.svg" rel="icon" type="image/svg+xml"/>
   <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
   <meta content="#cb4b16" name="theme-color"/>
@@ -22,7 +22,7 @@
   <meta content="Poxy v0.19.1" name="generator"/>
   <meta content="strict-origin-when-cross-origin" name="referrer"/>
 </head>
-<body class="poxy-has-toc">
+<body>
 <header><nav id="navigation">
   <div class="m-container">
     <div class="m-row">
@@ -60,39 +60,10 @@
     <div class="m-row">
       <div class="m-col-l-10 m-push-l-1">
         <h1>
-          <span class="m-breadcrumb"><a href="dir_348db03b1ba8af29dd5c640acd69ada0.html">ase</a>/</span>midilib.hh <span class="m-thin">file</span>
+          Web Component Implementations
         </h1>
-        <nav class="m-block m-default poxy-toc" id="poxy-toc">
-          <h3>Contents</h3>
-          <ul>
-            <li>
-              Reference
-              <ul>
-                <li><a href="#namespaces">Namespaces</a></li>
-                <li><a href="#nested-classes">Classes</a></li>
-              </ul>
-            </li>
-          </ul>
-        </nav>
-<p><br/></p>
-        <section id="namespaces">
-          <h2><a href="#namespaces">Namespaces</a></h2>
-          <dl class="m-doc">
-            <dt>namespace <a class="m-doc" href="namespace_ase.html">Ase</a></dt>
-            <dd>The Anklang C++ API namespace.</dd>
-            <dt>namespace <a class="m-doc" href="namespace_ase_1_1_midi_lib.html">Ase::MidiLib</a></dt>
-            <dd>Namespace used for Midi Processor implementations.</dd>
-          </dl>
-        </section>
-        <section id="nested-classes">
-          <h2><a href="#nested-classes">Classes</a></h2>
-          <dl class="m-doc">
-            <dt>
-              struct <a class="m-doc" href="struct_ase_1_1_midi_lib_1_1_midi_feed.html">Ase::MidiLib::MidiFeed</a>
-            </dt>
-            <dd>Aggregation of MIDI events and sequencing information.</dd>
-          </dl>
-        </section>
+<p><a name="autotoc_md39"></a> The user interface components used in Anklang are implemented as <a class="poxy-external" href="https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_custom_elements" target="_blank">custom HTML elements</a> and are generally composed of a single file that provides:</p><p>a) A brief documentation block; b) CSS style information, that is extracted at build time via <a class="poxy-external" href="https://tim-janik.github.io/docs/anklang/jsextract_8js.html" target="_blank">JsExtract</a>; c) An HTML layout specified with <a class="poxy-external" href="https://lit.dev/docs/templates/expressions/" target="_blank">lit-html expressions</a>; d) An assorted JavaScript class that defines a new custom HTML element, possibly via <a class="poxy-external" href="https://lit.dev/docs/" target="_blank">Lit</a>.</p><p>Simple components that have no or at most one child element and do not require complex HTML layouts with lit-html can be implemented directly via <a class="poxy-external" href="https://developer.mozilla.org/en-US/docs/Web/API/CustomElementRegistry/define" target="_blank">customElements.define()</a>.</p><p>Components with complex layouts that need lit-html or that act as containers with several <a class="poxy-external" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/slot" target="_blank">HTMLSlotElement</a>s (for multiple types of children) which require a <a class="poxy-external" href="https://developer.mozilla.org/en-US/docs/Web/API/ShadowRoot" target="_blank">ShadowRoot</a>, should be implemented as LitElements by extending <a class="poxy-external" href="https://tim-janik.github.io/docs/anklang/little_8js.html#LitComponent" target="_blank">LitComponent</a> (our convenience wrapper around <a class="poxy-external" href="https://lit.dev/docs/api/LitElement/" target="_blank">LitElement</a>.</p><p>Note that <a class="poxy-external" href="https://lit.dev/docs/components/defining/#a-lit-component-is-an-html-element" target="_blank">a Lit component is an HTML element</a>, it extends <a class="poxy-external" href="https://lit.dev/docs/api/ReactiveElement/" target="_blank">ReactiveElement</a> which always extends <a class="poxy-external" href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement" target="_blank">HTMLElement</a> and none of the other <a class="poxy-external" href="https://developer.mozilla.org/en-US/docs/Web/API/HTML_DOM_API#html_element_interfaces_2" target="_blank">HTML element interfaces</a>.</p><section id="autotoc_md40"><h2><a href="#autotoc_md40">Guidelines for Web Components</a></h2><p>Guidelines capturing past experiences:</p><ul><li>Create a component to encapsulate possible state and specific UI/UX behavior or API functionality.</li><li>Avoid adding components purely for layout or style reasons. Horizontal or vertical <a class="poxy-external" href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox" target="_blank">flex</a> boxes, <a class="poxy-external" href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox" target="_blank">grid</a> layout, dialog and menu styling are much better addressed with CSS classes and are more often subject to change than encapsulated behavior.</li><li>Use CSS utility classes instead of custom or adhoc styles that have to be given a dedicated name. <a class="poxy-external" href="https://tailwindcss.com/docs/utility-first#maintainability-concerns" target="_blank">TailwindCSS</a> gives good guidance here.</li><li>Use simple custom element components if that suffices, components that do not expect external children can get away without a shadow DOM.</li><li>Components with external children need <a class="poxy-external" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/slot" target="_blank"><code>&lt;slot/&gt;</code></a> elements, these require shadow DOM handling as provided by LitElement, use it via our <a class="poxy-external" href="https://tim-janik.github.io/docs/anklang/little_8js.html#LitComponent" target="_blank">LitComponent</a> class.</li><li>Focussable elements <strong>MUST NOT</strong> be buried inside the shadow DOM tree. It is perfectly fine to add focussable elements as (external) children to a ready-made web component that has a shadow DOM with <code>&lt;slot/&gt;</code> elements, but proper focus handling, focus related styling, keyboard and focus chain handling is not reliably possible when focussable elements are <strong>inside the shadow DOM</strong>, instead of staying part of the light DOM by adding them into <code>&lt;slot/&gt;</code> elements.</li></ul></section><section id="autotoc_md41"><h2><a href="#autotoc_md41">Legacy Vue Components</a></h2><p>Some components are still implemented via Vue and are slowly phased out. We often use <code>&lt;canvas&gt;</code> elements for Anklang specific displays, and Vue canvas handling comes with certain caveats:</p><p>1) Use of the <code>Util.vue_mixins.dom_updates</code> mixin (now default) allows to trigger the <code>dom_update()</code> component method for <code>$forceUpdate()</code> invocations and related events. 2) A <code>methods: { dom_update() {}, }</code> component entry should be provided that triggers the actual canvas rendering logic. 3) Using a <code>document.fonts.ready</code> promise, Anklang re-renders all Vue components via <code>$forceUpdate()</code> once all webfonts have been loaded, <code>&lt;canvas&gt;</code> elements containing text usually need to re-render themselves in this case.</p><p><strong>Envue components:</strong></p><p>Envue components are created to simplify some of the oddities of dealing with Vue-3 components. The function <code>Envue.Component.vue_export</code> creates a Vue component definition, so that the Vue component instance (<code>$vm</code>) is tied to an <code>Envue.Component</code> instance (<code>$object</code>). Notes:</p><ul><li>The Vue lifetime component can be accessed as <code>$object.$vm</code>.</li><li>The Envue component can be accessed as <code>$vm.$object</code>.</li><li>Accesses to <code>$vm.*</code> fields e.g. from within a <code>&lt;template/&gt;</code> definition are forwarded to access <code>$object.*</code> fields.</li><li>Vue3 components are Proxy objects, <em>but</em> assignments to these Proxy objects is <em>not</em> reactive.</li><li>To construct reactive instance data with async functions, use <code>observable_from_getters()</code>.</li></ul><p>Vue uses a template compiler to construct a <a class="poxy-external" href="https://v3.vuejs.org/guide/render-function.html#complete-example" target="_blank">render()</a> function from <a class="poxy-external" href="https://v3.vuejs.org/guide/template-syntax.html#raw-html" target="_blank">HTML</a>
+					<code>&lt;template/&gt;</code> strings. The <a class="poxy-external" href="https://v3.vuejs.org/guide/template-syntax.html#javascript-expressions" target="_blank">Javascript expressions</a> in templates are sandboxed and limited in scope, but may refer to Vue component properties that are exposed through <code>hasOwnProperty()</code>. In order to support Envue instance methods and fields in template expressions, all members present after Envue construction are forwarded into the Vue component.</p></section>
       </div>
     </div>
   </div>

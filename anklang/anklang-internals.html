@@ -92,9 +92,6 @@ Scripting, IPC" />
   <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
   <script src="style/mathjax-tex-svg.js"
   type="text/javascript"></script>
-  <!--[if lt IE 9]>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
-  <![endif]-->
 </head>
 <body>
 <header id="title-block-header">
@@ -102,11 +99,11 @@ Scripting, IPC" />
 <p class="author">The Anklang Project &lt;<a
 href="https://anklang.testbit.eu/">anklang.testbit.eu</a>&gt;</p>
 <p class="date">November 2024</p>
-<p class="abstract"><b style="margin: 5em 0 1em; text-align: center; display: block;">Abstract<br /></b>
-API documentation and development internals of the Anklang project.</p>
 <div class="abstract">
 <div class="abstract-title">Abstract</div>
 API documentation and development internals of the Anklang project.
+<p class="abstract"><b style="margin: 5em 0 1em; text-align: center; display: block;">Abstract<br /></b>
+API documentation and development internals of the Anklang project.</p>
 </div>
 </header>
 <nav id="TOC" role="doc-toc">
@@ -954,9 +951,9 @@ menu can be popped up via <a
 href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLDialogElement/showModal">HTMLDialogElement.showModal</a>.
 Example:</p>
 <div class="sourceCode" id="cb4"><pre
-class="sourceCode html"><code class="sourceCode html"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">div</span><span class="ot"> </span><span class="er">@</span><span class="ot">contextmenu</span><span class="op">=</span><span class="st">&quot;e =&gt; querySelector(&#39;b-contextmenu&#39;).popup (e)&quot;</span><span class="dt">&gt;</span></span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&lt;</span><span class="kw">b-contextmenu</span><span class="ot"> </span><span class="er">.</span><span class="ot">activate</span><span class="op">=</span><span class="st">&quot;menuactivation&quot;</span><span class="dt">&gt;</span></span>
-<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&lt;</span><span class="kw">button</span><span class="ot"> ic</span><span class="op">=</span><span class="st">&quot;mi-close&quot;</span><span class="ot"> kbd</span><span class="op">=</span><span class="st">&quot;Shift+Ctrl+Q&quot;</span><span class="ot"> uri</span><span class="op">=</span><span class="st">&quot;quit&quot;</span><span class="ot"> </span><span class="dt">&gt;</span> Quit <span class="dt">&lt;/</span><span class="kw">button</span><span class="dt">&gt;</span></span>
+class="sourceCode html"><code class="sourceCode html"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">div</span> <span class="er">@contextmenu</span><span class="ot">=</span><span class="st">&quot;e =&gt; querySelector(&#39;b-contextmenu&#39;).popup (e)&quot;</span><span class="dt">&gt;</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&lt;</span><span class="kw">b-contextmenu</span> <span class="er">.activate</span><span class="ot">=</span><span class="st">&quot;menuactivation&quot;</span><span class="dt">&gt;</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&lt;</span><span class="kw">button</span> <span class="er">ic</span><span class="ot">=</span><span class="st">&quot;mi-close&quot;</span> <span class="er">kbd</span><span class="ot">=</span><span class="st">&quot;Shift+Ctrl+Q&quot;</span> <span class="er">uri</span><span class="ot">=</span><span class="st">&quot;quit&quot;</span> <span class="dt">&gt;</span> Quit <span class="dt">&lt;/</span><span class="kw">button</span><span class="dt">&gt;</span></span>
 <span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&lt;/</span><span class="kw">b-contextmenu</span><span class="dt">&gt;</span></span>
 <span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;/</span><span class="kw">div</span><span class="dt">&gt;</span></span></code></pre></div>
 <p>Note that keyboard presses, mouse clicks, drag selections and event
