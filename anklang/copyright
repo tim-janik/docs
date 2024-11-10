@@ -909,7 +909,7 @@ License: MPL-2.0
 
 Files: doc/poxy-0.19.1.diff
 Copyright: Copyright (C) 2024 Tim Janik
-License: ?
+License: CC-PDDC
 
 Files: doc/poxy.sh
 Copyright: Copyright (C) 2023-2024 Tim Janik
