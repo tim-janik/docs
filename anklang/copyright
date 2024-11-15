@@ -1039,14 +1039,6 @@ Files: misc/Dockerfile.arch
 Copyright: Copyright (C) 2022-2024 Tim Janik
 License: MPL-2.0
 
-Files: misc/Dockerfile.focal
-Copyright: Copyright (C) 2021-2024 Tim Janik
-License: MPL-2.0
-
-Files: misc/Dockerfile.jammy
-Copyright: Copyright (C) 2023-2024 Tim Janik
-License: MPL-2.0
-
 Files: misc/Dockerfile.noble
 Copyright: Copyright (C) 2023-2024 Tim Janik
 License: MPL-2.0
