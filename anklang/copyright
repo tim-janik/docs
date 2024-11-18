@@ -74,7 +74,7 @@ License: MPL-2.0
 
 Files: ase/blob.cc
 Copyright:
-  Copyright (C) 2023 Tim Janik
+  Copyright (C) 2023-2024 Tim Janik
   Copyright (C) 2021 Tim Janik
 License: MPL-2.0
 
@@ -198,7 +198,7 @@ License: MPL-2.0
 
 Files: ase/driver-jack.cc
 Copyright:
-  Copyright (C) 2021-2023 Tim Janik
+  Copyright (C) 2021-2024 Tim Janik
   Copyright (C) 2019 Stefan Westerfeld
 License: MPL-2.0
 
@@ -239,11 +239,13 @@ Copyright:
 License: MPL-2.0
 
 Files: ase/formatter.cc
-Copyright: Copyright (C) 2021-2022 Tim Janik
+Copyright:
+  Copyright (C) 2024 Tim Janik
+  Copyright (C) 2021-2022 Tim Janik
 License: MPL-2.0
 
 Files: ase/formatter.hh
-Copyright: Copyright (C) 2021-2023 Tim Janik
+Copyright: Copyright (C) 2021-2024 Tim Janik
 License: MPL-2.0
 
 Files: ase/gadget.cc
@@ -374,8 +376,8 @@ License: MPL-2.0
 
 Files: ase/midievent.cc
 Copyright:
+  Copyright (C) 2021-2024 Tim Janik
   Copyright (C) 2024 Stefan Westerfeld
-  Copyright (C) 2021-2023 Tim Janik
 License: MPL-2.0
 
 Files: ase/midievent.hh
@@ -431,7 +433,7 @@ Copyright:
 License: MPL-2.0
 
 Files: ase/object.cc
-Copyright: Copyright (C) 2021-2023 Tim Janik
+Copyright: Copyright (C) 2021-2024 Tim Janik
 License: MPL-2.0
 
 Files: ase/object.hh
@@ -589,7 +591,7 @@ Copyright:
 License: MPL-2.0
 
 Files: ase/testing.hh
-Copyright: Copyright (C) 2021-2023 Tim Janik
+Copyright: Copyright (C) 2021-2024 Tim Janik
 License: MPL-2.0
 
 Files: ase/tests/Makefile.mk
@@ -1086,7 +1088,7 @@ Copyright: Copyright (C) 2020-2022 Tim Janik
 License: MPL-2.0
 
 Files: misc/config-uname.mk
-Copyright: Copyright (C) 2020-2023 Tim Janik
+Copyright: Copyright (C) 2020-2024 Tim Janik
 License: MPL-2.0
 
 Files: misc/config-utils.mk

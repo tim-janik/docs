@@ -317,11 +317,8 @@
     <name>formatter.hh</name>
     <path>ase/</path>
     <filename>formatter_8hh.html</filename>
-    <class kind="class">Ase::Lib::ScopedLocale</class>
-    <class kind="class">Ase::Lib::ScopedPosixLocale</class>
-    <class kind="class">Ase::Lib::StringFormatter</class>
+    <class kind="class">Ase::ScopedPosixLocale</class>
     <namespace>Ase</namespace>
-    <namespace>Ase::Lib</namespace>
   </compound>
   <compound kind="file">
     <name>gadget.hh</name>
@@ -553,7 +550,8 @@
     <name>logging.hh</name>
     <path>ase/</path>
     <filename>logging_8hh.html</filename>
-    <includes id="strings_8hh" name="strings.hh" local="no" import="no" module="no" objc="no">ase/strings.hh</includes>
+    <includes id="formatter_8hh" name="formatter.hh" local="no" import="no" module="no" objc="no">ase/formatter.hh</includes>
+    <class kind="struct">Ase::LogFormat</class>
     <namespace>Ase</namespace>
   </compound>
   <compound kind="file">
@@ -603,7 +601,6 @@
     <class kind="class">Ase::Member</class>
     <class kind="class">Ase::Member&lt; accessor, nullptr &gt;</class>
     <namespace>Ase</namespace>
-    <namespace>Ase::Lib</namespace>
   </compound>
   <compound kind="file">
     <name>memory.hh</name>
@@ -850,7 +847,6 @@
     <class kind="class">Ase::KeccakFastRng</class>
     <class kind="class">Ase::Pcg32Rng</class>
     <namespace>Ase</namespace>
-    <namespace>Ase::Lib</namespace>
   </compound>
   <compound kind="file">
     <name>regex.hh</name>
@@ -917,6 +913,7 @@
     <path>ase/</path>
     <filename>testing_8hh.html</filename>
     <includes id="utils_8hh" name="utils.hh" local="no" import="no" module="no" objc="no">ase/utils.hh</includes>
+    <includes id="strings_8hh" name="strings.hh" local="no" import="no" module="no" objc="no">ase/strings.hh</includes>
     <class kind="class">Ase::Test::Timer</class>
     <namespace>Ase</namespace>
     <namespace>Ase::Test</namespace>
@@ -4735,6 +4732,10 @@
     </member>
   </compound>
   <compound kind="struct">
+    <name>Ase::LogFormat</name>
+    <filename>struct_ase_1_1_log_format.html</filename>
+  </compound>
+  <compound kind="struct">
     <name>Ase::Logscale</name>
     <filename>struct_ase_1_1_logscale.html</filename>
     <member kind="function">
@@ -5941,121 +5942,121 @@
     <member kind="enumvalue">
       <name>IN</name>
       <anchorfile>struct_ase_1_1_poll_f_d.html</anchorfile>
-      <anchor>a77d295c90a466e3d6c193de8bd1b8821a39415fe2628f2dfddf652052102cdbd3</anchor>
+      <anchor>aae58e2e28b154ff3d4fa8b56e4f476eaa39415fe2628f2dfddf652052102cdbd3</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>PRI</name>
       <anchorfile>struct_ase_1_1_poll_f_d.html</anchorfile>
-      <anchor>a77d295c90a466e3d6c193de8bd1b8821a615fd972944cc854ab57c05ca9d08e3f</anchor>
+      <anchor>aae58e2e28b154ff3d4fa8b56e4f476eaa615fd972944cc854ab57c05ca9d08e3f</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>OUT</name>
       <anchorfile>struct_ase_1_1_poll_f_d.html</anchorfile>
-      <anchor>a77d295c90a466e3d6c193de8bd1b8821ad2314f9351cd996183c8e08748c88f02</anchor>
+      <anchor>aae58e2e28b154ff3d4fa8b56e4f476eaad2314f9351cd996183c8e08748c88f02</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>RDNORM</name>
       <anchorfile>struct_ase_1_1_poll_f_d.html</anchorfile>
-      <anchor>a77d295c90a466e3d6c193de8bd1b8821a187e16856bc278e0ea40f64627952c9a</anchor>
+      <anchor>aae58e2e28b154ff3d4fa8b56e4f476eaa187e16856bc278e0ea40f64627952c9a</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>RDBAND</name>
       <anchorfile>struct_ase_1_1_poll_f_d.html</anchorfile>
-      <anchor>a77d295c90a466e3d6c193de8bd1b8821ac1df57831b8cbefa6e0fa39812527554</anchor>
+      <anchor>aae58e2e28b154ff3d4fa8b56e4f476eaac1df57831b8cbefa6e0fa39812527554</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>WRNORM</name>
       <anchorfile>struct_ase_1_1_poll_f_d.html</anchorfile>
-      <anchor>a77d295c90a466e3d6c193de8bd1b8821a4450013079dd32485f66b20a9500feed</anchor>
+      <anchor>aae58e2e28b154ff3d4fa8b56e4f476eaa4450013079dd32485f66b20a9500feed</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>WRBAND</name>
       <anchorfile>struct_ase_1_1_poll_f_d.html</anchorfile>
-      <anchor>a77d295c90a466e3d6c193de8bd1b8821afa6c232ba5b7e13d26ecad122b8e0684</anchor>
+      <anchor>aae58e2e28b154ff3d4fa8b56e4f476eaafa6c232ba5b7e13d26ecad122b8e0684</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>ERR</name>
       <anchorfile>struct_ase_1_1_poll_f_d.html</anchorfile>
-      <anchor>a77d295c90a466e3d6c193de8bd1b8821afa68304b2d4858c02525532e6ce46937</anchor>
+      <anchor>aae58e2e28b154ff3d4fa8b56e4f476eaafa68304b2d4858c02525532e6ce46937</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>HUP</name>
       <anchorfile>struct_ase_1_1_poll_f_d.html</anchorfile>
-      <anchor>a77d295c90a466e3d6c193de8bd1b8821a2270d0413d65f7bb4b2c42d7bc286219</anchor>
+      <anchor>aae58e2e28b154ff3d4fa8b56e4f476eaa2270d0413d65f7bb4b2c42d7bc286219</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>NVAL</name>
       <anchorfile>struct_ase_1_1_poll_f_d.html</anchorfile>
-      <anchor>a77d295c90a466e3d6c193de8bd1b8821ab855b051b9cc0116ab91d2d231c5759f</anchor>
+      <anchor>aae58e2e28b154ff3d4fa8b56e4f476eaab855b051b9cc0116ab91d2d231c5759f</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>IN</name>
       <anchorfile>struct_ase_1_1_poll_f_d.html</anchorfile>
-      <anchor>a77d295c90a466e3d6c193de8bd1b8821a39415fe2628f2dfddf652052102cdbd3</anchor>
+      <anchor>aae58e2e28b154ff3d4fa8b56e4f476eaa39415fe2628f2dfddf652052102cdbd3</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>PRI</name>
       <anchorfile>struct_ase_1_1_poll_f_d.html</anchorfile>
-      <anchor>a77d295c90a466e3d6c193de8bd1b8821a615fd972944cc854ab57c05ca9d08e3f</anchor>
+      <anchor>aae58e2e28b154ff3d4fa8b56e4f476eaa615fd972944cc854ab57c05ca9d08e3f</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>OUT</name>
       <anchorfile>struct_ase_1_1_poll_f_d.html</anchorfile>
-      <anchor>a77d295c90a466e3d6c193de8bd1b8821ad2314f9351cd996183c8e08748c88f02</anchor>
+      <anchor>aae58e2e28b154ff3d4fa8b56e4f476eaad2314f9351cd996183c8e08748c88f02</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>RDNORM</name>
       <anchorfile>struct_ase_1_1_poll_f_d.html</anchorfile>
-      <anchor>a77d295c90a466e3d6c193de8bd1b8821a187e16856bc278e0ea40f64627952c9a</anchor>
+      <anchor>aae58e2e28b154ff3d4fa8b56e4f476eaa187e16856bc278e0ea40f64627952c9a</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>RDBAND</name>
       <anchorfile>struct_ase_1_1_poll_f_d.html</anchorfile>
-      <anchor>a77d295c90a466e3d6c193de8bd1b8821ac1df57831b8cbefa6e0fa39812527554</anchor>
+      <anchor>aae58e2e28b154ff3d4fa8b56e4f476eaac1df57831b8cbefa6e0fa39812527554</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>WRNORM</name>
       <anchorfile>struct_ase_1_1_poll_f_d.html</anchorfile>
-      <anchor>a77d295c90a466e3d6c193de8bd1b8821a4450013079dd32485f66b20a9500feed</anchor>
+      <anchor>aae58e2e28b154ff3d4fa8b56e4f476eaa4450013079dd32485f66b20a9500feed</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>WRBAND</name>
       <anchorfile>struct_ase_1_1_poll_f_d.html</anchorfile>
-      <anchor>a77d295c90a466e3d6c193de8bd1b8821afa6c232ba5b7e13d26ecad122b8e0684</anchor>
+      <anchor>aae58e2e28b154ff3d4fa8b56e4f476eaafa6c232ba5b7e13d26ecad122b8e0684</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>ERR</name>
       <anchorfile>struct_ase_1_1_poll_f_d.html</anchorfile>
-      <anchor>a77d295c90a466e3d6c193de8bd1b8821afa68304b2d4858c02525532e6ce46937</anchor>
+      <anchor>aae58e2e28b154ff3d4fa8b56e4f476eaafa68304b2d4858c02525532e6ce46937</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>HUP</name>
       <anchorfile>struct_ase_1_1_poll_f_d.html</anchorfile>
-      <anchor>a77d295c90a466e3d6c193de8bd1b8821a2270d0413d65f7bb4b2c42d7bc286219</anchor>
+      <anchor>aae58e2e28b154ff3d4fa8b56e4f476eaa2270d0413d65f7bb4b2c42d7bc286219</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>NVAL</name>
       <anchorfile>struct_ase_1_1_poll_f_d.html</anchorfile>
-      <anchor>a77d295c90a466e3d6c193de8bd1b8821ab855b051b9cc0116ab91d2d231c5759f</anchor>
+      <anchor>aae58e2e28b154ff3d4fa8b56e4f476eaab855b051b9cc0116ab91d2d231c5759f</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -6957,17 +6958,17 @@
     </member>
     <member kind="function" static="yes">
       <type>static String</type>
-      <name>subn</name>
+      <name>sub</name>
       <anchorfile>class_ase_1_1_re.html</anchorfile>
-      <anchor>aa5df3cdbd5fc92a053fe3ca10a422183</anchor>
-      <arglist>(const String &amp;regex, const String &amp;subst, const String &amp;input, uint count=0, Flags=DEFAULT)</arglist>
+      <anchor>aa124f288c6a77af217ec0516ea28ddf3</anchor>
+      <arglist>(const String &amp;regex, const String &amp;subst, const String &amp;input, Flags=DEFAULT)</arglist>
     </member>
     <member kind="function" static="yes">
       <type>static String</type>
       <name>sub</name>
       <anchorfile>class_ase_1_1_re.html</anchorfile>
-      <anchor>a2fe73db5a1bb89680c8c5b919f896e22</anchor>
-      <arglist>(const String &amp;regex, const String &amp;sbref, const String &amp;input, Flags=DEFAULT)</arglist>
+      <anchor>ac19685933b873f901aaf583f557ec647</anchor>
+      <arglist>(const String &amp;regex, const String &amp;subst, const String &amp;input, uint count, Flags=DEFAULT)</arglist>
     </member>
   </compound>
   <compound kind="struct">
@@ -7107,20 +7108,8 @@
     <filename>struct_ase_1_1_rt_job_queue.html</filename>
   </compound>
   <compound kind="class">
-    <name>Ase::Lib::ScopedLocale</name>
-    <filename>class_ase_1_1_lib_1_1_scoped_locale.html</filename>
-  </compound>
-  <compound kind="class">
-    <name>Ase::Lib::ScopedPosixLocale</name>
-    <filename>class_ase_1_1_lib_1_1_scoped_posix_locale.html</filename>
-    <base>Ase::Lib::ScopedLocale</base>
-    <member kind="function" static="yes">
-      <type>static locale_t</type>
-      <name>posix_locale</name>
-      <anchorfile>class_ase_1_1_lib_1_1_scoped_posix_locale.html</anchorfile>
-      <anchor>abdbcdcbc35b3aa776bbb4a603ff441d5</anchor>
-      <arglist>()</arglist>
-    </member>
+    <name>Ase::ScopedPosixLocale</name>
+    <filename>class_ase_1_1_scoped_posix_locale.html</filename>
   </compound>
   <compound kind="class">
     <name>Ase::Serializable</name>
@@ -7525,17 +7514,6 @@
     <templarg>class T</templarg>
     <templarg>class Less</templarg>
     <base protection="private">std::less</base>
-  </compound>
-  <compound kind="class">
-    <name>Ase::Lib::StringFormatter</name>
-    <filename>class_ase_1_1_lib_1_1_string_formatter.html</filename>
-    <member kind="function" static="yes">
-      <type>static</type>
-      <name>__attribute__</name>
-      <anchorfile>class_ase_1_1_lib_1_1_string_formatter.html</anchorfile>
-      <anchor>a50dd6e108d07d9bab3587ac466a02eb4</anchor>
-      <arglist>((__format__(printf, 2, 0), noinline)) std</arglist>
-    </member>
   </compound>
   <compound kind="class">
     <name>Ase::Strings</name>
@@ -8677,7 +8655,6 @@
     <namespace>Ase::AnsiColors</namespace>
     <namespace>Ase::Aux</namespace>
     <namespace>Ase::FastMemory</namespace>
-    <namespace>Ase::Lib</namespace>
     <namespace>Ase::Loft</namespace>
     <namespace>Ase::MidiLib</namespace>
     <namespace>Ase::Path</namespace>
@@ -8737,6 +8714,7 @@
     <class kind="struct">Ase::LoftConfig</class>
     <class kind="struct">Ase::LoftFree</class>
     <class kind="struct">Ase::LoftStats</class>
+    <class kind="struct">Ase::LogFormat</class>
     <class kind="struct">Ase::Logscale</class>
     <class kind="class">Ase::MainLoop</class>
     <class kind="class">Ase::Member</class>
@@ -8777,6 +8755,7 @@
     <class kind="class">Ase::ResourceCrawler</class>
     <class kind="struct">Ase::RtCall</class>
     <class kind="struct">Ase::RtJobQueue</class>
+    <class kind="class">Ase::ScopedPosixLocale</class>
     <class kind="class">Ase::Serializable</class>
     <class kind="class">Ase::Server</class>
     <class kind="struct">Ase::SHA3_224</class>
@@ -9040,6 +9019,13 @@
       <enumvalue file="namespace_ase.html" anchor="afb020f0d6689d7b591de4804efa1f3bba64ceddf02cea6432501c8c3f889beacf">WERCKMEISTER_6</enumvalue>
       <enumvalue file="namespace_ase.html" anchor="afb020f0d6689d7b591de4804efa1f3bbaaf513a1e740a1224d617b8d87afcb674">KIRNBERGER_3</enumvalue>
       <enumvalue file="namespace_ase.html" anchor="afb020f0d6689d7b591de4804efa1f3bba85f61422ff6569131e86ce73f232e0d3">YOUNG</enumvalue>
+    </member>
+    <member kind="enumeration">
+      <type></type>
+      <name>LogFlags</name>
+      <anchorfile>namespace_ase.html</anchorfile>
+      <anchor>ab2aaef6f8c73c6098f8da4df60d5362e</anchor>
+      <arglist></arglist>
     </member>
     <member kind="enumeration">
       <type></type>
@@ -9329,6 +9315,20 @@
       <arglist>(uint64 *data, size_t n)</arglist>
     </member>
     <member kind="function">
+      <type>std::string</type>
+      <name>string_format</name>
+      <anchorfile>namespace_ase.html</anchorfile>
+      <anchor>a01622c79a0d2edb4b654553e426c3e05</anchor>
+      <arglist>(const char *format, const Args &amp;...args) __attribute__((__format__(__printf__</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>__attribute__</name>
+      <anchorfile>namespace_ase.html</anchorfile>
+      <anchor>a7bddec73e7e0af1e2dcc9f88c8e16fe7</anchor>
+      <arglist>((noinline)) std</arglist>
+    </member>
+    <member kind="function">
       <type>float</type>
       <name>damerau_levenshtein_restricted</name>
       <anchorfile>namespace_ase.html</anchorfile>
@@ -9350,39 +9350,25 @@
       <arglist>(Args &amp;&amp;...args)</arglist>
     </member>
     <member kind="function">
-      <type>void</type>
+      <type>LogFlags</type>
       <name>log_setup</name>
       <anchorfile>namespace_ase.html</anchorfile>
-      <anchor>a5f76936c8642b64ec513216d6aefe8d3</anchor>
-      <arglist>(bool inf2stderr, bool log2file)</arglist>
+      <anchor>ae8c7489f9ecd777912bbd1a7a444d204</anchor>
+      <arglist>(int *logfd)</arglist>
+    </member>
+    <member kind="function">
+      <type>uint64_t</type>
+      <name>timestamp_now</name>
+      <anchorfile>namespace_ase.html</anchorfile>
+      <anchor>aea8f78aefc92a88b05ad3c10c9bfcda3</anchor>
+      <arglist>()</arglist>
     </member>
     <member kind="function">
       <type>void</type>
-      <name>loginf</name>
+      <name>log</name>
       <anchorfile>namespace_ase.html</anchorfile>
-      <anchor>aa299789e3bc0274b1cdfaf05dd3b69bb</anchor>
-      <arglist>(const char *format, const A &amp;...args) ASE_PRINTF(1</arglist>
-    </member>
-    <member kind="function">
-      <type>void void</type>
-      <name>logerr</name>
-      <anchorfile>namespace_ase.html</anchorfile>
-      <anchor>a52007fbc5f843ea8422fedd6b640cac3</anchor>
-      <arglist>(const String &amp;dept, const char *format, const A &amp;...args) ASE_PRINTF(2</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>logtxt</name>
-      <anchorfile>namespace_ase.html</anchorfile>
-      <anchor>ad30048c547cfc9b0911ee8386ed16578</anchor>
-      <arglist>(const char *format, const A &amp;...args)</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>logerr</name>
-      <anchorfile>namespace_ase.html</anchorfile>
-      <anchor>a5feae03ffc72f4a64b4d3f96e63c8a6d</anchor>
-      <arglist>(const String &amp;dept, const char *format, const A &amp;...args)</arglist>
+      <anchor>a54c5039770f1d142864b8123961bcf89</anchor>
+      <arglist>(const LogFormat &amp;format, const A &amp;...args)</arglist>
     </member>
     <member kind="function">
       <type>ASE_CONST int</type>
@@ -10060,7 +10046,7 @@
       <type>String</type>
       <name>string_vprintf</name>
       <anchorfile>namespace_ase.html</anchorfile>
-      <anchor>a2b1ff7fb9f0a2cf85aae28ead9ccd673</anchor>
+      <anchor>a29c560f18c67adae74badbb6b000e3f8</anchor>
       <arglist>(const char *format, va_list vargs)</arglist>
     </member>
     <member kind="function">
@@ -10489,20 +10475,6 @@
       <anchorfile>namespace_ase.html</anchorfile>
       <anchor>af06e887cc61099edfa0d33f4fc385e6b</anchor>
       <arglist>(Type value)</arglist>
-    </member>
-    <member kind="function">
-      <type>ASE_NOINLINE String</type>
-      <name>string_format</name>
-      <anchorfile>namespace_ase.html</anchorfile>
-      <anchor>a3ae809e6556ad2e960eba9abf672ef7f</anchor>
-      <arglist>(const char *format, const Args &amp;...args)</arglist>
-    </member>
-    <member kind="function">
-      <type>ASE_NOINLINE String</type>
-      <name>string_locale_format</name>
-      <anchorfile>namespace_ase.html</anchorfile>
-      <anchor>a0fa1d7121b1e6228a6697f5a2c023619</anchor>
-      <arglist>(const char *format, const Args &amp;...args)</arglist>
     </member>
     <member kind="function">
       <type>std::string</type>
@@ -10979,24 +10951,6 @@
       <anchorfile>namespace_ase_1_1_fast_memory.html</anchorfile>
       <anchor>a8fc40045a42c8e7ab0cad30c371d8bdb</anchor>
       <arglist></arglist>
-    </member>
-  </compound>
-  <compound kind="namespace">
-    <name>Ase::Lib</name>
-    <filename>namespace_ase_1_1_lib.html</filename>
-    <class kind="struct">Ase::Lib::FunctionTraits</class>
-    <class kind="struct">Ase::Lib::FunctionTraits&lt; R(C::*)(Args...) const &gt;</class>
-    <class kind="struct">Ase::Lib::FunctionTraits&lt; R(C::*)(Args...)&gt;</class>
-    <class kind="struct">Ase::Lib::MemberFunctionTraits</class>
-    <class kind="class">Ase::Lib::ScopedLocale</class>
-    <class kind="class">Ase::Lib::ScopedPosixLocale</class>
-    <class kind="class">Ase::Lib::StringFormatter</class>
-    <member kind="function">
-      <type>C *</type>
-      <name>host_member_offset</name>
-      <anchorfile>namespace_ase_1_1_lib.html</anchorfile>
-      <anchor>a1b48bb5ea3e882f27533ecdb2091cca8</anchor>
-      <arglist>(ptrdiff_t *hmoffsetp, const M *member, C *host)</arglist>
     </member>
   </compound>
   <compound kind="namespace">
