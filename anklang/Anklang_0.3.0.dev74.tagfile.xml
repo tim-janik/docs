@@ -493,13 +493,6 @@
     </member>
     <member kind="define">
       <type>#define</type>
-      <name>JSONIPC_INHERIT</name>
-      <anchorfile>internal_8hh.html</anchorfile>
-      <anchor>a1660b2f977eb46ccf83544b59a66e8cd</anchor>
-      <arglist>(IMPL, INTERFACE)</arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
       <name>TEST_INTEGRITY</name>
       <anchorfile>internal_8hh.html</anchorfile>
       <anchor>af8a0cfecd1654cb63c6de4f08dd75781</anchor>

@@ -283,7 +283,7 @@ Copyright: Copyright (C) 2021 Tim Janik
 License: MPL-2.0
 
 Files: ase/internal.hh
-Copyright: Copyright (C) 2021-2023 Tim Janik
+Copyright: Copyright (C) 2021-2024 Tim Janik
 License: MPL-2.0
 
 Files: ase/jsonapi.cc
@@ -291,7 +291,9 @@ Copyright: Copyright (C) 2021-2023 Tim Janik
 License: MPL-2.0
 
 Files: ase/jsonapi.hh
-Copyright: Copyright (C) 2021 Tim Janik
+Copyright:
+  Copyright (C) 2024 Tim Janik
+  Copyright (C) 2021 Tim Janik
 License: MPL-2.0
 
 Files: ase/levenshtein.cc
@@ -421,7 +423,9 @@ Copyright:
 License: MPL-2.0
 
 Files: ase/monitor.cc
-Copyright: Copyright (C) 2021 Tim Janik
+Copyright:
+  Copyright (C) 2024 Tim Janik
+  Copyright (C) 2021 Tim Janik
 License: MPL-2.0
 
 Files: ase/monitor.hh
@@ -539,11 +543,13 @@ Copyright:
 License: MPL-2.0
 
 Files: ase/serialize.cc
-Copyright: Copyright (C) 2021-2023 Tim Janik
+Copyright: Copyright (C) 2021-2024 Tim Janik
 License: MPL-2.0
 
 Files: ase/serialize.hh
-Copyright: Copyright (C) 2021-2022 Tim Janik
+Copyright:
+  Copyright (C) 2024 Tim Janik
+  Copyright (C) 2021-2022 Tim Janik
 License: MPL-2.0
 
 Files: ase/server.cc
