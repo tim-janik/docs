@@ -72,6 +72,12 @@ Copyright:
   Copyright (C) 2021-2022 Tim Janik
 License: MPL-2.0
 
+Files: ase/benchmarks.cc
+Copyright:
+  Copyright (C) 2024 Tim Janik
+  Copyright (C) 2021-2022 Tim Janik
+License: MPL-2.0
+
 Files: ase/blob.cc
 Copyright:
   Copyright (C) 2023-2024 Tim Janik
@@ -594,18 +600,8 @@ Files: ase/testing.hh
 Copyright: Copyright (C) 2021-2024 Tim Janik
 License: MPL-2.0
 
-Files: ase/tests/Makefile.mk
-Copyright: Copyright (C) 2021 Tim Janik
-License: MPL-2.0
-
-Files: ase/tests/benchmarks.cc
-Copyright:
-  Copyright (C) 2024 Tim Janik
-  Copyright (C) 2021-2022 Tim Janik
-License: MPL-2.0
-
 Files: ase/track.cc
-Copyright: Copyright (C) 2021-2023 Tim Janik
+Copyright: Copyright (C) 2021-2024 Tim Janik
 License: MPL-2.0
 
 Files: ase/track.hh
